@@ -1,0 +1,118 @@
+<!doctype html>
+  <html class="no-js" lang="{{ request.locale.iso_code }}">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="theme-color" content="#F5F5F5"> 
+      {% render 'meta-tags' %}
+      <link rel="canonical" href="{{ canonical_url }}">
+      <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+      {%- if settings.favicon != blank -%}
+        <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+      {%- endif -%}
+  
+      {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+        <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      {%- endunless -%}
+  
+      <title>
+        {{ page_title }}
+      </title>
+  
+      {% if page_description %}
+        <meta name="description" content="{{ page_description | escape }}">
+      {% endif %}
+      {{ content_for_header }}
+
+      {%- render 'global-style-variables' -%}
+      {%- render 'global-variables' -%}
+    </head>
+    <body class="{{ settings.other_layout }} button-hover-{{ settings.button_hover_effect }}{% if settings.enable_animation %} animation-on{% endif %}">
+      <a class="unstyled-link skip-to-content-link button focus-inside{% if settings.enable_button_shadow %} button-shadow{% endif %}" href="#MainContent">
+        {{ 'accessibility.skip_to_text' | t }}
+      </a>
+      {%- render 'preloader' -%}
+      <div class="body-main">
+        {% sections 'header-group' %}
+        <main id="MainContent" class="main-content focus-none" role="main" tabindex="-1" >
+          {{ content_for_layout }} 
+        </main>
+        <div class="custom-footer-group">  
+        {% sections 'footer-group' %}
+        </div>
+        {% section 'mobile-dock' %}
+      </div> 
+        {% render 'newsletter-popup' %}
+        {% render 'cookies-popup' %}
+        {% render 'age-verification' %}
+        {% render 'search-drawer' %}
+        {% section 'cart-drawer' %}
+        {% render 'quick-view' %}
+        {% render 'scroll-top' %}
+
+        {% if settings.enable_shipping and settings.shipping_rate != blank %}
+          <div id="mini-cart-shipping"  data-minicart-shipping {% if settings.enable_shipping and settings.shipping_rate != blank %}  data-shipping-rate="{{ settings.shipping_rate | times: 100 }}" data-shippin-text="{{ settings.shipping_text }}"{% endif %}>
+            <select id="shipping-countries" class="hidden" disabled>
+              {{ country_option_tags }}
+            </select>
+          </div>
+        {% endif %}
+        {% if settings.enable_animation %}
+          <script>
+            document.addEventListener("DOMContentLoaded",function(){
+              AOS.init({
+                startEvent: 'DOMContentLoaded',
+                offset: 100,
+                once: true,
+              });
+              setTimeout(function () {
+                if (AOS) {
+                  AOS.refresh();
+                }
+              }, 1000);
+            });
+          </script>
+        {% endif %}
+      <script>
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        if (Shopify.designMode) {
+          document.documentElement.classList.add('shopify-design-mode');
+        }
+    window.theme = window.theme || {};
+    window.shopUrl = '{{ request.origin }}';
+    window.routes = {
+      shop_url: '{{ request.origin }}',
+      root_url: '{{ routes.root_url }}',
+      cart_url: '{{ routes.cart_url }}',
+      cart_add_url: '{{ routes.cart_add_url }}',
+      cart_change_url: '{{ routes.cart_change_url }}',
+      cart_update_url: '{{ routes.cart_update_url }}',
+      search_url: '{{ routes.search_url }}',
+      predictive_search_url: '{{ routes.predictive_search_url }}',
+    };
+  
+    theme.settings = {
+      moneyFormat: '{{ shop.money_format }}',
+      moneyWithCurrencyFormat: '{{ shop.money_with_currency_format }}',
+      currencyCodeEnabled: '{{ shop.enabled_currencies }}',
+    };
+  
+    window.cartStrings = {
+      error: `{{ 'sections.cart.cart_error' | t }}`,
+      quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+    };
+  
+    window.variantStrings = {
+      preOrder: `{{ 'products.product.preorder' | t }}`,
+      addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+      soldOut: `{{ 'products.product.sold_out' | t }}`,
+      unavailable: `{{ 'products.product.unavailable' | t }}`,
+      unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
+    };
+    
+      </script>
+     
+    </body>
+  </html>
+  

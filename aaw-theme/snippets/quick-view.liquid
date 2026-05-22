@@ -1,0 +1,332 @@
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% capture quickvidewproduct %}
+  <div class="quick-view-product-wrapper" data-product-wrapper data-product-content>
+    <product-info class="row no-gutters"
+    id="product-info-{{ section.id }}-{{ product.id }}"
+    data-section-id="{{ section.id }}"
+    data-section="{{ section.id }}"
+    data-product-id="{{ product.id }}"
+    data-update-url="false"
+    data-url="{{ product.url }}"
+    >
+      <div class="col-12 col-md-5">
+       
+          {%- if product.media.size > 0 -%}
+            {% render 'product-media', product: product, section: section, current_variant: current_variant, quickviewclass:'quickview-product-item', innerclass:'quickview-product-img', quickView: true %}
+          {% else %}
+          <div id="productMedia-placeholder-quickview" class="quickview-product-item"  data-product-media >
+            <div class="media-box" style="--image-ratio:100%">
+            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          </div>
+          {% endif %}
+      
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="quickview-drawer-content-inner">
+          {% render 'product-details', quickView: true, product, section, current_variant : current_variant %}
+        </div>
+      </div>
+    </product-info>
+  </div>
+  <script type="application/json" id="product3DModel-{{ product.id }}">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>  
+{% endcapture %}
+{% liquid 
+  if settings.desktop_grid_image_size == 'landscape'
+  assign imageRatioClass = 75
+  elsif settings.desktop_grid_image_size == 'square'
+  assign imageRatioClass = 100
+  elsif settings.desktop_grid_image_size == 'portrait'
+  assign imageRatioClass = 125
+  endif
+
+  if settings.mobile_grid_image_size == 'landscape'
+  assign mobileImageRatioClass = 75
+  elsif settings.mobile_grid_image_size == 'square'
+  assign mobileImageRatioClass = 100
+  elsif settings.mobile_grid_image_size == 'portrait'
+  assign mobileImageRatioClass = 125
+  endif
+  %}
+
+
+{% if settings.quickview_style == 'drawer' %}
+  <div class="side-drawer quickview-side-drawer shopify-section {{ settings.drawer_color_scheme }}-scheme{% if settings.enable_blur_effect %} background-blur{% endif %}"
+    id="quickview-side-drawer"
+    data-sidedrawer-wrapper
+    data-quickview-content-wrapper
+    side-drawer-body>
+    <div class="close-fullwidth" data-sidedrawer-close aria-label="close"></div>
+    <div class="side-drawer-panel large">
+      <div class="side-drawer-inner">
+        <button class="drawer-close" data-sidedrawer-close aria-label="close" >
+          {% render 'theme-icons', theme_icon: 'drawer_close' %}
+        </button>
+        <div class="quickview-drawer-content" data-quickview-content>
+        {{ quickvidewproduct }}
+        </div>
+      </div>
+    </div>
+    <style>
+      @media (min-width: 768px){
+        {% for media in product.media %}
+          
+          {% if settings.desktop_grid_image_size == 'auto'  %}
+            .quickview-product-image-slider .media-box{
+                --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+            }
+        {% else %}
+          .quickview-product-image-slider .media-box{
+            --image-ratio:{{ imageRatioClass }}%;
+          }
+        {% endif %}
+      {% endfor %}
+    
+        {% if settings.desktop_grid_image_size == 'auto'  %}
+          .quickview-side-drawer .media-box{
+            --image-ratio:100%;
+          }
+        {% else %}
+          .quickview-side-drawer .media-box{
+            --image-ratio:{{ imageRatioClass }}%;
+          }
+        {% endif %}
+      }
+    
+      @media (max-width: 767px){
+        {% for media in product.media %}
+          {% if settings.mobile_grid_image_size == 'auto'  %}
+            .quickview-product-image-slider .media-box{
+                  --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+              }
+          {% else %}
+            .quickview-product-image-slider .media-box{
+              --image-ratio:{{ mobileImageRatioClass }}%;
+            }
+          {% endif %}
+        {% endfor %}
+        {% if settings.mobile_grid_image_size == 'auto'  %}
+          .quickview-side-drawer .media-box{
+            --image-ratio:100%;
+          }
+        {% else %}
+        quickview-side-drawer .media-box{
+            --image-ratio:{{ mobileImageRatioClass }}%;
+          }
+        {% endif %}
+      }
+    </style> 
+  </div>
+ 
+{% elsif settings.quickview_style == 'popup' %}
+  <div class="popup quick-popup position-center {{ settings.popup_color_scheme }}-scheme shopify-section background-enabled{% if settings.enable_blur_effect %} background-blur{% endif %}" data-popup-body   data-quickview-content-wrapper>
+    <div class="close-fullwidth"  data-popup-close aria-label="close"></div>
+    <div class="popup-dialog large">
+      <div class="popup-content">
+        <button class="popup-close" data-popup-close aria-label="close">
+          {% render 'theme-icons', theme_icon: 'popup_close' %}
+        </button>
+          <div class="quickview-popup-content" data-quickview-content>
+            {{ quickvidewproduct }}
+          </div>
+        </div>
+    </div>
+    <style>
+      @media (min-width: 768px){
+        {% for media in product.media %}
+          {% if settings.desktop_grid_image_size == 'auto'  %}
+            .quickview-product-image-slider .media-box{
+                --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+            }
+        {% else %}
+          .quickview-product-image-slider .media-box{
+            --image-ratio:{{ imageRatioClass }}%;
+          }
+        {% endif %}
+        {% endfor %}
+    
+        {% if settings.desktop_grid_image_size == 'auto'  %}
+          .quickview-popup-content .media-box{
+            --image-ratio:100%;
+          }
+        {% else %}
+         .quickview-popup-content .media-box{
+            --image-ratio:{{ imageRatioClass }}%;
+          }
+        {% endif %}
+      }
+    
+      @media (max-width: 767px){
+        {% for media in product.media %}
+          {% if settings.mobile_grid_image_size == 'auto'  %}
+            .quickview-product-image-slider .media-box{
+                  --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+              }
+          {% else %}
+            .quickview-product-image-slider .media-box{
+              --image-ratio:{{ mobileImageRatioClass }}%;
+            }
+          {% endif %}
+        {% endfor %}
+        {% if settings.mobile_grid_image_size == 'auto'  %}
+          .quickview-popup-content .media-box{
+            --image-ratio:100%;
+          }
+        {% else %}
+          .quickview-popup-content .media-box{
+            --image-ratio:{{ mobileImageRatioClass }}%;
+          }
+        {% endif %}
+      }
+    </style> 
+  </div>
+{% else  %}
+{% capture random %}{{ 'now' | date: "%09N" }}{% endcapture %}
+{% assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id %}
+{%  if product != blank %}
+   <product-info class="no-gutters"
+    id="product-info-{{ section.id }}-{{ product.id }}"
+    data-section-id="{{ section.id }}"
+    data-section="{{ section.id }}"
+    data-product-id="{{ product.id }}"
+    data-update-url="false"
+    data-url="{{ product.url }}"
+    >
+    {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'price' %}
+        <div
+          class="product-pricing no-js-hidden {% if current_variant.compare_at_price > current_variant.price %} discount-price {% endif %}"
+          id="price-{{ section.id }}-{{ product.id }}"
+          role="status"
+          data-price-wrapper
+          {{ block.shopify_attributes }}
+        >
+          {% render 'product-price', quickView: quickView, product: product %}
+
+          {% unless block.settings.hide_shipping_content %}
+            {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+              <p class="text-xsmall product-tax-shipping">
+                {%- if cart.taxes_included -%}
+                  {{ 'products.product.tax_included' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </p>
+            {%- endif -%}
+          {% endunless %}
+          <div {{ block.shopify_attributes }}>
+            {%- assign product_form_installment_id = 'product-form-installment-' | append: section_id -%}
+            {%- form 'product', product, id: product_form_installment_id, class: 'text-small' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {{ form | payment_terms }}
+            {%- endform -%}
+          </div>
+        </div>
+    
+      {% when 'variant' %}
+         {% unless product.has_only_default_variant %}
+          <div class="product-variants" {{ block.shopify_attributes }} data-product-variants>
+            {%- render 'product-variant-picker',
+              block: block,
+              product: product,
+              product_form_id: product_form_id,
+              section_id: section.id,
+              update_url: true,
+              quickViewcard:quickViewcard
+            -%}
+          </div>
+        {% endunless %}
+      {% endcase %}
+    {% endfor %}
+    <div class="quantity-atc-button-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {%- when 'quantity_selector' -%}
+          {% render 'quantity' product, product_form_id: product_form_id,quickViewcard:true %}
+        {% when 'button' %}
+          <product-form {{ block.shopify_attributes }} data-atc-form>
+            {% render 'product-form', product_form_id: product_form_id, current_variant: current_variant, block: block, quickViewcard:true %}
+          </product-form>
+        {% endcase %}
+      {% endfor %}
+
+    </div>
+     </product-info>
+  {% endif %}
+    <div class="error-message no-bg " data-quick-card-error data-error-text role="status"></div>
+    <div class="mobile-drawer-content">
+      <div class="side-drawer quickview-side-drawer shopify-section {{ settings.drawer_color_scheme }}-scheme{% if settings.enable_blur_effect %} background-blur{% endif %}"
+        id="quickview-side-drawer"
+        data-sidedrawer-wrapper
+        data-quickview-content-mobile 
+        side-drawer-body>
+        <div class="close-fullwidth" data-sidedrawer-close aria-label="close"></div>
+        <div class="side-drawer-panel large">
+          <div class="side-drawer-inner">
+            <button class="drawer-close" data-sidedrawer-close aria-label="close" >
+              {% render 'theme-icons', theme_icon: 'drawer_close' %}
+            </button>
+            <div class="quickview-drawer-content" data-quickview-content>
+                {{ quickvidewproduct }}
+               
+            </div>
+          </div>
+        </div>
+        <style>
+          @media (min-width: 768px){
+            {% for media in product.media %}
+              
+              {% if settings.desktop_grid_image_size == 'auto'  %}
+                .quickview-product-image-slider #productMedia-{{ media.id }} .media-box{
+                    --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+                }
+            {% else %}
+              .quickview-product-image-slider #productMedia-{{ media.id }} .media-box{
+                --image-ratio:{{ imageRatioClass }}%;
+              }
+            {% endif %}
+          {% endfor %}
+        
+            {% if settings.desktop_grid_image_size == 'auto'  %}
+              .quickview-side-drawer #productMedia-placeholder-main .media-box{
+                --image-ratio:100%;
+              }
+            {% else %}
+              .quickview-side-drawer #productMedia-placeholder-main .media-box{
+                --image-ratio:{{ imageRatioClass }}%;
+              }
+            {% endif %}
+          }
+        
+          @media (max-width: 767px){
+            {% for media in product.media %}
+              {% if settings.mobile_grid_image_size == 'auto'  %}
+                .quickview-product-image-slider #productMedia-{{ media.id }} .media-box{
+                      --image-ratio:{{ 1 | divided_by : media.preview_image.aspect_ratio | times: 100 }}%;
+                  }
+              {% else %}
+                .quickview-product-image-slider #productMedia-{{ media.id }} .media-box{
+                  --image-ratio:{{ mobileImageRatioClass }}%;
+                }
+              {% endif %}
+            {% endfor %}
+            {% if settings.mobile_grid_image_size == 'auto'  %}
+              .quickview-side-drawer #productMedia-placeholder-main .media-box{
+                --image-ratio:100%;
+              }
+            {% else %}
+            quickview-side-drawer #productMedia-placeholder-main .media-box{
+                --image-ratio:{{ mobileImageRatioClass }}%;
+              }
+            {% endif %}
+          }
+        </style> 
+      </div>
+    </div>
+   
+  {% endif %}

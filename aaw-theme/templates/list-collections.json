@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_FqGxLE": {
+      "type": "breadcrumb",
+      "settings": {
+        "section_visibility": "always",
+        "color_scheme": "",
+        "top_space_desktop": 15,
+        "bottom_space_desktop": 15,
+        "top_space_mobile": 10,
+        "bottom_space_mobile": 10
+      }
+    },
+    "page_banner_LnWqLw": {
+      "type": "page-banner",
+      "disabled": true,
+      "settings": {
+        "enable_fullwidth": true,
+        "banner_height_desktop": "250px",
+        "banner_height_mobile": "200px",
+        "heading": "Collections",
+        "heading_overly": true,
+        "heading_size": "h2",
+        "seo_heading": "h3",
+        "content_width": "medium",
+        "heading_alignment": "text-center",
+        "banner_bg_color": "#f2f2f2",
+        "bg_color_opacity": "#000000",
+        "text_color": "#000000",
+        "overlay_opacity": 50,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-collection-list",
+      "settings": {
+        "collections_per_page": 12,
+        "columns_desktop": 4,
+        "column_mobile": "2",
+        "grid_image_size": "portrait",
+        "sort": "alphabetical",
+        "color_scheme": "",
+        "top_space_desktop": 15,
+        "bottom_space_desktop": 50,
+        "top_space_mobile": 15,
+        "bottom_space_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_FqGxLE",
+    "page_banner_LnWqLw",
+    "main"
+  ]
+}

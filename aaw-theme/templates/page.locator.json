@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_banner_VGVQQM": {
+      "type": "page-banner",
+      "disabled": true,
+      "settings": {
+        "enable_fullwidth": true,
+        "banner_height_desktop": "250px",
+        "banner_height_mobile": "200px",
+        "heading": "",
+        "heading_overly": true,
+        "heading_size": "h2",
+        "seo_heading": "h3",
+        "content_width": "medium",
+        "heading_alignment": "text-center",
+        "banner_bg_color": "#f2f2f2",
+        "bg_color_opacity": "#000000",
+        "text_color": "#000000",
+        "overlay_opacity": 50,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "store_locator_mFjqNY": {
+      "type": "store-locator",
+      "blocks": {
+        "store_gx3EAP": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Hong Kong】Audio Stage",
+            "store_detail": "<p>旺角西洋菜南街2T號添置商業中心21樓 (Tel: +852 6053 1198)</p>",
+            "location": "旺角西洋菜南街2T號添置商業中心21樓"
+          }
+        },
+        "store_WEy8QW": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Hong Kong】DMA",
+            "store_detail": "<p>旺角星際城市2樓 219 - 223號 (Tel: +8523971 0242)</p>",
+            "location": "旺角星際城市2樓 219 - 223號"
+          }
+        },
+        "store_NXcbq8": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Hong Kong】Fine Up Computer",
+            "store_detail": "<p>深水埗黃金電腦商場地面42-44號 (Tel: +852 2361 1295)</p>",
+            "location": "深水埗黃金電腦商場地面42-44號"
+          }
+        },
+        "store_qnDhRN": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Hong Kong】Let's Go Audio",
+            "store_detail": "<p>灣仔軒尼詩道130 號灣仔電腦城二樓267-269 號舖 (Tel: +852 2328 8599)</p>",
+            "location": "灣仔軒尼詩道130 號灣仔電腦城二樓267-269 號舖"
+          }
+        },
+        "store_cr98h7": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Hong Kong】Master Studio",
+            "store_detail": "<p>新界荃豐中心商場地下A52號舖 (Tel: +852 6091 2166)</p>",
+            "location": "新界荃豐中心商場地下A52號舖"
+          }
+        },
+        "store_gb64X8": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Macau】Music Movie Driver",
+            "store_detail": "<p>澳門連勝馬路165號B  (Tel: +853 2821 6282)</p>",
+            "location": "澳門連勝馬路165號B"
+          }
+        },
+        "store_hUtafr": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Japan】e☆イヤホン秋葉原店 本館",
+            "store_detail": "<p>Japan, 〒101-0021 Tokyo, Chiyoda City, Sotokanda, 4 Chome−7−1 新東ビル</p><p>https://www.e-earphone.jp/</p>",
+            "location": "Japan, 〒101-0021 Tokyo, Chiyoda City, Sotokanda, 4 Chome−7−1 新東ビル"
+          }
+        },
+        "store_fBfmCb": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Japan】e☆イヤホン 大阪日本橋本店",
+            "store_detail": "<p>5 Chome-9-19 Nipponbashi, Naniwa Ward, Osaka, 556-0005, Japan</p>",
+            "location": "5 Chome-9-19 Nipponbashi, Naniwa Ward, Osaka, 556-0005, Japan"
+          }
+        },
+        "store_zmU6AA": {
+          "type": "store",
+          "settings": {
+            "store_name": "【China】4-Ear",
+            "store_detail": "<p>Room7F50, 99th XingYi Rd<br/>Shanghai Mart,<br/>ChangNing District<br/>Shanghai 200336</p><p>+86 15850708519</p>",
+            "location": "Room7F50, 99th Xing Yi Rd Shanghai Mart, Chang Ning District Shanghai 200336"
+          }
+        },
+        "store_HT7ibb": {
+          "type": "store",
+          "settings": {
+            "store_name": "【South Korea】주)소리샵Sorishop ",
+            "store_detail": "<p>1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul  +82 2-3272-8584</p>",
+            "location": "1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul "
+          }
+        },
+        "store_dyF6Jn": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Thailand】SoundProofBros",
+            "store_detail": "<p><a href=\"https://www.soundproofbrosaudio.com/contact.php\">MBK Center ชั้น 5 ( 5C-35, 5B-43 )</a>444 ถ.พญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพ 10330<br/>โทร.<a href=\"tel:+(66)903055516\" title=\"Tel : 090-305-5516\">090-305-5516</a><a href=\"mailto:soundproofbros@gmail.com\" title=\"Mailto : soundproofbros@gmail.com\">soundproofbros@gmail.com</a></p>",
+            "location": "MBK Center ชั้น 5 ( 5C-35, 5B-43 )444 ถ.พญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพ 10330"
+          }
+        },
+        "store_8AyTVD": {
+          "type": "store",
+          "settings": {
+            "store_name": "【Thailand】Jaben Thailand",
+            "store_detail": "<p>Fortune Town Shopping Mall, เลขที่ 7 ถ. รัชดาภิเษก ชั้น 3, ห้อง 3P82 (ติด แบงค์กรุงเทพ, Din Daeng, Bangkok 10400, Thailand</p><p><a href=\"https://www.google.com/search?sca_esv=eaa9988072c480fd&rlz=1C1ONGR_enSG1021SG1021&sxsrf=AHTn8zqq5uinMC1PkY47s0C_QPepCsojJg:1738037560287&q=jaben+thailand+phone&ludocid=9235769718264342296&sa=X&ved=2ahUKEwiuoIy7xpeLAxUrRmwGHY6ANP0Q6BN6BAhSEAI\"><strong>Phone</strong></a><strong>:</strong><a href=\"https://www.google.com/search?q=jaben+thailand&sca_esv=eaa9988072c480fd&rlz=1C1ONGR_enSG1021SG1021&sxsrf=AHTn8zpCMtGdcn31d50omWv_Bovoj-0WRw%3A1738037471642&ei=31iYZ4HzJpSRnesP9tas2AU&gs_ssp=eJzj4tFP1zcsKCmryrCsKjJgtFI1qDA2SDWyTEs0NTY0TDZKTDK3MqiwMDBKNkhKNDAyMTdJNDe08OLLSkxKzVMoyUjMzEnMSwEAwGMUig&oq=jaben+th&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGphYmVuIHRoKgIIADILEC4YgAQYxwEYrwEyCxAuGIAEGMcBGK8BMgYQABgWGB4yCRAAGBYYxwMYHjICECYyCBAAGIAEGKIEMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiABBiiBDIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFI2CFQxQdYqxdwA3gBkAEAmAGEAaAB4gSqAQM2LjK4AQPIAQD4AQGYAgugAoAFwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICChAuGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjRAxjHAcICERAuGIAEGJECGMcBGIoFGK8BwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxiDARiKBcICCxAuGIAEGLEDGIMBwgITEC4YgAQYsQMY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAggQABiABBixA8ICCBAuGIAEGLEDwgIFEAAYgATCAhEQLhiABBjHARiYBRiaBRivAcICBRAuGIAEwgIgEC4YgAQYkQIYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQGYAwDiAwUSATEgQIgGAZAGCLoGBggBEAEYFJIHAzkuMqAHlpIB&sclient=gws-wiz-serp#\">+66 2 073 2929</a></p>",
+            "location": "Fortune Town Shopping Mall, เลขที่ 7 ถ. รัชดาภิเษก ชั้น 3, ห้อง 3P82 (ติด แบงค์กรุงเทพ, Din Daeng, Bangkok 10400, Thailand"
+          }
+        }
+      },
+      "block_order": [
+        "store_gx3EAP",
+        "store_WEy8QW",
+        "store_NXcbq8",
+        "store_qnDhRN",
+        "store_cr98h7",
+        "store_gb64X8",
+        "store_hUtafr",
+        "store_fBfmCb",
+        "store_zmU6AA",
+        "store_HT7ibb",
+        "store_dyF6Jn",
+        "store_8AyTVD"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": true,
+        "heading": "Overseas Locations",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "image_height": "400px",
+        "mobile_image_height": "300px",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 25,
+        "bottom_space_desktop": 15,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    }
+  },
+  "order": [
+    "page_banner_VGVQQM",
+    "main",
+    "store_locator_mFjqNY"
+  ]
+}

@@ -1,0 +1,142 @@
+<variant-selects
+id="VariantPicker-{{ product_form_id }}"
+class="variant-picker no-js-hidden"
+form="{{ product_form_id }}"
+data-section-id="{{ section_id }}"
+data-product-id="{{ product.id }}"
+data-product-url="{{ product.url }}"
+data-update-url="{{ update_url }}"
+{{ block.shopify_attributes }}
+>
+{% if product != blank %}
+  {%- for option in product.options_with_values -%}
+    {%- liquid
+    assign variantOption = 'option' | append: option.position
+    assign colorOptions = settings.color_name | downcase
+    assign downOption = option.name | downcase
+    assign optionIndex = forloop.index
+  -%}
+    <div class="product-variant-group">
+        <div class="product-variants-wrapper no-js-hidden">
+            <h6 class="product-variants-title text">{{ option.name }}</h6>
+            {% if settings.option_style == 'swatch' %}
+                <fieldset class="product-variants-fieldset" data-option-index="option{{ forloop.index }}"    data-option-slug="{{ option.name | handleize }}"
+                >
+                    <div class="product-variants-box {% if colorOptions contains downOption %}color-option {{ settings.color_swatch_type }}{% endif %} ">
+                    <ul class="product-variants-list product-loop-variants{% if quickViewcard ==  true %} variants-small{% endif %}">
+                    {%- for value in option.values -%}
+
+                        {% liquid
+                        if value.swatch.image
+                        assign image_url = value.swatch.image | image_url: width: 50
+                        assign swatch_value = '--swatch-img: url(' | append: image_url | append: ')'
+                        assign swatch_focal_point = value.swatch.image.presentation.focal_point
+                        elsif value.swatch.color
+                            assign swatch_value = '--swatch-color: rgb(' | append: value.swatch.color.rgb | append: ')'
+                        else
+                            assign swatch_value = null
+                        endif
+
+                        assign option_disabled = false
+                        if value.available
+                          assign option_disabled = true
+                        endif
+                        
+                        %}
+                      
+                        <li class="variant-item {% if option.selected_value == value %}active{% endif %}">
+                        <label class="hidden" for="option-{{ optionIndex }}-{{ forloop.index }}">{{- value -}}</label>
+                        <input
+                            class="productOption{% if option_disabled != true %} not-available{% endif %}"
+                            id="option-{{ optionIndex }}-{{ forloop.index }}"
+                            form="{{ product_form_id }}"
+                            type="radio"
+                            name="option-{{ optionIndex }}"
+                            value="{{ value | escape }}"
+                            title="{{ value }}"
+                            {% if value.selected %}
+                                checked
+                              {% endif %}
+                              {% unless value.available %}
+                                class="disabled"
+                              {% endunless %}
+                            data-product-url="{{ value.product_url }}"
+                            data-variant-id="{{ value.variant.id }}"
+                            data-option-value-id="{{ value.id }}"
+                            data-option-value="{{ value | escape }}"
+                        >
+                        <span
+                            class="variant-item-name{% if value and settings.show_variant_image  %} variant-img {% elsif value.swatch.image %} variant-img{% endif %} {% if swatch_focal_point %} variant-image-focal{% endif %}"
+                            {% if colorOptions contains downOption %}
+                            data-tooltip="{{ value }}"
+                            {% if value and settings.show_variant_image %}
+                                style="--swatch-img:url({{ product.featured_media.preview_image | image_url: width: '30' }});"
+                            {% else %}
+                                {% if swatch_value %}style="{{ swatch_value }}; {% if swatch_focal_point %} --swatch-focal-point: {{ swatch_focal_point }};{% endif %}" {% else %} data-color="{{ value }}" style="--swatch-color:{{ value }};"{% endif %}
+                            {% endif %}
+                            {% endif %}
+                        >
+                            {% unless colorOptions contains downOption -%}
+                            {{- value -}}
+                            {%- endunless -%}
+                        </span>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                </fieldset>
+       
+                {% else %}
+                <div
+                class=" js product-form-input variant-input-wrapper product-input-dropdown"
+                data-option-index="option{{ forloop.index }}"
+                data-option-slug="{{ option.name | handleize }}"
+                >
+                <div class="select-control">
+                    <select
+                    id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                    class="form-control"
+                    name="options[{{ option.name | escape }}]"
+                    form="{{ product_form_id }}"
+                    aria-label="Product variants"
+                    >
+                    {%- for option_value in option.values -%}
+                        {% liquid
+                        assign option_disabled = true
+                        if option_value.available
+                            assign option_disabled = false
+                        endif
+                        %}
+                        <option
+                        id="{{ input_id }}"
+                        value="{{ option_value | escape }}"
+                        {% if option_value.selected %}
+                            selected="selected"
+                        {% endif %}
+                        data-product-url="{{ option_value.product_url }}"
+                        data-variant-id="{{ option_value.variant.id }}" 
+                        data-option-value-id="{{ option_value.id }}"
+                        data-option-value="{{ option_value | escape }}"
+                        >
+                        {% if option_disabled -%}
+                            {{- 'products.product.value_unavailable' | t: option_value: option_value -}}
+                        {%- else -%}
+                            {{- option_value -}}
+                        {%- endif %}
+                        </option>
+                    {% endfor %}
+                    </select>
+                    <span class="svg-wrapper">
+                    {% render 'icons', icon: 'icon-caret' %}
+                    </span>
+                </div>
+                </div>
+            {% endif %}
+            </div>
+    </div>
+  {% endfor %} 
+  <script type="application/json" data-selected-variant>
+  {{ product.selected_or_first_available_variant | json }}
+</script>
+{% endif %}
+</variant-selects>

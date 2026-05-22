@@ -1,0 +1,36 @@
+{%- if product.metafields.reviews.rating_count > 0 -%}
+    {%- liquid 
+      assign productRating = product.metafields.reviews.rating.value.rating | floor
+      assign decimalProductRating = 0
+      assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
+      if decimal >= 0.3 and decimal <= 0.7
+        assign decimalProductRating = 0.5
+      endif 
+    -%}
+    <div class="product-reviews" {{ block.shopify_attributes }}>
+      <ul class="list-inline product-reviews-list">
+        {% for i in (1..5) %}
+          {% if i <= productRating %}
+            <li class="product-reviews-star">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44 4.95H13.63L9.43 8.02L11.04 12.97L6.83 9.92L2.62 12.97L4.22 8.02L0 4.95H5.2L6.82 0L8.44 4.95Z" fill="currentColor"/>
+              </svg>
+            </li>
+            {% elsif productRating < i and decimalProductRating == 0.5 %}
+             <li class="product-reviews-star">
+              <svg class="half-fill-star" width="15" height="13" viewBox="0 0 15 13" fill="none">
+                <path d="M6.12968 4.94977H0.929688L5.12968 8.01977L3.53969 12.9698L7.73969 9.91977V0.00976562L6.12968 4.94977Z" fill="currentColor"/>
+                <path d="M11.9583 12.97L10.3583 8.02L14.5583 4.95H9.35828L7.74828 0L7.73828 0.01V9.92H7.74828L11.9583 12.97Z" fill="#ddd"/>
+              </svg>
+            </li>
+            {% else %}
+              <li class="product-reviews-star">
+                <svg class="unfill-star" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44 4.95H13.63L9.43 8.02L11.04 12.97L6.83 9.92L2.62 12.97L4.22 8.02L0 4.95H5.2L6.82 0L8.44 4.95Z" fill="#ddd"/>
+                </svg>
+            </li>
+          {% endif %}
+        {% endfor %}  
+      </ul>
+    </div>
+  {%- endif -%}  
