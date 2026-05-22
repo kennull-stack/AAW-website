@@ -8,227 +8,213 @@
  * ------------------------------------------------------------
  */
 {
-    "sections":  {
-                     "z05_hero_story":  {
-                                            "type":  "custom-liquid",
-                                            "settings":  {
-                                                             "section_visibility":  "always",
-                                                             "custom_liquid":  "\u003cstyle\u003e\n  .z05-feature-shell{width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}\n  .z05-feature-shell *{box-sizing:border-box;}\n  .z05-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}\n  .z05-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 18px;color:#b8b0a2;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}\n  .z05-eyebrow:before{content:\"\";width:36px;height:1px;background:#d6a756;display:inline-block;}\n  .z05-hero{min-height:82vh;display:grid;grid-template-columns:minmax(0,0.84fr) minmax(340px,1.16fr);gap:42px;align-items:end;padding:82px 0 34px;}\n  .z05-hero-copy{padding-bottom:32px;position:relative;z-index:2;}\n  .z05-hero h1{margin:0;color:#fff;font-size:clamp(54px,8vw,128px);line-height:.86;font-weight:800;text-transform:uppercase;letter-spacing:0;}\n  .z05-hero .z05-dek{max-width:720px;margin:24px 0 0;color:#d8d1c7;font-size:clamp(18px,2vw,25px);line-height:1.38;} .z05-brand-slogan{margin:20px 0 0;color:#f4e8d0;font-size:15px;line-height:1.55;font-weight:800;text-transform:uppercase;} .z05-brand-slogan span{display:block;color:#b8b0a2;font-weight:700;text-transform:none;}\n  .z05-meta{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 0;padding:0;list-style:none;color:#f4e8d0;}\n  .z05-meta li{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);padding:10px 13px;font-size:13px;font-weight:700;text-transform:uppercase;}\n  .z05-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}\n  .z05-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid #e2b768;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:13px;color:#090909;background:#e2b768;}\n  .z05-btn.secondary{background:transparent;color:#f2e5c5;}\n  .z05-hero-media{position:relative;min-height:560px;display:flex;align-items:end;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12);}\n  .z05-hero-media:before{content:\"AuAg\";position:absolute;top:26px;right:22px;color:rgba(255,255,255,.08);font-size:clamp(80px,13vw,180px);line-height:.8;font-weight:900;letter-spacing:0;}\n  .z05-hero-media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.04) saturate(.95);}\n  .z05-stat-strip{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:#0f0f0f;}\n  .z05-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0;}\n  .z05-stat{padding:24px 20px;background:#151515;min-height:120px;}\n  .z05-stat b{display:block;color:#fff;font-size:24px;line-height:1.05;}\n  .z05-stat span{display:block;margin-top:10px;color:#bdb5aa;font-size:13px;line-height:1.35;}\n  .z05-section{padding:76px 0;background:#f4f1ea;color:#111;}\n  .z05-section.dark{background:#080808;color:#f5f2ea;}\n  .z05-section h2{margin:0;color:inherit;font-size:clamp(32px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;}\n  .z05-section p{font-size:17px;line-height:1.62;color:inherit;}\n  .z05-grid-2{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:start;}\n  .z05-kicker{margin:0 0 16px;color:#a87725;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;}\n  .z05-number-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;}\n  .z05-number-card{border-top:2px solid #111;padding-top:16px;}\n  .z05-number-card .num{display:block;color:#a87725;font-size:38px;font-weight:900;line-height:1;}\n  .z05-number-card h3{margin:14px 0 8px;font-size:20px;text-transform:uppercase;letter-spacing:0;}\n  .z05-table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 16px 42px rgba(0,0,0,.08);}\n  .z05-table th,.z05-table td{padding:16px;border-bottom:1px solid #ded8cd;text-align:left;vertical-align:top;font-size:14px;line-height:1.45;}\n  .z05-table th{width:32%;color:#6d4b16;text-transform:uppercase;font-size:12px;letter-spacing:.08em;}\n  .z05-build-card{background:#111;color:#f4eee4;padding:32px;border:1px solid rgba(255,255,255,.12);}\n  .z05-build-card dl{display:grid;grid-template-columns:150px 1fr;gap:0;margin:24px 0 0;}\n  .z05-build-card dt,.z05-build-card dd{margin:0;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14px;}\n  .z05-build-card dt{color:#bfa46b;text-transform:uppercase;font-weight:800;letter-spacing:.08em;font-size:11px;}\n  .z05-build-card dd{color:#fff;font-weight:700;}\n  .z05-photo-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:34px;}\n  .z05-photo-grid .panel{min-height:320px;background:#161616;border:1px solid rgba(255,255,255,.1);overflow:hidden;position:relative;}\n  .z05-photo-grid .panel img{width:100%;height:100%;object-fit:cover;display:block;}\n  .z05-photo-grid .panel .caption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.65);color:#f1e5cc;padding:12px;font-size:12px;line-height:1.35;}\n  .z05-copy-stack{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:30px;}\n  .z05-copy-stack article{border:1px solid rgba(255,255,255,.15);padding:24px;background:#111;}\n  .z05-copy-stack h3{margin:0 0 12px;color:#fff;font-size:23px;text-transform:uppercase;letter-spacing:0;}\n  .z05-copy-stack p{color:#cfc7bb;margin:0;}\n  .z05-faq{display:grid;gap:14px;margin-top:26px;}\n  .z05-faq details{background:#fff;border:1px solid #ded8cd;padding:18px;}\n  .z05-faq summary{cursor:pointer;font-weight:900;text-transform:uppercase;}\n  .z05-faq p{margin:12px 0 0;color:#2d2923;}\n  .z05-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 18px;border-top:1px solid rgba(255,255,255,.12);}\n  .z05-final h2{font-size:clamp(34px,6vw,84px);margin:0;text-transform:uppercase;letter-spacing:0;line-height:.95;}\n  .z05-final p{max-width:720px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55;}\n  @media(max-width:900px){.z05-hero,.z05-grid-2,.z05-photo-grid,.z05-copy-stack{grid-template-columns:1fr}.z05-hero{padding-top:56px;min-height:auto}.z05-hero-media{min-height:380px}.z05-stats,.z05-number-cards{grid-template-columns:1fr 1fr}.z05-build-card dl{grid-template-columns:1fr}.z05-build-card dt{border-bottom:0;padding-bottom:2px}.z05-build-card dd{padding-top:2px}}\n  @media(max-width:560px){.z05-wrap{width:min(100% - 24px,1180px)}.z05-hero h1{font-size:52px}.z05-stats,.z05-number-cards{grid-template-columns:1fr}.z05-section{padding:52px 0}.z05-table th,.z05-table td{display:block;width:100%;padding:12px 14px}.z05-table th{padding-bottom:2px}.z05-table td{padding-top:2px}.z05-actions .z05-btn{width:100%;}}\n\u003c/style\u003e\n\u003cdiv class=\"z05-feature-shell\"\u003e\n  \u003csection class=\"z05-hero z05-wrap\"\u003e\n    \u003cdiv class=\"z05-hero-copy\"\u003e\n      \u003cdiv class=\"z05-eyebrow\"\u003eAAW Z Series Universal - AuAg Launch Edition\u003c/div\u003e\n      \u003ch1\u003e{{ product.title | default: \u0027Z05 AuAg Universal In-Ear Monitor\u0027 }}\u003c/h1\u003e\n      \u003cp class=\"z05-dek\"\u003eOne monitor, two musical personalities. Z05 AuAg pairs a tactile 10mm dynamic woofer with TwinCore switching, letting you choose between richer body or brighter focus without changing IEMs.\u003c/p\u003e\n      \u003cp class=\"z05-brand-slogan\"\u003eThose who listen will find the way.\u003cspan\u003e善听者，终能找到道路。\u003c/span\u003e\u003c/p\u003e\n      \u003cul class=\"z05-meta\" aria-label=\"Z05 AuAg highlights\"\u003e\n        \u003cli\u003eTwinCore dual voice\u003c/li\u003e\u003cli\u003eAuAg launch finish\u003c/li\u003e\u003cli\u003e10mm PET dynamic woofer\u003c/li\u003e\u003cli\u003e3.5 / 4.4 / Type-C ready\u003c/li\u003e\n      \u003c/ul\u003e\n      \u003cdiv class=\"z05-actions\"\u003e\u003ca class=\"z05-btn\" href=\"#z05-order\"\u003eConfigure Z05 AuAg\u003c/a\u003e\u003ca class=\"z05-btn secondary\" href=\"#z05-twincore\"\u003eHear the TwinCore story\u003c/a\u003e\u003c/div\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"z05-hero-media\"\u003e\n      \u003cimg src=\"{{ \u0027z05-auag-forged-carbon-faceplate-hero.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg Launch Edition forged carbon faceplates with gold and silver foil lacing\"\u003e\n    \u003c/div\u003e\n  \u003c/section\u003e\n  \u003cdiv class=\"z05-stat-strip\"\u003e\u003cdiv class=\"z05-wrap z05-stats\"\u003e\u003cdiv class=\"z05-stat\"\u003e\u003cb\u003eTwinCore\u003c/b\u003e\u003cspan\u003eBlue for weight and flow. Red for openness and focus. Two voicings built for real listening moods.\u003c/span\u003e\u003c/div\u003e\u003cdiv class=\"z05-stat\"\u003e\u003cb\u003eDynamic Bass\u003c/b\u003e\u003cspan\u003eA PET diaphragm 10mm woofer gives kick drums, bass guitars, and synth lines physical shape.\u003c/span\u003e\u003c/div\u003e\u003cdiv class=\"z05-stat\"\u003e\u003cb\u003eHybrid Detail\u003c/b\u003e\u003cspan\u003eBalanced armatures bring vocal presence, separation, and upper harmonic air around the dynamic low end.\u003c/span\u003e\u003c/div\u003e\u003cdiv class=\"z05-stat\"\u003e\u003cb\u003eAuAg\u003c/b\u003e\u003cspan\u003eGold foil on the right shell, silver foil on the left, both set into forged carbon.\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003c/div\u003e",
-                                                             "content_width":  "large",
-                                                             "text_alignment":  "left",
-                                                             "color_scheme":  "primary",
-                                                             "top_space_desktop":  0,
-                                                             "bottom_space_desktop":  0,
-                                                             "top_space_mobile":  0,
-                                                             "bottom_space_mobile":  0
-                                                         }
-                                        },
-                     "z05_overview":  {
-                                          "type":  "custom-liquid",
-                                          "settings":  {
-                                                           "section_visibility":  "always",
-                                                           "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eOverview\u003c/p\u003e\u003ch2\u003eZ05 AuAg: one launch edition, two musical moods\u003c/h2\u003e\u003cp\u003eZ05 AuAg is built for listeners who want a compact universal IEM that can move with their library. It can sound fuller and more enveloping, or cleaner and more incisive, while keeping the same hybrid-driver texture and AAW house sense of space.\u003c/p\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv class=\"z05-number-cards\"\u003e\u003carticle class=\"z05-number-card\"\u003e\u003cspan class=\"num\"\u003eAu\u003c/span\u003e\u003ch3\u003eGold Right Shell\u003c/h3\u003e\u003cp\u003eThe right earpiece carries gold foil through the forged carbon faceplate and matching body shell, giving the pair its warm visual signature.\u003c/p\u003e\u003c/article\u003e\u003carticle class=\"z05-number-card\"\u003e\u003cspan class=\"num\"\u003eAg\u003c/span\u003e\u003ch3\u003eSilver Left Shell\u003c/h3\u003e\u003cp\u003eThe left earpiece answers in silver foil, creating a deliberate precious-metal pairing rather than a random decorative accent.\u003c/p\u003e\u003c/article\u003e\u003carticle class=\"z05-number-card\"\u003e\u003cspan class=\"num\"\u003e02\u003c/span\u003e\u003ch3\u003eTwo Voices\u003c/h3\u003e\u003cp\u003eTwinCore lets Z05 shift from easy musical weight to sharper audiophile focus with a physical switch on the shell.\u003c/p\u003e\u003c/article\u003e\u003c/div\u003e\u003ctable class=\"z05-table\"\u003e\u003ctr\u003e\u003cth\u003eListening style\u003c/th\u003e\u003ctd\u003eSwitchable hybrid tuning for playlists, albums, portable sources, and long daily listening.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eLow-end feel\u003c/th\u003e\u003ctd\u003eDynamic-driver punch with natural decay, useful for listeners who want bass texture instead of flat quantity.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eTop-end feel\u003c/th\u003e\u003ctd\u003eBalanced armature speed and air for vocal lift, cymbal texture, and spatial definition.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eFinish\u003c/th\u003e\u003ctd\u003eForged carbon faceplates and shells with side-specific gold and silver foil lacing.\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e",
-                                                           "content_width":  "large",
-                                                           "text_alignment":  "left",
-                                                           "color_scheme":  "primary",
-                                                           "top_space_desktop":  0,
-                                                           "bottom_space_desktop":  0,
-                                                           "top_space_mobile":  0,
-                                                           "bottom_space_mobile":  0
-                                                       }
-                                      },
-                     "z05_order_intro":  {
-                                             "type":  "custom-liquid",
-                                             "settings":  {
-                                                              "section_visibility":  "always",
-                                                              "custom_liquid":  "\u003cdiv id=\"z05-order\" class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section dark\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eConfigure\u003c/p\u003e\u003ch2\u003eChoose your Z05 AuAg\u003c/h2\u003e\u003c/div\u003e\u003cdiv\u003e\u003cp\u003eSelect the AuAg Launch Edition package below. The live product area includes current price, availability, checkout options, and the Shopify product gallery.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e",
-                                                              "content_width":  "large",
-                                                              "text_alignment":  "left",
-                                                              "color_scheme":  "primary",
-                                                              "top_space_desktop":  0,
-                                                              "bottom_space_desktop":  0,
-                                                              "top_space_mobile":  0,
-                                                              "bottom_space_mobile":  0
-                                                          }
-                                         },
-                     "main":  {
-                                  "type":  "main-product",
-                                  "blocks":  {
-                                                 "title":  {
-                                                               "type":  "title",
-                                                               "settings":  {
-                                                                                "heading_size":  "h3",
-                                                                                "seo_heading":  "h3"
-                                                                            }
-                                                           },
-                                                 "price":  {
-                                                               "type":  "price",
-                                                               "settings":  {
-                                                                                "hide_shipping_content":  false
-                                                                            }
-                                                           },
-                                                 "variant_z05":  {
-                                                                     "type":  "variant",
-                                                                     "settings":  {
-
-                                                                                  }
-                                                                 },
-                                                 "quantity_selector":  {
-                                                                           "type":  "quantity_selector",
-                                                                           "disabled":  true,
-                                                                           "settings":  {
-
-                                                                                        }
-                                                                       },
-                                                 "pickup_z05":  {
-                                                                    "type":  "pickup",
-                                                                    "settings":  {
-
-                                                                                 }
-                                                                },
-                                                 "button":  {
-                                                                "type":  "button",
-                                                                "settings":  {
-                                                                                 "dynamic_checkout_btn":  true,
-                                                                                 "show_recipient_form":  false
-                                                                             }
-                                                            },
-                                                 "complementary_z05":  {
-                                                                           "type":  "complementary_products",
-                                                                           "settings":  {
-                                                                                            "heading":  "Pairs well with",
-                                                                                            "products_count":  8
-                                                                                        }
-                                                                       },
-                                                 "social_z05":  {
-                                                                    "type":  "social-icons",
-                                                                    "settings":  {
-
-                                                                                 }
-                                                                }
-                                             },
-                                  "block_order":  [
-                                                      "title",
-                                                      "price",
-                                                      "variant_z05",
-                                                      "quantity_selector",
-                                                      "pickup_z05",
-                                                      "button",
-                                                      "complementary_z05",
-                                                      "social_z05"
-                                                  ],
-                                  "settings":  {
-                                                   "gallery_style":  "slider",
-                                                   "thumbnail_position":  "left",
-                                                   "overlapped_thumbnails":  false,
-                                                   "enable_sticky_content":  true,
-                                                   "desktop_media_width":  "medium",
-                                                   "desktop_grid_image_size":  "auto",
-                                                   "image_zoom":  "lightbox",
-                                                   "enable_sticky_cart":  true,
-                                                   "thumbnial_on_mobile":  false,
-                                                   "mobile_grid_image_size":  "auto",
-                                                   "color_scheme":  "",
-                                                   "top_space_desktop":  45,
-                                                   "bottom_space_desktop":  55,
-                                                   "top_space_mobile":  35,
-                                                   "bottom_space_mobile":  45
-                                               }
-                              },
-                     "z05_engineering":  {
-                                             "type":  "custom-liquid",
-                                             "settings":  {
-                                                              "section_visibility":  "always",
-                                                              "custom_liquid":  "\u003cdiv id=\"z05-engineering\" class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section dark\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eCraft \u0026 Sound\u003c/p\u003e\u003ch2\u003ePrecious-metal shell. Serious portable tuning.\u003c/h2\u003e\u003cdiv class=\"z05-build-card\"\u003e\u003cstrong\u003eAAW Z05 AuAg\u003c/strong\u003e\u003cdl\u003e\u003cdt\u003eFormat\u003c/dt\u003e\u003cdd\u003eUniversal-fit hybrid in-ear monitor\u003c/dd\u003e\u003cdt\u003eLow End\u003c/dt\u003e\u003cdd\u003e10mm PET diaphragm dynamic woofer\u003c/dd\u003e\u003cdt\u003eClarity\u003c/dt\u003e\u003cdd\u003eDedicated mid and super-high balanced armature drivers\u003c/dd\u003e\u003cdt\u003eVoice Control\u003c/dt\u003e\u003cdd\u003eTwinCore Crossover Switch System\u003c/dd\u003e\u003cdt\u003ePressure Flow\u003c/dt\u003e\u003cdd\u003eBass-Flow Vent Pressure System\u003c/dd\u003e\u003cdt\u003eFinish\u003c/dt\u003e\u003cdd\u003eForged carbon with gold foil right shell and silver foil left shell\u003c/dd\u003e\u003cdt\u003eIn The Box\u003c/dt\u003e\u003cdd\u003e2-pin detachable cable, 3.5mm, 4.4mm balanced, Type-C terminations, carrying case, LiquidMorph eartips\u003c/dd\u003e\u003c/dl\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv\u003e\u003cp\u003eZ05 AuAg is tuned for the listener who changes albums, sources, and moods through the day. The dynamic woofer gives drums and bass lines physical push, while the balanced armatures keep voices and upper harmonics clean enough for focused listening.\u003c/p\u003e\u003cp\u003eThe AuAg finish gives the monitor its visual tension: gold on the right, silver on the left, both suspended in forged carbon and continued through the shell body. It looks collectible, but the purpose is still musical: fit, seal, texture, and control.\u003c/p\u003e\u003cdiv class=\"z05-photo-grid\"\u003e\u003cdiv class=\"panel\"\u003e\u003cimg src=\"{{ \u0027z05-auag-gold-silver-faceplate-pair.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg gold and silver forged carbon faceplates\" loading=\"lazy\"\u003e\u003cdiv class=\"caption\"\u003eGold right shell and silver left shell, both built on forged carbon with full-shell foil lacing.\u003c/div\u003e\u003c/div\u003e\u003cdiv class=\"panel\"\u003e\u003cimg src=\"{{ \u0027z05-auag-twincore-switch-closeup.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg TwinCore switch close-up\" loading=\"lazy\"\u003e\u003cdiv class=\"caption\"\u003eThe TwinCore switch gives Z05 AuAg its two listening profiles.\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e",
-                                                              "content_width":  "large",
-                                                              "text_alignment":  "left",
-                                                              "color_scheme":  "primary",
-                                                              "top_space_desktop":  0,
-                                                              "bottom_space_desktop":  0,
-                                                              "top_space_mobile":  0,
-                                                              "bottom_space_mobile":  0
-                                                          }
-                                         },
-                     "z05_sound":  {
-                                       "type":  "custom-liquid",
-                                       "settings":  {
-                                                        "section_visibility":  "always",
-                                                        "custom_liquid":  "\u003cdiv id=\"z05-twincore\" class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section dark z05-twincore-section\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eTwinCore Crossover Switch System\u003c/p\u003e\u003ch2\u003eNot a bass switch. Two ways to hear Z05.\u003c/h2\u003e\u003cp\u003eMost IEM switches feel like a small EQ nudge. TwinCore is different: it moves Z05 AuAg between two complete listening profiles, so bass weight, vocal position, treble air, and overall stage energy shift together.\u003c/p\u003e\u003cp\u003eUse it like you would choose gain, filter, or cartridge flavor in a serious hi-fi chain: one position for warmth and immersion, the other for focus and bite.\u003c/p\u003e\u003cdiv class=\"z05-actions\"\u003e\u003ca class=\"z05-btn\" href=\"#z05-order\"\u003eChoose your Z05 AuAg\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv class=\"z05-twincore-panel\"\u003e\u003cimg src=\"{{ \u0027z05-auag-twincore-switch-closeup.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg TwinCore switch with blue and red position markers\" loading=\"lazy\"\u003e\u003cdiv class=\"z05-mode-grid\"\u003e\u003carticle\u003e\u003cspan\u003eBlue Mode\u003c/span\u003e\u003ch3\u003eWeight / Flow\u003c/h3\u003e\u003cp\u003eFuller low-end body, smoother upper harmonics, and a more relaxed center image for long sessions, vocals, jazz, pop, and immersive listening.\u003c/p\u003e\u003c/article\u003e\u003carticle\u003e\u003cspan\u003eRed Mode\u003c/span\u003e\u003ch3\u003eFocus / Spark\u003c/h3\u003e\u003cp\u003eTighter bass contour, more forward clarity, extra cymbal air, and a livelier edge for detail hunting, faster genres, and cleaner separation.\u003c/p\u003e\u003c/article\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e\u003cstyle\u003e.z05-twincore-section{background:#050505}.z05-twincore-section h2{max-width:760px}.z05-twincore-section p{color:#d8d1c7}.z05-twincore-panel{background:#111;border:1px solid rgba(255,255,255,.14);padding:12px}.z05-twincore-panel img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.z05-mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:12px;background:rgba(255,255,255,.14)}.z05-mode-grid article{background:#0b0b0b;padding:20px}.z05-mode-grid span{display:inline-flex;margin-bottom:12px;color:#e2b768;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-mode-grid h3{margin:0 0 10px;color:#fff;font-size:25px;text-transform:uppercase;letter-spacing:0}.z05-mode-grid p{margin:0;color:#cfc7bb;font-size:14px;line-height:1.5}@media(max-width:700px){.z05-mode-grid{grid-template-columns:1fr}}\u003c/style\u003e",
-                                                        "content_width":  "large",
-                                                        "text_alignment":  "left",
-                                                        "color_scheme":  "primary",
-                                                        "top_space_desktop":  0,
-                                                        "bottom_space_desktop":  0,
-                                                        "top_space_mobile":  0,
-                                                        "bottom_space_mobile":  0
-                                                    }
-                                   },
-                     "z05_faq":  {
-                                     "type":  "custom-liquid",
-                                     "settings":  {
-                                                      "section_visibility":  "always",
-                                                      "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eFAQ\u003c/p\u003e\u003ch2\u003eZ05 AuAg buying notes\u003c/h2\u003e\u003cp\u003eShort answers for the questions listeners ask before choosing the AuAg Launch Edition.\u003c/p\u003e\u003c/div\u003e\u003cdiv class=\"z05-faq\"\u003e\u003cdetails open\u003e\u003csummary\u003eWhat does AuAg mean?\u003c/summary\u003e\u003cp\u003eAuAg names the Launch Edition decoration: Au for gold and Ag for silver. The right shell carries gold foil lacing, while the left shell carries silver foil lacing.\u003c/p\u003e\u003c/details\u003e\u003cdetails\u003e\u003csummary\u003eIs this only a cosmetic edition?\u003c/summary\u003e\u003cp\u003eNo. The AuAg finish is the launch identity, but the listening story is the Z05 platform itself: dynamic bass, hybrid-driver clarity, Bass-Flow venting, and TwinCore switching.\u003c/p\u003e\u003c/details\u003e\u003cdetails\u003e\u003csummary\u003eWhat does the TwinCore switch change?\u003c/summary\u003e\u003cp\u003eIt changes the overall voicing. Blue mode leans fuller, smoother, and more grounded. Red mode leans cleaner, more open, and more energetic. The effect is broader than a simple bass boost.\u003c/p\u003e\u003c/details\u003e\u003cdetails\u003e\u003csummary\u003eWhat cable is included?\u003c/summary\u003e\u003cp\u003eZ05 AuAg includes a 2-pin detachable cable with swappable 3.5mm stereo, 4.4mm balanced, and Type-C terminations, plus LiquidMorph eartips for its universal-fit seal.\u003c/p\u003e\u003c/details\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003csection class=\"z05-final\"\u003e\u003ch2\u003eZ05 AuAg: choose the mood, keep the monitor\u003c/h2\u003e\u003cp\u003eThose who listen will find the way.\u003cbr\u003e善听者，终能找到道路。\u003c/p\u003e\u003cp\u003eA forged-carbon launch edition with dynamic-driver body, balanced-armature detail, and TwinCore control for the way you actually listen.\u003c/p\u003e\u003cdiv class=\"z05-actions\" style=\"justify-content:center\"\u003e\u003ca class=\"z05-btn\" href=\"#z05-order\"\u003eBack to configuration\u003c/a\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e",
-                                                      "content_width":  "large",
-                                                      "text_alignment":  "left",
-                                                      "color_scheme":  "primary",
-                                                      "top_space_desktop":  0,
-                                                      "bottom_space_desktop":  0,
-                                                      "top_space_mobile":  0,
-                                                      "bottom_space_mobile":  0
-                                                  }
-                                 },
-                     "z05_product_card":  {
-                                              "type":  "custom-liquid",
-                                              "settings":  {
-                                                               "section_visibility":  "always",
-                                                               "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section dark z05-product-card-section\"\u003e\u003cdiv class=\"z05-wrap\"\u003e\u003cp class=\"z05-kicker\"\u003eAt A Glance\u003c/p\u003e\u003ch2\u003eThe Z05 AuAg setup\u003c/h2\u003e\u003cdiv class=\"z05-card-asset\"\u003e\u003cimg src=\"{{ \u0027z05-auag-architecture-spec-card.png\u0027 | asset_url }}\" alt=\"AAW Z05 AuAg product card with key features and specifications\" loading=\"lazy\"\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e\u003cstyle\u003e.z05-product-card-section .z05-card-asset{margin-top:32px;background:#050505;border:1px solid rgba(255,255,255,.12);padding:12px}.z05-product-card-section img{display:block;width:100%;height:auto}.z05-product-card-section h2{max-width:920px}\u003c/style\u003e",
-                                                               "content_width":  "large",
-                                                               "text_alignment":  "left",
-                                                               "color_scheme":  "primary",
-                                                               "top_space_desktop":  0,
-                                                               "bottom_space_desktop":  0,
-                                                               "top_space_mobile":  0,
-                                                               "bottom_space_mobile":  0
-                                                           }
-                                          },
-                     "z05_liquidmorph":  {
-                                             "type":  "custom-liquid",
-                                             "settings":  {
-                                                              "section_visibility":  "always",
-                                                              "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section z05-liquidmorph-section\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eIncluded Fit System\u003c/p\u003e\u003ch2\u003eLiquidMorph eartips\u003c/h2\u003e\u003cp\u003eZ05 AuAg ships with LiquidMorph eartips: clear, soft-sealing tips chosen to help the monitor keep its bass shape, isolation, and comfort without making the accessory kit feel crowded.\u003c/p\u003e\u003ctable class=\"z05-table\"\u003e\u003ctr\u003e\u003cth\u003eIncluded tip system\u003c/th\u003e\u003ctd\u003eLiquidMorph eartips\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eWhy it matters\u003c/th\u003e\u003ctd\u003eA stable seal helps bass texture, vocal body, and channel balance stay consistent from session to session.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eDaily fit\u003c/th\u003e\u003ctd\u003eSoft universal comfort for portable listening, commuting, and longer album sessions.\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"z05-liquidmorph-media\"\u003e\u003cimg src=\"{{ \u0027z05-liquidmorph-clear-eartips-closeup.jpg\u0027 | asset_url }}\" alt=\"LiquidMorph eartips included with Z05 AuAg\" loading=\"lazy\"\u003e\u003cdiv class=\"caption\"\u003eThe clear LiquidMorph flange and teal inner bore show the soft-sealing eartip shape included with Z05 AuAg.\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e\u003cstyle\u003e.z05-liquidmorph-section{background:#0b0c0b;color:#f5f2ea}.z05-liquidmorph-section h2{max-width:680px}.z05-liquidmorph-section p{color:#d8d1c7}.z05-liquidmorph-section .z05-table{margin-top:24px;background:#141414;box-shadow:none}.z05-liquidmorph-section .z05-table th,.z05-liquidmorph-section .z05-table td{border-bottom:1px solid rgba(255,255,255,.14);color:#f4eee4}.z05-liquidmorph-section .z05-table th{color:#83d9d0}.z05-liquidmorph-media{position:relative;min-height:480px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#050505}.z05-liquidmorph-media img{display:block;width:100%;height:100%;min-height:480px;object-fit:cover}.z05-liquidmorph-media .caption{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.14);padding:13px;color:#e5f7f5;font-size:13px;line-height:1.4}@media(max-width:900px){.z05-liquidmorph-media,.z05-liquidmorph-media img{min-height:340px}}\u003c/style\u003e",
-                                                              "content_width":  "large",
-                                                              "text_alignment":  "left",
-                                                              "color_scheme":  "primary",
-                                                              "top_space_desktop":  0,
-                                                              "bottom_space_desktop":  0,
-                                                              "top_space_mobile":  0,
-                                                              "bottom_space_mobile":  0
-                                                          }
-                                         },
-                     "z05_gallery":  {
-                                         "type":  "custom-liquid",
-                                         "settings":  {
-                                                          "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section dark z05-gallery-section\"\u003e\u003cdiv class=\"z05-wrap\"\u003e\u003cp class=\"z05-kicker\"\u003eLaunch Image Set\u003c/p\u003e\u003ch2\u003eAuAg Launch Edition details\u003c/h2\u003e\u003cp class=\"z05-gallery-lead\"\u003eA closer look at the gold/silver forged carbon finish, TwinCore switch, swappable cable terminations, and LiquidMorph fit system.\u003c/p\u003e\u003cdiv class=\"z05-gallery-grid\"\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-forged-carbon-faceplate-hero.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg faceplate hero image\" loading=\"lazy\"\u003e\u003cfigcaption\u003eAuAg faceplate hero\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-gold-silver-faceplate-pair.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg gold and silver faceplates\" loading=\"lazy\"\u003e\u003cfigcaption\u003eGold right, silver left\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-twincore-switch-closeup.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg TwinCore switch close-up\" loading=\"lazy\"\u003e\u003cfigcaption\u003eTwinCore switch\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-angled-shell-profile.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg angled shell view\" loading=\"lazy\"\u003e\u003cfigcaption\u003eUniversal shell angle\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-swappable-cable-terminations.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg cable and swappable terminations\" loading=\"lazy\"\u003e\u003cfigcaption\u003eSwappable terminations\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-complete-package-flatlay.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg full package flatlay\" loading=\"lazy\"\u003e\u003cfigcaption\u003eFull package flatlay\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-package-with-liquidmorph-tray.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg cable monitors and eartip tray\" loading=\"lazy\"\u003e\u003cfigcaption\u003eAccessories and fit system\u003c/figcaption\u003e\u003c/figure\u003e\u003cfigure\u003e\u003cimg src=\"{{ \u0027z05-auag-liquidmorph-accessory-tray.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg LiquidMorph eartip tray\" loading=\"lazy\"\u003e\u003cfigcaption\u003eLiquidMorph tray\u003c/figcaption\u003e\u003c/figure\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e\u003cstyle\u003e.z05-gallery-section .z05-gallery-lead{max-width:820px;color:#d8d1c7}.z05-gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}.z05-gallery-grid figure{margin:0;position:relative;overflow:hidden;background:#111;border:1px solid rgba(255,255,255,.13);min-height:220px}.z05-gallery-grid img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block;transition:transform .35s ease}.z05-gallery-grid figure:hover img{transform:scale(1.025)}.z05-gallery-grid figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(0,0,0,.66);border:1px solid rgba(255,255,255,.12);color:#f2e5c5;padding:9px 10px;font-size:12px;line-height:1.25;text-transform:uppercase;font-weight:800;letter-spacing:.04em}@media(max-width:980px){.z05-gallery-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.z05-gallery-grid{grid-template-columns:1fr}.z05-gallery-grid figure,.z05-gallery-grid img{min-height:260px}}\u003c/style\u003e"
-                                                      }
-                                     },
-                     "z05_accessories":  {
-                                             "type":  "custom-liquid",
-                                             "settings":  {
-                                                              "custom_liquid":  "\u003cdiv class=\"z05-feature-shell\"\u003e\u003csection class=\"z05-section z05-accessory-section\"\u003e\u003cdiv class=\"z05-wrap z05-grid-2\"\u003e\u003cdiv\u003e\u003cp class=\"z05-kicker\"\u003eIncluded Accessories\u003c/p\u003e\u003ch2\u003eOne cable for the sources you actually use\u003c/h2\u003e\u003cp\u003eThe included 2-pin cable keeps Z05 AuAg ready for pocket DACs, balanced players, phones, laptops, and everyday listening without asking you to buy a second cable on day one.\u003c/p\u003e\u003ctable class=\"z05-table\"\u003e\u003ctr\u003e\u003cth\u003eCable\u003c/th\u003e\u003ctd\u003e2-pin detachable cable with source-side swappable terminations.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eTerminations\u003c/th\u003e\u003ctd\u003e3.5mm stereo, 4.4mm balanced, and Type-C connectors.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eFit\u003c/th\u003e\u003ctd\u003eLiquidMorph eartips for comfort, seal, and repeatable bass response.\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"z05-accessory-media\"\u003e\u003cimg src=\"{{ \u0027z05-auag-liquidmorph-accessory-tray.jpg\u0027 | asset_url }}\" alt=\"Z05 AuAg accessory tray with LiquidMorph eartips\" loading=\"lazy\"\u003e\u003cdiv class=\"caption\"\u003eAccessory tray context for the included LiquidMorph fit system and launch package.\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/section\u003e\u003c/div\u003e\u003cstyle\u003e.z05-accessory-section{background:#f4f1ea;color:#111}.z05-accessory-section .z05-table{margin-top:24px}.z05-accessory-media{position:relative;min-height:480px;overflow:hidden;border:1px solid rgba(0,0,0,.12);background:#111}.z05-accessory-media img{display:block;width:100%;height:100%;min-height:480px;object-fit:cover}.z05-accessory-media .caption{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.14);padding:13px;color:#f4eee4;font-size:13px;line-height:1.4}@media(max-width:900px){.z05-accessory-media,.z05-accessory-media img{min-height:340px}}\u003c/style\u003e"
-                                                          }
-                                         }
-                 },
-    "order":  [
-                  "z05_hero_story",
-                  "z05_sound",
-                  "z05_overview",
-                  "z05_product_card",
-                  "z05_gallery",
-                  "z05_order_intro",
-                  "main",
-                  "z05_engineering",
-                  "z05_accessories",
-                  "z05_liquidmorph",
-                  "z05_faq"
-              ]
+    "sections": {
+        "z05_hero_story": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<style>\n  .z05-feature-shell{width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}\n  .z05-feature-shell *{box-sizing:border-box;}\n  .z05-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}\n  .z05-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#b8b0a2;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}\n  .z05-eyebrow:before{content:\"\";width:36px;height:1px;background:#d6a756;display:inline-block;}\n  .z05-hero{min-height:68vh;display:grid;grid-template-columns:minmax(320px,.92fr) minmax(420px,1.08fr);gap:34px;align-items:center;padding:56px 0 30px;}\n  .z05-hero-copy{position:relative;z-index:2;}\n  .z05-hero h1{max-width:620px;margin:0;color:#fff;font-size:clamp(52px,6.4vw,92px);line-height:.9;font-weight:800;text-transform:uppercase;letter-spacing:0;}\n  .z05-hero h1 .z05-title-row{display:flex;align-items:center;gap:.2em;color:#fff;line-height:.9;white-space:nowrap;}\n  .z05-hero-logo{display:inline-block;width:auto;height:.78em;max-height:76px;object-fit:contain;transform:translateY(.04em);}\n  .z05-hero h1 .z05-auag-word{display:inline-block;color:#fff;}\n  .z05-hero h1 .z05-launch{display:block;color:#e2b768;font-size:.42em;line-height:1.05;margin-top:10px;}\n  .z05-hero .z05-dek{max-width:560px;margin:20px 0 0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.42;} .z05-brand-slogan{margin:16px 0 0;color:#f4e8d0;font-size:14px;line-height:1.5;font-weight:800;text-transform:uppercase;} .z05-brand-slogan span{display:block;color:#b8b0a2;font-weight:700;text-transform:none;}\n  .z05-meta{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0;padding:0;list-style:none;color:#f4e8d0;}\n  .z05-meta li{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);padding:9px 12px;font-size:12px;font-weight:700;text-transform:uppercase;}\n  .z05-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}\n  .z05-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid #e2b768;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:12px;color:#090909;background:#e2b768;}\n  .z05-btn.secondary{background:transparent;color:#f2e5c5;}\n  .z05-hero-media{position:relative;aspect-ratio:4/5;min-height:0;align-self:center;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12);}\n  .z05-hero-media:before{content:\"AuAg\";position:absolute;top:22px;right:20px;color:rgba(255,255,255,.08);font-size:clamp(72px,11vw,150px);line-height:.8;font-weight:900;letter-spacing:0;}\n  .z05-hero-media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center bottom;display:block;filter:contrast(1.04) saturate(.98);}\n  .z05-stat-strip{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:#0f0f0f;}\n  .z05-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0;}\n  .z05-stat{padding:22px 20px;background:#151515;min-height:112px;}\n  .z05-stat b{display:block;color:#fff;font-size:23px;line-height:1.05;}\n  .z05-stat span{display:block;margin-top:10px;color:#bdb5aa;font-size:13px;line-height:1.35;}\n  .z05-section{padding:76px 0;background:#f4f1ea;color:#111;}\n  .z05-section.dark{background:#080808;color:#f5f2ea;}\n  .z05-section h2{margin:0;color:inherit;font-size:clamp(32px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;}\n  .z05-section p{font-size:17px;line-height:1.62;color:inherit;}\n  .z05-grid-2{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:start;}\n  .z05-kicker{margin:0 0 16px;color:#a87725;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;}\n  .z05-number-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;}\n  .z05-number-card{border-top:2px solid #111;padding-top:16px;}\n  .z05-number-card .num{display:block;color:#a87725;font-size:38px;font-weight:900;line-height:1;}\n  .z05-number-card h3{margin:14px 0 8px;font-size:20px;text-transform:uppercase;letter-spacing:0;}\n  .z05-table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 16px 42px rgba(0,0,0,.08);}\n  .z05-table th,.z05-table td{padding:16px;border-bottom:1px solid #ded8cd;text-align:left;vertical-align:top;font-size:14px;line-height:1.45;}\n  .z05-table th{width:32%;color:#6d4b16;text-transform:uppercase;font-size:12px;letter-spacing:.08em;}\n  .z05-build-card{background:#111;color:#f4eee4;padding:32px;border:1px solid rgba(255,255,255,.12);}\n  .z05-build-card dl{display:grid;grid-template-columns:150px 1fr;gap:0;margin:24px 0 0;}\n  .z05-build-card dt,.z05-build-card dd{margin:0;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14px;}\n  .z05-build-card dt{color:#bfa46b;text-transform:uppercase;font-weight:800;letter-spacing:.08em;font-size:11px;}\n  .z05-build-card dd{color:#fff;font-weight:700;}\n  .z05-photo-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:34px;}\n  .z05-photo-grid .panel{min-height:320px;background:#161616;border:1px solid rgba(255,255,255,.1);overflow:hidden;position:relative;}\n  .z05-photo-grid .panel img{width:100%;height:100%;object-fit:cover;display:block;}\n  .z05-photo-grid .panel .caption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.65);color:#f1e5cc;padding:12px;font-size:12px;line-height:1.35;}\n  .z05-copy-stack{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:30px;}\n  .z05-copy-stack article{border:1px solid rgba(255,255,255,.15);padding:24px;background:#111;}\n  .z05-copy-stack h3{margin:0 0 12px;color:#fff;font-size:23px;text-transform:uppercase;letter-spacing:0;}\n  .z05-copy-stack p{color:#cfc7bb;margin:0;}\n  .z05-faq{display:grid;gap:14px;margin-top:26px;}\n  .z05-faq details{background:#fff;border:1px solid #ded8cd;padding:18px;}\n  .z05-faq summary{cursor:pointer;font-weight:900;text-transform:uppercase;}\n  .z05-faq p{margin:12px 0 0;color:#2d2923;}\n  .z05-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 18px;border-top:1px solid rgba(255,255,255,.12);}\n  .z05-final h2{font-size:clamp(34px,6vw,84px);margin:0;text-transform:uppercase;letter-spacing:0;line-height:.95;}\n  .z05-final p{max-width:720px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55;}\n  @media(max-width:900px){.z05-hero,.z05-grid-2,.z05-photo-grid,.z05-copy-stack{grid-template-columns:1fr}.z05-hero{padding-top:46px;min-height:auto}.z05-hero-media{min-height:0}.z05-stats,.z05-number-cards{grid-template-columns:1fr 1fr}.z05-build-card dl{grid-template-columns:1fr}.z05-build-card dt{border-bottom:0;padding-bottom:2px}.z05-build-card dd{padding-top:2px}}\n  @media(max-width:560px){.z05-wrap{width:min(100% - 24px,1180px)}.z05-hero h1{font-size:46px}.z05-stats,.z05-number-cards{grid-template-columns:1fr}.z05-section{padding:52px 0}.z05-table th,.z05-table td{display:block;width:100%;padding:12px 14px}.z05-table th{padding-bottom:2px}.z05-table td{padding-top:2px}.z05-actions .z05-btn{width:100%;}}\n</style>\n<div class=\"z05-feature-shell\">\n  <section class=\"z05-hero z05-wrap\">\n    <div class=\"z05-hero-copy\">\n      <div class=\"z05-eyebrow\">AAW Z Series Universal - AuAg Launch Edition</div>\n      <h1><span class=\"z05-title-row\"><img class=\"z05-hero-logo\" src=\"{{ 'z05-logo-mark.png' | asset_url }}\" alt=\"Z05\"><span class=\"z05-auag-word\">AuAg</span></span><span class=\"z05-launch\">Launch Edition</span></h1>\n      <p class=\"z05-dek\">One monitor, two musical personalities. Z05 AuAg pairs a tactile 10mm dynamic woofer with TwinCore switching, letting you choose between richer body or brighter focus without changing IEMs.</p>\n      <p class=\"z05-brand-slogan\">Those who listen will find the way.<span>善听者，终能找到道路。</span></p>\n      <ul class=\"z05-meta\" aria-label=\"Z05 AuAg highlights\">\n        <li>TwinCore dual voice</li><li>AuAg launch finish</li><li>10mm PET dynamic woofer</li><li>3.5 / 4.4 / Type-C ready</li>\n      </ul>\n      <div class=\"z05-actions\"><a class=\"z05-btn\" href=\"/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1\">Buy Z05 AuAg</a><a class=\"z05-btn secondary\" href=\"#z05-twincore\">Hear the TwinCore story</a></div>\n    </div>\n    <div class=\"z05-hero-media\">\n      <img src=\"{{ 'z05-auag-luxury-portrait-hero.png' | asset_url }}\" alt=\"Z05 AuAg Launch Edition in a minimalist gold and silver luxury studio setting\">\n    </div>\n  </section>\n  <div class=\"z05-stat-strip\"><div class=\"z05-wrap z05-stats\"><div class=\"z05-stat\"><b>TwinCore</b><span>Blue for weight and flow. Red for openness and focus. Two voicings built for real listening moods.</span></div><div class=\"z05-stat\"><b>Dynamic Bass</b><span>A PET diaphragm 10mm woofer gives kick drums, bass guitars, and synth lines physical shape.</span></div><div class=\"z05-stat\"><b>Hybrid Detail</b><span>Balanced armatures bring vocal presence, separation, and upper harmonic air around the dynamic low end.</span></div><div class=\"z05-stat\"><b>AuAg</b><span>Forged-carbon faceplates carry the Au/Ag identity; the 3D-printed shells are hand-laced and finished pair by pair.</span></div></div></div>\n</div>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_overview": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section z05-overview-section\"><div class=\"z05-wrap\"><div class=\"z05-overview-head\"><div><p class=\"z05-kicker\">Overview</p><h2>A compact hybrid built for daily hi-fi listening</h2></div><p>Z05 AuAg is the launch-edition expression of AAW's Z05 universal monitor: a pocketable hybrid IEM with dynamic-driver weight, armature clarity, practical source compatibility, and a forged-carbon Au/Ag finish that makes the pair feel collectible without turning it into a shelf piece.</p></div><div class=\"z05-overview-main\"><article><span>01</span><h3>What it is</h3><p>A universal-fit hybrid in-ear monitor for listeners who want one compact pair that can handle albums, playlists, portable DACs, and longer desk sessions.</p></article><article><span>02</span><h3>Why AuAg</h3><p>The gold-right, silver-left finish gives the launch edition a clear identity while keeping the acoustic package focused on fit, seal, and driver integration.</p></article><article><span>03</span><h3>What you get</h3><p>Z05 AuAg ships with the detachable 2-pin cable, 3.5mm, 4.4mm balanced, and Type-C terminations, a carry case, and LiquidMorph eartips.</p></article></div><div class=\"z05-overview-summary\"><div><h3>For the listener who wants fewer compromises</h3><p>Use it with a phone, a dongle, a balanced player, or a desktop chain. The point is not to build another specialist IEM for one genre; it is to keep the Z05 platform adaptable without making the setup complicated.</p></div><div class=\"z05-overview-specs\" aria-label=\"Z05 AuAg overview specifications\"><article><span>Fit</span><p>Universal shell with LiquidMorph eartips for repeatable seal and comfort.</p></article><article><span>Driver platform</span><p>10mm dynamic woofer plus balanced armatures for body, presence, and air.</p></article><article><span>Source path</span><p>Swappable 3.5mm, 4.4mm balanced, and Type-C terminations included.</p></article><article><span>Finish</span><p>Forged-carbon faceplates with Au/Ag foil; 3D-printed shells finished by hand with matching foil lacing.</p></article></div></div></div></section></div><style>.z05-overview-section{background:#f4f1ea;color:#111}.z05-overview-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:46px;align-items:end}.z05-overview-head h2{max-width:780px}.z05-overview-head>p{margin:0;color:#28241f;font-size:18px;line-height:1.58}.z05-overview-main{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}.z05-overview-main article{border-top:2px solid #111;padding:18px 0 0}.z05-overview-main span{display:block;color:#a87725;font-size:38px;font-weight:900;line-height:1}.z05-overview-main h3{margin:14px 0 10px;color:#111;font-size:20px;text-transform:uppercase;letter-spacing:0}.z05-overview-main p{margin:0;color:#302b25;font-size:15px;line-height:1.58}.z05-overview-summary{display:grid;grid-template-columns:minmax(320px,.78fr) minmax(0,1.22fr);gap:28px;align-items:start;margin-top:42px;padding-top:30px;border-top:1px solid #cfc8bb}.z05-overview-summary h3{margin:0 0 12px;color:#111;font-size:28px;line-height:1.08;text-transform:uppercase}.z05-overview-summary p{margin:0;color:#302b25;font-size:16px;line-height:1.6}.z05-overview-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#d8d0c3;border:1px solid #d8d0c3}.z05-overview-specs article{background:#fff;padding:20px;min-width:0}.z05-overview-specs span{display:block;margin-bottom:10px;color:#6d4b16;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-overview-specs p{margin:0;color:#302b25;font-size:14px;line-height:1.52;overflow-wrap:anywhere}@media(max-width:980px){.z05-overview-head,.z05-overview-summary{grid-template-columns:1fr}.z05-overview-main{grid-template-columns:1fr}.z05-overview-head{gap:20px}.z05-overview-main{margin-top:30px}}@media(max-width:640px){.z05-overview-specs{grid-template-columns:1fr}.z05-overview-head>p{font-size:16px}.z05-overview-main span{font-size:34px}.z05-overview-summary h3{font-size:23px}}</style>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "main": {
+            "type": "main-product",
+            "blocks": {
+                "title": {
+                    "type": "title",
+                    "settings": {
+                        "heading_size": "h3",
+                        "seo_heading": "h3"
+                    }
+                },
+                "price": {
+                    "type": "price",
+                    "settings": {
+                        "hide_shipping_content": false
+                    }
+                },
+                "variant_z05": {
+                    "type": "variant",
+                    "settings": {}
+                },
+                "quantity_selector": {
+                    "type": "quantity_selector",
+                    "disabled": true,
+                    "settings": {}
+                },
+                "pickup_z05": {
+                    "type": "pickup",
+                    "settings": {}
+                },
+                "button": {
+                    "type": "button",
+                    "settings": {
+                        "dynamic_checkout_btn": true,
+                        "show_recipient_form": false
+                    }
+                },
+                "complementary_z05": {
+                    "type": "complementary_products",
+                    "settings": {
+                        "heading": "Pairs well with",
+                        "products_count": 8
+                    }
+                },
+                "social_z05": {
+                    "type": "social-icons",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "title",
+                "price",
+                "variant_z05",
+                "quantity_selector",
+                "pickup_z05",
+                "button",
+                "complementary_z05",
+                "social_z05"
+            ],
+            "settings": {
+                "gallery_style": "slider",
+                "thumbnail_position": "left",
+                "overlapped_thumbnails": false,
+                "enable_sticky_content": true,
+                "desktop_media_width": "medium",
+                "desktop_grid_image_size": "auto",
+                "image_zoom": "lightbox",
+                "enable_sticky_cart": true,
+                "thumbnial_on_mobile": false,
+                "mobile_grid_image_size": "auto",
+                "color_scheme": "",
+                "top_space_desktop": 45,
+                "bottom_space_desktop": 55,
+                "top_space_mobile": 35,
+                "bottom_space_mobile": 45
+            },
+            "disabled": true
+        },
+        "z05_engineering": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div id=\"z05-engineering\" class=\"z05-feature-shell\"><section class=\"z05-section dark z05-engineering-section\"><div class=\"z05-wrap\"><div class=\"z05-engineering-head\"><div><p class=\"z05-kicker\">Craft & Sound</p><h2>Faceplate craft, shell precision, hybrid control</h2></div><div class=\"z05-engineering-copy\"><p>Z05 AuAg is built as a universal monitor first: compact fit, repeatable seal, and a driver platform that stays useful across albums, sources, and listening moods.</p><p>The forged-carbon treatment belongs to the faceplates. The body is a 3D-printed shell, then finished with artisanal hand-laced gold and silver foil work. Each pair takes hours to dress, align, and finish before it becomes the AuAg launch edition.</p></div></div><div class=\"z05-craft-strip\" aria-label=\"Z05 AuAg craft notes\"><article><span>Faceplate</span><b>Forged carbon with Au/Ag foil</b></article><article><span>Shell body</span><b>3D-printed universal monitor shell</b></article><article><span>Finish time</span><b>Hand-laced over hours per pair</b></article></div><div class=\"z05-engineering-body\"><div class=\"z05-build-card z05-engineering-specs\"><strong>AAW Z05 AuAg</strong><dl><dt>Format</dt><dd>Universal-fit hybrid in-ear monitor</dd><dt>Low End</dt><dd>10mm PET diaphragm dynamic woofer</dd><dt>Clarity</dt><dd>Dedicated mid and super-high balanced armature drivers</dd><dt>Voice Control</dt><dd>TwinCore Crossover Switch System</dd><dt>Pressure Flow</dt><dd>Bass-Flow Vent Pressure System</dd><dt>Finish</dt><dd>Forged-carbon faceplates; 3D-printed shells with hand-laced gold and silver foil finish</dd><dt>In The Box</dt><dd>2-pin detachable cable, 3.5mm, 4.4mm balanced, Type-C terminations, carrying case, LiquidMorph eartips</dd></dl></div><div class=\"z05-engineering-gallery\"><figure><img src=\"{{ 'z05-auag-gold-silver-faceplate-pair.jpg' | asset_url }}\" alt=\"Z05 AuAg gold and silver forged-carbon faceplates\" loading=\"lazy\"><figcaption><b>Au / Ag faceplates</b><span>Gold and silver foil are laced through the faceplate identity, not treated as a random surface effect.</span></figcaption></figure><figure><img src=\"{{ 'z05-auag-angled-shell-profile.jpg' | asset_url }}\" alt=\"Z05 AuAg angled 3D printed shell profile\" loading=\"lazy\"><figcaption><b>Universal shell geometry</b><span>The body remains a compact universal monitor shell, shaped around seal, nozzle angle, and long-session comfort.</span></figcaption></figure></div></div></div></section></div><style>.z05-engineering-section{background:#070707}.z05-engineering-head{display:grid;grid-template-columns:minmax(360px,.92fr) minmax(420px,1.08fr);gap:54px;align-items:end}.z05-engineering-head h2{max-width:760px}.z05-engineering-copy{display:grid;gap:14px}.z05-engineering-copy p{margin:0;color:#d8d1c7;font-size:17px;line-height:1.62}.z05-craft-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:34px 0 0;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}.z05-craft-strip article{background:#111;padding:20px 22px;min-height:104px}.z05-craft-strip span{display:block;margin-bottom:10px;color:#e2b768;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-craft-strip b{display:block;color:#fff;font-size:19px;line-height:1.22}.z05-engineering-body{display:grid;grid-template-columns:minmax(340px,.82fr) minmax(0,1.18fr);gap:24px;align-items:stretch;margin-top:24px}.z05-engineering-specs{padding:28px}.z05-engineering-specs dl{grid-template-columns:128px 1fr}.z05-engineering-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}.z05-engineering-gallery figure{margin:0;position:relative;overflow:hidden;min-height:460px;background:#111;border:1px solid rgba(255,255,255,.12)}.z05-engineering-gallery img{display:block;width:100%;height:100%;min-height:460px;object-fit:cover}.z05-engineering-gallery figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.14);padding:13px;color:#f2e5c5}.z05-engineering-gallery b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}.z05-engineering-gallery span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}@media(max-width:980px){.z05-engineering-head,.z05-engineering-body{grid-template-columns:1fr}.z05-craft-strip{grid-template-columns:1fr}.z05-engineering-gallery figure,.z05-engineering-gallery img{min-height:360px}}@media(max-width:640px){.z05-engineering-gallery{grid-template-columns:1fr}.z05-engineering-specs dl{grid-template-columns:1fr}.z05-engineering-specs dt{border-bottom:0;padding-bottom:2px}.z05-engineering-specs dd{padding-top:2px}.z05-craft-strip article{min-height:auto}}</style>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_sound": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div id=\"z05-twincore\" class=\"z05-feature-shell\"><section class=\"z05-section dark z05-twincore-section\"><div class=\"z05-wrap z05-grid-2\"><div><p class=\"z05-kicker\">TwinCore Crossover Switch System</p><h2>Not a bass switch. Two ways to hear Z05.</h2><p>Most IEM switches feel like a small EQ nudge. TwinCore is different: it moves Z05 AuAg between two complete listening profiles, so bass weight, vocal position, treble air, and overall stage energy shift together.</p><p>Use it like you would choose gain, filter, or cartridge flavor in a serious hi-fi chain: one position for warmth and immersion, the other for focus and bite.</p><div class=\"z05-actions\"><a class=\"z05-btn\" href=\"/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1\">Buy Z05 AuAg</a></div></div><div class=\"z05-twincore-panel\"><img src=\"{{ 'z05-auag-twincore-switch-closeup.jpg' | asset_url }}\" alt=\"Z05 AuAg TwinCore switch with blue and red position markers\" loading=\"lazy\"><div class=\"z05-mode-grid\"><article><span>Blue Mode</span><h3>Weight / Flow</h3><p>Fuller low-end body, smoother upper harmonics, and a more relaxed center image for long sessions, vocals, jazz, pop, and immersive listening.</p></article><article><span>Red Mode</span><h3>Focus / Spark</h3><p>Tighter bass contour, more forward clarity, extra cymbal air, and a livelier edge for detail hunting, faster genres, and cleaner separation.</p></article></div></div></div></section></div><style>.z05-twincore-section{background:#050505}.z05-twincore-section h2{max-width:760px}.z05-twincore-section p{color:#d8d1c7}.z05-twincore-panel{background:#111;border:1px solid rgba(255,255,255,.14);padding:12px}.z05-twincore-panel img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.z05-mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:12px;background:rgba(255,255,255,.14)}.z05-mode-grid article{background:#0b0b0b;padding:20px}.z05-mode-grid span{display:inline-flex;margin-bottom:12px;color:#e2b768;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-mode-grid h3{margin:0 0 10px;color:#fff;font-size:25px;text-transform:uppercase;letter-spacing:0}.z05-mode-grid p{margin:0;color:#cfc7bb;font-size:14px;line-height:1.5}@media(max-width:700px){.z05-mode-grid{grid-template-columns:1fr}}</style>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_faq": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section\"><div class=\"z05-wrap z05-grid-2\"><div><p class=\"z05-kicker\">FAQ</p><h2>Z05 AuAg buying notes</h2><p>Short answers for the questions listeners ask before choosing the AuAg Launch Edition.</p></div><div class=\"z05-faq\"><details open><summary>What does AuAg mean?</summary><p>AuAg names the Launch Edition decoration: Au for gold and Ag for silver. The right side carries gold accents and the left side carries silver accents. The forged-carbon treatment is on the faceplates; the 3D-printed shells are finished by hand with matching foil lacing.</p></details><details><summary>Is this only a cosmetic edition?</summary><p>No. The AuAg finish is the launch identity, but the listening story is the Z05 platform itself: dynamic bass, hybrid-driver clarity, Bass-Flow venting, and TwinCore switching.</p></details><details><summary>What does the TwinCore switch change?</summary><p>It changes the overall voicing. Blue mode leans fuller, smoother, and more grounded. Red mode leans cleaner, more open, and more energetic. The effect is broader than a simple bass boost.</p></details><details><summary>What cable is included?</summary><p>Z05 AuAg includes a 2-pin detachable cable with swappable 3.5mm stereo, 4.4mm balanced, and Type-C terminations, plus LiquidMorph eartips for its universal-fit seal.</p></details></div></div></section><section class=\"z05-final\"><div class=\"z05-wrap z05-final-inner\"><h2>Z05 AuAg: choose the mood, keep the monitor</h2><p>Those who listen will find the way.<br>善听者，终能找到道路。</p><p>A forged-carbon launch edition with dynamic-driver body, balanced-armature detail, and TwinCore control for the way you actually listen.</p><div class=\"z05-actions\"><a class=\"z05-btn\" href=\"/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1\">Buy Now</a></div></div></section><style>.z05-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 0;border-top:1px solid rgba(255,255,255,.12)}.z05-final-inner{display:flex;flex-direction:column;align-items:center}.z05-final h2{max-width:980px;margin:0 auto;color:#fff !important;font-size:clamp(34px,5.2vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0}.z05-final p{max-width:720px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55}.z05-final .z05-actions{justify-content:center;margin-top:22px}@media(max-width:640px){.z05-final{padding:56px 0}.z05-final h2{font-size:38px}}</style></div>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_product_card": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section dark z05-product-card-section\"><div class=\"z05-wrap\"><p class=\"z05-kicker\">At A Glance</p><h2>The Z05 AuAg setup</h2><div class=\"z05-card-asset\"><img src=\"{{ 'z05-auag-updated-spec-card.png' | asset_url }}\" alt=\"AAW Z05 AuAg updated specification card with key features and measurements\" loading=\"lazy\"></div></div></section></div><style>.z05-product-card-section .z05-card-asset{margin:32px 0 0;background:transparent;border:0;padding:0}.z05-product-card-section img{display:block;width:100%;height:auto}.z05-product-card-section h2{max-width:920px}</style>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_liquidmorph": {
+            "type": "custom-liquid",
+            "settings": {
+                "section_visibility": "always",
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section z05-liquidmorph-section\"><div class=\"z05-wrap\"><div class=\"z05-liquidmorph-head\"><div><p class=\"z05-kicker\">Seal & Comfort</p><h2>LiquidMorph keeps the tuning locked in</h2></div><p>With a dynamic woofer, the eartip is part of the acoustic chain. LiquidMorph helps Z05 AuAg hold low-end pressure, center image, and channel balance without making fit feel fussy.</p></div><div class=\"z05-liquidmorph-showcase\"><figure class=\"z05-liquidmorph-primary\"><img src=\"{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}\" alt=\"LiquidMorph clear eartips with teal inner bore\" loading=\"lazy\"><figcaption><b>Clear outer form, teal inner bore</b><span>Designed to preserve seal and comfort without hiding the fit system.</span></figcaption></figure><figure class=\"z05-liquidmorph-tray\"><img src=\"{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}\" alt=\"Z05 AuAg LiquidMorph eartip tray\" loading=\"lazy\"><figcaption><b>Organized size tray</b><span>Fit tuning stays visible instead of becoming loose accessory clutter.</span></figcaption></figure></div><div class=\"z05-fit-panel\"><article><span>Clear flange</span><b>Soft, rounded contact for a repeatable universal seal.</b></article><article><span>Teal bore</span><b>Stable inner stem support so bass texture does not collapse when the shell shifts.</b></article><article><span>Size tray</span><b>Tips stay organized for fast fit checks before a longer listening session.</b></article></div></div></section></div><style>.z05-liquidmorph-section{background:#0b0c0b;color:#f5f2ea}.z05-liquidmorph-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.72fr);gap:36px;align-items:end}.z05-liquidmorph-head h2{max-width:900px;font-size:clamp(36px,4.6vw,66px);overflow-wrap:normal;word-break:normal;hyphens:none}.z05-liquidmorph-head>p{margin:0;color:#d8d1c7;font-size:17px;line-height:1.62}.z05-liquidmorph-showcase{display:grid;grid-template-columns:1.08fr .92fr;gap:14px;margin-top:34px}.z05-liquidmorph-showcase figure{margin:0;position:relative;overflow:hidden;background:#060706;border:1px solid rgba(255,255,255,.14);min-height:500px}.z05-liquidmorph-showcase img{display:block;width:100%;height:100%;min-height:500px}.z05-liquidmorph-primary img{object-fit:contain;padding:28px;background:linear-gradient(145deg,#101211,#050505)}.z05-liquidmorph-tray img{object-fit:cover;object-position:center}.z05-liquidmorph-showcase figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.14);padding:13px;color:#e5f7f5}.z05-liquidmorph-showcase b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}.z05-liquidmorph-showcase span{display:block;margin-top:7px;color:#d6e4e1;font-size:12px;line-height:1.38}.z05-fit-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16)}.z05-fit-panel article{background:#121313;padding:22px;min-height:128px}.z05-fit-panel span{display:block;margin-bottom:12px;color:#83d9d0;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-fit-panel b{display:block;color:#fff;font-size:16px;line-height:1.35}@media(max-width:980px){.z05-liquidmorph-head{grid-template-columns:1fr}.z05-liquidmorph-showcase{grid-template-columns:1fr 1fr}.z05-liquidmorph-showcase figure,.z05-liquidmorph-showcase img{min-height:380px}.z05-fit-panel{grid-template-columns:1fr}}@media(max-width:640px){.z05-liquidmorph-showcase{grid-template-columns:1fr}.z05-liquidmorph-showcase figure,.z05-liquidmorph-showcase img{min-height:320px}.z05-liquidmorph-primary img{padding:16px}.z05-liquidmorph-showcase figcaption{position:static;margin:10px;background:#090909}.z05-liquidmorph-head h2{font-size:36px}}</style>",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_gallery": {
+            "type": "custom-liquid",
+            "settings": {
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section dark z05-gallery-section\"><div class=\"z05-wrap\"><div class=\"z05-gallery-head\"><p class=\"z05-kicker\">Listening Gallery</p><h2>The four product views that matter</h2><p class=\"z05-gallery-lead\">A focused look at the complete Z05 AuAg story: the main shell identity, TwinCore control, source-ready cabling, and the LiquidMorph fit tray.</p></div><div class=\"z05-gallery-grid\"><figure class=\"feature\"><img src=\"{{ 'z05-auag-forged-carbon-faceplate-hero.jpg' | asset_url }}\" alt=\"Z05 AuAg main faceplate hero image\" loading=\"lazy\"><figcaption><b>Main image</b><span>The AuAg finish in its strongest read: silver left, gold right, forged carbon underneath.</span></figcaption></figure><figure><img src=\"{{ 'z05-auag-twincore-switch-closeup.jpg' | asset_url }}\" alt=\"Z05 AuAg TwinCore switch close-up\" loading=\"lazy\"><figcaption><b>TwinCore switch</b><span>The tactile tuning control for moving between weight and focus.</span></figcaption></figure><figure><img src=\"{{ 'z05-auag-swappable-cable-terminations.jpg' | asset_url }}\" alt=\"Z05 AuAg cable and swappable terminations\" loading=\"lazy\"><figcaption><b>Cabling system</b><span>3.5mm, 4.4mm balanced, and Type-C paths for the sources enthusiasts actually use.</span></figcaption></figure><figure><img src=\"{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}\" alt=\"Z05 AuAg LiquidMorph eartip tray\" loading=\"lazy\"><figcaption><b>LiquidMorph tray</b><span>Fit tuning stays visible, organized, and ready for repeatable seal.</span></figcaption></figure></div></div></section></div><style>.z05-gallery-section{padding:56px 0;background:#050607}.z05-gallery-head{text-align:left;max-width:920px}.z05-gallery-section h2{max-width:880px}.z05-gallery-section .z05-gallery-lead{max-width:760px;margin:16px 0 0;color:#d8d1c7}.z05-gallery-grid{display:grid;grid-template-columns:1.12fr .88fr .88fr;grid-auto-rows:minmax(240px,auto);gap:14px;margin-top:34px}.z05-gallery-grid figure{margin:0;position:relative;overflow:hidden;background:#111;border:1px solid rgba(255,255,255,.12);min-height:240px}.z05-gallery-grid figure.feature{grid-row:span 2}.z05-gallery-grid img{width:100%;height:100%;min-height:240px;object-fit:cover;display:block;transition:transform .35s ease}.z05-gallery-grid figure:hover img{transform:scale(1.025)}.z05-gallery-grid figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.14);color:#f2e5c5;padding:12px}.z05-gallery-grid figcaption b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}.z05-gallery-grid figcaption span{display:block;margin-top:6px;color:#d6cec2;font-size:12px;line-height:1.35;text-transform:none;font-weight:500;letter-spacing:0}@media(max-width:980px){.z05-gallery-grid{grid-template-columns:repeat(2,1fr)}.z05-gallery-grid figure.feature{grid-row:auto;grid-column:span 2}}@media(max-width:560px){.z05-gallery-section{padding:46px 0}.z05-gallery-grid{grid-template-columns:1fr}.z05-gallery-grid figure.feature{grid-column:auto}.z05-gallery-grid figure,.z05-gallery-grid img{min-height:280px}}</style>",
+                "section_visibility": "always",
+                "content_width": "large",
+                "text_alignment": "left",
+                "color_scheme": "primary",
+                "top_space_desktop": 0,
+                "bottom_space_desktop": 0,
+                "top_space_mobile": 0,
+                "bottom_space_mobile": 0
+            }
+        },
+        "z05_accessories": {
+            "type": "custom-liquid",
+            "settings": {
+                "custom_liquid": "<div class=\"z05-feature-shell\"><section class=\"z05-section z05-accessory-section\"><div class=\"z05-wrap\"><div class=\"z05-accessory-head\"><div><p class=\"z05-kicker\">Signal Chain Ready</p><h2>Source-ready without the cable hunt</h2></div><p>Z05 AuAg ships as a complete listening kit: one 2-pin cable, three source paths, and the terminations enthusiasts actually reach for when moving between a phone, DAP, dongle, or desktop stack.</p></div><div class=\"z05-accessory-showcase\"><figure class=\"z05-accessory-image\"><img src=\"{{ 'z05-auag-complete-package-flatlay.jpg' | asset_url }}\" alt=\"Z05 AuAg complete kit with cable, monitors, and swappable 3.5mm, 4.4mm, and Type-C terminations\" loading=\"lazy\"><figcaption><b>3.5 / 4.4 / Type-C included</b><span>The full kit stays visible: monitors, braided cable, and source-side terminations in one clear flatlay.</span></figcaption></figure><div class=\"z05-accessory-panel\"><article><span>Portable</span><h3>3.5mm + Type-C</h3><p>Use the same monitor with traditional analog outputs or quick digital convenience from a phone or laptop.</p></article><article><span>Balanced</span><h3>4.4mm ready</h3><p>Move into balanced DAPs and compact DAC/amps without buying a second cable on day one.</p></article><article><span>Monitor side</span><h3>2-pin detachable</h3><p>The IEM side stays serviceable and familiar for long-term cable flexibility.</p></article><div class=\"z05-accessory-cta\"><a class=\"z05-btn\" href=\"/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1\">Buy Now</a></div></div></div></div></section></div><style>.z05-accessory-section{background:#f4f1ea;color:#111}.z05-accessory-head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(360px,.72fr);gap:34px;align-items:end}.z05-accessory-head h2{max-width:760px;font-size:clamp(36px,4.8vw,66px)}.z05-accessory-head>p{margin:0;color:#302b25;font-size:17px;line-height:1.62}.z05-accessory-showcase{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);gap:22px;align-items:stretch;margin-top:34px}.z05-accessory-image{margin:0;position:relative;overflow:hidden;background:#080808;border:1px solid rgba(0,0,0,.16);padding:14px;min-height:0}.z05-accessory-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;background:#080808}.z05-accessory-image figcaption{position:absolute;left:50%;right:auto;bottom:28px;width:min(410px,calc(100% - 56px));max-width:410px;transform:translateX(-50%);background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.16);padding:14px;color:#f2e5c5}.z05-accessory-image b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}.z05-accessory-image span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}.z05-accessory-panel{display:grid;gap:1px;background:#d8d0c3;border:1px solid #d8d0c3}.z05-accessory-panel article{background:#fff;padding:24px;min-height:150px}.z05-accessory-panel span{display:block;margin-bottom:12px;color:#8a6423;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.z05-accessory-panel h3{margin:0 0 10px;color:#111;font-size:24px;line-height:1.08;text-transform:uppercase;letter-spacing:0}.z05-accessory-panel p{margin:0;color:#38322b;font-size:14px;line-height:1.5}.z05-accessory-cta{display:flex;align-items:center;justify-content:center;background:#fff;padding:24px}@media(max-width:980px){.z05-accessory-head,.z05-accessory-showcase{grid-template-columns:1fr}.z05-accessory-panel{grid-template-columns:repeat(3,1fr)}.z05-accessory-cta{grid-column:1/-1}}@media(max-width:700px){.z05-accessory-panel{grid-template-columns:1fr}.z05-accessory-image{padding:10px}.z05-accessory-image figcaption{position:static;width:auto;max-width:none;margin:10px 0 0;transform:none;background:#090909}.z05-accessory-panel article{min-height:auto}}</style>"
+            }
+        }
+    },
+    "order": [
+        "z05_hero_story",
+        "z05_sound",
+        "z05_overview",
+        "z05_product_card",
+        "z05_gallery",
+        "z05_engineering",
+        "z05_accessories",
+        "z05_liquidmorph",
+        "z05_faq",
+        "main"
+    ]
 }
