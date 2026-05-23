@@ -1,0 +1,184 @@
+Z05 AuAg English Page Content
+Source: aaw-theme/templates/product.z05.json
+
+## z05_hero_story
+AAW Z Series Universal - AuAg Launch Edition
+[Image alt] Z05
+AuAg
+Launch Edition
+Z05 AuAg is the small universal you reach for when the playlist keeps changing. It keeps the 10mm dynamic-driver punch, adds armature clarity, and lets TwinCore shift the mood without swapping IEMs.
+Those who listen will find the way.
+Two listening moods
+Hand-finished AuAg
+10mm dynamic punch
+3.5 / 4.4 / Type-C
+Buy Z05 AuAg
+Hear TwinCore
+[Image alt] Z05 AuAg Launch Edition in a minimalist gold and silver luxury studio setting
+TwinCore
+Blue when you want weight and flow. Red when you want the mix to open up and step forward.
+Dynamic Bass
+Kick drums and bass lines have real skin and pressure, not just a lifted low-end shelf.
+Hybrid Detail
+Armatures bring vocal edges, cymbal air, and room cues without thinning out the body.
+AuAg
+Forged-carbon faceplates carry the gold/silver identity; the shells are finished by hand, pair by pair.
+
+## z05_sound
+TwinCore
+Same monitor, two listening moods
+Some albums want warmth and weight. Others ask for cleaner edges and a little more air. TwinCore lets Z05 AuAg move between those moods with a real switch on the shell, large enough to nudge by fingernail while the monitors stay in your ears.
+No tool, no tiny recessed slot, no guessing through a phone app. The action has just enough resistance, only two positions, and is easy to find by touch once you know where it sits. Think of it less like a gimmick and more like choosing the right filter, gain, or cartridge flavor before you settle into the record.
+Buy Z05 AuAg
+[Image alt] Z05 AuAg TwinCore switch with blue and red position markers
+Blue Mode
+Weight / Flow
+A fuller low end, calmer upper harmonics, and a center image that feels easier to sit with for long albums.
+Red Mode
+Focus / Spark
+Tighter bass outlines, more forward clarity, and extra cymbal air when you want the mix to open up.
+
+## z05_overview
+Overview
+A compact hybrid for people who rotate music
+Some IEMs are tuned for one perfect demo track. Z05 AuAg is built for the way most of us listen: albums, playlists, dongles, DAPs, desk chains, and a mood that changes by the hour.
+01
+What it is
+A compact universal hybrid you can live with daily: easy to carry, easy to drive, and serious enough for focused listening.
+02
+Why AuAg
+The gold/silver finish gives the launch pair a bit of ceremony without turning it into a display-only object.
+03
+What you get
+A monitor, cable, 3.5mm, 4.4mm balanced, and Type-C terminations, a carry case, and LiquidMorph tips, all ready to go.
+For the listener who changes albums before they change gear
+Run it from a phone dongle on the way out, then plug into a balanced player or desktop chain at home. The point is simple: keep the Z05 character with fewer little compromises.
+Fit
+No custom mold needed with LiquidMorph tips for a seal you can repeat.
+Driver platform
+Dynamic-driver body with armature speed and air layered on top.
+Source path
+3.5mm, 4.4mm balanced, and Type-C terminations in the box.
+Finish
+Forged-carbon faceplates with Au/Ag foil; 3D-printed shells finished by hand with matching foil lacing.
+
+## z05_product_card
+At a glance
+The build behind the listen
+[Image alt] AAW Z05 AuAg updated specification card with key features and measurements
+
+## z05_gallery
+Listening Notes
+What you notice when it is in hand
+A few close looks at the parts that change daily listening: the AuAg faceplates, the physical TwinCore switch, the cable system, and the tips that keep the seal honest.
+[Image alt] Z05 AuAg main faceplate hero image
+AuAg faceplates
+Gold on one side, silver on the other. It is the kind of finish you keep turning under the light before the first track even starts.
+[Image alt] Z05 AuAg TwinCore switch close-up
+TwinCore switch
+A real switch for real mood changes: more body when you want to sink in, more bite when you want to listen closer.
+[Image alt] Z05 AuAg cable and swappable terminations
+Cable kit
+Phone, dongle, DAP, desktop chain. The included terminations cover the sources most of us actually rotate through.
+[Image alt] Z05 AuAg LiquidMorph eartip tray
+LiquidMorph tips
+Tip rolling is not decoration here. A better seal means steadier bass, cleaner center image, and less fiddling mid-album.
+
+## z05_fitment
+Fitment
+A universal fit that still feels settled
+The best tuning falls apart if the shell keeps shifting. Z05 AuAg keeps the body compact, routes the cable over-ear, and lets the tip do the sealing work.
+[Image alt] Adult male wearing Z05 AuAg universal in-ear monitor with over-ear cable
+Real-world fit check
+The cable takes the strain, the shell sits close, and the tip keeps the bass from wandering.
+Over-ear route
+Cable stays put
+Less tug at the shell when you move, sit, or swap sources.
+Compact body
+No custom mold needed
+A small universal body that sits naturally instead of trying to fill the whole ear.
+Seal support
+LiquidMorph tips
+LiquidMorph tips help lock in bass pressure and center image.
+
+## z05_engineering
+Craft & Sound
+Made to be worn, then looked at twice
+The shell has to disappear before the finish gets to show off. Z05 AuAg starts with a compact universal fit, repeatable seal, and a driver layout that can stay convincing across long sessions.
+The forged-carbon look is on the faceplates. The body is a 3D-printed shell, then each pair is dressed by hand with gold and silver foil work. It takes hours because the finish has to feel intentional, not sprinkled on.
+Faceplate
+Forged carbon with Au/Ag foil
+Shell body
+3D-printed universal monitor shell
+Finish time
+Hand-laced over hours per pair
+AAW Z05 AuAg
+Format
+Universal-fit hybrid in-ear monitor
+Low End
+10mm PET diaphragm dynamic woofer
+Clarity
+Mid and super-high BA drivers for vocal edge and air
+Voice Control
+TwinCore physical voicing switch
+Pressure Flow
+Bass-Flow vent pressure system
+Finish
+Forged-carbon faceplates; 3D-printed shells with hand-laced gold and silver foil finish
+In The Box
+2-pin detachable cable, 3.5mm, 4.4mm balanced, Type-C terminations, carrying case, LiquidMorph eartips
+[Image alt] Z05 AuAg shells in a minimalist luxury studio setting
+Shell form, finish, and fit
+The finish catches the eye; the compact shell shape is what lets you keep listening.
+
+## z05_accessories
+Signal Chain Ready
+One cable, the sources most of us actually use
+No one wants to buy a new cable on day one. Z05 AuAg ships with the paths that cover the usual rotation: phone, dongle, DAP, and desktop stack.
+[Image alt] Z05 AuAg complete kit with cable, monitors, and swappable 3.5mm, 4.4mm, and Type-C terminations
+The usual source rotation
+Monitors, cable, and terminations in one kit, so the first listen is not delayed by accessory hunting.
+Portable
+3.5mm + Type-C
+Quick analog or digital listening when the phone or laptop is the source.
+Balanced
+4.4mm ready
+For DAPs and compact DAC/amps when you want the balanced output.
+Monitor side
+2-pin detachable
+A familiar monitor-side connection for long-term cable flexibility.
+Buy Now
+
+## z05_liquidmorph
+Seal & Comfort
+The tip is part of the tuning
+With a dynamic woofer, seal is not a footnote. When the tip sits right, bass weight, vocal center, and left-right balance stop changing every time you move.
+[Image alt] LiquidMorph clear eartips with teal inner bore
+Clear outer form, teal inner bore
+Soft enough for comfort, structured enough to keep the bore stable.
+[Image alt] Z05 AuAg LiquidMorph eartip tray
+Size tray within reach
+Because the right tip is often the difference between 'good' and 'there it is.'
+Clear flange
+Rounded, transparent silicone that settles without feeling bulky.
+Teal bore
+A steadier inner path so the low end does not collapse when the shell shifts.
+Size tray
+Easy tip checks before a long session, not a loose bag of parts.
+
+## z05_faq
+FAQ
+A few notes before you hit play
+The short version for anyone deciding whether this belongs in the daily rotation.
+What does AuAg mean?
+Au is gold, Ag is silver. On this launch edition, the identity is split left/right: gold and silver accents over the hand-finished shell work, with forged-carbon faceplates doing the visual heavy lifting.
+Is this only a cosmetic edition?
+No. The finish gets attention first, but the reason to stay is the Z05 platform: dynamic bass, BA clarity, Bass-Flow pressure control, and TwinCore voicing.
+What does the TwinCore switch change?
+It changes the overall voicing. Blue leans fuller and easier; red leans cleaner and more awake. It feels broader than a simple bass bump.
+What cable is included?
+Z05 AuAg includes a 2-pin detachable cable, 3.5mm stereo, 4.4mm balanced, and Type-C terminations, plus LiquidMorph tips so you can get the seal right from the first session.
+Choose the mood, keep the monitor
+Those who listen will find the way.
+A launch-edition Z05 with real low-end body, armature detail, and a physical switch for the way your listening mood actually changes.
+Buy Now

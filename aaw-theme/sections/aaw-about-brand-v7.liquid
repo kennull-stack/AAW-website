@@ -1,0 +1,283 @@
+{{ 'aaw-about-brand-v7.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'aaw-about-brand-v7.js' | asset_url }}" defer></script>
+<style>
+  .aaw-timeline-marker span{display:inline-block!important;max-width:none!important;white-space:nowrap!important;overflow-wrap:normal!important;transform:translateX(-54px)!important}
+  @media(min-width:981px){
+    .aaw-timeline-rail{left:250px!important}
+    .aaw-timeline-item{grid-template-columns:250px minmax(0,1fr)!important}
+    .aaw-timeline-marker{padding-right:46px!important;font-size:clamp(34px,4vw,58px)!important;text-align:right!important}
+    .aaw-timeline-item:last-child .aaw-timeline-marker{font-size:clamp(32px,3.7vw,52px)!important}
+  }
+  @media(max-width:980px){
+    .aaw-timeline-marker span{transform:none!important}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.aaw.me/#organization",
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      "url": "https://www.aaw.me/",
+      "slogan": "Those who listen will find the way.",
+      "foundingDate": "2014",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Singapore"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Kevin Wang"
+      },
+      "knowsAbout": [
+        "custom in-ear monitors",
+        "universal in-ear monitors",
+        "hybrid driver architecture",
+        "balanced armature drivers",
+        "dynamic drivers",
+        "electrostatic in-ear monitors",
+        "planar magnetic in-ear monitors",
+        "3D printed acoustic chambers",
+        "IEM tuning"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/acousticwerkes",
+        "https://www.instagram.com/aaw_sg/"
+      ]
+    },
+    {
+      "@type": "AboutPage",
+      "@id": {{ canonical_url | append: "#aboutpage" | json }},
+      "url": {{ canonical_url | json }},
+      "name": "About Advanced AcousticWerkes",
+      "about": {
+        "@id": "https://www.aaw.me/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.aaw.me/#website",
+        "name": "Advanced AcousticWerkes",
+        "url": "https://www.aaw.me/"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="aaw-about-shell" data-aaw-about>
+  <section class="aaw-about-hero" aria-labelledby="aaw-about-title">
+    <div class="aaw-about-wrap aaw-about-hero-grid">
+      <div class="aaw-about-hero-copy">
+        <p class="aaw-about-kicker">Singapore IEM specialist</p>
+        <h1 id="aaw-about-title"><span>Advanced</span><span>AcousticWerkes</span></h1>
+        <p class="aaw-about-slogan">Those who listen will find the way.<span>善听者，终能找到道路。</span></p>
+        <p class="aaw-about-dek">AAW is a Singapore-based in-ear monitor specialist founded in 2014 by Kevin Wang, growing out of a late-2013 R&D effort by a small team of NTU-trained engineers, makers, and music lovers.</p>
+        <div class="aaw-about-actions" aria-label="About page links">
+          <a class="aaw-about-btn" href="#aaw-brand-timeline">Explore timeline</a>
+          <a class="aaw-about-btn secondary" href="{{ routes.all_products_collection_url }}">View monitors</a>
+        </div>
+      </div>
+      <figure class="aaw-about-hero-media">
+        <img src="{{ '591A6941.jpg' | file_img_url: '1600x' }}" alt="AAW custom in-ear monitor shell work and acoustic craft" width="1600" height="2000" loading="eager">
+        <figcaption>
+          <b>Mechanics of Sound</b>
+          <span>Listening as method, engineering as language.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <aside class="aaw-about-stat-strip" aria-label="AAW brand summary">
+    <div class="aaw-about-wrap aaw-about-stats">
+      <article><b>2014</b><span>Founded in Singapore by Kevin Wang.</span></article>
+      <article><b>NTU roots</b><span>Grew from a late-2013 engineering-led R&D effort.</span></article>
+      <article><b>Custom + universal</b><span>Built for musicians, engineers, audiophiles, and everyday listeners.</span></article>
+      <article><b>Z Series</b><span>Compact universal platforms for modern daily listening.</span></article>
+    </div>
+  </aside>
+
+  <section class="aaw-about-section aaw-about-origin" aria-labelledby="aaw-origin-title">
+    <div class="aaw-about-wrap aaw-about-grid-2">
+      <div>
+        <p class="aaw-about-kicker">Origin</p>
+        <h2 id="aaw-origin-title">Built by people who listen before they decide</h2>
+      </div>
+      <div class="aaw-about-copy-stack">
+        <p>From the beginning, AAW was built around a simple belief: great sound is not found by force, but by listening closely - to music, to materials, to measurements, and to the people who rely on their monitors every day.</p>
+        <p>AAW's early work focused on custom in-ear monitors for musicians, audio professionals, and serious listeners. Instead of treating IEM design as an assembly exercise, the team approached it as a complete acoustic system.</p>
+        <p>Driver behavior, crossover architecture, shell geometry, pressure control, materials, ergonomics, and long-session comfort all had to work together. This engineering-led mindset became the foundation of AAW's identity: <strong>the Mechanics of Sound</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section dark aaw-about-method" aria-labelledby="aaw-method-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-method-head">
+        <div>
+          <p class="aaw-about-kicker">Method</p>
+          <h2 id="aaw-method-title">Sound is engineered by listening</h2>
+        </div>
+        <p>AAW's technology story is not a straight line of more drivers. It is a search for better ways to connect acoustic behavior, fit, and musical feeling.</p>
+      </div>
+      <div class="aaw-about-method-grid" aria-label="AAW engineering disciplines">
+        <article><span>01</span><h3>Acoustic system design</h3><p>Driver selection, crossover behavior, chamber geometry, and pressure management are treated as one connected system.</p></article>
+        <article><span>02</span><h3>Digital shell craft</h3><p>3D scanning, CAD-based acoustic development, digital modeling, and 3D printing support repeatable fit and sound.</p></article>
+        <article><span>03</span><h3>Human fit data</h3><p>Universal shells are shaped by fit databases, user testing, and long-session comfort studies, not just visual proportions.</p></article>
+        <article><span>04</span><h3>Hand finishing</h3><p>The final object still carries human judgment: surface finish, polish, assembly checks, and listening verification.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="aaw-brand-timeline" class="aaw-about-section aaw-about-timeline-section" aria-labelledby="aaw-timeline-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-timeline-head">
+        <div>
+          <p class="aaw-about-kicker">Brand timeline</p>
+          <h2 id="aaw-timeline-title">A technical evolution, not a fixed formula</h2>
+        </div>
+        <p>Custom IEMs led to hybrid architecture, in-house dynamic work, tunable systems, universal monitors, electrostatic and planar experiments, isobaric collaborations, modular fit, and today's Z Series platform.</p>
+      </div>
+
+      <div class="aaw-timeline-vertical" data-aaw-timeline>
+        <div class="aaw-timeline-rail" aria-hidden="true"><i></i></div>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2014</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Founded in Singapore</p>
+            <h3>AAW begins as an engineering-led monitor workshop</h3>
+            <p>Advanced AcousticWerkes was founded in Singapore in 2014 by Kevin Wang, following a late-2013 R&D effort by a small engineering-led team with roots in NTU.</p>
+            <ul><li>Serious custom IEM design</li><li>Musicians, professionals, discerning listeners</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2014</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Early hybrid custom IEMs</p>
+            <h3>Hybrid design becomes part of the language</h3>
+            <p>Early custom monitors such as W300AR and W500 AHMorph helped establish AAW's hybrid direction, including tunable sound concepts.</p>
+            <ul><li>Dynamic-driver weight</li><li>Balanced-armature clarity</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2016</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Universal IEM expansion</p>
+            <h3>AAW tuning moves beyond custom fit</h3>
+            <p>Nebula One, Nebula Two, and Q brought AAW's acoustic thinking from custom-fit monitors into smaller, more accessible universal formats.</p>
+            <ul><li>Nebula line enters universal fit</li><li>Portable AAW tuning reaches a broader audience</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2017</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Flagship hybrid architecture</p>
+            <h3>W900 pushes the high-end CIEM platform</h3>
+            <p>W900 represented AAW's flagship hybrid custom monitor period, using proprietary dynamic driver work, balanced-armature arrays, and complex crossover design.</p>
+            <ul><li>High-end CIEM architecture matures</li><li>Hybrid tuning becomes a core AAW language</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2019</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Tri-hybrid and experimental platforms</p>
+            <h3>New transducer combinations enter the workshop</h3>
+            <p>Canary, Halcyon, POLA-related projects, and Nightingale showed AAW exploring electrostatic hybrid systems, planar magnetic IEMs, and multi-way architectures.</p>
+            <ul><li>Dynamic, BA, electrostatic, and planar experiments</li><li>Extension, separation, and headroom become key questions</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2021</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Collaboration and isobaric development</p>
+            <h3>AAW experiments beyond its own product line</h3>
+            <p>AAW x Custom Art Project 4+2 reflected a willingness to collaborate beyond internal product lines, including isobaric dynamic woofer ideas and hybrid driver integration.</p>
+            <ul><li>Cross-brand engineering collaboration</li><li>Isobaric low-frequency work enters the story</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2020s</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Universal, custom, and flagship continuity</p>
+            <h3>The catalogue keeps both discipline and range</h3>
+            <p>AAW continued building custom and universal models across A3H+, AXH, ATH, ASH, M20, Mockingbird, Halcyon, Nightingale, Project 4+2, and Canary Pro.</p>
+            <ul><li>Custom and universal families continue side by side</li><li>Flagship experiments inform daily products</li></ul>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>Z Series</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Daily listening, modular fit, adaptive voicing</p>
+            <h3>Z Series turns the lineage into compact daily monitors</h3>
+            <p>Z06 brings Bass-Flow pressure control and digitally developed acoustic chambers. Z07 introduces FitMorph modular fit. Z05 AuAg adds TwinCore two-mode voicing, Bass-Flow venting, and a source-ready cable kit.</p>
+            <ul><li>Compact universal platforms</li><li>Modern listening across phones, dongles, DAPs, and desktop systems</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section dark aaw-about-lineage" aria-labelledby="aaw-lineage-title">
+    <div class="aaw-about-wrap aaw-about-lineage-grid">
+      <div>
+        <p class="aaw-about-kicker">Lineage</p>
+        <h2 id="aaw-lineage-title">From custom monitors to the Z Series</h2>
+        <p class="aaw-about-lineage-lead">The modern catalogue reflects a balance between craft and technology: custom-fit precision, universal convenience, experimental driver systems, and products tuned for how people actually listen today.</p>
+      </div>
+      <div class="aaw-about-lineage-list">
+        <article><span>Hybrid roots</span><p>W300AR and W500 AHMorph helped establish AAW's early hybrid direction, including tunable sound concepts.</p></article>
+        <article><span>Universal growth</span><p>Nebula, Q, and later universal platforms brought AAW tuning into smaller daily listening formats.</p></article>
+        <article><span>Experimental platforms</span><p>Canary, Halcyon, Nightingale, Project 4+2, and Canary Pro pushed electrostatic, planar, isobaric, and multi-way hybrid ideas.</p></article>
+        <article><span>Z Series</span><p>Z06, Z07, and Z05 AuAg translate AAW's engineering language into compact universal monitors with fit, pressure, and voicing systems.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section aaw-about-gallery" aria-labelledby="aaw-gallery-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-gallery-head">
+        <p class="aaw-about-kicker">Craft signals</p>
+        <h2 id="aaw-gallery-title">The work lives where fit, tuning, and finish meet</h2>
+      </div>
+      <div class="aaw-about-gallery-grid">
+        <figure class="feature">
+          <img src="{{ 'builder.png' | file_img_url: '1600x' }}" alt="AAW custom builder artwork and shell design workflow" width="1600" height="1200" loading="lazy">
+          <figcaption><b>Custom thinking</b><span>Personal fit and acoustic intent meet before a monitor becomes an object.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'shell_CT_CQ.jpg' | file_img_url: '1200x' }}" alt="AAW custom shell and faceplate craft detail" width="1200" height="900" loading="lazy">
+          <figcaption><b>Shell geometry</b><span>Comfort is part of the acoustic system.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'CanaryProCIEMWeb02.jpg' | file_img_url: '1200x' }}" alt="AAW Canary Pro custom monitor product detail" width="1200" height="900" loading="lazy">
+          <figcaption><b>Flagship continuity</b><span>Experimental platforms feed the next generation of practical monitors.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-final" aria-labelledby="aaw-final-title">
+    <div class="aaw-about-wrap">
+      <h2 id="aaw-final-title">Listening is not only the final test. It is the method.</h2>
+      <p>It is how a shell shape is refined, how a crossover is voiced, how a stage monitor becomes dependable, and how a personal IEM becomes something a listener reaches for every day.</p>
+      <p class="aaw-about-final-slogan">Those who listen will find the way.<span>We are the Mechanics of Sound.</span></p>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "AAW About brand page v7",
+  "tag": "section",
+  "class": "aaw-about-page-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "AAW About brand page v7"
+    }
+  ]
+}
+{% endschema %}

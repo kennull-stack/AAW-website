@@ -1,0 +1,481 @@
+{{ 'aaw-about-brand-v11.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'aaw-about-brand-v11.js' | asset_url }}" defer></script>
+<style>
+  .aaw-timeline-marker span{display:inline-block!important;max-width:none!important;white-space:nowrap!important;overflow-wrap:normal!important;transform:translateX(-54px)!important}
+  @media(min-width:981px){
+    .aaw-timeline-rail{left:250px!important}
+    .aaw-timeline-item{grid-template-columns:250px minmax(0,1fr)!important}
+    .aaw-timeline-marker{padding-right:46px!important;font-size:clamp(34px,4vw,58px)!important;text-align:right!important}
+    .aaw-timeline-item:last-child .aaw-timeline-marker{font-size:clamp(32px,3.7vw,52px)!important}
+  }
+  @media(max-width:980px){
+    .aaw-timeline-marker span{transform:none!important}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": {{ canonical_url | append: "#aboutpage" | json }},
+      "url": {{ canonical_url | json }},
+      "name": "About Advanced AcousticWerkes",
+      "description": "Advanced AcousticWerkes is a Singapore-based in-ear monitor specialist founded in 2014 by Kevin Wang, known for custom IEMs, hybrid driver architecture, and the Z Series.",
+      "about": {
+        "@id": "https://www.aaw.me/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.aaw.me/#website",
+        "name": "Advanced AcousticWerkes",
+        "url": "https://www.aaw.me/"
+      },
+      "mainEntity": {
+        "@id": "https://www.aaw.me/#organization"
+      },
+      "citation": [
+        "https://headfonics.com/aaw-nebula-one-review/",
+        "https://headfonics.com/the-w900-by-advanced-acousticwerkes/",
+        "https://headfonics.com/aaw-canary-review/",
+        "https://headfonics.com/aaw-halcyon-review/",
+        "https://headfonics.com/aaw-x-custom-art-project-4-2-review/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.aaw.me/#kevin-wang",
+      "name": "Kevin Wang",
+      "jobTitle": "Founder & Tuning Engineer",
+      "worksFor": {
+        "@id": "https://www.aaw.me/#organization"
+      },
+      "knowsAbout": [
+        "custom in-ear monitors",
+        "hybrid IEM tuning",
+        "balanced armature drivers",
+        "dynamic driver integration",
+        "universal in-ear monitors",
+        "IEM acoustic design"
+      ]
+    },
+    {
+      "@type": ["LocalBusiness", "Store"],
+      "@id": "https://www.aaw.me/#aaw-office",
+      "name": "Advanced AcousticWerkes Singapore Office",
+      "parentOrganization": {
+        "@id": "https://www.aaw.me/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#01-03, 76 Playfair Rd",
+        "addressLocality": "Singapore",
+        "postalCode": "367996",
+        "addressCountry": "SG"
+      },
+      "telephone": "+65-8731-5476",
+      "email": "sales@acousticwerkes.com",
+      "areaServed": "Singapore"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": {{ canonical_url | append: "#faq" | json }},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who founded Advanced AcousticWerkes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Advanced AcousticWerkes was founded in Singapore in 2014 by Kevin Wang."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is AAW based?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW is based in Singapore and works with listeners, musicians, and audio specialists through official support and dealer channels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does AAW make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW makes custom and universal in-ear monitors, including hybrid, electrostatic, planar, isobaric, and Z Series designs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is AAW known for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW is known for custom IEM craft, hybrid driver architecture, tuning flexibility, ergonomic fit, and hand-finished monitor design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Those who listen will find the way mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It expresses AAW's belief that sound design begins with careful listening: to music, materials, measurements, and the people who use the monitors."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="aaw-about-shell" data-aaw-about data-aaw-media="instagram">
+  <section class="aaw-about-hero" aria-labelledby="aaw-about-title">
+    <div class="aaw-about-wrap aaw-about-hero-grid">
+      <div class="aaw-about-hero-copy">
+        <p class="aaw-about-kicker">Singapore IEM specialist</p>
+        <h1 id="aaw-about-title"><span>Advanced</span><span>AcousticWerkes</span></h1>
+        <p class="aaw-about-slogan">Those who listen will find the way.<span>善听者，终能找到道路。</span></p>
+        <p class="aaw-about-dek">AAW is a Singapore-based in-ear monitor house founded in 2014 by Kevin Wang, shaped by a small circle of NTU-trained engineers, makers, and music lovers who cared about how music feels in the ear.</p>
+      <div class="aaw-about-actions" aria-label="About page links">
+        <a class="aaw-about-btn" href="#aaw-brand-timeline">Explore timeline</a>
+        <a class="aaw-about-btn secondary" href="{{ routes.all_products_collection_url }}">View monitors</a>
+        <a class="aaw-about-btn secondary" href="#aaw-about-faq">FAQ</a>
+      </div>
+      </div>
+      <figure class="aaw-about-hero-media">
+        <img src="{{ 'aaw-ins-hero-ciem-2026-900.jpg' | asset_url }}" alt="AAW custom in-ear monitor with icy blue sparkle resin faceplates" width="675" height="900" loading="eager">
+        <figcaption>
+          <b>Mechanics of Sound</b>
+          <span>Built for listeners who hear the small things.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <aside class="aaw-about-stat-strip" aria-label="AAW brand summary">
+    <div class="aaw-about-wrap aaw-about-stats">
+      <article><b>2014</b><span>Founded in Singapore by Kevin Wang.</span></article>
+      <article><b>NTU roots</b><span>Started with curious builders and serious listening sessions.</span></article>
+      <article><b>Custom + universal</b><span>For stage use, personal listening, and long nights with favorite records.</span></article>
+      <article><b>Z Series</b><span>Compact universal monitors tuned for daily listening.</span></article>
+    </div>
+  </aside>
+
+  <section class="aaw-about-section aaw-about-origin" aria-labelledby="aaw-origin-title">
+    <div class="aaw-about-wrap aaw-about-grid-2">
+      <div>
+        <p class="aaw-about-kicker">Origin</p>
+        <h2 id="aaw-origin-title">Built by people who listen before they decide</h2>
+      </div>
+      <div class="aaw-about-copy-stack">
+        <p>From the beginning, AAW was built around a simple belief: great sound is found by listening closely - to the weight of a kick drum, the breath around a vocal, the bite of a guitar string, and the comfort of a monitor after hours of use.</p>
+        <p>AAW's early work centered on custom in-ear monitors for musicians, audio professionals, and serious listeners. The goal was never just to fit more parts into a shell. It was to make an IEM feel natural, dependable, and alive.</p>
+        <p>Every choice had to serve the listening experience: bass pressure, midrange tone, treble extension, shell shape, isolation, finish, and the way a monitor disappears when the music takes over. That is the spirit behind <strong>the Mechanics of Sound</strong>.</p>
+        <div class="aaw-about-origin-images" aria-label="AAW custom monitor details">
+          <figure><img src="{{ 'aaw-ins-origin-a3h-2015-520.jpg' | asset_url }}" alt="Early AAW A3H Pro custom in-ear monitor in red and black" width="520" height="520" loading="lazy"></figure>
+          <figure><img src="{{ 'aaw-ins-method-custom-group-2026-520.jpg' | asset_url }}" alt="AAW custom and Z06 monitors with abalone and resin faceplates" width="419" height="520" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section dark aaw-about-method" aria-labelledby="aaw-method-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-method-head">
+        <div>
+          <p class="aaw-about-kicker">Method</p>
+          <h2 id="aaw-method-title">Sound is shaped by listening</h2>
+        </div>
+        <p>AAW's story is not a race to add more drivers. It is a long search for tone, control, comfort, and that quiet moment when a monitor simply lets the music breathe.</p>
+      </div>
+      <div class="aaw-about-method-grid" aria-label="AAW engineering disciplines">
+        <article><span>01</span><h3>Tuning with intent</h3><p>Driver choice, crossover behavior, venting, and chamber shape are voiced together so bass, mids, and treble feel like one performance.</p></article>
+        <article><span>02</span><h3>Fit you can forget</h3><p>3D scanning, digital modeling, and shell refinement help a monitor sit securely without pulling attention away from the music.</p></article>
+        <article><span>03</span><h3>Long-session comfort</h3><p>Universal shells are shaped around real ears and repeated listening, because an IEM only works if people keep wanting to wear it.</p></article>
+        <article><span>04</span><h3>Finishing by ear and hand</h3><p>Polish, assembly, faceplate work, and final listening checks keep the finished monitor close to the human side of the craft.</p></article>
+      </div>
+      <figure class="aaw-about-method-media">
+        <img src="{{ 'aaw-ins-gallery-custom-2025-900.jpg' | asset_url }}" alt="AAW Z06 customs arranged in a listening and shell color display" width="900" height="900" loading="lazy">
+        <figcaption><b>Custom color, familiar fit</b><span>AAW's visual language keeps returning to the same idea: personal monitors should feel personal before the first note plays.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="aaw-brand-timeline" class="aaw-about-section aaw-about-timeline-section" aria-labelledby="aaw-timeline-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-timeline-head">
+        <div>
+          <p class="aaw-about-kicker">Brand timeline</p>
+          <h2 id="aaw-timeline-title">A listening journey, not a fixed formula</h2>
+        </div>
+        <p>From custom stage monitors to hybrids, tunable signatures, universal shells, electrostatic sparkle, planar speed, isobaric bass ideas, modular fit, and today's Z Series, AAW keeps following the sound.</p>
+      </div>
+
+      <div class="aaw-timeline-vertical" data-aaw-timeline>
+        <div class="aaw-timeline-rail" aria-hidden="true"><i></i></div>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2014</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Founded in Singapore</p>
+            <h3>AAW begins with custom monitors and serious listening</h3>
+            <p>Advanced AcousticWerkes was founded in Singapore in 2014 by Kevin Wang, after a small NTU-rooted group of builders and music lovers began chasing better in-ear sound.</p>
+            <ul><li>Custom monitors for real use</li><li>Musicians, professionals, discerning listeners</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2015-first-custom-360.jpg' | asset_url }}" alt="Early AAW custom in-ear monitor with dark shell and AAW logo" width="360" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2014</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Early hybrid custom IEMs</p>
+            <h3>Hybrid tuning becomes part of the AAW sound</h3>
+            <p>Early custom monitors such as W300AR and W500 AHMorph brought together dynamic-driver body and balanced-armature precision, giving listeners a taste of weight, speed, and adjustability in one shell.</p>
+            <ul><li>Dynamic-driver body</li><li>Balanced-armature clarity</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2016-w300ar-360.jpg' | asset_url }}" alt="AAW W300AR Ghost Rider custom in-ear monitor with translucent green shells" width="360" height="240" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2015</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Custom identity and early universal hints</p>
+            <h3>The shells start telling personal stories</h3>
+            <p>AAW's early public posts show CIEM designs, custom faceplates, and A3H Pro builds with the kind of visual personality enthusiasts remember. By December, Nebula One was already being teased as a universal dynamic-driver monitor.</p>
+            <ul><li>CIEM faceplate character</li><li>A3H Pro custom work</li><li>Nebula One teased</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2015-a3h-pro-360.jpg' | asset_url }}" alt="AAW A3H Pro custom in-ear monitor with red and black shells" width="360" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2016</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Universal IEM expansion</p>
+            <h3>AAW tuning becomes easier to carry</h3>
+            <p>Nebula One, Nebula Two, and Q brought AAW's house thinking into universal-fit monitors. The same period shows W300AR customs, gradient shell work, and the Capri balanced Lightning cable, all pointing toward better listening outside the studio.</p>
+            <ul><li>Nebula line enters universal fit</li><li>W300AR and shell craft continue</li><li>Portable listening expands</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2015-nebula-one-360.jpg' | asset_url }}" alt="AAW Nebula One early universal in-ear monitor teaser artwork" width="360" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2017</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Flagship hybrid era</p>
+            <h3>W900 brings scale, impact, and flagship ambition</h3>
+            <p>W900 marked an important high-end moment for AAW, combining dynamic-driver authority with balanced-armature detail and a carefully voiced crossover. It appeared as a new flagship at CanJam Singapore 2017 before later showing up in universal-fit form.</p>
+            <ul><li>CanJam Singapore 2017 flagship moment</li><li>Large-scale hybrid sound</li><li>Universal-fit W900 work</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2017-w900-360.jpg' | asset_url }}" alt="AAW W900 universal fit monitor with green faceplate and AAW logo" width="360" height="240" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2018</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Electrostatic, universal, and planar ideas</p>
+            <h3>More colors enter the sound palette</h3>
+            <p>In 2018, AAW listeners saw A1D, A2H, A3H, and W900 in both custom and universal forms, POLA electrostatic hybrid auditions, wider A3H/A2H universal availability, and a compact planar magnetic prototype auditioned at Jaben Singapore.</p>
+            <ul><li>POLA electrostatic shimmer</li><li>A1D/A2H/A3H/W900 at CanJam</li><li>Planar speed at Jaben</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2018-pola-360.jpg' | asset_url }}" alt="AAW POLA electrostatic hybrid in-ear monitor with cable detail" width="360" height="239" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2019</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Tri-hybrid and new sonic flavors</p>
+            <h3>The lineup becomes richer, bolder, and more varied</h3>
+            <p>Canary, POLA, Nightingale, Mockingbird, ASH, AXH, and A3H appeared in public auditions with Zeppelin & Co. Canary leaned into flagship hybrid drama, while Nightingale carried the planar direction forward for listeners chasing speed and openness.</p>
+            <ul><li>Canary public audition era</li><li>Nightingale planar magnetic IEM</li><li>POLA, Mockingbird, ASH, AXH, and A3H</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2019-canary-360.jpg' | asset_url }}" alt="AAW Canary flagship in-ear monitor with braided cable close-up" width="360" height="240" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2020</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Halcyon and tri-hybrid refinement</p>
+            <h3>Halcyon chases sub-bass weight and treble air</h3>
+            <p>In 2020, Halcyon brought AAW's tri-hybrid work into a more atmospheric flagship voice, pairing a graphene-diaphragm dynamic woofer with balanced-armature mids and quad electrostatic treble.</p>
+            <ul><li>Low-end authority</li><li>Electrostatic air</li><li>Graphene dynamic woofer</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2020-halcyon-360.jpg' | asset_url }}" alt="AAW Halcyon custom in-ear monitor with white and gold shells" width="360" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2021</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Collaboration and isobaric bass</p>
+            <h3>Project 4+2 explores low-end texture with Custom Art</h3>
+            <p>AAW x Custom Art Project 4+2 showed the brand's appetite for collaboration, using isobaric dynamic woofer ideas and hybrid tuning to explore a different kind of bass foundation.</p>
+            <ul><li>Cross-brand listening project</li><li>Isobaric low-frequency work enters the story</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2021-project42-360.jpg' | asset_url }}" alt="AAW x Custom Art Project 4+2 in-ear monitor with blue and purple faceplates" width="360" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2020s</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Universal, custom, and flagship continuity</p>
+            <h3>The range keeps room for both daily use and dream builds</h3>
+            <p>AAW continued across A3H+, AXH, ATH, ASH, M20, Mockingbird, Halcyon, Nightingale, Project 4+2, and Canary Pro. A3H+ Lux brought e-BFC tuning in 2022, while the CIEM configurator expanded with more than 20 new looks in 2023.</p>
+            <ul><li>Custom and universal lines side by side</li><li>A3H+ Lux e-BFC tuning</li><li>More CIEM visual choices</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2023-canarypro-inside-360.jpg' | asset_url }}" alt="AAW Canary Pro internal component view and acoustic layout" width="360" height="203" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2025</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Show-floor listening and Z07 prototypes</p>
+            <h3>Z07 starts meeting real ears in public</h3>
+            <p>Z07 prototype listening appeared at the SIAS show in August 2025, followed by Black Malus and the new Z07 at Tokyo Potafes in December. The story moved from the bench to the show floor, where first impressions matter fast.</p>
+            <ul><li>SIAS prototype listening</li><li>Tokyo Potafes public showcase</li><li>Black Malus and new Z07</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2025-z07-show-360.jpg' | asset_url }}" alt="AAW Z07 show display with monitor and FitMorph information" width="324" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>2026</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Z07 becomes public</p>
+            <h3>A compact hybrid tuned for precision, air, and fit</h3>
+            <p>In 2026, Z07 was presented as a tube-free, filter-free hybrid IEM with a 10mm titanium dynamic driver, six balanced armatures, a 4-way electronic crossover, mechanical sound radiation, and FitMorph adaptive fit.</p>
+            <ul><li>Tube-free and filter-free design</li><li>10mm titanium DD plus 6 BA</li><li>FitMorph adaptive fit</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2026-z07-detail-360.jpg' | asset_url }}" alt="AAW Z07 monitor detail with cable and machined shell" width="290" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>CIEM</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Craft, personalization, and visible identity</p>
+            <h3>Custom work keeps the emotional side alive</h3>
+            <p>Recent custom Z06 and CIEM builds continue the visual side of AAW: resin faceplates, abalone inlays, kanji engraving, translucent shells, and personal motifs that make a monitor feel like it belongs to one listener.</p>
+            <ul><li>Z06 custom builds</li><li>Hand-finished visual identity</li><li>For those who listen beyond the surface</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2026-z06-red-360.jpg' | asset_url }}" alt="AAW Z06 custom monitor with crimson resin faceplates and kanji engraving" width="288" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="aaw-timeline-item">
+          <div class="aaw-timeline-marker"><span>Z Series</span></div>
+          <div class="aaw-timeline-card">
+            <p class="aaw-timeline-era">Daily listening, modular fit, adaptive voicing</p>
+            <h3>Z Series brings the AAW sound into everyday rotation</h3>
+            <p>Z06 brings Bass-Flow pressure control and carefully shaped acoustic chambers. Z07 introduces FitMorph modular fit. Z05 AuAg adds TwinCore two-mode voicing, Bass-Flow venting, and a cable kit ready for phones, dongles, DAPs, and balanced desktop rigs.</p>
+            <ul><li>Compact universal monitors</li><li>From phone listening to balanced desktop systems</li></ul>
+            <figure class="aaw-timeline-media"><img src="{{ 'aaw-ins-tl-2026-z06-group-360.jpg' | asset_url }}" alt="AAW custom and Z06 monitors shown together with colorful shells" width="270" height="360" loading="lazy"></figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section dark aaw-about-lineage" aria-labelledby="aaw-lineage-title">
+    <div class="aaw-about-wrap aaw-about-lineage-grid">
+      <div>
+        <p class="aaw-about-kicker">Lineage</p>
+        <h2 id="aaw-lineage-title">From custom monitors to the Z Series</h2>
+        <p class="aaw-about-lineage-lead">The modern range keeps AAW's two sides together: the intimacy of custom fit, the convenience of universal monitors, and tuning that respects how people actually listen today.</p>
+      </div>
+      <div class="aaw-about-lineage-list">
+        <article><span>Hybrid roots</span><p>W300AR and W500 AHMorph helped shape AAW's early mix of dynamic-driver body, BA clarity, and tunable sound.</p></article>
+        <article><span>Universal growth</span><p>Nebula, Q, and later universal monitors made the AAW tuning approach easier to carry every day.</p></article>
+        <article><span>Flagship exploration</span><p>Canary, Halcyon, Nightingale, Project 4+2, and Canary Pro explored electrostatic air, planar speed, isobaric bass, and multi-way hybrid scale.</p></article>
+        <article><span>Z Series</span><p>Z06, Z07, and Z05 AuAg bring that experience into compact monitors with modern fit, pressure relief, and flexible voicing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section aaw-about-gallery" aria-labelledby="aaw-gallery-title">
+    <div class="aaw-about-wrap">
+      <div class="aaw-about-gallery-head">
+        <p class="aaw-about-kicker">Craft signals</p>
+        <h2 id="aaw-gallery-title">The craft lives where fit, tuning, and finish meet</h2>
+      </div>
+      <div class="aaw-about-gallery-grid">
+        <figure class="feature">
+          <img src="{{ 'aaw-ins-method-custom-group-2026-900.jpg' | asset_url }}" alt="AAW custom monitors with abalone inlay, resin colors, and personal faceplate details" width="725" height="900" loading="lazy">
+          <figcaption><b>Personal color</b><span>Custom work gives the listener a monitor that looks as intentional as it sounds.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'aaw-ins-gallery-halcyon-640.jpg' | asset_url }}" alt="AAW Halcyon cable and monitor detail with dark flagship styling" width="640" height="640" loading="lazy">
+          <figcaption><b>Flagship texture</b><span>Big bass, treble air, and tactile materials belong in the same conversation.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'aaw-ins-gallery-pola-planar-640.jpg' | asset_url }}" alt="AAW planar magnetic in-ear monitor and cable on a light background" width="640" height="640" loading="lazy">
+          <figcaption><b>Open questions</b><span>Planar speed, electrostatic air, and hybrid scale all shaped the later AAW vocabulary.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section aaw-about-entity" aria-labelledby="aaw-entity-title">
+    <div class="aaw-about-wrap aaw-about-entity-grid">
+      <div>
+        <p class="aaw-about-kicker">Current range</p>
+        <h2 id="aaw-entity-title">Follow the lineage into the monitors people can hear now</h2>
+      </div>
+      <div class="aaw-about-link-panel">
+        <p>Explore AAW's current universal line through <a href="/products/z05-auag-launch-edition">Z05 AuAg</a>, <a href="/products/z06-universal-in-ear-monitor">Z06</a>, and <a href="/products/z07-in-ear-monitor">Z07</a>. For custom work and stage-focused monitors, browse <a href="/collections/for-musician">custom-fit IEMs</a>; for daily listening and audiophile use, visit <a href="/collections/universal-in-ear">universal IEMs</a>.</p>
+        <p>For auditions, pickup, and after-sales help, use the <a href="/pages/store-locator">store locator</a>, <a href="/pages/contact-us">contact AAW</a>, or read how to <a href="/pages/how-to-service-your-iem">service your IEM</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-section dark aaw-about-proof" aria-labelledby="aaw-proof-title">
+    <div class="aaw-about-wrap aaw-about-proof-grid">
+      <div>
+        <p class="aaw-about-kicker">Public listening notes</p>
+        <h2 id="aaw-proof-title">A few outside ears in the story</h2>
+        <p class="aaw-about-proof-lead">The page tells AAW's own history, but the lineage also shows up in public audiophile reviews and specialist listening coverage.</p>
+      </div>
+      <div class="aaw-about-review-list" aria-label="External AAW product reviews">
+        <a href="https://headfonics.com/aaw-nebula-one-review/" rel="noopener" target="_blank"><span>Nebula One</span><b>Headfonics review</b></a>
+        <a href="https://headfonics.com/the-w900-by-advanced-acousticwerkes/" rel="noopener" target="_blank"><span>W900</span><b>Headfonics review</b></a>
+        <a href="https://headfonics.com/aaw-canary-review/" rel="noopener" target="_blank"><span>Canary</span><b>Headfonics review</b></a>
+        <a href="https://headfonics.com/aaw-halcyon-review/" rel="noopener" target="_blank"><span>Halcyon</span><b>Headfonics review</b></a>
+        <a href="https://headfonics.com/aaw-x-custom-art-project-4-2-review/" rel="noopener" target="_blank"><span>Project 4+2</span><b>Headfonics review</b></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="aaw-about-faq" class="aaw-about-section aaw-about-faq" aria-labelledby="aaw-faq-title">
+    <div class="aaw-about-wrap aaw-about-faq-grid">
+      <div>
+        <p class="aaw-about-kicker">FAQ</p>
+        <h2 id="aaw-faq-title">Frequently asked questions about Advanced AcousticWerkes</h2>
+      </div>
+      <div class="aaw-about-faq-list">
+        <article>
+          <h3>Who founded Advanced AcousticWerkes?</h3>
+          <p>Advanced AcousticWerkes was founded in Singapore in 2014 by Kevin Wang.</p>
+        </article>
+        <article>
+          <h3>Where is AAW based?</h3>
+          <p>AAW is based in Singapore and works with listeners, musicians, and audio specialists through official support and dealer channels.</p>
+        </article>
+        <article>
+          <h3>What does AAW make?</h3>
+          <p>AAW makes custom and universal in-ear monitors, including hybrid, electrostatic, planar, isobaric, and Z Series designs.</p>
+        </article>
+        <article>
+          <h3>What is AAW known for?</h3>
+          <p>AAW is known for custom IEM craft, hybrid driver architecture, tuning flexibility, ergonomic fit, and hand-finished monitor design.</p>
+        </article>
+        <article>
+          <h3>What does "Those who listen will find the way" mean?</h3>
+          <p>It expresses AAW's belief that sound design begins with careful listening: to music, materials, measurements, and the people who use the monitors.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="aaw-about-final" aria-labelledby="aaw-final-title">
+    <div class="aaw-about-wrap">
+      <h2 id="aaw-final-title">Listening is where the work starts, and where it returns.</h2>
+      <p>It is how a shell becomes comfortable, how a crossover finds its voice, how a stage monitor earns trust, and how a personal IEM becomes the one a listener reaches for without thinking.</p>
+      <p class="aaw-about-final-slogan">Those who listen will find the way.<span>We are the Mechanics of Sound.</span></p>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "AAW About brand page v12",
+  "tag": "section",
+  "class": "aaw-about-page-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "AAW About brand page v12"
+    }
+  ]
+}
+{% endschema %}

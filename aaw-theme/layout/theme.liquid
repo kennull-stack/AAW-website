@@ -4,25 +4,39 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="theme-color" content="#F5F5F5"> 
+      <meta name="theme-color" content="#F5F5F5">
       {% render 'meta-tags' %}
       <link rel="canonical" href="{{ canonical_url }}">
+      {%- if template.name == 'product' and product.handle == 'z05-auag-launch-edition' -%}
+        <link rel="alternate" hreflang="en" href="https://www.aaw.me/products/z05-auag-launch-edition">
+        <link rel="alternate" hreflang="zh-Hans" href="https://www.aaw.me/zh/products/z05-auag-launch-edition">
+        <link rel="alternate" hreflang="zh-Hant" href="https://www.aaw.me/zh-tw/products/z05-auag-launch-edition">
+        <link rel="alternate" hreflang="ja" href="https://www.aaw.me/ja/products/z05-auag-launch-edition">
+        <link rel="alternate" hreflang="ko" href="https://www.aaw.me/ko/products/z05-auag-launch-edition">
+        <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/products/z05-auag-launch-edition">
+        {{ 'z05-product.css' | asset_url | stylesheet_tag }}
+      {%- endif -%}
       <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
       {%- if settings.favicon != blank -%}
         <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
       {%- endif -%}
-  
+
       {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
         <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
       {%- endunless -%}
-  
-      <title>
-        {{ page_title }}
-      </title>
-  
-      {% if page_description %}
-        <meta name="description" content="{{ page_description | escape }}">
-      {% endif %}
+
+      {%- if request.page_type == 'page' and page.handle == 'about-us' -%}
+        <title>About Advanced AcousticWerkes | Singapore IEM Specialist Founded by Kevin Wang</title>
+        <meta name="description" content="Advanced AcousticWerkes (AAW) is a Singapore in-ear monitor specialist founded in 2014 by Kevin Wang, known for custom IEMs, hybrid tuning, and the Z Series.">
+      {%- else -%}
+        <title>
+          {{ page_title }}
+        </title>
+
+        {% if page_description %}
+          <meta name="description" content="{{ page_description | escape }}">
+        {% endif %}
+      {%- endif -%}
       {{ content_for_header }}
 
       {%- render 'global-style-variables' -%}
@@ -36,13 +50,13 @@
       <div class="body-main">
         {% sections 'header-group' %}
         <main id="MainContent" class="main-content focus-none" role="main" tabindex="-1" >
-          {{ content_for_layout }} 
+          {{ content_for_layout }}
         </main>
-        <div class="custom-footer-group">  
+        <div class="custom-footer-group">
         {% sections 'footer-group' %}
         </div>
         {% section 'mobile-dock' %}
-      </div> 
+      </div>
         {% render 'newsletter-popup' %}
         {% render 'cookies-popup' %}
         {% render 'age-verification' %}
@@ -91,18 +105,18 @@
       search_url: '{{ routes.search_url }}',
       predictive_search_url: '{{ routes.predictive_search_url }}',
     };
-  
+
     theme.settings = {
       moneyFormat: '{{ shop.money_format }}',
       moneyWithCurrencyFormat: '{{ shop.money_with_currency_format }}',
       currencyCodeEnabled: '{{ shop.enabled_currencies }}',
     };
-  
+
     window.cartStrings = {
       error: `{{ 'sections.cart.cart_error' | t }}`,
       quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
     };
-  
+
     window.variantStrings = {
       preOrder: `{{ 'products.product.preorder' | t }}`,
       addToCart: `{{ 'products.product.add_to_cart' | t }}`,
@@ -110,9 +124,9 @@
       unavailable: `{{ 'products.product.unavailable' | t }}`,
       unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
     };
-    
+
       </script>
-     
+
     </body>
   </html>
-  
+

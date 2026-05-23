@@ -1,0 +1,122 @@
+/* AAW About page. Visual language follows the Z05 AuAg editorial product page. */
+.aaw-about-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;overflow:hidden}
+.aaw-about-shell *{box-sizing:border-box}
+.aaw-about-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto}
+.aaw-about-kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#b8b0a2;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.aaw-about-kicker:before{content:"";width:36px;height:1px;background:#d6a756;display:inline-block}
+.aaw-about-hero{position:relative;min-height:72vh;background:#080808;color:#f5f2ea}
+.aaw-about-hero:before{content:"AAW";position:absolute;right:-.12em;top:.14em;color:rgba(255,255,255,.045);font-size:clamp(130px,25vw,430px);line-height:.75;font-weight:900;letter-spacing:0;pointer-events:none}
+.aaw-about-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(320px,.9fr) minmax(420px,1.1fr);gap:34px;align-items:center;padding:64px 0 42px}
+.aaw-about-hero-copy{position:relative;z-index:2;min-width:0}
+.aaw-about-hero h1{max-width:720px;margin:0;color:#fff;font-size:clamp(42px,4.2vw,62px);line-height:.92;font-weight:900;text-transform:uppercase;letter-spacing:0;overflow-wrap:normal;word-break:keep-all}
+.aaw-about-hero h1 span{display:block;white-space:nowrap}
+.aaw-about-hero h1 span+span{font-size:.78em}
+.aaw-about-slogan{max-width:650px;margin:22px 0 0;color:#f4e8d0;font-size:clamp(20px,2.2vw,31px);line-height:1.18;font-weight:900;text-transform:uppercase}
+.aaw-about-slogan span{display:block;margin-top:8px;color:#d7c7ac;font-size:.72em;font-weight:800;text-transform:none}
+.aaw-about-dek{max-width:650px;margin:22px 0 0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.48;overflow-wrap:break-word}
+.aaw-about-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.aaw-about-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid #e2b768;text-decoration:none;font-weight:900;text-transform:uppercase;font-size:12px;color:#090909;background:#e2b768}
+.aaw-about-btn.secondary{background:transparent;color:#f2e5c5}
+.aaw-about-hero-media{position:relative;aspect-ratio:4/5;margin:0;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12)}
+.aaw-about-hero-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.05) saturate(.96)}
+.aaw-about-hero-media figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.14);padding:14px;color:#f2e5c5}
+.aaw-about-hero-media b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.aaw-about-hero-media span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}
+.aaw-about-stat-strip{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:#0f0f0f}
+.aaw-about-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0}
+.aaw-about-stats article{padding:22px 20px;background:#151515;min-height:122px}
+.aaw-about-stats b{display:block;color:#fff;font-size:24px;line-height:1.05;text-transform:uppercase}
+.aaw-about-stats span{display:block;margin-top:10px;color:#bdb5aa;font-size:13px;line-height:1.38}
+.aaw-about-section{padding:78px 0;background:#f4f1ea;color:#111}
+.aaw-about-section.dark{background:#080808;color:#f5f2ea}
+.aaw-about-section h2,.aaw-about-final h2{margin:0;color:inherit;font-size:clamp(34px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0}
+.aaw-about-section p{font-size:17px;line-height:1.64;color:inherit}
+.aaw-about-grid-2{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:start}
+.aaw-about-copy-stack{padding-left:28px;border-left:1px solid rgba(168,119,37,.34)}
+.aaw-about-copy-stack p{margin:0;color:#302b25}
+.aaw-about-copy-stack p+p{margin-top:18px}
+.aaw-about-copy-stack strong{color:#111}
+.aaw-about-method{background:#050505}
+.aaw-about-method-head,.aaw-about-timeline-head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(360px,.72fr);gap:34px;align-items:end}
+.aaw-about-method-head>p,.aaw-about-timeline-head>p{margin:0;color:#d8d1c7;font-size:17px;line-height:1.62}
+.aaw-about-method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:36px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+.aaw-about-method-grid article{background:#111;padding:24px;min-height:220px}
+.aaw-about-method-grid span{display:block;color:#e2b768;font-size:38px;font-weight:900;line-height:1}
+.aaw-about-method-grid h3{margin:18px 0 12px;color:#fff;font-size:21px;line-height:1.1;text-transform:uppercase;letter-spacing:0}
+.aaw-about-method-grid p{margin:0;color:#cfc7bb;font-size:14px;line-height:1.55}
+.aaw-about-timeline-section{background:#f4f1ea;color:#111}
+.aaw-about-timeline-head>p{color:#302b25}
+.aaw-timeline{margin-top:38px;border:1px solid #d8d0c3;background:#fff}
+.aaw-timeline-nav{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:#d8d0c3}
+.aaw-timeline-nav button{appearance:none;border:0;border-radius:0;min-height:58px;padding:8px;background:#fff;color:#111;font:inherit;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+.aaw-timeline-nav button.is-active{background:#111;color:#f4e8d0}
+.aaw-timeline-nav button:focus-visible{outline:2px solid #e2b768;outline-offset:-4px}
+.aaw-timeline-stage{position:relative;padding:34px}
+.aaw-timeline-progress{position:absolute;left:34px;right:34px;top:0;height:3px;background:#d8d0c3;overflow:hidden}
+.aaw-timeline-progress i{display:block;width:0;height:100%;background:#a87725;transition:width .3s ease}
+.aaw-timeline-card{display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:start;min-height:260px;animation:aawTimelineIn .28s ease both}
+.aaw-timeline-card[hidden]{display:none}
+.aaw-timeline-card span{display:block;color:#a87725;font-size:clamp(46px,7vw,94px);font-weight:900;line-height:.9;text-transform:uppercase}
+.aaw-timeline-card h3{margin:0;color:#111;font-size:clamp(28px,3.2vw,44px);line-height:1;text-transform:uppercase;letter-spacing:0}
+.aaw-timeline-card p{max-width:780px;margin:16px 0 0;color:#302b25;font-size:17px;line-height:1.62}
+.aaw-timeline-card ul{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 0;padding:0;list-style:none}
+.aaw-timeline-card li{padding:9px 11px;border:1px solid #d8d0c3;background:#f8f5ee;color:#302b25;font-size:12px;font-weight:800;text-transform:uppercase}
+.aaw-about-lineage{background:#070707}
+.aaw-about-lineage-grid{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr);gap:40px;align-items:start}
+.aaw-about-lineage-lead{max-width:620px;margin:22px 0 0;color:#d8d1c7!important}
+.aaw-about-lineage-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+.aaw-about-lineage-list article{background:#111;padding:24px;min-height:180px}
+.aaw-about-lineage-list span{display:block;margin-bottom:12px;color:#e2b768;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.aaw-about-lineage-list p{margin:0;color:#d8d1c7;font-size:15px;line-height:1.58}
+.aaw-about-gallery{background:#f4f1ea;color:#111}
+.aaw-about-gallery-head{max-width:900px}
+.aaw-about-gallery-grid{display:grid;grid-template-columns:1.12fr .88fr .88fr;grid-auto-rows:minmax(280px,auto);gap:14px;margin-top:34px}
+.aaw-about-gallery-grid figure{position:relative;margin:0;min-height:280px;overflow:hidden;background:#111;border:1px solid rgba(0,0,0,.16)}
+.aaw-about-gallery-grid figure.feature{grid-row:span 2}
+.aaw-about-gallery-grid img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover;transition:transform .35s ease}
+.aaw-about-gallery-grid figure:hover img{transform:scale(1.025)}
+.aaw-about-gallery-grid figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.14);color:#f2e5c5;padding:12px}
+.aaw-about-gallery-grid b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.aaw-about-gallery-grid span{display:block;margin-top:6px;color:#d6cec2;font-size:12px;line-height:1.35}
+.aaw-about-final{background:#0a0a0a;color:#fff;text-align:center;padding:76px 0;border-top:1px solid rgba(255,255,255,.12)}
+.aaw-about-final h2{max-width:1040px;margin:0 auto;color:#fff}
+.aaw-about-final p{max-width:780px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55}
+.aaw-about-final-slogan{color:#f4e8d0!important;font-weight:900;text-transform:uppercase}
+.aaw-about-final-slogan span{display:block;margin-top:6px;color:#b8b0a2;font-size:15px;text-transform:none}
+.aaw-reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.aaw-reveal.is-visible{opacity:1;transform:translateY(0)}
+@keyframes aawTimelineIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:980px){
+  .aaw-about-hero-grid,.aaw-about-grid-2,.aaw-about-method-head,.aaw-about-timeline-head,.aaw-about-lineage-grid{grid-template-columns:1fr}
+  .aaw-about-hero{min-height:auto}
+  .aaw-about-hero-grid{padding-top:48px}
+  .aaw-about-stats,.aaw-about-method-grid,.aaw-about-lineage-list{grid-template-columns:repeat(2,1fr)}
+  .aaw-timeline-nav{grid-template-columns:repeat(4,1fr)}
+  .aaw-timeline-card{grid-template-columns:1fr;gap:18px}
+  .aaw-about-gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .aaw-about-gallery-grid figure.feature{grid-column:span 2;grid-row:auto}
+  .aaw-about-copy-stack{padding-left:0;border-left:0;border-top:1px solid rgba(168,119,37,.34);padding-top:24px}
+}
+@media(max-width:640px){
+  .aaw-about-wrap{width:calc(100vw - 24px)}
+  .aaw-about-hero-copy{max-width:min(100%,340px);overflow:visible}
+  .aaw-about-hero h1{font-size:32px;max-width:100%;overflow-wrap:anywhere}
+  .aaw-about-hero h1 span{white-space:normal}
+  .aaw-about-hero h1 span+span{font-size:.9em}
+  .aaw-about-slogan{max-width:340px;font-size:17px;overflow-wrap:anywhere}
+  .aaw-about-dek{max-width:340px;font-size:16px;line-height:1.55;overflow-wrap:anywhere;word-break:break-word}
+  .aaw-about-section{padding:56px 0}
+  .aaw-about-stats,.aaw-about-method-grid,.aaw-about-lineage-list,.aaw-about-gallery-grid{grid-template-columns:1fr}
+  .aaw-about-gallery-grid figure.feature{grid-column:auto}
+  .aaw-about-actions .aaw-about-btn{width:100%}
+  .aaw-timeline-nav{grid-template-columns:repeat(2,1fr)}
+  .aaw-timeline-stage{padding:24px 16px}
+  .aaw-timeline-progress{left:16px;right:16px}
+  .aaw-timeline-card span{font-size:44px}
+  .aaw-timeline-card h3{font-size:27px}
+  .aaw-timeline-card li{width:100%}
+  .aaw-about-final{padding:58px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  .aaw-reveal,.aaw-about-gallery-grid img,.aaw-timeline-progress i,.aaw-timeline-card{transition:none;animation:none}
+}

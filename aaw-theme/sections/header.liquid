@@ -329,26 +329,79 @@
 {% unless settings.seo_microdata %}
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "Organization",
-      "name": {{ shop.name | json }},
-      {% if settings.logo %}
-        "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+      "@id": {{ request.origin | append: "/#organization" | json }},
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      {% if section.settings.logo %}
+        "logo": {{ section.settings.logo | image_url: width: 500 | prepend: "https:" | json }},
       {% endif %}
-      "sameAs": [
-        {{ settings.social_twitter_link | json }},
-        {{ settings.social_facebook_link | json }},
-        {{ settings.social_pinterest_link | json }},
-        {{ settings.social_instagram_link | json }},
-        {{ settings.social_tiktok_link | json }},
-        {{ settings.social_tumblr_link | json }},
-        {{ settings.social_snapchat_link | json }},
-        {{ settings.social_youtube_link | json }},
-        {{ settings.social_vimeo_link | json }}
+      "slogan": "Those who listen will find the way.",
+      "foundingDate": "2014",
+      "founder": {
+        "@id": {{ request.origin | append: "/#kevin-wang" | json }}
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+65-8731-5476",
+          "email": "sales@acousticwerkes.com",
+          "contactType": "customer support",
+          "areaServed": "SG",
+          "availableLanguage": ["en", "zh"]
+        }
       ],
-      "url": {{ request.origin | append: page.url | json }}
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Singapore"
+      },
+      "sameAs": [
+        "https://facebook.com/acousticwerkes",
+        "https://instagram.com/aaw_sg"
+      ],
+      "url": {{ request.origin | append: "/" | json }}
     }
   </script>
+
+  {%- if request.page_type == 'product' and product.handle == 'z05-auag-launch-edition' -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": {{ request.origin | append: "/#kevin-wang" | json }},
+            "name": "Kevin Wang",
+            "jobTitle": "Founder & Tuning Engineer",
+            "description": "Founder and tuning engineer of Advanced AcousticWerkes, involved in the acoustic design and tuning of AAW in-ear monitors.",
+            "knowsAbout": [
+              "in-ear monitor tuning",
+              "hybrid IEM design",
+              "balanced armature drivers",
+              "dynamic driver integration",
+              "custom in-ear monitors",
+              "universal in-ear monitors"
+            ],
+            "worksFor": {
+              "@id": {{ request.origin | append: "/#organization" | json }}
+            }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": {{ request.origin | append: product.url | append: "#z05-auag-design" | json }},
+            "name": "Z05 AuAg tuning and design journey by Kevin Wang",
+            "creator": {
+              "@id": {{ request.origin | append: "/#kevin-wang" | json }}
+            },
+            "about": {
+              "@id": {{ request.origin | append: product.url | append: "#product" | json }}
+            }
+          }
+        ]
+      }
+    </script>
+  {%- endif -%}
 
   {%- if request.page_type == 'index' -%}
     {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
