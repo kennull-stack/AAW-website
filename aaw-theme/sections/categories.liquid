@@ -27,6 +27,7 @@
                   elsif collection.featured_image != blank
                     assign columnImageContent = collection.featured_image
                   endif
+                  assign columnImageAlt = block.settings.heading | default: collection.title | default: shop.name
                 -%}
               <{% if collection != blank  %}a href="{{ collection.url }}"{% else %}div{% endif %} class="categories-box-item {{ section.settings.column_style }}">
                     <div class="categories-box-image">
@@ -35,7 +36,7 @@
                       {% endif %}
                         <div class="media-box" style="--image-ratio:100%;">
                           {%- if columnImageContent != blank -%}
-                            {%- render 'image', image: columnImageContent -%}
+                            {%- render 'image', image: columnImageContent, image_alt: columnImageAlt -%}
                           {%- else -%}
                             {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
                             {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}

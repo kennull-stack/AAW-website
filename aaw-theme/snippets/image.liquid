@@ -15,6 +15,7 @@
   </noscript>
 {% elsif image != blank %}
   {%- assign img_url = image | image_url: width: '100' | replace: 'width=100', 'width={width}' -%}
+  {%- assign rendered_alt = image_alt | default: image.alt | default: shop.name | strip_html -%}
   <img
     {% if id != blank %}
       id="{{ id }}"
@@ -28,7 +29,7 @@
     width="{{ image.width }}"
     height="{{ image.height }}"
     data-original="{{ image | image_url }}"
-    alt="{{ image.alt | escape }}"
+    alt="{{ rendered_alt | escape }}"
     loading="lazy"
     style="object-position:{{ image.presentation.focal_point }}"
   >
@@ -36,7 +37,7 @@
     <img
       class="{{ class }}"
       src="{{ image | img_url: 'master' }}"
-      alt="{{ image.alt | default: shop.name | strip_html }}"
+      alt="{{ rendered_alt | escape }}"
       width="{{ image.width }}"
       height="{{ image.height }}"
     >

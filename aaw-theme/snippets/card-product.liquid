@@ -145,7 +145,7 @@
       >
         {%- if cProduct.featured_media != blank -%}                             
         {% if cProduct.featured_media.media_type == 'image'  or  cProduct.featured_media.media_type == 'external_video' or cProduct.featured_media.media_type == 'model' %}
-          {%- render 'image', image: cProduct.featured_media.preview_image, class: 'product-first-img' -%}
+          {%- render 'image', image: cProduct.featured_media.preview_image, class: 'product-first-img', image_alt: cProduct.title -%}
           {% elsif cProduct.featured_media.media_type  == 'video' %}
           {% if settings.show_video_in_grid %}
             <deferred-media class="deferred-media" >
@@ -173,12 +173,12 @@
               </noscript>
             </deferred-media>
             {% else %}
-            {%- render 'image', image: cProduct.featured_media.preview_image, class: 'product-first-img' -%}
+            {%- render 'image', image: cProduct.featured_media.preview_image, class: 'product-first-img', image_alt: cProduct.title -%}
           {% endif %}
         {% endif %} 
           {%- if second_image != blank -%}
             {% if second_image.media_type == 'image'  or  second_image.media_type == 'external_video' or second_image.media_type == 'model' %}
-              {%- render 'image', image: second_image.preview_image, class: 'product-second-img' -%}
+              {%- render 'image', image: second_image.preview_image, class: 'product-second-img', image_alt: cProduct.title | append: ' alternate view' -%}
             {% elsif second_image.media_type  == 'video'  %}
               {% if settings.show_video_in_grid %}
                 <deferred-media class="deferred-media" >
@@ -206,7 +206,7 @@
                   </noscript>
                 </deferred-media>
                 {% else %}
-                {%- render 'image', image: second_image.preview_image, class: 'product-second-img' -%}
+                {%- render 'image', image: second_image.preview_image, class: 'product-second-img', image_alt: cProduct.title | append: ' alternate view' -%}
               {% endif %}
 
            {%- endif -%}

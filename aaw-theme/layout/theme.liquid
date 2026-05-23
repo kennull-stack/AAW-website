@@ -38,6 +38,9 @@
         {% endif %}
       {%- endif -%}
       {{ content_for_header }}
+      {%- if request.page_type == 'index' -%}
+        {%- render 'aaw-home-schema' -%}
+      {%- endif -%}
 
       {%- render 'global-style-variables' -%}
       {%- render 'global-variables' -%}

@@ -38,7 +38,8 @@
                     loading="lazy"
                     width="{{ section.settings.logo_width }}"
                     height="{{ section.settings.logo_width | divided_by : section.settings.logo.aspect_ratio | round }}"
-                    alt="{{ section.settings.logo.alt | default: shop.name | escape }}" >
+                    alt=""
+                    aria-hidden="true" >
                     {% if section.settings.desktop_transparent_header %}
                     {%liquid
                       if section.settings.transparent_logo != blank 
@@ -54,7 +55,8 @@
                           loading="lazy"
                           width="{{ section.settings.logo_width }}"
                           height="{{ section.settings.logo_width | divided_by : transparent_image.aspect_ratio | round }}"
-                          alt="{{ transparent_image.alt | default: shop.name | escape }}" >
+                          alt=""
+                          aria-hidden="true" >
                     {% endif %}
                 {% else %}
                   <span class="logo-text">{{ shop.name }}</span>
