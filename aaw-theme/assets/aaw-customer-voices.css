@@ -1,0 +1,253 @@
+.aaw-voices {
+  --voice-ink: #151515;
+  --voice-muted: #64605a;
+  --voice-line: rgba(20, 20, 20, .12);
+  --voice-gold: #c79642;
+  --voice-green: #315b4b;
+  color: var(--voice-ink);
+  background: #f7f4ee;
+  padding: 76px 0;
+}
+
+.aaw-voices--page {
+  padding: 88px 0;
+}
+
+.aaw-voices__wrap {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.aaw-voices__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.aaw-voices__kicker,
+.aaw-voices__hero span,
+.aaw-voice-card__meta span {
+  margin: 0 0 10px;
+  color: var(--voice-green);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.aaw-voices__head h2 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(34px, 5vw, 72px);
+  line-height: .96;
+  letter-spacing: 0;
+}
+
+.aaw-voices__intro {
+  color: var(--voice-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.aaw-voices__intro p {
+  margin: 0 0 18px;
+}
+
+.aaw-voices__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--voice-ink);
+  background: var(--voice-ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.aaw-voices__link:hover {
+  border-color: var(--voice-gold);
+  background: var(--voice-gold);
+  color: #121212;
+}
+
+.aaw-voices__hero {
+  display: grid;
+  grid-template-columns: minmax(280px, .7fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: stretch;
+  margin-bottom: 40px;
+  background: #111;
+  color: #f8f5ee;
+}
+
+.aaw-voices__hero figure {
+  margin: 0;
+  min-height: 320px;
+}
+
+.aaw-voices__hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.aaw-voices__hero div {
+  padding: clamp(28px, 5vw, 56px);
+  align-self: center;
+}
+
+.aaw-voices__hero span {
+  display: block;
+  color: var(--voice-gold);
+}
+
+.aaw-voices__hero h3 {
+  margin: 0;
+  max-width: 680px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.aaw-voices__hero p {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, .76);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.aaw-voices__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.aaw-voice-card {
+  display: flex;
+  min-height: 315px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid var(--voice-line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 24px;
+}
+
+.aaw-voice-card.is-featured {
+  grid-column: span 2;
+  background: #1b1b1b;
+  color: #f9f5ee;
+}
+
+.aaw-voice-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.aaw-voice-card__meta span {
+  margin: 0;
+}
+
+.aaw-voice-card.is-featured .aaw-voice-card__meta span {
+  color: var(--voice-gold);
+}
+
+.aaw-voice-card__meta b {
+  color: var(--voice-gold);
+  font-size: 13px;
+}
+
+.aaw-voice-card blockquote {
+  margin: 0;
+  color: var(--voice-ink);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.aaw-voice-card.is-featured blockquote {
+  max-width: 760px;
+  color: #f9f5ee;
+  font-size: clamp(22px, 2.8vw, 34px);
+  line-height: 1.16;
+}
+
+.aaw-voice-card footer {
+  color: var(--voice-ink);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.aaw-voice-card.is-featured footer {
+  color: #fff;
+}
+
+.aaw-voice-card footer span {
+  display: block;
+  margin-top: 6px;
+  color: var(--voice-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.aaw-voice-card.is-featured footer span {
+  color: rgba(255, 255, 255, .6);
+}
+
+@media (max-width: 990px) {
+  .aaw-voices__head,
+  .aaw-voices__hero,
+  .aaw-voices__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aaw-voice-card.is-featured {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .aaw-voices {
+    padding: 54px 0;
+  }
+
+  .aaw-voices__wrap {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .aaw-voices__head {
+    gap: 18px;
+  }
+
+  .aaw-voices__head h2 {
+    font-size: 38px;
+    line-height: 1;
+  }
+
+  .aaw-voices__hero figure {
+    min-height: 240px;
+  }
+
+  .aaw-voice-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .aaw-voice-card blockquote,
+  .aaw-voice-card.is-featured blockquote {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}

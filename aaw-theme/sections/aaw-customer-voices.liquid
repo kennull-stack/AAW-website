@@ -1,0 +1,685 @@
+{{ 'aaw-customer-voices.css' | asset_url | stylesheet_tag }}
+
+<section class="aaw-voices aaw-voices--{{ section.settings.layout_mode }}" aria-labelledby="aaw-voices-title-{{ section.id }}">
+  <div class="aaw-voices__wrap">
+    <div class="aaw-voices__head">
+      <div>
+        <p class="aaw-voices__kicker">{{ section.settings.eyebrow }}</p>
+        <h2 id="aaw-voices-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      <div class="aaw-voices__intro">
+        <p>{{ section.settings.intro }}</p>
+        {% if section.settings.layout_mode == 'home' %}
+          <a class="aaw-voices__link" href="{{ section.settings.page_link }}">Read more customer voices</a>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if section.settings.layout_mode == 'page' %}
+      <div class="aaw-voices__hero">
+        <figure>
+          <img src="{{ 'aaw-ins-gallery-custom-2025.webp' | asset_url }}" alt="AAW custom in-ear monitor shell craft and finishing" width="900" height="900" loading="eager">
+        </figure>
+        <div>
+          <span>Customer voices</span>
+          <h3>Real owner impressions from AAW listeners around the world.</h3>
+          <p>Collected through AAW dealers via Judge.me, these comments focus on fit, sound, comfort, and everyday listening.</p>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="aaw-voices__grid">
+      <article class="aaw-voice-card is-featured">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I was very pleasantly surprised just how good AAW monitors are. The overall sound is quite balanced, they do have very detailed bass, sub bass and treble, but the mids are not so recessed as would be the case with more typical V shaped sounding IEM&#x27;s.</blockquote>
+        <footer>Steve S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Excellent product. This is my first CIEM and I can say I am very much impressed. It fits perfectly snugged in my ears. I thought it sounded just the same when using tunes on my phone, but when I plugged it in the monitors, I can hear clearly the distinct sounds. The vocals and the bass is clear and crisp.</blockquote>
+        <footer>AJ L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Great fit, great isolation, great material and good sound for the price. Sound wise is big and quite wide. Bass is satisfying and mids are ok just that the treble is very recessed but its what makes it non-fatiguing for long term listening. Overall an enjoyable iem.</blockquote>
+        <footer>Elias T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>This is my first time buy a CIEM, and they totally nailed it. Their ear impression quality is great, constantly checking on my comfort levels, worked out everything so professionally.</blockquote>
+        <footer>Seah H.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Pros: very nice sound. clear high freqs, detailed. subdued bass, but still clear and detailed. Cons: A little bit heavy, so have to carefully choose ear tips for good fit (I have to make custom ear tips). No so good noise isolation.</blockquote>
+        <footer>Artem</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Really excited as it is my first set of CIEMs! The whole process was fuss free and I&#x27;ve got to say, they have an excellent customer support service going on. They replied to my queries with great detail within 24 hours. Even though I haven&#x27;t gotten my pair, the demos sounded awesome.</blockquote>
+        <footer>Jia T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I just got my AAW monitors, and it was really amazing. The most impressive thing is the highs, the ceremic twetter really sounds like the electrostatic driver, and gives a very crysp highs with no irritating peaks. The mid and bass are also well balanced.</blockquote>
+        <footer>k n.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I had AAW monitors before this and thought it sounded better than some CIEMs above the price range. Now, it has the same clarity but a more pronounced bass. That makes it alot more natural.</blockquote>
+        <footer>Manfred K.</footer>
+      </article>
+
+      {% if section.settings.layout_mode == 'page' %}
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The sound quality is great. Bass is better than my expectation. For this price range, I would said this is the highest C/P value cm ear monitor.</blockquote>
+        <footer>Tsz L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Bass is powerful and fun. Mid and treble are very natural. Furthermore, the shell is superior quality, so it’s great value for money!</blockquote>
+        <footer>T.M.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Got it within the time. The sound quality was great and clear. The ear phone also fit perfectly into my ear and it then final product was great! Love it a lot!</blockquote>
+        <footer>Yong R.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The sound quality of these IEM’s is awesome and the sound stage is very good. Positional audio in games is accurate and the microphone quality is excellent.</blockquote>
+        <footer>DColeman</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Product is as described by title; the sound signature is fun, natural and engaging yet the different frequencies were impressively well balanced. Went for the advance service and ended up receiving my product 5 working days after I&#x27;ve placed the order.</blockquote>
+        <footer>Tianchang L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>It&#x27;s not easy to find in-ears which fits well and a has good isolation and a good or natural sound. I think AAW monitors has all. The sound [double bass-vocals-violins-percussionis and acoustics] is close to the sound I always hear in a concert hall. For me the sound and the fit is better than focal sphear or rha t20.</blockquote>
+        <footer>Piet B.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>It is great value for money! I really like this product, so I hope that with CIEM version will be released too.</blockquote>
+        <footer>T.M.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The process went smoothly and the monitors were delivered in about 5 weeks. The fit&#x27;s good and the sound is great. The in-flight adapter had a short which distorted speech on movies. the dealer replaced it immediately (and gave me an extra spare) Overall I&#x27;m very happy with the product and the service.</blockquote>
+        <footer>Anthony F.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>IEM was well fitted, didnt need to do a refit. Sound was the same as what i had tested at their office :Excellent Will definitely come back to the dealer if there&#x27;s a need to. Keep up the good work!</blockquote>
+        <footer>Junkang W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>These in ears are just so amazing!! Perfect fit and in my opinion almost perfect sound (i&#x27;d like to have a bit more high end ) I really recommend these!!!</blockquote>
+        <footer>L.Standop</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>They are relatively wide in soundstage and easy on songs. Unbeatable price:performance and a good first step if you&#x27;re looking towards getting customs</blockquote>
+        <footer>Yong T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The sound is closer to the bass. The ear fits well and doesn&#x27;t come off easily when combined with the cable wires. Can be worn for a long time.</blockquote>
+        <footer>りょう</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Once you put it on, the rest of the world just went silent. The first time I used it was on Disturbed - Sound of Silence. The vocals were clear and strong, with the instruments complementing nicely in the background. Definitely a great driver.</blockquote>
+        <footer>Yeok q.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>These IEM are great! In terms of sound they really were what I was looking for. One thing tho, the cable does get a little sticky in humid weather, would be great if there was a solution or replacement!</blockquote>
+        <footer>Michael C.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The IEM is of high quality and excellent for gaming. However, the cable is a bit short and if you are using an amp, you would need a silencer. Other than these points, I am very happy with my purchase.</blockquote>
+        <footer>immi B.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The best in-ears for the price as compared to other universals such as the se215. AAW monitors are a great set of customs for new owners to start their venture into the CIEM world.</blockquote>
+        <footer>Masagos M.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Extremely satisfied with the purchase. Packaging itself could be better as the AAW box needed extra effort to remove from the cardboard box. But that’s just the box. AAW monitors itself sounds incredible. The workmanship was excellent and the lead time was much shorter than advertised.</blockquote>
+        <footer>Mohd N.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Took about 8 weeks for mine to be received; sounds great and fits great, didn&#x27;t need to go for a refit. Definitely value for money!</blockquote>
+        <footer>Isaac W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The ear impression fitted perfectly and I am very satisfied. Effects were per I experienced with the samples at the store.</blockquote>
+        <footer>Ng E.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Great choice if you want an open sounding &amp; balanced IEM. Can&#x27;t really go wrong with any of the dealer&#x27;s products!</blockquote>
+        <footer>Phong N.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I have always been a dynamic driver IEM lover and this is truly amazing! The resolution rivals multi BA setup.</blockquote>
+        <footer>Laz</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Excellent sound quality and the moulding fit well to your ear. Design and craving are well make and crave.</blockquote>
+        <footer>Yansen T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I think this IEM is very natural sound compare with previous AAW monitors CIEM which I have and improve correctly.</blockquote>
+        <footer>Junichi K.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>They prepared it way before the 6~8 weeks benchmark and the product fits perfectly into my ear!</blockquote>
+        <footer>Chun B.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I love it because the sound very good balance and great detail</blockquote>
+        <footer>Chatchai S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The quality and the workmanship of the earphone was nicely done. I love the sound quality of this model. Well spent ! :)</blockquote>
+        <footer>June W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I am quite impressed with the quality of sound of this item. It is great that I bought the second as a gift. Superb!</blockquote>
+        <footer>Murat K.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Good, could have better bass, but the mids and trebles were all very nice. The fit does feel a bit insecure</blockquote>
+        <footer>Kelvin T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>very good craftsmanship and the sound is perfect as well enjoy wearing it to listen my music</blockquote>
+        <footer>zx</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Has sound that is very superb for the price of the earphones. Lots of accessories.</blockquote>
+        <footer>Keith L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Great IEM, very airy and open. Very transparent and clear.</blockquote>
+        <footer>Rodrigo P.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Thanks for your excellent product. I&#x27;ve just received my CIEM. It took about 7 weeks. But that is within the reach of the assumption. I was impressed with the height of the technical capabilities. Now I am thinking the next order. Thank you again. Best regards, Takanori.</blockquote>
+        <footer>隆永 尾.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Great IEM and really enjoy it. I have been comparing this with my other IEMs and it does have its own place among them. My review will be up here at ihearwhatihear.com but I love what I heard so far</blockquote>
+        <footer>Ahmad A.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>These things are amazing! I&#x27;ve been hearing things my beats and other headphones haven&#x27;t picked up lol. The mic is incredible, and it pops off to fit in the little case.</blockquote>
+        <footer>Chadrick O.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Had purchased a AAW monitors purely because of the cosmetic customization that I able to choose from. The sounds was good with the mids but I personally prefer slightly more punchy bass. generally very satisfied with my purchase.</blockquote>
+        <footer>Huan S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Love the in ears, took some getting use to, the sound isolation seems like it could be a bit better but not sure if there could be more isolation. The packaging was exceptional. And the they look amazing</blockquote>
+        <footer>Liam G.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Good Earphone with micro driver but have full sound (Quick Bass / Good Mid and High smooth) and Fast Delivery</blockquote>
+        <footer>Sowelu</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I just want to say, I like the dealer and AAW. This earphone is very well bild and warm sound. Great</blockquote>
+        <footer>Tak</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Sleeper in the AAW universal line up, big sound that can compete with high end models, recommended!</blockquote>
+        <footer>Kaiwen W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The new 3d printed shell fits very well and the sound is just entry level.</blockquote>
+        <footer>zx</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Very high quality sound and fast delivery. Pleased with the purchase.</blockquote>
+        <footer>Igor D.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>it&#x27;s a good quality earpiece and they can build it to your request</blockquote>
+        <footer>Ho l.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>it&#x27;s a good quality earpiece and they can build it to your request</blockquote>
+        <footer>Ho l.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The monitors were great and the pickup process was seamless.</blockquote>
+        <footer>Lionel L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>First time buying, good sound, good quality!!!! So good!!!!!</blockquote>
+        <footer>Seah H.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>y&#x27;all did an amazing job, only one issue with the Right side of my CIEMs. the portion that goes into the ear canal feels like it goes a little too deep. but then again, i&#x27;m not sure if it&#x27;s just me or what.... so i&#x27;m trying it out for afew more days. and if it really doesn&#x27;t work then i&#x27;ll send it back for a refit.</blockquote>
+        <footer>Timothy L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>The Q is amazingly small but the sound is massive! Lows hit deep and hard, mids are crisp and the highs does not cause any fatigue. Only complaint i have is that the fit can be inconsistent and the supplied foam tips are too small to fit on the driver.</blockquote>
+        <footer>Weiliang P.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>I&#x27;ll start off saying that what came for the Sale Price for Cyber Monday was magnificent, however what was advertised was &quot;AAW monitors&quot; and so I was expecting AAW monitors Package with the cable branded with the Advanced logo to go along with Ethos MKIII and Brevity Upgrade Cable with a the dealer Faux-Leather case.</blockquote>
+        <footer>Christopher M.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Very impressive product. Still burning them. Hoping to hit 1000 hours soon, right now at 300 hours, I can already hear a difference! Only downside would be getting a proper fit. Gotta get used to how small it is and then finding a proper angle.</blockquote>
+        <footer>Tan L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I&#x27;m waiting for my product to arrive. Overall I have very good experience! Staff is friendly and answers to all my questions. Planning to make a second one or upgrading the cable. Worth the price!</blockquote>
+        <footer>Emily H.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>My IEMs are not here yet so can&#x27;t comment on it. 3 weeks into the wait and hoping to receive it soon. However the service is really great! The guy was really patient and knowledgeable. Would recommend others to consider the dealer if they&#x27;re looking into IEMs. :)</blockquote>
+        <footer>justin c.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>The quality that the in-ear monitors serve is really good and it allows me to hear better can have a wider range of sound that I can get from an in-ear monitor when performing live.</blockquote>
+        <footer>Dixon S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Bought the second CIEM from Null for my friend as a gift - good feedback and looks aesthetically pleasing.</blockquote>
+        <footer>Huan S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>A relatively good and able to distinctly hear the layers for a lower range of price which im paying for</blockquote>
+        <footer>Claudia L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Love it so much:) the quality is awesome! might be changing the drive soon for even better quality:)</blockquote>
+        <footer>Yuting L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>I like the midrange presence of these ear phones. They have a recessed sound that is relaxing . I am however finding it difficult to get a tight seal with these. This results in reduced base authority vs. what I would like. The rest of the sound is growing on me so I am working on the fit.</blockquote>
+        <footer>Kenneth N.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Love how the sound and the L shaped connector. Definitely worth the money!</blockquote>
+        <footer>Minhui K.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Nice packaging, excellent earphones, what else to expect... =)</blockquote>
+        <footer>Steven T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Sound quality is excellent however the shape of the bud hurts the ears after prolonged use. But overall it’s pretty good.</blockquote>
+        <footer>Wayne T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Great IEMs for a great price. Nuff said, go try them.</blockquote>
+        <footer>Matthew C.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Fit great in ear excellent sound!!!</blockquote>
+        <footer>Angel G.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Very clear sound and good bass.</blockquote>
+        <footer>Tak</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I lived in Japan and ordered overseas, so I was very concerned but very kindly responded. In addition, I was suffering from color selection for a long time, but also accepted a change at the last minute. I also want to ask. Hopefully there are free campaign options.</blockquote>
+        <footer>憲治 篠.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Amazing bass and treble. Clarity is not bad too.</blockquote>
+        <footer>Irvin W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>The product I received is defective. The design is pretty. However, it is defective. The balance of the left and right volumes is different. This product is not a stereo pair matching.</blockquote>
+        <footer>SungGu J.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>I think that it is good to make it. I think the sound quality is beautiful. The faceplate on the right side is loose, but I am troubled because there is no tool to tighten it.</blockquote>
+        <footer>pcj</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Customer service is very good. They are very welcoming on questions and answers them quickly. This is my very first CIEM and am very excited in receiving my in ears hopefully way ahead of the 8 weeks lead time.</blockquote>
+        <footer>Aesel L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>CIEM came within 4 weeks and fits very well. Impression was done well. Stock cable is trash, with the sleeve starting to fray in a few days.</blockquote>
+        <footer>Alex O.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>it&#x27;s great to get this quality product at this price.</blockquote>
+        <footer>t.s</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Slightly warm sounding iem with a nice soundstage.</blockquote>
+        <footer>Ziyi L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>i have a great experience over at the central store! The person explain the details that I wants it! Good job!</blockquote>
+        <footer>Wong G.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Sounds open, superb for the price! A great bargain</blockquote>
+        <footer>Seng l.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>It sounds really amazing.</blockquote>
+        <footer>Yusri A.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Very cool bass and musical headphones, but AAW monitors are next level of sound.</blockquote>
+        <footer>Nikita P.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>This item is too small, but sound clearly. and minus point is low touch-noise.</blockquote>
+        <footer>Akira T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Good Sound for this price but useless foam tips i can&#x27;t put it</blockquote>
+        <footer>Jittikan W.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>I was very surprised to find a CIEM at such a price and I was very please with the product that arrived. The noise cancellation is brilliant, the sound that the A1-D produced was well beyond my expectation for a single dynamic driver. Workmanship I feel could have been better.</blockquote>
+        <footer>Soe S.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Sound quality is lively and overall superb for what the price of the IEM is. Aesthetics wise, it looks pleasing to the eye My one criticism is that the wire is way too flimsy for the price. This problem is further compounded by the fact that the wires are NOT detachable</blockquote>
+        <footer>Tae C.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Got these on sale and I have no complaints whatsoever. It&#x27;s amazing how they pack such big sound into such a tiny package. This is probably the best all rounded single driver I&#x27;ve tried so far.</blockquote>
+        <footer>James B.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>unexpected good sound quality. very nice design too.</blockquote>
+        <footer>Edmond L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Very good quality and nice bundle. But i think that the little bag to pack the earphone is way too small.</blockquote>
+        <footer>Henry T.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Love the sound and definitely worth the price</blockquote>
+        <footer>Yu C.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>I like this dynamic, and density sound.</blockquote>
+        <footer>加藤 弘.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Got it at 89 bucks beats everything at that price. It really needs an amp to run well though.</blockquote>
+        <footer>Lim B.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Definitely worth the sale price. Good packaging/accessory set as well.</blockquote>
+        <footer>Hotzigetty</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Great sound but the fit is a little loose</blockquote>
+        <footer>Rayner L.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>4 / 5</b></div>
+        <blockquote>Fast delievery amd great sound quality</blockquote>
+        <footer>Alston Q.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Advanced AcousticWerkes AAW monitors Universal In-Ear Monitor</blockquote>
+        <footer>松 門.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>AAW monitors Ceramic Gaming Universal In-Ear Monitor</blockquote>
+        <footer>Youhei O.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Smooth listening for both male and female vocals.</blockquote>
+        <footer>Benedict F.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>複数個イヤモニを持っていますが 一番のお気に入りです。ciemでもオーダーしたいです。</blockquote>
+        <footer>Tom Y.</footer>
+      </article>
+
+      <article class="aaw-voice-card">
+        <div class="aaw-voice-card__meta"><b>5 / 5</b></div>
+        <blockquote>Excellent earphones and fast transaction</blockquote>
+        <footer>glen w.</footer>
+      </article>
+
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AAW customer voices",
+  "tag": "section",
+  "class": "aaw-customer-voices-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout_mode",
+      "label": "Layout",
+      "default": "home",
+      "options": [
+        { "value": "home", "label": "Homepage compact" },
+        { "value": "page", "label": "Full page" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Customer voices"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What listeners remember after the first listen."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro",
+      "default": "Customer impressions collected through AAW dealers via Judge.me, selected for sound, fit, and long-term listening notes."
+    },
+    {
+      "type": "url",
+      "id": "page_link",
+      "label": "Full testimonial page link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AAW customer voices"
+    }
+  ]
+}
+{% endschema %}

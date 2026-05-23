@@ -151,5 +151,9 @@
 .z05-hero-price{display:flex;align-items:baseline;gap:10px;margin:18px 0 0;color:#f4e8d0;font-weight:900;line-height:1.2}
 .z05-hero-price span{color:#e2b768;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
 .z05-hero-price strong{color:#fff;font-size:20px;letter-spacing:0}
+.z05-judge-stars{min-height:18px;margin:10px 0 0;color:#e2b768;font-size:13px;line-height:1.2}
+.z05-judge-stars .jdgm-preview-badge,.z05-judge-stars .jdgm-prev-badge{display:inline-flex!important;align-items:center;gap:8px}
+.z05-judge-stars .jdgm-star{color:#e2b768!important}
+.z05-judge-stars .jdgm-prev-badge__text{color:#d8d1c7!important;font-size:12px}
 .z05-actions .z05-btn{appearance:none;font:inherit;cursor:pointer}
 @media(max-width:700px){.z05-top-row{align-items:flex-start;flex-direction:column;gap:10px;padding-bottom:10px}.z05-breadcrumb-ui{justify-content:flex-start;flex-wrap:wrap;font-size:10px}.z05-top-row .z05-lang-switch{left:auto;top:auto;transform:none}}

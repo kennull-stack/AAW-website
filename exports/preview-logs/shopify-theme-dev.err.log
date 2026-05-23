@@ -1,0 +1,53 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9292                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9292
+[3] http://127.0.0.1:9292/gift_cards/[store_id]/preview
+
+• 18:16:38 Request »   HEAD 404 / 
+• 18:16:54  Synced » update templates/index.json
+• 18:17:07 Request »   HEAD 200 / 
+• 18:17:07 Request »    GET 200 / 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z07.json" to remote theme.         │
+│                                                                              │
+│  Invalid JSON in templates/product.z07.json                                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 18:17:10  Synced » delete assets/z07-gallery-3.jpg
+• 18:17:10  Synced » delete assets/z07-spec-card.png
+• 18:17:10  Synced » delete assets/z07-explosion-view.png
+• 18:17:10  Synced » delete assets/z07-gallery-7.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-1.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-5.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-2.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-4.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-8.jpg
+• 18:17:10  Synced » delete assets/z07-gallery-12.jpg
+• 18:17:10  Synced » delete assets/z07-driver-config.png
+• 18:17:10  Synced » delete assets/z07-gallery-6.jpg
+• 18:17:10  Synced » update assets/z07-specification-icons-card.png
+• 18:17:11  Synced » update assets/z07-liquidmorph-ear-tips-teal-bore.jpg
+• 18:17:11  Synced » update assets/z07-fitmorph-interchangeable-fitment-holders-tool.jpg
+• 18:17:11  Synced » update assets/z07-tubeless-hybrid-exploded-driver-layout.png
+• 18:17:11  Synced » update assets/z07-industrial-design-sketch-line-art.jpg
+• 18:17:11  Synced » update assets/z07-green-faceplate-closeup-black-tray.jpg
+• 18:17:11  Synced » update assets/z07-monitors-on-beige-marble.jpg
+• 18:17:11  Synced » update assets/z07-model-wearing-universal-fit-over-ear-cable.jpg
+• 18:17:11  Synced » update assets/z07-worn-in-ear-fitmorph-hero.jpg
+• 18:17:11  Synced » update assets/z07-source-ready-cable-4-4mm-balanced-plug.jpg
+• 18:17:11  Synced » update assets/z07-driver-configuration-diagram.png
+• 18:17:11  Synced » update assets/z07-complete-carry-case-monitor-kit.jpg

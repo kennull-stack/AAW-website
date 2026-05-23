@@ -1,0 +1,1705 @@
+# Z07 Product Page English Translation List
+# Source page: Z07 product page / products/z07-in-ear-monitor
+# Date: 2026-05-23
+# Note: Keep brand/product/technical terms as needed: AAW, Z07, FitMorph, LiquidMorph, Judge.me, 3.5mm, 4.4mm, 0.78mm, 2-pin, BA, IEM.
+
+## 001
+EN: Home
+CN:
+TW:
+JP:
+KR:
+
+## 002
+EN: Z Series
+CN:
+TW:
+JP:
+KR:
+
+## 003
+EN: Z07
+CN:
+TW:
+JP:
+KR:
+
+## 004
+EN: AAW Z Series Universal - Tubeless Hybrid Reference
+CN:
+TW:
+JP:
+KR:
+
+## 005
+EN: Tubeless Hybrid Reference Monitor
+CN:
+TW:
+JP:
+KR:
+
+## 006
+EN: Z07 leads with FitMorph adaptive fit, then reveals a tubeless hybrid tuning. A 10mm titanium dynamic driver, six balanced armatures, and a true 3-way crossover come together in a monitor made to settle quickly, fit more ears, and bring the intended tuning into focus sooner.
+CN:
+TW:
+JP:
+KR:
+
+## 007
+EN: Those who listen will find the way.
+CN:
+TW:
+JP:
+KR:
+
+## 008
+EN: Price
+CN:
+TW:
+JP:
+KR:
+
+## 009
+EN: Z07 customer rating
+CN:
+TW:
+JP:
+KR:
+
+## 010
+EN: FitMorph adaptive fit
+CN:
+TW:
+JP:
+KR:
+
+## 011
+EN: Tube-free acoustic chamber
+CN:
+TW:
+JP:
+KR:
+
+## 012
+EN: 1 dynamic + 6 BA
+CN:
+TW:
+JP:
+KR:
+
+## 013
+EN: 10Hz-40kHz response
+CN:
+TW:
+JP:
+KR:
+
+## 014
+EN: Buy Z07
+CN:
+TW:
+JP:
+KR:
+
+## 015
+EN: Explore FitMorph
+CN:
+TW:
+JP:
+KR:
+
+## 016
+EN: AAW Z07 tubeless hybrid in-ear monitor on marble with green acoustic module
+CN:
+TW:
+JP:
+KR:
+
+## 017
+EN: Product summary
+CN:
+TW:
+JP:
+KR:
+
+## 018
+EN: AAW Z07 is a universal-fit hybrid IEM led by FitMorph adaptive fit, a tubeless acoustic chamber, a 10mm titanium dynamic driver, six balanced armatures, and a true 3-way crossover. It helps more listeners reach a steady seal faster, so bass, imaging, and stability feel right from the first listen.
+CN:
+TW:
+JP:
+KR:
+
+## 019
+EN: Fit
+CN:
+TW:
+JP:
+KR:
+
+## 020
+EN: FitMorph fit options
+CN:
+TW:
+JP:
+KR:
+
+## 021
+EN: Drivers
+CN:
+TW:
+JP:
+KR:
+
+## 022
+EN: Acoustic path
+CN:
+TW:
+JP:
+KR:
+
+## 023
+EN: Tube-free / filter-free
+CN:
+TW:
+JP:
+KR:
+
+## 024
+EN: Spec
+CN:
+TW:
+JP:
+KR:
+
+## 025
+EN: 12 Ohm / 101dB / THD <0.5%
+CN:
+TW:
+JP:
+KR:
+
+## 026
+EN: FitMorph Adaptive Fit
+CN:
+TW:
+JP:
+KR:
+
+## 027
+EN: Fit first, then the sound opens up
+CN:
+TW:
+JP:
+KR:
+
+## 028
+EN: FitMorph:
+CN:
+TW:
+JP:
+KR:
+
+## 029
+EN: one Z07 tuning, three fit paths. Choose shark-fin stability, a cleaner finless contour, or optional custom outer-ear lock-in without changing the sound you chose.
+CN:
+TW:
+JP:
+KR:
+
+## 030
+EN: Fit is part of what you hear. When an IEM shifts, bass pressure, center image, and stage focus shift with it. Z07 keeps the same tuning across interchangeable FitMorph options, so the outer shape can adapt to your ear without asking you to give up the Z07 sound.
+CN:
+TW:
+JP:
+KR:
+
+## 031
+EN: The goal is simple: get to a confident seal faster. Once the monitor feels settled, Z07 can show its intended bass weight, vocal placement, and imaging without the constant urge to readjust the shell.
+CN:
+TW:
+JP:
+KR:
+
+## 032
+EN: AAW Z07 FitMorph interchangeable fit options, tuning body, screwdriver, and screws
+CN:
+TW:
+JP:
+KR:
+
+## 033
+EN: FitMorph gives Z07 three clear fit paths: shark-fin stability, finless comfort, or optional custom outer-ear lock-in.
+CN:
+TW:
+JP:
+KR:
+
+## 034
+EN: With Shark Fin
+CN:
+TW:
+JP:
+KR:
+
+## 035
+EN: Maximum lock-in for stage use, movement, and longer listening sessions.
+CN:
+TW:
+JP:
+KR:
+
+## 036
+EN: Without Shark Fin
+CN:
+TW:
+JP:
+KR:
+
+## 037
+EN: A cleaner contour with less outer-ear pressure for smaller ears or lighter wear.
+CN:
+TW:
+JP:
+KR:
+
+## 038
+EN: Customized Fit
+CN:
+TW:
+JP:
+KR:
+
+## 039
+EN: Optional bespoke outer-ear fit option from ear impressions, while the canal still seals with LiquidMorph silicone tips.
+CN:
+TW:
+JP:
+KR:
+
+## 040
+EN: Design Journey
+CN:
+TW:
+JP:
+KR:
+
+## 041
+EN: Designed and tuned by founder
+CN:
+TW:
+JP:
+KR:
+
+## 042
+EN: Z07 started from a familiar listener frustration: many IEMs promise bigger driver counts, but the daily experience still comes down to whether the shell stays comfortable, sealed, and steady. AAW wanted Z07 to feel different before the first track even reaches the chorus.
+CN:
+TW:
+JP:
+KR:
+
+## 043
+EN: For Kevin Wang, the challenge was not only how many drivers could fit inside a shell. It was how to give one universal monitor more than one way to sit securely in the ear, while keeping the same tuning character. FitMorph became the answer: choose the fit support that suits your ear, then let the same Z07 tuning come through.
+CN:
+TW:
+JP:
+KR:
+
+## 044
+EN: That thinking shaped the rest of Z07. The tubeless hybrid tuning, precision aluminium core, secure 2-pin connection, and adaptive FitMorph options all serve one listener goal: more confidence in the fit, more time with the music, and fewer reasons to keep adjusting the monitor.
+CN:
+TW:
+JP:
+KR:
+
+## 045
+EN: A great tuning is wasted if the monitor hurts, shifts, or loses seal before the listener can stay with the music. Z07 was designed to make the fit part of the performance, not an afterthought.
+CN:
+TW:
+JP:
+KR:
+
+## 046
+EN: Kevin Wang
+CN:
+TW:
+JP:
+KR:
+
+## 047
+EN: Founder & Tuning Engineer, Advanced AcousticWerkes
+CN:
+TW:
+JP:
+KR:
+
+## 048
+EN: Kevin Wang signature
+CN:
+TW:
+JP:
+KR:
+
+## 049
+EN: Tubeless Sound Path
+CN:
+TW:
+JP:
+KR:
+
+## 050
+EN: A cleaner path from driver to ear
+CN:
+TW:
+JP:
+KR:
+
+## 051
+EN: Z07 sound path:
+CN:
+TW:
+JP:
+KR:
+
+## 052
+EN: each driver plays into a tube-free, filter-free acoustic chamber, helping Z07 sound cleaner and more immediate from bass to air.
+CN:
+TW:
+JP:
+KR:
+
+## 053
+EN: Many multi-driver IEMs rely on tubes, dampers, and filters before the sound reaches your ear. Z07 takes a more direct route: once FitMorph gives you a secure seal, the tubeless chamber and true 3-way crossover help bass weight, vocal placement, and treble air arrive with less haze.
+CN:
+TW:
+JP:
+KR:
+
+## 054
+EN: You hear the benefit as a quicker, cleaner presentation: titanium dynamic bass for weight, four balanced armatures for midrange body, and two balanced armatures for high-frequency air and space.
+CN:
+TW:
+JP:
+KR:
+
+## 055
+EN: View the driver layout
+CN:
+TW:
+JP:
+KR:
+
+## 056
+EN: AAW Z07 split view showing FitMorph outer-ear support and tubeless sound path
+CN:
+TW:
+JP:
+KR:
+
+## 057
+EN: Sub-bass / bass
+CN:
+TW:
+JP:
+KR:
+
+## 058
+EN: 10mm Titanium Dynamic
+CN:
+TW:
+JP:
+KR:
+
+## 059
+EN: Deep extension, pressure control, and fast decay without midrange bloom.
+CN:
+TW:
+JP:
+KR:
+
+## 060
+EN: Midrange / highs
+CN:
+TW:
+JP:
+KR:
+
+## 061
+EN: Six Balanced Armatures
+CN:
+TW:
+JP:
+KR:
+
+## 062
+EN: Quad BA mids and dual BA highs keep vocals, air, and imaging precisely layered.
+CN:
+TW:
+JP:
+KR:
+
+## 063
+EN: Overview
+CN:
+TW:
+JP:
+KR:
+
+## 064
+EN: A compact reference monitor that starts with fit
+CN:
+TW:
+JP:
+KR:
+
+## 065
+EN: What it is
+CN:
+TW:
+JP:
+KR:
+
+## 066
+EN: A seven-driver universal hybrid IEM with a tubeless acoustic chamber and FitMorph adaptive fit system.
+CN:
+TW:
+JP:
+KR:
+
+## 067
+EN: Why it matters
+CN:
+TW:
+JP:
+KR:
+
+## 068
+EN: A stable fit keeps bass pressure, vocal center, and imaging consistent instead of changing every time the shell shifts.
+CN:
+TW:
+JP:
+KR:
+
+## 069
+EN: Who it is for
+CN:
+TW:
+JP:
+KR:
+
+## 070
+EN: Listeners who want reference clarity, real low-end presence, stage-ready stability, and comfort through long sessions.
+CN:
+TW:
+JP:
+KR:
+
+## 071
+EN: Direct sound path
+CN:
+TW:
+JP:
+KR:
+
+## 072
+EN: A tube-free, filter-free chamber keeps the route from driver to ear cleaner.
+CN:
+TW:
+JP:
+KR:
+
+## 073
+EN: Precision aluminium core
+CN:
+TW:
+JP:
+KR:
+
+## 074
+EN: A precision aluminium core gives the drivers a calmer base for cleaner notes and steadier imaging.
+CN:
+TW:
+JP:
+KR:
+
+## 075
+EN: FitMorph system
+CN:
+TW:
+JP:
+KR:
+
+## 076
+EN: Switch between shark-fin stability, cleaner compact fit, and optional custom outer-ear lock-in.
+CN:
+TW:
+JP:
+KR:
+
+## 077
+EN: Secure 2-pin connection
+CN:
+TW:
+JP:
+KR:
+
+## 078
+EN: The 0.78mm 2-pin connection sits within the FitMorph fit system, so cable swaps feel secure over years of use.
+CN:
+TW:
+JP:
+KR:
+
+## 079
+EN: At a glance
+CN:
+TW:
+JP:
+KR:
+
+## 080
+EN: What makes Z07 work
+CN:
+TW:
+JP:
+KR:
+
+## 081
+EN: AAW | Z07
+CN:
+TW:
+JP:
+KR:
+
+## 082
+EN: Tubeless Hybrid Reference Monitor
+CN:
+TW:
+JP:
+KR:
+
+## 083
+EN: 10mm titanium dynamic driver, six balanced armatures, true 3-way crossover, FitMorph adaptive fit
+CN:
+TW:
+JP:
+KR:
+
+## 084
+EN: Z07 driver and acoustic architecture
+CN:
+TW:
+JP:
+KR:
+
+## 085
+EN: 1 x 10mm
+CN:
+TW:
+JP:
+KR:
+
+## 086
+EN: Titanium Dynamic Driver
+CN:
+TW:
+JP:
+KR:
+
+## 087
+EN: 4 x
+CN:
+TW:
+JP:
+KR:
+
+## 088
+EN: Mid BA Drivers
+CN:
+TW:
+JP:
+KR:
+
+## 089
+EN: 2 x
+CN:
+TW:
+JP:
+KR:
+
+## 090
+EN: High BA Drivers
+CN:
+TW:
+JP:
+KR:
+
+## 091
+EN: FitMorph
+CN:
+TW:
+JP:
+KR:
+
+## 092
+EN: Adaptive Fit System
+CN:
+TW:
+JP:
+KR:
+
+## 093
+EN: Key Features
+CN:
+TW:
+JP:
+KR:
+
+## 094
+EN: Tube-free and filter-free acoustic chamber
+CN:
+TW:
+JP:
+KR:
+
+## 095
+EN: 7-driver hybrid tuning
+CN:
+TW:
+JP:
+KR:
+
+## 096
+EN: True 3-way electronic crossover
+CN:
+TW:
+JP:
+KR:
+
+## 097
+EN: Precision aluminium body
+CN:
+TW:
+JP:
+KR:
+
+## 098
+EN: Secure replaceable 0.78mm 2-pin connection
+CN:
+TW:
+JP:
+KR:
+
+## 099
+EN: FitMorph adaptive fit system
+CN:
+TW:
+JP:
+KR:
+
+## 100
+EN: Sensitivity
+CN:
+TW:
+JP:
+KR:
+
+## 101
+EN: 101dB
+CN:
+TW:
+JP:
+KR:
+
+## 102
+EN: Impedance
+CN:
+TW:
+JP:
+KR:
+
+## 103
+EN: 12 Ohm
+CN:
+TW:
+JP:
+KR:
+
+## 104
+EN: Total Harmonic Distortion
+CN:
+TW:
+JP:
+KR:
+
+## 105
+EN: <0.5%
+CN:
+TW:
+JP:
+KR:
+
+## 106
+EN: Frequency Response
+CN:
+TW:
+JP:
+KR:
+
+## 107
+EN: 10Hz-40kHz
+CN:
+TW:
+JP:
+KR:
+
+## 108
+EN: Crossover
+CN:
+TW:
+JP:
+KR:
+
+## 109
+EN: True 3-way
+CN:
+TW:
+JP:
+KR:
+
+## 110
+EN: Acoustic Design
+CN:
+TW:
+JP:
+KR:
+
+## 111
+EN: Tubeless / filter-free
+CN:
+TW:
+JP:
+KR:
+
+## 112
+EN: AAW Z07 exploded view showing FitMorph fit options, ear tip, precision aluminium body, balanced armatures, and tubeless faceplate assembly
+CN:
+TW:
+JP:
+KR:
+
+## 113
+EN: Inside Z07.
+CN:
+TW:
+JP:
+KR:
+
+## 114
+EN: FitMorph fit options, the LiquidMorph tip, titanium dynamic driver, six balanced armatures, precision aluminium body, and tubeless faceplate assembly show how Z07 keeps fit and sound working together.
+CN:
+TW:
+JP:
+KR:
+
+## 115
+EN: Listening Notes
+CN:
+TW:
+JP:
+KR:
+
+## 116
+EN: What you notice when Z07 is in hand
+CN:
+TW:
+JP:
+KR:
+
+## 117
+EN: A closer look at the pieces that make Z07 different: the precision aluminium body, FitMorph fit system, secure 2-pin connection, LiquidMorph tips, and complete carry kit.
+CN:
+TW:
+JP:
+KR:
+
+## 118
+EN: AAW Z07 green and black faceplate close-up
+CN:
+TW:
+JP:
+KR:
+
+## 119
+EN: Z07 faceplate
+CN:
+TW:
+JP:
+KR:
+
+## 120
+EN: The green ring, open metal grille, and gold hardware give Z07 its instrument-like identity.
+CN:
+TW:
+JP:
+KR:
+
+## 121
+EN: LiquidMorph clear ear tips with teal inner bore for AAW Z07
+CN:
+TW:
+JP:
+KR:
+
+## 122
+EN: LiquidMorph tips
+CN:
+TW:
+JP:
+KR:
+
+## 123
+EN: The canal seal stays silicone-based even when the outer-ear support is customized.
+CN:
+TW:
+JP:
+KR:
+
+## 124
+EN: AAW Z07 with cable and 4.4mm balanced plug
+CN:
+TW:
+JP:
+KR:
+
+## 125
+EN: Source-ready cable
+CN:
+TW:
+JP:
+KR:
+
+## 126
+EN: A familiar 2-pin connection keeps Z07 flexible across portable and balanced sources.
+CN:
+TW:
+JP:
+KR:
+
+## 127
+EN: Consistent Fit, Consistent Sound
+CN:
+TW:
+JP:
+KR:
+
+## 128
+EN: Same Z07 tuning, whichever fit you choose
+CN:
+TW:
+JP:
+KR:
+
+## 129
+EN: Different shell shapes and canal angles can change what you hear. Z07 keeps the same tuning across its FitMorph options, so the sound you fall for is the sound you can keep enjoying.
+CN:
+TW:
+JP:
+KR:
+
+## 130
+EN: Person wearing AAW Z07 universal in-ear monitor with over-ear cable
+CN:
+TW:
+JP:
+KR:
+
+## 131
+EN: Real-world fit check
+CN:
+TW:
+JP:
+KR:
+
+## 132
+EN: The canal still seals with LiquidMorph tips, while FitMorph adjusts the outer support around your ear.
+CN:
+TW:
+JP:
+KR:
+
+## 133
+EN: Audition with confidence
+CN:
+TW:
+JP:
+KR:
+
+## 134
+EN: The same Z07 tuning follows you whether you choose shark-fin, finless, or optional custom outer-ear support.
+CN:
+TW:
+JP:
+KR:
+
+## 135
+EN: Keep the silicone seal
+CN:
+TW:
+JP:
+KR:
+
+## 136
+EN: The ear tip still handles the canal seal, so custom outer-ear support changes how Z07 rests in the ear rather than changing the sound you chose.
+CN:
+TW:
+JP:
+KR:
+
+## 137
+EN: Less fit anxiety
+CN:
+TW:
+JP:
+KR:
+
+## 138
+EN: If one fit option feels wrong, Z07 gives you another fit route before you give up on the sound.
+CN:
+TW:
+JP:
+KR:
+
+## 139
+EN: Craft & Sound
+CN:
+TW:
+JP:
+KR:
+
+## 140
+EN: A steadier sound for longer sessions
+CN:
+TW:
+JP:
+KR:
+
+## 141
+EN: Z07 uses a precision-machined aluminium body to keep its seven drivers working from the same stable base. The result is a monitor that keeps bass, vocals, and treble organized when the mix gets dense and the session gets long.
+CN:
+TW:
+JP:
+KR:
+
+## 142
+EN: The 0.78mm 2-pin connection sits within the FitMorph fit system, giving Z07 a reassuring cable feel for everyday use. For the listener, that means fewer worries when swapping cables or carrying the monitor between sources.
+CN:
+TW:
+JP:
+KR:
+
+## 143
+EN: AAW Z07 industrial design sketch of the FitMorph monitor body
+CN:
+TW:
+JP:
+KR:
+
+## 144
+EN: FitMorph helps Z07 feel settled first, so the music can take over without constant readjustment.
+CN:
+TW:
+JP:
+KR:
+
+## 145
+EN: Format
+CN:
+TW:
+JP:
+KR:
+
+## 146
+EN: Universal-fit tubeless hybrid IEM
+CN:
+TW:
+JP:
+KR:
+
+## 147
+EN: Driver configuration
+CN:
+TW:
+JP:
+KR:
+
+## 148
+EN: 1 dynamic + 6 balanced armatures
+CN:
+TW:
+JP:
+KR:
+
+## 149
+EN: Low end
+CN:
+TW:
+JP:
+KR:
+
+## 150
+EN: 10mm titanium diaphragm dynamic driver
+CN:
+TW:
+JP:
+KR:
+
+## 151
+EN: Body
+CN:
+TW:
+JP:
+KR:
+
+## 152
+EN: Precision aluminium construction
+CN:
+TW:
+JP:
+KR:
+
+## 153
+EN: Connection
+CN:
+TW:
+JP:
+KR:
+
+## 154
+EN: Secure 0.78mm 2-pin design
+CN:
+TW:
+JP:
+KR:
+
+## 155
+EN: Warranty
+CN:
+TW:
+JP:
+KR:
+
+## 156
+EN: 1-year warranty against manufacturing defects
+CN:
+TW:
+JP:
+KR:
+
+## 157
+EN: Signal Chain Ready
+CN:
+TW:
+JP:
+KR:
+
+## 158
+EN: Ready for the sources you actually use
+CN:
+TW:
+JP:
+KR:
+
+## 159
+EN: Z07 ships ready for analog listening: swap between 3.5mm single-ended and 4.4mm balanced terminations for portable players, dongles, DAPs, and desktop DAC/amps. Its 12 Ohm impedance and 101dB sensitivity pair best with low-output-impedance sources for clean daily listening.
+CN:
+TW:
+JP:
+KR:
+
+## 160
+EN: AAW Z07 complete kit with carrying case, cable, 3.5mm and 4.4mm terminations, and monitors
+CN:
+TW:
+JP:
+KR:
+
+## 161
+EN: Z07 ships with a protective case, cable, and swappable 3.5mm / 4.4mm terminations for daily listening.
+CN:
+TW:
+JP:
+KR:
+
+## 162
+EN: Cable terminations
+CN:
+TW:
+JP:
+KR:
+
+## 163
+EN: Interchangeable 3.5mm single-ended and 4.4mm balanced plugs are included.
+CN:
+TW:
+JP:
+KR:
+
+## 164
+EN: Recommended source
+CN:
+TW:
+JP:
+KR:
+
+## 165
+EN: Low-output-impedance portable player, dongle, DAP, or desktop DAC/amp.
+CN:
+TW:
+JP:
+KR:
+
+## 166
+EN: IEM connection
+CN:
+TW:
+JP:
+KR:
+
+## 167
+EN: 0.78mm 2-pin connection through the FitMorph fit system.
+CN:
+TW:
+JP:
+KR:
+
+## 168
+EN: Carry case
+CN:
+TW:
+JP:
+KR:
+
+## 169
+EN: Protective case for daily transport and long-term storage.
+CN:
+TW:
+JP:
+KR:
+
+## 170
+EN: Built by Advanced AcousticWerkes
+CN:
+TW:
+JP:
+KR:
+
+## 171
+EN: Singapore IEM craft, shaped by listening
+CN:
+TW:
+JP:
+KR:
+
+## 172
+EN: Advanced AcousticWerkes, known as AAW, is a Singapore-based in-ear monitor specialist founded in 2014 by Kevin Wang. From custom IEM work to hybrid, electrostatic, planar, isobaric, and modular-fit designs, AAW works around one principle: every monitor has to prove itself through listening.
+CN:
+TW:
+JP:
+KR:
+
+## 173
+EN: Z07 continues that line with FitMorph adaptive fit, a tubeless chamber, a precision aluminium body, and a tuning goal that balances reference clarity with real low-end authority.
+CN:
+TW:
+JP:
+KR:
+
+## 174
+EN: About Us
+CN:
+TW:
+JP:
+KR:
+
+## 175
+EN: Where to buy
+CN:
+TW:
+JP:
+KR:
+
+## 176
+EN: Hear AAW in Singapore and beyond
+CN:
+TW:
+JP:
+KR:
+
+## 177
+EN: Advanced AcousticWerkes is based in Singapore. To audition Z07, arrange support, or find a dealer, start with AAW Singapore or one of the listening rooms below.
+CN:
+TW:
+JP:
+KR:
+
+## 178
+EN: Singapore locations
+CN:
+TW:
+JP:
+KR:
+
+## 179
+EN: AAW Office
+CN:
+TW:
+JP:
+KR:
+
+## 180
+EN: #01-03, 76 Playfair Rd, Singapore 367996
+CN:
+TW:
+JP:
+KR:
+
+## 181
+EN: PH: +65 8731 5476
+CN:
+TW:
+JP:
+KR:
+
+## 182
+EN: Email: sales@acousticwerkes.com
+CN:
+TW:
+JP:
+KR:
+
+## 183
+EN: Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.
+CN:
+TW:
+JP:
+KR:
+
+## 184
+EN: Singapore dealer
+CN:
+TW:
+JP:
+KR:
+
+## 185
+EN: Zeppelin & Co.
+CN:
+TW:
+JP:
+KR:
+
+## 186
+EN: 1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504
+CN:
+TW:
+JP:
+KR:
+
+## 187
+EN: PH: 9337 9655
+CN:
+TW:
+JP:
+KR:
+
+## 188
+EN: Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.
+CN:
+TW:
+JP:
+KR:
+
+## 189
+EN: JABEN
+CN:
+TW:
+JP:
+KR:
+
+## 190
+EN: 1 Coleman St, #01-25 The Adelphi, Singapore 179803
+CN:
+TW:
+JP:
+KR:
+
+## 191
+EN: PH: 6337 0809
+CN:
+TW:
+JP:
+KR:
+
+## 192
+EN: Hours: Daily 12:00 PM-8:00 PM.
+CN:
+TW:
+JP:
+KR:
+
+## 193
+EN: AV One
+CN:
+TW:
+JP:
+KR:
+
+## 194
+EN: 1 Coleman St, The Adelphi, Singapore 179803
+CN:
+TW:
+JP:
+KR:
+
+## 195
+EN: PH: 6337 0080
+CN:
+TW:
+JP:
+KR:
+
+## 196
+EN: Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.
+CN:
+TW:
+JP:
+KR:
+
+## 197
+EN: Global listening rooms
+CN:
+TW:
+JP:
+KR:
+
+## 198
+EN: Outside Singapore, AAW works with specialist audio stores across Hong Kong, Macau, Japan, China, South Korea, and Thailand, including Audio Stage, DMA, Fine Up Computer, Let's Go Audio, Master Studio, Music Movie Driver, e-earphone, 4-Ear, Sorishop, SoundProofBros, and Jaben Thailand.
+CN:
+TW:
+JP:
+KR:
+
+## 199
+EN: Find a listening room
+CN:
+TW:
+JP:
+KR:
+
+## 200
+EN: FAQ
+CN:
+TW:
+JP:
+KR:
+
+## 201
+EN: Frequently asked questions about Z07
+CN:
+TW:
+JP:
+KR:
+
+## 202
+EN: A short version for listeners comparing Z07 with conventional hybrid IEMs, stage monitors, and adaptive-fit systems.
+CN:
+TW:
+JP:
+KR:
+
+## 203
+EN: What makes Z07 different from a conventional hybrid IEM?
+CN:
+TW:
+JP:
+KR:
+
+## 204
+EN: Z07 uses a tube-free, filter-free acoustic chamber instead of routing sound through long tubes and dampers. A true 3-way crossover helps the seven drivers blend cleanly, so bass, vocals, and treble arrive with better focus and less haze.
+CN:
+TW:
+JP:
+KR:
+
+## 205
+EN: Why does fit matter so much for Z07?
+CN:
+TW:
+JP:
+KR:
+
+## 206
+EN: Fit affects what you hear. A stable seal helps Z07 keep its intended bass pressure, center image, and stage focus. FitMorph gives listeners multiple outer-fit options so the monitor can settle faster before the sound is judged.
+CN:
+TW:
+JP:
+KR:
+
+## 207
+EN: What is FitMorph?
+CN:
+TW:
+JP:
+KR:
+
+## 208
+EN: FitMorph is AAW's adaptive fit system for Z07. The same Z07 tuning works across interchangeable FitMorph options, letting the listener choose shark-fin stability, a cleaner compact fit, or optional custom outer-ear support.
+CN:
+TW:
+JP:
+KR:
+
+## 209
+EN: Will the custom FitMorph fit option change the sound?
+CN:
+TW:
+JP:
+KR:
+
+## 210
+EN: The optional custom FitMorph option changes how Z07 rests in the outer ear, not the sound you chose. The canal still seals with LiquidMorph silicone ear tips, so the goal is a more secure fit while keeping the same Z07 tuning.
+CN:
+TW:
+JP:
+KR:
+
+## 211
+EN: How many drivers does Z07 use?
+CN:
+TW:
+JP:
+KR:
+
+## 212
+EN: Z07 uses seven drivers in total: one 10mm titanium diaphragm dynamic driver for bass and six balanced armatures for midrange, highs, and air.
+CN:
+TW:
+JP:
+KR:
+
+## 213
+EN: Is Z07 suitable for stage monitoring?
+CN:
+TW:
+JP:
+KR:
+
+## 214
+EN: Yes. Z07 is designed for critical monitoring and long-session professional use. The shark-fin FitMorph option improves stability for stage work, while final suitability still depends on personal fit, isolation needs, and monitoring level.
+CN:
+TW:
+JP:
+KR:
+
+## 215
+EN: Is Z07 easy to drive?
+CN:
+TW:
+JP:
+KR:
+
+## 216
+EN: Z07 has 12 Ohm impedance and 101dB sensitivity, so it can be driven by portable players and phone dongles. A clean, low-output-impedance source is recommended for best noise control.
+CN:
+TW:
+JP:
+KR:
+
+## 217
+EN: What is the difference between the two included FitMorph fit options?
+CN:
+TW:
+JP:
+KR:
+
+## 218
+EN: The shark-fin option gives stronger outer-ear lock-in for stability. The finless option gives a cleaner contour with less pressure, which can be better for smaller ears or relaxed listening.
+CN:
+TW:
+JP:
+KR:
+
+## 219
+EN: Can Z07 be customized like a custom IEM?
+CN:
+TW:
+JP:
+KR:
+
+## 220
+EN: Z07 remains a universal monitor, but an optional custom FitMorph fit option can be made from an outer-ear impression. It customizes how Z07 rests in the outer ear while the canal still seals with silicone ear tips.
+CN:
+TW:
+JP:
+KR:
+
+## 221
+EN: What cable connector does Z07 use?
+CN:
+TW:
+JP:
+KR:
+
+## 222
+EN: Z07 uses a 0.78mm 2-pin connection integrated with the FitMorph fit system. It gives listeners a more reassuring long-term cable connection while keeping the Z07 sound intact.
+CN:
+TW:
+JP:
+KR:
+
+## 223
+EN: Does Z07 come with a warranty?
+CN:
+TW:
+JP:
+KR:
+
+## 224
+EN: Yes. Z07 includes a 1-year warranty covering manufacturing defects under normal use. For support, contact AAW Singapore or the authorized dealer where you purchased it.
+CN:
+TW:
+JP:
+KR:
+
+## 225
+EN: Where can I demo AAW Z07 in Singapore?
+CN:
+TW:
+JP:
+KR:
+
+## 226
+EN: In Singapore, you can start with AAW Office, Zeppelin & Co., JABEN, or AV One. For demo, support, warranty, or dealer questions, contact AAW Singapore at sales@acousticwerkes.com or +65-8731-5476.
+CN:
+TW:
+JP:
+KR:
+
+## 227
+EN: Can I buy Z07 outside Singapore?
+CN:
+TW:
+JP:
+KR:
+
+## 228
+EN: Yes. Outside Singapore, AAW works with specialist audio stores and listening rooms across Hong Kong, Macau, Japan, China, South Korea, and Thailand. Use the store locator to find the closest authorized listening point or dealer.
+CN:
+TW:
+JP:
+KR:
+
+## 229
+EN: AAW Z07 Tubeless Hybrid In-Ear Monitor
+CN:
+TW:
+JP:
+KR:
+
+## 230
+EN: AAW Z07 is a universal-fit hybrid reference in-ear monitor from Singapore-based Advanced AcousticWerkes, led by the FitMorph adaptive fit system. Its interchangeable FitMorph options let listeners choose shark-fin stability, cleaner finless comfort, or optional custom outer-ear support while keeping the same seven-driver Z07 sound. Inside, a 10mm titanium dynamic driver and six balanced armatures are tuned through a true 3-way crossover in a tube-free, filter-free acoustic chamber, giving Z07 confident bass, clear imaging, and stable long-session listening.
+CN:
+TW:
+JP:
+KR:
+
+## 231
+EN: Founder and tuning engineer of Advanced AcousticWerkes, involved in the acoustic design and tuning of AAW in-ear monitors.
+CN:
+TW:
+JP:
+KR:
+
+## 232
+EN: in-ear monitor tuning
+CN:
+TW:
+JP:
+KR:
+
+## 233
+EN: hybrid IEM design
+CN:
+TW:
+JP:
+KR:
+
+## 234
+EN: balanced armature drivers
+CN:
+TW:
+JP:
+KR:
+
+## 235
+EN: dynamic driver integration
+CN:
+TW:
+JP:
+KR:
+
+## 236
+EN: custom in-ear monitors
+CN:
+TW:
+JP:
+KR:
+
+## 237
+EN: universal in-ear monitors
+CN:
+TW:
+JP:
+KR:
+
+## 238
+EN: Universal In-Ear Monitor
+CN:
+TW:
+JP:
+KR:
+
+## 239
+EN: Driver Configuration
+CN:
+TW:
+JP:
+KR:
+
+## 240
+EN: 1 dynamic driver + 6 balanced armature drivers
+CN:
+TW:
+JP:
+KR:
+
+## 241
+EN: Dynamic Driver
+CN:
+TW:
+JP:
+KR:
+
+## 242
+EN: 10mm titanium diaphragm dynamic driver
+CN:
+TW:
+JP:
+KR:
+
+## 243
+EN: Fit System
+CN:
+TW:
+JP:
+KR:

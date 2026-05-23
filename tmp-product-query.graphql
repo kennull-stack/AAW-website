@@ -1,0 +1,9 @@
+query GetProduct($handle: String!) {
+  productByHandle(handle: $handle) {
+    id
+    title
+    handle
+    templateSuffix
+    updatedAt
+  }
+}

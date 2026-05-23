@@ -1,0 +1,808 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_zcx8ee": {
+      "type": "breadcrumb",
+      "settings": {
+        "section_visibility": "always",
+        "color_scheme": "",
+        "top_space_desktop": 15,
+        "bottom_space_desktop": 15,
+        "top_space_mobile": 10,
+        "bottom_space_mobile": 10
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3",
+            "seo_heading": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "hide_shipping_content": false
+          }
+        },
+        "2080a8e4-2299-470d-950f-b8f8bf3f3668": {
+          "type": "variant",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "145209f6-ad8a-4614-93bf-0c9a973f23a3": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "dynamic_checkout_btn": true,
+            "show_recipient_form": false
+          }
+        },
+        "29852893-7b61-4932-b575-91695d8893b1": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "show_description": true,
+            "description_heading": "",
+            "heading_1": "Add heading text here",
+            "content_1": "<p>Add description text here.</p>",
+            "heading_2": "Add heading text here",
+            "content_2": "<p>Add description text here.</p>",
+            "heading_3": "Add heading text here",
+            "content_3": "<p>Add description text here.</p>"
+          }
+        },
+        "a85ee93d-3864-4304-9926-0ed6854aa473": {
+          "type": "social-icons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "2080a8e4-2299-470d-950f-b8f8bf3f3668",
+        "quantity_selector",
+        "145209f6-ad8a-4614-93bf-0c9a973f23a3",
+        "button",
+        "29852893-7b61-4932-b575-91695d8893b1",
+        "collapsible-row-1",
+        "a85ee93d-3864-4304-9926-0ed6854aa473"
+      ],
+      "settings": {
+        "gallery_style": "slider",
+        "thumbnail_position": "left",
+        "overlapped_thumbnails": false,
+        "enable_sticky_content": true,
+        "desktop_media_width": "medium",
+        "desktop_grid_image_size": "auto",
+        "image_zoom": "lightbox",
+        "enable_sticky_cart": false,
+        "thumbnial_on_mobile": false,
+        "mobile_grid_image_size": "auto",
+        "color_scheme": "",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 35,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    },
+    "product_details_gLrgBJ": {
+      "type": "product-details",
+      "blocks": {
+        "description_qpiTya": {
+          "type": "description",
+          "settings": {
+            "description_heading": "Overview"
+          }
+        },
+        "collapsible_tab_TUUWYD": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Overview",
+            "content": "<p>The AAW Z07 Hybrid In-Ear Monitor represents a groundbreaking acoustic redesign, featuring a tubeless and filter-free architecture. By eliminating restrictive sound tubes and acoustic dampers, the Z07 achieves exceptional phase coherence, zero tube-induced phase shift, and faster transient response.</p><p></p><p>At its core, the Z07 utilizes a seven-driver configuration governed by a true 3-way electronic crossover. A 10 mm titanium diaphragm dynamic driver anchors the sub-bass and bass frequencies, providing tight, structural bass control without unwanted bloom. The midrange and treble are rendered by six precise balanced armatures housed within a non-resonant, CNC-machined aluminium acoustic core.</p><p></p><p>To ensure long-term comfort and durability, the Z07 introduces the FitMorph™ Adaptive Fit System. This modular 3D-printed fitment holder comes in multiple configurations—including an option for a customized fit based on a physical ear impression—allowing users to tailor the shell's ergonomic stability while maintaining a secure seal with flexible liquid silicone ear tips. Furthermore, the FitMorph™ system integrates a replaceable 0.78 mm 2-pin socket, maximizing the monitor's lifespan and serviceability without requiring internal disassembly or shell destruction.</p><p></p><p>Tuned for reference transparency and featuring a 12 Ω impedance with 101 dB sensitivity, the AAW Z07 is designed for critical monitoring and audiophile reference listening.</p>"
+          }
+        },
+        "collapsible_tab_PAyNwP": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "True Tube-Free & Filter-Free Construction",
+            "content": "<p>Unlike traditional IEMs that depend on long sound tubes, acoustic dampers, mechanical filters, and pressure-restrictive pathways, the Z07 eliminates all of these elements. Within the monitor, each driver is geometrically aligned inside the acoustic body, free from sound tubes, acoustic filters, and waveform restrictions. This design results in several advantages:<br/>-\tZero tube-induced phase shift<br/>-\tNo filter compression artifacts<br/>-\tFaster transient response<br/>-\tHigher dynamic efficiency<br/>-\tMore accurate multi-driver summation<br/>-\tNatural, unforced tonal decay<br/>The result is pure mechanical sound radiation, guided solely by geometry and crossover logic.<br/></p>"
+          }
+        },
+        "collapsible_tab_n38dzJ": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "The FitMorph™ Adaptive Fit System",
+            "content": "<p>The Z07 introduces the FitMorph™ system, a modular ergonomic solution allowing the monitor to conform to diverse ear anatomies and wearing preferences. The aluminium acoustic core is housed within a replaceable 3D-printed fitment holder, available in two configurations:<br/>-\tWith Shark Fin Stabilizer: offers maximum stability for stage use and extended sessions<br/>-\tWithout Shark Fin: provides a cleaner contour and pressure-free comfort, ideal for smaller ears<br/>Both versions are included, enabling users to optimize isolation versus openness, fine-tune insertion depth and lock-in feel, reduce listening fatigue, and personalize ergonomic pressure distribution. This mechanical system allows for ergonomic tuning without compromise.<br/></p>"
+          }
+        },
+        "collapsible_tab_HffCBq": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Modular Longevity Philosophy",
+            "content": "<p>The Z07 is engineered for long-term use as a reference instrument, not as a disposable product. Key design features include replaceable FitMorph™ outer shells, a replaceable 0.78 mm 2-pin socket module, a metal-core acoustic backbone, and the absence of tube or filter aging. These elements ensure years of serviceability, predictable ownership costs, and consistent acoustic performance over time—engineering designed for lifespan, not just initial performance.</p>"
+          }
+        },
+        "collapsible_tab_Rt9FnT": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Sound Signature Philosophy",
+            "content": "<p>The Z07 is tuned for reference transparency<br/>paired with authoritative low-end presence. The bass is deep, textured, fast,<br/>and pressure-controlled. The midrange is neutral, clean, and emotionally<br/>accurate. Treble is extended, airy, and non-fatiguing. Imaging is centered with<br/>layered depth, and the soundstage is wide, stable, and holographic. This<br/>monitor is designed for critical monitoring, audiophile reference listening,<br/>and professional long-session use.</p>"
+          }
+        },
+        "collapsible_tab_XefaKL": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Accessories and Warranty",
+            "content": "<p>48\" Null Audio Brevity Max Copper 4.4/3.5 Modular Cable<br/>AAW Carrying Case<br/>3 Pairs LiquidMorph Silicone Tip(S/M/L)*<br/>3 Pairs AAW Short Stem Foam Tips(S/M/L)*<br/>3 Pairs AAW Silicone Tips (S/M/L)*<br/>1 Year Limited Warranty</p><p>* For Universal Fit Only</p>"
+          }
+        },
+        "specification_gbeGJd": {
+          "type": "specification",
+          "settings": {
+            "text": "Driver Count: 7",
+            "link": ""
+          }
+        },
+        "specification_adVDkL": {
+          "type": "specification",
+          "settings": {
+            "text": "Crossover: 3 Way",
+            "link": ""
+          }
+        },
+        "specification_9YigHY": {
+          "type": "specification",
+          "settings": {
+            "text": "Sensitivity: 101dB",
+            "link": ""
+          }
+        },
+        "specification_baHJFe": {
+          "type": "specification",
+          "settings": {
+            "text": "Impedance: 12Ohm",
+            "link": ""
+          }
+        },
+        "specification_r97KqR": {
+          "type": "specification",
+          "settings": {
+            "text": "Freq.: 10Hz-40kHz",
+            "link": ""
+          }
+        },
+        "specification_DPW37U": {
+          "type": "specification",
+          "settings": {
+            "text": "Distortion<=0.5%",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "description_qpiTya",
+        "collapsible_tab_TUUWYD",
+        "collapsible_tab_PAyNwP",
+        "collapsible_tab_n38dzJ",
+        "collapsible_tab_HffCBq",
+        "collapsible_tab_Rt9FnT",
+        "collapsible_tab_XefaKL",
+        "specification_gbeGJd",
+        "specification_adVDkL",
+        "specification_9YigHY",
+        "specification_baHJFe",
+        "specification_r97KqR",
+        "specification_DPW37U"
+      ],
+      "settings": {
+        "make_section_rounded": true,
+        "heading": "Tech Overview",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "description": "",
+        "content_alignment": "text-center",
+        "open_first": true,
+        "spec_heading": "Specifications",
+        "spec_heading_size": "h4",
+        "spec_seo_heading": "h4",
+        "box-position": "left",
+        "specification_color_scheme": "tertiary",
+        "sp_highlighted_color": "",
+        "sp_gadiant_highlighted_color": "radial-gradient(rgba(255, 154, 98, 1), rgba(255, 204, 75, 1) 100%)",
+        "color_scheme": "secondary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 30,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "multicolumn_yK8L3k": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YqMwcD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Z07-12.jpg",
+            "heading": "FitMorph™ Adaptive Fit System — Triple Ergonomics in One Monitor",
+            "description": "The Z07 introduces the FitMorph™ system, a modular ergonomic solution allowing the monitor to conform to diverse ear anatomies and wearing preferences. The aluminium acoustic core is housed within a replaceable 3D-printed fitment holder, available in 3 configurations",
+            "link_label": "",
+            "link_url": "",
+            "column_background": true,
+            "column_background_color": "#f2f2f2",
+            "column_text_color": "#000000",
+            "column_link_color": "#2877ff"
+          }
+        },
+        "column_GTGPDy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_vg56mivg56mivg56.jpg",
+            "heading": "TUNED AND TESTED",
+            "description": "Reference transparency paired with authoritative low-end presence. The bass is deep, textured, fast, and pressure-controlled. The midrange is neutral, clean, and emotionally accurate. Treble is extended, airy, and non-fatiguing. Imaging is centered with layered depth, and the soundstage is wide, stable, and holographic. This monitor is designed for critical monitoring, audiophile reference listening, and professional long-session stage use.",
+            "link_label": "",
+            "link_url": "",
+            "column_background": true,
+            "column_background_color": "#f2f2f2",
+            "column_text_color": "#000000",
+            "column_link_color": "#2877ff"
+          }
+        }
+      },
+      "block_order": [
+        "column_YqMwcD",
+        "column_GTGPDy"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "multicolumn_image_size": "landscape",
+        "layout_type": "stacked",
+        "columns_desktop": 2,
+        "enable_swipe_mobile": true,
+        "heading": "Experience Z difference",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "image_with_text_eRUg4K": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_PngME6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Say goodbye to ear fatigue and compromised seals."
+          }
+        },
+        "heading_MUbR8M": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perfect Your Fit with the FitMorph™ Adaptive System",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "highlighted_color": "#eff341"
+          }
+        },
+        "text_JG84wd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Groundbreaking modular ergonomic solution designed to adapt seamlessly to your unique ear anatomy and personal wearing preferences.</p><p></p><ul><li><strong>With Shark Fin (Included):</strong> Delivers maximum lock-in stability for active stage use and marathon listening sessions.</li><li><strong>Without Shark Fin (Included):</strong> Provides a sleek, pressure-free contour that is exceptionally comfortable and ideal for smaller ears.</li><li><strong>Customized Fit:</strong> Elevate your universal monitor to a bespoke instrument. Using your ear impression, we tailor the holder to your exact ear shape while still utilizing the consistent, comfortable seal of liquid silicone ear tips.</li></ul>",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_PngME6",
+        "heading_MUbR8M",
+        "text_JG84wd"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": true,
+        "section_fullwidth": false,
+        "card_background": false,
+        "image": "shopify://shop_images/Z07-8.jpg",
+        "image_overlay_enable": false,
+        "image_width": "medium",
+        "image_position": "left",
+        "content_position": "center",
+        "content_alignment": "flex-start_left",
+        "hide_row_count": false,
+        "color_scheme": "",
+        "section_background": "",
+        "card_color": "",
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 20,
+        "bottom_space_mobile": 20
+      }
+    },
+    "177605261190203716": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_66a5f4f_qgfXV3": {
+          "type": "ai_gen_block_66a5f4f",
+          "disabled": true,
+          "settings": {
+            "model_file": "https://cdn.shopify.com/3d/models/2c430a6ce080772a/Z07.glb",
+            "model_scale": 3,
+            "desktop_width_percent": 100,
+            "viewer_height": 500,
+            "mobile_viewer_height": 400,
+            "border_radius": 16,
+            "camera_fov": 50,
+            "auto_rotate": true,
+            "rotation_speed": 2,
+            "ambient_light": 0.5,
+            "directional_light": 1,
+            "show_controls": true,
+            "control_bg_color": "#000000",
+            "control_icon_color": "#ffffff",
+            "placeholder_bg_color": "#f5f5f5",
+            "placeholder_text_color": "#666666"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_28d0cc6_3a6BMx": {
+          "type": "ai_gen_block_28d0cc6",
+          "name": "3D model viewer",
+          "disabled": true,
+          "settings": {
+            "model_file": "https://cdn.shopify.com/3d/models/2c430a6ce080772a/Z07.glb",
+            "model_alt": "3D model",
+            "viewer_height": 600,
+            "viewer_height_mobile": 400,
+            "desktop_width_percent": 100,
+            "auto_rotate": true,
+            "rotation_speed": 30,
+            "enable_zoom": true,
+            "enable_ar": true,
+            "show_instructions": false,
+            "instructions_text": "Drag to rotate • Scroll to zoom • Pinch to zoom on mobile",
+            "background_color": "#ffffff",
+            "viewer_background": "#2a2a2a",
+            "text_color": "#ffffff",
+            "button_background": "#969696",
+            "button_text": "#000000",
+            "button_border": "#ffffff",
+            "button_hover_background": "#a60c0c",
+            "button_hover_text": "#ffffff",
+            "button_hover_border": "#a60c0c",
+            "padding_desktop": 60,
+            "padding_mobile": 40,
+            "border_radius": 16,
+            "button_radius": 25
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_66a5f4f_qgfXV3",
+        "ai_gen_block_28d0cc6_3a6BMx"
+      ],
+      "settings": {}
+    },
+    "17760124621c5a63a7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3be4e74_jrFKgG": {
+          "type": "ai_gen_block_3be4e74",
+          "settings": {
+            "banner_image": "shopify://shop_images/Z07_explosion_.11_S.png",
+            "banner_height": 700,
+            "mobile_banner_height": 400,
+            "border_radius": 16,
+            "desktop_width_percent": 100,
+            "show_overlay": true,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.4,
+            "heading": "True Tube-Free & Filter-Free Construction",
+            "subheading": "Unlike traditional IEMs that depend on longsound tubes, acoustic dampers, mechanical filters, and pressure-restrictivepathways, the Z07 eliminates all of these elements. Within the monitor, eachdriver is geometrically aligned inside the acoustic body, free from soundtubes, acoustic filters, and waveform restrictions.",
+            "vertical_position": "bottom",
+            "text_alignment": "right",
+            "content_max_width": 700,
+            "heading_size": 48,
+            "text_size": 18,
+            "text_spacing": 5,
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 30,
+            "button_border_radius": 50,
+            "button_border_width": 1,
+            "button_bg_color": "#252324",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#252324",
+            "button_hover_bg_color": "#a60c0c",
+            "button_hover_text_color": "#ffffff",
+            "button_hover_border_color": "#a60c0c"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3be4e74_jrFKgG"
+      ],
+      "settings": {}
+    },
+    "images_carousel_GJGRBh": {
+      "type": "images-carousel",
+      "blocks": {
+        "image_xYx6tw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_v9dtcnv9dtcnv9dt.jpg",
+            "heading": "Brevity Max Copper 4.4/3.5 Modular Cable",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": ""
+          }
+        },
+        "image_RapkTH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_kuq33qkuq33qkuq3.jpg",
+            "heading": "Protection on the GO",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": "<p>Z07 ships with a semi-rigid zipper cable for maximum protection of your monitors on the go.</p>"
+          }
+        },
+        "image_eV8hiB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_qehqpzqehqpzqehq.jpg",
+            "heading": "LiquidMorph Eartips and More",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": "<p>The Z07 ships with LiquidMorph eartips, as well as foam and silicone tips in various sizes and flexibility. This allows you to experiment with different tips to tailor the bass and treble sound signature to your preference, ensuring the perfect fit and personalized audio experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_xYx6tw",
+        "image_RapkTH",
+        "image_eV8hiB"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "Cabling and Accessories",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "desktop_height": "550px",
+        "mobile_height": "350px",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 30,
+        "top_space_mobile": 20,
+        "bottom_space_mobile": 30
+      }
+    },
+    "marquee_MYAzcg": {
+      "type": "marquee",
+      "blocks": {
+        "text_KKr9iJ": {
+          "type": "text",
+          "settings": {
+            "text": "MARQUEE TEXT HERE",
+            "text_gap": 50,
+            "text_style": "solid",
+            "font_family": "heading",
+            "desktop_font": 60,
+            "mobile_font": 36,
+            "outline_thickness": 1,
+            "color": "",
+            "outline_color": "",
+            "text_gradient_color": "",
+            "custom_icon": "",
+            "small_icon": false,
+            "text_icon_gap": 15
+          }
+        }
+      },
+      "block_order": [
+        "text_KKr9iJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "rotation_style": "onscroll",
+        "direction": "rtl",
+        "scrolling_speed": 15,
+        "scrolling_speed_mobile": 15,
+        "text_angle": 0,
+        "bgcolor": "",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "products_count": 8,
+        "color_scheme": "primary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "media_grid_pY8YBi": {
+      "type": "media-grid",
+      "blocks": {
+        "grid_wHdBKU": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/CUSTOM-FITMENT_f1dcb5b7-e588-4d3c-8613-35ad154960c2.jpg",
+            "column": 1,
+            "row": 4,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "CUSTOM FITMENT",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW uses advanced 3D scanning and editing technology to digitally optimize ear impressions for its custom IEMs. This ensures a precise, ergonomic fit that conforms perfectly to the ear’s contours, delivering unmatched comfort, isolation, and superior acoustic performance.",
+            "content_position": "center",
+            "content_alignment": "center",
+            "content_width": "large",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_WwgDa7": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/UIEM-FITTMENT_5f41ad49-86d2-4e8a-adeb-bc2045e79933.jpg",
+            "column": 3,
+            "row": 3,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "IMPECCABLE UNIVERSAL FITMENT",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "Leveraging thousands of database ear impressions and advanced 3D modeling, AAW designs universal IEMs with a near-custom fit. These ergonomic shells fit diverse ear shapes, validated through rigorous testing for secure fit, optimal comfort, and superior acoustic performance.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_p3K3qF": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/10.jpg",
+            "column": 3,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "SKIN SAFE MATERIAL",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW's IEMs are crafted from highly durable, impact-resistant medical-grade resin or PVD aluminum. The skin-friendly resin also features an anti-bacterial lacquer, ensuring safe and irritation-free comfort.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 0
+          }
+        },
+        "grid_Qy3TBb": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/Driver-Tuning.jpg",
+            "column": 2,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "Precision Audio Design",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW's expertise in hybrid IEMs relies on advanced CAD and simulation tools for precise driver tuning. By seamlessly integrating dynamic drivers for deep bass and balanced armatures for clear mids and highs, we optimize the frequency response to deliver a rich, detailed, and perfectly balanced listening experience.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_6hEdFm": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/Canary32_713c8860-0a2c-45f3-8276-2185a9eb4eb0.jpg",
+            "column": 2,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "Unlimited Options",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW offers unlimited CIEM faceplate customization, allowing complete creative freedom with a wide range of materials, patterns, gemstones, and custom artwork. This ensures every pair is a uniquely crafted reflection of the user's personal style.",
+            "content_position": "bottom-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "grid_wHdBKU",
+        "grid_WwgDa7",
+        "grid_p3K3qF",
+        "grid_Qy3TBb",
+        "grid_6hEdFm"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "make_content_sticky": false,
+        "section_fullwidth": false,
+        "desktop_row_height": 150,
+        "mobile_row_height": 100,
+        "desktop_grid_gap": 14,
+        "mobile_grid_gap": 6,
+        "subheading": "",
+        "heading": "The AAW Vantage",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_zcx8ee",
+    "main",
+    "product_details_gLrgBJ",
+    "multicolumn_yK8L3k",
+    "image_with_text_eRUg4K",
+    "177605261190203716",
+    "17760124621c5a63a7",
+    "images_carousel_GJGRBh",
+    "marquee_MYAzcg",
+    "related-products",
+    "media_grid_pY8YBi"
+  ]
+}

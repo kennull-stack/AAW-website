@@ -1,0 +1,111 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9292                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9292
+[3] http://127.0.0.1:9292/gift_cards/[store_id]/preview
+
+• 18:32:40 Request »    GET 200 /?fresh=3 
+• 18:32:42 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 18:33:02 Request »    GET 200 /?fresh=4 
+• 18:33:12 Request »    GET 200 /?fresh=4 
+• 18:41:34  Synced » update assets/aaw-home-z07.css
+• 18:41:35 Request »    GET 200 /?fresh=4 
+• 18:41:37 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 18:41:51 Request »    GET 200 /?fresh=4 
+• 18:42:00  Synced » update assets/aaw-home-z07.css
+• 18:42:01 Request »    GET 200 /?fresh=4 
+• 18:42:05 Request »    GET 200 /?fresh=4 
+• 18:44:35  Synced » update assets/aaw-home-z07.css
+• 18:44:35 Request »    GET 200 /?fresh=4 
+• 18:44:44 Request »    GET 200 /?fresh=4 
+• 18:46:16  Synced » update templates/index.json
+• 18:46:17 Request »    GET 200 /?fresh=4 
+• 18:46:33  Synced » update assets/aaw-home-z07.css
+• 18:46:34 Request »    GET 200 /?fresh=4 
+• 18:48:04 Request »    GET 200 /?fresh=4 
+• 18:49:08  Synced » update assets/aaw-home-z07.css
+• 18:49:08 Request »    GET 200 /?fresh=4 
+• 18:49:19 Request »    GET 200 /?fresh=4 
+• 18:50:49  Synced » update templates/index.json
+• 18:50:50 Request »    GET 200 /?fresh=4 
+• 18:51:08  Synced » update assets/aaw-home-z07.css
+• 18:51:09 Request »    GET 200 /?fresh=4 
+• 18:51:20 Request »    GET 200 /?fresh=4 
+• 18:51:38  Synced » update assets/aaw-home-z07.css
+• 18:51:39 Request »    GET 200 /?fresh=4 
+• 18:51:44 Request »    GET 200 / 
+• 18:51:51 Request »    GET 200 /?fresh=4 
+• 18:52:12  Synced » update assets/aaw-home-z07.css
+• 18:52:13 Request »    GET 200 /?fresh=4 
+• 18:52:22 Request »    GET 200 /?fresh=4 
+• 18:53:57  Synced » update assets/aaw-home-z07.css
+• 18:53:57 Request »    GET 200 /?fresh=4 
+• 18:54:10 Request »    GET 200 /?fresh=4 
+• 18:55:54  Synced » update templates/index.json
+• 18:55:55 Request »    GET 200 /?fresh=4 
+• 18:56:04 Request »    GET 200 /?fresh=4 
+• 18:57:54  Synced » update templates/index.json
+• 18:57:55 Request »    GET 200 /?fresh=4 
+• 18:58:47 Request »    GET 200 /?fresh=4 
+• 18:59:50  Synced » update templates/index.json
+• 18:59:51 Request »    GET 200 /?fresh=4 
+• 19:00:04 Request »    GET 200 /?fresh=4 
+• 19:27:14  Synced » update templates/index.json
+• 19:27:15 Request »    GET 200 /?fresh=4 
+• 19:27:17 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:27:35  Synced » update assets/aaw-home-z07.css
+• 19:27:36 Request »    GET 200 /?fresh=4 
+• 19:27:56 Request »    GET 200 /?fresh=4 
+• 19:36:52  Synced » update templates/index.json
+• 19:36:53 Request »    GET 200 /?fresh=4 
+• 19:36:55 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:37:41  Synced » update templates/index.json
+• 19:37:43 Request »    GET 200 /?fresh=4 
+• 19:38:09  Synced » update templates/index.json
+• 19:38:10 Request »    GET 200 /?fresh=4 
+• 19:38:20 Request »    GET 200 /?fresh=4 
+• 19:43:44 Request »    GET 200 /?fresh=4 
+• 19:45:15  Synced » update assets/aaw-home-z07.css
+• 19:45:15 Request »    GET 200 /?fresh=4 
+• 19:45:34 Request »    GET 200 /?fresh=4 
+• 19:52:21  Synced » update templates/index.json
+• 19:52:22 Request »    GET 200 /?fresh=4 
+• 19:53:07  Synced » update assets/aaw-home-z07.css
+• 19:53:11 Request »    GET 500 /?fresh=4 
+• 19:53:28  Synced » update assets/aaw-home-z07.css
+• 19:53:28 Request »    GET 200 /?fresh=4 
+• 19:55:06 Request »    GET 200 /?fresh=4 
+• 19:55:36  Synced » update assets/aaw-home-z07.css
+• 19:55:38 Request »    GET 200 /?fresh=4 
+• 19:55:48 Request »    GET 200 /?fresh=4 
+• 19:58:13 Request »    GET 200 /?fresh=4 
+• 20:01:16 Request »    GET 200 /?fresh=4 
+• 20:01:48 Request »    GET 200 /?fresh=4 
+• 22:51:52  Synced » update templates/index.json
+• 22:51:53 Request »    GET 200 /?fresh=4 
+• 22:51:55 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 22:54:39  Synced » update templates/index.json
+• 22:54:40 Request »    GET 200 /?fresh=4 
+• 22:58:30 Request »    GET 200 /?fresh=testimonials 
+• 22:59:01 Request »    GET 200 /?fresh=testimonials 
+• 22:59:38 Request »    GET 404 /pages/customer-voices 
+• 23:09:02  Synced » update templates/index.json
+• 23:44:50 Request »    GET 200 /?fresh=testimonial100 
+• 23:45:08 Request »    GET 200 /?fresh=testimonial100b 
+• 23:45:22 Request »    GET 200 /?fresh=testimonial100c 
+• 23:45:43 Request »    GET 200 /?fresh=testimonial100d 
+• 23:51:57  Synced » update templates/index.json
+• 23:53:14 Request »    GET 200 /?fresh=voices8 
+• 23:53:52 Request »    GET 200 /?fresh=voices8final 
+• 23:55:47 Request »    GET 200 /?fresh=check-user-screenshot 

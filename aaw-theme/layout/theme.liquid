@@ -7,6 +7,8 @@
       <meta name="theme-color" content="#F5F5F5">
       {% render 'meta-tags' %}
       <link rel="canonical" href="{{ canonical_url }}">
+      {{ 'aaw-judgeme-reviews.css' | asset_url | stylesheet_tag }}
+      {{ 'aaw-judgeme-reviews.js' | asset_url | script_tag }}
       {%- if template.name == 'product' and product.handle == 'z05-auag-launch-edition' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="zh-Hans" href="https://www.aaw.me/zh/products/z05-auag-launch-edition">

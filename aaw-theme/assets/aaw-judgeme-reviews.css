@@ -1,0 +1,19 @@
+/* AAW Judge.me global presentation */
+.z05-reviews-section{background:#060606;color:#f5f2ea;border-top:1px solid rgba(226,183,104,.2);border-bottom:1px solid rgba(255,255,255,.1)}
+.z05-reviews-head{display:grid;grid-template-columns:minmax(0,.86fr) minmax(320px,.72fr);gap:34px;align-items:end}
+.z05-reviews-head h2{max-width:760px;color:#fff;font-size:clamp(34px,4.6vw,66px)}
+.z05-reviews-note{margin:0;color:#d8d1c7;font-size:16px;line-height:1.62}
+.z05-reviews-note strong{display:block;margin:0 0 10px;color:#e2b768;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.z05-reviews-widget-shell{margin-top:34px;padding:24px;border:1px solid rgba(226,183,104,.28);background:linear-gradient(145deg,rgba(226,183,104,.08),rgba(255,255,255,.025));box-shadow:0 26px 80px rgba(0,0,0,.32)}
+.jdgm-review-widget{color:#f5f2ea}
+.jdgm-review-widget .jdgm-rev-widg{padding:0!important;border:0!important;background:transparent!important}
+.jdgm-review-widget .jdgm-rev-widg__title{color:#fff!important;font-size:clamp(24px,3vw,36px)!important;line-height:1!important;text-transform:uppercase!important;letter-spacing:0!important}
+.jdgm-review-widget .jdgm-star,.jdgm-review-widget .jdgm-preview-badge .jdgm-star{color:#e2b768!important}
+.jdgm-review-widget .jdgm-histogram__bar-content{background:#e2b768!important}
+.jdgm-review-widget .jdgm-rev{border-top:1px solid rgba(255,255,255,.12)!important}
+.jdgm-review-widget .jdgm-rev__author,.jdgm-review-widget .jdgm-rev__title{color:#fff!important}
+.jdgm-review-widget .jdgm-rev__body,.jdgm-review-widget .jdgm-rev__content,.jdgm-review-widget .jdgm-rev__buyer-badge-wrapper{color:#d8d1c7!important}
+.jdgm-review-widget .jdgm-write-rev-link,.jdgm-review-widget .jdgm-btn{border-color:#e2b768!important;background:#e2b768!important;color:#080808!important;border-radius:0!important;font-weight:900!important;text-transform:uppercase!important;letter-spacing:.08em!important}
+.jdgm-review-widget .jdgm-sort-dropdown,.jdgm-review-widget .jdgm-sort-dropdown-wrapper{background:#0e0e0e!important;color:#f5f2ea!important;border-color:rgba(226,183,104,.36)!important}
+.jdgm-review-widget .jdgm-rev__timestamp,.jdgm-review-widget .jdgm-rev__timestamp--created,.jdgm-review-widget .jdgm-rev__timestamp--published,.jdgm-review-widget .jdgm-rev__date,.jdgm-review-widget [class*="timestamp"]{display:none!important}
+@media(max-width:900px){.z05-reviews-head{grid-template-columns:1fr}.z05-reviews-widget-shell{padding:18px}}
