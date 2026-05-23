@@ -73,29 +73,19 @@
                 assign firstBlockContent = block
               endif
             %}
-            <div
-              id="media-{{ block.id }}"
-              class="store-locator-img{% if block.id == firstBlockContent.id %} active{% else %} hidden{% endif %}"
-            >
-              <div class="media-box media-box-fixed">
-                {% if block.settings.loaction_image != blank %}
-                  {%- render 'image', image: block.settings.loaction_image -%}
-                {% else %}
-                  {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg' }}
-                {% endif %}
-              </div>
-            </div>
           {% endfor %}
-          <div class="store-locator-map{% if firstBlockContent.settings.location == blank %} hidden{% endif %}">
-            <div
-              class="store-locator-map-content"
-              data-location="{{ firstBlockContent.settings.location }}"
-              data-map-style="roadmap"
-              data-store-locator-map
-             
-                data-map-container
-              
-            ></div>
+          <div class="store-locator-map{% if firstBlockContent.settings.location == blank %} hidden{% endif %}" data-store-locator-embed>
+            <iframe
+              class="store-locator-map-iframe"
+              title="Map for {{ firstBlockContent.settings.store_name | default: 'store location' | escape }}"
+              src="https://www.google.com/maps?q={{ firstBlockContent.settings.location | url_encode }}&output=embed"
+              width="600"
+              height="450"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-store-locator-iframe
+            ></iframe>
           </div>
         </div>
       {% endif %}
@@ -133,6 +123,36 @@
   	}
     {% endif %}
 </style>
+<script>
+  (() => {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+
+    const iframe = section.querySelector('[data-store-locator-iframe]');
+    const map = section.querySelector('[data-store-locator-embed]');
+    const stores = section.querySelectorAll('[data-store-details]');
+    if (!iframe || !map || !stores.length) return;
+
+    stores.forEach((store) => {
+      if (store.dataset.storeLocatorEmbedBound === 'true') return;
+      store.dataset.storeLocatorEmbedBound = 'true';
+      store.addEventListener('click', () => {
+        const location = store.getAttribute('data-map') || '';
+        section.querySelectorAll('[data-store-details].active').forEach((activeStore) => {
+          activeStore.classList.remove('active');
+        });
+        store.classList.add('active');
+
+        if (location) {
+          map.classList.remove('hidden');
+          iframe.src = `https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`;
+        } else {
+          map.classList.add('hidden');
+        }
+      });
+    });
+  })();
+</script>
 {% schema %}
 {
   "name": "t:sections.store_locator.name",

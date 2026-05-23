@@ -1664,8 +1664,24 @@ function mapSidebarElements(element, map, geocoder) {
     let parent = element.closest('.store-locator-box');
     element.addEventListener("click", (event) => {
         setTimeout(() => {
-        var geocoder =new google.maps.Geocoder();
         let activeElement = parent.querySelector('.store-locator-content-item.active');
+        let embedMap = parent.querySelector('[data-store-locator-embed]');
+        let embedFrame = parent.querySelector('[data-store-locator-iframe]');
+        let currentLocation = element.getAttribute('data-map');
+        if (embedFrame && embedMap) {
+            if (activeElement) {
+                activeElement.classList.remove('active');
+            }
+            element.classList.add('active');
+            if (currentLocation != '') {
+                embedMap.classList.remove('hidden');
+                embedFrame.src = 'https://www.google.com/maps?q=' + encodeURIComponent(currentLocation) + '&output=embed';
+            } else {
+                embedMap.classList.add('hidden');
+            }
+            return;
+        }
+        var geocoder =new google.maps.Geocoder();
         let ativeImageElemnt = parent.querySelector('.store-locator-img.active');
         if (activeElement) {
             activeElement.classList.remove('active');
@@ -1681,7 +1697,6 @@ function mapSidebarElements(element, map, geocoder) {
             currentMedia.classList.remove('hidden');
             currentMedia.classList.add('active');
         }
-        let currentLocation = element.getAttribute('data-map');
         let mapSelector = parent.querySelector('.store-locator-map');
         if (currentLocation != '') {
             if (mapSelector) {

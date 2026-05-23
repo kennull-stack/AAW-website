@@ -45,14 +45,6 @@
     "store_locator_mFjqNY": {
       "type": "store-locator",
       "blocks": {
-        "store_gx3EAP": {
-          "type": "store",
-          "settings": {
-            "store_name": "【Hong Kong】Audio Stage",
-            "store_detail": "<p>旺角西洋菜南街2T號添置商業中心21樓 (Tel: +852 6053 1198)</p>",
-            "location": "旺角西洋菜南街2T號添置商業中心21樓"
-          }
-        },
         "store_WEy8QW": {
           "type": "store",
           "settings": {
@@ -75,14 +67,6 @@
             "store_name": "【Hong Kong】Let's Go Audio",
             "store_detail": "<p>灣仔軒尼詩道130 號灣仔電腦城二樓267-269 號舖 (Tel: +852 2328 8599)</p>",
             "location": "灣仔軒尼詩道130 號灣仔電腦城二樓267-269 號舖"
-          }
-        },
-        "store_cr98h7": {
-          "type": "store",
-          "settings": {
-            "store_name": "【Hong Kong】Master Studio",
-            "store_detail": "<p>新界荃豐中心商場地下A52號舖 (Tel: +852 6091 2166)</p>",
-            "location": "新界荃豐中心商場地下A52號舖"
           }
         },
         "store_gb64X8": {
@@ -112,9 +96,9 @@
         "store_zmU6AA": {
           "type": "store",
           "settings": {
-            "store_name": "【China】4-Ear",
-            "store_detail": "<p>Room7F50, 99th XingYi Rd<br/>Shanghai Mart,<br/>ChangNing District<br/>Shanghai 200336</p><p>+86 15850708519</p>",
-            "location": "Room7F50, 99th Xing Yi Rd Shanghai Mart, Chang Ning District Shanghai 200336"
+            "store_name": "【China】Step Sound",
+            "store_detail": "<p>Room 1228, Building EA-2<br/>Greenland Window, Dongshan Street<br/>Jiangning District, Nanjing, Jiangsu Province, China</p><p>Tel: +86 (025) 86306629<br/>Email: <a href=\"mailto:sales@stepsound.com.cn\">sales@stepsound.com.cn</a></p>",
+            "location": "Room 1228, Building EA-2, Greenland Window, Dongshan Street, Jiangning District, Nanjing, Jiangsu Province, China"
           }
         },
         "store_HT7ibb": {
@@ -132,29 +116,18 @@
             "store_detail": "<p><a href=\"https://www.soundproofbrosaudio.com/contact.php\">MBK Center ชั้น 5 ( 5C-35, 5B-43 )</a>444 ถ.พญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพ 10330<br/>โทร.<a href=\"tel:+(66)903055516\" title=\"Tel : 090-305-5516\">090-305-5516</a><a href=\"mailto:soundproofbros@gmail.com\" title=\"Mailto : soundproofbros@gmail.com\">soundproofbros@gmail.com</a></p>",
             "location": "MBK Center ชั้น 5 ( 5C-35, 5B-43 )444 ถ.พญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพ 10330"
           }
-        },
-        "store_8AyTVD": {
-          "type": "store",
-          "settings": {
-            "store_name": "【Thailand】Jaben Thailand",
-            "store_detail": "<p>Fortune Town Shopping Mall, เลขที่ 7 ถ. รัชดาภิเษก ชั้น 3, ห้อง 3P82 (ติด แบงค์กรุงเทพ, Din Daeng, Bangkok 10400, Thailand</p><p><a href=\"https://www.google.com/search?sca_esv=eaa9988072c480fd&rlz=1C1ONGR_enSG1021SG1021&sxsrf=AHTn8zqq5uinMC1PkY47s0C_QPepCsojJg:1738037560287&q=jaben+thailand+phone&ludocid=9235769718264342296&sa=X&ved=2ahUKEwiuoIy7xpeLAxUrRmwGHY6ANP0Q6BN6BAhSEAI\"><strong>Phone</strong></a><strong>:</strong><a href=\"https://www.google.com/search?q=jaben+thailand&sca_esv=eaa9988072c480fd&rlz=1C1ONGR_enSG1021SG1021&sxsrf=AHTn8zpCMtGdcn31d50omWv_Bovoj-0WRw%3A1738037471642&ei=31iYZ4HzJpSRnesP9tas2AU&gs_ssp=eJzj4tFP1zcsKCmryrCsKjJgtFI1qDA2SDWyTEs0NTY0TDZKTDK3MqiwMDBKNkhKNDAyMTdJNDe08OLLSkxKzVMoyUjMzEnMSwEAwGMUig&oq=jaben+th&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGphYmVuIHRoKgIIADILEC4YgAQYxwEYrwEyCxAuGIAEGMcBGK8BMgYQABgWGB4yCRAAGBYYxwMYHjICECYyCBAAGIAEGKIEMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiABBiiBDIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFI2CFQxQdYqxdwA3gBkAEAmAGEAaAB4gSqAQM2LjK4AQPIAQD4AQGYAgugAoAFwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICChAuGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjRAxjHAcICERAuGIAEGJECGMcBGIoFGK8BwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxiDARiKBcICCxAuGIAEGLEDGIMBwgITEC4YgAQYsQMY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAggQABiABBixA8ICCBAuGIAEGLEDwgIFEAAYgATCAhEQLhiABBjHARiYBRiaBRivAcICBRAuGIAEwgIgEC4YgAQYkQIYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQGYAwDiAwUSATEgQIgGAZAGCLoGBggBEAEYFJIHAzkuMqAHlpIB&sclient=gws-wiz-serp#\">+66 2 073 2929</a></p>",
-            "location": "Fortune Town Shopping Mall, เลขที่ 7 ถ. รัชดาภิเษก ชั้น 3, ห้อง 3P82 (ติด แบงค์กรุงเทพ, Din Daeng, Bangkok 10400, Thailand"
-          }
         }
       },
       "block_order": [
-        "store_gx3EAP",
         "store_WEy8QW",
         "store_NXcbq8",
         "store_qnDhRN",
-        "store_cr98h7",
         "store_gb64X8",
         "store_hUtafr",
         "store_fBfmCb",
         "store_zmU6AA",
         "store_HT7ibb",
-        "store_dyF6Jn",
-        "store_8AyTVD"
+        "store_dyF6Jn"
       ],
       "settings": {
         "section_visibility": "always",
