@@ -28,6 +28,21 @@
                     assign columnImageContent = collection.featured_image
                   endif
                   assign columnImageAlt = block.settings.heading | default: collection.title | default: shop.name
+
+                  if block.settings.heading == blank and collection != blank
+                    case collection.handle
+                      when 'for-musician'
+                        assign columnImageAlt = 'AAW custom and universal in-ear monitors for musicians and stage monitoring'
+                      when 'for-audiophile'
+                        assign columnImageAlt = 'AAW universal in-ear monitors for daily listening and audiophile use'
+                      when 'totl'
+                        assign columnImageAlt = 'AAW flagship in-ear monitors and top-of-the-line IEM designs'
+                      when 'wireless'
+                        assign columnImageAlt = 'AAW wireless audio products and Bluetooth in-ear monitor accessories'
+                      when 'accessories'
+                        assign columnImageAlt = 'AAW IEM accessories for cables, tips, cases, and monitor care'
+                    endcase
+                  endif
                 -%}
               <{% if collection != blank  %}a href="{{ collection.url }}"{% else %}div{% endif %} class="categories-box-item {{ section.settings.column_style }}">
                     <div class="categories-box-image">

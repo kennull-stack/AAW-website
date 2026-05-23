@@ -8,7 +8,7 @@
       {% render 'meta-tags' %}
       <link rel="canonical" href="{{ canonical_url }}">
       {{ 'aaw-judgeme-reviews.css' | asset_url | stylesheet_tag }}
-      {{ 'aaw-judgeme-reviews.js' | asset_url | script_tag }}
+      <script src="{{ 'aaw-judgeme-reviews.js' | asset_url }}&aaw_reviews=photo-first-longest-v2" defer></script>
       {%- if template.name == 'product' and product.handle == 'z05-auag-launch-edition' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="zh-Hans" href="https://www.aaw.me/zh/products/z05-auag-launch-edition">
@@ -37,6 +37,9 @@
             }
           })();
         </script>
+      {%- elsif request.page_type == 'index' -%}
+        <title>Advanced AcousticWerkes | Singapore Custom & Universal IEM Specialist</title>
+        <meta name="description" content="Advanced AcousticWerkes (AAW) is a Singapore in-ear monitor specialist founded in 2014 by Kevin Wang, crafting custom and universal IEMs for musicians, engineers, and serious listeners.">
       {%- else -%}
         <title>
           {{ page_title }}

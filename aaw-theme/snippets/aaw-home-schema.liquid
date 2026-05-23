@@ -1,34 +1,92 @@
 {%- liquid
   assign z_series = collections['z-series']
-  assign home_description = page_description | default: 'Advanced AcousticWerkes designs custom and universal in-ear monitors from Singapore, with listening rooms, fit support, refit, warranty, and repair service.'
+  assign home_title = 'Advanced AcousticWerkes | Singapore Custom & Universal IEM Specialist'
+  assign home_description = 'Advanced AcousticWerkes (AAW) is a Singapore in-ear monitor specialist founded in 2014 by Kevin Wang, crafting custom and universal IEMs for musicians, engineers, and serious listeners.'
+  assign site_url = 'https://www.aaw.me'
   assign page_id = canonical_url | append: '#webpage'
   assign z_series_id = canonical_url | append: '#z-series'
+  assign listening_paths_id = canonical_url | append: '#listening-paths'
   assign faq_id = canonical_url | append: '#faq'
   assign store_id = canonical_url | append: '#aaw-singapore-store'
-  assign org_id = shop.url | append: '#organization'
+  assign org_id = site_url | append: '/#organization'
+  assign website_id = site_url | append: '/#website'
+  assign kevin_wang_id = site_url | append: '/#kevin-wang'
 -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
+      "@type": ["WebPage", "HomePage"],
       "@id": {{ page_id | json }},
       "url": {{ canonical_url | json }},
-      "name": {{ page_title | json }},
+      "name": {{ home_title | json }},
       "description": {{ home_description | strip_html | strip_newlines | json }},
       "isPartOf": {
         "@type": "WebSite",
-        "@id": {{ shop.url | append: '#website' | json }}
+        "@id": {{ website_id | json }}
       },
       "about": {
         "@type": "Organization",
         "@id": {{ org_id | json }}
       },
       "mainEntity": [
+        { "@id": {{ listening_paths_id | json }} },
         { "@id": {{ z_series_id | json }} },
         { "@id": {{ store_id | json }} },
-        { "@id": {{ faq_id | json }} }
+        { "@id": {{ faq_id | json }} },
+        { "@id": {{ kevin_wang_id | json }} }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": {{ kevin_wang_id | json }},
+      "name": "Kevin Wang",
+      "jobTitle": "Founder & Tuning Engineer",
+      "worksFor": {
+        "@id": {{ org_id | json }}
+      },
+      "knowsAbout": [
+        "custom in-ear monitors",
+        "universal in-ear monitors",
+        "hybrid IEM tuning",
+        "balanced armature drivers",
+        "dynamic driver integration",
+        "IEM acoustic design"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ listening_paths_id | json }},
+      "name": "AAW listening paths",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Z07 Hybrid In-Ear Monitor",
+            "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }}
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Z05 AuAg Launch Edition",
+            "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }}
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "AAW Custom Monitor Builder",
+            "url": {{ site_url | append: '/products/aaw-custom-builder' | json }}
+          }
+        }
       ]
     },
     {
@@ -42,11 +100,11 @@
             {
               "@type": "ListItem",
               "position": {{ forloop.index }},
-              "url": {{ shop.url | append: listed_product.url | json }},
+              "url": {{ site_url | append: listed_product.url | json }},
               "item": {
                 "@type": "Product",
                 "name": {{ listed_product.title | strip_html | json }},
-                "url": {{ shop.url | append: listed_product.url | json }}
+                "url": {{ site_url | append: listed_product.url | json }}
                 {%- if listed_product.featured_image != blank -%},
                 "image": {{ listed_product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
                 {%- endif -%}
@@ -63,6 +121,11 @@
       "url": {{ canonical_url | json }},
       "telephone": "+65 8731 5476",
       "email": "sales@acousticwerkes.com",
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=76%20Playfair%20Rd%20Singapore%20367996",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
       "parentOrganization": {
         "@type": "Organization",
         "@id": {{ org_id | json }}
@@ -73,6 +136,11 @@
         "addressLocality": "Singapore",
         "postalCode": "367996",
         "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.3364791,
+        "longitude": 103.8865741
       },
       "openingHoursSpecification": [
         {
