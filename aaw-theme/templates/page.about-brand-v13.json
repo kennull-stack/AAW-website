@@ -9,12 +9,12 @@
  */
 {
   "sections": {
-    "aaw_about_brand_v7": {
-      "type": "aaw-about-brand-v7",
+    "aaw_about_brand_v13": {
+      "type": "aaw-about-brand-v13",
       "settings": {}
     }
   },
   "order": [
-    "aaw_about_brand_v7"
+    "aaw_about_brand_v13"
   ]
 }

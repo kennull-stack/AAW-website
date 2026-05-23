@@ -28,6 +28,13 @@
       {%- if request.page_type == 'page' and page.handle == 'about-us' -%}
         <title>About Advanced AcousticWerkes | Singapore IEM Specialist Founded by Kevin Wang</title>
         <meta name="description" content="Advanced AcousticWerkes (AAW) is a Singapore in-ear monitor specialist founded in 2014 by Kevin Wang, known for custom IEMs, hybrid tuning, and the Z Series.">
+        <script>
+          (function () {
+            if (window.location.pathname === '/pages/about-us' && !new URLSearchParams(window.location.search).has('view')) {
+              window.location.replace('/pages/about-us?view=about-brand-v13');
+            }
+          })();
+        </script>
       {%- else -%}
         <title>
           {{ page_title }}
@@ -53,7 +60,11 @@
       <div class="body-main">
         {% sections 'header-group' %}
         <main id="MainContent" class="main-content focus-none" role="main" tabindex="-1" >
-          {{ content_for_layout }}
+          {%- if request.page_type == 'page' and page.handle == 'about-us' -%}
+            {% section 'aaw-about-brand-v13' %}
+          {%- else -%}
+            {{ content_for_layout }}
+          {%- endif -%}
         </main>
         <div class="custom-footer-group">
         {% sections 'footer-group' %}
@@ -132,4 +143,3 @@
 
     </body>
   </html>
-
