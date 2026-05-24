@@ -1,0 +1,421 @@
+{{ 'mokara-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": "AAW Mokara 18 Driver Electrostatic In-Ear Monitor",
+  "image": [
+    {{ 'mokara-hero-studio.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'mokara-faceplate-angle.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'mokara-render-architecture-web.webp' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "Eighteen drivers. Four electrostatic super tweeters. An opal faceplate poured by hand. Mokara is built for listeners who want a flagship to go loud, go deep, and still pick apart the room.",
+  "sku": {{ product.selected_or_first_available_variant.sku | default: "MOKARA" | json }},
+  "mpn": "Mokara",
+  "brand": {
+    "@id": "https://www.aaw.me/#organization"
+  },
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ product.selected_or_first_available_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if product.selected_or_first_available_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@id": "https://www.aaw.me/#organization"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver configuration", "value": "18-driver balanced armature and electrostatic hybrid"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "7-way passive crossover"},
+    {"@type": "PropertyValue", "name": "Driver layout", "value": "4 woofers, 2 bass, 2 mid-bass, 2 mid, 2 mid-high, 2 high, 4 electrostatic super tweeters"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "107dB SPL at 1kHz"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "20 Ohm at 1kHz"},
+    {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Cable", "value": "48 inch Null Audio Epsilon+ monocrystalline IEM cable, 4.4mm balanced"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "2-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes Mokara different from an all-BA monitor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The four electrostatic super tweeters. BA drivers have a ceiling; somewhere in the upper treble, detail retrieval and spatial air start to thin out. EST drivers do not have that ceiling. Mokara's hybrid topology means the top end is genuinely extended, not just technically specified that way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "4 woofers, 2 bass, 2 mid-bass, 2 mid, 2 mid-high, 2 high, and 4 electrostatic drivers. Each group runs through its own band in the 7-way passive crossover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the enclosure made from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3D-printed acoustic chamber, CNC-machined aluminum mid-case, and hand-poured and polished resin faceplate. The aluminum reinforces the connector area and gives the shell structural rigidity that a full-resin shell would not have."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mokara, Null Audio Epsilon+ cable with 4.4mm balanced termination, LiquidMorph ear tips with full tray, AAW carrying case, cleaning cloth, accessory selection, and a two-year limited warranty card."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="mk-product">
+  <nav class="mk-topbar mk-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/all">Products</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Mokara</span>
+  </nav>
+
+  <aside class="mk-floating-buy" aria-label="Mokara price and purchase">
+    <span class="mk-floating-buy__label">Mokara</span>
+    <strong>{{ product.selected_or_first_available_variant.price | money }}</strong>
+    <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1">Buy</a>
+  </aside>
+
+  <section class="mk-hero mk-wrap" aria-labelledby="mk-title">
+    <div class="mk-hero__copy">
+      <p class="mk-kicker">18 Driver Electrostatic In-Ear Monitor</p>
+      <h1 id="mk-title">Mokara</h1>
+      <p class="mk-hero__lead">Eighteen drivers. Four electrostatic super tweeters. An opal faceplate poured by hand. Mokara is built for listeners who want a flagship to go loud, go deep, and still pick apart the room.</p>
+      <p class="mk-price"><span>Price</span><strong>{{ product.selected_or_first_available_variant.price | money }}</strong></p>
+      {% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+      <div class="mk-judge-stars" aria-label="Mokara customer rating">
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="mk-rating-fallback" aria-label="No customer reviews yet">
+            <span aria-hidden="true">★★★★★</span>
+            <span>No reviews yet</span>
+          </span>
+        {% else %}
+          <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+            {{ jm_badge }}
+          </div>
+        {% endif %}
+      </div>
+      <ul class="mk-pill-list" aria-label="Mokara highlights">
+        <li>18 drivers</li>
+        <li>Quad EST</li>
+        <li>7-way crossover</li>
+        <li>Epsilon+ cable</li>
+      </ul>
+      <form class="mk-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="mk-btn" type="submit">Buy Mokara</button>
+        <a class="mk-btn mk-btn--ghost" href="#mk-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="mk-hero__media">
+      <img src="{{ 'mokara-hero-studio.jpg' | asset_url }}" alt="Mokara in-ear monitors with purple opal faceplates on a polished graphite studio surface" width="1586" height="992" loading="eager">
+    </figure>
+  </section>
+
+  <section class="mk-stat-band" aria-label="Mokara specification highlights">
+    <div class="mk-wrap mk-stats">
+      <article><b>18</b><span>Hybrid driver architecture</span></article>
+      <article><b>4 EST</b><span>Electrostatic super tweeters</span></article>
+      <article><b>7-way</b><span>Passive crossover network</span></article>
+      <article><b>10Hz-40kHz</b><span>Extended frequency response</span></article>
+    </div>
+  </section>
+
+  <section class="mk-section mk-story">
+    <div class="mk-wrap mk-story__grid">
+      <div>
+        <p class="mk-kicker">Design Story</p>
+        <h2>Orchid color. Flagship weight.</h2>
+      </div>
+      <div class="mk-prose">
+        <p>Mokara takes its name from a hybrid orchid: saturated, unsubtle, built to stand out. The faceplate carries that same energy: deep purple resin, real opal fragments, and a hand-inlaid floral emblem that catches red, gold, and green depending on the light.</p>
+        <p>The shell does real acoustic work underneath. A 3D-printed chamber manages airflow for 18 drivers. A CNC-machined aluminum mid-case locks the connector area and gives the shell its weight and rigidity. The faceplate is poured and cured by hand, then cleared and polished. Nothing about the construction is incidental.</p>
+        <p>The tuning follows the same logic: big, controlled, and detailed enough to reward close listening.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-section--dark mk-explosion" aria-labelledby="mk-explosion-title">
+    <div class="mk-wrap mk-explosion__frame">
+      <figure class="mk-explosion__media">
+        <img src="{{ 'mokara-render-exploded-web.webp' | asset_url }}" alt="Exploded Mokara construction render showing the gemstone faceplate, driver modules, acoustic structure, shell, and nozzle" width="1200" height="800" loading="lazy">
+      </figure>
+      <div class="mk-explosion__copy">
+        <p class="mk-kicker">Exploded View</p>
+        <h2 id="mk-explosion-title">Seven layers, one shell</h2>
+        <p>Faceplate. Balanced armatures. Electrostatic modules. Acoustic chamber. Aluminum mid-case. Transparent shell. Nozzle. The cross-section shows how much is packed into a shell you can actually wear.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mk-architecture" class="mk-section mk-section--dark mk-architecture">
+    <div class="mk-wrap mk-section-head">
+      <p class="mk-kicker">Transducer Architecture</p>
+      <h2>Eighteen drivers. Seven bands. One crossover that keeps them honest.</h2>
+      <p>Most multi-driver monitors run into the same problem: more drivers, more phase mess. Mokara's 7-way passive crossover splits the signal cleanly so each group of drivers only handles what it's good at. The result is a presentation that's wide and layered without smearing.</p>
+    </div>
+    <div class="mk-wrap mk-architecture__grid">
+      <figure class="mk-render-card mk-render-card--large">
+        <img src="{{ 'mokara-render-architecture-web.webp' | asset_url }}" alt="Transparent Mokara render showing the internal balanced armature and electrostatic driver architecture" width="1000" height="667" loading="lazy">
+        <figcaption>Compact internal packaging houses the hybrid matrix inside Mokara's sculptural shell.</figcaption>
+      </figure>
+      <div class="mk-driver-map" aria-label="Mokara driver layout">
+        <article><span>01</span><b>4 woofers</b><p>Sub-bass foundation. Physical weight that you feel before you think about it.</p></article>
+        <article><span>02</span><b>2 bass + 2 mid-bass</b><p>The transition from impact to warmth, split across two bands so neither bleeds into the other.</p></article>
+        <article><span>03</span><b>2 mid + 2 mid-high</b><p>Vocals sit here. Instruments sit here. The bands are separated so neither competes.</p></article>
+        <article><span>04</span><b>2 high</b><p>Upper treble presence and detail retrieval without glare.</p></article>
+        <article><span>05</span><b>4 electrostatic</b><p>The EST quad handles air, shimmer, and the spatial information that sits above where most drivers give up. This is what Mokara sounds like at the very top end.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-build">
+    <div class="mk-wrap mk-build__grid">
+      <div class="mk-build__copy">
+        <p class="mk-kicker">Sandwich Hybrid Enclosure</p>
+        <h2>Printed acoustics, machined metal, hand-poured resin</h2>
+        <p>At the foundation is a precision 3D-printed acoustic chamber for complex airflow and resonance control. Around it sits a CNC-machined aluminum mid-case that reinforces the connector area and gives the shell its sculpted metallic profile.</p>
+        <p>The faceplate is poured and polished by hand, revealing purple gradients and opal fire under a clear lacquer surface. The result is both technical architecture and jewelry-like finish.</p>
+      </div>
+      <figure class="mk-build__photo">
+        <img src="{{ 'mokara-render-sandwich-web.webp' | asset_url }}" alt="Mokara sandwich hybrid enclosure render showing the machined aluminum mid-case and internal modules" width="1000" height="667" loading="lazy">
+      </figure>
+      <div class="mk-build__renders">
+        <img src="{{ 'mokara-render-front-web.webp' | asset_url }}" alt="Mokara front render with purple opal faceplate and transparent shell" width="1600" height="1067" loading="lazy">
+        <img src="{{ 'mokara-render-back-web.webp' | asset_url }}" alt="Mokara rear render showing transparent shell, acoustic channels, and metal mid-case" width="1600" height="1067" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-section--dark mk-faceplate">
+    <div class="mk-wrap mk-faceplate__grid">
+      <div>
+        <p class="mk-kicker">Opal Infused Faceplate</p>
+        <h2>An orchid in resin</h2>
+        <p>Every Mokara faceplate is cast individually. Opal fragments go in before the pour sets, and no two settle the same way. Tilt it toward the light and the surface moves from deep violet to scattered gold, orange, and green. Straight on, it reads like a gemstone. At an angle, it looks like it is on fire.</p>
+      </div>
+      <figure>
+        <img src="{{ 'mokara-faceplate-angle.jpg' | asset_url }}" alt="Mokara purple opal faceplates photographed on a cleaned dark studio surface" width="1920" height="1280" loading="lazy">
+      </figure>
+    </div>
+    <div class="mk-wrap mk-gallery" aria-label="Mokara product gallery">
+      <figure><img src="{{ 'mokara-faceplate-symmetric.jpg' | asset_url }}" alt="Mokara faceplate pair centered on a dark studio surface" loading="lazy"></figure>
+      <figure><img src="{{ 'mokara-closeup-beauty.jpg' | asset_url }}" alt="Close-up of Mokara monitors with purple cable and opal faceplate details" loading="lazy"></figure>
+      <figure><img src="{{ 'mokara-cable-flatlay.jpg' | asset_url }}" alt="Mokara monitors with cable, splitter, ear tips, and balanced plug" loading="lazy"></figure>
+      <figure><img src="{{ 'mokara-packaging-beauty.jpg' | asset_url }}" alt="Mokara monitor and cable placed on floral Mokara packaging artwork" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="mk-section mk-botanical">
+    <div class="mk-wrap mk-botanical__grid">
+      <figure>
+        <img src="{{ 'mokara-botanical-artwork.jpg' | asset_url }}" alt="Mokara illustrated floral artwork with a Mokara monitor floating among orchids and leaves" width="1000" height="1002" loading="lazy">
+      </figure>
+      <div>
+        <p class="mk-kicker">Botanical Identity</p>
+        <h2>The illustration is doing work</h2>
+        <p>Mokara's packaging artwork, with orchids, curling leaves, and warm botanical color, is not decoration for decoration's sake. It gives the technical sections somewhere to breathe and reminds you what you are actually holding: something that took months to design and minutes to love.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-accessories">
+    <div class="mk-wrap mk-section-head">
+      <p class="mk-kicker">Cabling and Carry</p>
+      <h2>What's in the box</h2>
+    </div>
+    <div class="mk-wrap mk-accessory-grid">
+      <article>
+        <img src="{{ 'mokara-epsilon-plus.jpg' | asset_url }}" alt="Null Audio Epsilon+ cable included with Mokara" width="1920" height="1280" loading="lazy">
+        <div><span>01</span><h3>Epsilon+ cable</h3><p>Null Audio's Epsilon+ uses cryogenically treated monocrystalline conductor with UPOCC construction and a custom Mokara y-splitter. 4.4mm balanced. Not an afterthought.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear eartips closeup" width="2048" height="2048" loading="lazy">
+        <div><span>02</span><h3>LiquidMorph tips</h3><p>Clear LiquidMorph ear tips seal consistently and isolate without pressure buildup. Fit is fast to find, easy to repeat.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph accessory tray with ear tip selection" width="1600" height="1000" loading="lazy">
+        <div><span>03</span><h3>Full tip tray</h3><p>Every size, laid out so you can try them properly before committing to one.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'mokara-package.jpg' | asset_url }}" alt="Mokara product package with floral artwork" width="1920" height="1280" loading="lazy">
+        <div><span>04</span><h3>Carry and care</h3><p>AAW carrying case, cleaning cloth, accessory selection, and a two-year limited warranty.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="mk-section mk-section--dark mk-specs">
+    <div class="mk-wrap mk-specs__grid">
+      <div>
+        <p class="mk-kicker">Specifications</p>
+        <h2>Scale, speed, and air</h2>
+        <p>Mokara is for listeners who want the full flagship picture: deep bass, a midrange that does not collapse under pressure, and treble extension that actually goes somewhere.</p>
+      </div>
+      <dl class="mk-spec-table">
+        <div><dt>Driver count</dt><dd>18 hybrid drivers</dd></div>
+        <div><dt>Driver layout</dt><dd>4 woofer / 2 bass / 2 mid-bass / 2 mid / 2 mid-high / 2 high / 4 EST</dd></div>
+        <div><dt>Crossover</dt><dd>7-way passive</dd></div>
+        <div><dt>Sensitivity</dt><dd>107dB SPL at 1kHz</dd></div>
+        <div><dt>Impedance</dt><dd>20 Ohm at 1kHz</dd></div>
+        <div><dt>Frequency response</dt><dd>10Hz to 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&lt;=1%</dd></div>
+        <div><dt>Cable</dt><dd>48 inch Null Audio Epsilon+ monocrystalline, 4.4mm balanced</dd></div>
+        <div><dt>Warranty</dt><dd>2-year limited</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="mk-section mk-faq">
+    <div class="mk-wrap mk-faq__grid">
+      <div>
+        <p class="mk-kicker">FAQ</p>
+        <h2>What to know before you order</h2>
+      </div>
+      <div class="mk-faq__list">
+        <details open>
+          <summary><span>What makes Mokara different from an all-BA monitor?</span></summary>
+          <p>The four electrostatic super tweeters. BA drivers have a ceiling: somewhere in the upper treble, detail retrieval and spatial air start to thin out. EST drivers do not have that ceiling. Mokara's hybrid topology means the top end is genuinely extended, not just technically specified that way.</p>
+        </details>
+        <details>
+          <summary><span>What is the driver configuration?</span></summary>
+          <p>4 woofers, 2 bass, 2 mid-bass, 2 mid, 2 mid-high, 2 high, and 4 electrostatic drivers. Each group runs through its own band in the 7-way passive crossover.</p>
+        </details>
+        <details>
+          <summary><span>What is the enclosure made from?</span></summary>
+          <p>3D-printed acoustic chamber, CNC-machined aluminum mid-case, hand-poured and polished resin faceplate. The aluminum reinforces the connector area and gives the shell structural rigidity that a full-resin shell would not have.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>Mokara, Null Audio Epsilon+ cable with 4.4mm balanced termination, LiquidMorph ear tips with full tray, AAW carrying case, cleaning cloth, accessory selection, and a two-year limited warranty card.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="mk-reviews" class="mk-section mk-section--dark mk-reviews">
+    <div class="mk-wrap">
+      <div class="mk-reviews__head">
+        <p class="mk-kicker">Owner Reviews</p>
+        <h2>Mokara listening impressions</h2>
+        <p class="mk-reviews__note"><strong>Customer review archive</strong>Read owner impressions for Mokara as the Judge.me review archive becomes available.</p>
+      </div>
+      <div class="mk-reviews__shell">
+        <div style="clear:both"></div>
+        {% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.00">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-stars" aria-label="0 out of 5 stars" role="img">
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                  </div>
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+              <div class="jdgm-rev-widg__body">
+                <div class="jdgm-rev-widg__reviews"></div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-final">
+    <div class="mk-wrap">
+      <p class="mk-kicker">Mokara</p>
+      <h2>Eighteen drivers. Hand-poured opal. Made to disappear into the music.</h2>
+      <form class="mk-actions mk-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="mk-btn" type="submit">Buy Mokara &rarr;</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Mokara product",
+  "tag": "section",
+  "class": "mokara-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mokara product"
+    }
+  ]
+}
+{% endschema %}
