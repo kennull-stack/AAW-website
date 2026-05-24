@@ -29,7 +29,7 @@
     {{ 'black-malus-bm06.jpg' | asset_url | prepend: 'https:' | json }},
     {{ 'black-malus-1202-s.png' | asset_url | prepend: 'https:' | json }}
   ],
-  "description": "Black Malus is Advanced AcousticWerkes' 10th anniversary in-ear monitor, built around a 16 balanced armature driver architecture, five-way passive crossover, opal-infused faceplates, a hybrid sandwich enclosure, and Null Audio Epsilon monocrystalline cable.",
+  "description": "Black Malus is Advanced AcousticWerkes' 10th anniversary in-ear monitor, built around 16 balanced armatures, a five-way passive crossover, stainless steel mid-case, hand-poured opal faceplates, and Null Audio Epsilon monocrystalline cable.",
   "sku": {{ product.selected_or_first_available_variant.sku | default: "BLACK-MALUS" | json }},
   "mpn": "Black Malus",
   "brand": {
@@ -54,7 +54,7 @@
     {"@type": "PropertyValue", "name": "Sensitivity", "value": "110dB SPL at 1kHz"},
     {"@type": "PropertyValue", "name": "Impedance", "value": "20 Ohm at 1kHz"},
     {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
-    {"@type": "PropertyValue", "name": "Cable", "value": "48 inch Null Audio Epsilon monocrystalline IEM cable, 4.4mm balanced"},
+    {"@type": "PropertyValue", "name": "Cable", "value": "48 inch Null Audio Epsilon monocrystalline cable, 4.4mm balanced"},
     {"@type": "PropertyValue", "name": "Warranty", "value": "2-year limited warranty"}
   ]
 }
@@ -67,15 +67,15 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Black Malus?",
+      "name": "What makes Black Malus a 10th anniversary model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Black Malus is AAW's 10th anniversary in-ear monitor, built around a 16 balanced armature driver architecture, five-way passive crossover, opal-infused faceplate, and hybrid sandwich enclosure."
+        "text": "Black Malus is AAW's return to a large all-BA flagship, built with ten years of tuning knowledge, opal faceplates, stainless steel structure, a precision acoustic chamber, and a complete kit."
       }
     },
     {
       "@type": "Question",
-      "name": "How many drivers does Black Malus use?",
+      "name": "What is the driver configuration?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Black Malus uses 16 balanced armature drivers: 4 bass, 4 mid, 2 mid-high, 2 high, and 4 super-high drivers."
@@ -83,18 +83,26 @@
     },
     {
       "@type": "Question",
-      "name": "What cable is included?",
+      "name": "What is special about the super-high array?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Black Malus includes a 48 inch Null Audio Epsilon monocrystalline IEM cable with 4.4mm balanced termination."
+        "text": "The four super-high drivers are positioned via a 3D-printed manifold close to the ear canal opening, reducing tube distance, pressure loss, and resonance."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the sandwich hybrid enclosure available on custom fit versions?",
+      "name": "What comes in the box?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The sandwich hybrid enclosure is not available on the custom fit version."
+        "text": "Black Malus includes the Null Audio Epsilon cable with 4.4mm balanced termination, LiquidMorph ear tips with full tip selection, a dedicated wooden carry case, and a two-year limited warranty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do custom fit versions include ear tips?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Custom IEM shells are shaped to your ear impressions, so ear tips are not part of the fit. The order includes the wooden case, cable, and accessory kit."
       }
     }
   ]
@@ -120,12 +128,19 @@
     <div class="bm-hero__copy">
       <p class="bm-kicker">AAW 10th Anniversary In-Ear Monitor</p>
       <h1 id="bm-title">Black Malus</h1>
-      <p class="bm-hero__lead">A decade of Advanced AcousticWerkes craft in one monitor: 16 balanced armature drivers, opal-infused faceplates, stainless steel structure, and a five-way acoustic architecture built for detail without losing weight.</p>
+      <p class="bm-hero__lead">Ten years of AAW in one monitor. Sixteen balanced armatures, a stainless steel mid-case, and an opal faceplate poured by hand - each one different. Built for the people who were listening when this company was still figuring it out.</p>
       <p class="bm-price"><span>Price</span><strong>{{ product.selected_or_first_available_variant.price | money }}</strong></p>
+      {% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
       <div class="bm-judge-stars" aria-label="Black Malus customer rating">
         <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
-          {{ product.metafields.judgeme.badge }}
+          {{ jm_badge }}
         </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="bm-rating-fallback" aria-label="No customer reviews yet">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>No reviews yet</span>
+          </span>
+        {% endif %}
       </div>
       <ul class="bm-pill-list" aria-label="Black Malus highlights">
         <li>16 BA drivers</li>
@@ -158,12 +173,12 @@
     <div class="bm-wrap bm-story__grid">
       <div>
         <p class="bm-kicker">Design Story</p>
-        <h2>A decade, cast in black opal</h2>
+        <h2>Ten years. Cast in black opal.</h2>
       </div>
       <div class="bm-prose">
-        <p>Black Malus is more than a celebration of AAW's 10th anniversary. It is a tribute to the audiophile community that shaped the company through ten years of listening, iteration, and hand-built monitor craft.</p>
-        <p>The name draws from the Malus tree: growth, resilience, and transformation. To honor that idea, each faceplate is poured with opal gemstones that shimmer through blue, green, red, and pink fire, so every pair carries its own small weather system under the lacquer.</p>
-        <p>Beneath that surface sits a serious multi-BA architecture, tuned for clarity, depth, and a natural stage from the deepest lows to the most delicate highs.</p>
+        <p>The Malus tree takes a decade to reach full form. So does a monitor company worth remembering.</p>
+        <p>Black Malus marks AAW's tenth year - not with a spec bump, but with a design that carries the weight of the milestone. The faceplate is poured with real opal gemstones, their fire visible through a black translucent shell. Every pair shifts differently: ember red, deep green, gold, magenta. No two leave the bench the same.</p>
+        <p>The sound underneath is what ten years of tuning decisions looks like in practice - 16 balanced armatures, a 5-way crossover, and a driver layout refined until nothing felt like it was missing.</p>
       </div>
     </div>
   </section>
@@ -175,8 +190,8 @@
       </figure>
       <div class="bm-explosion__copy">
         <p class="bm-kicker">Exploded View</p>
-        <h2 id="bm-explosion-title">State of Art Construction</h2>
-        <p>The original construction render returns here, showing how the faceplate, driver matrix, acoustic chamber, stainless structure, shell, and nozzle stack into one compact monitor.</p>
+        <h2 id="bm-explosion-title">Six layers, built to last</h2>
+        <p>The original construction render: faceplate, driver matrix, acoustic chamber, stainless mid-case, shell, nozzle. The cross-section shows how the parts relate - not stacked arbitrarily, but sequenced so each layer does something the next one depends on.</p>
       </div>
     </div>
   </section>
@@ -184,20 +199,20 @@
   <section id="bm-architecture" class="bm-section bm-section--dark bm-architecture">
     <div class="bm-wrap bm-section-head">
       <p class="bm-kicker">Transducer Architecture</p>
-      <h2>The most sophisticated all-BA matrix in the AAW line</h2>
-      <p>Sixteen balanced armature drivers are arranged across five acoustic bands, with dedicated vented BA woofers for low-frequency authority and super-high arrays positioned close to the eardrum to preserve energy and reduce resonance.</p>
+      <h2>Sixteen drivers. Five bands. Nothing wasted.</h2>
+      <p>All-BA setups live or die by crossover precision. With 16 drivers covering five bands, each group has a narrow job - and the 5-way passive crossover keeps them from stepping on each other. The staging stays open. The detail stays clean.</p>
     </div>
     <div class="bm-wrap bm-architecture__grid">
       <figure class="bm-render-card bm-render-card--large">
         <img src="{{ 'black-malus-1202-s.png' | asset_url }}" alt="Black Malus transparent render showing internal balanced armature driver architecture" width="800" height="600" loading="lazy">
-        <figcaption>Sixteen balanced armatures are arranged inside a compact acoustic chamber.</figcaption>
+        <figcaption>Sixteen balanced armatures are divided across five dedicated acoustic bands.</figcaption>
       </figure>
       <div class="bm-driver-map" aria-label="Black Malus driver layout">
-        <article><span>01</span><b>4 bass</b><p>AAW proprietary vented miniature balanced armature power woofers supply low-end weight without forcing a large shell.</p></article>
-        <article><span>02</span><b>4 mid</b><p>A dedicated midrange band keeps instruments and vocals organized through dense arrangements.</p></article>
-        <article><span>03</span><b>2 mid-high</b><p>The handoff into upper harmonics is handled before the treble arrays take over.</p></article>
-        <article><span>04</span><b>2 high</b><p>High-frequency drivers add edge clarity, space, and transient definition.</p></article>
-        <article><span>05</span><b>4 super-high</b><p>A 3D-printed manifold places the super-high arrays near the ear to avoid pressure decay and tubed resonance.</p></article>
+        <article><span>01</span><b>4 bass</b><p>The low end foundation. Extension and physical weight, without muddying the midrange.</p></article>
+        <article><span>02</span><b>4 mid</b><p>Four drivers on midrange alone means vocals do not thin out when the arrangement gets busy.</p></article>
+        <article><span>03</span><b>2 mid-high</b><p>The transition band before treble takes over. Keeps upper harmonics from smearing into the highs.</p></article>
+        <article><span>04</span><b>2 high</b><p>Edge clarity, transient snap, and the spatial cues that tell you where instruments are sitting.</p></article>
+        <article><span>05</span><b>4 super-high</b><p>Placed close to the ear via a 3D-printed manifold, so pressure does not decay through a long tube run. What you hear at the top end is actually what was sent there.</p></article>
       </div>
     </div>
   </section>
@@ -206,10 +221,10 @@
     <div class="bm-wrap bm-build__grid">
       <div class="bm-build__copy">
         <p class="bm-kicker">Sandwich Hybrid Enclosure</p>
-        <h2>Precision chamber, steel frame, hand-poured faceplate</h2>
-        <p>Black Malus uses a layered enclosure system: a precision 3D-printed acoustic chamber at the foundation, a CNC-machined stainless steel mid-case for rigidity, and a resin-based faceplate poured and polished by hand.</p>
-        <p>The stainless mid-case reinforces the 2-pin connector area, while the internal chamber shapes airflow and resonance for the driver matrix. The result is structural, acoustic, and visual craft working from the same chassis.</p>
-        <p class="bm-note">The sandwich hybrid enclosure is not available on the custom fit version.</p>
+        <h2>Steel frame. Printed chamber. Hand-poured face.</h2>
+        <p>Three materials, each doing the thing it is best at.</p>
+        <p>The 3D-printed acoustic chamber shapes internal airflow and resonance around the driver matrix. The CNC-machined stainless mid-case locks the connector area and gives the whole shell a rigidity that resin alone cannot provide. The faceplate is poured, cured, and polished by hand - opal fragments sealed under clear lacquer that moves under light.</p>
+        <p>The sandwich build was not designed to look complicated. It was designed so nothing vibrates that should not, and nothing flexes when it needs to hold.</p>
       </div>
       <figure class="bm-build__photo">
         <img src="{{ 'black-malus-bm08.jpg' | asset_url }}" alt="Black Malus in-ear monitor side profile showing stainless steel mid-case and black shell" width="1920" height="1280" loading="lazy">
@@ -224,39 +239,44 @@
   <section class="bm-section bm-section--dark bm-faceplate">
     <div class="bm-wrap bm-faceplate__grid">
       <div>
-        <p class="bm-kicker">Opal Infused Faceplate</p>
-        <h2>A visual signature for every listener</h2>
-        <p>Each faceplate is individually poured with genuine opal fragments, then polished under a black translucent finish. The result shifts from ember red to green, gold, and magenta as the angle changes, reflecting the multidimensional character of the sound.</p>
+        <p class="bm-kicker">Opal Faceplate</p>
+        <h2>Fire under black glass</h2>
+        <p>Black Malus faceplates are individually cast under a black translucent finish. Opal fragments go in before the resin sets - the distribution is never controlled, only contained. Tilt the shell toward a light source and the surface comes alive: ember red shifting to green, then gold, then magenta. Straight on, it reads dark and serious. At an angle, it tells a different story.</p>
+        <p>No two pairs are identical. That is not a limitation - it is the point.</p>
       </div>
       <figure>
-        <img src="{{ 'black-malus-bm04.jpg' | asset_url }}" alt="Black Malus faceplates on a black reflective surface with opal fragments and silver flower emblems" width="1920" height="1280" loading="lazy">
+        <img src="{{ 'black-malus-faceplate-hero-enhanced.jpg' | asset_url }}" alt="Black Malus faceplates on a black reflective surface with opal fragments and silver flower emblems" width="2000" height="1333" loading="lazy">
       </figure>
     </div>
     <div class="bm-wrap bm-gallery" aria-label="Black Malus product gallery">
-      <figure><img src="{{ 'black-malus-bm07.jpg' | asset_url }}" alt="Black Malus monitors with cable and Null Audio Epsilon splitter over floral packaging" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-bm06.jpg' | asset_url }}" alt="Black Malus monitors with cable, y-splitter, and 4.4mm plug" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-bm03.jpg' | asset_url }}" alt="Black Malus monitors on a white background with cable" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-bm01.jpg' | asset_url }}" alt="Black Malus monitors on a black reflective background" loading="lazy"></figure>
+      <figure><img src="{{ 'black-malus-faceplate-gallery-01.jpg' | asset_url }}" alt="Black Malus monitors on a black reflective background" loading="lazy"></figure>
+      <figure><img src="{{ 'black-malus-faceplate-gallery-02.jpg' | asset_url }}" alt="Black Malus monitors with opal faceplates on a dark studio background" loading="lazy"></figure>
+      <figure><img src="{{ 'black-malus-faceplate-gallery-03.jpg' | asset_url }}" alt="Black Malus side profile showing stainless steel mid-case and opal faceplate" loading="lazy"></figure>
+      <figure><img src="{{ 'black-malus-faceplate-gallery-04.jpg' | asset_url }}" alt="Black Malus monitors with cable and Null Audio Epsilon splitter on black reflective surface" loading="lazy"></figure>
     </div>
   </section>
 
   <section class="bm-section bm-accessories">
     <div class="bm-wrap bm-section-head">
       <p class="bm-kicker">Cabling and Carry</p>
-      <h2>The full kit, tuned for the monitor</h2>
+      <h2>The full kit</h2>
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
         <img src="{{ 'black-malus-bm06.jpg' | asset_url }}" alt="Null Audio Epsilon cable with Black Malus monitors" width="1920" height="1280" loading="lazy">
-        <div><span>01</span><h3>Epsilon cable</h3><p>The included Null Audio Epsilon cable uses cryogenically treated monocrystalline silver conductor and UPOCC cast construction, finished with a custom Black Malus y-splitter.</p></div>
+        <div><span>01</span><h3>Epsilon cable</h3><p>Null Audio's Epsilon - not the Epsilon+, the original - uses cryogenically treated monocrystalline silver with UPOCC cast construction and a custom Black Malus y-splitter. 4.4mm balanced. Matched to the monitor, not just bundled with it.</p></div>
       </article>
       <article>
         <img src="{{ 'black-malus-case.jpg' | asset_url }}" alt="Black Malus wooden protection case with yellow badge" width="1600" height="1600" loading="lazy">
-        <div><span>02</span><h3>Wooden case</h3><p>A dedicated wooden protection case gives Black Malus a travel-ready home between listening sessions.</p></div>
+        <div><span>02</span><h3>Wooden case</h3><p>A dedicated wooden carry case. Heavier than a zip pouch, better looking on a desk, and designed to actually protect something worth protecting.</p></div>
       </article>
       <article>
         <img src="{{ 'black-malus-content-s.jpg' | asset_url }}" alt="Black Malus accessory pack with ear tips and case" width="1600" height="1600" loading="lazy">
-        <div><span>03</span><h3>LiquidMorph tips</h3><p>Universal-fit Black Malus ships with LiquidMorph eartips plus assorted foam and silicone tips for tuning fit, bass, and treble balance.</p></div>
+        <div><span>03</span><h3>LiquidMorph tips</h3><p>LiquidMorph clear silicone tips plus a full assortment of foam and silicone in multiple sizes. Different tips change the bass shelf and treble balance - the variety is not decoration.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="Clear LiquidMorph ear tips close-up showing the soft bore and flexible outer seal" width="2048" height="2048" loading="lazy">
+        <div><span>04</span><h3>Adaptive seal</h3><p>LiquidMorph's construction settles against the ear canal without pressure buildup. Built for long sessions where comfort is not optional.</p></div>
       </article>
     </div>
   </section>
@@ -265,8 +285,8 @@
     <div class="bm-wrap bm-specs__grid">
       <div>
         <p class="bm-kicker">Specifications</p>
-        <h2>Built for critical listening and live performance</h2>
-        <p>Black Malus is suited for band performances, performing artists, worship events, audio engineering, and listeners who want an exceptional high-resolution monitor experience.</p>
+        <h2>For the stage and the couch</h2>
+        <p>Black Malus was tuned with performing musicians in mind - the kind of clarity that holds up when a drummer is behind you and a vocalist is in your ear. It works just as well when nothing is happening except the music.</p>
       </div>
       <dl class="bm-spec-table">
         <div><dt>Driver count</dt><dd>16 balanced armature drivers</dd></div>
@@ -275,8 +295,8 @@
         <div><dt>Sensitivity</dt><dd>110dB SPL at 1kHz</dd></div>
         <div><dt>Impedance</dt><dd>20 Ohm at 1kHz</dd></div>
         <div><dt>Frequency response</dt><dd>10Hz to 40kHz</dd></div>
-        <div><dt>THD</dt><dd>Less than or equal to 0.5% at 1mW / 1kHz</dd></div>
-        <div><dt>Cable</dt><dd>48 inch Null Audio Epsilon monocrystalline IEM cable, 4.4mm balanced</dd></div>
+        <div><dt>THD</dt><dd>&le;0.5% at 1mW / 1kHz</dd></div>
+        <div><dt>Cable</dt><dd>48&quot; Null Audio Epsilon monocrystalline, 4.4mm balanced</dd></div>
         <div><dt>Warranty</dt><dd>2-year limited warranty</dd></div>
       </dl>
     </div>
@@ -291,37 +311,63 @@
       <div class="bm-faq__list">
         <details open>
           <summary><span>What makes Black Malus a 10th anniversary model?</span></summary>
-          <p>It combines AAW's return to a large multi-BA flagship architecture with anniversary-grade materials: opal faceplates, stainless steel structure, a precision acoustic chamber, and a complete premium accessory kit.</p>
+          <p>It is AAW's return to a large all-BA flagship - the format the company built its reputation on - done with ten years of tuning knowledge and anniversary-grade materials throughout. Opal faceplates, stainless steel structure, a precision acoustic chamber, and a complete kit. Nothing carried over from a cheaper line.</p>
         </details>
         <details>
           <summary><span>What is the driver configuration?</span></summary>
-          <p>Black Malus uses 16 balanced armatures arranged as 4 bass, 4 mid, 2 mid-high, 2 high, and 4 super-high drivers through a five-way passive crossover.</p>
+          <p>16 balanced armatures across five bands: 4 bass, 4 mid, 2 mid-high, 2 high, 4 super-high. Each group is isolated by the 5-way passive crossover.</p>
         </details>
         <details>
           <summary><span>What is special about the super-high array?</span></summary>
-          <p>The four super-high armatures sit in a 3D-printed manifold close to the eardrum, helping preserve upper-frequency energy while reducing the resonance and pressure loss associated with longer tube paths.</p>
+          <p>The 4 super-high drivers are positioned via a 3D-printed manifold that places them close to the ear canal opening. This cuts the tube distance that causes pressure loss and resonance in traditional long-bore designs. What the super-high drivers produce is what you actually hear - not a degraded version of it.</p>
         </details>
         <details>
           <summary><span>What comes in the box?</span></summary>
-          <p>The kit includes the Null Audio monocrystalline IEM cable, AAW carrying case, cleaning cloth, LiquidMorph universal ear tips, assorted foam and silicone tips, and a 2-year limited warranty.</p>
+          <p>Black Malus, Null Audio Epsilon cable with 4.4mm balanced termination, LiquidMorph ear tips with full tip selection, dedicated wooden carry case, and a two-year limited warranty.</p>
         </details>
         <details>
           <summary><span>Do custom fit versions include ear tips?</span></summary>
-          <p>No. Custom fit monitors do not ship with ear tips because they do not need them. The universal version includes LiquidMorph, foam, and silicone tips.</p>
+          <p>Custom IEM shells are shaped to your ear impressions - ear tips are not part of the fit. Your order will include the wooden case, cable, and accessory kit.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section id="bm-reviews" class="bm-section bm-section--dark bm-reviews">
-    <div class="bm-wrap bm-reviews__head">
-      <p class="bm-kicker">Owner Reviews</p>
-      <h2>Black Malus listening impressions</h2>
-    </div>
-    <div class="bm-wrap bm-reviews__shell">
-      <div style="clear: both;"></div>
-      <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
-        {{ product.metafields.judgeme.widget }}
+  <section id="bm-reviews" class="bm-section bm-section--dark z05-reviews-section">
+    <div class="bm-wrap">
+      <div class="z05-reviews-head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>Black Malus listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions for Black Malus as the Judge.me review archive becomes available.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        {% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.00">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-stars" aria-label="0 out of 5 stars" role="img">
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                  </div>
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+              <div class="jdgm-rev-widg__body">
+                <div class="jdgm-rev-widg__reviews"></div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
       </div>
     </div>
   </section>
@@ -329,7 +375,7 @@
   <section class="bm-final">
     <div class="bm-wrap">
       <p class="bm-kicker">Black Malus</p>
-      <h2>Ten years of AAW, made visible and audible.</h2>
+      <h2>Ten years of AAW. Made visible. Made audible.</h2>
       <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
         <input type="hidden" name="quantity" value="1">
