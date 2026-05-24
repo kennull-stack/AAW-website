@@ -565,10 +565,45 @@
     return 0;
   }
 
+  function numericText(node, pattern) {
+    if (!node) return 0;
+    var text = normalizeText(node.textContent).replace(/,/g, '');
+    var match = text.match(pattern);
+    var parsed = match && parseFloat(match[1]);
+    return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
+  }
+
   function findJudgeMeRatingNode(root) {
     if (!root) return null;
     if (root.matches && root.matches('[data-average-rating][data-number-of-reviews]')) return root;
-    return root.querySelector('[data-average-rating][data-number-of-reviews], [data-average-rating][data-review-count]');
+    return root.querySelector([
+      '[data-average-rating][data-number-of-reviews]',
+      '[data-average-rating][data-review-count]',
+      '.jdgm-average-rating',
+      '.jdgm-rating-text'
+    ].join(','));
+  }
+
+  function extractJudgeMeAggregate(root) {
+    var ratingNode = findJudgeMeRatingNode(root);
+    var ratingValue = numericAttribute(ratingNode, ['data-average-rating']);
+    var reviewCount = numericAttribute(ratingNode, ['data-number-of-reviews', 'data-review-count']);
+
+    if (!ratingValue) {
+      var ratingTextNode = root && root.querySelector('.jdgm-rating-text, .jdgm-average-rating');
+      ratingValue = numericText(ratingTextNode, /([0-5](?:\.\d+)?)(?:\s*★|\s+out\s+of\s+5|\s*\/\s*5)?/i);
+    }
+
+    if (!reviewCount) {
+      var countNode = root && root.querySelector('.jdgm-reviews-count, .jdgm-carousel-number-of-reviews, .jdgm-rating-text');
+      reviewCount = numericText(countNode, /\((\d+)\)/) || numericText(countNode, /(\d+)\s+reviews?/i);
+    }
+
+    if (!ratingValue || !reviewCount) return null;
+    return {
+      ratingValue: ratingValue,
+      reviewCount: reviewCount
+    };
   }
 
   function ratingFromReview(review) {
@@ -637,10 +672,8 @@
   }
 
   function buildJudgeMeReviewSchema(root) {
-    var ratingNode = findJudgeMeRatingNode(root);
-    var ratingValue = numericAttribute(ratingNode, ['data-average-rating']);
-    var reviewCount = numericAttribute(ratingNode, ['data-number-of-reviews', 'data-review-count']);
-    if (!ratingValue || !reviewCount) return null;
+    var aggregate = extractJudgeMeAggregate(root);
+    if (!aggregate) return null;
 
     var schema = {
       '@context': 'https://schema.org',
@@ -656,10 +689,10 @@
       },
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: String(Math.round(ratingValue * 100) / 100),
+        ratingValue: String(Math.round(aggregate.ratingValue * 100) / 100),
         bestRating: '5',
         worstRating: '1',
-        reviewCount: String(Math.round(reviewCount))
+        reviewCount: String(Math.round(aggregate.reviewCount))
       }
     };
     var reviews = extractJudgeMeReviews(root);

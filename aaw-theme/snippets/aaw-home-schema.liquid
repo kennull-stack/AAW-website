@@ -8,6 +8,7 @@
   assign listening_paths_id = canonical_url | append: '#listening-paths'
   assign faq_id = canonical_url | append: '#faq'
   assign store_id = canonical_url | append: '#aaw-singapore-store'
+  assign homepage_reviews_product_id = site_url | append: '/#judgeme-aaw-in-ear-monitors'
   assign org_id = site_url | append: '/#organization'
   assign brand_id = site_url | append: '/#brand'
   assign website_id = site_url | append: '/#website'
@@ -37,6 +38,7 @@
       "mainEntity": [
         { "@id": {{ site_url | append: '/products/z07-in-ear-monitor#product' | json }} },
         { "@id": {{ canonical_url | append: '#fitmorph' | json }} },
+        { "@id": {{ homepage_reviews_product_id | json }} },
         { "@id": {{ listening_paths_id | json }} },
         { "@id": {{ z_series_id | json }} },
         { "@id": {{ store_id | json }} },
@@ -92,6 +94,71 @@
       "founder": {
         "@id": {{ kevin_wang_id | json }}
       }
+    },
+    {
+      "@type": "Product",
+      "@id": {{ homepage_reviews_product_id | json }},
+      "name": "AAW custom and universal in-ear monitors",
+      "url": {{ site_url | json }},
+      "brand": {
+        "@id": {{ brand_id | json }}
+      },
+      "manufacturer": {
+        "@id": {{ org_id | json }}
+      },
+      "category": "Custom and universal in-ear monitors",
+      "description": "Advanced AcousticWerkes designs and builds custom and universal in-ear monitors for musicians, audiophiles, and stage users from Singapore.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.82",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "444"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Steve S."
+          },
+          "reviewBody": "I was very pleasantly surprised just how good AAW monitors are. The overall sound is quite balanced, they do have very detailed bass, sub bass and treble, but the mids are not so recessed as would be the case with more typical V shaped sounding IEMs.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "AJ L."
+          },
+          "reviewBody": "Excellent product. This is my first CIEM and I can say I am very much impressed. It fits perfectly snugged in my ears. When I plugged it in the monitors, I can hear clearly the distinct sounds. The vocals and the bass is clear and crisp.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Elias T."
+          },
+          "reviewBody": "Great fit, great isolation, great material and good sound for the price. Sound wise is big and quite wide. Bass is satisfying and mids are ok. Overall an enjoyable IEM.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        }
+      ]
     },
     {
       "@type": "Person",
