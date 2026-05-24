@@ -21,6 +21,7 @@
                 {% liquid
                   assign columnImageContent = ''
                   assign collection = block.settings.collection
+                  assign categoryAnchorLabel = block.settings.heading | default: collection.title | default: shop.name
       
                   if block.settings.image != blank
                     assign columnImageContent = block.settings.image
@@ -33,18 +34,23 @@
                     case collection.handle
                       when 'for-musician'
                         assign columnImageAlt = 'AAW custom and universal in-ear monitors for musicians and stage monitoring'
+                        assign categoryAnchorLabel = 'For musicians: AAW custom and universal in-ear monitors for stage monitoring'
                       when 'for-audiophile'
                         assign columnImageAlt = 'AAW universal in-ear monitors for daily listening and audiophile use'
+                        assign categoryAnchorLabel = 'For audiophiles: AAW universal in-ear monitors for daily listening'
                       when 'totl'
                         assign columnImageAlt = 'AAW flagship in-ear monitors and top-of-the-line IEM designs'
+                        assign categoryAnchorLabel = 'Top-of-the-line AAW flagship in-ear monitors'
                       when 'wireless'
                         assign columnImageAlt = 'AAW wireless audio products and Bluetooth in-ear monitor accessories'
+                        assign categoryAnchorLabel = 'AAW wireless audio products and Bluetooth IEM accessories'
                       when 'accessories'
                         assign columnImageAlt = 'AAW IEM accessories for cables, tips, cases, and monitor care'
+                        assign categoryAnchorLabel = 'AAW IEM accessories for cables, tips, cases, and monitor care'
                     endcase
                   endif
                 -%}
-              <{% if collection != blank  %}a href="{{ collection.url }}"{% else %}div{% endif %} class="categories-box-item {{ section.settings.column_style }}">
+              <{% if collection != blank  %}a href="{{ collection.url }}" aria-label="{{ categoryAnchorLabel | strip_html | escape }}"{% else %}div{% endif %} class="categories-box-item {{ section.settings.column_style }}">
                     <div class="categories-box-image">
                       {%  if section.settings.card_hover_style == "rotate-border" %}
                         <span class="rotating-border"></span>
@@ -60,14 +66,14 @@
                         </div>
                     </div>
                     <div class="categories-box-content">
-                        <h6 class="categories-box-heading text-medium text-center">
+                        <h3 class="categories-box-heading text-medium text-center">
                           {%- if block.settings.heading != blank -%}
                             {{ block.settings.heading -}}
                           {% elsif collection != blank %}
                             {{- collection.title | strip_html -}}
                           {%- else -%}
                             {{ 'sections.collection_carousel.collection' | t }}
-                          {%- endif %}</h6>
+                          {%- endif %}</h3>
                     </div>
                     {% comment %} {% if collection != blank  %}
                     <a href="{{ collection.url }}" aria-label="{{ collection.title }}" class="categories-box-link"></a>

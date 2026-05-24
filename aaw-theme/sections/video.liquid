@@ -161,6 +161,54 @@
       --media-height:{{ section.settings.mobile_video_height }}
     }
   {% endif %}
+    {% if section.id contains 'video_GxUGwD' %}
+      #shopify-section-{{ section.id }} .video-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 0;
+      }
+
+      #shopify-section-{{ section.id }} .video-wrapper {
+        order: 2;
+        position: relative;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+
+      #shopify-section-{{ section.id }} .video-wrapper .video-thumbnail,
+      #shopify-section-{{ section.id }} .video-wrapper deferred-media {
+        height: 100%;
+      }
+
+      #shopify-section-{{ section.id }} .video-content-wrapper {
+        order: 1;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px 16px 16px;
+        overflow: visible;
+        justify-content: flex-start;
+      }
+
+      #shopify-section-{{ section.id }} .video-content-heading {
+        color: #000;
+        font-size: clamp(26px, 8vw, 34px);
+        line-height: 1.05;
+      }
+
+      #shopify-section-{{ section.id }} .video-content-description {
+        color: #000;
+        max-width: 34rem;
+        padding: 10px 0 0;
+        font-size: 14px;
+        line-height: 1.45;
+      }
+    {% endif %}
   }
   {% if section.settings.section_visibility == 'large' %}
     @media (max-width: 767px) {

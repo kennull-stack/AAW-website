@@ -1,7 +1,7 @@
 {%- liquid
   assign z_series = collections['z-series']
   assign home_title = 'Advanced AcousticWerkes | Singapore Custom & Universal IEM Specialist'
-  assign home_description = 'Advanced AcousticWerkes (AAW) is a Singapore in-ear monitor specialist founded in 2014 by Kevin Wang, crafting custom and universal IEMs for musicians, engineers, and serious listeners.'
+  assign home_description = 'AAW designs and builds custom and universal in-ear monitors in Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
   assign site_url = 'https://www.aaw.me'
   assign page_id = canonical_url | append: '#webpage'
   assign z_series_id = canonical_url | append: '#z-series'
@@ -31,12 +31,46 @@
         "@id": {{ org_id | json }}
       },
       "mainEntity": [
+        { "@id": {{ site_url | append: '/products/z07-in-ear-monitor#product' | json }} },
+        { "@id": {{ canonical_url | append: '#fitmorph' | json }} },
         { "@id": {{ listening_paths_id | json }} },
         { "@id": {{ z_series_id | json }} },
         { "@id": {{ store_id | json }} },
         { "@id": {{ faq_id | json }} },
         { "@id": {{ kevin_wang_id | json }} }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": {{ org_id | json }},
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      "url": {{ site_url | json }},
+      "foundingDate": "2014",
+      "founder": {
+        "@id": {{ kevin_wang_id | json }}
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#01-03, 76 Playfair Rd",
+        "addressLocality": "Singapore",
+        "postalCode": "367996",
+        "addressCountry": "SG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+65 8731 5476",
+        "email": "sales@acousticwerkes.com",
+        "contactType": "customer support",
+        "areaServed": "SG"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.74",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "335"
+      }
     },
     {
       "@type": "Person",
@@ -54,6 +88,40 @@
         "dynamic driver integration",
         "IEM acoustic design"
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": {{ site_url | append: '/products/z07-in-ear-monitor#product' | json }},
+      "name": "AAW Z07",
+      "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+      "image": {{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_url | prepend: 'https:' | json }},
+      "brand": {
+        "@id": {{ org_id | json }}
+      },
+      "description": "AAW Z07 is a universal hybrid in-ear monitor with a tube-free acoustic core and FitMorph adaptive fit system.",
+      "category": "Universal in-ear monitor",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Fit system",
+          "value": "FitMorph adaptive fit"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Acoustic path",
+          "value": "Tube-free hybrid core"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": {{ canonical_url | append: '#fitmorph' | json }},
+      "name": "FitMorph adaptive fit system",
+      "provider": {
+        "@id": {{ org_id | json }}
+      },
+      "serviceType": "In-ear monitor fit system",
+      "description": "FitMorph lets AAW listeners change the outer fit of compatible monitors while keeping the acoustic core and tuning in place."
     },
     {
       "@type": "ItemList",
@@ -157,6 +225,88 @@
       ]
     },
     {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-zeppelin' | json }},
+      "name": "Zeppelin & Co.",
+      "telephone": "+65 9337 9655",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Rochor Canal Rd, #02-78 Sim Lim Square",
+        "addressLocality": "Singapore",
+        "postalCode": "188504",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-jaben' | json }},
+      "name": "JABEN",
+      "telephone": "+65 6337 0809",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Coleman St, #01-25 The Adelphi",
+        "addressLocality": "Singapore",
+        "postalCode": "179803",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "12:00",
+          "closes": "20:00"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-av-one' | json }},
+      "name": "AV One",
+      "telephone": "+65 6337 0080",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Coleman St, The Adelphi",
+        "addressLocality": "Singapore",
+        "postalCode": "179803",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "19:30"
+        }
+      ],
+      "openingHours": "Monday-Saturday 11:00-19:30; public holidays 13:00-18:00"
+    },
+    {
       "@type": "FAQPage",
       "@id": {{ faq_id | json }},
       "mainEntity": [
@@ -165,7 +315,7 @@
           "name": "What does AAW specialize in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AAW designs and builds in-ear monitors in Singapore, including custom IEMs, universal monitors, hybrid driver designs, cables, refit work, and long-term service."
+            "text": "In-ear monitors. Custom and universal, designed and built in Singapore. We also handle refits, cables, and long-term service."
           }
         },
         {
@@ -173,7 +323,7 @@
           "name": "What is the difference between universal and custom IEMs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Universal IEMs are ready to wear with ear tips and can be shared or resold more easily. Custom IEMs are built from ear impressions for a personal shell shape, stronger fit security, and more design freedom."
+            "text": "Universal monitors come with ear tips and fit most ears. Custom monitors are built from impressions of your ears - better seal, more freedom in the design, and not really wearable by anyone else."
           }
         },
         {
@@ -181,7 +331,7 @@
           "name": "Do I need ear impressions for a CIEM?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. A custom in-ear monitor needs accurate ear impressions or approved digital ear scans. Good impressions help the shell seal, reduce pressure points, and lower the chance of refit work."
+            "text": "Yes, for any custom monitor. Either physical impressions taken by an audiologist or an approved digital ear scan. Good impressions are most of the battle - a bad seal can't be fixed by tuning."
           }
         },
         {
@@ -189,7 +339,7 @@
           "name": "Can AAW help with refits or repairs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. AAW supports refit, warranty, repair, cable, and service questions through the Singapore office and authorized dealers."
+            "text": "Yes. The Singapore office handles refit, warranty, repair, and cable service directly. If you bought through a dealer, they're often the fastest first stop."
           }
         },
         {
@@ -197,7 +347,7 @@
           "name": "Where can I audition or order AAW?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Visit the AAW Office at 76 Playfair Road or an authorized listening room such as Zeppelin & Co., JABEN, and AV One. Outside Singapore, use the store locator for authorized dealers."
+            "text": "In Singapore: our office at 76 Playfair Rd, or Zeppelin & Co., JABEN, and AV One. Outside Singapore, the store locator lists authorised dealers."
           }
         }
       ]
