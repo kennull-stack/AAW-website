@@ -540,10 +540,22 @@
     document.querySelectorAll(WIDGET_SELECTOR).forEach(setupManagedWidget);
   }
 
+  function setJudgeMeImageAlts() {
+    if (window.location.pathname !== '/' && window.location.pathname !== '') return;
+    var root = document.querySelector(HOME_JUDGEME_SELECTOR);
+    if (!root) return;
+
+    root.querySelectorAll('img').forEach(function (image, index) {
+      if (normalizeText(image.getAttribute('alt'))) return;
+      image.setAttribute('alt', 'Customer-submitted AAW in-ear monitor build showcase photo ' + (index + 1));
+    });
+  }
+
   function debounceCurate() {
     window.clearTimeout(debounceCurate.timer);
     debounceCurate.timer = window.setTimeout(function () {
       curateAllWidgets();
+      setJudgeMeImageAlts();
       injectHomeJudgeMeSchema();
     }, 120);
   }
@@ -719,10 +731,12 @@
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       curateAllWidgets();
+      setJudgeMeImageAlts();
       injectHomeJudgeMeSchema();
     });
   } else {
     curateAllWidgets();
+    setJudgeMeImageAlts();
     injectHomeJudgeMeSchema();
   }
 
@@ -757,6 +771,7 @@
 
   window.addEventListener('load', function () {
     curateAllWidgets();
+    setJudgeMeImageAlts();
     injectHomeJudgeMeSchema();
   });
 
