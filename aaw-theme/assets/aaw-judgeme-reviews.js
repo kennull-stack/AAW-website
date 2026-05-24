@@ -542,10 +542,15 @@
 
   function setJudgeMeImageAlts() {
     if (window.location.pathname !== '/' && window.location.pathname !== '') return;
-    var root = document.querySelector(HOME_JUDGEME_SELECTOR);
-    if (!root) return;
+    var images = document.querySelectorAll([
+      '.jdgm-carousel-wrapper img',
+      '.jdgm-carousel img',
+      '.jdgm-all-reviews-widget img',
+      '.jdgm-widget[data-average-rating][data-number-of-reviews] img',
+      '[class*="jdgm-carousel"] img'
+    ].join(','));
 
-    root.querySelectorAll('img').forEach(function (image, index) {
+    images.forEach(function (image, index) {
       if (normalizeText(image.getAttribute('alt'))) return;
       image.setAttribute('alt', 'Customer-submitted AAW in-ear monitor build showcase photo ' + (index + 1));
     });
