@@ -17,6 +17,9 @@
         <link rel="alternate" hreflang="ko" href="https://www.aaw.me/ko/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/products/z05-auag-launch-edition">
         {{ 'z05-product.css' | asset_url | stylesheet_tag }}
+      {%- elsif request.page_type == 'index' -%}
+        <link rel="alternate" hreflang="en" href="https://www.aaw.me/">
+        <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/">
       {%- endif -%}
       <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
       {%- if settings.favicon != blank -%}
@@ -38,7 +41,7 @@
           })();
         </script>
       {%- elsif request.page_type == 'index' -%}
-        <title>Advanced AcousticWerkes | Singapore Custom & Universal IEM Specialist</title>
+        <title>Advanced AcousticWerkes | Singapore IEM Specialist</title>
         <meta name="description" content="AAW designs and builds custom and universal in-ear monitors in Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.">
         <meta name="geo.region" content="SG">
         <meta name="geo.placename" content="Singapore">

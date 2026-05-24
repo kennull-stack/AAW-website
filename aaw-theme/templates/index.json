@@ -30,7 +30,7 @@
           "type": "collection",
           "settings": {
             "collection": "for-musician",
-            "heading": ""
+            "heading": "For musicians"
           }
         },
         "collection_BDARn7": {
@@ -38,28 +38,28 @@
           "settings": {
             "collection": "for-audiophile",
             "image": "shopify://shop_images/DSC1842.jpg",
-            "heading": ""
+            "heading": "For audiophiles"
           }
         },
         "collection_HhNzRg": {
           "type": "collection",
           "settings": {
             "collection": "totl",
-            "heading": ""
+            "heading": "Flagship IEMs"
           }
         },
         "collection_EdP6L3": {
           "type": "collection",
           "settings": {
             "collection": "wireless",
-            "heading": ""
+            "heading": "Wireless"
           }
         },
         "collection_FBWtWq": {
           "type": "collection",
           "settings": {
             "collection": "accessories",
-            "heading": ""
+            "heading": "Accessories"
           }
         }
       },
@@ -172,7 +172,7 @@
       "type": "custom-liquid",
       "settings": {
         "section_visibility": "always",
-        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-brand-band\">\n    <div class=\"aaw-home-wrap aaw-home-philosophy-wrap\">\n      <p class=\"aaw-home-kicker\">About</p>\n      <blockquote class=\"aaw-home-philosophy\">\n        Listening is where the work starts, and where it returns. It is how a shell becomes comfortable, how a crossover finds its voice, how a stage monitor earns trust, and how a personal IEM becomes the one a listener reaches for without thinking.\n      </blockquote>\n      <blockquote class=\"aaw-home-founder-quote\"><p>A monitor isn't done when it sounds good on a test bench. It's done when someone wears it for four hours on stage and forgets it's there.</p><cite>Kevin Wang, founder</cite></blockquote>\n      <p class=\"aaw-home-brand-meta\">AAW &mdash; Singapore, since 2014. <a href=\"/pages/about-us\">The full story &rarr;</a></p>\n    </div>\n  </section>\n</div>",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-brand-band\">\n    <div class=\"aaw-home-wrap aaw-home-philosophy-wrap\">\n      <p class=\"aaw-home-kicker\">About</p>\n      <blockquote class=\"aaw-home-philosophy\">\n        Listening is where the work starts, and where it returns. It is how a shell becomes comfortable, how a crossover finds its voice, how a stage monitor earns trust, and how a personal IEM becomes the one a listener reaches for without thinking.\n      </blockquote>\n      <blockquote class=\"aaw-home-founder-quote\"><p>A monitor isn't done when it sounds good on a test bench. It's done when someone wears it for four hours on stage and forgets it's there.</p><cite>Kevin Wang, founder</cite></blockquote>\n      <div class=\"aaw-home-founder-bio\" itemscope itemtype=\"https://schema.org/Person\">\n        <p><strong itemprop=\"name\">Kevin Wang</strong> <span itemprop=\"jobTitle\">Founder &amp; Tuning Engineer</span> leads AAW's acoustic design and tuning work in Singapore. Since founding Advanced AcousticWerkes in 2014, his work has focused on custom-fit monitors, universal IEMs, hybrid driver integration, and practical long-term service for musicians, engineers, and audiophiles.</p>\n        <a itemprop=\"sameAs\" href=\"https://sg.linkedin.com/in/kevin-wang-15376265\" rel=\"noopener\" target=\"_blank\">Kevin Wang on LinkedIn</a>\n      </div>\n      <p class=\"aaw-home-brand-meta\">AAW &mdash; Singapore, since 2014. <a href=\"/pages/about-us\">The full story &rarr;</a></p>\n    </div>\n  </section>\n</div>",
         "content_width": "large",
         "text_alignment": "left",
         "color_scheme": "primary",
@@ -198,7 +198,7 @@
         "judge_me_reviews_cards_carousel_mihTiR": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_sample_reviews": true,
+            "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
             "star_rating": "all",
@@ -316,7 +316,7 @@
       "type": "custom-liquid",
       "settings": {
         "section_visibility": "always",
-        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-faq-section\" aria-labelledby=\"aaw-home-faq-title\">\n    <div class=\"aaw-home-wrap aaw-home-faq-grid\">\n      <div>\n        <p class=\"aaw-home-kicker\">FAQ</p>\n        <h2 id=\"aaw-home-faq-title\">Quick answers about AAW.</h2>\n      </div>\n      <div class=\"aaw-home-faq-list\">\n        <details open><summary>What does AAW specialize in?</summary><p>In-ear monitors. Custom and universal, designed and built in Singapore. We also handle refits, cables, and long-term service.</p></details>\n        <details><summary>What is the difference between universal and custom IEMs?</summary><p>Universal monitors come with ear tips and fit most ears. Custom monitors are built from impressions of your ears - better seal, more freedom in the design, and not really wearable by anyone else.</p></details>\n        <details><summary>Do I need ear impressions for a CIEM?</summary><p>Yes, for any custom monitor. Either physical impressions taken by an audiologist or an approved digital ear scan. Good impressions are most of the battle - a bad seal can't be fixed by tuning.</p></details>\n        <details><summary>Can AAW help with refits or repairs?</summary><p>Yes. The Singapore office handles refit, warranty, repair, and cable service directly. If you bought through a dealer, they're often the fastest first stop.</p></details>\n        <details><summary>Where can I audition or order AAW?</summary><p>In Singapore: our office at 76 Playfair Rd, or Zeppelin &amp; Co., JABEN, and AV One. Outside Singapore, the store locator lists authorised dealers.</p></details>\n      </div>\n    </div>\n  </section>\n</div>",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-faq-section\" aria-labelledby=\"aaw-home-faq-title\">\n    <div class=\"aaw-home-wrap aaw-home-faq-grid\">\n      <div>\n        <p class=\"aaw-home-kicker\">FAQ</p>\n        <h2 id=\"aaw-home-faq-title\">Quick answers about AAW.</h2>\n      </div>\n      <div class=\"aaw-home-faq-list\">\n        <details open><summary>What does AAW specialize in?</summary><p>Advanced AcousticWerkes specializes in in-ear monitors designed and built in Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work.</p></details>\n        <details><summary>What is the difference between universal and custom IEMs?</summary><p>Universal IEMs use ear tips and can fit many listeners, which makes them easier to demo, share, and travel with. Custom IEMs are made from your ear impressions or approved digital scans, so they seal around your ears only and allow more freedom in shell shape, artwork, and fit tuning.</p></details>\n        <details><summary>Do I need ear impressions for a CIEM?</summary><p>Yes. AAW needs physical impressions from an audiologist or an approved digital ear scan before building a custom in-ear monitor. Accurate impressions are critical because the acoustic seal affects bass, isolation, comfort, and whether the finished monitor can be worn for long sessions.</p></details>\n        <details><summary>Can AAW help with refits or repairs?</summary><p>Yes. The Singapore office handles refit, warranty, repair, cable, socket, and shell service for AAW monitors. If you bought through an authorized dealer, that dealer is often the fastest first stop, but the work is still supported through AAW's service process.</p></details>\n        <details><summary>Where can I audition or order AAW?</summary><p>In Singapore, listeners can start at the AAW office at 76 Playfair Rd, #01-03, or audition through Zeppelin &amp; Co., JABEN, and AV One. Outside Singapore, AAW works with authorized specialist audio dealers; use the store locator or contact sales@acousticwerkes.com for the closest listening point.</p></details>\n      </div>\n    </div>\n  </section>\n</div>",
         "content_width": "large",
         "text_alignment": "left",
         "color_scheme": "primary",

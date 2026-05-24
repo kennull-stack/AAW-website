@@ -20,6 +20,14 @@
   ].join(',');
   var BODY_SELECTOR = '.jdgm-rev__body, .jdgm-rev__content, .jdgm-rev__text';
   var FIRST_PAGE_REVIEW_COUNT = 5;
+  var HOME_SCHEMA_ID = 'aaw-judgeme-home-review-schema';
+  var HOME_JUDGEME_SELECTOR = [
+    '.jdgm-carousel-wrapper',
+    '.jdgm-carousel',
+    '.jdgm-all-reviews-widget',
+    '.jdgm-widget[data-average-rating][data-number-of-reviews]',
+    '[class*="jdgm-carousel"]'
+  ].join(',');
 
   function normalizeText(text) {
     return (text || '').replace(/\s+/g, ' ').trim();
@@ -534,13 +542,155 @@
 
   function debounceCurate() {
     window.clearTimeout(debounceCurate.timer);
-    debounceCurate.timer = window.setTimeout(curateAllWidgets, 120);
+    debounceCurate.timer = window.setTimeout(function () {
+      curateAllWidgets();
+      injectHomeJudgeMeSchema();
+    }, 120);
+  }
+
+  function currentHomeUrl() {
+    return window.location.origin + '/';
+  }
+
+  function numericAttribute(node, names) {
+    if (!node) return 0;
+    for (var index = 0; index < names.length; index += 1) {
+      var name = names[index];
+      var value = node.getAttribute(name) || (node.dataset && node.dataset[name.replace(/^data-/, '').replace(/-([a-z])/g, function (_, letter) {
+        return letter.toUpperCase();
+      })]);
+      var parsed = parseFloat(value);
+      if (Number.isFinite(parsed) && parsed > 0) return parsed;
+    }
+    return 0;
+  }
+
+  function findJudgeMeRatingNode(root) {
+    if (!root) return null;
+    if (root.matches && root.matches('[data-average-rating][data-number-of-reviews]')) return root;
+    return root.querySelector('[data-average-rating][data-number-of-reviews], [data-average-rating][data-review-count]');
+  }
+
+  function ratingFromReview(review) {
+    var ratingNode = review.querySelector('[data-score], [data-rating], [aria-label*="star"], [aria-label*="Star"]');
+    var score = numericAttribute(ratingNode, ['data-score', 'data-rating']);
+    if (score) return score;
+
+    var label = ratingNode && ratingNode.getAttribute('aria-label');
+    var match = label && label.match(/([0-5](?:\.\d+)?)\s*(?:out of|\/)\s*5/i);
+    if (match) return parseFloat(match[1]);
+
+    var onStars = review.querySelectorAll('.jdgm--on, .jdgm-star.jdgm--on, [class*="star"][class*="on"]').length;
+    return onStars > 0 && onStars <= 5 ? onStars : 0;
+  }
+
+  function extractJudgeMeReviews(root) {
+    if (!root) return [];
+    var reviewNodes = Array.prototype.slice.call(root.querySelectorAll([
+      '.jdgm-rev',
+      '.jdgm-carousel-item',
+      '.jdgm-carousel-item__review',
+      '[data-review-id]'
+    ].join(',')));
+
+    return reviewNodes.map(function (review) {
+      var bodyNode = review.querySelector([
+        BODY_SELECTOR,
+        '.jdgm-carousel-item__review-body',
+        '.jdgm-carousel-item__body',
+        '[class*="review-body"]',
+        '[class*="review_text"]'
+      ].join(','));
+      var body = normalizeText((bodyNode || review).textContent);
+      if (!body || body.length < 24) return null;
+
+      var authorNode = review.querySelector([
+        '.jdgm-rev__author',
+        '.jdgm-carousel-item__reviewer-name',
+        '.jdgm-carousel-item__author',
+        '[class*="reviewer-name"]',
+        '[class*="author"]'
+      ].join(','));
+      var rating = ratingFromReview(review);
+      var schema = {
+        '@type': 'Review',
+        itemReviewed: {
+          '@id': currentHomeUrl() + '#judgeme-aaw-in-ear-monitors'
+        },
+        author: {
+          '@type': 'Person',
+          name: normalizeText(authorNode && authorNode.textContent) || 'Judge.me reviewer'
+        },
+        reviewBody: body.slice(0, 500)
+      };
+
+      if (rating) {
+        schema.reviewRating = {
+          '@type': 'Rating',
+          ratingValue: String(Math.round(rating * 100) / 100),
+          bestRating: '5',
+          worstRating: '1'
+        };
+      }
+      return schema;
+    }).filter(Boolean).slice(0, 5);
+  }
+
+  function buildJudgeMeReviewSchema(root) {
+    var ratingNode = findJudgeMeRatingNode(root);
+    var ratingValue = numericAttribute(ratingNode, ['data-average-rating']);
+    var reviewCount = numericAttribute(ratingNode, ['data-number-of-reviews', 'data-review-count']);
+    if (!ratingValue || !reviewCount) return null;
+
+    var schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      '@id': currentHomeUrl() + '#judgeme-aaw-in-ear-monitors',
+      name: 'AAW custom and universal in-ear monitors',
+      url: currentHomeUrl(),
+      brand: {
+        '@type': 'Brand',
+        '@id': currentHomeUrl() + '#brand',
+        name: 'Advanced AcousticWerkes',
+        alternateName: 'AAW'
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: String(Math.round(ratingValue * 100) / 100),
+        bestRating: '5',
+        worstRating: '1',
+        reviewCount: String(Math.round(reviewCount))
+      }
+    };
+    var reviews = extractJudgeMeReviews(root);
+    if (reviews.length) schema.review = reviews;
+    return schema;
+  }
+
+  function injectHomeJudgeMeSchema() {
+    if (window.location.pathname !== '/' && window.location.pathname !== '') return;
+    var root = document.querySelector(HOME_JUDGEME_SELECTOR);
+    var schema = buildJudgeMeReviewSchema(root);
+    if (!schema) return;
+
+    var script = document.getElementById(HOME_SCHEMA_ID);
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = HOME_SCHEMA_ID;
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(schema);
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', curateAllWidgets);
+    document.addEventListener('DOMContentLoaded', function () {
+      curateAllWidgets();
+      injectHomeJudgeMeSchema();
+    });
   } else {
     curateAllWidgets();
+    injectHomeJudgeMeSchema();
   }
 
   document.addEventListener('click', function (event) {
@@ -572,7 +722,10 @@
     }
   }, true);
 
-  window.addEventListener('load', curateAllWidgets);
+  window.addEventListener('load', function () {
+    curateAllWidgets();
+    injectHomeJudgeMeSchema();
+  });
 
   if ('MutationObserver' in window) {
     new MutationObserver(debounceCurate).observe(document.documentElement, {

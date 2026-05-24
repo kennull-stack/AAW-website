@@ -101,6 +101,11 @@
 .aaw-home-founder-quote{max-width:760px;margin:28px 0 0;padding-left:18px;border-left:2px solid rgba(226,183,104,.72);color:#f4e8d0}
 .aaw-home-founder-quote p{margin:0;font-size:17px;font-style:italic;line-height:1.58}
 .aaw-home-founder-quote cite{display:block;margin-top:10px;color:#e2b768;font-size:13px;font-style:normal;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.aaw-home-founder-bio{max-width:820px;margin:24px 0 0;padding:20px 22px;border:1px solid rgba(226,183,104,.28);background:rgba(255,255,255,.045);color:#d8d1c7}
+.aaw-home-founder-bio p{margin:0;font-size:15px;line-height:1.68}
+.aaw-home-founder-bio strong{color:#fff}
+.aaw-home-founder-bio a{display:inline-flex;margin-top:12px;color:#e2b768;font-size:12px;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}
+.aaw-home-founder-bio a:hover{color:#fff}
 .aaw-home-brand-meta{margin:26px 0 0;color:#b8b0a2;font-size:15px;font-weight:800;line-height:1.5}
 .aaw-home-brand-meta a{color:#e2b768;text-decoration:none}
 .aaw-home-brand-meta a:hover{color:#fff}

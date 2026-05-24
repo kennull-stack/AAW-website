@@ -1,6 +1,6 @@
 {%- liquid
   assign z_series = collections['z-series']
-  assign home_title = 'Advanced AcousticWerkes | Singapore Custom & Universal IEM Specialist'
+  assign home_title = 'Advanced AcousticWerkes | Singapore IEM Specialist'
   assign home_description = 'AAW designs and builds custom and universal in-ear monitors in Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
   assign site_url = 'https://www.aaw.me'
   assign page_id = canonical_url | append: '#webpage'
@@ -9,8 +9,12 @@
   assign faq_id = canonical_url | append: '#faq'
   assign store_id = canonical_url | append: '#aaw-singapore-store'
   assign org_id = site_url | append: '/#organization'
+  assign brand_id = site_url | append: '/#brand'
   assign website_id = site_url | append: '/#website'
   assign kevin_wang_id = site_url | append: '/#kevin-wang'
+  assign headfonics_nebula_id = site_url | append: '/#press-headfonics-nebula-one'
+  assign headfonics_w900_id = site_url | append: '/#press-headfonics-w900'
+  assign headfonics_canary_id = site_url | append: '/#press-headfonics-canary'
 -%}
 <script type="application/ld+json">
 {
@@ -37,7 +41,8 @@
         { "@id": {{ z_series_id | json }} },
         { "@id": {{ store_id | json }} },
         { "@id": {{ faq_id | json }} },
-        { "@id": {{ kevin_wang_id | json }} }
+        { "@id": {{ kevin_wang_id | json }} },
+        { "@id": {{ brand_id | json }} }
       ]
     },
     {
@@ -46,10 +51,22 @@
       "name": "Advanced AcousticWerkes",
       "alternateName": "AAW",
       "url": {{ site_url | json }},
+      "sameAs": [
+        "https://www.facebook.com/acousticwerkes",
+        "https://www.instagram.com/aaw_sg/"
+      ],
       "foundingDate": "2014",
       "founder": {
         "@id": {{ kevin_wang_id | json }}
       },
+      "brand": {
+        "@id": {{ brand_id | json }}
+      },
+      "subjectOf": [
+        { "@id": {{ headfonics_nebula_id | json }} },
+        { "@id": {{ headfonics_w900_id | json }} },
+        { "@id": {{ headfonics_canary_id | json }} }
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "#01-03, 76 Playfair Rd",
@@ -63,13 +80,17 @@
         "email": "sales@acousticwerkes.com",
         "contactType": "customer support",
         "areaServed": "SG"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.74",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "335"
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": {{ brand_id | json }},
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      "url": {{ site_url | json }},
+      "slogan": "Those who listen will find the way.",
+      "founder": {
+        "@id": {{ kevin_wang_id | json }}
       }
     },
     {
@@ -77,6 +98,11 @@
       "@id": {{ kevin_wang_id | json }},
       "name": "Kevin Wang",
       "jobTitle": "Founder & Tuning Engineer",
+      "description": "Founder and tuning engineer of Advanced AcousticWerkes, involved in the acoustic design and tuning of AAW custom and universal in-ear monitors since the brand's 2014 launch in Singapore.",
+      "url": {{ site_url | append: '/pages/about-us' | json }},
+      "sameAs": [
+        "https://sg.linkedin.com/in/kevin-wang-15376265"
+      ],
       "worksFor": {
         "@id": {{ org_id | json }}
       },
@@ -88,6 +114,45 @@
         "dynamic driver integration",
         "IEM acoustic design"
       ]
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_nebula_id | json }},
+      "headline": "AAW Nebula One review",
+      "url": "https://headfonics.com/aaw-nebula-one-review/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_w900_id | json }},
+      "headline": "The W900 by Advanced AcousticWerkes",
+      "url": "https://headfonics.com/the-w900-by-advanced-acousticwerkes/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_canary_id | json }},
+      "headline": "AAW Canary review",
+      "url": "https://headfonics.com/aaw-canary-review/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
     },
     {
       "@type": "Product",
@@ -315,7 +380,7 @@
           "name": "What does AAW specialize in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In-ear monitors. Custom and universal, designed and built in Singapore. We also handle refits, cables, and long-term service."
+            "text": "Advanced AcousticWerkes specializes in in-ear monitors designed and built in Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work."
           }
         },
         {
@@ -323,7 +388,7 @@
           "name": "What is the difference between universal and custom IEMs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Universal monitors come with ear tips and fit most ears. Custom monitors are built from impressions of your ears - better seal, more freedom in the design, and not really wearable by anyone else."
+            "text": "Universal IEMs use ear tips and can fit many listeners, which makes them easier to demo, share, and travel with. Custom IEMs are made from your ear impressions or approved digital scans, so they seal around your ears only and allow more freedom in shell shape, artwork, and fit tuning."
           }
         },
         {
@@ -331,7 +396,7 @@
           "name": "Do I need ear impressions for a CIEM?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, for any custom monitor. Either physical impressions taken by an audiologist or an approved digital ear scan. Good impressions are most of the battle - a bad seal can't be fixed by tuning."
+            "text": "Yes. AAW needs physical impressions from an audiologist or an approved digital ear scan before building a custom in-ear monitor. Accurate impressions are critical because the acoustic seal affects bass, isolation, comfort, and whether the finished monitor can be worn for long sessions."
           }
         },
         {
@@ -339,7 +404,7 @@
           "name": "Can AAW help with refits or repairs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The Singapore office handles refit, warranty, repair, and cable service directly. If you bought through a dealer, they're often the fastest first stop."
+            "text": "Yes. The Singapore office handles refit, warranty, repair, cable, socket, and shell service for AAW monitors. If you bought through an authorized dealer, that dealer is often the fastest first stop, but the work is still supported through AAW's service process."
           }
         },
         {
@@ -347,7 +412,7 @@
           "name": "Where can I audition or order AAW?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In Singapore: our office at 76 Playfair Rd, or Zeppelin & Co., JABEN, and AV One. Outside Singapore, the store locator lists authorised dealers."
+            "text": "In Singapore, listeners can start at the AAW office at 76 Playfair Rd, #01-03, or audition through Zeppelin & Co., JABEN, and AV One. Outside Singapore, AAW works with authorized specialist audio dealers; use the store locator or contact sales@acousticwerkes.com for the closest listening point."
           }
         }
       ]
