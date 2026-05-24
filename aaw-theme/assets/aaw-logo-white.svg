@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" role="img" aria-labelledby="aaw-logo-title">
+  <title id="aaw-logo-title">AAW Advanced AcousticWerkes</title>
+  <g fill="#fff">
+    <path d="M22 113 98 25h52l76 88h-52l-13-17H87l-13 17H22Zm102-59L99 84h50l-25-30Z"/>
+    <path d="M164 113 240 25h52l76 88h-52l-13-17h-74l-13 17h-52Zm102-59-25 30h50l-25-30Z"/>
+    <path d="M310 25h48l31 59 35-59h39l35 59 31-59h48l-58 88h-43l-33-54-33 54h-43L310 25Z"/>
+  </g>
+  <text x="280" y="150" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing=".045em" text-anchor="middle">Advanced AcousticWerkes</text>
+</svg>

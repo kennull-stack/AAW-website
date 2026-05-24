@@ -148,13 +148,15 @@
 .z07-hero .z07-logo-title img{display:block;width:min(292px,78vw);height:auto}
 .z07-spec-lockup-logo{display:flex;align-items:center;justify-content:center;gap:22px}
 .z07-spec-lockup-logo .z07-spec-aaw{display:inline-block;color:#fff;font-size:clamp(42px,5vw,70px);font-weight:900;letter-spacing:.02em;line-height:1}
+.z07-spec-lockup-logo .z07-spec-aaw-logo{display:block;width:min(178px,32vw);max-height:58px;height:auto;object-fit:contain}
 .z07-spec-lockup-logo .z07-spec-divider{display:inline-block;width:2px;height:.82em;background:#fff;opacity:.92}
-.z07-spec-lockup-logo img{display:block;width:min(168px,34vw);height:auto}
+.z07-spec-lockup-logo .z07-spec-z07-logo{display:block;width:min(168px,34vw);height:auto}
 @media(max-width:700px){
   .z07-hero .z07-logo-title img{width:min(230px,72vw)}
   .z07-spec-lockup-logo{gap:14px}
   .z07-spec-lockup-logo .z07-spec-aaw{font-size:38px}
-  .z07-spec-lockup-logo img{width:118px}
+  .z07-spec-lockup-logo .z07-spec-aaw-logo{width:126px;max-height:44px}
+  .z07-spec-lockup-logo .z07-spec-z07-logo{width:118px}
 }
 .z07-pill-list{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0;padding:0;list-style:none}
 .z07-pill-list li{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.055);padding:9px 12px;color:#f4e8d0;font-size:12px;font-weight:800;text-transform:uppercase}
@@ -198,6 +200,7 @@
 .z07-fit-points h3{margin:8px 0 10px;color:#fff;font-size:24px;line-height:1.05;text-transform:uppercase}
 .z07-fit-points p{margin:0;color:#d8d1c7!important;font-size:14px!important;line-height:1.5!important}
 .z07-spec-lockup-text{color:#fff;font-size:clamp(42px,5vw,70px);font-weight:900;letter-spacing:.02em;line-height:1}
+.z07-spec-lockup-text.z07-spec-lockup-logo{font-size:0;letter-spacing:0}
 .z07-spec-table{display:grid;gap:1px;margin-top:28px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
 .z07-spec-table div{display:grid;grid-template-columns:160px 1fr;gap:18px;background:#111;padding:16px}
 .z07-spec-table span{color:#e2b768;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
