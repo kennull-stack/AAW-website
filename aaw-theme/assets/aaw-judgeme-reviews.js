@@ -596,7 +596,7 @@
 
     if (!reviewCount) {
       var countNode = root && root.querySelector('.jdgm-reviews-count, .jdgm-carousel-number-of-reviews, .jdgm-rating-text');
-      reviewCount = numericText(countNode, /\((\d+)\)/) || numericText(countNode, /(\d+)\s+reviews?/i);
+      reviewCount = numericText(countNode, /\((\d+)\)/) || numericText(countNode, /(\d+)\s+reviews?/i) || numericText(countNode, /^(\d+)$/);
     }
 
     if (!ratingValue || !reviewCount) return null;
