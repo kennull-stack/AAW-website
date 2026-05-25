@@ -194,19 +194,19 @@
   .aaw-home-brand-copy{padding-left:0;border-left:0;border-top:1px solid rgba(226,183,104,.32);padding-top:24px}
 }
 @media(max-width:767px){
-  .aaw-home-z07-hero{min-height:calc(100svh - 96px);align-items:flex-end;margin:0}
-  .aaw-home-z07-hero:after{background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.66) 34%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.08))}
-  .aaw-home-z07-grid{min-height:calc(100svh - 96px);padding:30px 0 28px}
+  .aaw-home-z07-hero{min-height:calc(100svh + 210px);align-items:flex-end;margin:0}
+  .aaw-home-z07-hero:after{background:linear-gradient(0deg,rgba(0,0,0,.95),rgba(0,0,0,.78) 25%,rgba(0,0,0,.3) 58%,rgba(0,0,0,.06) 78%)}
+  .aaw-home-z07-grid{min-height:calc(100svh + 210px);padding:58vh 0 28px}
   .aaw-home-z07-copy{transform:none}
   .aaw-home-brand-identity{display:none}
   .aaw-home-z07-copy>.aaw-home-kicker{transform:none;color:#fff;margin-bottom:12px}
   .aaw-home-z07-product-title{margin:0}
-  .aaw-home-z07-logo-title{width:min(250px,70vw)}
+  .aaw-home-z07-logo-title{width:min(230px,64vw)}
   .aaw-home-z07-logo-title img{transform:none}
   .aaw-home-z07-subtitle{font-size:22px;transform:none}
   .aaw-home-z07-lead,.aaw-home-z07-copy>.aaw-home-actions{transform:none}
   .aaw-home-z07-media{background:#101313}
-  .aaw-home-z07-media img{object-fit:cover;object-position:center center}
+  .aaw-home-z07-media img{object-fit:cover;object-position:center top}
 }
 @media(max-width:640px){
   .aaw-home-wrap{width:calc(100vw - 24px)}
