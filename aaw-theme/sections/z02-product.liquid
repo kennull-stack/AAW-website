@@ -1,0 +1,508 @@
+{{ 'black-malus-product.css' | asset_url | stylesheet_tag }}
+{{ 'z02-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign product_price = current_variant.price | money %}
+{% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+{% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": "AAW Z02 Planar Magnetic Universal In-Ear Monitor",
+  "image": [
+    {{ 'z02-hero-wide.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'z02-driver-diagram.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'Z02-FR_5fb85fc0-6b97-46e2-a9d5-0031f8aa6a25.jpg' | file_url | json }}
+  ],
+  "description": "Z02 is a dynamic-planar hybrid in-ear monitor from Advanced AcousticWerkes. It combines a miniature planar magnetic tweeter, 10mm graphene dynamic driver, 2-way crossover, and 3D-printed acoustic chamber for a lively, coherent, and fatigue-free sound signature.",
+  "sku": {{ current_variant.sku | default: "Z02" | json }},
+  "mpn": "AAW Z02",
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "category": "Universal In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "url": "https://www.aaw.me/pages/shipping-return",
+      "applicableCountry": "SG",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "2-driver dynamic-planar hybrid"},
+    {"@type": "PropertyValue", "name": "Planar Tweeter", "value": "Miniature planar magnetic tweeter embedded in a 3D-printed shell"},
+    {"@type": "PropertyValue", "name": "Dynamic Driver", "value": "10mm graphene dynamic driver with physical low-pass filtering"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "Physical 2-way crossover"},
+    {"@type": "PropertyValue", "name": "Internal Wire", "value": "OCC copper internal wire"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "105dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "18 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<=1%"},
+    {"@type": "PropertyValue", "name": "Enclosure", "value": "AAW third-generation 3D-printed digital enclosure and acoustic chamber"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Z02 driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Z02 uses a 2-driver dynamic-planar hybrid configuration: a 10mm graphene dynamic driver for low frequencies and a miniature planar magnetic tweeter for vocal, treble, and upper-frequency detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the miniature planar magnetic tweeter do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The planar magnetic tweeter is embedded in the 3D-printed shell to reduce sound pressure decay and unwanted resonance typical of tubed balanced armature layouts. It is designed for extended high-frequency response, low distortion, fast transient response, and consistent soundstage reproduction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the graphene dynamic driver add?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 10mm graphene dynamic driver uses an ultra-thin rigid diaphragm and physical low-pass filtering so it can handle bass and lower-frequency energy with minimal overlap against the planar tweeter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the Z02 enclosure made?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Z02 uses AAW's third-generation digital enclosure and acoustic chamber process. Driver and nozzle placements are simulated through many iterations, then 3D printed for precision and production consistency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "48 inch Brevity OCC copper detachable cable, AAW carrying case, assorted ear tips, and a 1-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "Z02"}
+  ]
+}
+</script>
+
+<div class="bm-product z02-product">
+  <nav class="bm-topbar bm-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Z02</span>
+  </nav>
+
+  <aside class="bm-floating-buy" aria-label="Z02 price and purchase">
+    <span class="bm-floating-buy__label">Z02</span>
+    <strong>{{ product_price }}</strong>
+    {% if current_variant.available %}
+      <a href="/cart/add?id={{ current_variant.id }}&quantity=1">Buy</a>
+    {% else %}
+      <span>Sold out</span>
+    {% endif %}
+  </aside>
+
+  <section class="bm-hero bm-wrap" aria-labelledby="z02-title">
+    <div class="bm-hero__copy">
+      <p class="bm-kicker">Planar magnetic hybrid in-ear monitor</p>
+      <h1 id="z02-title" class="z02-hero-title">
+        <span class="visually-hidden">Z02</span>
+        <img src="{{ 'z02-wordmark.png' | asset_url }}" alt="" width="290" height="158" loading="eager">
+      </h1>
+      <p class="bm-hero__lead">A compact dynamic-planar hybrid tuned for a modern and lively sound signature. The miniature planar magnetic tweeter delivers crystal-clear vocal and treble detail, while the 10mm graphene dynamic driver supplies natural, robust sub-bass. Physical crossover, 3D-printed acoustic chamber, and daily-ready universal fit.</p>
+      <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
+      <div class="bm-judge-stars" aria-label="Z02 customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="bm-rating-fallback" aria-label="Customer review archive">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>Review archive</span>
+          </span>
+        {% endif %}
+      </div>
+      <ul class="bm-pill-list" aria-label="Z02 highlights">
+        <li>Dynamic-planar hybrid</li>
+        <li>10mm graphene driver</li>
+        <li>Miniature planar tweeter</li>
+        <li>Physical crossover</li>
+      </ul>
+      <form class="bm-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy Z02{% else %}Sold Out{% endif %}</button>
+        <a class="bm-btn bm-btn--ghost" href="#z02-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="bm-hero__media">
+      <img src="{{ 'z02-hero-wide.jpg' | asset_url }}" alt="AAW Z02 planar magnetic universal in-ear monitors with detachable copper cable" width="2200" height="1238" loading="eager">
+    </figure>
+  </section>
+
+  <section class="bm-stat-band" aria-label="Z02 specification highlights">
+    <div class="bm-wrap bm-stats">
+      <article><b>2</b><span>Dynamic-planar hybrid drivers.</span></article>
+      <article><b>Physical</b><span>Crossover for driver integration.</span></article>
+      <article><b>10Hz-40kHz</b><span>Extended frequency response.</span></article>
+      <article><b>18 Ohm</b><span>Easy to drive from portable sources.</span></article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-story">
+    <div class="bm-wrap bm-story__grid">
+      <div>
+        <p class="bm-kicker">Design Story</p>
+        <h2>A dynamic-planar hybrid with AAW digital acoustic design.</h2>
+      </div>
+      <div class="bm-prose">
+        <p>The Z02 showcases an innovative dynamic-planar hybrid multi-driver system, meticulously tuned for a modern and lively sound signature. It delivers a natural and robust sub-bass response, unmatched by traditional all-balanced armature setups, while its miniature planar magnetic tweeter keeps vocal and treble detail clean, extended, and smooth.</p>
+        <p>The planar magnetic tweeter is embedded deep into the Z02's 3D-printed shell. Its dedicated cavity design eliminates sound pressure decay and unwanted resonance common to traditional tubed balanced armature designs. The thin diaphragm responds quickly to signal changes, giving Z02 accurate dynamics, low distortion, and a consistent soundstage.</p>
+        <p>With a wholly digitized design process, Z02 employs AAW third-generation digital enclosure and acoustic chamber design. Driver and nozzle placements are simulated through hundreds of iterations to determine ideal phasing and response, then 3D printed to precision for production consistency.</p>
+        <p>Suitable for rising artists, band performances, streaming platforms, worship events, audio engineering, and anybody who appreciates a critical listening experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Fitment Options</p>
+      <h2>Designed for a stable universal seal.</h2>
+      <p>Z02 ships with assorted ear tips so listeners can tune seal, comfort, bass weight, and treble energy by fit. The compact shell is shaped through AAW's digital enclosure process for ergonomic daily use.</p>
+    </div>
+    <div class="bm-wrap z02-original-grid">
+      <figure>
+        <img src="{{ 'z02-lifestyle-wide.jpg' | asset_url }}" alt="AAW Z02 universal in-ear monitors with detachable copper cable" width="2200" height="1467" loading="lazy">
+        <figcaption><b>Universal fit</b><span>Compact shell, detachable cable, and tip rolling flexibility for daily listening.</span></figcaption>
+      </figure>
+      <figure>
+        <img src="{{ 'z02-detail-square.jpg' | asset_url }}" alt="AAW Z02 faceplates and detachable cable close up" width="1600" height="1600" loading="lazy">
+        <figcaption><b>Fit tuning</b><span>Assorted tips let the user tune seal pressure, isolation, and tonal balance.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark" id="z02-architecture">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Acoustic Architecture</p>
+      <h2>Planar speed. Graphene low end. One coherent physical crossover.</h2>
+      <p>The miniature planar magnetic tweeter handles upper detail with low distortion, wide dispersion, and fast transient response. The 10mm graphene dynamic driver uses a rigid ultra-thin diaphragm and physical low-pass filtering to keep bass focused with minimal overlap. Driver placement and acoustic chambers are digitally simulated, then 3D printed for consistency.</p>
+    </div>
+    <div class="bm-wrap z02-explosion-panel">
+      <figure>
+        <img src="{{ 'z02-driver-diagram.jpg' | asset_url }}" alt="AAW Z02 driver diagram with miniature planar tweeter assembly and shell components" width="1800" height="1064" loading="lazy">
+        <figcaption><b>Miniature planar magnetic tweeter assembly</b><span>Lower valve cover, magnet arrays, thin film circuit pattern, top valve cover, 2-pin socket, faceplate, and finished shell geometry.</span></figcaption>
+      </figure>
+    </div>
+    <div class="bm-wrap z02-architecture-map">
+      <div class="z02-architecture-map__head">
+        <img class="z02-card-logo" src="{{ 'z02-logo-lockup.png' | asset_url }}" alt="AAW Z02" width="900" height="193" loading="lazy">
+        <span>Z02 Driver Configuration</span>
+      </div>
+      <div class="z02-architecture-map__crossover">
+        <span>2-Way Hybrid Crossover</span>
+        <small>Physical low-pass filtering - Phase-aware placement - 3D-printed chamber</small>
+      </div>
+      <div class="z02-architecture-map__grid">
+        <article>
+          <div class="z02-driver-icon z02-driver-icon--dynamic"><span>DD</span></div>
+          <span>Band 1</span>
+          <h3>Graphene Dynamic</h3>
+          <p>10mm graphene diaphragm driver supplies natural sub-bass and low-frequency body.</p>
+          <b>1 x dynamic driver</b>
+        </article>
+        <article>
+          <div class="z02-driver-icon z02-driver-icon--planar"><span>PM</span></div>
+          <span>Band 2</span>
+          <h3>Planar Tweeter</h3>
+          <p>Miniature planar magnetic tweeter brings fast, clean vocal and treble detail.</p>
+          <b>1 x planar tweeter</b>
+        </article>
+      </div>
+      <div class="z02-architecture-map__foot">
+        <span>2 Drivers - 2 Bands - 1 Lively Hybrid Signature</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Sound Signature &amp; Frequency Response</p>
+      <h2>Modern, lively, and measured.</h2>
+      <p>Z02 is tuned with a natural and robust sub-bass foundation, clear vocal presence, carefully managed treble extension, and a smooth fatigue-free presentation. The frequency response reflects the dynamic-planar crossover balance and AAW's 3D-printed chamber tuning.</p>
+    </div>
+    <div class="bm-wrap z02-switch-grid" aria-label="Z02 sound characteristics">
+      <article><span>Low</span><h3>Robust sub-bass</h3><p>The graphene dynamic driver gives Z02 a physical bass foundation that all-BA designs cannot reproduce in the same way.</p></article>
+      <article><span>Mid</span><h3>Clean vocal focus</h3><p>The planar tweeter keeps vocals articulate and immediate without pushing the presentation into harshness.</p></article>
+      <article><span>High</span><h3>Extended detail</h3><p>Fast planar transient response preserves treble texture, cymbal air, and micro-detail.</p></article>
+      <article><span>Stage</span><h3>Stable imaging</h3><p>Digitized driver placement and chamber design help maintain coherent timing and a consistent soundstage.</p></article>
+    </div>
+    <div class="bm-wrap z02-benefit-grid" aria-label="Miniature planar magnetic tweeter benefits">
+      <article><span>01</span><h3>Low distortion</h3><p>The evenly driven diaphragm reduces non-linear behavior and harshness in the upper range.</p></article>
+      <article><span>02</span><h3>Compact size</h3><p>Miniaturized planar technology fits inside an IEM shell without giving up treble performance.</p></article>
+      <article><span>03</span><h3>Fast dynamics</h3><p>The thin diaphragm responds quickly to transient sounds and dynamic changes.</p></article>
+      <article><span>04</span><h3>Wide dispersion</h3><p>Uniform sound dispersion supports a more consistent soundstage across listening angles.</p></article>
+    </div>
+    <div class="bm-wrap z02-fr-figure">
+      <figure>
+        <img src="{{ 'Z02-FR_5fb85fc0-6b97-46e2-a9d5-0031f8aa6a25.jpg' | file_url }}" alt="AAW Z02 frequency response measurement graph" width="2000" height="1200" loading="lazy">
+        <figcaption>Z02 frequency response measurement. Dynamic-planar hybrid tuning balances natural low-end weight with smooth vocal and treble extension.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-accessories">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Cabling and Accessories</p>
+      <h2>The everyday kit.</h2>
+    </div>
+    <div class="bm-wrap bm-accessory-grid">
+      <article>
+        <img src="{{ 'z02-accessory-kit.jpg' | asset_url }}" alt="AAW Z02 package with detachable cable, ear tips, and carrying case" width="1800" height="1200" loading="lazy">
+        <div><span>01</span><h3>Brevity Pro Plus cable</h3><p>48 inch Null Audio Brevity Pro Plus OCC detachable cable for daily portable use.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z02-carry-cases.jpg' | asset_url }}" alt="AAW Z02 carrying case beside premium AAW case" width="2000" height="1333" loading="lazy">
+        <div><span>02</span><h3>AAW carrying case</h3><p>Semi-rigid zipper case protects your monitors, cable, and tips on the go.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z02-carry-open.jpg' | asset_url }}" alt="AAW carrying case open with in-ear monitors and cable inside" width="1800" height="1200" loading="lazy">
+        <div><span>03</span><h3>Portable protection</h3><p>The zip case keeps Z02, cable, and tip kit organized in a compact travel footprint.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        <div><span>04</span><h3>Assorted ear tips</h3><p>Multiple tip options for fit checks, bass control, treble balance, and long-session comfort.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-specs">
+    <div class="bm-wrap bm-specs__grid">
+      <div>
+        <p class="bm-kicker">Specifications</p>
+        <h2>Two-driver dynamic-planar numbers.</h2>
+        <p>Miniature planar magnetic tweeter. 10mm graphene dynamic driver. Physical crossover. OCC copper internal wire. 10Hz to 40kHz. 18 Ohm.</p>
+      </div>
+      <dl class="bm-spec-table">
+        <div><dt>Driver Count</dt><dd>2</dd></div>
+        <div><dt>Crossover</dt><dd>Physical</dd></div>
+        <div><dt>Sensitivity</dt><dd>105dB</dd></div>
+        <div><dt>Impedance</dt><dd>18Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;1%</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-faq">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">FAQ</p>
+      <h2>Before you choose Z02</h2>
+    </div>
+    <div class="bm-wrap z02-faq-wrap">
+      <div class="bm-faq__list">
+        <details>
+          <summary><span>What is the Z02 driver configuration?</span></summary>
+          <p>Z02 uses a 2-driver dynamic-planar hybrid configuration: a 10mm graphene dynamic driver for low frequencies and a miniature planar magnetic tweeter for vocal, treble, and upper-frequency detail.</p>
+        </details>
+        <details>
+          <summary><span>What does the miniature planar magnetic tweeter do?</span></summary>
+          <p>The planar magnetic tweeter is embedded in the 3D-printed shell to reduce sound pressure decay and unwanted resonance typical of tubed balanced armature layouts. It is designed for extended high-frequency response, low distortion, fast transient response, and consistent soundstage reproduction.</p>
+        </details>
+        <details>
+          <summary><span>What does the graphene dynamic driver add?</span></summary>
+          <p>The 10mm graphene dynamic driver uses an ultra-thin rigid diaphragm and physical low-pass filtering so it can handle bass and lower-frequency energy with minimal overlap against the planar tweeter.</p>
+        </details>
+        <details>
+          <summary><span>How is the Z02 enclosure made?</span></summary>
+          <p>Z02 uses AAW's third-generation digital enclosure and acoustic chamber process. Driver and nozzle placements are simulated through many iterations, then 3D printed for precision and production consistency.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>48 inch Brevity OCC copper detachable cable, AAW carrying case, assorted ear tips, and a 1-year limited warranty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="z02-reviews" class="bm-section bm-section--dark z05-reviews-section">
+    <div class="bm-wrap">
+      <div class="z05-reviews-head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>Z02 listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.0">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-brand">
+    <div class="bm-wrap bm-brand__inner">
+      <div class="bm-brand__lead">
+        <p class="bm-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="bm-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="bm-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) is a Singapore-based IEM manufacturer founded in 2014 by Kevin Wang. AAW designs and builds custom and universal in-ear monitors across dynamic, balanced armature, electrostatic, planar, and hybrid platforms.</p>
+        <p>Z02 brings that approach into a compact dynamic-planar hybrid platform: miniature planar tweeter, 10mm graphene dynamic driver, physical crossover, OCC copper internal wire, and AAW's third-generation 3D-printed acoustic chamber design.</p>
+        <a class="bm-btn bm-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-where">
+    <div class="bm-wrap bm-where-head">
+      <div>
+        <p class="bm-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="bm-wrap bm-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin &amp; Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="bm-wrap bm-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="bm-btn bm-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="bm-final">
+    <div class="bm-wrap">
+      <p class="bm-kicker">Z02</p>
+      <h2>Planar speed. Graphene low end. Hybrid clarity.</h2>
+      <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy Z02{% else %}Sold Out{% endif %}</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Z02 product",
+  "tag": "section",
+  "class": "z02-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Z02 product"
+    }
+  ]
+}
+{% endschema %}
