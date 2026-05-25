@@ -1,0 +1,480 @@
+{{ 'canary-pro-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": "AAW Canary Pro 14 Driver Isobaric Electrostatic In-Ear Monitor",
+  "image": [
+    {{ 'canary-pro-cable-player-instagram.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'canary-pro-faceplate-angle.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'canary-pro-exploded-serial.png' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "Canary Pro is a 14-driver tri-hybrid in-ear monitor with quad electrostatic super tweeters, dual isobaric dynamic woofers, Super-Low Flat Impedance design, and a 5-way passive crossover.",
+  "sku": {{ product.selected_or_first_available_variant.sku | default: "CANARY-PRO" | json }},
+  "mpn": "Canary Pro",
+  "brand": {
+    "@id": "https://www.aaw.me/#organization"
+  },
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ product.selected_or_first_available_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if product.selected_or_first_available_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@id": "https://www.aaw.me/#organization"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver configuration", "value": "14-driver tri-hybrid"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "5-way passive crossover"},
+    {"@type": "PropertyValue", "name": "Driver layout", "value": "2 woofers, 2 low-range, 2 mid-range, 4 mid-high, 4 electrostatic super tweeters"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "106dB SPL at 1kHz"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "7 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Cable", "value": "48 inch Null Audio Lune cable, 4.4mm balanced"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes Canary Pro different from the original Canary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canary Pro keeps the hybrid Canary idea but rebuilds it around a 14-driver matrix, quad electrostatic super tweeters, dual isobaric dynamic woofers, and a Super-Low Flat Impedance network for more consistent source pairing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The configuration is 2 woofers, 2 low-range drivers, 2 mid-range drivers, 4 mid-high drivers, and 4 electrostatic super tweeters, managed by a 5-way passive crossover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does SLFI do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Super-Low Flat Impedance keeps the monitor close to 7 Ohm across the frequency range, reducing tonal shifts caused by different source output impedances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canary Pro includes a 48 inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="cp-product">
+  <nav class="cp-topbar cp-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal IEM</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Canary Pro</span>
+  </nav>
+
+  <aside class="cp-floating-buy" aria-label="Canary Pro price and purchase">
+    <span class="cp-floating-buy__label">Canary Pro</span>
+    <strong>{{ product.selected_or_first_available_variant.price | money }}</strong>
+    <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1">Buy</a>
+  </aside>
+
+  <section class="cp-hero cp-wrap" aria-labelledby="cp-title">
+    <div class="cp-hero__copy">
+      <p class="cp-kicker">14 Driver Isobaric Electrostatic In-Ear Monitor</p>
+      <h1 id="cp-title">Canary Pro</h1>
+      <p class="cp-hero__lead">The familiar Canary shimmer, rebuilt with a denser engine: quad electrostatic super tweeters, dual isobaric woofers, a five-way crossover, and a low, flat impedance curve that keeps the tuning steady from source to source.</p>
+      <p class="cp-price"><span>Price</span><strong>{{ product.selected_or_first_available_variant.price | money }}</strong></p>
+      {% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+      <div class="cp-judge-stars" aria-label="Canary Pro customer rating">
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="cp-rating-fallback" aria-label="No customer reviews yet">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>No reviews yet</span>
+          </span>
+        {% else %}
+          <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+            {{ jm_badge }}
+          </div>
+        {% endif %}
+      </div>
+      <ul class="cp-pill-list" aria-label="Canary Pro highlights">
+        <li>14 drivers</li>
+        <li>Quad EST</li>
+        <li>Dual isobaric woofer</li>
+        <li>SLFI network</li>
+      </ul>
+      <form class="cp-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="cp-btn" type="submit">Buy Canary Pro</button>
+        <a class="cp-btn cp-btn--ghost" href="#cp-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="cp-hero__media">
+      <img src="{{ 'canary-pro-cable-player-instagram.jpg' | asset_url }}" alt="Canary Pro connected to a cable and player with blue faceplates on a wooden surface" width="1440" height="1440" loading="eager">
+    </figure>
+  </section>
+
+  <section class="cp-stat-band" aria-label="Canary Pro specification highlights">
+    <div class="cp-wrap cp-stats">
+      <article><b>14</b><span>Tri-hybrid driver architecture</span></article>
+      <article><b>4 EST</b><span>Electrostatic super tweeters</span></article>
+      <article><b>5-way</b><span>Passive crossover network</span></article>
+      <article><b>7 Ohm</b><span>Super-Low Flat Impedance</span></article>
+    </div>
+  </section>
+
+  <section class="cp-section cp-story">
+    <div class="cp-wrap cp-story__grid">
+      <div>
+        <p class="cp-kicker">Design Story</p>
+        <h2>Blue fire, black shell, fast air.</h2>
+      </div>
+      <div class="cp-prose">
+        <p>Canary Pro takes the original Canary idea and turns up the internal discipline. The faceplate still has the electric, scattered color that made Canary recognizable, but the acoustic design underneath is more exacting.</p>
+        <p>A dual-diaphragm isobaric woofer system gives the low end more displacement without asking the shell to grow. Four electrostatic super tweeters handle the uppermost air and spatial cues. Balanced armatures fill the range between them, with a five-way crossover keeping each group inside its lane.</p>
+        <p>The result is a flagship that feels vivid, quick, and spacious without losing the density that makes instruments feel physical.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-section--dark cp-explosion" aria-labelledby="cp-explosion-title">
+    <div class="cp-wrap cp-explosion__frame">
+      <figure class="cp-explosion__media">
+        <img src="{{ 'canary-pro-exploded-serial.png' | asset_url }}" alt="Exploded Canary Pro construction render showing driver modules, printed chamber, shell, faceplate, socket, and nozzle" width="2000" height="1453" loading="lazy">
+      </figure>
+      <div class="cp-explosion__copy">
+        <p class="cp-kicker">Exploded View</p>
+        <h2 id="cp-explosion-title">A compact hybrid engine</h2>
+        <p>The exploded build shows the logic inside the shell: socket, acoustic chamber, balanced armature arrays, electrostatic modules, isobaric dynamic woofer system, shell, nozzle, and faceplate, all compressed into a wearable enclosure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cp-architecture" class="cp-section cp-section--dark cp-architecture">
+    <div class="cp-wrap cp-section-head">
+      <p class="cp-kicker">Transducer Architecture</p>
+      <h2>Fourteen drivers, five bands, one flat load.</h2>
+      <p>Canary Pro is not only a driver-count story. The five-way passive crossover splits the signal by job, while SLFI reshapes the electrical behavior so the monitor does not swing wildly with different players, adapters, and amplifiers.</p>
+    </div>
+    <div class="cp-wrap cp-architecture__grid">
+      <article class="cp-driver-visual" aria-label="Canary Pro generated driver configuration">
+        <figure class="cp-driver-visual__media">
+          <img src="{{ 'canary-pro-driver-render-clean.jpg' | asset_url }}" alt="Canary Pro 3D rendered driver configuration without baked-in text labels" width="3840" height="2160" loading="lazy">
+        </figure>
+        <div class="cp-driver-visual__overlay" aria-hidden="true">
+          <span class="cp-driver-label cp-driver-label--left cp-driver-label--est">Electrostatic Super<br>Tweeter X 4</span>
+          <span class="cp-driver-label cp-driver-label--left cp-driver-label--mid">Mid Range Balanced<br>Armature X 4</span>
+          <span class="cp-driver-label cp-driver-label--left cp-driver-label--midhigh">Mid-High Balanced<br>Armature X 4</span>
+          <span class="cp-driver-label cp-driver-label--left cp-driver-label--woofer">Isobaric Dual<br>Dynamic Driver</span>
+          <span class="cp-driver-label cp-driver-label--right cp-driver-label--shell">Precision 3D Printed Shell<br>with Stainless Nozzle</span>
+          <span class="cp-driver-label cp-driver-label--right cp-driver-label--crossover">5 Way Passive<br>Crossover</span>
+          <span class="cp-driver-label cp-driver-label--right cp-driver-label--socket">Endurance 2PIN<br>Socket</span>
+          <span class="cp-driver-label cp-driver-label--right cp-driver-label--faceplate">Canary Pro<br>Exclusive Design</span>
+        </div>
+      </article>
+      <div class="cp-driver-map" aria-label="Canary Pro driver layout">
+        <article><span>01</span><b>2 woofers</b><p>Dual isobaric dynamic diaphragms create low-end pressure with cleaner excursion control.</p></article>
+        <article><span>02</span><b>2 low-range</b><p>Dedicated balanced armatures bridge bass weight into the lower mids without clouding the center image.</p></article>
+        <article><span>03</span><b>2 mid-range</b><p>Vocal body, instrumental tone, and the information that makes a mix feel human.</p></article>
+        <article><span>04</span><b>4 mid-high</b><p>Presence, snap, and upper harmonics, separated before the EST array takes over.</p></article>
+        <article><span>05</span><b>4 EST</b><p>Electrostatic super tweeters supply extension, air, and the fine spatial layer above conventional armatures.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-section--dark cp-slfi" aria-labelledby="cp-slfi-title">
+    <div class="cp-wrap cp-slfi__grid">
+      <figure class="cp-slfi__graph">
+        <img src="{{ 'canary-pro-slfi.png' | asset_url }}" alt="Canary Pro SLFI impedance and frequency response graph" width="2000" height="1261" loading="lazy">
+        <figcaption>Measured against the response curve, SLFI keeps Canary Pro close to a flat 7 Ohm load across the audible range.</figcaption>
+      </figure>
+      <div class="cp-slfi__copy">
+        <p class="cp-kicker">Super-Low Flat Impedance</p>
+        <h2 id="cp-slfi-title">The tuning stays put.</h2>
+        <p>Many multi-driver IEMs can change tonal balance when the source has a different output impedance. Canary Pro uses SLFI to reshape the balanced armature load from inductive toward resistive, keeping impedance near 7 Ohm across frequency so it behaves more consistently from dongles, DAPs, adapters, and desktop amplifiers.</p>
+        <div class="cp-slfi__benefits" aria-label="Listener benefits of SLFI">
+          <article>
+            <span>01</span>
+            <h3>Less source drift</h3>
+            <p>The bass, midrange, and treble balance is less likely to move around when the same earphone is driven by different players.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Cleaner handoff</h3>
+            <p>The five-way crossover can divide work between drivers without the electrical load pulling the bands out of shape.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>More repeatable listening</h3>
+            <p>What you hear at a desk, on a portable rig, or at a show stays closer to the intended Canary Pro tuning.</p>
+          </article>
+        </div>
+      </div>
+      <div class="cp-slfi__facts" aria-label="SLFI technical facts">
+        <article><span>Target load</span><b>7 ohm</b><p>Flat across frequency, not just a single nominal number.</p></article>
+        <article><span>Driver behavior</span><b>Resistive</b><p>Balanced armatures are managed away from source-sensitive inductive swings.</p></article>
+        <article><span>Listener result</span><b>Consistent</b><p>More reliable tone across portable and desktop source chains.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-video" aria-label="Canary Pro product video">
+    <div class="cp-wrap">
+      <div class="cp-video__frame">
+        <iframe
+          src="https://www.youtube.com/embed/6kMT_4j3uPQ?autoplay=1&mute=1&loop=1&controls=0&rel=0&showinfo=0&enablejsapi=1&playlist=6kMT_4j3uPQ"
+          title="Canary Pro product video"
+          class="youtube_video"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          data-autoplay="true"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-build">
+    <div class="cp-wrap cp-build__grid">
+      <div class="cp-build__copy">
+        <p class="cp-kicker">3D Printed Acoustic System</p>
+        <h2>Printed chamber, metal nozzle, tuned path lengths.</h2>
+        <p>The enclosure and dynamic driver acoustic chamber are printed separately, then assembled into a nozzle system that controls path length and pressure. Canary Pro uses that digital workflow to keep the driver matrix consistent from pair to pair.</p>
+        <p>Simulation decides the phasing and placement. Printing turns that geometry into a repeatable acoustic structure. Hand finishing gives the shell its final surface and fit.</p>
+      </div>
+      <figure class="cp-build__photo">
+        <img src="{{ 'canary-pro-side-detail.jpg' | asset_url }}" alt="Canary Pro side detail showing the black shell, connector, and iridescent faceplate edge" width="2000" height="1333" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="cp-section cp-section--dark cp-faceplate">
+    <div class="cp-wrap cp-faceplate__grid">
+      <div>
+        <p class="cp-kicker">Signature Faceplate</p>
+        <h2>Each pair catches light differently.</h2>
+        <p>Canary Pro's faceplate uses natural pearl with synthesized material, cut and placed by hand. The surface shifts from deep blue to green, gold, and violet as it moves. It is precise enough to feel engineered, but the pattern is never duplicated exactly.</p>
+      </div>
+      <figure>
+        <img src="{{ 'canary-pro-faceplate-front.jpg' | asset_url }}" alt="Canary Pro pair photographed front-on with blue iridescent faceplates" width="2000" height="1333" loading="lazy">
+      </figure>
+    </div>
+    <div class="cp-wrap cp-gallery" aria-label="Canary Pro product gallery">
+      <figure><img src="{{ 'canary-pro-faceplate-symmetric.jpg' | asset_url }}" alt="Canary Pro faceplate pair arranged symmetrically on black background" loading="lazy"></figure>
+      <figure><img src="{{ 'canary-pro-faceplate-angle.jpg' | asset_url }}" alt="Angled Canary Pro faceplates glowing blue and green under studio light" loading="lazy"></figure>
+      <figure><img src="{{ 'canary-pro-ciem-front.jpg' | asset_url }}" alt="Custom-fit Canary Pro faceplate pair on black background" loading="lazy"></figure>
+      <figure><img src="{{ 'canary-pro-ciem-pair.jpg' | asset_url }}" alt="Custom-fit Canary Pro pair showing blue iridescent faceplates and clear shells" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="cp-section cp-artwork">
+    <div class="cp-wrap cp-artwork__grid">
+      <figure>
+        <img src="{{ 'canary-pro-singapore-packaging.jpg' | asset_url }}" alt="Canary Pro illustrated packaging held in Singapore with Merlion, skyline, orchid, and canary identity artwork" width="1440" height="1440" loading="lazy">
+      </figure>
+      <div>
+        <p class="cp-kicker">Canary Identity</p>
+        <h2>Singapore color, built for the world.</h2>
+        <p>The Canary Pro artwork folds AAW's Singapore origin into the product story: Merlion, skyline, orchid, tropical water, and canary motifs sit around the monitor like a travel stamp. It is not just decoration. It frames Canary Pro as a Singapore-born flagship made to move from local listening rooms to shows in Tokyo and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-accessories">
+    <div class="cp-wrap cp-section-head">
+      <p class="cp-kicker">Cabling and Fit</p>
+      <h2>Built as a complete listening kit.</h2>
+    </div>
+    <div class="cp-wrap cp-accessory-grid">
+      <article>
+        <img src="{{ 'canary-pro-faceplate-angle.jpg' | asset_url }}" alt="Canary Pro with attached cable on dark studio background" width="2000" height="1333" loading="lazy">
+        <div><span>01</span><h3>Lune cable</h3><p>48 inch Null Audio Lune premium cable with 4.4mm balanced termination, chosen to keep the signal path clean and quiet.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'canary-pro-ciem-angle.jpg' | asset_url }}" alt="Custom-fit Canary Pro angled shell showing faceplate depth and transparent housing" width="2000" height="1333" loading="lazy">
+        <div><span>02</span><h3>Universal or custom</h3><p>The universal model ships with a full tip selection. Custom-fit monitors are shaped directly from ear impressions and do not need tips.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'canary-pro-carry-case-instagram.jpg' | asset_url }}" alt="Canary Pro monitors on the blue leather carry case with kopitiam roast packaging in the background" width="1440" height="1440" loading="lazy">
+        <div><span>03</span><h3>Carry and care</h3><p>Leather carry case, cleaning tool, owner's club card, and a practical accessory kit for daily use.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'canary-pro-cable-player-instagram.jpg' | asset_url }}" alt="Canary Pro connected to a cable and player with blue faceplates on a wooden surface" width="1440" height="1440" loading="lazy">
+        <div><span>04</span><h3>Source friendly</h3><p>SLFI reduces source sensitivity, so the same monitor behaves more consistently across players and amplifiers.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cp-section cp-section--dark cp-specs">
+    <div class="cp-wrap cp-specs__grid">
+      <div>
+        <p class="cp-kicker">Specifications</p>
+        <h2>Fast, dense, extended.</h2>
+        <p>Canary Pro is tuned for a vivid presentation: sub-bass control from the isobaric woofer pair, midrange clarity from the balanced armatures, and airy extension from the electrostatic quad.</p>
+      </div>
+      <dl class="cp-spec-table">
+        <div><dt>Driver count</dt><dd>14 tri-hybrid drivers</dd></div>
+        <div><dt>Driver layout</dt><dd>2 woofer / 2 low-range / 2 mid-range / 4 mid-high / 4 electrostatic super tweeter</dd></div>
+        <div><dt>Crossover</dt><dd>5-way passive crossover</dd></div>
+        <div><dt>Sensitivity</dt><dd>106dB SPL at 1kHz</dd></div>
+        <div><dt>Impedance</dt><dd>7 Ohm</dd></div>
+        <div><dt>Frequency response</dt><dd>10Hz to 40kHz</dd></div>
+        <div><dt>THD</dt><dd>&le;0.5% at 1mW / 1kHz</dd></div>
+        <div><dt>Cable</dt><dd>48&quot; Null Audio Lune premium cable, 4.4mm balanced</dd></div>
+        <div><dt>Warranty</dt><dd>1-year limited warranty</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="cp-section cp-faq">
+    <div class="cp-wrap cp-faq__grid">
+      <div>
+        <p class="cp-kicker">FAQ</p>
+        <h2>Before you choose Canary Pro</h2>
+      </div>
+      <div class="cp-faq__list">
+        <details open>
+          <summary><span>What makes Canary Pro different from the original Canary?</span></summary>
+          <p>Canary Pro keeps the hybrid Canary idea but rebuilds it around a 14-driver matrix, quad electrostatic super tweeters, dual isobaric dynamic woofers, and a Super-Low Flat Impedance network for more consistent source pairing.</p>
+        </details>
+        <details>
+          <summary><span>What is the driver configuration?</span></summary>
+          <p>2 woofers, 2 low-range drivers, 2 mid-range drivers, 4 mid-high drivers, and 4 electrostatic super tweeters. The five groups are managed by a 5-way passive crossover.</p>
+        </details>
+        <details>
+          <summary><span>What does SLFI do?</span></summary>
+          <p>Super-Low Flat Impedance keeps the monitor close to 7 Ohm across the frequency range, reducing tonal shifts caused by different source output impedances.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>Canary Pro includes a 48 inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="cp-reviews" class="cp-section cp-section--dark cp-reviews">
+    <div class="cp-wrap">
+      <div class="cp-reviews__head">
+        <p class="cp-kicker">Owner Reviews</p>
+        <h2>Canary Pro listening impressions</h2>
+        <p class="cp-reviews__note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="cp-reviews__shell">
+        <div style="clear:both"></div>
+        {% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.00">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-stars" aria-label="0 out of 5 stars" role="img">
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                  </div>
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+              <div class="jdgm-rev-widg__body">
+                <div class="jdgm-rev-widg__reviews"></div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-final">
+    <div class="cp-wrap">
+      <p class="cp-kicker">Canary Pro</p>
+      <h2>Fourteen drivers, blue-fire faceplates, and a tuning made to stay vivid.</h2>
+      <form class="cp-actions cp-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="cp-btn" type="submit">Buy Canary Pro</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Canary Pro product",
+  "tag": "section",
+  "class": "canary-pro-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Canary Pro product"
+    }
+  ]
+}
+{% endschema %}
