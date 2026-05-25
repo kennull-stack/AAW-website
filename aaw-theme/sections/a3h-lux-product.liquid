@@ -35,13 +35,19 @@
     {{ 'a3h-lux-closeup.jpg' | asset_url | prepend: 'https:' | json }},
     {{ 'a3h-lux-cable-wide.jpg' | asset_url | prepend: 'https:' | json }}
   ],
-  "description": "A3H+ Lux Edition is a three-driver hybrid in-ear monitor available in universal and custom fit, with a precision CNC aluminium enclosure, NOVA open-vented armature driver, 10mm graphene diaphragm woofer, and four-step adjustable sound signature.",
+  "description": "A3H+ Lux Edition is a three-driver hybrid in-ear monitor from Singapore-based Advanced AcousticWerkes. NOVA open-vented armature, precision balanced armature, 10mm graphene dynamic woofer, 3-way crossover, four-position tuning switch. Universal and custom fit.",
   "sku": {{ current_variant.sku | default: "A3H-LUX" | json }},
   "mpn": "A3H+ Lux",
-  "brand": {
-    "@id": "https://www.aaw.me/#organization"
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "designer": {
+    "@type": "Person",
+    "name": "Kevin Wang",
+    "jobTitle": "Founder & Tuning Engineer",
+    "description": "Founder and tuning engineer of Advanced AcousticWerkes, responsible for the acoustic design and tuning of AAW in-ear monitors.",
+    "knowsAbout": ["in-ear monitor tuning", "hybrid IEM design", "balanced armature drivers", "dynamic driver integration", "graphene diaphragm design", "custom in-ear monitors", "universal in-ear monitors"],
+    "worksFor": {"@id": "https://www.aaw.me/#organization"}
   },
-  "category": "In-Ear Monitor",
+  "category": "Universal In-Ear Monitor",
   "offers": {
     "@type": "Offer",
     "url": {{ canonical_url | json }},
@@ -49,19 +55,28 @@
     "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
     "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
     "itemCondition": "https://schema.org/NewCondition",
-    "seller": {
-      "@id": "https://www.aaw.me/#organization"
+    "seller": {"@id": "https://www.aaw.me/#organization"},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "url": "https://www.aaw.me/pages/shipping-return",
+      "applicableCountry": "SG",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
     }
   },
   "additionalProperty": [
-    {"@type": "PropertyValue", "name": "Driver count", "value": "3 driver hybrid design"},
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "3-driver hybrid: NOVA open-vented armature, precision balanced armature, 10mm graphene diaphragm woofer"},
+    {"@type": "PropertyValue", "name": "NOVA Driver", "value": "Nozzle-less open-vented armature for reduced pressure decay"},
     {"@type": "PropertyValue", "name": "Crossover", "value": "3-way passive and acoustic crossover"},
+    {"@type": "PropertyValue", "name": "Sound Tuning", "value": "4-step adjustable sound signature"},
     {"@type": "PropertyValue", "name": "Sensitivity", "value": "105dB"},
     {"@type": "PropertyValue", "name": "Impedance", "value": "12 Ohm"},
-    {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
-    {"@type": "PropertyValue", "name": "Dynamic driver", "value": "10mm graphene diaphragm woofer"},
-    {"@type": "PropertyValue", "name": "Sound tuning", "value": "4-step adjustable sound signature"},
-    {"@type": "PropertyValue", "name": "Fit options", "value": "Universal fit and custom fit"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "\u22640.5%"},
+    {"@type": "PropertyValue", "name": "Enclosure", "value": "Precision CNC aluminium"},
+    {"@type": "PropertyValue", "name": "Fit Options", "value": "Universal fit and custom fit"},
     {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
   ]
 }
@@ -77,7 +92,7 @@
       "name": "What is the A3H+ Lux driver configuration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A3H+ Lux uses a three-driver hybrid design with a NOVA open-vented armature driver, a precision balanced armature driver, and a 10mm graphene diaphragm dynamic woofer."
+        "text": "Three-driver hybrid. One NOVA open-vented armature for vocals and treble. One precision balanced armature for upper mids. One 10mm graphene dynamic woofer for bass."
       }
     },
     {
@@ -85,7 +100,23 @@
       "name": "What does the tuning switch do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The discrete switch gives listeners four selectable sound signatures, making the monitor adaptable across genres, stage use, and everyday listening."
+        "text": "Four positions: Vocal, Normal, Vocal+, Bass. The switch changes the crossover load between the woofer and armature paths — across genres, stage use, and everyday listening. No cables to swap, no EQ to set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is A3H+ Lux available as universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Universal-fit units ship with LiquidMorph tips. Custom-fit units are built from ear impressions. Both use the same three-driver hybrid platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is A3H+ Lux for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Working musicians, worship bands, emerging artists, and listeners who want a hybrid IEM with switchable voicing at a practical price. The four tuning modes cover stage monitoring and daily listening."
       }
     },
     {
@@ -93,9 +124,21 @@
       "name": "What comes in the box?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The universal-fit A3H+ Lux package includes a 48 inch Null Audio Epsilon UPOCC copper detachable cable, AAW carrying case, LiquidMorph ear tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty."
+        "text": "48 inch Null Audio Epsilon UPOCC copper detachable cable, AAW carry case, LiquidMorph tips, AAW foam tips, assorted silicone tips. One-year limited warranty."
       }
     }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "A3H+ Lux"}
   ]
 }
 </script>
@@ -123,7 +166,7 @@
     <div class="bm-hero__copy">
       <p class="bm-kicker">Triple-driver hybrid in-ear monitor</p>
       <h1 id="a3h-title">A3H+ Lux</h1>
-      <p class="bm-hero__lead">A compact aluminium hybrid built for lively monitoring: natural sub-bass from a 10mm graphene woofer, focused vocal and treble detail from AAW's NOVA open-vented armature, and four selectable sound signatures from the shell-mounted tuning switch.</p>
+      <p class="bm-hero__lead">Three-driver hybrid with a 10mm graphene dynamic woofer, AAW&rsquo;s NOVA open-vented armature, and a precision balanced armature. Four tuning positions on the shell. Universal or custom fit.</p>
       <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
       <div class="bm-judge-stars" aria-label="A3H+ Lux customer rating">
         <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
@@ -156,10 +199,10 @@
 
   <section class="bm-stat-band" aria-label="A3H+ Lux specification highlights">
     <div class="bm-wrap bm-stats">
-      <article><b>3</b><span>Hybrid drivers across universal or custom fit</span></article>
-      <article><b>4</b><span>Selectable sound signatures from one switch</span></article>
-      <article><b>10Hz-40kHz</b><span>Extended response for stage and listening</span></article>
-      <article><b>12 Ohm</b><span>Easy-to-drive impedance for daily sources</span></article>
+      <article><b>3</b><span>Hybrid drivers. Universal or custom fit.</span></article>
+      <article><b>4</b><span>Voicing positions on one switch.</span></article>
+      <article><b>10Hz-40kHz</b><span>Frequency response.</span></article>
+      <article><b>12 Ohm</b><span>Impedance. Drives from any source.</span></article>
     </div>
   </section>
 
@@ -170,9 +213,9 @@
         <h2>Small shell. Serious intent.</h2>
       </div>
       <div class="bm-prose">
-        <p>A3H+ Lux is the affordable hybrid that refuses to feel entry-level. The machined aluminium body gives it a dense, cool-to-the-touch character, while the replaceable faceplate system keeps the visual language unmistakably AAW.</p>
-        <p>The tuning starts with energy: natural sub-bass, clean vocal projection, and controlled treble extension that avoids the glare of a hard upper register.</p>
-        <p>It is built for musicians who need a reliable stage monitor, and for listeners who want a direct, lively IEM without climbing into flagship pricing.</p>
+        <p>A3H+ Lux is a machined-aluminium hybrid priced for working musicians and daily listeners. The enclosure is CNC aluminium. The faceplates are replaceable.</p>
+        <p>The tuning is forward: natural sub-bass, clean vocal projection, controlled treble. No upper-register glare.</p>
+        <p>Built for stage monitoring and daily listening. Same driver platform, same crossover, same four-mode switch &mdash; universal or custom.</p>
       </div>
     </div>
   </section>
@@ -181,16 +224,16 @@
     <div class="bm-wrap bm-section-head">
       <p class="bm-kicker">Fitment Options</p>
       <h2>Available in universal and custom fit.</h2>
-      <p>Choose the same A3H+ Lux hybrid platform in the format that suits your listening life. Universal fit is ready to share, demo, and use with LiquidMorph tips. Custom fit is built from ear impressions for a personal seal and long-session isolation.</p>
+      <p>Universal fit ships with LiquidMorph tips. Custom fit is built from ear impressions. Both use the same three-driver hybrid platform.</p>
     </div>
     <div class="bm-wrap a3h-original-grid">
       <figure>
         <img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux universal in-ear monitors with detachable black braided cable" width="2000" height="1334" loading="lazy">
-        <figcaption><b>Universal fit</b><span>Ready-to-wear A3H+ Lux uses LiquidMorph ear tips for a stable seal, quick tip sizing, and easy daily handling.</span></figcaption>
+        <figcaption><b>Universal fit</b><span>Ships with LiquidMorph tips. Stable seal, quick sizing, daily handling.</span></figcaption>
       </figure>
       <figure>
         <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors showing personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
-        <figcaption><b>Custom fit</b><span>Made from your ear impressions for a personalized shell, stronger isolation, and a fit that belongs to one listener.</span></figcaption>
+        <figcaption><b>Custom fit</b><span>Built from ear impressions. Personalized shell, stronger isolation.</span></figcaption>
       </figure>
     </div>
   </section>
@@ -203,7 +246,7 @@
       <div class="bm-explosion__copy">
         <p class="bm-kicker">Selectable Signature</p>
         <h2 id="a3h-switch-title">Four tunings. One monitor.</h2>
-        <p>The discrete switch gives A3H+ Lux four sound signatures without changing cables, tips, or sources. Move from a more vocal-forward balance to a fuller bass response when the set list, room, or playlist changes.</p>
+        <p>Four voicings on a single shell. The switch changes the crossover load between the woofer and armature paths. No apps, no cables to swap, no EQ. Vocal pushes the midrange forward. Normal is the balanced reference. Vocal+ adds presence. Bass shifts weight to the woofer.</p>
       </div>
     </div>
   </section>
@@ -212,17 +255,17 @@
     <div class="bm-wrap bm-section-head">
       <p class="bm-kicker">Acoustic Architecture</p>
       <h2>NOVA up front. Graphene down low.</h2>
-      <p>The hybrid structure keeps each driver focused: the NOVA open-vented armature sits close to the ear canal for vocal and treble detail, while the 10mm graphene diaphragm woofer supplies the physical low-end weight full-BA designs rarely deliver.</p>
+      <p>Each driver covers a specific band. The NOVA open-vented armature sits close to the nozzle for vocal and treble. The 10mm graphene dynamic handles bass. A precision armature fills the upper mids. Three drivers, three bands, one 3-way crossover.</p>
     </div>
     <div class="bm-wrap bm-architecture__grid">
       <figure class="bm-render-card bm-render-card--large">
         <img src="{{ 'a3h-lux-closeup.jpg' | asset_url }}" alt="Close-up of A3H+ Lux faceplates and cable showing the aluminium enclosure" width="2000" height="1334" loading="lazy">
-        <figcaption>Digitally designed driver and nozzle placement keeps the hybrid system coherent inside a compact shell.</figcaption>
+        <figcaption>Driver and nozzle geometry is digitally modeled to keep phase and handoff consistent between universal and custom-fit builds.</figcaption>
       </figure>
       <div class="bm-driver-map" aria-label="A3H+ Lux driver layout">
-        <article><span>01</span><b>NOVA driver</b><p>Nozzle-less open-vented armature placement helps reduce pressure decay and unwanted resonance from a conventional long tube path.</p></article>
-        <article><span>02</span><b>Balanced armature</b><p>A precision armature handles fine detail and upper-band control, keeping vocal edges clear without over-brightening the monitor.</p></article>
-        <article><span>03</span><b>Graphene woofer</b><p>The 10mm diaphragm is filtered for the low band, giving A3H+ Lux its natural sub-bass and punch while minimizing overlap.</p></article>
+        <article><span>01</span><b>NOVA driver</b><p>Open-vented armature placed close to the nozzle. Reduces pressure decay and tube resonance that conventional tubed layouts introduce.</p></article>
+        <article><span>02</span><b>Balanced armature</b><p>Handles upper-mid detail and control. Keeps vocal edges clear without over-brightening.</p></article>
+        <article><span>03</span><b>Graphene woofer</b><p>10mm dynamic diaphragm filtered for the low band. Natural sub-bass and punch with minimal midrange overlap.</p></article>
         <article><span>04</span><b>3-way crossover</b><p>Passive and acoustic filtering separate the drivers so timing, phase, and handoff stay consistent.</p></article>
       </div>
     </div>
@@ -233,7 +276,7 @@
       <div class="bm-build__copy">
         <p class="bm-kicker">Precision Enclosure Design</p>
         <h2>Built for consistent fit and sound.</h2>
-        <p>A3H+ Lux uses digitized driver, nozzle, and chamber geometry so universal and custom-fit units keep the intended phasing and response. Universal uses a compact aluminium profile; custom translates the same hybrid platform into an impression-built shell for a personal seal.</p>
+        <p>Driver, nozzle, and chamber geometry is modeled digitally so universal and custom-fit units share the same phase and frequency response. Universal uses a compact CNC aluminium profile. Custom-fit units translate the same platform into an impression-built shell.</p>
       </div>
       <figure class="bm-build__photo">
         <img src="{{ 'a3h-lux-paper-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors on sculpted white paper with silver aluminium shells" width="2000" height="1334" loading="lazy">
@@ -249,13 +292,13 @@
     <div class="bm-wrap bm-section-head">
       <p class="bm-kicker">Tuning Modes</p>
       <h2>Adapt without changing the rig.</h2>
-      <p>The switch is not a gimmick layer on top of the monitor. It is the practical part of the design: one shell that can sit differently for worship, band rehearsal, vocal tracking, or casual listening.</p>
+      <p>The switch changes how the crossover loads the woofer and armature paths. Four positions. One shell. No cables, no sources, no apps.</p>
     </div>
     <div class="bm-wrap a3h-switch-grid" aria-label="A3H+ Lux tuning modes">
-      <article><span>01</span><h3>Vocal</h3><p>Brings the midrange forward when intelligibility matters most.</p></article>
-      <article><span>02</span><h3>Normal</h3><p>The balanced everyday setting for mixed libraries and stage reference.</p></article>
-      <article><span>03</span><h3>Vocal+</h3><p>Adds presence and articulation when detail has to stay up front.</p></article>
-      <article><span>04</span><h3>Bass</h3><p>Leans into the woofer for a fuller low-end foundation.</p></article>
+      <article><span>01</span><h3>Vocal</h3><p>Midrange forward. For speech, worship, and vocal monitors.</p></article>
+      <article><span>02</span><h3>Normal</h3><p>Balanced reference. Mixed libraries, stage work, daily listening.</p></article>
+      <article><span>03</span><h3>Vocal+</h3><p>Added presence and articulation. Detail-forward without sharpness.</p></article>
+      <article><span>04</span><h3>Bass</h3><p>Fuller low end. More woofer weight, less armature prominence.</p></article>
     </div>
     <div class="bm-wrap a3h-image-strip">
       <figure><img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors with detachable cable arranged on a grey studio surface" width="2000" height="1334" loading="lazy"></figure>
@@ -271,18 +314,15 @@
     <div class="bm-wrap bm-accessory-grid">
       <article>
         <img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux detachable cable and universal monitors" width="2000" height="1334" loading="lazy">
-        <div><span>01</span><h3>Epsilon cable</h3><p>48&quot; Null Audio Epsilon UPOCC copper detachable cable, selected for low microphonics and reliable daily handling.</p></div>
+        <div><span>01</span><h3>Epsilon cable</h3><p>48&quot; Null Audio Epsilon UPOCC copper cable. Low microphonics. Detachable 2-pin.</p></div>
       </article>
       <article>
         <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
-        <div><span>02</span><h3>LiquidMorph tips</h3><p>New AAW universal IEMs ship with LiquidMorph ear tips, giving the dynamic woofer a steadier seal and a more consistent center image.</p></div>
+        <div><span>02</span><h3>LiquidMorph tips</h3><p>Silicone tips with a teal inner bore. Keeps the dynamic woofer sealed for consistent bass and center image.</p></div>
       </article>
       <article>
         <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph ear tip accessory tray with multiple sizes" width="2048" height="2048" loading="lazy">
-        <div><span>03</span><h3>Size tray</h3><p>A ready tip selection makes fit checks faster before a show, commute, or long listening session.</p></div>
-      </article>
-      <article class="bm-accessory-grid__text-only">
-        <div><span>04</span><h3>Carrying kit</h3><p>AAW carrying case and accessory set are included with universal-fit units, backed by a one-year limited warranty.</p></div>
+        <div><span>03</span><h3>Size tray</h3><p>Multiple sizes in one tray. Faster fit checks before a show or session.</p></div>
       </article>
     </div>
   </section>
@@ -292,7 +332,7 @@
       <div>
         <p class="bm-kicker">Specifications</p>
         <h2>Compact hybrid numbers.</h2>
-        <p>A3H+ Lux keeps the spec sheet refreshingly direct: three drivers, a three-way crossover, wide frequency response, and an easy-to-drive 12 Ohm load.</p>
+        <p>Three drivers. 3-way crossover. 10Hz to 40kHz. 12 Ohm.</p>
       </div>
       <dl class="bm-spec-table">
         <div><dt>Driver count</dt><dd>3 driver hybrid design</dd></div>
@@ -317,24 +357,24 @@
       </div>
       <div class="bm-faq__list">
         <details open>
-          <summary><span>What makes A3H+ Lux different from a full-BA monitor?</span></summary>
-          <p>The 10mm graphene diaphragm woofer gives A3H+ Lux a physical low-end foundation, while the armature drivers handle vocal, detail, and treble work. That lets the monitor feel more lively than a small all-BA setup.</p>
+          <summary><span>What is the A3H+ Lux driver configuration?</span></summary>
+          <p>Three-driver hybrid. One NOVA open-vented armature for vocals and treble. One precision balanced armature for upper mids. One 10mm graphene dynamic woofer for bass.</p>
         </details>
         <details>
-          <summary><span>What is the NOVA driver?</span></summary>
-          <p>NOVA is AAW's nozzle-less open-vented armature approach. The driver is positioned close to the ear canal to reduce pressure decay and unwanted resonance from a traditional tubed armature layout.</p>
-        </details>
-        <details>
-          <summary><span>Who is this monitor for?</span></summary>
-          <p>It suits band performances, emerging artists, worship events, and listeners who want a lively, adjustable hybrid IEM at a practical price point.</p>
+          <summary><span>What does the tuning switch do?</span></summary>
+          <p>Four positions: Vocal, Normal, Vocal+, Bass. The switch changes the crossover load between the woofer and armature paths — across genres, stage use, and everyday listening. No cables to swap, no EQ to set.</p>
         </details>
         <details>
           <summary><span>Is A3H+ Lux available as universal and custom fit?</span></summary>
-          <p>Yes. A3H+ Lux can be ordered as a universal-fit monitor with LiquidMorph ear tips, or as a custom-fit monitor made from ear impressions for a personal seal and stronger isolation.</p>
+          <p>Yes. Universal-fit units ship with LiquidMorph tips. Custom-fit units are built from ear impressions. Both use the same three-driver hybrid platform.</p>
+        </details>
+        <details>
+          <summary><span>Who is A3H+ Lux for?</span></summary>
+          <p>Working musicians, worship bands, emerging artists, and listeners who want a hybrid IEM with switchable voicing at a practical price. The four tuning modes cover stage monitoring and daily listening.</p>
         </details>
         <details>
           <summary><span>What comes in the box?</span></summary>
-          <p>48&quot; Null Audio Epsilon UPOCC copper detachable cable, AAW carrying case, LiquidMorph ear tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty. Ear tips are for universal-fit units only.</p>
+          <p>48&quot; Null Audio Epsilon UPOCC copper detachable cable, AAW carry case, LiquidMorph tips, AAW foam tips, assorted silicone tips. One-year limited warranty.</p>
         </details>
       </div>
     </div>
@@ -368,10 +408,64 @@
     </div>
   </section>
 
+  <section class="bm-section bm-section--dark bm-brand">
+    <div class="bm-wrap bm-brand__inner">
+      <div class="bm-brand__lead">
+        <p class="bm-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="bm-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="bm-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) is a Singapore-based IEM manufacturer founded in 2014 by Kevin Wang. AAW designs and builds custom and universal in-ear monitors across dynamic, balanced armature, electrostatic, planar, and isobaric platforms.</p>
+        <p>A3H+ Lux runs the same three-driver hybrid architecture across universal and custom fit: NOVA open-vented armature, precision balanced armature, 10mm graphene woofer, 3-way crossover, and a four-position tuning switch.</p>
+        <a class="bm-btn bm-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-where">
+    <div class="bm-wrap bm-where-head">
+      <div>
+        <p class="bm-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="bm-wrap bm-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin & Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="bm-wrap bm-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="bm-btn bm-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
   <section class="bm-final">
     <div class="bm-wrap">
       <p class="bm-kicker">A3H+ Lux</p>
-      <h2>A lively hybrid monitor with room to change its mind.</h2>
+      <h2>Three drivers. Four voicings. Universal or custom.</h2>
       <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ current_variant.id }}">
         <input type="hidden" name="quantity" value="1">

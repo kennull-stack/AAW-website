@@ -35,19 +35,43 @@
           "type": "variant",
           "settings": {}
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "pickup_a3h_lux": {
+          "type": "pickup",
+          "settings": {}
+        },
         "button": {
           "type": "button",
           "settings": {
             "dynamic_checkout_btn": true,
             "show_recipient_form": false
           }
+        },
+        "complementary_a3h_lux": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "social_a3h_lux": {
+          "type": "social-icons",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "price",
         "variant_a3h_lux",
-        "button"
+        "quantity_selector",
+        "pickup_a3h_lux",
+        "button",
+        "complementary_a3h_lux",
+        "social_a3h_lux"
       ],
       "disabled": true,
       "settings": {
