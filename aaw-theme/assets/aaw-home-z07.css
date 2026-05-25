@@ -194,22 +194,19 @@
   .aaw-home-brand-copy{padding-left:0;border-left:0;border-top:1px solid rgba(226,183,104,.32);padding-top:24px}
 }
 @media(max-width:767px){
-  .aaw-home-z07-hero{min-height:82vh;align-items:flex-end;margin:-40px 0 -150px}
-  .aaw-home-z07-hero:after{background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(0,0,0,.48) 45%,rgba(0,0,0,.08))}
-  .aaw-home-z07-grid{min-height:82vh;padding:42px 0 34px}
-  .aaw-home-z07-copy{transform:translateY(-100px)}
-  .aaw-home-brand-identity{margin-bottom:18px}
-  .aaw-home-brand-identity,.aaw-home-z07-copy>.aaw-home-kicker{transform:translateY(-80px)}
-  .aaw-home-brand-name{font-size:34px}
-  .aaw-home-brand-intro{font-size:13px;line-height:1.45}
-  .aaw-home-z07-copy>.aaw-home-kicker{color:#fff}
-  .aaw-home-z07-product-title{margin-top:178px;transform:translateY(-50px)}
-  .aaw-home-z07-logo-title{width:min(260px,76vw)}
-  .aaw-home-z07-logo-title img{transform:translateY(-38px)}
-  .aaw-home-z07-subtitle{font-size:21px;transform:translateY(-38px)}
-  .aaw-home-z07-lead,.aaw-home-z07-copy>.aaw-home-actions{transform:translateY(-88px)}
+  .aaw-home-z07-hero{min-height:calc(100svh - 96px);align-items:flex-end;margin:0}
+  .aaw-home-z07-hero:after{background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.66) 34%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.08))}
+  .aaw-home-z07-grid{min-height:calc(100svh - 96px);padding:30px 0 28px}
+  .aaw-home-z07-copy{transform:none}
+  .aaw-home-brand-identity{display:none}
+  .aaw-home-z07-copy>.aaw-home-kicker{transform:none;color:#fff;margin-bottom:12px}
+  .aaw-home-z07-product-title{margin:0}
+  .aaw-home-z07-logo-title{width:min(250px,70vw)}
+  .aaw-home-z07-logo-title img{transform:none}
+  .aaw-home-z07-subtitle{font-size:22px;transform:none}
+  .aaw-home-z07-lead,.aaw-home-z07-copy>.aaw-home-actions{transform:none}
   .aaw-home-z07-media{background:#101313}
-  .aaw-home-z07-media img{object-fit:contain;object-position:center 18%}
+  .aaw-home-z07-media img{object-fit:cover;object-position:center center}
 }
 @media(max-width:640px){
   .aaw-home-wrap{width:calc(100vw - 24px)}
