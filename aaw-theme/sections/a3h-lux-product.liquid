@@ -1,0 +1,417 @@
+{{ 'black-malus-product.css' | asset_url | stylesheet_tag }}
+{{ 'a3h-lux-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign product_price = current_variant.price | money %}
+{% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+{% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": "AAW A3H+ Lux Edition In-Ear Monitor",
+  "image": [
+    {{ 'a3h-lux-hero.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'a3h-lux-closeup.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'a3h-lux-cable-wide.jpg' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "A3H+ Lux Edition is a three-driver hybrid in-ear monitor available in universal and custom fit, with a precision CNC aluminium enclosure, NOVA open-vented armature driver, 10mm graphene diaphragm woofer, and four-step adjustable sound signature.",
+  "sku": {{ current_variant.sku | default: "A3H-LUX" | json }},
+  "mpn": "A3H+ Lux",
+  "brand": {
+    "@id": "https://www.aaw.me/#organization"
+  },
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@id": "https://www.aaw.me/#organization"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver count", "value": "3 driver hybrid design"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "3-way passive and acoustic crossover"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "105dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "12 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Dynamic driver", "value": "10mm graphene diaphragm woofer"},
+    {"@type": "PropertyValue", "name": "Sound tuning", "value": "4-step adjustable sound signature"},
+    {"@type": "PropertyValue", "name": "Fit options", "value": "Universal fit and custom fit"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the A3H+ Lux driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A3H+ Lux uses a three-driver hybrid design with a NOVA open-vented armature driver, a precision balanced armature driver, and a 10mm graphene diaphragm dynamic woofer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the tuning switch do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The discrete switch gives listeners four selectable sound signatures, making the monitor adaptable across genres, stage use, and everyday listening."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The universal-fit A3H+ Lux package includes a 48 inch Null Audio Epsilon UPOCC copper detachable cable, AAW carrying case, LiquidMorph ear tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="bm-product a3h-product">
+  <nav class="bm-topbar bm-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">A3H+ Lux</span>
+  </nav>
+
+  <aside class="bm-floating-buy" aria-label="A3H+ Lux price and purchase">
+    <span class="bm-floating-buy__label">A3H+ Lux</span>
+    <strong>{{ product_price }}</strong>
+    {% if current_variant.available %}
+      <a href="/cart/add?id={{ current_variant.id }}&quantity=1">Buy</a>
+    {% else %}
+      <span class="a3h-review-count">Sold out</span>
+    {% endif %}
+  </aside>
+
+  <section class="bm-hero bm-wrap" aria-labelledby="a3h-title">
+    <div class="bm-hero__copy">
+      <p class="bm-kicker">Triple-driver hybrid in-ear monitor</p>
+      <h1 id="a3h-title">A3H+ Lux</h1>
+      <p class="bm-hero__lead">A compact aluminium hybrid built for lively monitoring: natural sub-bass from a 10mm graphene woofer, focused vocal and treble detail from AAW's NOVA open-vented armature, and four selectable sound signatures from the shell-mounted tuning switch.</p>
+      <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
+      <div class="bm-judge-stars" aria-label="A3H+ Lux customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="bm-rating-fallback" aria-label="Customer review archive">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>57-review archive</span>
+          </span>
+        {% endif %}
+      </div>
+      <ul class="bm-pill-list" aria-label="A3H+ Lux highlights">
+        <li>3-driver hybrid</li>
+        <li>NOVA driver</li>
+        <li>4-step tuning</li>
+        <li>Universal/custom</li>
+      </ul>
+      <form class="bm-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy A3H+ Lux{% else %}Sold Out{% endif %}</button>
+        <a class="bm-btn bm-btn--ghost" href="#a3h-nova">Explore the build</a>
+      </form>
+    </div>
+    <figure class="bm-hero__media">
+      <img src="{{ 'a3h-lux-hero.jpg' | asset_url }}" alt="A3H+ Lux silver universal in-ear monitors with detachable black cable and faceplates" width="2000" height="1334" loading="eager">
+    </figure>
+  </section>
+
+  <section class="bm-stat-band" aria-label="A3H+ Lux specification highlights">
+    <div class="bm-wrap bm-stats">
+      <article><b>3</b><span>Hybrid drivers across universal or custom fit</span></article>
+      <article><b>4</b><span>Selectable sound signatures from one switch</span></article>
+      <article><b>10Hz-40kHz</b><span>Extended response for stage and listening</span></article>
+      <article><b>12 Ohm</b><span>Easy-to-drive impedance for daily sources</span></article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-story">
+    <div class="bm-wrap bm-story__grid">
+      <div>
+        <p class="bm-kicker">Design Story</p>
+        <h2>Small shell. Serious intent.</h2>
+      </div>
+      <div class="bm-prose">
+        <p>A3H+ Lux is the affordable hybrid that refuses to feel entry-level. The machined aluminium body gives it a dense, cool-to-the-touch character, while the replaceable faceplate system keeps the visual language unmistakably AAW.</p>
+        <p>The tuning starts with energy: natural sub-bass, clean vocal projection, and controlled treble extension that avoids the glare of a hard upper register.</p>
+        <p>It is built for musicians who need a reliable stage monitor, and for listeners who want a direct, lively IEM without climbing into flagship pricing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark a3h-heritage">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Fitment Options</p>
+      <h2>Available in universal and custom fit.</h2>
+      <p>Choose the same A3H+ Lux hybrid platform in the format that suits your listening life. Universal fit is ready to share, demo, and use with LiquidMorph tips. Custom fit is built from ear impressions for a personal seal and long-session isolation.</p>
+    </div>
+    <div class="bm-wrap a3h-original-grid">
+      <figure>
+        <img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux universal in-ear monitors with detachable black braided cable" width="2000" height="1334" loading="lazy">
+        <figcaption><b>Universal fit</b><span>Ready-to-wear A3H+ Lux uses LiquidMorph ear tips for a stable seal, quick tip sizing, and easy daily handling.</span></figcaption>
+      </figure>
+      <figure>
+        <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors showing personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+        <figcaption><b>Custom fit</b><span>Made from your ear impressions for a personalized shell, stronger isolation, and a fit that belongs to one listener.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-explosion" aria-labelledby="a3h-switch-title">
+    <div class="bm-wrap bm-explosion__frame">
+      <figure class="bm-explosion__media">
+        <img src="{{ 'a3h-lux-switch-back.jpg' | asset_url }}" alt="Rear view of A3H+ Lux showing the shell tuning switch and detachable connector" width="2000" height="1334" loading="lazy">
+      </figure>
+      <div class="bm-explosion__copy">
+        <p class="bm-kicker">Selectable Signature</p>
+        <h2 id="a3h-switch-title">Four tunings. One monitor.</h2>
+        <p>The discrete switch gives A3H+ Lux four sound signatures without changing cables, tips, or sources. Move from a more vocal-forward balance to a fuller bass response when the set list, room, or playlist changes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark" id="a3h-nova">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Acoustic Architecture</p>
+      <h2>NOVA up front. Graphene down low.</h2>
+      <p>The hybrid structure keeps each driver focused: the NOVA open-vented armature sits close to the ear canal for vocal and treble detail, while the 10mm graphene diaphragm woofer supplies the physical low-end weight full-BA designs rarely deliver.</p>
+    </div>
+    <div class="bm-wrap bm-architecture__grid">
+      <figure class="bm-render-card bm-render-card--large">
+        <img src="{{ 'a3h-lux-closeup.jpg' | asset_url }}" alt="Close-up of A3H+ Lux faceplates and cable showing the aluminium enclosure" width="2000" height="1334" loading="lazy">
+        <figcaption>Digitally designed driver and nozzle placement keeps the hybrid system coherent inside a compact shell.</figcaption>
+      </figure>
+      <div class="bm-driver-map" aria-label="A3H+ Lux driver layout">
+        <article><span>01</span><b>NOVA driver</b><p>Nozzle-less open-vented armature placement helps reduce pressure decay and unwanted resonance from a conventional long tube path.</p></article>
+        <article><span>02</span><b>Balanced armature</b><p>A precision armature handles fine detail and upper-band control, keeping vocal edges clear without over-brightening the monitor.</p></article>
+        <article><span>03</span><b>Graphene woofer</b><p>The 10mm diaphragm is filtered for the low band, giving A3H+ Lux its natural sub-bass and punch while minimizing overlap.</p></article>
+        <article><span>04</span><b>3-way crossover</b><p>Passive and acoustic filtering separate the drivers so timing, phase, and handoff stay consistent.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-build">
+    <div class="bm-wrap bm-build__grid">
+      <div class="bm-build__copy">
+        <p class="bm-kicker">Precision Enclosure Design</p>
+        <h2>Built for consistent fit and sound.</h2>
+        <p>A3H+ Lux uses digitized driver, nozzle, and chamber geometry so universal and custom-fit units keep the intended phasing and response. Universal uses a compact aluminium profile; custom translates the same hybrid platform into an impression-built shell for a personal seal.</p>
+      </div>
+      <figure class="bm-build__photo">
+        <img src="{{ 'a3h-lux-paper-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors on sculpted white paper with silver aluminium shells" width="2000" height="1334" loading="lazy">
+      </figure>
+      <div class="bm-build__renders">
+        <img src="{{ 'a3h-lux-pair-wide.jpg' | asset_url }}" alt="A3H+ Lux universal monitors and cable on a neutral studio surface" width="2000" height="1334" loading="lazy">
+        <img src="{{ 'a3h-lux-portrait.jpg' | asset_url }}" alt="Portrait studio photo of A3H+ Lux silver faceplates" width="1334" height="2000" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Tuning Modes</p>
+      <h2>Adapt without changing the rig.</h2>
+      <p>The switch is not a gimmick layer on top of the monitor. It is the practical part of the design: one shell that can sit differently for worship, band rehearsal, vocal tracking, or casual listening.</p>
+    </div>
+    <div class="bm-wrap a3h-switch-grid" aria-label="A3H+ Lux tuning modes">
+      <article><span>01</span><h3>Vocal</h3><p>Brings the midrange forward when intelligibility matters most.</p></article>
+      <article><span>02</span><h3>Normal</h3><p>The balanced everyday setting for mixed libraries and stage reference.</p></article>
+      <article><span>03</span><h3>Vocal+</h3><p>Adds presence and articulation when detail has to stay up front.</p></article>
+      <article><span>04</span><h3>Bass</h3><p>Leans into the woofer for a fuller low-end foundation.</p></article>
+    </div>
+    <div class="bm-wrap a3h-image-strip">
+      <figure><img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors with detachable cable arranged on a grey studio surface" width="2000" height="1334" loading="lazy"></figure>
+      <figure><img src="{{ 'a3h-lux-gallery-pair.jpg' | asset_url }}" alt="A3H+ Lux faceplate close-up showing grille pattern and cable loops" width="2000" height="1334" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-accessories">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Cabling and Accessories</p>
+      <h2>The everyday kit.</h2>
+    </div>
+    <div class="bm-wrap bm-accessory-grid">
+      <article>
+        <img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux detachable cable and universal monitors" width="2000" height="1334" loading="lazy">
+        <div><span>01</span><h3>Epsilon cable</h3><p>48&quot; Null Audio Epsilon UPOCC copper detachable cable, selected for low microphonics and reliable daily handling.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        <div><span>02</span><h3>LiquidMorph tips</h3><p>New AAW universal IEMs ship with LiquidMorph ear tips, giving the dynamic woofer a steadier seal and a more consistent center image.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph ear tip accessory tray with multiple sizes" width="2048" height="2048" loading="lazy">
+        <div><span>03</span><h3>Size tray</h3><p>A ready tip selection makes fit checks faster before a show, commute, or long listening session.</p></div>
+      </article>
+      <article class="bm-accessory-grid__text-only">
+        <div><span>04</span><h3>Carrying kit</h3><p>AAW carrying case and accessory set are included with universal-fit units, backed by a one-year limited warranty.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-specs">
+    <div class="bm-wrap bm-specs__grid">
+      <div>
+        <p class="bm-kicker">Specifications</p>
+        <h2>Compact hybrid numbers.</h2>
+        <p>A3H+ Lux keeps the spec sheet refreshingly direct: three drivers, a three-way crossover, wide frequency response, and an easy-to-drive 12 Ohm load.</p>
+      </div>
+      <dl class="bm-spec-table">
+        <div><dt>Driver count</dt><dd>3 driver hybrid design</dd></div>
+        <div><dt>Driver system</dt><dd>NOVA open-vented armature / precision balanced armature / 10mm graphene diaphragm woofer</dd></div>
+        <div><dt>Crossover</dt><dd>3-way passive and acoustic crossover</dd></div>
+        <div><dt>Sensitivity</dt><dd>105dB</dd></div>
+        <div><dt>Impedance</dt><dd>12 Ohm</dd></div>
+        <div><dt>Frequency response</dt><dd>10Hz to 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;0.5%</dd></div>
+        <div><dt>Enclosure</dt><dd>Precision CNC aluminium</dd></div>
+        <div><dt>Tuning</dt><dd>4-step adjustable sound signature</dd></div>
+        <div><dt>Warranty</dt><dd>1-year limited warranty</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bm-section bm-faq">
+    <div class="bm-wrap bm-faq__grid">
+      <div>
+        <p class="bm-kicker">FAQ</p>
+        <h2>Before you choose A3H+ Lux</h2>
+      </div>
+      <div class="bm-faq__list">
+        <details open>
+          <summary><span>What makes A3H+ Lux different from a full-BA monitor?</span></summary>
+          <p>The 10mm graphene diaphragm woofer gives A3H+ Lux a physical low-end foundation, while the armature drivers handle vocal, detail, and treble work. That lets the monitor feel more lively than a small all-BA setup.</p>
+        </details>
+        <details>
+          <summary><span>What is the NOVA driver?</span></summary>
+          <p>NOVA is AAW's nozzle-less open-vented armature approach. The driver is positioned close to the ear canal to reduce pressure decay and unwanted resonance from a traditional tubed armature layout.</p>
+        </details>
+        <details>
+          <summary><span>Who is this monitor for?</span></summary>
+          <p>It suits band performances, emerging artists, worship events, and listeners who want a lively, adjustable hybrid IEM at a practical price point.</p>
+        </details>
+        <details>
+          <summary><span>Is A3H+ Lux available as universal and custom fit?</span></summary>
+          <p>Yes. A3H+ Lux can be ordered as a universal-fit monitor with LiquidMorph ear tips, or as a custom-fit monitor made from ear impressions for a personal seal and stronger isolation.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>48&quot; Null Audio Epsilon UPOCC copper detachable cable, AAW carrying case, LiquidMorph ear tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty. Ear tips are for universal-fit units only.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="a3h-reviews" class="bm-section bm-section--dark z05-reviews-section">
+    <div class="bm-wrap">
+      <div class="z05-reviews-head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>A3H+ Lux listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="57" data-average-rating="4.86">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-text">Based on 57 reviews</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-final">
+    <div class="bm-wrap">
+      <p class="bm-kicker">A3H+ Lux</p>
+      <h2>A lively hybrid monitor with room to change its mind.</h2>
+      <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy A3H+ Lux{% else %}Sold Out{% endif %}</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "A3H+ Lux product",
+  "tag": "section",
+  "class": "a3h-lux-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "A3H+ Lux product"
+    }
+  ]
+}
+{% endschema %}
