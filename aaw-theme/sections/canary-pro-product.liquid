@@ -23,19 +23,25 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "@id": {{ canonical_url | append: "#product" | json }},
-  "name": "AAW Canary Pro 14 Driver Isobaric Electrostatic In-Ear Monitor",
+  "name": "AAW Canary Pro 14-Driver Isobaric Electrostatic In-Ear Monitor",
   "image": [
     {{ 'canary-pro-cable-player-instagram.jpg' | asset_url | prepend: 'https:' | json }},
     {{ 'canary-pro-faceplate-angle.jpg' | asset_url | prepend: 'https:' | json }},
     {{ 'canary-pro-exploded-serial.png' | asset_url | prepend: 'https:' | json }}
   ],
-  "description": "Canary Pro is a 14-driver tri-hybrid in-ear monitor with quad electrostatic super tweeters, dual isobaric dynamic woofers, Super-Low Flat Impedance design, and a 5-way passive crossover.",
+  "description": "Canary Pro is a 14-driver tri-hybrid in-ear monitor from Singapore-based Advanced AcousticWerkes. It combines quad electrostatic super tweeters, dual isobaric dynamic woofers, eight balanced armatures, a 5-way passive crossover, and Super-Low Flat Impedance (SLFI) to deliver consistent tuning across sources.",
   "sku": {{ product.selected_or_first_available_variant.sku | default: "CANARY-PRO" | json }},
   "mpn": "Canary Pro",
-  "brand": {
-    "@id": "https://www.aaw.me/#organization"
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "designer": {
+    "@type": "Person",
+    "name": "Kevin Wang",
+    "jobTitle": "Founder & Tuning Engineer",
+    "description": "Founder and tuning engineer of Advanced AcousticWerkes, responsible for the acoustic design and tuning of AAW in-ear monitors.",
+    "knowsAbout": ["in-ear monitor tuning", "hybrid IEM design", "balanced armature drivers", "electrostatic driver integration", "isobaric woofer design", "custom in-ear monitors", "universal in-ear monitors"],
+    "worksFor": {"@id": "https://www.aaw.me/#organization"}
   },
-  "category": "In-Ear Monitor",
+  "category": "Universal In-Ear Monitor",
   "offers": {
     "@type": "Offer",
     "url": {{ canonical_url | json }},
@@ -43,19 +49,41 @@
     "price": {{ product.selected_or_first_available_variant.price | money_without_currency | remove: ',' | json }},
     "availability": "https://schema.org/{% if product.selected_or_first_available_variant.available %}InStock{% else %}OutOfStock{% endif %}",
     "itemCondition": "https://schema.org/NewCondition",
-    "seller": {
-      "@id": "https://www.aaw.me/#organization"
+    "seller": {"@id": "https://www.aaw.me/#organization"},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "url": "https://www.aaw.me/pages/shipping-return",
+      "applicableCountry": "SG",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
     }
   },
   "additionalProperty": [
-    {"@type": "PropertyValue", "name": "Driver configuration", "value": "14-driver tri-hybrid"},
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "14-driver tri-hybrid: 2 dynamic woofers, 8 balanced armatures, 4 electrostatic super tweeters"},
+    {"@type": "PropertyValue", "name": "Woofer System", "value": "Dual isobaric dynamic drivers"},
     {"@type": "PropertyValue", "name": "Crossover", "value": "5-way passive crossover"},
-    {"@type": "PropertyValue", "name": "Driver layout", "value": "2 woofers, 2 low-range, 2 mid-range, 4 mid-high, 4 electrostatic super tweeters"},
+    {"@type": "PropertyValue", "name": "Impedance Design", "value": "Super-Low Flat Impedance (SLFI)"},
     {"@type": "PropertyValue", "name": "Sensitivity", "value": "106dB SPL at 1kHz"},
     {"@type": "PropertyValue", "name": "Impedance", "value": "7 Ohm"},
-    {"@type": "PropertyValue", "name": "Frequency response", "value": "10Hz to 40kHz"},
-    {"@type": "PropertyValue", "name": "Cable", "value": "48 inch Null Audio Lune cable, 4.4mm balanced"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "≤0.5% at 1mW / 1kHz"},
+    {"@type": "PropertyValue", "name": "Shell", "value": "Precision 3D-printed acoustic chamber with stainless steel nozzle"},
+    {"@type": "PropertyValue", "name": "Cable", "value": "48-inch Null Audio Lune cable, 4.4mm balanced"},
     {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "Canary Pro"}
   ]
 }
 </script>
@@ -70,7 +98,7 @@
       "name": "What makes Canary Pro different from the original Canary?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Canary Pro keeps the hybrid Canary idea but rebuilds it around a 14-driver matrix, quad electrostatic super tweeters, dual isobaric dynamic woofers, and a Super-Low Flat Impedance network for more consistent source pairing."
+        "text": "Canary Pro keeps the hybrid Canary identity but rebuilds it around a 14-driver matrix: quad electrostatic super tweeters, dual isobaric dynamic woofers, eight balanced armatures, a 5-way passive crossover, and Super-Low Flat Impedance for consistent source pairing."
       }
     },
     {
@@ -78,15 +106,47 @@
       "name": "What is the driver configuration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The configuration is 2 woofers, 2 low-range drivers, 2 mid-range drivers, 4 mid-high drivers, and 4 electrostatic super tweeters, managed by a 5-way passive crossover."
+        "text": "2 isobaric dynamic woofers, 2 low-range BA, 2 mid-range BA, 4 mid-high BA, and 4 electrostatic super tweeters. The five driver groups are managed by a 5-way passive crossover."
       }
     },
     {
       "@type": "Question",
-      "name": "What does SLFI do?",
+      "name": "What does SLFI do and why does it matter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Super-Low Flat Impedance keeps the monitor close to 7 Ohm across the frequency range, reducing tonal shifts caused by different source output impedances."
+        "text": "Super-Low Flat Impedance reshapes the balanced armature electrical load from inductive toward resistive, holding the monitor near 7 Ohm across the frequency range. This reduces tonal shifts when switching between sources with different output impedances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the isobaric woofer system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two dynamic drivers are arranged in an isobaric (constant-pressure) configuration. This doubles the effective diaphragm area and improves low-end control without increasing the shell size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Canary Pro suitable for stage monitoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Canary Pro is designed for critical listening and professional use. The custom-fit option provides additional isolation and stability for stage work. Final suitability depends on personal fit, isolation needs, and monitoring level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What source is recommended for Canary Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With 106dB sensitivity and a flat 7 Ohm impedance, Canary Pro pairs well with most portable players, dongles, DAPs, and desktop amplifiers. A clean, low-output-impedance source is recommended for lowest noise floor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The universal model ships with SpinFit silicone tips, AAW foam tips, and assorted silicone tips for an immediate fit. Custom-fit monitors are shaped from ear impressions for a personalized seal. Both share the same 14-driver acoustic design."
       }
     },
     {
@@ -94,7 +154,23 @@
       "name": "What comes in the box?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Canary Pro includes a 48 inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty."
+        "text": "Canary Pro includes a 48-inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a 1-year limited warranty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Canary Pro come with a warranty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Canary Pro includes a 1-year limited warranty covering manufacturing defects under normal use. For support, contact AAW Singapore or the authorized dealer where you purchased it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I demo Canary Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Singapore, you can audition Canary Pro at the AAW Office, Zeppelin & Co., JABEN, or AV One. Outside Singapore, AAW works with specialist audio stores across Hong Kong, Japan, China, South Korea, and Thailand. Use the store locator to find the closest listening point."
       }
     }
   ]
@@ -120,7 +196,7 @@
     <div class="cp-hero__copy">
       <p class="cp-kicker">14 Driver Isobaric Electrostatic In-Ear Monitor</p>
       <h1 id="cp-title">Canary Pro</h1>
-      <p class="cp-hero__lead">The familiar Canary shimmer, rebuilt with a denser engine: quad electrostatic super tweeters, dual isobaric woofers, a five-way crossover, and a low, flat impedance curve that keeps the tuning steady from source to source.</p>
+      <p class="cp-hero__lead">The Canary signature, rebuilt around a 14-driver tri-hybrid engine: quad electrostatic super tweeters, dual isobaric woofers, eight balanced armatures, a five-way crossover, and Super-Low Flat Impedance that holds the tuning steady no matter what you plug into.</p>
       <p class="cp-price"><span>Price</span><strong>{{ product.selected_or_first_available_variant.price | money }}</strong></p>
       {% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
       <div class="cp-judge-stars" aria-label="Canary Pro customer rating">
@@ -169,9 +245,9 @@
         <h2>Blue fire, black shell, fast air.</h2>
       </div>
       <div class="cp-prose">
-        <p>Canary Pro takes the original Canary idea and turns up the internal discipline. The faceplate still has the electric, scattered color that made Canary recognizable, but the acoustic design underneath is more exacting.</p>
-        <p>A dual-diaphragm isobaric woofer system gives the low end more displacement without asking the shell to grow. Four electrostatic super tweeters handle the uppermost air and spatial cues. Balanced armatures fill the range between them, with a five-way crossover keeping each group inside its lane.</p>
-        <p>The result is a flagship that feels vivid, quick, and spacious without losing the density that makes instruments feel physical.</p>
+        <p>Canary Pro refines the original Canary formula into a denser, more controlled architecture. The faceplate keeps the electric, fractured-color identity that defined Canary. The acoustic design underneath is tighter and more deliberate.</p>
+        <p>A dual-diaphragm isobaric woofer system moves more air without asking the shell to grow. Four electrostatic super tweeters carry the top octave and spatial cues. Eight balanced armatures fill the range in between, with a five-way crossover keeping each driver group in its lane.</p>
+        <p>The result is a flagship that stays fast, vivid, and layered — without thinning out the weight that keeps instruments believable.</p>
       </div>
     </div>
   </section>
@@ -181,11 +257,11 @@
       <figure class="cp-explosion__media">
         <img src="{{ 'canary-pro-exploded-serial.png' | asset_url }}" alt="Exploded Canary Pro construction render showing driver modules, printed chamber, shell, faceplate, socket, and nozzle" width="2000" height="1453" loading="lazy">
       </figure>
-      <div class="cp-explosion__copy">
-        <p class="cp-kicker">Exploded View</p>
-        <h2 id="cp-explosion-title">A compact hybrid engine</h2>
-        <p>The exploded build shows the logic inside the shell: socket, acoustic chamber, balanced armature arrays, electrostatic modules, isobaric dynamic woofer system, shell, nozzle, and faceplate, all compressed into a wearable enclosure.</p>
-      </div>
+    </div>
+    <div class="cp-wrap cp-explosion__copy">
+      <p class="cp-kicker">Exploded View</p>
+      <h2 id="cp-explosion-title">Fourteen drivers in a wearable shell</h2>
+      <p>The exploded view walks through the signal path: 2-pin socket, acoustic chamber, balanced armature arrays, electrostatic modules, isobaric woofer system, precision shell, stainless nozzle, and the Canary Pro faceplate — all stacked into a monitor that sits comfortably in the ear.</p>
     </div>
   </section>
 
@@ -193,7 +269,7 @@
     <div class="cp-wrap cp-section-head">
       <p class="cp-kicker">Transducer Architecture</p>
       <h2>Fourteen drivers, five bands, one flat load.</h2>
-      <p>Canary Pro is not only a driver-count story. The five-way passive crossover splits the signal by job, while SLFI reshapes the electrical behavior so the monitor does not swing wildly with different players, adapters, and amplifiers.</p>
+      <p>Canary Pro earns its driver count through the division of work. The five-way passive crossover splits the signal by frequency band. SLFI reshapes the electrical load so the monitor stays near 7 Ohm across the audible range — no wild swings when you switch from a dongle to a desktop amp.</p>
     </div>
     <div class="cp-wrap cp-architecture__grid">
       <article class="cp-driver-visual" aria-label="Canary Pro generated driver configuration">
@@ -230,22 +306,22 @@
       <div class="cp-slfi__copy">
         <p class="cp-kicker">Super-Low Flat Impedance</p>
         <h2 id="cp-slfi-title">The tuning stays put.</h2>
-        <p>Many multi-driver IEMs can change tonal balance when the source has a different output impedance. Canary Pro uses SLFI to reshape the balanced armature load from inductive toward resistive, keeping impedance near 7 Ohm across frequency so it behaves more consistently from dongles, DAPs, adapters, and desktop amplifiers.</p>
+        <p>Most multi-driver IEMs shift tonal balance when the source impedance changes. SLFI reshapes the balanced armature load from inductive toward resistive, holding impedance near 7 Ohm across the frequency range. The result is one tuning that stays put — whether you're on a dongle, a DAP, or a full desktop chain.</p>
         <div class="cp-slfi__benefits" aria-label="Listener benefits of SLFI">
           <article>
             <span>01</span>
-            <h3>Less source drift</h3>
-            <p>The bass, midrange, and treble balance is less likely to move around when the same earphone is driven by different players.</p>
+            <h3>Source-to-source consistency</h3>
+            <p>The bass, midrange, and treble balance holds shape when you switch between players, adapters, and amplifiers.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Cleaner handoff</h3>
-            <p>The five-way crossover can divide work between drivers without the electrical load pulling the bands out of shape.</p>
+            <h3>Clean crossover handoff</h3>
+            <p>A stable electrical load lets the five-way crossover divide work between drivers without the bands pulling each other out of shape.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>More repeatable listening</h3>
-            <p>What you hear at a desk, on a portable rig, or at a show stays closer to the intended Canary Pro tuning.</p>
+            <h3>Repeatable listening</h3>
+            <p>What you hear at a desk, on a portable rig, or at a show stays close to the intended Canary Pro tuning.</p>
           </article>
         </div>
       </div>
@@ -278,8 +354,8 @@
       <div class="cp-build__copy">
         <p class="cp-kicker">3D Printed Acoustic System</p>
         <h2>Printed chamber, metal nozzle, tuned path lengths.</h2>
-        <p>The enclosure and dynamic driver acoustic chamber are printed separately, then assembled into a nozzle system that controls path length and pressure. Canary Pro uses that digital workflow to keep the driver matrix consistent from pair to pair.</p>
-        <p>Simulation decides the phasing and placement. Printing turns that geometry into a repeatable acoustic structure. Hand finishing gives the shell its final surface and fit.</p>
+        <p>The enclosure and woofer acoustic chamber are printed separately, then assembled into a nozzle system that controls path length and pressure. The digital workflow keeps the driver matrix consistent from pair to pair.</p>
+        <p>Simulation determines phasing and placement. Printing turns that geometry into a repeatable acoustic structure. Hand finishing gives the shell its final surface and fit.</p>
       </div>
       <figure class="cp-build__photo">
         <img src="{{ 'canary-pro-side-detail.jpg' | asset_url }}" alt="Canary Pro side detail showing the black shell, connector, and iridescent faceplate edge" width="2000" height="1333" loading="lazy">
@@ -292,7 +368,7 @@
       <div>
         <p class="cp-kicker">Signature Faceplate</p>
         <h2>Each pair catches light differently.</h2>
-        <p>Canary Pro's faceplate uses natural pearl with synthesized material, cut and placed by hand. The surface shifts from deep blue to green, gold, and violet as it moves. It is precise enough to feel engineered, but the pattern is never duplicated exactly.</p>
+        <p>Canary Pro's faceplate layers natural pearl with synthesized material, cut and placed by hand. The surface shifts from deep blue through green, gold, and violet as it moves. It is precise enough to read as engineered, but the pattern never repeats.</p>
       </div>
       <figure>
         <img src="{{ 'canary-pro-faceplate-front.jpg' | asset_url }}" alt="Canary Pro pair photographed front-on with blue iridescent faceplates" width="2000" height="1333" loading="lazy">
@@ -314,7 +390,7 @@
       <div>
         <p class="cp-kicker">Canary Identity</p>
         <h2>Singapore color, built for the world.</h2>
-        <p>The Canary Pro artwork folds AAW's Singapore origin into the product story: Merlion, skyline, orchid, tropical water, and canary motifs sit around the monitor like a travel stamp. It is not just decoration. It frames Canary Pro as a Singapore-born flagship made to move from local listening rooms to shows in Tokyo and beyond.</p>
+        <p>The Canary Pro artwork carries AAW's Singapore origin: Merlion, skyline, orchid, tropical water, and canary motifs frame the monitor like a provenance mark. It places Canary Pro as a Singapore-built flagship, designed to move from local listening rooms to stages and meetups worldwide.</p>
       </div>
     </div>
   </section>
@@ -349,7 +425,7 @@
       <div>
         <p class="cp-kicker">Specifications</p>
         <h2>Fast, dense, extended.</h2>
-        <p>Canary Pro is tuned for a vivid presentation: sub-bass control from the isobaric woofer pair, midrange clarity from the balanced armatures, and airy extension from the electrostatic quad.</p>
+        <p>Canary Pro is tuned for a vivid, high-contrast presentation: sub-bass control from the isobaric woofer pair, midrange clarity from the balanced armatures, and airy extension from the electrostatic quad.</p>
       </div>
       <dl class="cp-spec-table">
         <div><dt>Driver count</dt><dd>14 tri-hybrid drivers</dd></div>
@@ -365,6 +441,60 @@
     </div>
   </section>
 
+  <section class="cp-section cp-section--dark cp-brand">
+    <div class="cp-wrap cp-brand__inner">
+      <div class="cp-brand__lead">
+        <p class="cp-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="cp-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="cp-brand__copy">
+        <p>Advanced AcousticWerkes, known as AAW, is a Singapore-based in-ear monitor specialist founded in 2014 by Kevin Wang. From custom IEM work to hybrid, electrostatic, planar, isobaric, and modular-fit designs, AAW works around one principle: every monitor has to prove itself through listening.</p>
+        <p>Canary Pro continues that line with a 14-driver tri-hybrid engine, quad electrostatic super tweeters, dual isobaric woofers, SLFI, and a tuning built to stay consistent from source to source.</p>
+        <a class="cp-btn cp-btn--ghost" href="/pages/about-us">About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section cp-where">
+    <div class="cp-wrap cp-where-head">
+      <div>
+        <p class="cp-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>Advanced AcousticWerkes is based in Singapore. To audition Canary Pro, arrange support, or find a dealer, start with AAW Singapore or one of the listening rooms below.</p>
+    </div>
+    <div class="cp-wrap cp-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin & Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="cp-wrap cp-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore, AAW works with specialist audio stores across Hong Kong, Macau, Japan, China, South Korea, and Thailand, including DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="cp-btn cp-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
   <section class="cp-section cp-faq">
     <div class="cp-wrap cp-faq__grid">
       <div>
@@ -374,19 +504,43 @@
       <div class="cp-faq__list">
         <details open>
           <summary><span>What makes Canary Pro different from the original Canary?</span></summary>
-          <p>Canary Pro keeps the hybrid Canary idea but rebuilds it around a 14-driver matrix, quad electrostatic super tweeters, dual isobaric dynamic woofers, and a Super-Low Flat Impedance network for more consistent source pairing.</p>
+          <p>Canary Pro keeps the hybrid Canary identity but rebuilds it around a 14-driver matrix: quad electrostatic super tweeters, dual isobaric dynamic woofers, eight balanced armatures, a 5-way passive crossover, and Super-Low Flat Impedance for consistent source pairing.</p>
         </details>
         <details>
           <summary><span>What is the driver configuration?</span></summary>
-          <p>2 woofers, 2 low-range drivers, 2 mid-range drivers, 4 mid-high drivers, and 4 electrostatic super tweeters. The five groups are managed by a 5-way passive crossover.</p>
+          <p>2 isobaric dynamic woofers, 2 low-range BA, 2 mid-range BA, 4 mid-high BA, and 4 electrostatic super tweeters. The five driver groups are managed by a 5-way passive crossover.</p>
         </details>
         <details>
-          <summary><span>What does SLFI do?</span></summary>
-          <p>Super-Low Flat Impedance keeps the monitor close to 7 Ohm across the frequency range, reducing tonal shifts caused by different source output impedances.</p>
+          <summary><span>What does SLFI do and why does it matter?</span></summary>
+          <p>Super-Low Flat Impedance reshapes the balanced armature electrical load from inductive toward resistive, holding the monitor near 7 Ohm across the frequency range. This reduces tonal shifts when switching between sources with different output impedances — dongle, DAP, or desktop.</p>
+        </details>
+        <details>
+          <summary><span>What is the isobaric woofer system?</span></summary>
+          <p>Two dynamic drivers are arranged in an isobaric (constant-pressure) configuration. This doubles the effective diaphragm area for better low-end control without increasing the shell size.</p>
+        </details>
+        <details>
+          <summary><span>Is Canary Pro suitable for stage monitoring?</span></summary>
+          <p>Yes. Canary Pro is designed for critical listening and professional use. The custom-fit option provides additional isolation and stability for stage work. Final suitability depends on personal fit, isolation needs, and monitoring level.</p>
+        </details>
+        <details>
+          <summary><span>What source is recommended for Canary Pro?</span></summary>
+          <p>With 106dB sensitivity and a flat 7 Ohm impedance, Canary Pro pairs well with most portable players, dongles, DAPs, and desktop amplifiers. A clean, low-output-impedance source is recommended for lowest noise floor.</p>
+        </details>
+        <details>
+          <summary><span>What is the difference between universal and custom fit?</span></summary>
+          <p>The universal model ships with SpinFit silicone tips, AAW foam tips, and assorted silicone tips for an immediate fit. Custom-fit monitors are shaped from ear impressions for a personalized seal. Both share the same 14-driver acoustic design.</p>
         </details>
         <details>
           <summary><span>What comes in the box?</span></summary>
-          <p>Canary Pro includes a 48 inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a one-year limited warranty.</p>
+          <p>Canary Pro includes a 48-inch Null Audio Lune cable with 4.4mm balanced termination, leather carry case, cleaning tool, owner's club card, SpinFit silicone tips, AAW foam tips, assorted silicone tips, and a 1-year limited warranty.</p>
+        </details>
+        <details>
+          <summary><span>Does Canary Pro come with a warranty?</span></summary>
+          <p>Yes. Canary Pro includes a 1-year limited warranty covering manufacturing defects under normal use. For support, contact AAW Singapore or the authorized dealer where you purchased it.</p>
+        </details>
+        <details>
+          <summary><span>Where can I demo Canary Pro?</span></summary>
+          <p>In Singapore, you can audition Canary Pro at the AAW Office, Zeppelin & Co., JABEN, or AV One. Outside Singapore, AAW works with specialist audio stores across Hong Kong, Japan, China, South Korea, and Thailand. Use the store locator to find the closest listening point.</p>
         </details>
       </div>
     </div>
@@ -434,7 +588,7 @@
   <section class="cp-final">
     <div class="cp-wrap">
       <p class="cp-kicker">Canary Pro</p>
-      <h2>Fourteen drivers, blue-fire faceplates, and a tuning made to stay vivid.</h2>
+      <h2>Fourteen drivers, blue-fire faceplates, one tuning that travels.</h2>
       <form class="cp-actions cp-actions--center" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
         <input type="hidden" name="quantity" value="1">

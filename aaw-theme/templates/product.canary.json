@@ -35,19 +35,43 @@
           "type": "variant",
           "settings": {}
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "pickup_canary": {
+          "type": "pickup",
+          "settings": {}
+        },
         "button": {
           "type": "button",
           "settings": {
             "dynamic_checkout_btn": true,
             "show_recipient_form": false
           }
+        },
+        "complementary_canary": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "social_canary": {
+          "type": "social-icons",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "price",
         "variant_canary",
-        "button"
+        "quantity_selector",
+        "pickup_canary",
+        "button",
+        "complementary_canary",
+        "social_canary"
       ],
       "disabled": true,
       "settings": {
@@ -58,14 +82,14 @@
         "desktop_media_width": "medium",
         "desktop_grid_image_size": "auto",
         "image_zoom": "lightbox",
-        "enable_sticky_cart": false,
+        "enable_sticky_cart": true,
         "thumbnial_on_mobile": false,
         "mobile_grid_image_size": "auto",
         "color_scheme": "",
-        "top_space_desktop": 60,
-        "bottom_space_desktop": 35,
-        "top_space_mobile": 40,
-        "bottom_space_mobile": 40
+        "top_space_desktop": 45,
+        "bottom_space_desktop": 55,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 45
       }
     }
   },

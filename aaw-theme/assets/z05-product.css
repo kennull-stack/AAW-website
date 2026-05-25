@@ -157,3 +157,6 @@
 .z05-judge-stars .jdgm-prev-badge__text{color:#d8d1c7!important;font-size:12px}
 .z05-actions .z05-btn{appearance:none;font:inherit;cursor:pointer}
 @media(max-width:700px){.z05-top-row{align-items:flex-start;flex-direction:column;gap:10px;padding-bottom:10px}.z05-breadcrumb-ui{justify-content:flex-start;flex-wrap:wrap;font-size:10px}.z05-top-row .z05-lang-switch{left:auto;top:auto;transform:none}}
+
+@media(max-width:900px){.z05-hero-media{order:-1}}
+@media(max-width:700px){.z05-top-row{padding-bottom:0}.z05-hero{padding-top:0}.z05-hero-media{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-left:0;border-right:0}.z05-hero-copy{margin-top:-215px;padding:92px 0 0;background:linear-gradient(180deg,rgba(8,8,8,0),rgba(8,8,8,.88) 42%,#080808 82%)}.z05-hero-copy>.z05-eyebrow{color:#e2b768;text-shadow:0 10px 28px rgba(0,0,0,.65)}.z05-hero-copy>.z05-eyebrow,.z05-hero-copy>h1{transform:translateY(-10px)}.z05-hero .z05-dek{margin-top:10px}}
