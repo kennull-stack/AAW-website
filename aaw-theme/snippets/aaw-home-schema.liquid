@@ -1,7 +1,7 @@
 {%- liquid
   assign z_series = collections['z-series']
   assign home_title = 'Advanced AcousticWerkes | Singapore IEM Specialist'
-  assign home_description = 'AAW designs and builds custom and universal in-ear monitors in Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
+  assign home_description = 'AAW designs custom and universal in-ear monitors from Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
   assign site_url = 'https://www.aaw.me'
   assign page_id = canonical_url | append: '#webpage'
   assign z_series_id = canonical_url | append: '#z-series'
@@ -103,11 +103,8 @@
       "brand": {
         "@id": {{ brand_id | json }}
       },
-      "manufacturer": {
-        "@id": {{ org_id | json }}
-      },
       "category": "Custom and universal in-ear monitors",
-      "description": "Advanced AcousticWerkes designs and builds custom and universal in-ear monitors for musicians, audiophiles, and stage users from Singapore.",
+      "description": "Advanced AcousticWerkes designs custom and universal in-ear monitors for musicians, audiophiles, and stage users from Singapore.",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.82",
@@ -447,7 +444,7 @@
           "name": "What does AAW specialize in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Advanced AcousticWerkes specializes in in-ear monitors designed and built in Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work."
+            "text": "Advanced AcousticWerkes specializes in custom and universal in-ear monitors from Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work."
           }
         },
         {
