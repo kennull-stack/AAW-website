@@ -1,5 +1,8 @@
 {%- liquid
   assign z_series = collections['z-series']
+  assign z07_product = all_products['z07-in-ear-monitor']
+  assign z05_product = all_products['z05-auag-launch-edition']
+  assign custom_builder_product = all_products['aaw-custom-builder']
   assign home_title = 'Advanced AcousticWerkes | Singapore IEM Specialist'
   assign home_description = 'AAW designs custom and universal in-ear monitors from Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
   assign site_url = 'https://www.aaw.me'
@@ -105,6 +108,15 @@
       },
       "category": "Custom and universal in-ear monitors",
       "description": "Advanced AcousticWerkes designs custom and universal in-ear monitors for musicians, audiophiles, and stage users from Singapore.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": {{ site_url | json }},
+        "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+        "lowPrice": "199",
+        "highPrice": "1200",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.82",
@@ -229,6 +241,17 @@
       },
       "description": "AAW Z07 is a universal hybrid in-ear monitor with a tube-free acoustic core and FitMorph adaptive fit system.",
       "category": "Universal in-ear monitor",
+      "offers": {
+        "@type": "Offer",
+        "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+        "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+        "price": {{ z07_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+        "availability": "https://schema.org/{% if z07_product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@id": {{ org_id | json }}
+        }
+      },
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -263,7 +286,14 @@
           "item": {
             "@type": "Product",
             "name": "Z07 Hybrid In-Ear Monitor",
-            "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }}
+            "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ z07_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if z07_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
           }
         },
         {
@@ -272,7 +302,14 @@
           "item": {
             "@type": "Product",
             "name": "Z05 AuAg Launch Edition",
-            "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }}
+            "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ z05_product.price_min | default: 19900 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if z05_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
           }
         },
         {
@@ -281,7 +318,14 @@
           "item": {
             "@type": "Service",
             "name": "AAW Custom Monitor Builder",
-            "url": {{ site_url | append: '/products/aaw-custom-builder' | json }}
+            "url": {{ site_url | append: '/products/aaw-custom-builder' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/aaw-custom-builder' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ custom_builder_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if custom_builder_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
           }
         }
       ]
@@ -304,7 +348,18 @@
                 "url": {{ site_url | append: listed_product.url | json }}
                 {%- if listed_product.featured_image != blank -%},
                 "image": {{ listed_product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
-                {%- endif -%}
+                {%- endif -%},
+                "offers": {
+                  "@type": "Offer",
+                  "url": {{ site_url | append: listed_product.url | json }},
+                  "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+                  "price": {{ listed_product.price_min | money_without_currency | remove: ',' | json }},
+                  "availability": "https://schema.org/{% if listed_product.available %}InStock{% else %}OutOfStock{% endif %}",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@id": {{ org_id | json }}
+                  }
+                }
               }
             }{%- unless forloop.last -%},{%- endunless -%}
           {%- endfor -%}
@@ -318,6 +373,7 @@
       "url": {{ canonical_url | json }},
       "telephone": "+65 8731 5476",
       "email": "sales@acousticwerkes.com",
+      "priceRange": "$199 - $1200",
       "hasMap": "https://www.google.com/maps/search/?api=1&query=76%20Playfair%20Rd%20Singapore%20367996",
       "areaServed": {
         "@type": "Country",
@@ -358,6 +414,7 @@
       "@id": {{ site_url | append: '/#dealer-zeppelin' | json }},
       "name": "Zeppelin & Co.",
       "telephone": "+65 9337 9655",
+      "priceRange": "$199 - $1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Rochor Canal Rd, #02-78 Sim Lim Square",
@@ -389,6 +446,7 @@
       "@id": {{ site_url | append: '/#dealer-jaben' | json }},
       "name": "JABEN",
       "telephone": "+65 6337 0809",
+      "priceRange": "$199 - $1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Coleman St, #01-25 The Adelphi",
@@ -414,6 +472,7 @@
       "@id": {{ site_url | append: '/#dealer-av-one' | json }},
       "name": "AV One",
       "telephone": "+65 6337 0080",
+      "priceRange": "$199 - $1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Coleman St, The Adelphi",
@@ -477,6 +536,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "In Singapore, listeners can start at the AAW office at 76 Playfair Rd, #01-03, or audition through Zeppelin & Co., JABEN, and AV One. Outside Singapore, AAW works with authorized specialist audio dealers; use the store locator or contact sales@acousticwerkes.com for the closest listening point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are AAW monitors manufactured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW monitors are designed and tuned from Singapore. Production is handled through AAW's wholly owned lab in Shenzhen, with Singapore-led acoustic reference work, measurement, service, and customer support."
           }
         }
       ]

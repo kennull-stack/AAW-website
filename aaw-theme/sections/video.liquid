@@ -53,6 +53,7 @@
                 {% endif %}
                 allowfullscreen
                 data-autoplay="{{ section.settings.autoplay }}"
+                loading="lazy"
                 title="{{ section.settings.heading | escape }}"
               ></iframe>
             {%- elsif section.settings.video_url.type == 'vimeo' -%}
@@ -63,6 +64,7 @@
                   allow="autoplay; fullscreen encrypted-media"
                 {% endif %}
                 data-autoplay="{{ section.settings.autoplay }}"
+                loading="lazy"
                 allowfullscreen
                 title="{{ section.settings.heading | escape }}"
               ></iframe>
