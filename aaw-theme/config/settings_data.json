@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "enable_preloader": true,
+    "enable_preloader": false,
     "preloader_logo": "shopify://shop_images/AAWLOGOBL.png",
     "enable_preloader_on": "homepage_only",
     "preloader_visibility": "all_time",
