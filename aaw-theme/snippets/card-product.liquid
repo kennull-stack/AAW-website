@@ -294,6 +294,9 @@
           {{ 'products.product.onboarding.title' | t }}
         {% endif %}
       </{% if cProduct != blank %}a{% else %}div{% endif %}>
+      {%- if judgeme_badge and cProduct != blank -%}
+        {% render 'aaw-judgeme-badge', card_product: cProduct, class_name: 'aaw-card-judge-stars' %}
+      {%- endif -%}
       {%- if settings.product_rating -%}
         {% render 'review-rating', product: product, block: block %}
       {%- endif -%}

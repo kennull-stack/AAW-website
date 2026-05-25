@@ -6,6 +6,12 @@
 .aaw-product-judge-stars .jdgm-prev-badge__text{color:#d8d1c7!important;font-size:12px}
 .aaw-rating-fallback{display:inline-flex;align-items:center;gap:8px;color:#d8d1c7;font-size:12px;font-weight:800}
 .aaw-rating-fallback [aria-hidden="true"]{color:#e6b457;letter-spacing:.08em}
+.aaw-card-judge-stars{min-height:18px;margin:8px 0 0;color:#e6b457;font-size:12px;font-weight:800;line-height:1.25}
+.aaw-card-judge-stars .jdgm-preview-badge:empty{display:none}
+.aaw-card-judge-stars .jdgm-preview-badge,.aaw-card-judge-stars .jdgm-prev-badge{display:inline-flex!important;align-items:center;gap:6px;flex-wrap:wrap}
+.aaw-card-judge-stars .jdgm-star{color:#e6b457!important;font-size:12px!important}
+.aaw-card-judge-stars .jdgm-prev-badge__text{color:#7d7567!important;font-size:11px!important;font-weight:800!important}
+.aaw-card-judge-stars .aaw-rating-fallback{font-size:11px}
 .aaw-product-review-shell{background:#060606;color:#f5f2ea}
 .aaw-product-reviews{padding:72px 0}
 .aaw-product-reviews__wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}

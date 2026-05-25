@@ -1,11 +1,13 @@
 {%- liquid
+  assign badge_product = card_product | default: product
   assign badge_class = class_name | default: 'aaw-product-judge-stars'
-  assign badge_label = label | default: product.title | append: ' customer rating'
-  assign jm_badge = product.metafields.judgeme.badge | default: ''
+  assign default_badge_label = badge_product.title | append: ' customer rating'
+  assign badge_label = label | default: default_badge_label
+  assign jm_badge = badge_product.metafields.judgeme.badge | default: ''
 -%}
 
 <div class="{{ badge_class }}" aria-label="{{ badge_label | strip_html | escape }}">
-  <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+  <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ badge_product.id }}" data-auto-install="false">
     {{ jm_badge }}
   </div>
   {%- if jm_badge == blank or jm_badge contains 'No reviews' -%}
