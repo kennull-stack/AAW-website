@@ -69,11 +69,18 @@
         "a85ee93d-3864-4304-9926-0ed6854aa473": {
           "type": "social-icons",
           "settings": {}
+        },
+        "aaw_judgeme_badge": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'aaw-judgeme-badge', class_name: 'aaw-product-judge-stars' %}"
+          }
         }
       },
       "block_order": [
         "title",
         "price",
+        "aaw_judgeme_badge",
         "2080a8e4-2299-470d-950f-b8f8bf3f3668",
         "quantity_selector",
         "145209f6-ad8a-4614-93bf-0c9a973f23a3",
@@ -603,10 +610,25 @@
         "top_space_mobile": 10,
         "bottom_space_mobile": 10
       }
+    },
+    "aaw_judgeme_reviews": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "{% render 'aaw-judgeme-review-widget' %}",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
     }
   },
   "order": [
     "breadcrumb_zcx8ee",
+    "aaw_judgeme_reviews",
     "main",
     "product_details_gLrgBJ",
     "multicolumn_yK8L3k",

@@ -1,4 +1,15 @@
 /* AAW Judge.me global presentation */
+.aaw-product-judge-stars{min-height:20px;margin:10px 0 0;color:#e6b457;font-size:13px;font-weight:800;line-height:1.25}
+.aaw-product-judge-stars .jdgm-preview-badge:empty{display:none}
+.aaw-product-judge-stars .jdgm-preview-badge,.aaw-product-judge-stars .jdgm-prev-badge{display:inline-flex!important;align-items:center;gap:8px;flex-wrap:wrap}
+.aaw-product-judge-stars .jdgm-star{color:#e6b457!important}
+.aaw-product-judge-stars .jdgm-prev-badge__text{color:#d8d1c7!important;font-size:12px}
+.aaw-rating-fallback{display:inline-flex;align-items:center;gap:8px;color:#d8d1c7;font-size:12px;font-weight:800}
+.aaw-rating-fallback [aria-hidden="true"]{color:#e6b457;letter-spacing:.08em}
+.aaw-product-review-shell{background:#060606;color:#f5f2ea}
+.aaw-product-reviews{padding:72px 0}
+.aaw-product-reviews__wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
+.aaw-product-reviews__kicker{margin:0;color:#e2b768;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 .z05-reviews-section{background:#060606;color:#f5f2ea;border-top:1px solid rgba(226,183,104,.2);border-bottom:1px solid rgba(255,255,255,.1)}
 .z05-reviews-head{display:grid;grid-template-columns:minmax(0,.86fr) minmax(320px,.72fr);gap:34px;align-items:end}
 .z05-reviews-head h2{max-width:760px;color:#fff;font-size:clamp(34px,4.6vw,66px)}

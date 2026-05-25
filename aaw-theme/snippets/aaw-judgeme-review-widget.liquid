@@ -1,0 +1,45 @@
+{%- liquid
+  assign heading_text = heading | default: product.title | append: ' listening impressions'
+  assign note_text = note | default: 'Read owner impressions as the Judge.me review archive becomes available.'
+  assign jm_widget = product.metafields.judgeme.widget | default: ''
+-%}
+
+<div class="aaw-product-review-shell">
+  <section id="aaw-product-reviews" class="aaw-product-reviews z05-reviews-section">
+    <div class="aaw-product-reviews__wrap">
+      <div class="z05-reviews-head">
+        <p class="aaw-product-reviews__kicker">Owner Reviews</p>
+        <h2>{{ heading_text | escape }}</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>{{ note_text | escape }}</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {%- if jm_widget != blank -%}
+            {{ jm_widget }}
+          {%- else -%}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.00">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-stars" aria-label="0 out of 5 stars" role="img">
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                    <span class="jdgm-star jdgm--off"></span>
+                  </div>
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+              <div class="jdgm-rev-widg__body">
+                <div class="jdgm-rev-widg__reviews"></div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
