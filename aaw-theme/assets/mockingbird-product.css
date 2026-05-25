@@ -1,0 +1,112 @@
+/* Mockingbird product page, built on the Black Malus product system */
+.mockingbird-product{background:#060607;color:#f5f1ec}
+.mockingbird-product .bm-kicker{color:#d7d7d2}
+.mockingbird-product .bm-story .bm-kicker,
+.mockingbird-product .bm-accessories .bm-kicker{color:#6b5c3a}
+.mockingbird-product .bm-topbar a{color:#ded4c5}
+.mockingbird-product .bm-topbar a:hover{color:#fff}
+.mockingbird-product .bm-hero{grid-template-columns:minmax(310px,.82fr) minmax(470px,1.18fr);padding-bottom:40px}
+.mockingbird-product .bm-hero h1{font-size:clamp(50px,6.7vw,104px)}
+.mockingbird-product .bm-hero__lead{color:#e4ded6}
+.mockingbird-product .bm-hero__media{width:min(680px,100%);aspect-ratio:3/2;background:#0a0a0a}
+.mockingbird-product .bm-hero__media img{object-position:center}
+.mockingbird-product .bm-pill-list li,
+.mockingbird-product .bm-floating-buy,
+.mockingbird-product .bm-spec-table,
+.mockingbird-product .bm-driver-map{border-color:rgba(215,215,210,.34)}
+.mockingbird-product .bm-floating-buy{left:18px;right:auto;top:auto;bottom:22px}
+.mockingbird-product .bm-btn,
+.mockingbird-product .bm-floating-buy a{border-color:#e6e0d6;background:#e6e0d6;color:#070707}
+.mockingbird-product .bm-btn--ghost{background:transparent;color:#f6f1e8}
+.mockingbird-product .bm-price span,
+.mockingbird-product .bm-floating-buy strong,
+.mockingbird-product .bm-driver-map span,
+.mockingbird-product .bm-spec-table dt,
+.mockingbird-product .bm-faq summary:after{color:#cfc8bd}
+.mockingbird-product .bm-stat-band{border-top-color:rgba(215,215,210,.3)}
+.mockingbird-product .bm-section{background:#f1eee9}
+.mockingbird-product .bm-section--dark{background:#060607}
+.mockingbird-product .bm-explosion__frame{min-height:590px;border-color:rgba(255,255,255,.14)}
+.mockingbird-product .bm-explosion__copy{margin-top:392px;padding:28px 20px 42px;background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,.52) 70%,transparent)}
+.mockingbird-product .bm-explosion__copy p:not(.bm-kicker){color:#fff}
+.mockingbird-product .bm-explosion__copy h2{color:#fff}
+.mockingbird-product .bm-accessory-grid article,
+.mockingbird-product .bm-faq details{border-color:#d7d1c6}
+.mockingbird-product .bm-gallery img{object-fit:cover}
+.mockingbird-product .bm-final{border-top-color:rgba(215,215,210,.32)}
+.mockingbird-product .bm-build{padding:46px 0;background:#e7dfd5}
+.mockingbird-product .bm-build__grid{grid-template-columns:minmax(260px,.68fr) minmax(460px,1.32fr);gap:14px 28px;align-items:stretch}
+.mockingbird-product .bm-build__copy{align-self:center}
+.mockingbird-product .bm-build .bm-kicker{margin-bottom:10px;color:#6d747a}
+.mockingbird-product .bm-build h2{font-size:clamp(32px,4.4vw,58px);line-height:.9}
+.mockingbird-product .bm-build__copy p{max-width:480px;margin:12px 0 0;color:#17293a;font-size:15px;line-height:1.48}
+.mockingbird-product .bm-build__photo{height:100%;min-height:318px;max-height:430px;border:1px solid rgba(17,17,17,.14)}
+.mockingbird-product .bm-build__photo img{height:100%;aspect-ratio:auto;object-position:center 78%}
+.mockingbird-product .bm-build__renders{gap:10px;margin-top:2px}
+.mockingbird-product .bm-build__renders img{height:clamp(116px,11vw,150px);aspect-ratio:auto;object-fit:cover;object-position:center;padding:8px}
+.mockingbird-product .bm-brand{padding:78px 0}
+.mockingbird-product .bm-brand__inner{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;align-items:start}
+.mockingbird-product .bm-brand__lead h2{font-size:clamp(34px,5vw,64px);line-height:.95;text-transform:uppercase}
+.mockingbird-product .bm-brand__slogan{margin-top:18px;color:#d7d7d2;font-size:16px;font-weight:900;letter-spacing:.02em}
+.mockingbird-product .bm-brand__copy p{color:#cec7be;font-size:16px;line-height:1.66}
+.mockingbird-product .bm-brand__copy p+p{margin-top:14px}
+.mockingbird-product .bm-brand__copy .bm-btn{margin-top:22px}
+.mockingbird-product .bm-where{background:#f1eee9;color:#1a1612}
+.mockingbird-product .bm-where-head{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;margin-bottom:42px}
+.mockingbird-product .bm-where-head h2{font-size:clamp(34px,5vw,64px);color:#111}
+.mockingbird-product .bm-where-head p:not(.bm-kicker){color:#302a24;font-size:16px;line-height:1.66;align-self:end}
+.mockingbird-product .bm-where .bm-kicker{color:#6b5c3a}
+.mockingbird-product .bm-dealer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(112,86,43,.24);border:1px solid rgba(112,86,43,.24)}
+.mockingbird-product .bm-dealer-grid article{padding:24px;background:#fff}
+.mockingbird-product .bm-dealer-grid .featured{background:#faf7f0}
+.mockingbird-product .bm-dealer-grid span{display:block;color:#9c681a;font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.mockingbird-product .bm-dealer-grid h3{margin:8px 0 10px;color:#111;font-size:18px;line-height:1.1;text-transform:uppercase;font-weight:950}
+.mockingbird-product .bm-dealer-grid p{margin:0;color:#302a24;font-size:13px;line-height:1.55}
+.mockingbird-product .bm-global-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;margin-top:34px;padding:28px;background:#fff;border:1px solid #d6cbbd}
+.mockingbird-product .bm-global-box span{display:block;color:#9c681a;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.mockingbird-product .bm-global-box p{margin:10px 0 0;color:#302a24;font-size:15px;line-height:1.55}
+.mockingbird-switch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(215,215,210,.28);border:1px solid rgba(215,215,210,.32)}
+.mockingbird-switch-grid article{min-height:178px;padding:24px;background:#121212}
+.mockingbird-switch-grid span{display:block;color:#cfc8bd;font-size:12px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.mockingbird-switch-grid h3{margin:13px 0 8px;color:#fff;font-size:24px;line-height:1.04;text-transform:uppercase}
+.mockingbird-switch-grid p{margin:0;color:#d4cec7;font-size:14px;line-height:1.55}
+.mockingbird-image-strip{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:34px}
+.mockingbird-image-strip figure{margin:0;overflow:hidden;background:#080808;border:1px solid rgba(255,255,255,.14)}
+.mockingbird-image-strip img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover}
+.mockingbird-original-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mockingbird-original-grid figure{margin:0;position:relative;min-height:390px;overflow:hidden;background:#070707;border:1px solid rgba(255,255,255,.14)}
+.mockingbird-original-grid img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover;filter:grayscale(.18) contrast(1.05)}
+.mockingbird-original-grid figcaption{position:absolute;left:14px;right:14px;bottom:14px;padding:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.14)}
+.mockingbird-original-grid b{display:block;color:#fff;font-size:13px;line-height:1.2;text-transform:uppercase;letter-spacing:.06em}
+.mockingbird-original-grid span{display:block;margin-top:7px;color:#d8d0c8;font-size:12px;line-height:1.42}
+.mockingbird-product .bm-btn[disabled]{opacity:.55;cursor:not-allowed;filter:none}
+@media(max-width:980px){
+  .mockingbird-product .bm-hero{grid-template-columns:1fr}
+  .mockingbird-switch-grid{grid-template-columns:repeat(2,1fr)}
+  .mockingbird-image-strip,.mockingbird-original-grid{grid-template-columns:1fr}
+  .mockingbird-product .bm-explosion__copy{margin-top:390px;padding:24px 16px 36px}
+  .mockingbird-product .bm-build__grid{grid-template-columns:1fr;gap:14px}
+  .mockingbird-product .bm-build__photo{min-height:300px;max-height:360px}
+  .mockingbird-product .bm-brand__inner{grid-template-columns:1fr;gap:34px}
+  .mockingbird-product .bm-where-head{grid-template-columns:1fr;gap:24px}
+  .mockingbird-product .bm-dealer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .mockingbird-product .bm-hero h1{font-size:clamp(42px,14vw,64px)}
+  .mockingbird-switch-grid{grid-template-columns:1fr}
+  .mockingbird-image-strip img{min-height:260px}
+  .mockingbird-original-grid figure,.mockingbird-original-grid img{min-height:300px}
+  .mockingbird-original-grid figcaption{position:static;margin:10px;background:#090909}
+  .mockingbird-product .bm-explosion__copy{margin-top:312px;padding:20px 14px 30px}
+  .mockingbird-product .bm-build{padding:38px 0}
+  .mockingbird-product .bm-build h2{font-size:clamp(34px,13vw,52px)}
+  .mockingbird-product .bm-build__photo{min-height:260px}
+  .mockingbird-product .bm-build__renders{grid-template-columns:1fr}
+  .mockingbird-product .bm-build__renders img{height:150px;aspect-ratio:auto}
+  .mockingbird-product .bm-stats{grid-template-columns:repeat(2,1fr)}
+  .mockingbird-product .bm-stats article{min-height:106px;padding:18px 16px}
+  .mockingbird-product .bm-stats b{font-size:clamp(24px,7vw,36px)}
+  .mockingbird-product .bm-stats span{font-size:12px;line-height:1.3}
+  .mockingbird-product .bm-dealer-grid{grid-template-columns:1fr}
+  .mockingbird-product .bm-global-box{grid-template-columns:1fr;gap:18px;padding:20px}
+}

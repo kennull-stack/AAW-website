@@ -1,0 +1,572 @@
+{{ 'black-malus-product.css' | asset_url | stylesheet_tag }}
+{{ 'mockingbird-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign product_price = current_variant.price | money %}
+{% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+{% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": "AAW Mockingbird Nine-Driver Hybrid In-Ear Monitor",
+  "image": [
+    {{ 'mockingbird-hero.png' | asset_url | prepend: 'https:' | json }},
+    {{ 'mockingbird-frequency-response-graph.png' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "Mockingbird is a nine-driver hybrid reference in-ear monitor from Singapore-based Advanced AcousticWerkes. Successor to the acclaimed W900. Proprietary tuned dynamic driver, bespoke super tweeter balanced armatures, TrueXross 4-way crossover for phase-coherent hybrid performance. Universal and custom fit.",
+  "sku": {{ current_variant.sku | default: "MOCKINGBIRD" | json }},
+  "mpn": "AAW Mockingbird",
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "designer": {
+    "@type": "Person",
+    "name": "Kevin Wang",
+    "jobTitle": "Founder & Tuning Engineer",
+    "description": "Founder and tuning engineer of Advanced AcousticWerkes, responsible for the acoustic design and tuning of AAW in-ear monitors.",
+    "knowsAbout": ["in-ear monitor tuning", "hybrid IEM design", "balanced armature drivers", "dynamic driver integration", "crossover network design", "custom in-ear monitors", "universal in-ear monitors", "reference IEM tuning"],
+    "worksFor": {"@id": "https://www.aaw.me/#organization"}
+  },
+  "category": "Universal In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "url": "https://www.aaw.me/pages/shipping-return",
+      "applicableCountry": "SG",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "Nine-driver hybrid: proprietary tuned dynamic woofer plus eight balanced armature drivers"},
+    {"@type": "PropertyValue", "name": "Dynamic Woofer", "value": "Proprietary tuned dynamic driver with physical low-pass filter for minimal frequency overlap"},
+    {"@type": "PropertyValue", "name": "Super Tweeter", "value": "Bespoke balanced armature super tweeter drivers developed with world-class BA manufacturer. Sustained SPL to 20kHz, extends to 40kHz"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "TrueXross 4-way crossover network: dedicated woofer, mid, treble, and super tweeter paths"},
+    {"@type": "PropertyValue", "name": "TrueXross Technology", "value": "Eliminates high-order RC crossover networks. Physical low-pass filtering on dynamic driver plus positional arrangement and front acoustic chamber design for improved coherence, minimized phase shift, and optimized arrival timing"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "108dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "15 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "\u22640.5%"},
+    {"@type": "PropertyValue", "name": "Enclosure", "value": "Precision-engineered acoustic chambers with advanced digital modeling"},
+    {"@type": "PropertyValue", "name": "Fit Options", "value": "Universal fit and custom fit"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Mockingbird driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nine-driver hybrid reference monitor. One proprietary tuned dynamic woofer with physical low-pass filter for natural sub-bass. Eight balanced armature drivers including bespoke super tweeters covering mids, treble, and ultra-high frequencies. TrueXross 4-way crossover network."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is TrueXross?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TrueXross is AAW's proprietary approach to solving the classic coherence issue in hybrid earphones. Instead of using high-order RC crossover networks that cause chaotic phase shift and scrambled arrival timing, TrueXross uses a physical low-pass filter on the dynamic driver so it operates in a minimal overlapping frequency range relative to the balanced armature drivers. Combined with precise positional arrangement and front acoustic chamber design, this achieves improved coherence, minimized phase shift, and optimized arrival timing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the bespoke super tweeter drivers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AAW worked with the world's leading balanced armature manufacturer to develop custom super tweeter drivers exclusively for Mockingbird. These bespoke drivers sustain sound pressure level all the way to 20kHz and extend to 40kHz, delivering extended treble and superior detail retrieval that gives Mockingbird its high-end speaker-like performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Mockingbird available as universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Universal-fit units ship with LiquidMorph tips, AAW foam tips, and assorted silicone tips. Custom-fit units are built from ear impressions. Both use the same nine-driver hybrid reference platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sound signature does Mockingbird have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "True reference signature. Powerful yet natural sub-bass that full BA IEMs cannot reproduce. Inherits AAW's highly praised musical imaging, instrument separation, and realistic sound stage. The bespoke super tweeters deliver extended treble and superior detail retrieval. The end result is high-end speaker-like performance in an IEM footprint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "48 inch Null Audio Symphonym Tiburon UPOCC copper detachable cable, wooden AAW carry case, LiquidMorph tips, AAW short-stem foam tips (S/M/L), AAW assorted silicone tips (S/M/L x2). One-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "Mockingbird"}
+  ]
+}
+</script>
+
+<div class="bm-product mockingbird-product">
+  <nav class="bm-topbar bm-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Mockingbird</span>
+  </nav>
+
+  <aside class="bm-floating-buy" aria-label="Mockingbird price and purchase">
+    <span class="bm-floating-buy__label">Mockingbird</span>
+    <strong>{{ product_price }}</strong>
+    {% if current_variant.available %}
+      <a href="/cart/add?id={{ current_variant.id }}&quantity=1">Buy</a>
+    {% else %}
+      <span>Sold out</span>
+    {% endif %}
+  </aside>
+
+  <section class="bm-hero bm-wrap" aria-labelledby="mockingbird-title">
+    <div class="bm-hero__copy">
+      <p class="bm-kicker">Nine-driver hybrid reference in-ear monitor</p>
+      <h1 id="mockingbird-title">Mockingbird</h1>
+      <p class="bm-hero__lead">Successor to the acclaimed W900. Nine drivers across four dedicated frequency bands. Proprietary tuned dynamic woofer for natural sub-bass. Bespoke super tweeter armatures extend to 40kHz. TrueXross 4-way crossover eliminates phase shift for high-end speaker-like coherence. Universal or custom fit.</p>
+      <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
+      <div class="bm-judge-stars" aria-label="Mockingbird customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="bm-rating-fallback" aria-label="Customer review archive">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>Review archive</span>
+          </span>
+        {% endif %}
+      </div>
+      <ul class="bm-pill-list" aria-label="Mockingbird highlights">
+        <li>9-driver hybrid</li>
+        <li>TrueXross crossover</li>
+        <li>Bespoke super tweeter</li>
+        <li>Universal/custom</li>
+      </ul>
+      <form class="bm-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy Mockingbird{% else %}Sold Out{% endif %}</button>
+        <a class="bm-btn bm-btn--ghost" href="#mockingbird-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="bm-hero__media">
+      <img src="{{ 'mockingbird-hero.png' | asset_url }}" alt="AAW Mockingbird nine-driver hybrid reference universal in-ear monitors with detachable cable" width="2000" height="1334" loading="eager">
+    </figure>
+  </section>
+
+  <section class="bm-stat-band" aria-label="Mockingbird specification highlights">
+    <div class="bm-wrap bm-stats">
+      <article><b>9</b><span>Hybrid drivers. Universal or custom fit.</span></article>
+      <article><b>4-way</b><span>TrueXross crossover network.</span></article>
+      <article><b>10Hz-40kHz</b><span>Frequency response with bespoke super tweeters.</span></article>
+      <article><b>15 Ohm</b><span>Impedance. Drives from any source.</span></article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-story">
+    <div class="bm-wrap bm-story__grid">
+      <div>
+        <p class="bm-kicker">Design Story</p>
+        <h2>Successor to the W900. Reference, redefined.</h2>
+      </div>
+      <div class="bm-prose">
+        <p>Mockingbird is the successor to AAW's acclaimed W900 and represents the summit of our ideology: fusing the best traits of dynamic and balanced armature drivers into a single coherent stage. Instead of using high-order RC crossover networks that introduce chaotic phase shift and scrambled arrival timing, AAW developed TrueXross — a completely new approach to solving the classic coherence issue in hybrid earphones.</p>
+        <p>The dynamic driver is proprietary tuned at the diaphragm level. A physical low-pass filter further restricts it to a minimal overlapping frequency range relative to the balanced armature drivers. Combined with precise positional arrangement and front acoustic chamber design, the result is improved coherence, minimized phase shift, and optimized arrival timing across the entire spectrum.</p>
+        <p>Built as true reference equipment: powerful yet natural sub-bass you will never find in a full balanced armature IEM, inherited AAW musical imaging and instrument separation, and a realistic sound stage stepped up with extended treble and superior detail retrieval. Same driver platform, same TrueXross crossover — universal or custom.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Fitment Options</p>
+      <h2>Available in universal and custom fit.</h2>
+      <p>Universal fit ships with LiquidMorph tips, AAW foam tips, and assorted silicone tips. Custom fit is built from ear impressions. Both use the same nine-driver hybrid reference platform.</p>
+    </div>
+    <div class="bm-wrap mockingbird-original-grid">
+      <figure>
+        <img src="{{ 'mockingbird-universal.png' | asset_url }}" alt="AAW Mockingbird universal in-ear monitors with detachable cable" width="2000" height="1334" loading="lazy">
+        <figcaption><b>Universal fit</b><span>Ships with LiquidMorph and foam tips. Stable seal, quick sizing, daily handling.</span></figcaption>
+      </figure>
+      <figure>
+        <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors showing personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+        <figcaption><b>Custom fit</b><span>Built from ear impressions. Personalized shell, stronger isolation.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark" id="mockingbird-architecture">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Acoustic Architecture</p>
+      <h2>TrueXross crossover. No chaotic phase shift. One coherent stage.</h2>
+      <p>Traditional high-order RC crossover networks create phase shift and scrambled arrival timing in hybrid earphones. TrueXross eliminates this — the dynamic driver uses a physical low-pass filter so it operates in a minimal overlapping range versus the armatures. Precise positional arrangement and front acoustic chamber design then align the wavefronts. Mockingbird uses a 4-way crossover network with dedicated woofer, mid, treble, and super tweeter paths. The bespoke super tweeter armatures — developed with the world's leading BA manufacturer — sustain sound pressure to 20kHz and extend to 40kHz.</p>
+    </div>
+    <div class="bm-wrap" style="display:flex;flex-direction:column;gap:0;margin-top:18px">
+      <div style="display:flex;align-items:center;justify-content:center;padding:24px 32px;background:#0e0e0f;border:1px solid rgba(215,215,210,.18);border-bottom:0">
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 32px;background:#1a1a1c;border:1px solid rgba(255,255,255,.12);border-radius:6px">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#cfc8bd" stroke-width="1.6"/><polyline points="8,12 11,15 16,9" stroke="#cfc8bd" stroke-width="1.8" fill="none"/></svg>
+          <span style="color:#d4cec7;font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase">Mockingbird Driver Configuration</span>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;padding:18px;background:linear-gradient(180deg,#0e0e0f,#141415);border-left:1px solid rgba(215,215,210,.18);border-right:1px solid rgba(215,215,210,.18)">
+        <div style="display:flex;align-items:center;gap:12px;padding:16px 36px;background:#1a1118;border:1px solid rgba(200,120,180,.28);border-radius:8px">
+          <span style="color:#e8b4d6;font-size:14px;font-weight:950;letter-spacing:.08em;text-transform:uppercase">TrueXross 4-Way Crossover</span>
+          <span style="color:#cfb8c5;font-size:12px">Physical LP filter · Phase-aligned · No RC network</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(215,215,210,.12);border:1px solid rgba(215,215,210,.18)">
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:32px 18px 24px;background:#0e0e0f;text-align:center;gap:18px">
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+            <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#3a2a18,#1a0f04);border:2px solid #8b6914;display:flex;align-items:center;justify-content:center;box-shadow:0 0 18px rgba(180,140,60,.18)">
+              <span style="color:#d4a843;font-size:11px;font-weight:950">DD</span>
+            </div>
+          </div>
+          <div>
+            <span style="display:block;color:#8b6914;font-size:10px;font-weight:950;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">Band 1</span>
+            <h3 style="color:#fff;font-size:18px;margin:0 0 6px;text-transform:uppercase;letter-spacing:.02em">Woofer</h3>
+            <p style="color:#9e9486;font-size:12px;line-height:1.45;margin:0">Proprietary tuned dynamic driver with physical low-pass filter</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;background:#1a1208;border:1px solid rgba(140,105,20,.2);border-radius:20px">
+            <span style="color:#d4a843;font-size:20px;font-weight:950;line-height:1">1</span>
+            <span style="color:#9e9486;font-size:10px;line-height:1.2">× dynamic<br>driver</span>
+          </div>
+          <span style="color:#6b5c3a;font-size:10px;font-weight:700;letter-spacing:.06em">10Hz – 400Hz</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:32px 18px 24px;background:#111113;text-align:center;gap:18px">
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#1a2a3a,#0a1620);border:2px solid #4a7a9a;box-shadow:0 0 12px rgba(70,130,180,.14)"></div>
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#1a2a3a,#0a1620);border:2px solid #4a7a9a;box-shadow:0 0 12px rgba(70,130,180,.14)"></div>
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#1a2a3a,#0a1620);border:2px solid #4a7a9a;box-shadow:0 0 12px rgba(70,130,180,.14)"></div>
+          </div>
+          <div>
+            <span style="display:block;color:#4a7a9a;font-size:10px;font-weight:950;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">Band 2</span>
+            <h3 style="color:#fff;font-size:18px;margin:0 0 6px;text-transform:uppercase;letter-spacing:.02em">Mid</h3>
+            <p style="color:#9e9486;font-size:12px;line-height:1.45;margin:0">Balanced armatures for vocal presence and instrumental body</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;background:#0a1620;border:1px solid rgba(70,130,180,.2);border-radius:20px">
+            <span style="color:#6a9cc4;font-size:20px;font-weight:950;line-height:1">3</span>
+            <span style="color:#9e9486;font-size:10px;line-height:1.2">× BA<br>drivers</span>
+          </div>
+          <span style="color:#3a5a6a;font-size:10px;font-weight:700;letter-spacing:.06em">400Hz – 3kHz</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:32px 18px 24px;background:#111113;text-align:center;gap:18px">
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#2a1a2a,#160a16);border:2px solid #8a4a9a;box-shadow:0 0 12px rgba(140,70,160,.14)"></div>
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#2a1a2a,#160a16);border:2px solid #8a4a9a;box-shadow:0 0 12px rgba(140,70,160,.14)"></div>
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#2a1a2a,#160a16);border:2px solid #8a4a9a;box-shadow:0 0 12px rgba(140,70,160,.14)"></div>
+          </div>
+          <div>
+            <span style="display:block;color:#8a4a9a;font-size:10px;font-weight:950;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">Band 3</span>
+            <h3 style="color:#fff;font-size:18px;margin:0 0 6px;text-transform:uppercase;letter-spacing:.02em">Treble</h3>
+            <p style="color:#9e9486;font-size:12px;line-height:1.45;margin:0">Precision armatures for upper-mid articulation and air</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;background:#160a16;border:1px solid rgba(140,70,160,.2);border-radius:20px">
+            <span style="color:#b47ac6;font-size:20px;font-weight:950;line-height:1">3</span>
+            <span style="color:#9e9486;font-size:10px;line-height:1.2">× BA<br>drivers</span>
+          </div>
+          <span style="color:#5a2a5a;font-size:10px;font-weight:700;letter-spacing:.06em">3kHz – 8kHz</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:32px 18px 24px;background:#0f0f13;text-align:center;gap:18px">
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#2a1a1a,#160a0a);border:2px solid #c4604a;box-shadow:0 0 14px rgba(200,100,70,.18)"></div>
+            <div style="width:28px;height:52px;border-radius:6px;background:linear-gradient(180deg,#2a1a1a,#160a0a);border:2px solid #c4604a;box-shadow:0 0 14px rgba(200,100,70,.18)"></div>
+          </div>
+          <div>
+            <span style="display:block;color:#c4604a;font-size:10px;font-weight:950;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">Band 4</span>
+            <h3 style="color:#fff;font-size:18px;margin:0 0 6px;text-transform:uppercase;letter-spacing:.02em">Super Tweeter</h3>
+            <p style="color:#9e9486;font-size:12px;line-height:1.45;margin:0">Bespoke BA developed with world-leading manufacturer</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;background:#1a0a08;border:1px solid rgba(200,100,70,.2);border-radius:20px">
+            <span style="color:#d47860;font-size:20px;font-weight:950;line-height:1">2</span>
+            <span style="color:#9e9486;font-size:10px;line-height:1.2">× BA<br>drivers</span>
+          </div>
+          <span style="color:#6a2a1a;font-size:10px;font-weight:700;letter-spacing:.06em">8kHz – 40kHz</span>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;padding:24px 32px;background:#0e0e0f;border:1px solid rgba(215,215,210,.18);border-top:0">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 28px;background:#141112;border:1px solid rgba(230,180,87,.22);border-radius:20px">
+          <span style="color:#e6b457;font-size:22px;font-weight:950;line-height:1">9</span>
+          <span style="color:#d4cec7;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase">Drivers · 4 Bands · 1 Coherent Stage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Sound Signature &amp; Frequency Response</p>
+      <h2>Reference performance. Measured and verified.</h2>
+      <p>Mockingbird is tuned as true reference equipment. The frequency response is the result of TrueXross 4-way crossover tuning — proprietary dynamic woofer delivers natural sub-bass extension, and the bespoke super tweeters sustain output past 20kHz. Every driver band is shaped for phase coherence, not just amplitude. The end result is high-end speaker-like performance condensed into the tiny footprint of an IEM.</p>
+    </div>
+    <div class="bm-wrap mockingbird-switch-grid" aria-label="Mockingbird sound characteristics">
+      <article><span>Low</span><h3>Natural sub-bass</h3><p>Proprietary tuned dynamic woofer delivers powerful yet natural low-end you will never find in a full BA IEM. Physical low-pass filter keeps it clean and phase-coherent.</p></article>
+      <article><span>Mid</span><h3>Acclaimed imaging</h3><p>Inherits AAW's highly praised musical imaging and instrument separation. Vocals and instruments sit in a realistic, layered sound stage with precise positioning.</p></article>
+      <article><span>High</span><h3>Extended treble</h3><p>Bespoke super tweeters sustain SPL to 20kHz and extend to 40kHz. Superior detail retrieval without fatigue. Cymbal air, string harmonics, room cues — all present and natural.</p></article>
+      <article><span>Stage</span><h3>Speaker-like coherence</h3><p>TrueXross eliminates phase shift and scrambled timing. Wide stage, accurate positioning, layered depth. Nine drivers performing as one coherent source.</p></article>
+    </div>
+    <div class="bm-wrap" style="margin-top:34px">
+      <figure style="margin:0;background:#0a0a0a;border:1px solid rgba(255,255,255,.14);overflow:hidden">
+        <img src="{{ 'mockingbird-frequency-response-graph.png' | asset_url }}" alt="AAW Mockingbird frequency response measurement graph showing TrueXross 4-way crossover tuning with extended treble to 40kHz" width="2000" height="1100" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="padding:18px 24px;color:#d4cec7;font-size:14px;line-height:1.5">TrueXross 4-way frequency response. The proprietary dynamic woofer handles the low end with a physical low-pass filter to minimize overlap. The bespoke super tweeters extend treble to 40kHz. Every band is shaped for phase coherence at the crossover points.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-accessories">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Cabling and Accessories</p>
+      <h2>The everyday kit.</h2>
+    </div>
+    <div class="bm-wrap bm-accessory-grid">
+      <article>
+        <img src="{{ 'mockingbird-tiburon-cable.png' | asset_url }}" alt="Null Audio Symphonym Tiburon UPOCC copper braided cable with 2-pin connector" width="2000" height="1334" loading="lazy">
+        <div><span>01</span><h3>Symphonym Tiburon cable</h3><p>48 inch Null Audio Symphonym Tiburon UPOCC copper cable. Low microphonics. Detachable 2-pin connector.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        <div><span>02</span><h3>LiquidMorph tips</h3><p>Silicone tips with a teal inner bore. Keeps the dynamic woofer sealed for consistent bass and center image.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph ear tip accessory tray with multiple sizes" width="2048" height="2048" loading="lazy">
+        <div><span>03</span><h3>Size tray</h3><p>Multiple sizes in one tray. Faster fit checks before a show or session.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW branded wooden carry case with secure zip closure" width="2000" height="1334" loading="lazy">
+        <div><span>04</span><h3>Wooden carry case</h3><p>AAW branded semi-rigid wooden case. Protects your Mockingbird monitors on the go with a secure zip closure.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-specs">
+    <div class="bm-wrap bm-specs__grid">
+      <div>
+        <p class="bm-kicker">Specifications</p>
+        <h2>Nine-driver hybrid reference numbers.</h2>
+        <p>Proprietary dynamic woofer. Eight armatures including bespoke super tweeters. TrueXross 4-way crossover. 10Hz to 40kHz. 15 Ohm.</p>
+      </div>
+      <dl class="bm-spec-table">
+        <div><dt>Driver Count</dt><dd>Nine</dd></div>
+        <div><dt>Crossover</dt><dd>4 Way</dd></div>
+        <div><dt>Sensitivity</dt><dd>108dB</dd></div>
+        <div><dt>Impedance</dt><dd>15Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;0.5%</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-faq">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">FAQ</p>
+      <h2>Before you choose Mockingbird</h2>
+    </div>
+    <div class="bm-wrap" style="max-width:820px;margin:0 auto">
+      <div class="bm-faq__list">
+        <details>
+          <summary><span>What is the Mockingbird driver configuration?</span></summary>
+          <p>Nine-driver hybrid reference monitor. One proprietary tuned dynamic woofer with physical low-pass filter for natural sub-bass. Eight balanced armature drivers including bespoke super tweeters covering mids, treble, and ultra-high frequencies. TrueXross 4-way crossover network.</p>
+        </details>
+        <details>
+          <summary><span>What is TrueXross?</span></summary>
+          <p>TrueXross is AAW's proprietary approach to solving the classic coherence issue in hybrid earphones. Instead of using high-order RC crossover networks that cause chaotic phase shift and scrambled arrival timing, TrueXross uses a physical low-pass filter on the dynamic driver so it operates in a minimal overlapping frequency range relative to the balanced armature drivers. Combined with precise positional arrangement and front acoustic chamber design, this achieves improved coherence, minimized phase shift, and optimized arrival timing.</p>
+        </details>
+        <details>
+          <summary><span>What are the bespoke super tweeter drivers?</span></summary>
+          <p>AAW worked with the world's leading balanced armature manufacturer to develop custom super tweeter drivers exclusively for Mockingbird. These bespoke drivers sustain sound pressure level all the way to 20kHz and extend to 40kHz, delivering extended treble and superior detail retrieval that gives Mockingbird its high-end speaker-like performance.</p>
+        </details>
+        <details>
+          <summary><span>Is Mockingbird available as universal and custom fit?</span></summary>
+          <p>Yes. Universal-fit units ship with LiquidMorph tips, AAW foam tips, and assorted silicone tips. Custom-fit units are built from ear impressions. Both use the same nine-driver hybrid reference platform.</p>
+        </details>
+        <details>
+          <summary><span>What sound signature does Mockingbird have?</span></summary>
+          <p>True reference signature. Powerful yet natural sub-bass that full BA IEMs cannot reproduce. Inherits AAW's highly praised musical imaging, instrument separation, and realistic sound stage. The bespoke super tweeters deliver extended treble and superior detail retrieval. The end result is high-end speaker-like performance in an IEM footprint.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>48 inch Null Audio Symphonym Tiburon UPOCC copper detachable cable, wooden AAW carry case, LiquidMorph tips, AAW short-stem foam tips (S/M/L), AAW assorted silicone tips (S/M/L x2). One-year limited warranty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="mockingbird-reviews" class="bm-section bm-section--dark z05-reviews-section">
+    <div class="bm-wrap">
+      <div class="z05-reviews-head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>Mockingbird listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.0">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-brand">
+    <div class="bm-wrap bm-brand__inner">
+      <div class="bm-brand__lead">
+        <p class="bm-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="bm-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="bm-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) is a Singapore-based IEM manufacturer founded in 2014 by Kevin Wang. AAW designs and builds custom and universal in-ear monitors across dynamic, balanced armature, electrostatic, planar, and hybrid platforms.</p>
+        <p>Mockingbird is the successor to the acclaimed W900 and represents AAW's nine-driver hybrid reference flagship: proprietary tuned dynamic woofer, bespoke super tweeter armatures, TrueXross 4-way crossover, and precision-engineered acoustic chambers. High-end speaker-like performance — universal or custom.</p>
+        <a class="bm-btn bm-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-where">
+    <div class="bm-wrap bm-where-head">
+      <div>
+        <p class="bm-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="bm-wrap bm-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin & Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="bm-wrap bm-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="bm-btn bm-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="bm-final">
+    <div class="bm-wrap">
+      <p class="bm-kicker">Mockingbird</p>
+      <h2>Successor to the W900. Reference, redefined.</h2>
+      <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy Mockingbird{% else %}Sold Out{% endif %}</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Mockingbird product",
+  "tag": "section",
+  "class": "mockingbird-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mockingbird product"
+    }
+  ]
+}
+{% endschema %}
