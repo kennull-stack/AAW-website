@@ -249,10 +249,10 @@
   },
   "order": [
     "breadcrumb_KTdV6x",
-    "aaw_judgeme_reviews",
     "main",
     "product_details_gLrgBJ",
     "marquee_MYAzcg",
-    "related-products"
+    "related-products",
+    "aaw_judgeme_reviews"
   ]
 }

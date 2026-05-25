@@ -628,13 +628,13 @@
   },
   "order": [
     "breadcrumb_N4d4az",
-    "aaw_judgeme_reviews",
     "main",
     "product_details_gLrgBJ",
     "multicolumn_yK8L3k",
     "images_carousel_GJGRBh",
     "marquee_MYAzcg",
     "related-products",
-    "media_grid_pY8YBi"
+    "media_grid_pY8YBi",
+    "aaw_judgeme_reviews"
   ]
 }
