@@ -16,12 +16,12 @@
       "blocks": {
         "6d70f3eb-3b40-48e6-b256-a3a8fb0d06f1": {
           "type": "announcement",
-          "disabled": true,
+          "disabled": false,
           "settings": {
-            "announcement_text": "Announcement text here",
-            "background_color": "#ffffff",
-            "text_color": "#000000",
-            "link_color": "#a60c0c"
+            "announcement_text": "Worldwide shipping &ndash; free local pickup at 76 Playfair Rd",
+            "background_color": "#a60c0c",
+            "text_color": "#ffffff",
+            "link_color": "#f2f2f2"
           }
         },
         "c0f5b017-a1df-4b2b-8c87-536db035d7a8": {

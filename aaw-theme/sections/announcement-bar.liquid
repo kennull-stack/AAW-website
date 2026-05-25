@@ -98,37 +98,7 @@
       }
     </style>
 
-    <script>
-      function announementHeight() {
-        let scrollTop = window.scrollY;
-        let announcementSection = document.querySelector('.announcement-bar');
-        if (!announcementSection) return false;
-        setTimeout(() => {
-          let annoucementHeight = announcementSection.offsetHeight;
-          if (scrollTop > annoucementHeight) {
-            document.querySelector('body').style.setProperty('--dynamic-announcement-height', `0px`);
-          } else {
-            let annouceHeight = Math.max(annoucementHeight - scrollTop, 0);
-            document.querySelector('body').style.setProperty('--dynamic-announcement-height', `${annouceHeight}px`);
-          }
-        }, 500);
-        window.addEventListener('scroll', function () {
-          setTimeout(() => {
-            let annoucementHeight = announcementSection.offsetHeight;
-            if (scrollTop > annoucementHeight) {
-              document.querySelector('body').style.setProperty('--dynamic-announcement-height', `0px`);
-            } else {
-              let annouceHeight = Math.max(annoucementHeight - scrollTop, 0);
-              document.querySelector('body').style.setProperty('--dynamic-announcement-height', `${annouceHeight}px`);
-            }
-          }, 200);
-          scrollTop = window.scrollY;
-        });
-      }
-      window.addEventListener('resize', announementHeight, false);
-      document.addEventListener('DOMContentLoaded', announementHeight, false);
-      document.addEventListener('shopify:section:load', announementHeight, false);
-    </script>
+    <script src="{{ 'announcement-height.js' | asset_url }}" defer></script>
   {% endif %}
 {% endif %}
 {% schema %}
