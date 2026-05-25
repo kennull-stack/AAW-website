@@ -23,7 +23,11 @@
 .jdgm-review-widget .jdgm-histogram__bar-content{background:#e2b768!important}
 .jdgm-review-widget .jdgm-rev{border-top:1px solid rgba(255,255,255,.12)!important}
 .jdgm-review-widget .jdgm-rev__author,.jdgm-review-widget .jdgm-rev__title{color:#fff!important}
-.jdgm-review-widget .jdgm-rev__body,.jdgm-review-widget .jdgm-rev__content,.jdgm-review-widget .jdgm-rev__buyer-badge-wrapper{color:#d8d1c7!important}
+.jdgm-review-widget .jdgm-rev__body,.jdgm-review-widget .jdgm-rev__body p,.jdgm-review-widget .jdgm-rev__body span,.jdgm-review-widget .jdgm-rev__content,.jdgm-review-widget .jdgm-rev__content p,.jdgm-review-widget .jdgm-rev__content span,.jdgm-review-widget .jdgm-rev__buyer-badge-wrapper{color:#ede8dc!important;opacity:1!important}
+.jdgm-review-widget .jdgm-rev__body,.jdgm-review-widget .jdgm-rev__content{font-size:15px!important;line-height:1.62!important}
+.jdgm-review-widget .jdgm-rev__buyer-badge,.jdgm-review-widget .jdgm-verified-badge,.jdgm-review-widget .jdgm-row-profile{color:#cfc7b8!important;opacity:1!important}
+.jdgm-review-widget .jdgm-rev__icon{background:#26221b!important;color:#e2b768!important;border:1px solid rgba(226,183,104,.34)!important}
+.jdgm-review-widget .jdgm-rev__pics,.jdgm-review-widget .jdgm-rev__reply,.jdgm-review-widget .jdgm-row-extra{color:#cfc7b8!important;opacity:1!important}
 .jdgm-review-widget .jdgm-write-rev-link,.jdgm-review-widget .jdgm-btn{border-color:#e2b768!important;background:#e2b768!important;color:#080808!important;border-radius:0!important;font-weight:900!important;text-transform:uppercase!important;letter-spacing:.08em!important}
 .jdgm-review-widget .jdgm-sort-dropdown,.jdgm-review-widget .jdgm-sort-dropdown-wrapper{background:#0e0e0e!important;color:#f5f2ea!important;border-color:rgba(226,183,104,.36)!important}
 .jdgm-review-widget .jdgm-rev__timestamp,.jdgm-review-widget .jdgm-rev__timestamp--created,.jdgm-review-widget .jdgm-rev__timestamp--published,.jdgm-review-widget .jdgm-rev__date,.jdgm-review-widget [class*="timestamp"]{display:none!important}
