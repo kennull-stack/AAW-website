@@ -35,7 +35,7 @@
     {{ 'm20-exploded-view.png' | asset_url | prepend: 'https:' | json }},
     {{ 'm20-gallery-4.jpg' | asset_url | prepend: 'https:' | json }}
   ],
-  "description": "AAW M20 is a revived dual balanced-armature in-ear monitor using a large-format bass armature woofer, AAW proprietary NOVA nozzle-less open vented armature driver, 2-way passive crossover, 3D-printed acoustic chamber, and Electroless Immersion Gold faceplate.",
+  "description": "AAW M20 is a revived dual balanced-armature in-ear monitor using a large-format bass armature woofer, AAW proprietary NOVA nozzle-less open vented armature driver, 2-way passive crossover, 3D-printed acoustic chamber, Electroless Immersion Gold faceplate, and universal or custom fit options.",
   "sku": {{ current_variant.sku | default: "M20" | json }},
   "mpn": "AAW M20",
   "brand": {"@id": "https://www.aaw.me/#organization"},
@@ -57,6 +57,7 @@
     {"@type": "PropertyValue", "name": "Impedance", "value": "106 Ohm"},
     {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
     {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<0.5%"},
+    {"@type": "PropertyValue", "name": "Fit Options", "value": "Universal fit and custom fit"},
     {"@type": "PropertyValue", "name": "Warranty", "value": "2-year limited warranty"}
   ]
 }
@@ -89,6 +90,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "M20 uses an Electroless Immersion Gold process to create a compact blue-and-gold honeycomb faceplate with high detail across a very small surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is M20 available in universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. M20 is offered as a universal-fit in-ear monitor with assorted ear tips and as a custom-fit monitor built from ear impressions. Specifications and internal parts for custom versions may differ slightly to accommodate the custom housing."
       }
     },
     {
@@ -136,9 +145,9 @@
 
   <section class="bm-hero bm-wrap" aria-labelledby="m20-title">
     <div class="bm-hero__copy">
-      <p class="bm-kicker">Dual armature universal in-ear monitor</p>
+      <p class="bm-kicker">Dual armature in-ear monitor</p>
       <h1 id="m20-title">M20</h1>
-      <p class="bm-hero__lead">A modern revival of one of AAW's earliest models. M20 pairs a large-format bass armature woofer with AAW's proprietary NOVA nozzle-less open vented armature driver, then shapes them through a 2-way passive crossover and precision 3D-printed acoustic chamber.</p>
+      <p class="bm-hero__lead">A modern revival of one of AAW's earliest models. M20 pairs a large-format bass armature woofer with AAW's proprietary NOVA nozzle-less open vented armature driver, then shapes them through a 2-way passive crossover and precision 3D-printed acoustic chamber. Available in universal or custom fit.</p>
       <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
       <div class="bm-judge-stars" aria-label="M20 customer rating">
         <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
@@ -155,7 +164,7 @@
         <li>Dual BA design</li>
         <li>NOVA driver</li>
         <li>2-way crossover</li>
-        <li>106 Ohm</li>
+        <li>Universal / custom</li>
       </ul>
       <form class="bm-actions" method="post" action="/cart/add" enctype="multipart/form-data">
         <input type="hidden" name="id" value="{{ current_variant.id }}">
@@ -189,6 +198,38 @@
         <p>This is not a race to add more drivers. M20 is about using a simple dual-armature architecture well: a large and fast bass armature woofer moves air with depth and layering, while the NOVA driver brings full-bodied vocal presence and fine ambience detail.</p>
         <p>The result is a monitor designed for band performances, performing artists, worship events, audio engineering, and listeners who want an immersive, source-revealing experience without an oversized driver count.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark m20-fitment" aria-labelledby="m20-fitment-title">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Fitment Options</p>
+      <h2 id="m20-fitment-title">Choose universal convenience or custom isolation.</h2>
+      <p>M20 is available as a universal-fit monitor with an ear tip kit or as a custom-fit monitor built from ear impressions. Both keep the compact dual-armature M20 concept, with custom units adjusted for the impression-built shell.</p>
+    </div>
+    <div class="bm-wrap m20-fitment-grid">
+      <article class="m20-fitment-card{% if product.handle == 'm20-universal-in-ear-monitor' %} is-active{% endif %}">
+        <a href="/products/m20-universal-in-ear-monitor" aria-label="View M20 universal fit">
+          <img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 universal-fit monitors with detachable cable" width="2000" height="1333" loading="lazy">
+          <div>
+            <span>Universal fit</span>
+            <h3>Ready-to-wear M20</h3>
+            <p>Ships with assorted ear tips and a size tray for quick seal checks, everyday handling, and easy sharing between listening setups.</p>
+            <b>{% if product.handle == 'm20-universal-in-ear-monitor' %}Current selection{% else %}View universal{% endif %}</b>
+          </div>
+        </a>
+      </article>
+      <article class="m20-fitment-card{% if product.handle == 'm20-custom-in-ear-monitor' %} is-active{% endif %}">
+        <a href="/products/m20-custom-in-ear-monitor" aria-label="View M20 custom fit">
+          <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors with personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+          <div>
+            <span>Custom fit</span>
+            <h3>Built from impressions</h3>
+            <p>Made from ear impressions for a personal seal, stronger passive isolation, and a monitor shape matched to long sessions.</p>
+            <b>{% if product.handle == 'm20-custom-in-ear-monitor' %}Current selection{% else %}View custom{% endif %}</b>
+          </div>
+        </a>
+      </article>
     </div>
   </section>
 
@@ -260,6 +301,7 @@
           <article><span>Frequency Response</span><strong>10Hz - 40kHz</strong></article>
           <article><span>Total Harmonic Distortion</span><strong>&lt;0.5%</strong></article>
           <article><span>Driver Count</span><strong>2 balanced armatures</strong></article>
+          <article><span>Fit Options</span><strong>Universal / custom</strong></article>
           <article><span>Warranty</span><strong>2-year limited</strong></article>
         </div>
       </div>
@@ -339,6 +381,7 @@
         <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
         <div><dt>Distortion</dt><dd>&lt;0.5%</dd></div>
         <div><dt>Acoustic Output</dt><dd>Dual bore design</dd></div>
+        <div><dt>Fit Options</dt><dd>Universal / custom</dd></div>
         <div><dt>Warranty</dt><dd>2-year limited</dd></div>
       </dl>
     </div>
@@ -364,8 +407,8 @@
           <p>NOVA is embedded deep into the 3D-printed nozzle. Its proximity to the eardrum helps reduce sound pressure decay and unwanted resonance from a typical tubed balanced-armature design.</p>
         </details>
         <details>
-          <summary><span>Is the custom version identical?</span></summary>
-          <p>Specifications and internal parts for custom versions may differ slightly to accommodate the change from universal to custom housings.</p>
+          <summary><span>Is M20 available in universal and custom fit?</span></summary>
+          <p>Yes. Universal fit ships with assorted ear tips and a size tray. Custom fit is built from ear impressions for a personal seal and stronger isolation. Specifications and internal parts for custom versions may differ slightly to accommodate the custom housing.</p>
         </details>
         <details>
           <summary><span>What comes in the box?</span></summary>

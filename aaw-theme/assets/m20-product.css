@@ -112,6 +112,16 @@
 .m20-switch-grid span{display:block;color:#cfdce7;font-size:12px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
 .m20-switch-grid h3{margin:13px 0 8px;color:#fff;font-size:24px;line-height:1.04;text-transform:uppercase}
 .m20-switch-grid p{margin:0;color:#d4dce3;font-size:14px;line-height:1.55}
+.m20-fitment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.m20-fitment-card{position:relative;margin:0;overflow:hidden;background:#070707;border:1px solid rgba(75,158,209,.28)}
+.m20-fitment-card.is-active{border-color:#e6d294;box-shadow:0 0 0 1px rgba(230,210,148,.22) inset}
+.m20-fitment-card a{display:grid;grid-template-rows:minmax(300px,1fr) auto;height:100%;color:inherit;text-decoration:none}
+.m20-fitment-card img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;background:#050607;filter:contrast(1.06) saturate(1.05)}
+.m20-fitment-card div{padding:22px;background:#111315;border-top:1px solid rgba(255,255,255,.12)}
+.m20-fitment-card span{display:block;color:#b8d8ef;font-size:12px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.m20-fitment-card h3{margin:10px 0 9px;color:#fff;font-size:25px;line-height:1.02;text-transform:uppercase}
+.m20-fitment-card p{margin:0;color:#d4dce3;font-size:14px;line-height:1.55}
+.m20-fitment-card b{display:inline-flex;margin-top:16px;color:#e6d294;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
 .m20-faceplate .bm-faceplate__grid{grid-template-columns:minmax(360px,.78fr) minmax(520px,1.22fr);align-items:center}
 .m20-faceplate .bm-faceplate__grid figure{border-color:#cfd8df;background:#101214}
 .m20-faceplate .bm-faceplate__grid figure img{aspect-ratio:16/10;object-fit:contain;background:#111;padding:18px}
@@ -128,6 +138,7 @@
   .m20-faceplate .bm-faceplate__grid{grid-template-columns:1fr}
   .m20-driver-strip{grid-template-columns:repeat(2,1fr)}
   .m20-switch-grid{grid-template-columns:repeat(2,1fr)}
+  .m20-fitment-grid{grid-template-columns:1fr}
   .m20-product .bm-explosion__copy{margin-top:390px;padding:24px 16px 36px}
   .m20-product .bm-brand__inner{grid-template-columns:1fr;gap:34px}
   .m20-product .bm-where-head{grid-template-columns:1fr;gap:24px}
@@ -157,6 +168,10 @@
   .m20-measurement-grid{grid-template-columns:1fr}
   .m20-measurement-grid article{min-height:0}
   .m20-switch-grid{grid-template-columns:1fr}
+  .m20-fitment-card a{grid-template-rows:auto auto}
+  .m20-fitment-card img{min-height:240px;aspect-ratio:16/10}
+  .m20-fitment-card div{padding:18px}
+  .m20-fitment-card h3{font-size:22px}
   .m20-product .bm-explosion__copy{margin-top:310px;padding:20px 14px 30px}
   .m20-product .bm-stats{grid-template-columns:repeat(2,1fr)}
   .m20-product .bm-stats article{min-height:106px;padding:18px 16px}

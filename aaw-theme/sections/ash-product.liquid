@@ -1,0 +1,432 @@
+{{ 'ash-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign product_price = current_variant.price | money %}
+{% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+{% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+{% assign is_custom = false %}
+{% if product.handle contains 'custom' %}
+  {% assign is_custom = true %}
+{% endif %}
+{% if is_custom %}
+  {% assign hero_image = 'ash-custom-1.jpg' %}
+  {% assign alt_fit = 'Custom fit' %}
+{% else %}
+  {% assign hero_image = 'ash-universal-1.jpg' %}
+  {% assign alt_fit = 'Universal fit' %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": {{ product.title | default: "AAW ASH Hybrid In-Ear Monitor" | json }},
+  "image": [
+    {{ hero_image | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-fr-graph.png' | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-universal-2.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-custom-2.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-custom-abalone.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-custom-blue-gold.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'ash-custom-white-gold.jpg' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "AAW ASH is a seven-driver hybrid in-ear monitor with a 13mm graphene diaphragm dynamic woofer, six balanced armature drivers, TrueXross phase-aware crossover design, and universal or custom fit options.",
+  "sku": {{ current_variant.sku | default: "ASH" | json }},
+  "mpn": "AAW ASH",
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"}
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "13mm graphene dynamic driver and six balanced armature drivers"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "4-way TrueXross crossover"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "108dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "30 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<=0.5%"},
+    {"@type": "PropertyValue", "name": "Fit Options", "value": "Universal fit and custom fit"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the ASH driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ASH uses a seven-driver hybrid configuration: one 13mm graphene diaphragm dynamic woofer and six balanced armature drivers organized through a 4-way TrueXross crossover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the 13mm graphene driver do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The large graphene diaphragm dynamic driver handles bass and lower midrange, giving ASH powerful natural sub-bass, textured body, and a more speaker-like foundation than a full balanced-armature setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ASH available in universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ASH is available as a universal-fit monitor and as a custom-fit monitor built from ear impressions. The custom version prioritizes isolation and a personal shell fit."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="ash-product">
+  <nav class="ash-topbar ash-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">ASH</span>
+  </nav>
+
+  <aside class="ash-floating-buy" aria-label="ASH price and purchase">
+    <span>ASH</span>
+    <strong>{{ product_price }}</strong>
+    {% if current_variant.available %}
+      <a href="/cart/add?id={{ current_variant.id }}&quantity=1">Buy</a>
+    {% else %}
+      <em>Sold out</em>
+    {% endif %}
+  </aside>
+
+  <section class="ash-hero ash-wrap" aria-labelledby="ash-title">
+    <div class="ash-hero__copy">
+      <p class="ash-kicker">Seven-driver hybrid in-ear monitor</p>
+      <h1 id="ash-title">ASH</h1>
+      <p class="ash-hero__lead">A full-bodied hybrid built around a 13mm graphene dynamic woofer and six precision balanced armatures. ASH uses AAW's TrueXross approach to keep the bass driver, midrange, and treble paths coherent while delivering a powerful, stage-ready presentation.</p>
+      <p class="ash-price"><span>{{ alt_fit }}</span><strong>{{ product_price }}</strong></p>
+      <div class="ash-judge-stars" aria-label="ASH customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="ash-rating-fallback" aria-label="Customer review archive">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>Review archive</span>
+          </span>
+        {% endif %}
+      </div>
+      <ul class="ash-pill-list" aria-label="ASH highlights">
+        <li>13mm graphene woofer</li>
+        <li>6 balanced armatures</li>
+        <li>4-way TrueXross</li>
+        <li>Universal / custom</li>
+      </ul>
+      <form class="ash-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="ash-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy ASH{% else %}Sold Out{% endif %}</button>
+        <a class="ash-btn ash-btn--ghost" href="#ash-architecture">Explore the build</a>
+      </form>
+    </div>
+    <div class="ash-hero__media">
+      <figure class="ash-hero__primary">
+        <img src="{{ hero_image | asset_url }}" alt="AAW ASH {{ alt_fit | downcase }} in-ear monitors" width="1600" height="1066" loading="eager">
+      </figure>
+      <div class="ash-hero__thumbs" aria-label="ASH product images">
+        <figure><img src="{{ 'ash-universal-2.jpg' | asset_url }}" alt="AAW ASH universal faceplate close-up" width="4732" height="3155" loading="lazy"></figure>
+        <figure><img src="{{ 'ash-custom-2.jpg' | asset_url }}" alt="AAW ASH custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-stat-band" aria-label="ASH specification highlights">
+    <div class="ash-wrap ash-stats">
+      <article><b>7</b><span>Hybrid drivers: one dynamic woofer plus six balanced armatures.</span></article>
+      <article><b>13mm</b><span>Graphene diaphragm dynamic driver for bass and lower mids.</span></article>
+      <article><b>4-way</b><span>TrueXross crossover with phase-aware driver handoff.</span></article>
+      <article><b>10Hz-40kHz</b><span>Wide-band extension with controlled, non-fatiguing treble.</span></article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-story">
+    <div class="ash-wrap ash-split">
+      <div>
+        <p class="ash-kicker">Design Story</p>
+        <h2>Hybrid weight without losing coherence.</h2>
+      </div>
+      <div class="ash-prose">
+        <p>ASH is built from AAW's long-running hybrid idea: use a dynamic driver for the physical foundation that balanced armatures rarely reproduce naturally, then let dedicated armatures take over upper midrange, treble, and super-high extension.</p>
+        <p>The 13mm graphene diaphragm is tuned diaphragm-first, then constrained with physical low-pass filtering so it avoids unnecessary overlap with the armatures. Driver position, acoustic bore layout, and TrueXross crossover behavior are treated together so the arrival timing stays organized.</p>
+        <p>The result is a big, textured, bass-capable monitor that still keeps vocal edges, cymbal air, and realistic stage cues intact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-fitment" aria-labelledby="ash-fitment-title">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Fitment Options</p>
+      <h2 id="ash-fitment-title">Choose universal flexibility or custom isolation.</h2>
+      <p>Universal ASH is ready to wear and easy to audition. Custom ASH is built from ear impressions for a personal shell, stronger passive isolation, and a stage-focused long-session fit.</p>
+    </div>
+    <div class="ash-wrap ash-fitment-grid">
+      <article class="ash-fitment-card{% unless is_custom %} is-active{% endunless %}">
+        <a href="/products/ash-universal-in-ear-monitor">
+          <img src="{{ 'ash-universal-1.jpg' | asset_url }}" alt="AAW ASH universal-fit in-ear monitors" width="4500" height="3000" loading="lazy">
+          <div><span>Universal fit</span><h3>Ready to audition</h3><p>Ships as a universal monitor with fit accessories. Best for demos, shared use, and quick deployment across listening setups.</p><b>{% unless is_custom %}Current selection{% else %}View universal{% endunless %}</b></div>
+        </a>
+      </article>
+      <article class="ash-fitment-card{% if is_custom %} is-active{% endif %}">
+        <a href="/products/ash-custom-in-ear-monitor">
+          <img src="{{ 'ash-custom-1.jpg' | asset_url }}" alt="AAW ASH custom-fit in-ear monitors" width="1600" height="1066" loading="lazy">
+          <div><span>Custom fit</span><h3>Built from impressions</h3><p>Made from ear impressions for a personal seal, stronger isolation, and more freedom in shell and faceplate execution.</p><b>{% if is_custom %}Current selection{% else %}View custom{% endif %}</b></div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark" id="ash-architecture">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Acoustic Architecture</p>
+      <h2>Graphene dynamic bass. Six-armature precision. TrueXross control.</h2>
+      <p>ASH lets the 13mm graphene dynamic driver carry bass and lower midrange, then hands upper bands to six balanced armatures. The 4-way TrueXross system avoids the chaotic overlap that can make hybrid monitors sound powerful but poorly timed.</p>
+    </div>
+    <article class="ash-wrap ash-spec-card" aria-labelledby="ash-spec-card-title">
+      <header class="ash-spec-card__head">
+        <div class="ash-lockup" aria-label="AAW ASH">
+          <img src="{{ 'aawlogowhiteSHD.png' | file_url }}" alt="AAW" width="240" height="72" loading="lazy">
+          <span aria-hidden="true"></span>
+          <strong>ASH</strong>
+        </div>
+        <div class="ash-spec-card__edition">
+          <h3 id="ash-spec-card-title">7-driver TrueXross hybrid</h3>
+          <p>13mm graphene dynamic woofer + 6 balanced armatures</p>
+        </div>
+      </header>
+      <div class="ash-driver-strip" aria-label="ASH driver configuration">
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--woofer" aria-hidden="true"></span><b>1 x 13mm</b><small>Graphene Dynamic Woofer</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--ba" aria-hidden="true"></span><b>6 x</b><small>Balanced Armatures</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--xross" aria-hidden="true"></span><b>4-way</b><small>TrueXross Crossover</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--bore" aria-hidden="true"></span><b>Stainless</b><small>Acoustic Bore Design</small></div>
+      </div>
+      <figure class="ash-config-graphic">
+        <img src="{{ 'ash-fr-graph.png' | asset_url }}" alt="AAW ASH frequency response graph" width="550" height="193" loading="lazy">
+      </figure>
+      <div class="ash-feature-panel">
+        <h3>Key Features</h3>
+        <ul>
+          <li>13mm graphene diaphragm dynamic driver for powerful natural sub-bass</li>
+          <li>Six balanced armatures covering upper midrange, treble, and super-high extension</li>
+          <li>4-way TrueXross architecture for cleaner driver handoff</li>
+          <li>Physical low-pass filtering on the dynamic path</li>
+          <li>Universal and custom-fit configurations</li>
+        </ul>
+        <div class="ash-measurement-grid" aria-label="ASH electrical and acoustic measurements">
+          <article><span>Sensitivity</span><strong>108dB</strong></article>
+          <article><span>Impedance</span><strong>30 Ohm</strong></article>
+          <article><span>Frequency Response</span><strong>10Hz - 40kHz</strong></article>
+          <article><span>Total Harmonic Distortion</span><strong>&le;0.5%</strong></article>
+          <article><span>Driver Count</span><strong>7-driver hybrid</strong></article>
+          <article><span>Fit Options</span><strong>Universal / custom</strong></article>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="ash-section ash-tuning">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Sound Signature</p>
+      <h2>Authoritative bass, rich mids, open upper detail.</h2>
+      <p>ASH is tuned for listeners who want physical low-end force without giving up articulation, vocal clarity, and long-session treble control.</p>
+    </div>
+    <div class="ash-wrap ash-tuning-grid">
+      <article><span>Sub-bass</span><h3>Physical foundation</h3><p>The large graphene driver moves air with natural pressure, giving kick drums and bass lines real size.</p></article>
+      <article><span>Lower mids</span><h3>Textured body</h3><p>The dynamic driver reaches into the lower midrange for weight, warmth, and instrument density.</p></article>
+      <article><span>Upper bands</span><h3>Armature clarity</h3><p>Six armatures bring vocal edge, treble definition, and super-high extension without thinning the monitor.</p></article>
+      <article><span>Stage</span><h3>Coherent timing</h3><p>TrueXross and acoustic bore layout keep hybrid handoff focused instead of smeared.</p></article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-gallery-section">
+    <div class="ash-wrap ash-gallery-head">
+      <div>
+        <p class="ash-kicker">Custom Build Archive</p>
+        <h2>ASH custom shells, finished as individual pieces.</h2>
+      </div>
+      <p>These custom builds show how the same seven-driver platform carries different faceplate languages: abalone, blue metallic depth, white-and-gold motif work, and darker resin shells.</p>
+    </div>
+    <div class="ash-wrap ash-gallery" aria-label="ASH product gallery">
+      <figure class="wide"><img src="{{ 'ash-custom-abalone.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with abalone faceplates" width="1080" height="1080" loading="lazy"></figure>
+      <figure><img src="{{ 'ash-custom-blue-gold.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with blue metallic and gold flake faceplate" width="1080" height="1080" loading="lazy"></figure>
+      <figure><img src="{{ 'ash-custom-white-gold.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with white and gold musical motif faceplates" width="1440" height="1440" loading="lazy"></figure>
+      <figure><img src="{{ 'ash-custom-2.jpg' | asset_url }}" alt="AAW ASH red custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
+      <figure><img src="{{ 'ash-instagram-cable.jpg' | asset_url }}" alt="AAW ASH custom monitor with cable from AAW Instagram archive" width="1080" height="1080" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="ash-section ash-accessories">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Accessories and Warranty</p>
+      <h2>The ASH kit, kept practical.</h2>
+    </div>
+    <div class="ash-wrap ash-accessory-grid">
+      <article>
+        <img src="{{ 'mockingbird-tiburon-cable.png' | asset_url }}" alt="Null Audio Symphonym Tiburon UPOCC copper braided cable" width="1024" height="682" loading="lazy">
+        <div><span>01</span><h3>Symphonym Tiburon cable</h3><p>48 inch Null Audio Symphonym Tiburon cable for a secure detachable 2-pin connection.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW carry case" width="2000" height="1334" loading="lazy">
+        <div><span>02</span><h3>AAW carry case</h3><p>Protects the monitors and cable between home, stage, studio, and travel use.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="Ear tip size tray with assorted sizes" width="2048" height="2048" loading="lazy">
+        <div><span>03</span><h3>Universal fit kit</h3><p>Universal ASH includes ear tips for seal tuning. Custom ASH is built from impressions and does not require tips.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'ash-instagram-cable.jpg' | asset_url }}" alt="AAW ASH monitors connected to braided cable" width="1080" height="1080" loading="lazy">
+        <div><span>04</span><h3>1-year warranty</h3><p>Manufacturing-defect coverage with support through AAW Singapore or authorized dealers.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-specs">
+    <div class="ash-wrap ash-specs__grid">
+      <div>
+        <p class="ash-kicker">Specifications</p>
+        <h2>Seven drivers, one full-range hybrid platform.</h2>
+        <p>ASH combines a large dynamic woofer, six balanced armatures, and a 4-way crossover into a platform made for high-energy listening, performance monitoring, and listeners who want weight without losing detail.</p>
+      </div>
+      <dl class="ash-spec-table">
+        <div><dt>Driver Count</dt><dd>7 drivers</dd></div>
+        <div><dt>Dynamic Driver</dt><dd>13mm graphene diaphragm</dd></div>
+        <div><dt>Balanced Armatures</dt><dd>6 precision BA drivers</dd></div>
+        <div><dt>Crossover</dt><dd>4-way TrueXross</dd></div>
+        <div><dt>Sensitivity</dt><dd>108dB</dd></div>
+        <div><dt>Impedance</dt><dd>30 Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;0.5%</dd></div>
+        <div><dt>Fit Options</dt><dd>Universal / custom</dd></div>
+        <div><dt>Warranty</dt><dd>1-year limited</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-faq">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">FAQ</p>
+      <h2>Before you choose ASH</h2>
+    </div>
+    <div class="ash-wrap ash-faq__wrap">
+      <div class="ash-faq__list">
+        <details>
+          <summary><span>What is the ASH driver configuration?</span></summary>
+          <p>ASH uses one 13mm graphene diaphragm dynamic driver and six balanced armature drivers in a 4-way TrueXross hybrid system.</p>
+        </details>
+        <details>
+          <summary><span>Why use a 13mm graphene dynamic driver?</span></summary>
+          <p>The large graphene driver gives ASH its physical bass and lower-mid body. Its size, stiffness, and low mass help produce a powerful yet natural foundation.</p>
+        </details>
+        <details>
+          <summary><span>Is ASH suitable for stage use?</span></summary>
+          <p>Yes. ASH was designed for band performances, artists, worship events, and listeners who want a large, immersive hybrid signature. Final stage suitability depends on fit, isolation needs, and monitoring volume.</p>
+        </details>
+        <details>
+          <summary><span>Should I choose universal or custom fit?</span></summary>
+          <p>Choose universal fit for quicker auditioning and easier sharing. Choose custom fit for ear-impression shells, stronger passive isolation, and a more personal long-session fit.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="ash-reviews" class="ash-section ash-section--dark ash-reviews z05-reviews-section">
+    <div class="ash-wrap">
+      <div class="z05-reviews-head">
+        <p class="ash-kicker">Owner Reviews</p>
+        <h2>ASH listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.0">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "ASH product",
+  "tag": "section",
+  "class": "ash-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Visibility",
+      "default": "always",
+      "options": [
+        {
+          "value": "always",
+          "label": "Always"
+        },
+        {
+          "value": "large",
+          "label": "Large screens only"
+        },
+        {
+          "value": "small",
+          "label": "Small screens only"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ASH product"
+    }
+  ]
+}
+{% endschema %}
