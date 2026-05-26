@@ -17,6 +17,8 @@
         <link rel="alternate" hreflang="ko" href="https://www.aaw.me/ko/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/products/z05-auag-launch-edition">
         {{ 'z05-product.css' | asset_url | stylesheet_tag }}
+      {%- elsif request.page_type == 'page' and page.handle == 'get-started' -%}
+        {{ 'get-started.css' | asset_url | stylesheet_tag }}
       {%- elsif request.page_type == 'index' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/">
         <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/">
