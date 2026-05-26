@@ -394,6 +394,72 @@
       </div>
     </div>
   </section>
+
+  <section class="ash-section ash-section--dark ash-brand">
+    <div class="ash-wrap ash-brand__inner">
+      <div class="ash-brand__lead">
+        <p class="ash-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore hybrid IEM craft, since 2014.</h2>
+        <p class="ash-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="ash-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) designs and builds in-ear monitors in Singapore. Founded by Kevin Wang, AAW works across dynamic, balanced armature, electrostatic, planar magnetic, and hybrid platforms. Every model is shaped by physical prototyping and ear-impression feedback, not preset curves.</p>
+        <p>ASH distills the hybrid approach into a seven-driver platform: a 13mm graphene dynamic woofer for bass weight, six balanced armatures for mid and treble precision, and TrueXross crossover timing that keeps all seven drivers coherent. It is built for listeners who want physical low-end authority without sacrificing vocal clarity or stage depth.</p>
+        <a class="ash-btn ash-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-section ash-where">
+    <div class="ash-wrap ash-where-head">
+      <div>
+        <p class="ash-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="ash-wrap ash-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin &amp; Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="ash-wrap ash-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="ash-btn ash-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="ash-final">
+    <div class="ash-wrap">
+      <p class="ash-kicker">ASH</p>
+      <h2>Seven drivers. One full-range hybrid statement.</h2>
+      <form class="ash-actions ash-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="ash-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy ASH{% else %}Sold Out{% endif %}</button>
+      </form>
+    </div>
+  </section>
 </div>
 
 {% schema %}

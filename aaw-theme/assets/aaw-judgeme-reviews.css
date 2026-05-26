@@ -37,4 +37,5 @@
 .jdgm-review-widget .jdgm-write-rev-link,.jdgm-review-widget .jdgm-btn{border-color:#e2b768!important;background:#e2b768!important;color:#080808!important;border-radius:0!important;font-weight:900!important;text-transform:uppercase!important;letter-spacing:.08em!important}
 .jdgm-review-widget .jdgm-sort-dropdown,.jdgm-review-widget .jdgm-sort-dropdown-wrapper{background:#0e0e0e!important;color:#f5f2ea!important;border-color:rgba(226,183,104,.36)!important}
 .jdgm-review-widget .jdgm-rev__timestamp,.jdgm-review-widget .jdgm-rev__timestamp--created,.jdgm-review-widget .jdgm-rev__timestamp--published,.jdgm-review-widget .jdgm-rev__date,.jdgm-review-widget [class*="timestamp"]{display:none!important}
+.jdgm-review-widget .jdgm-rev__avatar,.jdgm-review-widget .jdgm-rev__avatar-wrapper,.jdgm-review-widget .jdgm-rev__avatar-img{display:none!important}
 @media(max-width:900px){.z05-reviews-head{grid-template-columns:1fr}.z05-reviews-widget-shell{padding:18px}}
