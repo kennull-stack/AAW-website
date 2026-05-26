@@ -1,0 +1,505 @@
+{{ 'black-malus-product.css' | asset_url | stylesheet_tag }}
+{{ 'm20-product.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.section_visibility == 'large' %}
+  <style>
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% elsif section.settings.section_visibility == 'small' %}
+  <style>
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign product_price = current_variant.price | money %}
+{% assign jm_badge = product.metafields.judgeme.badge | default: '' %}
+{% assign jm_widget = product.metafields.judgeme.widget | default: '' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | append: "#product" | json }},
+  "name": {{ product.title | default: "AAW M20 Dual Armature In-Ear Monitor" | json }},
+  "image": [
+    {{ 'm20-gallery-3.jpg' | asset_url | prepend: 'https:' | json }},
+    {{ 'm20-exploded-view.png' | asset_url | prepend: 'https:' | json }},
+    {{ 'm20-gallery-4.jpg' | asset_url | prepend: 'https:' | json }}
+  ],
+  "description": "AAW M20 is a revived dual balanced-armature in-ear monitor using a large-format bass armature woofer, AAW proprietary NOVA nozzle-less open vented armature driver, 2-way passive crossover, 3D-printed acoustic chamber, and Electroless Immersion Gold faceplate.",
+  "sku": {{ current_variant.sku | default: "M20" | json }},
+  "mpn": "AAW M20",
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": {{ canonical_url | json }},
+    "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+    "price": {{ current_variant.price | money_without_currency | remove: ',' | json }},
+    "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"}
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "Dual balanced-armature architecture"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "2-way passive crossover"},
+    {"@type": "PropertyValue", "name": "NOVA Driver", "value": "Nozzle-less open vented armature embedded deep into the 3D-printed nozzle"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "115dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "106 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<0.5%"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "2-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the M20 driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "M20 uses a dual balanced-armature architecture with a large-format bass armature woofer and AAW's proprietary NOVA nozzle-less open vented armature driver, managed by a 2-way passive crossover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the NOVA driver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NOVA stands for nozzle-less open vented armature. The driver is embedded deep into M20's 3D-printed nozzle, close to the eardrum, to reduce pressure decay and unwanted resonance from a conventional tubed balanced-armature layout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is special about the M20 faceplate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "M20 uses an Electroless Immersion Gold process to create a compact blue-and-gold honeycomb faceplate with high detail across a very small surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes with M20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "M20 includes a 48 inch Null Audio Brevity Plus copper cable, AAW carrying case, cleaning cloth, assorted ear tips, and a 2-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "M20"}
+  ]
+}
+</script>
+
+<div class="bm-product m20-product">
+  <nav class="bm-topbar bm-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">M20</span>
+  </nav>
+
+  <aside class="bm-floating-buy" aria-label="M20 price and purchase">
+    <span class="bm-floating-buy__label">M20</span>
+    <strong>{{ product_price }}</strong>
+    {% if current_variant.available %}
+      <a href="/cart/add?id={{ current_variant.id }}&quantity=1">Buy</a>
+    {% else %}
+      <span>Sold out</span>
+    {% endif %}
+  </aside>
+
+  <section class="bm-hero bm-wrap" aria-labelledby="m20-title">
+    <div class="bm-hero__copy">
+      <p class="bm-kicker">Dual armature universal in-ear monitor</p>
+      <h1 id="m20-title">M20</h1>
+      <p class="bm-hero__lead">A modern revival of one of AAW's earliest models. M20 pairs a large-format bass armature woofer with AAW's proprietary NOVA nozzle-less open vented armature driver, then shapes them through a 2-way passive crossover and precision 3D-printed acoustic chamber.</p>
+      <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
+      <div class="bm-judge-stars" aria-label="M20 customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+        {% if jm_badge == blank or jm_badge contains 'No reviews' %}
+          <span class="bm-rating-fallback" aria-label="Customer review archive">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>Review archive</span>
+          </span>
+        {% endif %}
+      </div>
+      <ul class="bm-pill-list" aria-label="M20 highlights">
+        <li>Dual BA design</li>
+        <li>NOVA driver</li>
+        <li>2-way crossover</li>
+        <li>106 Ohm</li>
+      </ul>
+      <form class="bm-actions" method="post" action="/cart/add" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy M20{% else %}Sold Out{% endif %}</button>
+        <a class="bm-btn bm-btn--ghost" href="#m20-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="bm-hero__media">
+      <img src="{{ 'm20-gallery-3.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug on black reflective surface" width="2000" height="1333" loading="eager">
+    </figure>
+  </section>
+
+  <section class="bm-stat-band" aria-label="M20 specification highlights">
+    <div class="bm-wrap bm-stats">
+      <article><b>2</b><span>Balanced-armature drivers in a focused 2-way architecture.</span></article>
+      <article><b>NOVA</b><span>Nozzle-less open vented armature positioned close to the ear.</span></article>
+      <article><b>10Hz-40kHz</b><span>Wide-band performance from bass weight to upper air.</span></article>
+      <article><b>106 Ohm</b><span>High-impedance design that scales with source quality.</span></article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-story">
+    <div class="bm-wrap bm-story__grid">
+      <div>
+        <p class="bm-kicker">Design Story</p>
+        <h2>The original idea, rebuilt for modern listening.</h2>
+      </div>
+      <div class="bm-prose">
+        <p>The original M20 was one of AAW's earliest launching models in 2015. In 2023, the name returns with digitized acoustic design, 3D printing, and NOVA driver technology.</p>
+        <p>This is not a race to add more drivers. M20 is about using a simple dual-armature architecture well: a large and fast bass armature woofer moves air with depth and layering, while the NOVA driver brings full-bodied vocal presence and fine ambience detail.</p>
+        <p>The result is a monitor designed for band performances, performing artists, worship events, audio engineering, and listeners who want an immersive, source-revealing experience without an oversized driver count.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-explosion m20-explosion">
+    <div class="bm-wrap bm-explosion__frame">
+      <figure class="bm-explosion__media">
+        <img src="{{ 'm20-exploded-view.png' | asset_url }}" alt="Exploded view of the AAW M20 shell, drivers, socket, faceplate, and outer shell geometry" width="2000" height="1401" loading="lazy">
+      </figure>
+      <div class="bm-explosion__copy">
+        <p class="bm-kicker">Internal Layout</p>
+        <h2>Two drivers, placed with intent.</h2>
+        <p>The 3D-printed enclosure and acoustic chamber allow driver and nozzle placements to be tuned through simulation, then produced consistently. The NOVA armature sits deep in the nozzle to reduce pressure decay and resonance, while the bass armature forms the foundation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark" id="m20-architecture">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Acoustic Architecture</p>
+      <h2>NOVA driver. Bass armature woofer. One coherent 2-way design.</h2>
+      <p>M20 houses a large-format bass armature woofer and AAW's proprietary NOVA driver. The nozzle-less open vented armature is embedded deep into the 3D-printed nozzle, placing it closer to the eardrum to preserve pressure and control resonance. A 2-way passive crossover and dual-bore output keep the driver bands cleanly organized.</p>
+    </div>
+    <article class="bm-wrap m20-spec-card" aria-labelledby="m20-spec-card-title">
+      <header class="m20-spec-card__head">
+        <div class="m20-lockup" aria-label="AAW M20">
+          <img src="{{ 'aawlogowhiteSHD.png' | file_url }}" alt="AAW" width="240" height="72" loading="lazy">
+          <span aria-hidden="true"></span>
+          <strong>M20</strong>
+        </div>
+        <div class="m20-spec-card__edition">
+          <h3 id="m20-spec-card-title">NOVA Dual Armature</h3>
+          <p>2 drivers across a 2-way passive crossover</p>
+        </div>
+      </header>
+      <div class="m20-driver-strip" aria-label="M20 driver and tuning architecture">
+        <div class="m20-driver-item">
+          <span class="m20-spec-icon m20-spec-icon--woofer" aria-hidden="true"></span>
+          <b>1 x</b>
+          <small>Bass Armature Woofer</small>
+        </div>
+        <div class="m20-driver-item">
+          <span class="m20-spec-icon m20-spec-icon--nova" aria-hidden="true"></span>
+          <b>1 x</b>
+          <small>NOVA Open-Vented BA</small>
+        </div>
+        <div class="m20-driver-item">
+          <span class="m20-spec-icon m20-spec-icon--crossover" aria-hidden="true"></span>
+          <b>2-way</b>
+          <small>Passive Crossover</small>
+        </div>
+        <div class="m20-driver-item">
+          <span class="m20-spec-icon m20-spec-icon--dual-bore" aria-hidden="true"></span>
+          <b>Dual</b>
+          <small>Bore Acoustic Output</small>
+        </div>
+      </div>
+      <div class="m20-feature-panel">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Large-format bass armature woofer for deep, layered low-end</li>
+          <li>NOVA nozzle-less open vented armature embedded into the 3D-printed nozzle</li>
+          <li>2-way passive crossover and dual-bore acoustic output</li>
+          <li>Electroless Immersion Gold honeycomb faceplate</li>
+          <li>Digitized enclosure and acoustic chamber design</li>
+        </ul>
+        <div class="m20-measurement-grid" aria-label="M20 electrical and acoustic measurements">
+          <article><span>Sensitivity</span><strong>115dB</strong></article>
+          <article><span>Impedance</span><strong>106 Ohm</strong></article>
+          <article><span>Frequency Response</span><strong>10Hz - 40kHz</strong></article>
+          <article><span>Total Harmonic Distortion</span><strong>&lt;0.5%</strong></article>
+          <article><span>Driver Count</span><strong>2 balanced armatures</strong></article>
+          <article><span>Warranty</span><strong>2-year limited</strong></article>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Sound Signature</p>
+      <h2>Deep, layered, full-bodied, and detailed.</h2>
+      <p>M20 is tuned to show what armature drivers can do when their physical placement and chamber geometry are doing real work. The bass armature brings speed and body, while NOVA keeps vocal and ambience detail close, clean, and immediate.</p>
+    </div>
+    <div class="bm-wrap m20-switch-grid" aria-label="M20 sound characteristics">
+      <article><span>Bass</span><h3>Layered depth</h3><p>A large-format bass armature woofer moves air with speed and pressure, giving M20 a deeper foundation than a typical compact 2BA monitor.</p></article>
+      <article><span>Vocal</span><h3>Full body</h3><p>NOVA sits close to the nozzle exit so vocal presence stays direct, solid, and free from the pressure decay of long acoustic tubes.</p></article>
+      <article><span>Air</span><h3>Fine ambience</h3><p>The open vented armature helps reveal space, trailing harmonics, and ambience detail without leaning on an exaggerated driver count.</p></article>
+      <article><span>Source</span><h3>Scales upward</h3><p>The 106 Ohm high-impedance design rewards better sources and reflects the quality of the mastering and playback chain.</p></article>
+    </div>
+  </section>
+
+  <section class="bm-section m20-faceplate">
+    <div class="bm-wrap bm-faceplate__grid">
+      <div>
+        <p class="bm-kicker">Faceplate Craft</p>
+        <h2>Electroless Immersion Gold, scaled down to an IEM face.</h2>
+        <p>M20's blue-and-gold honeycomb faceplate uses an Electroless Immersion Gold process to hold complex geometry across a very small surface. The finish gives the monitor a clear visual identity without hiding the practical shell geometry underneath.</p>
+      </div>
+      <figure>
+        <img src="{{ 'm20-hero-render.png' | asset_url }}" alt="AAW M20 blue and gold honeycomb faceplate universal in-ear monitor render" width="3840" height="2690" loading="lazy">
+      </figure>
+    </div>
+    <div class="bm-wrap bm-gallery" aria-label="M20 product gallery">
+      <figure><img src="{{ 'm20-gallery-1.jpg' | asset_url }}" alt="AAW M20 monitor with faceplate and shell on black reflective surface" width="2000" height="1333" loading="lazy"></figure>
+      <figure><img src="{{ 'm20-gallery-2.jpg' | asset_url }}" alt="Pair of AAW M20 monitors showing M20 and AAW faceplate logos" width="2000" height="1333" loading="lazy"></figure>
+      <figure><img src="{{ 'm20-gallery-3.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug" width="2000" height="1333" loading="lazy"></figure>
+      <figure><img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 close-up showing blue and gold faceplate next to black shell" width="2000" height="1333" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-accessories">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Accessories and Warranty</p>
+      <h2>The complete M20 kit.</h2>
+    </div>
+    <div class="bm-wrap bm-accessory-grid">
+      <article>
+        <img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug" width="2000" height="1333" loading="lazy">
+        <div><span>01</span><h3>Brevity Plus cable</h3><p>48 inch Null Audio Brevity Plus copper cable for daily use and stage handling.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="Clear silicone ear tips close-up" width="2048" height="2048" loading="lazy">
+        <div><span>02</span><h3>Assorted ear tips</h3><p>Assorted silicone tips help dial in fit, seal, bass pressure, and comfort.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="Ear tip tray with assorted sizes" width="2048" height="2048" loading="lazy">
+        <div><span>03</span><h3>Ear tip size tray</h3><p>Organized ear tip sizes make it easier to compare fit, seal, and bass response before settling on the right pair.</p></div>
+      </article>
+      <article>
+        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW carry case" width="2000" height="1334" loading="lazy">
+        <div><span>04</span><h3>AAW carry case</h3><p>Protects the monitors, cable, and tip kit when you move between home, studio, and stage.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-specs">
+    <div class="bm-wrap bm-specs__grid">
+      <div>
+        <p class="bm-kicker">Specifications</p>
+        <h2>Simple architecture, serious numbers.</h2>
+        <p>Dual balanced armatures, 2-way passive crossover, 10Hz to 40kHz wide-band response, high sensitivity, and high impedance for cleaner source matching.</p>
+      </div>
+      <dl class="bm-spec-table">
+        <div><dt>Driver Count</dt><dd>2 balanced armatures</dd></div>
+        <div><dt>Crossover</dt><dd>2 Way Passive</dd></div>
+        <div><dt>Sensitivity</dt><dd>115dB</dd></div>
+        <div><dt>Impedance</dt><dd>106Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&lt;0.5%</dd></div>
+        <div><dt>Acoustic Output</dt><dd>Dual bore design</dd></div>
+        <div><dt>Warranty</dt><dd>2-year limited</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-faq">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">FAQ</p>
+      <h2>Before you choose M20</h2>
+    </div>
+    <div class="bm-wrap" style="max-width:820px;margin:0 auto">
+      <div class="bm-faq__list">
+        <details>
+          <summary><span>What is the M20 driver configuration?</span></summary>
+          <p>M20 uses two balanced armature drivers: a large-format bass armature woofer and AAW's proprietary NOVA nozzle-less open vented armature driver.</p>
+        </details>
+        <details>
+          <summary><span>Why use only two drivers?</span></summary>
+          <p>The design focuses on driver implementation instead of driver count. Precise placement, acoustic chamber geometry, and the 2-way crossover let each driver work in its intended range.</p>
+        </details>
+        <details>
+          <summary><span>What does NOVA do?</span></summary>
+          <p>NOVA is embedded deep into the 3D-printed nozzle. Its proximity to the eardrum helps reduce sound pressure decay and unwanted resonance from a typical tubed balanced-armature design.</p>
+        </details>
+        <details>
+          <summary><span>Is the custom version identical?</span></summary>
+          <p>Specifications and internal parts for custom versions may differ slightly to accommodate the change from universal to custom housings.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>48 inch Null Audio Brevity Plus copper cable, AAW carrying case, cleaning cloth, assorted ear tips, and a 2-year limited warranty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="m20-reviews" class="bm-section bm-section--dark bm-reviews">
+    <div class="bm-wrap">
+      <div class="bm-reviews__head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>M20 listening impressions</h2>
+      </div>
+      <div class="bm-reviews__shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+          {% if jm_widget != blank %}
+            {{ jm_widget }}
+          {% else %}
+            <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.0">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+                </div>
+                <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-brand">
+    <div class="bm-wrap bm-brand__inner">
+      <div class="bm-brand__lead">
+        <p class="bm-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="bm-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="bm-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) is a Singapore-based IEM manufacturer founded in 2014 by Kevin Wang. AAW designs and builds custom and universal in-ear monitors across dynamic, balanced armature, electrostatic, planar, and hybrid platforms.</p>
+        <p>M20 revives one of AAW's earliest names with modern 3D acoustic design, a NOVA open-vented armature, and a compact dual-armature architecture built for real listening.</p>
+        <a class="bm-btn bm-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-where">
+    <div class="bm-wrap bm-where-head">
+      <div>
+        <p class="bm-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="bm-wrap bm-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin &amp; Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="bm-wrap bm-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="bm-btn bm-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="bm-final">
+    <div class="bm-wrap">
+      <p class="bm-kicker">M20</p>
+      <h2>A modern dual-armature revival.</h2>
+      <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit"{% unless current_variant.available %} disabled{% endunless %}>{% if current_variant.available %}Buy M20{% else %}Sold Out{% endif %}</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "M20 product",
+  "tag": "section",
+  "class": "m20-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "label": "Always",
+          "value": "always"
+        },
+        {
+          "label": "Small screens only",
+          "value": "small"
+        },
+        {
+          "label": "Large screens only",
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "M20 product"
+    }
+  ]
+}
+{% endschema %}
