@@ -52,6 +52,8 @@
 .sr-shipping-card-grid .sr-shipping-card-text{flex:1;min-width:0;}
 .sr-shipping-card-grid .sr-shipping-card-logo{flex-shrink:0;width:120px;display:flex;align-items:flex-start;justify-content:center;padding-top:4px;}
 .sr-shipping-card-grid .sr-shipping-card-logo img{width:100%;height:auto;display:block;}
+.sr-shipping-logo-panel{display:flex;align-items:center;justify-content:center;min-height:180px;padding:34px;background:#fff;}
+.sr-shipping-logo-panel img{display:block;width:min(260px,58%);height:auto;}
 
 /* ── Domestic Grid ── */
 .sr-domestic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:0;background:#d8d0c3;border:1px solid #d8d0c3;}
@@ -92,6 +94,7 @@
   .sr-hero-media{aspect-ratio:16/10;min-height:340px}
   .sr-stats{grid-template-columns:1fr}
   .sr-shipping-grid{grid-template-columns:1fr}
+  .sr-shipping-logo-panel{min-height:150px}
   .sr-domestic-grid{grid-template-columns:repeat(2,1fr)}
   .sr-returns-grid{grid-template-columns:1fr}
 }
