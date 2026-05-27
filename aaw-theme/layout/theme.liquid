@@ -25,6 +25,8 @@
         {{ 'warranty-and-refit.css' | asset_url | stylesheet_tag }}
       {%- elsif request.page_type == 'page' and page.handle == 'what-is-custom-in-ear-monitor' -%}
         {{ 'what-is-ciem.css' | asset_url | stylesheet_tag }}
+      {%- elsif request.page_type == 'page' and page.handle == 'what-is-universal-in-ear-monitor' -%}
+        {{ 'what-is-uiem.css' | asset_url | stylesheet_tag }}
       {%- elsif request.page_type == 'index' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/">
         <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/">
