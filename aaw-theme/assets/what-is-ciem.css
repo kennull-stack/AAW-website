@@ -164,8 +164,9 @@
   .ci-approach-grid{grid-template-columns:1fr;}
   .ci-process-steps{grid-template-columns:1fr;}
   .ci-process-media{grid-template-columns:1fr;}
-  .ci-article-figure{min-height:300px;position:static;}
+  .ci-article-figure{min-height:300px;position:static;display:block;}
   .ci-article-figure img{aspect-ratio:16/10;}
+  .ci-article-figure figcaption{position:static;width:auto;max-width:none;margin:10px 0 0;transform:none;background:#090909;}
   .ci-compare-grid{grid-template-columns:1fr;}
   .ci-compare-cell.header{text-align:left;}
   .ci-compare-cell p{text-align:left;}
@@ -187,7 +188,7 @@
   .ci-hero-media{min-height:0;}
   .ci-hero-media:before{top:14px;right:14px;font-size:48px;}
   .ci-article-figure{padding:8px;min-height:240px;}
-  .ci-article-figure figcaption{position:static;width:auto;max-width:none;margin:8px 0 0;transform:none;background:#090909;}
+  .ci-article-figure figcaption{margin-top:8px;}
   .ci-gallery-card,.ci-gallery-card img{min-height:270px;}
   .ci-gallery-card figcaption{padding:14px;}
   .ci-gallery-card figcaption b{font-size:15px;}
