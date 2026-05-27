@@ -16,6 +16,72 @@
   letter-spacing: 0;
 }
 
+/* Language-specific font families (copied from z05-product.css) */
+html:lang(ja) .ciem-care,
+html[data-ciem-lang="ja"] .ciem-care {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", "Source Han Serif JP", "Noto Serif CJK SC", "Source Han Serif CN", serif;
+}
+html:lang(zh-Hant) .ciem-care,
+html:lang(zh-TW) .ciem-care,
+html:lang(zh-HK) .ciem-care,
+html[data-ciem-lang="zhHant"] .ciem-care {
+  font-family: "Hiragino Mincho ProN", "Noto Serif CJK TC", "Source Han Serif TW", "Noto Serif CJK JP", serif;
+}
+html:lang(zh-Hans) .ciem-care,
+html:lang(zh-CN) .ciem-care,
+html[data-ciem-lang="zh"] .ciem-care {
+  font-family: "Noto Serif CJK JP", "Source Han Serif JP", "Noto Serif CJK SC", "Source Han Serif CN", serif;
+}
+html:lang(zh-Hans) .ciem-care p,
+html:lang(zh-CN) .ciem-care p,
+html[data-ciem-lang="zh"] .ciem-care p,
+html[data-ciem-lang="zh"] .ciem-care li {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Source Han Sans CN", "Microsoft YaHei", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+html[data-ciem-lang="ko"] .ciem-care {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Source Han Sans KR", sans-serif;
+}
+
+/* Language switch */
+.ciem-care-lang-switch {
+  position: absolute;
+  z-index: 20;
+  top: 14px;
+  right: max(18px, calc((100vw - 1180px) / 2));
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 8, 8, 0.72);
+  backdrop-filter: blur(10px);
+}
+.ciem-care-lang-switch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #bdb5aa;
+  min-width: 38px;
+  height: 28px;
+  padding: 0 9px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.ciem-care-lang-switch button.is-active {
+  background: #e2b768;
+  color: #080808;
+}
+.ciem-care-lang-switch button:focus-visible {
+  outline: 2px solid #e2b768;
+  outline-offset: 2px;
+}
+
 .ciem-care * {
   box-sizing: border-box;
 }
@@ -419,10 +485,20 @@
   text-transform: uppercase;
 }
 
+.ciem-care-btn:focus-visible {
+  outline: 2px solid var(--care-gold);
+  outline-offset: 2px;
+}
+
 .ciem-care-btn.secondary {
   color: var(--care-ink);
   background: transparent;
   border-color: var(--care-brass);
+}
+
+.ciem-care-btn.secondary:focus-visible {
+  outline: 2px solid var(--care-brass);
+  outline-offset: 2px;
 }
 
 @media screen and (max-width: 980px) {
@@ -479,8 +555,7 @@
   }
 
   .ciem-care-dek {
-    max-width: 300px;
-    width: 300px;
+    max-width: 100%;
     margin-bottom: 26px;
     font-size: 16px;
     white-space: normal;
@@ -549,8 +624,7 @@
   .ciem-care-system-head p,
   .ciem-care-maintenance p,
   .ciem-care-support p {
-    max-width: 300px;
-    width: 300px;
+    max-width: 100%;
     font-size: 15px;
     line-height: 1.62;
     white-space: normal;
@@ -558,10 +632,20 @@
   }
 
   .ciem-care-step p {
-    max-width: 300px;
-    width: 300px;
+    max-width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
+  }
+
+  .ciem-care-lang-switch {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .ciem-care-hero {
+    padding-top: 64px;
   }
 
   .ciem-care-actions,
