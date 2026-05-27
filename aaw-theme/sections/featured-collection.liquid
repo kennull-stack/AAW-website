@@ -96,6 +96,8 @@
               endif 
             %} 
             {% assign productFormId = 'product-form-' | append : section.id | append : forloop.index | append : '-' | append : selectedcollection.handle %}
+            {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: featuredCollectionProduct -%}{%- endcapture -%}
+            {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
             {% assign aosDelay = forloop.index | times: 50 %}
             {%- capture current -%}{% cycle section.id: 1 %}{%- endcapture -%}
             {%- assign placeholder_image = 'product-apparel-' | append: current -%}

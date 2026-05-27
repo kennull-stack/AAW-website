@@ -1,0 +1,120 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "halcyon_product": {
+      "type": "halcyon-product",
+      "settings": {
+        "section_visibility": "always"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3",
+            "seo_heading": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "hide_shipping_content": false
+          }
+        },
+        "variant_halcyon": {
+          "type": "variant",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "pickup_halcyon": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "dynamic_checkout_btn": true,
+            "show_recipient_form": false
+          }
+        },
+        "complementary_halcyon": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "social_halcyon": {
+          "type": "social-icons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_halcyon",
+        "quantity_selector",
+        "pickup_halcyon",
+        "button",
+        "complementary_halcyon",
+        "social_halcyon"
+      ],
+      "disabled": true,
+      "settings": {
+        "gallery_style": "slider",
+        "thumbnail_position": "left",
+        "overlapped_thumbnails": false,
+        "enable_sticky_content": true,
+        "desktop_media_width": "medium",
+        "desktop_grid_image_size": "auto",
+        "image_zoom": "lightbox",
+        "enable_sticky_cart": false,
+        "thumbnial_on_mobile": false,
+        "mobile_grid_image_size": "auto",
+        "color_scheme": "",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 35,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "products_count": 8,
+        "color_scheme": "primary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "halcyon_product",
+    "main",
+    "related-products"
+  ]
+}

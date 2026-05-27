@@ -57,6 +57,8 @@
         '
       >
         {%- for product in recommendations.products limit: section.settings.products_count -%}
+          {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: product -%}{%- endcapture -%}
+          {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
           {%- assign productFormId = 'product-form-' | append: section.id | append: forloop.index -%}
           {% assign aosDelay = forloop.index | times: 50 %}
           {%- capture current -%}{% cycle section.id: 1, 2, 3, 4 %}{%- endcapture -%}

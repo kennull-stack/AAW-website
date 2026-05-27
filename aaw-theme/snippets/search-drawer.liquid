@@ -43,6 +43,8 @@
                   {% if settings.suggestion_product != blank %}
                     <div class="predictive-search-suggestions-list product-card-outer small-product">
                       {%- for item in settings.suggestion_product limit: 6 -%}
+                        {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: item -%}{%- endcapture -%}
+                        {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
                         <div class="product-card-item">
                           {%- assign placeholder_image = 'product-apparel-1' -%}
                           {% render 'card-product'  placeholder_image: placeholder_image, cProduct: item, settings.suggestion_product, optionhide: false, gridImageSize: settings.common_grid_image_size %}

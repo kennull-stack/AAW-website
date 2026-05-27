@@ -108,6 +108,8 @@
                           {% if selectedtabcollection != blank and selectedtabcollection.all_products_count > 0 %}
 
                             {% for product in selectedtabcollection.products limit: section.settings.product_range %}
+                              {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: product -%}{%- endcapture -%}
+                              {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
                               {% assign productFormId = 'product-form-'
                                 | append: section.id
                                 | append: forloop.index

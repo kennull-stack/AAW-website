@@ -55,15 +55,19 @@
                assign aosDelay = forloop.index | times: 50
                 case item.object_type
                   when 'product'
-                    assign productFormId = 'product-form-' | append: section.id | append: forloop.index
-                    echo '<div class="product-card-item">'
-                    capture current 
-                    cycle section.id: 1
-                    endcapture
-                  
-                    assign placeholder_image = 'product-apparel-' | append: current 
-                    render 'card-product', cProduct: item, section: section, productFormId: productFormId, gridImageSize: settings.grid_image_size, placeholder_image: placeholder_image, aosDelay: aosDelay
-                    echo '</div>'
+                    assign hidden_handle = item.handle | downcase
+                    assign hidden_title = item.title | downcase | strip
+                    unless hidden_handle contains 'item-personalization' or hidden_title contains 'item personalization' or item.tags contains 'hide-from-store' or item.tags contains 'hidden-product' or item.tags contains '_hidden'
+                      assign productFormId = 'product-form-' | append: section.id | append: forloop.index
+                      echo '<div class="product-card-item">'
+                      capture current
+                      cycle section.id: 1
+                      endcapture
+
+                      assign placeholder_image = 'product-apparel-' | append: current
+                      render 'card-product', cProduct: item, section: section, productFormId: productFormId, gridImageSize: settings.grid_image_size, placeholder_image: placeholder_image, aosDelay: aosDelay
+                      echo '</div>'
+                    endunless
                 endcase
               endfor
             -%}

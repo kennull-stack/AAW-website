@@ -19,6 +19,8 @@
           ]}'
       >
         {%- for product in recommendations.products limit: block.settings.products_count -%}
+          {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: product -%}{%- endcapture -%}
+          {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
           {%- assign productFormId = 'product-form-' | append: section.id | append: forloop.index -%}
           <div class="product-card-item">
             {%- assign placeholder_image = 'product-apparel-1' -%}
@@ -37,4 +39,3 @@
       </div>
     {%- endif -%}
   </div>
-  

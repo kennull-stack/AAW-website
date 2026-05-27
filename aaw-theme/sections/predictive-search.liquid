@@ -86,6 +86,8 @@
                 <div id="filter-products" data-content="filter-products" class="search-result-tabs-panel {{ activeContent }}">
                     <div class="search-result-product-list product-card-outer small-product">
                         {%- for item in predictive_search.resources.products  limit: 6 -%}
+                          {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: item -%}{%- endcapture -%}
+                          {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
                           {% assign aosDelay = forloop.index | times: 50 %}
                             <div class="product-card-item">
                               {%- capture current -%}{% cycle section.id: 1, 2, 3, 4 %}{%- endcapture -%}

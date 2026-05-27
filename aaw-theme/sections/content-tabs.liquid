@@ -126,14 +126,18 @@
                           {% if block.settings.product_list != blank %}
                             {% liquid
                               for cProduct in block.settings.product_list
-                                assign productFormId = 'product-form-' | append: section.id | append: forloop.index | append: '-' | append: cProduct.handle
-                                capture current
-                                  cycle section.id: 1
-                                endcapture
-                                assign placeholder_image = 'product-apparel-' | append: current
-                                echo '<div class="product-card" tabindex="0">'
-                                render 'card-product', placeholder_image: placeholder_image, cProduct: cProduct, section: section, productFormId: productFormId, tabquickView: 'hide', gridImageSize: block.settings.grid_image_size
-                                echo '</div>'
+                                assign hidden_handle = cProduct.handle | downcase
+                                assign hidden_title = cProduct.title | downcase | strip
+                                unless hidden_handle contains 'item-personalization' or hidden_title contains 'item personalization' or cProduct.tags contains 'hide-from-store' or cProduct.tags contains 'hidden-product' or cProduct.tags contains '_hidden'
+                                  assign productFormId = 'product-form-' | append: section.id | append: forloop.index | append: '-' | append: cProduct.handle
+                                  capture current
+                                    cycle section.id: 1
+                                  endcapture
+                                  assign placeholder_image = 'product-apparel-' | append: current
+                                  echo '<div class="product-card" tabindex="0">'
+                                  render 'card-product', placeholder_image: placeholder_image, cProduct: cProduct, section: section, productFormId: productFormId, tabquickView: 'hide', gridImageSize: block.settings.grid_image_size
+                                  echo '</div>'
+                                endunless
                               endfor
                             %}
                           {% else %} 

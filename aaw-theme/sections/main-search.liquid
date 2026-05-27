@@ -21,6 +21,20 @@
 <link rel="preload" as="style" href="{{ 'main-collection.css' | asset_url }}">
 {{ 'main-collection.css' | asset_url | stylesheet_tag }}
 {% paginate search.results by 28 %}
+  {%- liquid
+    assign aaw_hidden_search_count = 0
+    for item in search.results
+      if item.object_type == 'product'
+        capture aaw_hidden_product
+          render 'aaw-hidden-product', hidden_product: item
+        endcapture
+        if aaw_hidden_product contains 'true'
+          assign aaw_hidden_search_count = aaw_hidden_search_count | plus: 1
+        endif
+      endif
+    endfor
+    assign aaw_visible_search_count = search.results_count | minus: aaw_hidden_search_count
+  -%}
   <div class="section-container">
     <div class="searchbar-head">
       <div class="{{ settings.container_width }}">
@@ -48,8 +62,8 @@
           </div>
         </form>
         <p class="search-result-count" data-search-result-count>
-          {%- if search.results.size > 0 -%}
-           {{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}
+          {%- if aaw_visible_search_count > 0 -%}
+           {{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: aaw_visible_search_count }}
           {% endif %}
         </p>
       </div>
@@ -57,7 +71,7 @@
     <div class="search-result-body" data-search-content>
       <div class="{{ settings.container_width }}">
         {%- if search.performed -%}
-          {%- if search.results.size == 0 -%}
+          {%- if search.results.size == 0 or aaw_visible_search_count == 0 -%}
             <div class="empty-card">
               <span class="empty-card-icon">
                 <svg width="41" height="42" viewBox="0 0 21 22" fill="none">
@@ -78,6 +92,8 @@
             {%- for item in search.results -%}
               {%- case item.object_type -%}
                 {%- when 'product' -%}
+                  {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: item -%}{%- endcapture -%}
+                  {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
                   {% assign searchType = 'product' %}
                   {%- capture current -%}{% cycle section.id: 1, 2, 3, 4 %}{%- endcapture -%}
                   {%- assign placeholder_image = 'product-apparel-' | append: current -%}

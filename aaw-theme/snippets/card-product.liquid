@@ -1,3 +1,5 @@
+{%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: cProduct -%}{%- endcapture -%}
+{%- unless aaw_hidden_product contains 'true' -%}
 {%- liquid
   assign current_variant = cProduct.selected_or_first_available_variant
   assign second_image = ''
@@ -467,3 +469,4 @@
     {% endif %}
   </div>
 </div>
+{%- endunless -%}

@@ -83,6 +83,8 @@
               %}
               <div class="row">
                 {%- for product in collection.products limit: section.settings.products_per_page -%}
+                  {%- capture aaw_hidden_product -%}{%- render 'aaw-hidden-product', hidden_product: product -%}{%- endcapture -%}
+                  {%- if aaw_hidden_product contains 'true' -%}{%- continue -%}{%- endif -%}
                   {% assign productFormId = 'product-form-'
                     | append: section.id
                     | append: forloop.index

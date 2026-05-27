@@ -1,0 +1,18 @@
+{%- liquid
+  assign checked_product = hidden_product
+  assign is_hidden_product = false
+
+  if checked_product != blank
+    assign checked_handle = checked_product.handle | downcase
+    assign checked_title = checked_product.title | downcase | strip
+
+    if checked_handle == 'item-personalization' or checked_handle contains 'item-personalization' or checked_title == 'item personalization' or checked_title contains 'item personalization'
+      assign is_hidden_product = true
+    endif
+
+    if checked_product.tags contains 'hide-from-store' or checked_product.tags contains 'hidden-product' or checked_product.tags contains '_hidden'
+      assign is_hidden_product = true
+    endif
+  endif
+-%}
+{%- if is_hidden_product -%}true{%- endif -%}

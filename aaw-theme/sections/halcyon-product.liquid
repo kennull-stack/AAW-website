@@ -1,0 +1,604 @@
+{{ 'halcyon-product.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign product_price = current_variant.price | money
+  assign hero_image = 'halcyon-studio-blue-case.jpg' | asset_url
+  assign package_image = 'halcyon-studio-package.jpg' | asset_url
+  assign exploded_image = 'halcyon-exploded-layout.jpg' | asset_url
+  assign transparent_image = 'halcyon-transparent-architecture-crop.jpg' | asset_url
+  assign jm_badge = product.metafields.judgeme.badge | default: ''
+  assign jm_widget = product.metafields.judgeme.widget | default: ''
+-%}
+
+{%- style -%}
+  {%- if section.settings.section_visibility == 'small' -%}
+    @media (min-width: 768px) {
+      #shopify-section-{{ section.id }} { display: none !important; }
+    }
+  {%- elsif section.settings.section_visibility == 'large' -%}
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} { display: none !important; }
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "image": [
+      {{ hero_image | json }},
+      {{ exploded_image | json }},
+      {{ package_image | json }}
+    ],
+    "description": {{ product.description | strip_html | strip | default: 'Halcyon electrostatic hybrid in-ear monitor by Advanced AcousticWerkes.' | json }},
+    "brand": {
+      "@type": "Brand",
+      "name": "Advanced AcousticWerkes"
+    },
+    "sku": {{ current_variant.sku | default: product.handle | json }},
+    "offers": {
+      "@type": "Offer",
+      "url": {{ shop.url | append: product.url | json }},
+      "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+      "price": {{ current_variant.price | divided_by: 100.0 | json }},
+      "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ shop.url | json }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Universal In-Ear",
+        "item": {{ shop.url | append: '/collections/universal-in-ear' | json }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Halcyon",
+        "item": {{ shop.url | append: product.url | json }}
+      }
+    ]
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What driver system does Halcyon use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halcyon uses a tri-hybrid system with a 10mm graphene dynamic driver, two mid-high balanced armature drivers, and four electrostatic tweeters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Halcyon different from a standard hybrid IEM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halcyon adds electrostatic tweeters to a dynamic and balanced-armature platform, giving the upper range air and fine detail while keeping bass physical."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Halcyon available as a custom in-ear monitor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halcyon is available in universal and custom fitment options, with CIEM shells made from user ear impressions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does BassFlow tuning affect the sound?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BassFlow gives listeners a hardware tuning path for low-end weight and vocal balance without changing the core driver platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What cable does Halcyon include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halcyon includes a Thera monocrystalline silver cable with low-resistance conductors and hardware matched to the monitor shell."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What type of listener is Halcyon for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halcyon is built for listeners who want a full-range monitor with physical bass, clear vocal presence, and electrostatic treble extension."
+        }
+      }
+    ]
+  }
+</script>
+
+<section class="hal-product" id="halcyon-product">
+  <nav class="hal-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ routes.root_url }}">Home</a>
+    <span>/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span>/</span>
+    <span>Halcyon</span>
+  </nav>
+
+  <aside class="hal-floating-buy" aria-label="Quick purchase">
+    <div>
+      <strong>Halcyon</strong>
+      <span>{{ product_price }}</span>
+    </div>
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ current_variant.id }}">
+      <button type="submit" {% unless current_variant.available %}disabled{% endunless %}>Buy</button>
+    </form>
+  </aside>
+
+  <section class="hal-hero" aria-labelledby="halcyon-title">
+    <div class="hal-hero__copy">
+      <p class="hal-kicker">Electrostatic tri-hybrid in-ear monitor</p>
+      <h1 id="halcyon-title">Halcyon</h1>
+      <p class="hal-lede">A tri-hybrid in-ear monitor combining a graphene dynamic driver, dual balanced armatures, and quad electrostatic tweeters. Built for extended treble air, controlled bass weight, and precise imaging.</p>
+
+      <div class="hal-price-line">
+        <span>Price</span>
+        <strong>{{ product_price }}</strong>
+      </div>
+
+      <div class="hal-judge-stars" aria-label="Halcyon customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+          {{ jm_badge }}
+        </div>
+      </div>
+
+      <div class="hal-badges" aria-label="Key features">
+        <span>Graphene Dynamic Driver</span>
+        <span>Dual Mid-High BA</span>
+        <span>Quad Electrostatic Tweeter</span>
+        <span>4-Way Crossover</span>
+      </div>
+
+      <div class="hal-actions">
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
+          <button class="hal-btn hal-btn--light" type="submit" {% unless current_variant.available %}disabled{% endunless %}>Buy Halcyon</button>
+        </form>
+        <a class="hal-btn hal-btn--outline" href="#halcyon-architecture">Explore The Build</a>
+      </div>
+    </div>
+
+    <figure class="hal-hero__media">
+      <img src="{{ hero_image }}" alt="Halcyon in-ear monitors on a blue AAW carrying case" width="1500" height="1000" loading="eager">
+    </figure>
+  </section>
+
+  <div class="hal-stat-band" aria-label="Halcyon key specifications">
+    <div>
+      <strong>4-Way</strong>
+      <span>Crossover network with phase-aligned driver handoff.</span>
+    </div>
+    <div>
+      <strong>5Hz–100kHz</strong>
+      <span>Frequency response extending into electrostatic territory.</span>
+    </div>
+    <div>
+      <strong>104dB</strong>
+      <span>Sensitivity. Drives cleanly from portables and dedicated amps.</span>
+    </div>
+    <div>
+      <strong>24 Ohm</strong>
+      <span>Impedance. Stable pairing across source gear.</span>
+    </div>
+  </div>
+
+  <section class="hal-section hal-section--paper">
+    <div class="hal-wrap hal-story">
+      <div>
+        <p class="hal-kicker">Design Story</p>
+        <h2>Electrostatic extension with hybrid scale.</h2>
+      </div>
+      <div class="hal-copy-stack">
+        <p>Halcyon pairs a 10mm graphene dynamic driver with dual mid-high balanced armatures and four electrostatic tweeters. The dynamic driver carries bass weight and texture. The armatures lock in vocal articulation and midrange clarity. The electrostatic array opens the top end with air and micro-detail.</p>
+        <p>The 4-way crossover divides the spectrum cleanly between driver types. Acoustic chambers are simulated then machined for consistent phasing. The result is a monitor that moves air like a dynamic, resolves like a balanced armature, and extends like an electrostatic — without any one character dominating the others.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark hal-video-section" aria-labelledby="halcyon-video-title">
+    <div class="hal-wrap hal-video-grid">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Motion Study</p>
+        <h2 id="halcyon-video-title">Halcyon in motion.</h2>
+        <p>Close-up studio footage of the machined aluminum shell, cable hardware, and faceplate finishing.</p>
+      </div>
+      <figure class="hal-video-frame">
+        <video src="{{ 'halcyon-8.mp4' | asset_url }}" poster="{{ hero_image }}" playsinline muted autoplay loop controls preload="metadata"></video>
+      </figure>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper hal-exploded-detail" aria-labelledby="halcyon-exploded-title">
+    <div class="hal-wrap">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Product Detail</p>
+        <h2 id="halcyon-exploded-title">Every part has a purpose.</h2>
+        <p>Exploded layout showing each component: aluminum shell, driver modules, BassFlow tuning plate, cable hardware, and ear tips.</p>
+      </div>
+      <figure class="hal-exploded-hero">
+        <img src="{{ exploded_image }}" alt="Halcyon exploded layout with shell, drivers, cable, tips, and BassFlow components" width="900" height="1200" loading="lazy">
+        <figcaption>
+          <strong>Exploded Layout</strong>
+          <span>Shell, driver, cable, tip, and BassFlow components presented as a complete system.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark" id="halcyon-architecture" aria-labelledby="halcyon-architecture-title">
+    <div class="hal-wrap hal-architecture-grid">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Tri-Hybrid Architecture</p>
+        <h2 id="halcyon-architecture-title">Graphene impact. BA focus. Electrostatic air.</h2>
+        <p>Three driver types, each assigned to a specific frequency range, aligned through a 4-way crossover and tuned acoustic chambers.</p>
+      </div>
+
+      <article class="hal-render-card" aria-label="Halcyon driver configuration render">
+        <div class="hal-render-card__title">
+          <span>Halcyon</span>
+          <p>Tri-hybrid in-ear monitor. Dynamic, balanced armature, electrostatic.</p>
+        </div>
+        <div class="hal-driver-grid">
+          <div class="hal-driver-box">
+            <img src="{{ 'halcyon-driver-graphene.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            <span>Dynamic Foundation</span>
+            <strong>1 x 10mm</strong>
+            <p>Graphene dynamic driver</p>
+          </div>
+          <div class="hal-driver-box">
+            <img src="{{ 'halcyon-driver-ba.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            <span>Mid-High Detail</span>
+            <strong>1 x 2</strong>
+            <p>Balanced armature driver</p>
+          </div>
+          <div class="hal-driver-box">
+            <img src="{{ 'halcyon-driver-est.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            <span>Electrostatic Extension</span>
+            <strong>2 x 2</strong>
+            <p>Electrostatic tweeter array</p>
+          </div>
+        </div>
+        <div class="hal-mini-specs" aria-label="Halcyon summary specifications">
+          <div><span>Crossover</span><strong>4 Way</strong></div>
+          <div><span>Response</span><strong>5Hz-100kHz</strong></div>
+          <div><span>THD</span><strong>&lt;0.5%</strong></div>
+          <div><span>Sensitivity</span><strong>104dB</strong></div>
+          <div><span>Impedance</span><strong>24 Ohm</strong></div>
+          <div><span>Bore</span><strong>3 Bore</strong></div>
+        </div>
+        <svg class="hal-fr-svg" viewBox="0 0 840 240" role="img" aria-labelledby="hal-fr-title hal-fr-desc">
+          <title id="hal-fr-title">Halcyon frequency response curve</title>
+          <desc id="hal-fr-desc">A wide-band response curve with controlled upper treble lift.</desc>
+          <line x1="72" y1="26" x2="72" y2="204"></line>
+          <line x1="72" y1="204" x2="790" y2="204"></line>
+          <line class="hal-fr-guide" x1="72" y1="118" x2="706" y2="118"></line>
+          <text x="28" y="36">140</text>
+          <text x="34" y="124">100</text>
+          <text x="40" y="208">60</text>
+          <text x="74" y="230">20</text>
+          <text x="410" y="230">1K</text>
+          <text x="775" y="230">40K</text>
+          <text x="808" y="211">Hz</text>
+          <path d="M72 103 C170 103 250 102 330 106 C404 111 462 116 512 113 C566 110 594 98 628 105 C658 112 677 106 701 109 C721 104 724 126 748 124 C766 123 778 132 790 135"></path>
+        </svg>
+      </article>
+
+      <div class="hal-tech-strip">
+        <figure>
+          <img src="{{ transparent_image }}" alt="Transparent Halcyon shell render showing internal driver placement" width="900" height="650" loading="lazy">
+          <figcaption>
+            <strong>Internal Architecture</strong>
+            <span>Driver placement and acoustic chambers are simulated, then machined for consistent phasing.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-electrostatic-driver.jpg' | asset_url }}" alt="Halcyon electrostatic driver close-up render" width="900" height="650" loading="lazy">
+          <figcaption>
+            <strong>Electrostatic System</strong>
+            <span>Four electrostatic tweeters handle treble extension, transient speed, and spatial cues.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper" aria-labelledby="halcyon-bassflow-title">
+    <div class="hal-wrap hal-feature-grid">
+      <div class="hal-feature-copy">
+        <p class="hal-kicker">BassFlow Tuning</p>
+        <h2 id="halcyon-bassflow-title">Physical bass control built into the body.</h2>
+        <p>BassFlow uses a mechanical tuning plate to shape low-frequency behavior. Adjustable airflow controls bass weight and texture independently of the crossover — giving the monitor a solid low end without crowding the vocal range.</p>
+        <div class="hal-feature-points">
+          <span>Airflow control</span>
+          <span>Physical tuning plate</span>
+          <span>Low-end contouring</span>
+        </div>
+      </div>
+      <figure>
+        <img src="{{ 'halcyon-studio-bassflow-plate.jpg' | asset_url }}" alt="Halcyon BassFlow tuning plate close-up" width="1500" height="1000" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark" aria-labelledby="halcyon-cable-title">
+    <div class="hal-wrap hal-feature-grid hal-feature-grid--reverse">
+      <div class="hal-feature-copy">
+        <p class="hal-kicker">Cable System</p>
+        <h2 id="halcyon-cable-title">Symphonium Thera silver cable.</h2>
+        <p>The included Thera cable uses monocrystalline silver conductors for low resistance and clean signal transfer. Hardware finish matches the Halcyon shell.</p>
+        <div class="hal-feature-points">
+          <span>Monocrystalline silver</span>
+          <span>Modular hardware language</span>
+          <span>Daily-ready handling</span>
+        </div>
+      </div>
+      <figure>
+        <img src="{{ 'halcyon-studio-thera-cable.jpg' | asset_url }}" alt="Halcyon Thera cable hardware close-up" width="1500" height="1000" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper hal-studio-section" aria-labelledby="halcyon-studio-title">
+    <div class="hal-wrap">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Studio Details</p>
+        <h2 id="halcyon-studio-title">From casework to finishing.</h2>
+        <p>Product photography showing Halcyon's retail packaging, machined aluminum body, and hardware finishing.</p>
+      </div>
+      <div class="hal-studio-grid">
+        <figure class="hal-studio-grid__wide">
+          <img src="{{ package_image }}" alt="Halcyon product packaging with technical line art" width="1500" height="1000" loading="lazy">
+          <figcaption><strong>Retail Presentation</strong><span>Packaging carries the same technical hardware language as the monitor.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-studio-shell-pair.jpg' | asset_url }}" alt="Halcyon shell pair close-up" width="1500" height="1000" loading="lazy">
+          <figcaption><strong>Shell Pair</strong><span>Machined aluminum shells with engraved hardware detail.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-studio-single-shell.jpg' | asset_url }}" alt="Halcyon single shell on textured surface" width="1500" height="1000" loading="lazy">
+          <figcaption><strong>Machined Body</strong><span>A compact metal form with a controlled, industrial finish.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark" aria-labelledby="halcyon-precision-title">
+    <div class="hal-wrap hal-precision-grid">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Precision Engineering</p>
+        <h2 id="halcyon-precision-title">Digitally simulated. Machined from aluminum.</h2>
+        <p>Driver placement, nozzle geometry, and acoustic chambers are digitally simulated, then machined from 7075 aluminum. The result is consistent phasing and repeatable production tolerances.</p>
+      </div>
+      <figure>
+        <img src="{{ 'halcyon-precision-render.jpg' | asset_url }}" alt="Halcyon transparent shell render showing internal driver layout" width="900" height="650" loading="lazy">
+      </figure>
+      <figure>
+        <img src="{{ transparent_image }}" alt="Transparent Halcyon internal architecture render" width="900" height="650" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper" aria-labelledby="halcyon-fitment-title">
+    <div class="hal-wrap">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Fitment Options</p>
+        <h2 id="halcyon-fitment-title">Universal precision or custom comfort.</h2>
+        <p>Halcyon is available as a universal-fit monitor or as a custom IEM built from ear impressions. Custom shells are molded for a personal seal with your choice of faceplate finish.</p>
+      </div>
+      <div class="hal-fitment-grid">
+        <figure class="hal-fitment-grid__wide">
+          <img src="{{ 'halcyon-ciem-fit-1.jpg' | asset_url }}" alt="Custom Halcyon CIEM shells on a clean white background" width="1920" height="1080" loading="lazy">
+          <figcaption><strong>Custom In-Ear Shells</strong><span>CIEM stock shows available custom fitment and faceplate finishing options.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-ciem-fit-2.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor close-up" width="1920" height="1080" loading="lazy">
+          <figcaption><strong>Personalized Finish</strong><span>Graphic faceplates and custom shell colors are built around individual ear impressions.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-ciem-fit-8.jpg' | asset_url }}" alt="Halcyon CIEM shells on dark carbon texture" width="1920" height="1080" loading="lazy">
+          <figcaption><strong>Daily Fit</strong><span>Custom contours improve seal stability for long sessions and stage use.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-ciem-fit-6.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor on dark textured background" width="1920" height="1080" loading="lazy">
+          <figcaption><strong>Stage Seal</strong><span>Full-shell geometry supports consistent isolation and repeatable placement.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="{{ 'halcyon-ciem-fit-7.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor faceplate detail" width="1920" height="1080" loading="lazy">
+          <figcaption><strong>Finish Detail</strong><span>Custom faceplates carry the same premium hardware language into CIEM form.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark" aria-labelledby="halcyon-specs-title">
+    <div class="hal-wrap hal-specs-grid">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Specifications</p>
+        <h2 id="halcyon-specs-title">Halcyon specifications.</h2>
+      </div>
+      <div class="hal-spec-table" role="table" aria-label="Halcyon specifications">
+        <div role="row"><span role="cell">Driver System</span><strong role="cell">1 x 10mm graphene dynamic, 1 x 2 mid-high BA, 2 x 2 electrostatic tweeter</strong></div>
+        <div role="row"><span role="cell">Crossover</span><strong role="cell">4-way</strong></div>
+        <div role="row"><span role="cell">Frequency Response</span><strong role="cell">5Hz-100kHz</strong></div>
+        <div role="row"><span role="cell">THD</span><strong role="cell">&lt;0.5%</strong></div>
+        <div role="row"><span role="cell">Sensitivity</span><strong role="cell">104dB</strong></div>
+        <div role="row"><span role="cell">Impedance</span><strong role="cell">24 Ohm</strong></div>
+        <div role="row"><span role="cell">Bore System</span><strong role="cell">3 bore</strong></div>
+        <div role="row"><span role="cell">Enclosure</span><strong role="cell">7075 aerospace-grade aluminum alloy</strong></div>
+        <div role="row"><span role="cell">Cable</span><strong role="cell">Symphonium Thera monocrystalline silver cable</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper" aria-labelledby="halcyon-accessories-title">
+    <div class="hal-wrap">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Accessories and Warranty</p>
+        <h2 id="halcyon-accessories-title">The everyday kit.</h2>
+      </div>
+      <div class="hal-accessory-grid">
+        <article>
+          <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="AAW ear tip size tray" width="900" height="650" loading="lazy">
+          <span>01</span>
+          <h3>Ear Tip Size Tray</h3>
+          <p>Assorted ear tips help dial in seal, comfort, bass weight, and treble balance.</p>
+        </article>
+        <article>
+          <img src="{{ 'z02-carry-cases.jpg' | asset_url }}" alt="AAW carrying cases on dark background" width="900" height="650" loading="lazy">
+          <span>02</span>
+          <h3>AAW Cases</h3>
+          <p>Semi-rigid cases protect your monitors, cable, and accessories on the go.</p>
+        </article>
+        <article>
+          <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph ear tips close-up" width="900" height="650" loading="lazy">
+          <span>03</span>
+          <h3>LiquidMorph Ear Tips</h3>
+          <p>Adaptive silicone tips support stable seal pressure and long-session comfort.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark hal-review-band" aria-labelledby="halcyon-reviews-title">
+    <div class="hal-wrap">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Reviews</p>
+        <h2 id="halcyon-reviews-title">Customer reviews.</h2>
+      </div>
+      <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}" data-auto-install="false">
+        {{ jm_widget }}
+        {% if jm_widget == blank %}
+          <div class="jdgm-rev-widg" data-number-of-reviews="0" data-average-rating="0.00">
+            <div class="jdgm-rev-widg__header">
+              <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+              <div class="jdgm-rev-widg__summary">
+                <div class="jdgm-rev-widg__summary-stars" aria-label="0 out of 5 stars" role="img">
+                  <span class="jdgm-star jdgm--off"></span>
+                  <span class="jdgm-star jdgm--off"></span>
+                  <span class="jdgm-star jdgm--off"></span>
+                  <span class="jdgm-star jdgm--off"></span>
+                  <span class="jdgm-star jdgm--off"></span>
+                </div>
+                <div class="jdgm-rev-widg__summary-text">Be the first to write a review</div>
+              </div>
+              <a class="jdgm-write-rev-link" href="#" role="button">Write a Review</a>
+            </div>
+            <div class="jdgm-rev-widg__body">
+              <div class="jdgm-rev-widg__reviews"></div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--paper" aria-labelledby="halcyon-faq-title">
+    <div class="hal-wrap hal-faq">
+      <div class="hal-section-head">
+        <p class="hal-kicker">Questions</p>
+        <h2 id="halcyon-faq-title">What to know before listening.</h2>
+      </div>
+      <div class="hal-faq__list">
+        <details open>
+          <summary>What driver system does Halcyon use?</summary>
+          <p>Halcyon uses a tri-hybrid system with a 10mm graphene dynamic driver, two mid-high balanced armature drivers, and four electrostatic tweeters.</p>
+        </details>
+        <details>
+          <summary>What makes Halcyon different from a standard hybrid IEM?</summary>
+          <p>Halcyon adds electrostatic tweeters to a dynamic and balanced-armature platform, giving the upper range air and fine detail while keeping bass physical.</p>
+        </details>
+        <details>
+          <summary>Does Halcyon support custom fitment?</summary>
+          <p>Yes. Halcyon can be ordered as a universal monitor or configured as a CIEM using ear impressions.</p>
+        </details>
+        <details>
+          <summary>How does BassFlow tuning affect the sound?</summary>
+          <p>BassFlow is a mechanical tuning plate that adjusts low-end weight independently of the crossover. It shapes bass behavior without altering the core driver platform.</p>
+        </details>
+        <details>
+          <summary>What cable does Halcyon include?</summary>
+          <p>Halcyon includes a Thera monocrystalline silver cable with low-resistance conductors and hardware matched to the monitor shell.</p>
+        </details>
+        <details>
+          <summary>What type of listener is Halcyon for?</summary>
+          <p>Halcyon is built for listeners who want a full-range monitor with physical bass, clear vocal presence, and electrostatic treble extension.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="hal-section hal-section--dark hal-final" aria-labelledby="halcyon-final-title">
+    <div class="hal-wrap">
+      <p class="hal-kicker">Halcyon</p>
+      <h2 id="halcyon-final-title">Tri-hybrid precision. Electrostatic extension.</h2>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <button class="hal-btn hal-btn--light" type="submit" {% unless current_variant.available %}disabled{% endunless %}>Buy Halcyon</button>
+      </form>
+    </div>
+  </section>
+</section>
+
+{% schema %}
+{
+  "name": "Halcyon product",
+  "tag": "section",
+  "class": "halcyon-product-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "Section visibility",
+      "default": "always",
+      "options": [
+        {
+          "value": "always",
+          "label": "Always"
+        },
+        {
+          "value": "small",
+          "label": "Small screens only"
+        },
+        {
+          "value": "large",
+          "label": "Large screens only"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Halcyon product"
+    }
+  ]
+}
+{% endschema %}
