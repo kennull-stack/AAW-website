@@ -11,20 +11,6 @@
         {{ 'aaw-judgeme-reviews.css' | asset_url | stylesheet_tag }}
         <script src="{{ 'aaw-judgeme-reviews.js' | asset_url }}&aaw_reviews=photo-first-longest-alt-v4" defer></script>
       {%- endif -%}
-      {%- if request.page_type == '404' -%}
-        <script>
-          (function () {
-            var redirects = {
-              '/products/z07': '/products/z07-in-ear-monitor',
-              '/products/z07-hybrid-in-ear-monitor': '/products/z07-in-ear-monitor',
-              '/products/canary': '/products/canary-isobaric-electrostatic-universal-in-ear-monitor',
-              '/products/canary-pro': '/products/canary-isobaric-electrostatic-universal-in-ear-monitor'
-            };
-            var target = redirects[window.location.pathname];
-            if (target) window.location.replace(target + window.location.search + window.location.hash);
-          })();
-        </script>
-      {%- endif -%}
       {%- if template.name == 'product' and product.handle == 'z05-auag-launch-edition' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="zh-Hans" href="https://www.aaw.me/zh/products/z05-auag-launch-edition">
