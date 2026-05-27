@@ -7,8 +7,24 @@
       <meta name="theme-color" content="#F5F5F5">
       {% render 'meta-tags' %}
       <link rel="canonical" href="{{ canonical_url }}">
-      {{ 'aaw-judgeme-reviews.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'aaw-judgeme-reviews.js' | asset_url }}&aaw_reviews=photo-first-longest-alt-v4" defer></script>
+      {%- if request.page_type == 'product' or request.page_type == 'index' or request.page_type == 'collection' -%}
+        {{ 'aaw-judgeme-reviews.css' | asset_url | stylesheet_tag }}
+        <script src="{{ 'aaw-judgeme-reviews.js' | asset_url }}&aaw_reviews=photo-first-longest-alt-v4" defer></script>
+      {%- endif -%}
+      {%- if request.page_type == '404' -%}
+        <script>
+          (function () {
+            var redirects = {
+              '/products/z07': '/products/z07-in-ear-monitor',
+              '/products/z07-hybrid-in-ear-monitor': '/products/z07-in-ear-monitor',
+              '/products/canary': '/products/canary-isobaric-electrostatic-universal-in-ear-monitor',
+              '/products/canary-pro': '/products/canary-isobaric-electrostatic-universal-in-ear-monitor'
+            };
+            var target = redirects[window.location.pathname];
+            if (target) window.location.replace(target + window.location.search + window.location.hash);
+          })();
+        </script>
+      {%- endif -%}
       {%- if template.name == 'product' and product.handle == 'z05-auag-launch-edition' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/products/z05-auag-launch-edition">
         <link rel="alternate" hreflang="zh-Hans" href="https://www.aaw.me/zh/products/z05-auag-launch-edition">
@@ -39,6 +55,19 @@
       {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
         <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
       {%- endunless -%}
+      <link rel="preload" as="style" href="{{ 'country-flags.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>{{ 'country-flags.css' | asset_url | stylesheet_tag }}</noscript>
+
+      {%- if request.page_type == 'index' -%}
+        <link rel="preload" as="image" href="{{ 'z07-monitors-on-beige-marble.jpg' | asset_img_url: '700x' }}" media="(max-width: 767px)">
+        <link rel="preload" as="image" href="{{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_img_url: '1600x' }}" imagesrcset="{{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_img_url: '1200x' }} 1200w, {{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_img_url: '1600x' }} 1600w, {{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_img_url: '2000x' }} 2000w" imagesizes="100vw" media="(min-width: 768px)">
+      {%- elsif request.page_type == 'product' and product.handle == 'z05-auag-launch-edition' -%}
+        <link rel="preload" as="image" href="{{ 'z05-auag-luxury-portrait-hero-optimized.jpg' | asset_img_url: '1024x' }}">
+      {%- elsif request.page_type == 'product' and product.handle == 'z07-in-ear-monitor' -%}
+        <link rel="preload" as="image" href="{{ 'z07-worn-in-ear-fitmorph-hero.jpg' | asset_img_url: '1600x' }}">
+      {%- elsif request.page_type == 'product' and product.handle contains 'm20' -%}
+        <link rel="preload" as="image" href="{{ 'm20-gallery-3.jpg' | asset_img_url: '1600x' }}">
+      {%- endif -%}
 
       {%- if request.page_type == 'page' and page.handle == 'about-us' -%}
         <title>About Advanced AcousticWerkes | Singapore IEM Specialist Founded by Kevin Wang</title>
@@ -102,9 +131,6 @@
 
         {% if settings.enable_shipping and settings.shipping_rate != blank %}
           <div id="mini-cart-shipping"  data-minicart-shipping {% if settings.enable_shipping and settings.shipping_rate != blank %}  data-shipping-rate="{{ settings.shipping_rate | times: 100 }}" data-shippin-text="{{ settings.shipping_text }}"{% endif %}>
-            <select id="shipping-countries" class="hidden" disabled>
-              {{ country_option_tags }}
-            </select>
           </div>
         {% endif %}
         {% if settings.enable_animation %}
@@ -115,11 +141,6 @@
                 offset: 100,
                 once: true,
               });
-              setTimeout(function () {
-                if (AOS) {
-                  AOS.refresh();
-                }
-              }, 1000);
             });
           </script>
         {% endif %}
