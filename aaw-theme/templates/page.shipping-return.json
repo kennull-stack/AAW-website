@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sr_hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-hero sr-wrap\">\n    <div class=\"sr-hero-copy\">\n      <p class=\"sr-kicker\">AAW</p>\n      <h1>Shipping<em>&amp; Returns</em></h1>\n      <p class=\"sr-dek\">We ship worldwide at a flat rate via FedEx. Free local pickup is available at our Singapore showroom. Every order is packed with care and shipped with full tracking.</p>\n    </div>\n    <div class=\"sr-hero-media\">\n      <img src=\"{{ 'aaw-ins-method-custom-group-2026.jpg' | asset_url }}\" alt=\"AAW custom in-ear monitors \u2014 shipped worldwide from Singapore\" width=\"1024\" height=\"1280\" loading=\"eager\">\n    </div>\n  </section>\n  <div class=\"sr-stat-strip\">\n    <div class=\"sr-wrap sr-stats\">\n      <div class=\"sr-stat\"><b>Worldwide Flat Rate</b><span>One flat shipping rate for all IEM orders, displayed at checkout before you confirm.</span></div>\n      <div class=\"sr-stat\"><b>FedEx International</b><span>Fast 2\u20134 working day delivery to most destinations with full tracking included.</span></div>\n      <div class=\"sr-stat\"><b>Free Local Pickup</b><span>Collect your order at 76 Playfair Rd, Singapore. Select at checkout.</span></div>\n    </div>\n  </div>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_intl": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Worldwide Delivery</p>\n        <h2>International Shipping</h2>\n        <p>We ship at a flat rate for all IEM orders. The amount will appear before you check out. Every international shipment includes full tracking and is handled by our courier partner.</p>\n      </div>\n      <div class=\"sr-shipping-grid\">\n        <div class=\"sr-shipping-card\">\n          <div class=\"sr-shipping-card-grid\">\n            <div class=\"sr-shipping-card-text\">\n              <span class=\"sr-badge\">International</span>\n              <h3>FedEx</h3>\n              <p>FedEx typically takes 2\u20134 working days to reach most destinations. However, these are estimated time-frames provided by FedEx; actual delivery may vary according to the destination country. Tracking is provided the moment your package leaves Singapore.</p>\n            </div>\n            <div class=\"sr-shipping-card-logo\">\n              <img src=\"{{ 'fedex-logo.svg' | asset_url }}\" alt=\"FedEx\" width=\"120\" height=\"44\">\n            </div>\n          </div>\n        </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_domestic": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Singapore</p>\n        <h2>Domestic Shipping</h2>\n        <p>If you are based in Singapore, choose the delivery or pickup method that works best for you during checkout.</p>\n      </div>\n      <div class=\"sr-domestic-grid\">\n        <div class=\"sr-domestic-card\">\n          <h3>In-Store Pickup</h3>\n          <p>Free pickup at our showroom at 76 Playfair Rd, #01-03 LHK2 Building, Singapore 367996.</p>\n        </div>\n        <div class=\"sr-domestic-card\">\n          <h3>La La Move</h3>\n          <p>Same-day or scheduled courier delivery within Singapore. Rates calculated at checkout.</p>\n        </div>\n        <div class=\"sr-domestic-card\">\n          <h3>SpeedPost</h3>\n          <p>Singapore Post\u2019s express domestic service with tracking and next-day delivery on most orders.</p>\n        </div>\n        <div class=\"sr-domestic-card\">\n          <h3>SingPost Registered</h3>\n          <p>Singapore Post local registered parcel. Tracked delivery with signature confirmation.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_tax": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section dark\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Important</p>\n        <h2>Tax &amp; Custom</h2>\n      </div>\n      <div class=\"sr-tax-note\">\n        <strong>We are not liable for destination custom charges</strong>\n        <p>We are NOT liable for any tax charges incurred at the custom of the destination country. Please check with your local customs office before ordering if you are unsure about potential charges.</p>\n      </div>\n      <div class=\"sr-tax-note\" style=\"margin-top:14px;\">\n        <strong>Singapore inbound tax on repairs &amp; reshells</strong>\n        <p>We are also NOT liable for any tax charges incurred at Singapore custom if the customer has declared a high value for their repairs, ear impressions, and reshell sent to us. We usually prepay the tax and contact the customer for subsequent tax payment. Declare all repairs, ear impressions, and reshell under US$200 when sending to us from overseas. Contact us if you have any doubts.</p>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_returns": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Policy</p>\n        <h2>Returns</h2>\n      </div>\n      <div class=\"sr-returns-grid\">\n        <div class=\"sr-returns-card\">\n          <h3>14-Day Window</h3>\n          <p>Our policy lasts 14 days. If 14 days have gone by since confirmation of delivery (based on tracking information), unfortunately we cannot offer a refund or exchange.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Eligibility</h3>\n          <p>To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging. A receipt or proof of purchase is required.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Non-Returnable Items</h3>\n          <p>Gift cards and Custom In-Ear Monitors cannot be returned. Please do not send your purchase back to the manufacturer.</p>\n        </div>\n      </div>\n      <p style=\"margin-top:28px;color:#302b25;font-size:15px;line-height:1.6;\">Partial refunds may be granted for items not in original condition, damaged, or missing parts for reasons not due to our error, or items returned more than 14 days after delivery.</p>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_refunds": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section dark\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Process</p>\n        <h2>Refunds &amp; Exchanges</h2>\n      </div>\n      <div class=\"sr-returns-grid\">\n        <div class=\"sr-returns-card\">\n          <h3>Refunds</h3>\n          <p>Once your return is received and inspected, we will email you to confirm receipt and notify you of the approval or rejection of your refund. Approved refunds will be processed and credited to your original method of payment within a certain number of days.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Late or Missing Refunds</h3>\n          <p>If you haven\u2019t received a refund, first check your bank account again. Then contact your credit card company \u2014 it may take time before the refund is officially posted. Next, contact your bank. If you still haven\u2019t received it, reach out to us at support@aaw.me.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Sale Items &amp; Gifts</h3>\n          <p>Only regular priced items may be refunded; sale items cannot be refunded. If the item was marked as a gift, you\u2019ll receive a gift credit for the value of your return. Otherwise, the refund goes to the original purchaser.</p>\n        </div>\n      </div>\n      <div class=\"sr-returns-grid\" style=\"margin-top:18px;\">\n        <div class=\"sr-returns-card\">\n          <h3>Exchanges</h3>\n          <p>We only replace items if they are defective or damaged. If you need to exchange it for the same item, email us at support@aaw.me and send your item to the address below.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Return Shipping Cost</h3>\n          <p>You are responsible for paying your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted. We recommend using our prepaid FedEx return shipping label for safety and the lowest cost.</p>\n        </div>\n        <div class=\"sr-returns-card\">\n          <h3>Shipping Insurance</h3>\n          <p>If you are shipping an item over $75, consider using a traceable shipping service or purchasing shipping insurance. We do not guarantee that we will receive your returned item without tracking.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_address": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-section\">\n    <div class=\"sr-wrap\">\n      <div class=\"sr-shipping-head\">\n        <p class=\"sr-kicker\">Send Your Return</p>\n        <h2>Return Address</h2>\n        <p>To return your product, mail it to the address below. Include your order confirmation and a note describing the reason for return.</p>\n      </div>\n      <div class=\"sr-address-block\">\n        <span class=\"sr-address-label\">RMA Department</span>\n        <h3>Shipping Address</h3>\n        <address>\n          <strong>Advanced AcousticWerkes</strong>\n          #01-03, LHK2 Building<br>\n          76 Playfair Road<br>\n          Singapore 367996<br>\n          Attn: RMA Department<br>\n          Tel: +65 8731 5476\n        </address>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "sr_final": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"sr-feature-shell\">\n  <section class=\"sr-final\">\n    <div class=\"sr-wrap sr-final-inner\">\n      <h2>Get in touch today</h2>\n      <p>We typically respond within 48 hours. If you have questions about shipping, returns, or anything else, reach out and we\u2019ll get back to you.</p>\n      <div class=\"sr-actions\">\n        <a class=\"sr-btn\" href=\"mailto:support@aaw.me\">Email Support</a>\n        <a class=\"sr-btn secondary\" href=\"/pages/contact\">Contact Us</a>\n      </div>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebPage\",\n  \"name\": \"Shipping & Return\",\n  \"description\": \"AAW shipping and returns policy. Worldwide flat-rate FedEx shipping, free local pickup in Singapore, and a 14-day return policy for eligible items.\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Advanced AcousticWerkes\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"76 Playfair Road, #01-03 LHK2 Building\",\n      \"postalCode\": \"367996\",\n      \"addressCountry\": \"SG\"\n    }\n  }\n}\n</script>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "sr_hero",
+    "sr_intl",
+    "sr_domestic",
+    "sr_tax",
+    "sr_returns",
+    "sr_refunds",
+    "sr_address",
+    "sr_final"
+  ]
+}

@@ -19,6 +19,8 @@
         {{ 'z05-product.css' | asset_url | stylesheet_tag }}
       {%- elsif request.page_type == 'page' and page.handle == 'get-started' -%}
         {{ 'get-started.css' | asset_url | stylesheet_tag }}
+      {%- elsif request.page_type == 'page' and page.handle == 'shipping-return' -%}
+        {{ 'shipping-return.css' | asset_url | stylesheet_tag }}
       {%- elsif request.page_type == 'index' -%}
         <link rel="alternate" hreflang="en" href="https://www.aaw.me/">
         <link rel="alternate" hreflang="x-default" href="https://www.aaw.me/">
