@@ -225,7 +225,7 @@
       </form>
     </div>
     <figure class="cp-hero__media">
-      <img src="{{ 'canary-pro-cable-player-instagram.jpg' | asset_url }}" alt="Canary Pro connected to a cable and player with blue faceplates on a wooden surface" width="1440" height="1440" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'canary-pro-cable-player-instagram.jpg', alt: 'Canary Pro connected to a cable and player with blue faceplates on a wooden surface', width: '1440', height: '1440', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -255,7 +255,7 @@
   <section class="cp-section cp-section--dark cp-explosion" aria-labelledby="cp-explosion-title">
     <div class="cp-wrap cp-explosion__frame">
       <figure class="cp-explosion__media">
-        <img src="{{ 'canary-pro-exploded-serial.png' | asset_url }}" alt="Exploded Canary Pro construction render showing driver modules, printed chamber, shell, faceplate, socket, and nozzle" width="2000" height="1453" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-exploded-serial.png', alt: 'Exploded Canary Pro construction render showing driver modules, printed chamber, shell, faceplate, socket, and nozzle', width: '2000', height: '1453', loading: 'lazy' %}
       </figure>
     </div>
     <div class="cp-wrap cp-explosion__copy">
@@ -274,7 +274,7 @@
     <div class="cp-wrap cp-architecture__grid">
       <article class="cp-driver-visual" aria-label="Canary Pro generated driver configuration">
         <figure class="cp-driver-visual__media">
-          <img src="{{ 'canary-pro-driver-render-clean.jpg' | asset_url }}" alt="Canary Pro 3D rendered driver configuration without baked-in text labels" width="3840" height="2160" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'canary-pro-driver-render-clean.jpg', alt: 'Canary Pro 3D rendered driver configuration without baked-in text labels', width: '3840', height: '2160', loading: 'lazy' %}
         </figure>
         <div class="cp-driver-visual__overlay" aria-hidden="true">
           <span class="cp-driver-label cp-driver-label--left cp-driver-label--est">Electrostatic Super<br>Tweeter X 4</span>
@@ -300,7 +300,7 @@
   <section class="cp-section cp-section--dark cp-slfi" aria-labelledby="cp-slfi-title">
     <div class="cp-wrap cp-slfi__grid">
       <figure class="cp-slfi__graph">
-        <img src="{{ 'canary-pro-slfi.png' | asset_url }}" alt="Canary Pro SLFI impedance and frequency response graph" width="2000" height="1261" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-slfi.png', alt: 'Canary Pro SLFI impedance and frequency response graph', width: '2000', height: '1261', loading: 'lazy' %}
         <figcaption>Measured against the response curve, SLFI keeps Canary Pro close to a flat 7 Ohm load across the audible range.</figcaption>
       </figure>
       <div class="cp-slfi__copy">
@@ -358,7 +358,7 @@
         <p>Simulation determines phasing and placement. Printing turns that geometry into a repeatable acoustic structure. Hand finishing gives the shell its final surface and fit.</p>
       </div>
       <figure class="cp-build__photo">
-        <img src="{{ 'canary-pro-side-detail.jpg' | asset_url }}" alt="Canary Pro side detail showing the black shell, connector, and iridescent faceplate edge" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-side-detail.jpg', alt: 'Canary Pro side detail showing the black shell, connector, and iridescent faceplate edge', width: '2000', height: '1333', loading: 'lazy' %}
       </figure>
     </div>
   </section>
@@ -371,21 +371,21 @@
         <p>Canary Pro's faceplate layers natural pearl with synthesized material, cut and placed by hand. The surface shifts from deep blue through green, gold, and violet as it moves. It is precise enough to read as engineered, but the pattern never repeats.</p>
       </div>
       <figure>
-        <img src="{{ 'canary-pro-faceplate-front.jpg' | asset_url }}" alt="Canary Pro pair photographed front-on with blue iridescent faceplates" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-faceplate-front.jpg', alt: 'Canary Pro pair photographed front-on with blue iridescent faceplates', width: '2000', height: '1333', loading: 'lazy' %}
       </figure>
     </div>
     <div class="cp-wrap cp-gallery" aria-label="Canary Pro product gallery">
-      <figure><img src="{{ 'canary-pro-faceplate-symmetric.jpg' | asset_url }}" alt="Canary Pro faceplate pair arranged symmetrically on black background" loading="lazy"></figure>
-      <figure><img src="{{ 'canary-pro-faceplate-angle.jpg' | asset_url }}" alt="Angled Canary Pro faceplates glowing blue and green under studio light" loading="lazy"></figure>
-      <figure><img src="{{ 'canary-pro-ciem-front.jpg' | asset_url }}" alt="Custom-fit Canary Pro faceplate pair on black background" loading="lazy"></figure>
-      <figure><img src="{{ 'canary-pro-ciem-pair.jpg' | asset_url }}" alt="Custom-fit Canary Pro pair showing blue iridescent faceplates and clear shells" loading="lazy"></figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'canary-pro-faceplate-symmetric.jpg', alt: 'Canary Pro faceplate pair arranged symmetrically on black background', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'canary-pro-faceplate-angle.jpg', alt: 'Angled Canary Pro faceplates glowing blue and green under studio light', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'canary-pro-ciem-front.jpg', alt: 'Custom-fit Canary Pro faceplate pair on black background', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'canary-pro-ciem-pair.jpg', alt: 'Custom-fit Canary Pro pair showing blue iridescent faceplates and clear shells', loading: 'lazy' %}</figure>
     </div>
   </section>
 
   <section class="cp-section cp-artwork">
     <div class="cp-wrap cp-artwork__grid">
       <figure>
-        <img src="{{ 'canary-pro-singapore-packaging.jpg' | asset_url }}" alt="Canary Pro illustrated packaging held in Singapore with Merlion, skyline, orchid, and canary identity artwork" width="1440" height="1440" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-singapore-packaging.jpg', alt: 'Canary Pro illustrated packaging held in Singapore with Merlion, skyline, orchid, and canary identity artwork', width: '1440', height: '1440', loading: 'lazy' %}
       </figure>
       <div>
         <p class="cp-kicker">Canary Identity</p>
@@ -402,19 +402,19 @@
     </div>
     <div class="cp-wrap cp-accessory-grid">
       <article>
-        <img src="{{ 'canary-pro-faceplate-angle.jpg' | asset_url }}" alt="Canary Pro with attached cable on dark studio background" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-faceplate-angle.jpg', alt: 'Canary Pro with attached cable on dark studio background', width: '2000', height: '1333', loading: 'lazy' %}
         <div><span>01</span><h3>Lune cable</h3><p>48 inch Null Audio Lune premium cable with 4.4mm balanced termination, chosen to keep the signal path clean and quiet.</p></div>
       </article>
       <article>
-        <img src="{{ 'canary-pro-ciem-angle.jpg' | asset_url }}" alt="Custom-fit Canary Pro angled shell showing faceplate depth and transparent housing" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-ciem-angle.jpg', alt: 'Custom-fit Canary Pro angled shell showing faceplate depth and transparent housing', width: '2000', height: '1333', loading: 'lazy' %}
         <div><span>02</span><h3>Universal or custom</h3><p>The universal model ships with a full tip selection. Custom-fit monitors are shaped directly from ear impressions and do not need tips.</p></div>
       </article>
       <article>
-        <img src="{{ 'canary-pro-carry-case-instagram.jpg' | asset_url }}" alt="Canary Pro monitors on the blue leather carry case with kopitiam roast packaging in the background" width="1440" height="1440" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-carry-case-instagram.jpg', alt: 'Canary Pro monitors on the blue leather carry case with kopitiam roast packaging in the background', width: '1440', height: '1440', loading: 'lazy' %}
         <div><span>03</span><h3>Carry and care</h3><p>Leather carry case, cleaning tool, owner's club card, and a practical accessory kit for daily use.</p></div>
       </article>
       <article>
-        <img src="{{ 'canary-pro-cable-player-instagram.jpg' | asset_url }}" alt="Canary Pro connected to a cable and player with blue faceplates on a wooden surface" width="1440" height="1440" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'canary-pro-cable-player-instagram.jpg', alt: 'Canary Pro connected to a cable and player with blue faceplates on a wooden surface', width: '1440', height: '1440', loading: 'lazy' %}
         <div><span>04</span><h3>Source friendly</h3><p>SLFI reduces source sensitivity, so the same monitor behaves more consistently across players and amplifiers.</p></div>
       </article>
     </div>

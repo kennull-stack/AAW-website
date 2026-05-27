@@ -3,10 +3,14 @@
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
   assign product_price = current_variant.price | money
-  assign hero_image = 'halcyon-studio-blue-case.jpg' | asset_url
-  assign package_image = 'halcyon-studio-package.jpg' | asset_url
-  assign exploded_image = 'halcyon-exploded-layout.jpg' | asset_url
-  assign transparent_image = 'halcyon-transparent-architecture-crop.jpg' | asset_url
+  assign hero_image_file = 'halcyon-studio-blue-case.jpg'
+  assign package_image_file = 'halcyon-studio-package.jpg'
+  assign exploded_image_file = 'halcyon-exploded-layout.jpg'
+  assign transparent_image_file = 'halcyon-transparent-architecture-crop.jpg'
+  assign hero_image = hero_image_file | asset_img_url: '1500x'
+  assign package_image = package_image_file | asset_img_url: '1500x'
+  assign exploded_image = exploded_image_file | asset_img_url: '1200x'
+  assign transparent_image = transparent_image_file | asset_img_url: '900x'
   assign jm_badge = product.metafields.judgeme.badge | default: ''
   assign jm_widget = product.metafields.judgeme.widget | default: ''
 -%}
@@ -188,7 +192,7 @@
     </div>
 
     <figure class="hal-hero__media">
-      <img src="{{ hero_image }}" alt="Halcyon in-ear monitors on a blue AAW carrying case" width="1500" height="1000" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: hero_image_file, alt: 'Halcyon in-ear monitors on a blue AAW carrying case', width: '1500', height: '1000', loading: 'eager', sizes: '100vw', fetchpriority: 'high' %}
     </figure>
   </section>
 
@@ -232,7 +236,9 @@
         <p>Close-up studio footage of the machined aluminum shell, cable hardware, and faceplate finishing.</p>
       </div>
       <figure class="hal-video-frame">
-        <video src="{{ 'halcyon-8.mp4' | asset_url }}" poster="{{ hero_image }}" playsinline muted autoplay loop controls preload="metadata"></video>
+        <video poster="{{ hero_image }}" playsinline muted controls preload="none">
+          <source src="{{ 'halcyon-8.mp4' | asset_url }}" type="video/mp4">
+        </video>
       </figure>
     </div>
   </section>
@@ -245,7 +251,7 @@
         <p>Exploded layout showing each component: aluminum shell, driver modules, BassFlow tuning plate, cable hardware, and ear tips.</p>
       </div>
       <figure class="hal-exploded-hero">
-        <img src="{{ exploded_image }}" alt="Halcyon exploded layout with shell, drivers, cable, tips, and BassFlow components" width="900" height="1200" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: exploded_image_file, alt: 'Halcyon exploded layout with shell, drivers, cable, tips, and BassFlow components', width: '900', height: '1200', loading: 'lazy' %}
         <figcaption>
           <strong>Exploded Layout</strong>
           <span>Shell, driver, cable, tip, and BassFlow components presented as a complete system.</span>
@@ -269,19 +275,19 @@
         </div>
         <div class="hal-driver-grid">
           <div class="hal-driver-box">
-            <img src="{{ 'halcyon-driver-graphene.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            {% render 'aaw-responsive-asset-image', file: 'halcyon-driver-graphene.png', alt: '', width: '180', height: '180', loading: 'lazy' %}
             <span>Dynamic Foundation</span>
             <strong>1 x 10mm</strong>
             <p>Graphene dynamic driver</p>
           </div>
           <div class="hal-driver-box">
-            <img src="{{ 'halcyon-driver-ba.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            {% render 'aaw-responsive-asset-image', file: 'halcyon-driver-ba.png', alt: '', width: '180', height: '180', loading: 'lazy' %}
             <span>Mid-High Detail</span>
             <strong>1 x 2</strong>
             <p>Balanced armature driver</p>
           </div>
           <div class="hal-driver-box">
-            <img src="{{ 'halcyon-driver-est.png' | asset_url }}" alt="" width="180" height="180" loading="lazy">
+            {% render 'aaw-responsive-asset-image', file: 'halcyon-driver-est.png', alt: '', width: '180', height: '180', loading: 'lazy' %}
             <span>Electrostatic Extension</span>
             <strong>2 x 2</strong>
             <p>Electrostatic tweeter array</p>
@@ -314,14 +320,14 @@
 
       <div class="hal-tech-strip">
         <figure>
-          <img src="{{ transparent_image }}" alt="Transparent Halcyon shell render showing internal driver placement" width="900" height="650" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: transparent_image_file, alt: 'Transparent Halcyon shell render showing internal driver placement', width: '900', height: '650', loading: 'lazy' %}
           <figcaption>
             <strong>Internal Architecture</strong>
             <span>Driver placement and acoustic chambers are simulated, then machined for consistent phasing.</span>
           </figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-electrostatic-driver.jpg' | asset_url }}" alt="Halcyon electrostatic driver close-up render" width="900" height="650" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-electrostatic-driver.jpg', alt: 'Halcyon electrostatic driver close-up render', width: '900', height: '650', loading: 'lazy' %}
           <figcaption>
             <strong>Electrostatic System</strong>
             <span>Four electrostatic tweeters handle treble extension, transient speed, and spatial cues.</span>
@@ -344,7 +350,7 @@
         </div>
       </div>
       <figure>
-        <img src="{{ 'halcyon-studio-bassflow-plate.jpg' | asset_url }}" alt="Halcyon BassFlow tuning plate close-up" width="1500" height="1000" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'halcyon-studio-bassflow-plate.jpg', alt: 'Halcyon BassFlow tuning plate close-up', width: '1500', height: '1000', loading: 'lazy' %}
       </figure>
     </div>
   </section>
@@ -362,7 +368,7 @@
         </div>
       </div>
       <figure>
-        <img src="{{ 'halcyon-studio-thera-cable.jpg' | asset_url }}" alt="Halcyon Thera cable hardware close-up" width="1500" height="1000" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'halcyon-studio-thera-cable.jpg', alt: 'Halcyon Thera cable hardware close-up', width: '1500', height: '1000', loading: 'lazy' %}
       </figure>
     </div>
   </section>
@@ -376,15 +382,15 @@
       </div>
       <div class="hal-studio-grid">
         <figure class="hal-studio-grid__wide">
-          <img src="{{ package_image }}" alt="Halcyon product packaging with technical line art" width="1500" height="1000" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: package_image_file, alt: 'Halcyon product packaging with technical line art', width: '1500', height: '1000', loading: 'lazy' %}
           <figcaption><strong>Retail Presentation</strong><span>Packaging carries the same technical hardware language as the monitor.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-studio-shell-pair.jpg' | asset_url }}" alt="Halcyon shell pair close-up" width="1500" height="1000" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-studio-shell-pair.jpg', alt: 'Halcyon shell pair close-up', width: '1500', height: '1000', loading: 'lazy' %}
           <figcaption><strong>Shell Pair</strong><span>Machined aluminum shells with engraved hardware detail.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-studio-single-shell.jpg' | asset_url }}" alt="Halcyon single shell on textured surface" width="1500" height="1000" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-studio-single-shell.jpg', alt: 'Halcyon single shell on textured surface', width: '1500', height: '1000', loading: 'lazy' %}
           <figcaption><strong>Machined Body</strong><span>A compact metal form with a controlled, industrial finish.</span></figcaption>
         </figure>
       </div>
@@ -399,10 +405,10 @@
         <p>Driver placement, nozzle geometry, and acoustic chambers are digitally simulated, then machined from 7075 aluminum. The result is consistent phasing and repeatable production tolerances.</p>
       </div>
       <figure>
-        <img src="{{ 'halcyon-precision-render.jpg' | asset_url }}" alt="Halcyon transparent shell render showing internal driver layout" width="900" height="650" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'halcyon-precision-render.jpg', alt: 'Halcyon transparent shell render showing internal driver layout', width: '900', height: '650', loading: 'lazy' %}
       </figure>
       <figure>
-        <img src="{{ transparent_image }}" alt="Transparent Halcyon internal architecture render" width="900" height="650" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: transparent_image_file, alt: 'Transparent Halcyon internal architecture render', width: '900', height: '650', loading: 'lazy' %}
       </figure>
     </div>
   </section>
@@ -416,23 +422,23 @@
       </div>
       <div class="hal-fitment-grid">
         <figure class="hal-fitment-grid__wide">
-          <img src="{{ 'halcyon-ciem-fit-1.jpg' | asset_url }}" alt="Custom Halcyon CIEM shells on a clean white background" width="1920" height="1080" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-ciem-fit-1.jpg', alt: 'Custom Halcyon CIEM shells on a clean white background', width: '1920', height: '1080', loading: 'lazy' %}
           <figcaption><strong>Custom In-Ear Shells</strong><span>CIEM stock shows available custom fitment and faceplate finishing options.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-ciem-fit-2.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor close-up" width="1920" height="1080" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-ciem-fit-2.jpg', alt: 'Halcyon custom in-ear monitor close-up', width: '1920', height: '1080', loading: 'lazy' %}
           <figcaption><strong>Personalized Finish</strong><span>Graphic faceplates and custom shell colors are built around individual ear impressions.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-ciem-fit-8.jpg' | asset_url }}" alt="Halcyon CIEM shells on dark carbon texture" width="1920" height="1080" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-ciem-fit-8.jpg', alt: 'Halcyon CIEM shells on dark carbon texture', width: '1920', height: '1080', loading: 'lazy' %}
           <figcaption><strong>Daily Fit</strong><span>Custom contours improve seal stability for long sessions and stage use.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-ciem-fit-6.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor on dark textured background" width="1920" height="1080" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-ciem-fit-6.jpg', alt: 'Halcyon custom in-ear monitor on dark textured background', width: '1920', height: '1080', loading: 'lazy' %}
           <figcaption><strong>Stage Seal</strong><span>Full-shell geometry supports consistent isolation and repeatable placement.</span></figcaption>
         </figure>
         <figure>
-          <img src="{{ 'halcyon-ciem-fit-7.jpg' | asset_url }}" alt="Halcyon custom in-ear monitor faceplate detail" width="1920" height="1080" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'halcyon-ciem-fit-7.jpg', alt: 'Halcyon custom in-ear monitor faceplate detail', width: '1920', height: '1080', loading: 'lazy' %}
           <figcaption><strong>Finish Detail</strong><span>Custom faceplates carry the same premium hardware language into CIEM form.</span></figcaption>
         </figure>
       </div>
@@ -467,19 +473,19 @@
       </div>
       <div class="hal-accessory-grid">
         <article>
-          <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="AAW ear tip size tray" width="900" height="650" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'z05-auag-liquidmorph-accessory-tray.jpg', alt: 'AAW ear tip size tray', width: '900', height: '650', loading: 'lazy' %}
           <span>01</span>
           <h3>Ear Tip Size Tray</h3>
           <p>Assorted ear tips help dial in seal, comfort, bass weight, and treble balance.</p>
         </article>
         <article>
-          <img src="{{ 'z02-carry-cases.jpg' | asset_url }}" alt="AAW carrying cases on dark background" width="900" height="650" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'z02-carry-cases.jpg', alt: 'AAW carrying cases on dark background', width: '900', height: '650', loading: 'lazy' %}
           <span>02</span>
           <h3>AAW Cases</h3>
           <p>Semi-rigid cases protect your monitors, cable, and accessories on the go.</p>
         </article>
         <article>
-          <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph ear tips close-up" width="900" height="650" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'LiquidMorph ear tips close-up', width: '900', height: '650', loading: 'lazy' %}
           <span>03</span>
           <h3>LiquidMorph Ear Tips</h3>
           <p>Adaptive silicone tips support stable seal pressure and long-session comfort.</p>

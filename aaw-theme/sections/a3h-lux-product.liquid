@@ -193,7 +193,7 @@
       </form>
     </div>
     <figure class="bm-hero__media">
-      <img src="{{ 'a3h-lux-hero.jpg' | asset_url }}" alt="A3H+ Lux silver universal in-ear monitors with detachable black cable and faceplates" width="2000" height="1334" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'a3h-lux-hero.jpg', alt: 'A3H+ Lux silver universal in-ear monitors with detachable black cable and faceplates', width: '2000', height: '1334', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -228,7 +228,7 @@
     </div>
     <div class="bm-wrap a3h-vantage__grid">
       <article class="a3h-vantage__card a3h-vantage__card--tall a3h-vantage__card--fitment">
-        <img src="{{ 'a3h-lux-musician-fitment.png' | asset_url }}" alt="A3H+ Lux universal in-ear monitor worn by a musician with over-ear cable fit" width="1536" height="1024" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-musician-fitment.png', alt: 'A3H+ Lux universal in-ear monitor worn by a musician with over-ear cable fit', width: '1536', height: '1024', loading: 'lazy' %}
         <div>
           <span>01</span>
           <h3>Universal Comfort</h3>
@@ -236,7 +236,7 @@
         </div>
       </article>
       <article class="a3h-vantage__card a3h-vantage__card--wide">
-        <img src="{{ 'a3h-lux-switch-back.jpg' | asset_url }}" alt="A3H+ Lux rear shell showing four-position tuning switch" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-switch-back.jpg', alt: 'A3H+ Lux rear shell showing four-position tuning switch', width: '2000', height: '1334', loading: 'lazy' %}
         <div>
           <span>02</span>
           <h3>Switchable Hybrid Tuning</h3>
@@ -244,7 +244,7 @@
         </div>
       </article>
       <article class="a3h-vantage__card">
-        <img src="{{ 'a3h-lux-closeup.jpg' | asset_url }}" alt="A3H+ Lux CNC aluminium shells and faceplate close-up" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-closeup.jpg', alt: 'A3H+ Lux CNC aluminium shells and faceplate close-up', width: '2000', height: '1334', loading: 'lazy' %}
         <div>
           <span>03</span>
           <h3>Skin-Safe Aluminium</h3>
@@ -252,7 +252,7 @@
         </div>
       </article>
       <article class="a3h-vantage__card">
-        <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors with personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'aaw-ins-hero-ciem-2026.jpg', alt: 'AAW custom-fit in-ear monitors with personalized shell and faceplate finish', width: '1200', height: '900', loading: 'lazy' %}
         <div>
           <span>04</span>
           <h3>Custom-Fit Path</h3>
@@ -265,7 +265,7 @@
   <section class="bm-section bm-section--dark bm-explosion" aria-labelledby="a3h-switch-title">
     <div class="bm-wrap bm-explosion__frame">
       <figure class="bm-explosion__media a3h-explosion__fitment">
-        <img src="{{ 'a3h-lux-musician-fitment.png' | asset_url }}" alt="A3H+ Lux universal in-ear monitor worn by a musician with over-ear cable fit" width="1536" height="1024" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-musician-fitment.png', alt: 'A3H+ Lux universal in-ear monitor worn by a musician with over-ear cable fit', width: '1536', height: '1024', loading: 'lazy' %}
       </figure>
       <div class="bm-explosion__copy">
         <p class="bm-kicker">Selectable Signature</p>
@@ -283,7 +283,7 @@
     </div>
     <div class="bm-wrap bm-architecture__grid">
       <figure class="bm-render-card bm-render-card--large">
-        <img src="{{ 'a3h-lux-closeup.jpg' | asset_url }}" alt="Close-up of A3H+ Lux faceplates and cable showing the aluminium enclosure" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-closeup.jpg', alt: 'Close-up of A3H+ Lux faceplates and cable showing the aluminium enclosure', width: '2000', height: '1334', loading: 'lazy' %}
         <figcaption>Driver and nozzle geometry is digitally modeled to keep phase and handoff consistent between universal and custom-fit builds.</figcaption>
       </figure>
       <div class="bm-driver-map" aria-label="A3H+ Lux driver layout">
@@ -303,11 +303,11 @@
         <p>Driver, nozzle, and chamber geometry is modeled digitally so universal and custom-fit units share the same phase and frequency response. Universal uses a compact CNC aluminium profile. Custom-fit units translate the same platform into an impression-built shell.</p>
       </div>
       <figure class="bm-build__photo">
-        <img src="{{ 'a3h-lux-paper-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors on sculpted white paper with silver aluminium shells" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-paper-wide.jpg', alt: 'A3H+ Lux monitors on sculpted white paper with silver aluminium shells', width: '2000', height: '1334', loading: 'lazy' %}
       </figure>
       <div class="bm-build__renders">
-        <img src="{{ 'a3h-lux-pair-wide.jpg' | asset_url }}" alt="A3H+ Lux universal monitors and cable on a neutral studio surface" width="2000" height="1334" loading="lazy">
-        <img src="{{ 'a3h-lux-portrait.jpg' | asset_url }}" alt="Portrait studio photo of A3H+ Lux silver faceplates" width="1334" height="2000" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-pair-wide.jpg', alt: 'A3H+ Lux universal monitors and cable on a neutral studio surface', width: '2000', height: '1334', loading: 'lazy' %}
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-portrait.jpg', alt: 'Portrait studio photo of A3H+ Lux silver faceplates', width: '1334', height: '2000', loading: 'lazy' %}
       </div>
     </div>
   </section>
@@ -325,8 +325,8 @@
       <article><span>04</span><h3>Bass</h3><p>Fuller low end. More woofer weight, less armature prominence.</p></article>
     </div>
     <div class="bm-wrap a3h-image-strip">
-      <figure><img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux monitors with detachable cable arranged on a grey studio surface" width="2000" height="1334" loading="lazy"></figure>
-      <figure><img src="{{ 'a3h-lux-gallery-pair.jpg' | asset_url }}" alt="A3H+ Lux faceplate close-up showing grille pattern and cable loops" width="2000" height="1334" loading="lazy"></figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'a3h-lux-cable-wide.jpg', alt: 'A3H+ Lux monitors with detachable cable arranged on a grey studio surface', width: '2000', height: '1334', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'a3h-lux-gallery-pair.jpg', alt: 'A3H+ Lux faceplate close-up showing grille pattern and cable loops', width: '2000', height: '1334', loading: 'lazy' %}</figure>
     </div>
   </section>
 
@@ -337,15 +337,15 @@
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
-        <img src="{{ 'a3h-lux-cable-wide.jpg' | asset_url }}" alt="A3H+ Lux detachable cable and universal monitors" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'a3h-lux-cable-wide.jpg', alt: 'A3H+ Lux detachable cable and universal monitors', width: '2000', height: '1334', loading: 'lazy' %}
         <div><span>01</span><h3>Epsilon cable</h3><p>48&quot; Null Audio Epsilon UPOCC copper cable. Low microphonics. Detachable 2-pin.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'LiquidMorph clear ear tips with teal inner bore', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>02</span><h3>LiquidMorph tips</h3><p>Silicone tips with a teal inner bore. Keeps the dynamic woofer sealed for consistent bass and center image.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph ear tip accessory tray with multiple sizes" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-auag-liquidmorph-accessory-tray.jpg', alt: 'LiquidMorph ear tip accessory tray with multiple sizes', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>03</span><h3>Size tray</h3><p>Multiple sizes in one tray. Faster fit checks before a show or session.</p></div>
       </article>
     </div>

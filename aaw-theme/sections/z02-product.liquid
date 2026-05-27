@@ -159,7 +159,7 @@
       <p class="bm-kicker">Planar magnetic hybrid in-ear monitor</p>
       <h1 id="z02-title" class="z02-hero-title">
         <span class="visually-hidden">Z02</span>
-        <img src="{{ 'z02-wordmark.png' | asset_url }}" alt="" width="290" height="158" loading="eager">
+        {% render 'aaw-responsive-asset-image', file: 'z02-wordmark.png', alt: '', width: '290', height: '158', loading: 'eager', sizes: '100vw' %}
       </h1>
       <p class="bm-hero__lead">A compact dynamic-planar hybrid tuned for a modern and lively sound signature. The miniature planar magnetic tweeter delivers crystal-clear vocal and treble detail, while the 10mm graphene dynamic driver supplies natural, robust sub-bass. Physical crossover, 3D-printed acoustic chamber, and daily-ready universal fit.</p>
       <p class="bm-price"><span>Price</span><strong>{{ product_price }}</strong></p>
@@ -188,7 +188,7 @@
       </form>
     </div>
     <figure class="bm-hero__media">
-      <img src="{{ 'z02-hero-wide.jpg' | asset_url }}" alt="AAW Z02 planar magnetic universal in-ear monitors with detachable copper cable" width="2200" height="1238" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'z02-hero-wide.jpg', alt: 'AAW Z02 planar magnetic universal in-ear monitors with detachable copper cable', width: '2200', height: '1238', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -224,11 +224,11 @@
     </div>
     <div class="bm-wrap z02-original-grid">
       <figure>
-        <img src="{{ 'z02-lifestyle-wide.jpg' | asset_url }}" alt="AAW Z02 universal in-ear monitors with detachable copper cable" width="2200" height="1467" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-lifestyle-wide.jpg', alt: 'AAW Z02 universal in-ear monitors with detachable copper cable', width: '2200', height: '1467', loading: 'lazy' %}
         <figcaption><b>Universal fit</b><span>Compact shell, detachable cable, and tip rolling flexibility for daily listening.</span></figcaption>
       </figure>
       <figure>
-        <img src="{{ 'z02-detail-square.jpg' | asset_url }}" alt="AAW Z02 faceplates and detachable cable close up" width="1600" height="1600" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-detail-square.jpg', alt: 'AAW Z02 faceplates and detachable cable close up', width: '1600', height: '1600', loading: 'lazy' %}
         <figcaption><b>Fit tuning</b><span>Assorted tips let the user tune seal pressure, isolation, and tonal balance.</span></figcaption>
       </figure>
     </div>
@@ -242,13 +242,13 @@
     </div>
     <div class="bm-wrap z02-explosion-panel">
       <figure>
-        <img src="{{ 'z02-driver-diagram.jpg' | asset_url }}" alt="AAW Z02 driver diagram with miniature planar tweeter assembly and shell components" width="1800" height="1064" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-driver-diagram.jpg', alt: 'AAW Z02 driver diagram with miniature planar tweeter assembly and shell components', width: '1800', height: '1064', loading: 'lazy' %}
         <figcaption><b>Miniature planar magnetic tweeter assembly</b><span>Lower valve cover, magnet arrays, thin film circuit pattern, top valve cover, 2-pin socket, faceplate, and finished shell geometry.</span></figcaption>
       </figure>
     </div>
     <article class="bm-wrap z02-spec-card" aria-labelledby="z02-spec-card-title">
       <header class="z02-spec-card__head">
-        <img class="z02-card-logo" src="{{ 'z02-logo-lockup.png' | asset_url }}" alt="AAW Z02" width="900" height="193" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-logo-lockup.png', alt: 'AAW Z02', width: '900', height: '193', loading: 'lazy', class: 'z02-card-logo' %}
         <div class="z02-spec-card__edition">
           <h3 id="z02-spec-card-title">Planar Magnetic Hybrid</h3>
           <p>Miniature planar tweeter with 10mm graphene dynamic low end</p>
@@ -330,19 +330,19 @@
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
-        <img src="{{ 'z02-accessory-kit.jpg' | asset_url }}" alt="AAW Z02 package with detachable cable, ear tips, and carrying case" width="1800" height="1200" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-accessory-kit.jpg', alt: 'AAW Z02 package with detachable cable, ear tips, and carrying case', width: '1800', height: '1200', loading: 'lazy' %}
         <div><span>01</span><h3>Brevity Pro Plus cable</h3><p>48 inch Null Audio Brevity Pro Plus OCC detachable cable for daily portable use.</p></div>
       </article>
       <article>
-        <img src="{{ 'z02-carry-cases.jpg' | asset_url }}" alt="AAW Z02 carrying case beside premium AAW case" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-carry-cases.jpg', alt: 'AAW Z02 carrying case beside premium AAW case', width: '2000', height: '1333', loading: 'lazy' %}
         <div><span>02</span><h3>AAW carrying case</h3><p>Semi-rigid zipper case protects your monitors, cable, and tips on the go.</p></div>
       </article>
       <article>
-        <img src="{{ 'z02-carry-open.jpg' | asset_url }}" alt="AAW carrying case open with in-ear monitors and cable inside" width="1800" height="1200" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z02-carry-open.jpg', alt: 'AAW carrying case open with in-ear monitors and cable inside', width: '1800', height: '1200', loading: 'lazy' %}
         <div><span>03</span><h3>Portable protection</h3><p>The zip case keeps Z02, cable, and tip kit organized in a compact travel footprint.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'LiquidMorph clear ear tips with teal inner bore', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>04</span><h3>Assorted ear tips</h3><p>Multiple tip options for fit checks, bass control, treble balance, and long-session comfort.</p></div>
       </article>
     </div>

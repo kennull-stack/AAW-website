@@ -160,11 +160,12 @@
     </div>
     <div class="ash-hero__media">
       <figure class="ash-hero__primary">
-        <img src="{{ hero_image | asset_url }}" alt="AAW ASH {{ alt_fit | downcase }} in-ear monitors" width="1600" height="1066" loading="eager">
+        {% capture ash_hero_alt %}AAW ASH {{ alt_fit | downcase }} in-ear monitors{% endcapture %}
+        {% render 'aaw-responsive-asset-image', file: hero_image, alt: ash_hero_alt, width: '1600', height: '1066', loading: 'eager', sizes: '100vw', fetchpriority: 'high' %}
       </figure>
       <div class="ash-hero__thumbs" aria-label="ASH product images">
-        <figure><img src="{{ 'ash-universal-2.jpg' | asset_url }}" alt="AAW ASH universal faceplate close-up" width="4732" height="3155" loading="lazy"></figure>
-        <figure><img src="{{ 'ash-custom-2.jpg' | asset_url }}" alt="AAW ASH custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
+        <figure>{% render 'aaw-responsive-asset-image', file: 'ash-universal-2.jpg', alt: 'AAW ASH universal faceplate close-up', width: '4732', height: '3155', loading: 'lazy' %}</figure>
+        <figure>{% render 'aaw-responsive-asset-image', file: 'ash-custom-2.jpg', alt: 'AAW ASH custom shell and faceplate close-up', width: '1600', height: '1066', loading: 'lazy' %}</figure>
       </div>
     </div>
   </section>
@@ -201,13 +202,13 @@
     <div class="ash-wrap ash-fitment-grid">
       <article class="ash-fitment-card{% unless is_custom %} is-active{% endunless %}">
         <a href="/products/ash-universal-in-ear-monitor">
-          <img src="{{ 'ash-universal-1.jpg' | asset_url }}" alt="AAW ASH universal-fit in-ear monitors" width="4500" height="3000" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'ash-universal-1.jpg', alt: 'AAW ASH universal-fit in-ear monitors', width: '4500', height: '3000', loading: 'lazy' %}
           <div><span>Universal fit</span><h3>Ready to audition</h3><p>Ships as a universal monitor with fit accessories. Best for demos, shared use, and quick deployment across listening setups.</p><b>{% unless is_custom %}Current selection{% else %}View universal{% endunless %}</b></div>
         </a>
       </article>
       <article class="ash-fitment-card{% if is_custom %} is-active{% endif %}">
         <a href="/products/ash-custom-in-ear-monitor">
-          <img src="{{ 'ash-custom-1.jpg' | asset_url }}" alt="AAW ASH custom-fit in-ear monitors" width="1600" height="1066" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'ash-custom-1.jpg', alt: 'AAW ASH custom-fit in-ear monitors', width: '1600', height: '1066', loading: 'lazy' %}
           <div><span>Custom fit</span><h3>Built from impressions</h3><p>Made from ear impressions for a personal seal, stronger isolation, and more freedom in shell and faceplate execution.</p><b>{% if is_custom %}Current selection{% else %}View custom{% endif %}</b></div>
         </a>
       </article>
@@ -239,7 +240,7 @@
         <div class="ash-driver-item"><span class="ash-icon ash-icon--bore" aria-hidden="true"></span><b>Stainless</b><small>Acoustic Bore Design</small></div>
       </div>
       <figure class="ash-config-graphic">
-        <img src="{{ 'ash-fr-graph.png' | asset_url }}" alt="AAW ASH frequency response graph" width="550" height="193" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'ash-fr-graph.png', alt: 'AAW ASH frequency response graph', width: '550', height: '193', loading: 'lazy' %}
       </figure>
       <div class="ash-feature-panel">
         <h3>Key Features</h3>
@@ -285,11 +286,11 @@
       <p>These custom builds show how the same seven-driver platform carries different faceplate languages: abalone, blue metallic depth, white-and-gold motif work, and darker resin shells.</p>
     </div>
     <div class="ash-wrap ash-gallery" aria-label="ASH product gallery">
-      <figure class="wide"><img src="{{ 'ash-custom-abalone.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with abalone faceplates" width="1080" height="1080" loading="lazy"></figure>
-      <figure><img src="{{ 'ash-custom-blue-gold.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with blue metallic and gold flake faceplate" width="1080" height="1080" loading="lazy"></figure>
-      <figure><img src="{{ 'ash-custom-white-gold.jpg' | asset_url }}" alt="AAW ASH custom in-ear monitors with white and gold musical motif faceplates" width="1440" height="1440" loading="lazy"></figure>
-      <figure><img src="{{ 'ash-custom-2.jpg' | asset_url }}" alt="AAW ASH red custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
-      <figure><img src="{{ 'ash-instagram-cable.jpg' | asset_url }}" alt="AAW ASH custom monitor with cable from AAW Instagram archive" width="1080" height="1080" loading="lazy"></figure>
+      <figure class="wide">{% render 'aaw-responsive-asset-image', file: 'ash-custom-abalone.jpg', alt: 'AAW ASH custom in-ear monitors with abalone faceplates', width: '1080', height: '1080', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'ash-custom-blue-gold.jpg', alt: 'AAW ASH custom in-ear monitors with blue metallic and gold flake faceplate', width: '1080', height: '1080', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'ash-custom-white-gold.jpg', alt: 'AAW ASH custom in-ear monitors with white and gold musical motif faceplates', width: '1440', height: '1440', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'ash-custom-2.jpg', alt: 'AAW ASH red custom shell and faceplate close-up', width: '1600', height: '1066', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'ash-instagram-cable.jpg', alt: 'AAW ASH custom monitor with cable from AAW Instagram archive', width: '1080', height: '1080', loading: 'lazy' %}</figure>
     </div>
   </section>
 
@@ -300,19 +301,19 @@
     </div>
     <div class="ash-wrap ash-accessory-grid">
       <article>
-        <img src="{{ 'mockingbird-tiburon-cable.png' | asset_url }}" alt="Null Audio Symphonym Tiburon UPOCC copper braided cable" width="1024" height="682" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-tiburon-cable.png', alt: 'Null Audio Symphonym Tiburon UPOCC copper braided cable', width: '1024', height: '682', loading: 'lazy' %}
         <div><span>01</span><h3>Symphonym Tiburon cable</h3><p>48 inch Null Audio Symphonym Tiburon cable for a secure detachable 2-pin connection.</p></div>
       </article>
       <article>
-        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW carry case" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-wooden-carry-case.png', alt: 'AAW carry case', width: '2000', height: '1334', loading: 'lazy' %}
         <div><span>02</span><h3>AAW carry case</h3><p>Protects the monitors and cable between home, stage, studio, and travel use.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="Ear tip size tray with assorted sizes" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-auag-liquidmorph-accessory-tray.jpg', alt: 'Ear tip size tray with assorted sizes', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>03</span><h3>Universal fit kit</h3><p>Universal ASH includes ear tips for seal tuning. Custom ASH is built from impressions and does not require tips.</p></div>
       </article>
       <article>
-        <img src="{{ 'ash-instagram-cable.jpg' | asset_url }}" alt="AAW ASH monitors connected to braided cable" width="1080" height="1080" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'ash-instagram-cable.jpg', alt: 'AAW ASH monitors connected to braided cable', width: '1080', height: '1080', loading: 'lazy' %}
         <div><span>04</span><h3>1-year warranty</h3><p>Manufacturing-defect coverage with support through AAW Singapore or authorized dealers.</p></div>
       </article>
     </div>

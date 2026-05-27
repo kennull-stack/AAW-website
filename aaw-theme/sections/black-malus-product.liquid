@@ -156,7 +156,7 @@
       </form>
     </div>
     <figure class="bm-hero__media">
-      <img src="{{ 'black-malus-bm08.jpg' | asset_url }}" alt="Black Malus monitors with opal faceplates and Null Audio Epsilon cable over floral artwork" width="1920" height="1280" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'black-malus-bm08.jpg', alt: 'Black Malus monitors with opal faceplates and Null Audio Epsilon cable over floral artwork', width: '1920', height: '1280', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -186,7 +186,7 @@
   <section class="bm-section bm-section--dark bm-explosion" aria-labelledby="bm-explosion-title">
     <div class="bm-wrap bm-explosion__frame">
       <figure class="bm-explosion__media">
-        <img src="{{ 'black-malus-explosion.jpg' | asset_url }}" alt="Exploded Black Malus construction view showing the opal faceplate, balanced armature drivers, acoustic structure, shell, and nozzle" width="2560" height="1707" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-explosion.jpg', alt: 'Exploded Black Malus construction view showing the opal faceplate, balanced armature drivers, acoustic structure, shell, and nozzle', width: '2560', height: '1707', loading: 'lazy' %}
       </figure>
       <div class="bm-explosion__copy">
         <p class="bm-kicker">Exploded View</p>
@@ -204,7 +204,7 @@
     </div>
     <div class="bm-wrap bm-architecture__grid">
       <figure class="bm-render-card bm-render-card--large">
-        <img src="{{ 'black-malus-1202-s.png' | asset_url }}" alt="Black Malus transparent render showing internal balanced armature driver architecture" width="800" height="600" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-1202-s.png', alt: 'Black Malus transparent render showing internal balanced armature driver architecture', width: '800', height: '600', loading: 'lazy' %}
         <figcaption>Sixteen balanced armatures are divided across five dedicated acoustic bands.</figcaption>
       </figure>
       <div class="bm-driver-map" aria-label="Black Malus driver layout">
@@ -227,11 +227,11 @@
         <p>The sandwich build was not designed to look complicated. It was designed so nothing vibrates that should not, and nothing flexes when it needs to hold.</p>
       </div>
       <figure class="bm-build__photo">
-        <img src="{{ 'black-malus-bm08.jpg' | asset_url }}" alt="Black Malus in-ear monitor side profile showing stainless steel mid-case and black shell" width="1920" height="1280" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-bm08.jpg', alt: 'Black Malus in-ear monitor side profile showing stainless steel mid-case and black shell', width: '1920', height: '1280', loading: 'lazy' %}
       </figure>
       <div class="bm-build__renders">
-        <img src="{{ 'black-malus-1198-s.png' | asset_url }}" alt="Black Malus render showing stainless steel shell structure" width="800" height="600" loading="lazy">
-        <img src="{{ 'black-malus-1203-s.png' | asset_url }}" alt="Black Malus transparent render showing acoustic chamber and driver paths" width="800" height="600" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-1198-s.png', alt: 'Black Malus render showing stainless steel shell structure', width: '800', height: '600', loading: 'lazy' %}
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-1203-s.png', alt: 'Black Malus transparent render showing acoustic chamber and driver paths', width: '800', height: '600', loading: 'lazy' %}
       </div>
     </div>
   </section>
@@ -245,14 +245,14 @@
         <p>No two pairs are identical. That is not a limitation - it is the point.</p>
       </div>
       <figure>
-        <img src="{{ 'black-malus-faceplate-hero-enhanced.jpg' | asset_url }}" alt="Black Malus faceplates on a black reflective surface with opal fragments and silver flower emblems" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-faceplate-hero-enhanced.jpg', alt: 'Black Malus faceplates on a black reflective surface with opal fragments and silver flower emblems', width: '2000', height: '1333', loading: 'lazy' %}
       </figure>
     </div>
     <div class="bm-wrap bm-gallery" aria-label="Black Malus product gallery">
-      <figure><img src="{{ 'black-malus-faceplate-gallery-01.jpg' | asset_url }}" alt="Black Malus monitors on a black reflective background" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-faceplate-gallery-02.jpg' | asset_url }}" alt="Black Malus monitors with opal faceplates on a dark studio background" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-faceplate-gallery-03.jpg' | asset_url }}" alt="Black Malus side profile showing stainless steel mid-case and opal faceplate" loading="lazy"></figure>
-      <figure><img src="{{ 'black-malus-faceplate-gallery-04.jpg' | asset_url }}" alt="Black Malus monitors with cable and Null Audio Epsilon splitter on black reflective surface" loading="lazy"></figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'black-malus-faceplate-gallery-01.jpg', alt: 'Black Malus monitors on a black reflective background', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'black-malus-faceplate-gallery-02.jpg', alt: 'Black Malus monitors with opal faceplates on a dark studio background', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'black-malus-faceplate-gallery-03.jpg', alt: 'Black Malus side profile showing stainless steel mid-case and opal faceplate', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'black-malus-faceplate-gallery-04.jpg', alt: 'Black Malus monitors with cable and Null Audio Epsilon splitter on black reflective surface', loading: 'lazy' %}</figure>
     </div>
   </section>
 
@@ -263,19 +263,19 @@
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
-        <img src="{{ 'black-malus-bm06.jpg' | asset_url }}" alt="Null Audio Epsilon cable with Black Malus monitors" width="1920" height="1280" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-bm06.jpg', alt: 'Null Audio Epsilon cable with Black Malus monitors', width: '1920', height: '1280', loading: 'lazy' %}
         <div><span>01</span><h3>Epsilon cable</h3><p>Null Audio's Epsilon - not the Epsilon+, the original - uses cryogenically treated monocrystalline silver with UPOCC cast construction and a custom Black Malus y-splitter. 4.4mm balanced. Matched to the monitor, not just bundled with it.</p></div>
       </article>
       <article>
-        <img src="{{ 'black-malus-case.jpg' | asset_url }}" alt="Black Malus wooden protection case with yellow badge" width="1600" height="1600" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-case.jpg', alt: 'Black Malus wooden protection case with yellow badge', width: '1600', height: '1600', loading: 'lazy' %}
         <div><span>02</span><h3>Wooden case</h3><p>A dedicated wooden carry case. Heavier than a zip pouch, better looking on a desk, and designed to actually protect something worth protecting.</p></div>
       </article>
       <article>
-        <img src="{{ 'black-malus-content-s.jpg' | asset_url }}" alt="Black Malus accessory pack with ear tips and case" width="1600" height="1600" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'black-malus-content-s.jpg', alt: 'Black Malus accessory pack with ear tips and case', width: '1600', height: '1600', loading: 'lazy' %}
         <div><span>03</span><h3>LiquidMorph tips</h3><p>LiquidMorph clear silicone tips plus a full assortment of foam and silicone in multiple sizes. Different tips change the bass shelf and treble balance - the variety is not decoration.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="Clear LiquidMorph ear tips close-up showing the soft bore and flexible outer seal" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'Clear LiquidMorph ear tips close-up showing the soft bore and flexible outer seal', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>04</span><h3>Adaptive seal</h3><p>LiquidMorph's construction settles against the ear canal without pressure buildup. Built for long sessions where comfort is not optional.</p></div>
       </article>
     </div>

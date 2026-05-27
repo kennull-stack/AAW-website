@@ -18,7 +18,7 @@
     {% if section.settings.layout_mode == 'page' %}
       <div class="aaw-voices__hero">
         <figure>
-          <img src="{{ 'aaw-ins-gallery-custom-2025.webp' | asset_url }}" alt="AAW custom in-ear monitor shell craft and finishing" width="900" height="900" loading="eager">
+          {% render 'aaw-responsive-asset-image', file: 'aaw-ins-gallery-custom-2025.webp', alt: 'AAW custom in-ear monitor shell craft and finishing', width: '900', height: '900', loading: 'eager', sizes: '100vw' %}
         </figure>
         <div>
           <span>Customer voices</span>

@@ -201,7 +201,7 @@
       </form>
     </div>
     <figure class="bm-hero__media">
-      <img src="{{ 'mockingbird-hero.png' | asset_url }}" alt="AAW Mockingbird nine-driver hybrid reference universal in-ear monitors with detachable cable" width="2000" height="1334" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'mockingbird-hero.png', alt: 'AAW Mockingbird nine-driver hybrid reference universal in-ear monitors with detachable cable', width: '2000', height: '1334', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -236,11 +236,11 @@
     </div>
     <div class="bm-wrap mockingbird-original-grid">
       <figure>
-        <img src="{{ 'mockingbird-universal.png' | asset_url }}" alt="AAW Mockingbird universal in-ear monitors with detachable cable" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-universal.png', alt: 'AAW Mockingbird universal in-ear monitors with detachable cable', width: '2000', height: '1334', loading: 'lazy' %}
         <figcaption><b>Universal fit</b><span>Ships with LiquidMorph and foam tips. Stable seal, quick sizing, daily handling.</span></figcaption>
       </figure>
       <figure>
-        <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors showing personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'aaw-ins-hero-ciem-2026.jpg', alt: 'AAW custom-fit in-ear monitors showing personalized shell and faceplate finish', width: '1200', height: '900', loading: 'lazy' %}
         <figcaption><b>Custom fit</b><span>Built from ear impressions. Personalized shell, stronger isolation.</span></figcaption>
       </figure>
     </div>
@@ -321,7 +321,7 @@
     </div>
     <div class="bm-wrap" style="margin-top:34px">
       <figure style="margin:0;background:#0a0a0a;border:1px solid rgba(255,255,255,.14);overflow:hidden">
-        <img src="{{ 'mockingbird-frequency-response-graph.png' | asset_url }}" alt="AAW Mockingbird frequency response measurement graph showing TrueXross 4-way crossover tuning with extended treble to 40kHz" width="2000" height="1100" loading="lazy" style="display:block;width:100%;height:auto">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-frequency-response-graph.png', alt: 'AAW Mockingbird frequency response measurement graph showing TrueXross 4-way crossover tuning with extended treble to 40kHz', width: '2000', height: '1100', loading: 'lazy', style: 'display:block;width:100%;height:auto' %}
         <figcaption style="padding:18px 24px;color:#d4cec7;font-size:14px;line-height:1.5">TrueXross 4-way frequency response. The proprietary dynamic woofer handles the low end with a physical low-pass filter to minimize overlap. The bespoke super tweeters extend treble to 40kHz. Every band is shaped for phase coherence at the crossover points.</figcaption>
       </figure>
     </div>
@@ -334,19 +334,19 @@
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
-        <img src="{{ 'mockingbird-tiburon-cable.png' | asset_url }}" alt="Null Audio Symphonym Tiburon UPOCC copper braided cable with 2-pin connector" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-tiburon-cable.png', alt: 'Null Audio Symphonym Tiburon UPOCC copper braided cable with 2-pin connector', width: '2000', height: '1334', loading: 'lazy' %}
         <div><span>01</span><h3>Symphonym Tiburon cable</h3><p>48 inch Null Audio Symphonym Tiburon UPOCC copper cable. Low microphonics. Detachable 2-pin connector.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'LiquidMorph clear ear tips with teal inner bore', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>02</span><h3>LiquidMorph tips</h3><p>Silicone tips with a teal inner bore. Keeps the dynamic woofer sealed for consistent bass and center image.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="LiquidMorph ear tip accessory tray with multiple sizes" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-auag-liquidmorph-accessory-tray.jpg', alt: 'LiquidMorph ear tip accessory tray with multiple sizes', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>03</span><h3>Size tray</h3><p>Multiple sizes in one tray. Faster fit checks before a show or session.</p></div>
       </article>
       <article>
-        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW branded wooden carry case with secure zip closure" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-wooden-carry-case.png', alt: 'AAW branded wooden carry case with secure zip closure', width: '2000', height: '1334', loading: 'lazy' %}
         <div><span>04</span><h3>Wooden carry case</h3><p>AAW branded semi-rigid wooden case. Protects your Mockingbird monitors on the go with a secure zip closure.</p></div>
       </article>
     </div>

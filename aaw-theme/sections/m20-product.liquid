@@ -174,7 +174,7 @@
       </form>
     </div>
     <figure class="bm-hero__media">
-      <img src="{{ 'm20-gallery-3.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug on black reflective surface" width="2000" height="1333" loading="eager">
+      {% render 'aaw-responsive-asset-image', file: 'm20-gallery-3.jpg', alt: 'AAW M20 monitors with detachable cable and 3.5mm plug on black reflective surface', width: '2000', height: '1333', loading: 'eager', sizes: '100vw' %}
     </figure>
   </section>
 
@@ -210,7 +210,7 @@
     <div class="bm-wrap m20-fitment-grid">
       <article class="m20-fitment-card{% if product.handle == 'm20-universal-in-ear-monitor' %} is-active{% endif %}">
         <a href="/products/m20-universal-in-ear-monitor" aria-label="View M20 universal fit">
-          <img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 universal-fit monitors with detachable cable" width="2000" height="1333" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'm20-gallery-4.jpg', alt: 'AAW M20 universal-fit monitors with detachable cable', width: '2000', height: '1333', loading: 'lazy' %}
           <div>
             <span>Universal fit</span>
             <h3>Ready-to-wear M20</h3>
@@ -221,7 +221,7 @@
       </article>
       <article class="m20-fitment-card{% if product.handle == 'm20-custom-in-ear-monitor' %} is-active{% endif %}">
         <a href="/products/m20-custom-in-ear-monitor" aria-label="View M20 custom fit">
-          <img src="{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}" alt="AAW custom-fit in-ear monitors with personalized shell and faceplate finish" width="1200" height="900" loading="lazy">
+          {% render 'aaw-responsive-asset-image', file: 'aaw-ins-hero-ciem-2026.jpg', alt: 'AAW custom-fit in-ear monitors with personalized shell and faceplate finish', width: '1200', height: '900', loading: 'lazy' %}
           <div>
             <span>Custom fit</span>
             <h3>Built from impressions</h3>
@@ -236,7 +236,7 @@
   <section class="bm-explosion m20-explosion">
     <div class="bm-wrap bm-explosion__frame">
       <figure class="bm-explosion__media">
-        <img src="{{ 'm20-exploded-view.png' | asset_url }}" alt="Exploded view of the AAW M20 shell, drivers, socket, faceplate, and outer shell geometry" width="2000" height="1401" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'm20-exploded-view.png', alt: 'Exploded view of the AAW M20 shell, drivers, socket, faceplate, and outer shell geometry', width: '2000', height: '1401', loading: 'lazy' %}
       </figure>
       <div class="bm-explosion__copy">
         <p class="bm-kicker">Internal Layout</p>
@@ -330,14 +330,14 @@
         <p>M20's blue-and-gold honeycomb faceplate uses an Electroless Immersion Gold process to hold complex geometry across a very small surface. The finish gives the monitor a clear visual identity without hiding the practical shell geometry underneath.</p>
       </div>
       <figure>
-        <img src="{{ 'm20-hero-render.png' | asset_url }}" alt="AAW M20 blue and gold honeycomb faceplate universal in-ear monitor render" width="3840" height="2690" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'm20-hero-render.png', alt: 'AAW M20 blue and gold honeycomb faceplate universal in-ear monitor render', width: '3840', height: '2690', loading: 'lazy' %}
       </figure>
     </div>
     <div class="bm-wrap bm-gallery" aria-label="M20 product gallery">
-      <figure><img src="{{ 'm20-gallery-1.jpg' | asset_url }}" alt="AAW M20 monitor with faceplate and shell on black reflective surface" width="2000" height="1333" loading="lazy"></figure>
-      <figure><img src="{{ 'm20-gallery-2.jpg' | asset_url }}" alt="Pair of AAW M20 monitors showing M20 and AAW faceplate logos" width="2000" height="1333" loading="lazy"></figure>
-      <figure><img src="{{ 'm20-gallery-3.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug" width="2000" height="1333" loading="lazy"></figure>
-      <figure><img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 close-up showing blue and gold faceplate next to black shell" width="2000" height="1333" loading="lazy"></figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'm20-gallery-1.jpg', alt: 'AAW M20 monitor with faceplate and shell on black reflective surface', width: '2000', height: '1333', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'm20-gallery-2.jpg', alt: 'Pair of AAW M20 monitors showing M20 and AAW faceplate logos', width: '2000', height: '1333', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'm20-gallery-3.jpg', alt: 'AAW M20 monitors with detachable cable and 3.5mm plug', width: '2000', height: '1333', loading: 'lazy' %}</figure>
+      <figure>{% render 'aaw-responsive-asset-image', file: 'm20-gallery-4.jpg', alt: 'AAW M20 close-up showing blue and gold faceplate next to black shell', width: '2000', height: '1333', loading: 'lazy' %}</figure>
     </div>
   </section>
 
@@ -348,19 +348,19 @@
     </div>
     <div class="bm-wrap bm-accessory-grid">
       <article>
-        <img src="{{ 'm20-gallery-4.jpg' | asset_url }}" alt="AAW M20 monitors with detachable cable and 3.5mm plug" width="2000" height="1333" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'm20-gallery-4.jpg', alt: 'AAW M20 monitors with detachable cable and 3.5mm plug', width: '2000', height: '1333', loading: 'lazy' %}
         <div><span>01</span><h3>Brevity Plus cable</h3><p>48 inch Null Audio Brevity Plus copper cable for daily use and stage handling.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-liquidmorph-clear-eartips-closeup.jpg' | asset_url }}" alt="Clear silicone ear tips close-up" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-liquidmorph-clear-eartips-closeup.jpg', alt: 'Clear silicone ear tips close-up', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>02</span><h3>Assorted ear tips</h3><p>Assorted silicone tips help dial in fit, seal, bass pressure, and comfort.</p></div>
       </article>
       <article>
-        <img src="{{ 'z05-auag-liquidmorph-accessory-tray.jpg' | asset_url }}" alt="Ear tip tray with assorted sizes" width="2048" height="2048" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'z05-auag-liquidmorph-accessory-tray.jpg', alt: 'Ear tip tray with assorted sizes', width: '2048', height: '2048', loading: 'lazy' %}
         <div><span>03</span><h3>Ear tip size tray</h3><p>Organized ear tip sizes make it easier to compare fit, seal, and bass response before settling on the right pair.</p></div>
       </article>
       <article>
-        <img src="{{ 'mockingbird-wooden-carry-case.png' | asset_url }}" alt="AAW carry case" width="2000" height="1334" loading="lazy">
+        {% render 'aaw-responsive-asset-image', file: 'mockingbird-wooden-carry-case.png', alt: 'AAW carry case', width: '2000', height: '1334', loading: 'lazy' %}
         <div><span>04</span><h3>AAW carry case</h3><p>Protects the monitors, cable, and tip kit when you move between home, studio, and stage.</p></div>
       </article>
     </div>
