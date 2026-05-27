@@ -28,10 +28,10 @@
 .ui-section.dark .ui-section-head>p{color:#d8d1c7;}
 
 /* ── Hero ── */
-.ui-hero{padding:52px 0 0;min-height:55vh;display:grid;grid-template-columns:minmax(320px,.88fr) minmax(420px,1.12fr);gap:42px;align-items:center;}
-.ui-hero-copy{position:relative;z-index:2;}
-.ui-hero h1{max-width:720px;margin:0 0 22px;color:#fff;font-size:clamp(44px,5.4vw,78px);line-height:.92;font-weight:900;text-transform:uppercase;letter-spacing:0;}
-.ui-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.46em;line-height:1.15;margin-top:6px;text-transform:none;font-weight:700;letter-spacing:.02em;}
+.ui-hero{padding:52px 0 0;min-height:55vh;display:grid;grid-template-columns:minmax(320px,.94fr) minmax(420px,1.06fr);gap:42px;align-items:center;}
+.ui-hero-copy{position:relative;z-index:2;min-width:0;}
+.ui-hero h1{max-width:720px;margin:0 0 22px;color:#fff;font-size:clamp(40px,4.4vw,72px);line-height:.96;font-weight:900;text-transform:uppercase;letter-spacing:0;word-break:normal;overflow-wrap:normal;text-wrap:balance;hyphens:manual;}
+.ui-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.46em;line-height:1.15;margin-top:10px;text-transform:none;font-weight:700;letter-spacing:.02em;}
 .ui-hero .ui-dek{max-width:560px;margin:0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.48;}
 .ui-hero-media{position:relative;aspect-ratio:4/5;min-height:0;align-self:stretch;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12);}
 .ui-hero-media:before{content:"UIEM";position:absolute;top:22px;right:20px;color:rgba(255,255,255,.06);font-size:clamp(48px,9vw,110px);line-height:.8;font-weight:900;letter-spacing:0;}
