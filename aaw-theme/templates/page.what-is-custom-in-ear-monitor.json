@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ci_hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-hero ci-wrap\">\n    <div class=\"ci-hero-copy\">\n      <p class=\"ci-kicker\">AAW</p>\n      <h1>What are Custom<em>In-Ear Monitors?</em></h1>\n      <p class=\"ci-dek\">A custom in-ear monitor is not a louder earbud. It is an acoustic instrument built around the unique shape of your ear, tuned to a reference curve, and finished by hand. This article explains the concept, the science, and why custom matters.</p>\n    </div>\n    <div class=\"ci-hero-media\">\n      <img src=\"{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}\" alt=\"AAW custom in-ear monitors \u2014 the intersection of precision acoustics and personal fit\" width=\"1024\" height=\"1280\" loading=\"eager\">\n    </div>\n  </section>\n  <div class=\"ci-stat-strip\">\n    <div class=\"ci-wrap ci-stats\">\n      <div class=\"ci-stat\"><b>Personalised Anatomy</b><span>Each shell is 3D-modelled from your individual ear impressions. No two pairs are alike, and the fit is exclusive to you.</span></div>\n      <div class=\"ci-stat\"><b>Superior Isolation</b><span>A full-shell custom monitor blocks up to 26 dB of ambient noise passively, without batteries or active circuitry.</span></div>\n      <div class=\"ci-stat\"><b>Multi-Driver Architecture</b><span>AAW CIEMs use balanced armature, dynamic, and hybrid configurations with precision crossover networks for coherent sound.</span></div>\n      <div class=\"ci-stat\"><b>Hand-Built in Singapore</b><span>Every AAW custom monitor is assembled and finished at 76 Playfair Rd by the same technicians who tune our flagship universals.</span></div>\n    </div>\n  </div>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_concept": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">The Concept</p>\n        <h2>Sound Shaped to Your Anatomy</h2>\n        <p>A Custom In-Ear Monitor (CIEM) is a high-performance audio device engineered for the unique anatomy of an individual\u2019s ears. Unlike universal in-ear monitors that rely on silicone or foam tips to create a seal inside a standard-shaped ear, a CIEM begins with a medical-grade silicone impression of your ear canal and outer ear. That impression becomes the blueprint for a shell that fits you, and only you.</p>\n      </div>\n      <div class=\"ci-article-body\">\n        <div class=\"ci-article-copy\">\n          <h3>More than a monitor</h3>\n          <p>The difference between a universal IEM and a custom is not volume. It is seal, stability, and consistency. A properly fitted CIEM sits flush in the concha, follows the contours of your ear canal past the second bend, and creates an acoustic chamber that is identical every time you insert it. This means the sound you hear on stage tonight is the same sound you heard in soundcheck this afternoon.</p>\n          <p>CIEMs are used by performing musicians who need to hear their own mix over a loud stage, by audiophiles who want the most direct and uncoloured signal path, and by audio engineers who require a portable reference they can trust in any control room. The common thread is that the fit is inseparable from the sound: a loose seal changes the bass response, and a shifting monitor changes the stereo image.</p>\n          <p>At AAW, every custom shell is built from a 3D scan of your physical ear impressions. The geometry is modelled in software, printed, and then hand-finished to remove layer lines and ensure a smooth, bio-compatible surface. The result is a monitor that disappears in the ear after a few minutes of wear \u2014 not because the sound is quiet, but because the physical object stops feeling foreign.</p>\n        </div>\n        <figure class=\"ci-article-figure\">\n          <img src=\"{{ 'canary-pro-ciem-pair.jpg' | asset_url }}\" alt=\"AAW Canary Pro custom IEM pair with transparent shells showing internal driver layout\" loading=\"lazy\">\n          <figcaption><b>Canary Pro custom pair</b><span>Transparent shells reveal the multi-driver architecture inside each earpiece.</span></figcaption>\n        </figure>\n      </div>\n      <div class=\"ci-subhead\">The three pillars of a custom monitor</div>\n      <div class=\"ci-pillar-strip\">\n        <div class=\"ci-pillar\">\n          <div class=\"ci-pillar-icon\">1</div>\n          <h4>The Impression</h4>\n          <p>A silicone cast taken by an audiologist captures the full shape of your ear canal, concha, and helix. A deep, clean impression that passes the second bend is the foundation of a monitor that seals reliably and stays put for hours.</p>\n        </div>\n        <div class=\"ci-pillar\">\n          <div class=\"ci-pillar-icon\">2</div>\n          <h4>The Shell</h4>\n          <p>3D-modelled from the scanned impression data, the shell is printed in medical-grade acrylic and hand-finished. It houses the drivers, crossover, and acoustic tubing in a compact volume that follows your ear geometry exactly.</p>\n        </div>\n        <div class=\"ci-pillar\">\n          <div class=\"ci-pillar-icon\">3</div>\n          <h4>The Drivers</h4>\n          <p>Balanced armatures, dynamic drivers, or a hybrid of both are placed inside the shell and connected to the nozzle via precision-bore tubing. Each driver handles a specific frequency band, summed by a passive crossover network.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_science": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section dark\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">The Science</p>\n        <h2>How Custom Monitors Work</h2>\n        <p>The performance of a CIEM rests on four acoustic principles that work together. Understanding them explains why a custom monitor sounds different \u2014 and more consistent \u2014 than any universal alternative.</p>\n      </div>\n      <div class=\"ci-article-body ci-grid-2 flip\">\n        <figure class=\"ci-article-figure\">\n          <img src=\"{{ 'ash-custom-abalone.jpg' | asset_url }}\" alt=\"AAW custom IEM with abalone shell showing the precision of hand-finished CIEM shells\" loading=\"lazy\">\n          <figcaption><b>Precision shell craft</b><span>Each shell is a sealed acoustic chamber. The wall thickness, nozzle bore, and driver position all affect the final frequency response.</span></figcaption>\n        </figure>\n        <div class=\"ci-article-copy\">\n          <h3>Seal and isolation</h3>\n          <p>A CIEM creates a full-shell acoustic seal deep in the ear canal. Unlike a foam tip that compresses and rebounds inconsistently, a rigid acrylic shell maintains the same insertion depth and seal every time. This passive isolation blocks up to 26 dB of ambient noise \u2014 enough to reduce a 110 dB stage to a comfortable listening level \u2014 without any electronics or batteries.</p>\n          <h3>Driver configuration</h3>\n          <p>AAW CIEMs use balanced armature (BA) drivers, dynamic drivers, or hybrid layouts that combine both. BA drivers are tiny, efficient transducers that excel at detail and speed. Dynamic drivers move more air and deliver sub-bass with physical impact. A multi-driver CIEM dedicates individual drivers to specific frequency ranges \u2014 sub-bass, mid-bass, mids, highs, and super-tweeters \u2014 each optimised for that band.</p>\n          <h3>Crossover and tubing</h3>\n          <p>The crossover is a passive circuit that divides the audio signal into frequency bands and routes each band to the appropriate driver. The length and diameter of the acoustic tubing from each driver to the nozzle further shape the output. This combination of electrical and acoustic filtering is what gives a CIEM its tuning signature \u2014 warm and musical, or flat and analytical, depending on the design.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_benefits": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">Benefits</p>\n        <h2>Why Choose Custom Over Universal</h2>\n        <p>A universal IEM can sound excellent. But a custom IEM sounds excellent every time you put it in. The difference is not always in the driver count or the price tag \u2014 it is in the consistency, comfort, and isolation that only a personalised shell can deliver.</p>\n      </div>\n      <div class=\"ci-benefit-grid\">\n        <div class=\"ci-benefit-card\">\n          <h3>Perfect Fit</h3>\n          <p>Since the shell is moulded from your own ear impressions, it sits flush against your ear anatomy. No pressure points, no hot spots, and no gradual slipping during movement. The fit is repeatable every time you insert the monitor.</p>\n        </div>\n        <div class=\"ci-benefit-card\">\n          <h3>Passive Noise Isolation</h3>\n          <p>A full-shell CIEM blocks up to 26 dB of ambient noise without any electronics. On a loud stage, this means you can monitor at a lower, safer volume. In a caf\u00e9 or on a flight, it means you hear your music, not the engines.</p>\n        </div>\n        <div class=\"ci-benefit-card\">\n          <h3>Consistent Sound</h3>\n          <p>Universal tips compress differently each time you insert them, altering the distance between the driver and your eardrum. A rigid CIEM shell holds the drivers in a fixed position relative to your ear, so the frequency response stays identical across sessions.</p>\n        </div>\n        <div class=\"ci-benefit-card\">\n          <h3>Long-Session Comfort</h3>\n          <p>Custom shells are worn by musicians for two to three hours on stage without fatigue. The weight is distributed across the concha, and there are no expanding foam or silicone tips pressing outward against the canal walls.</p>\n        </div>\n        <div class=\"ci-benefit-card\">\n          <h3>Durable and Repairable</h3>\n          <p>AAW CIEMs are built with serviceable components. Drivers can be replaced, sockets can be repaired, and shells can be reshelled if your ear shape changes over time. A well-maintained CIEM can last a decade or more.</p>\n        </div>\n        <div class=\"ci-benefit-card\">\n          <h3>Personalised Aesthetics</h3>\n          <p>Choose your shell colour, faceplate material, and artwork. From carbon fibre to abalone, from solid colours to custom engravings, your CIEM looks as individual as it sounds. Every AAW custom order includes a faceplate design consultation.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_usecases": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section dark\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">Use Cases</p>\n        <h2>Who Relies on Custom Monitors</h2>\n        <p>Custom in-ear monitors are not exclusive to one type of listener. They serve distinct roles across the music industry and beyond, each application benefiting from a different combination of isolation, accuracy, and comfort.</p>\n      </div>\n      <div class=\"ci-usecase-grid\">\n        <div class=\"ci-usecase-card\">\n          <h3>Stage Musicians</h3>\n          <p>The original and most demanding use case. A performing musician needs to hear their own instrument, the click track, and the monitor mix over a live PA system that can exceed 110 dB. A CIEM provides the isolation and clarity to monitor at a safe volume without removing the performer from the audience energy. Vocalists, guitarists, drummers, and keyboardists all benefit from custom fit and stage-ready durability.</p>\n        </div>\n        <div class=\"ci-usecase-card\">\n          <h3>Audiophiles &amp; Enthusiasts</h3>\n          <p>For the critical listener, a CIEM removes the variables. There is no tip-rolling, no seal inconsistency, and no question about whether you are hearing the IEM or the fit. The driver sits at a known distance from the eardrum, and the shell acts as a controlled acoustic chamber. This makes a CIEM the most direct path from the recording to your perception of it.</p>\n        </div>\n        <div class=\"ci-usecase-card\">\n          <h3>Audio Engineers &amp; Producers</h3>\n          <p>A portable reference monitor that sounds the same in a hotel room, a flight, and a studio control room is invaluable. Engineers use CIEMs to check mixes, evaluate masters, and make EQ decisions they can trust. The consistency of a custom shell means the stereo image and tonal balance do not shift between listening sessions.</p>\n        </div>\n        <div class=\"ci-usecase-card\">\n          <h3>Everyday Listeners</h3>\n          <p>Not every CIEM owner performs on stage. Many choose custom for the daily experience: commuting with total isolation, working in open-plan offices without distraction, or simply enjoying music at its most detailed. A CIEM is a long-term investment in how you hear \u2014 and it fits no one else, which makes it deeply personal.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_why_aaw": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">Why AAW</p>\n        <h2>Singapore Craft, Global Standard</h2>\n        <p>AAW has been designing and building in-ear monitors since 2014 from a single workshop at 76 Playfair Road in Singapore. Every custom monitor is 3D-printed, hand-finished, assembled, and measured under one roof. Here is what sets our approach apart.</p>\n      </div>\n      <div class=\"ci-approach-grid\">\n        <div class=\"ci-approach-card\">\n          <h3>In-House Manufacturing</h3>\n          <p>Unlike brands that outsource shell production or driver assembly, AAW controls the entire build pipeline. Ear impressions are 3D-scanned on-site. Shells are printed in our own lab. Drivers are installed and crossed over by hand. Every pair is measured on an audio analyser and listened to before it ships. When something goes wrong, the person who built your monitor is in the same building as the person who will fix it.</p>\n        </div>\n        <div class=\"ci-approach-card\">\n          <h3>Driver Expertise</h3>\n          <p>AAW has shipped hybrid, tribrid, and all-BA configurations across multiple product generations. Our flagship Canary Pro uses a 12-driver hybrid architecture with a dynamic low-end, balanced armature mids and highs, and a four-way passive crossover. From the entry-level A3H+ Lux to the reference Z07, each platform is tuned to a coherent target rather than chasing driver count alone.</p>\n        </div>\n        <div class=\"ci-approach-card\">\n          <h3>Tuning Philosophy</h3>\n          <p>We tune for musicality, not for a graph. Every AAW monitor is voiced by ear before it is validated by measurement. The goal is a sound that is engaging and fatigue-free over hours of listening \u2014 whether that is a warm, lush signature for long sessions or a flat, analytical curve for critical work. Our custom monitors follow the same tuning targets as our universal line, so what you audition in a demo unit is what you receive in your custom build.</p>\n        </div>\n      </div>\n      <div class=\"ci-note\" style=\"margin-top:32px;\">\n        <strong>Visit our workshop</strong>\n        <p>Our showroom at 76 Playfair Rd, #01-03 LHK2 Building is open for auditions and ear impression services. Hear the full AAW lineup, compare custom and universal models side by side, and get your impressions taken by our trained staff. <a href=\"/pages/contact\">Book an appointment</a> or walk in during business hours.</p>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_process": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-section dark\">\n    <div class=\"ci-wrap\">\n      <div class=\"ci-section-head\">\n        <p class=\"ci-kicker\">The Process</p>\n        <h2>From Impression to First Listen</h2>\n        <p>Building a CIEM takes approximately two to four weeks from the day we receive your ear impressions. Here is what happens at each stage of the build.</p>\n      </div>\n      <div class=\"ci-process-steps\">\n        <div class=\"ci-process-step\">\n          <div class=\"ci-step-num\">1</div>\n          <h4>Impression Scan</h4>\n          <p>Your physical impressions arrive at our lab and are 3D-scanned into our modelling software within one business day. We confirm receipt by email.</p>\n        </div>\n        <div class=\"ci-process-step\">\n          <div class=\"ci-step-num\">2</div>\n          <h4>Shell Design</h4>\n          <p>A technician models the shell geometry around the driver layout, ensuring sufficient internal volume and nozzle alignment. Faceplate artwork is prepared.</p>\n        </div>\n        <div class=\"ci-process-step\">\n          <div class=\"ci-step-num\">3</div>\n          <h4>3D Printing</h4>\n          <p>The shell body and faceplate are printed in medical-grade acrylic. Support material is removed and the surfaces are hand-finished to a smooth, bio-compatible polish.</p>\n        </div>\n        <div class=\"ci-process-step\">\n          <div class=\"ci-step-num\">4</div>\n          <h4>Driver Assembly</h4>\n          <p>Drivers are installed, the crossover is soldered, and acoustic tubing is routed to the nozzle. Each connection is checked under magnification before the shell is sealed.</p>\n        </div>\n        <div class=\"ci-process-step\">\n          <div class=\"ci-step-num\">5</div>\n          <h4>QC &amp; Listening</h4>\n          <p>Every pair is measured on our audio analyser for channel matching and frequency response. A final listening check confirms the monitor meets our tuning target before it is packed and shipped.</p>\n        </div>\n      </div>\n      <div class=\"ci-subhead\">Universal vs Custom at a glance</div>\n      <div class=\"ci-compare-grid\">\n        <div class=\"ci-compare-cell header\"><h4>Feature</h4></div>\n        <div class=\"ci-compare-cell header\"><h4>Universal IEM</h4></div>\n        <div class=\"ci-compare-cell header\"><h4>Custom IEM</h4></div>\n        <div class=\"ci-compare-cell label\"><span>Fit</span></div>\n        <div class=\"ci-compare-cell\"><p>Standardised shape with interchangeable tips; fit varies by tip choice and ear anatomy</p></div>\n        <div class=\"ci-compare-cell highlight\"><p><b>Moulded from your ear impressions; identical fit every session</b></p></div>\n        <div class=\"ci-compare-cell label\"><span>Isolation</span></div>\n        <div class=\"ci-compare-cell\"><p>Varies by tip material and seal quality; typically \u221215 to \u221220 dB</p></div>\n        <div class=\"ci-compare-cell highlight\"><p><b>Consistent full-shell seal; up to \u221226 dB passive isolation</b></p></div>\n        <div class=\"ci-compare-cell label\"><span>Sound Consistency</span></div>\n        <div class=\"ci-compare-cell\"><p>Insertion depth varies with each wear, shifting bass response and stereo image</p></div>\n        <div class=\"ci-compare-cell highlight\"><p><b>Fixed driver-to-eardrum distance; repeatable frequency response</b></p></div>\n        <div class=\"ci-compare-cell label\"><span>Comfort (3h+)</span></div>\n        <div class=\"ci-compare-cell\"><p>Tips can cause pressure points and fatigue over long periods</p></div>\n        <div class=\"ci-compare-cell highlight\"><p><b>Weight distributed across concha; designed for hours of wear</b></p></div>\n        <div class=\"ci-compare-cell label\"><span>Personalisation</span></div>\n        <div class=\"ci-compare-cell\"><p>Limited to cable and tip choices; shell is standard</p></div>\n        <div class=\"ci-compare-cell highlight\"><p><b>Full control over shell colour, faceplate material, artwork, and engraving</b></p></div>\n        <div class=\"ci-compare-cell label\"><span>Lead Time</span></div>\n        <div class=\"ci-compare-cell\"><p>In stock; ships within days</p></div>\n        <div class=\"ci-compare-cell\"><p>2\u20134 weeks from receipt of impressions</p></div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "ci_final": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"ci-feature-shell\">\n  <section class=\"ci-final\">\n    <div class=\"ci-wrap ci-final-inner\">\n      <h2>Ready to start your build?</h2>\n      <p>The first track that fits perfectly is worth the wait. Browse our custom platforms, choose your faceplate, and place your order. We will guide you through ear impressions, design, and delivery from our Singapore workshop.</p>\n      <div class=\"ci-actions\">\n        <a class=\"ci-btn\" href=\"/collections/custom-iem\">Browse Custom IEMs</a>\n        <a class=\"ci-btn secondary\" href=\"/pages/get-started\">How to Order</a>\n        <a class=\"ci-btn secondary\" href=\"/pages/contact\">Contact Us</a>\n      </div>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"What are Custom In-Ear Monitors?\",\n  \"description\": \"A comprehensive guide to custom in-ear monitors: how they work, their benefits over universal IEMs, primary use cases, and why AAW excels at building them from our Singapore workshop.\",\n  \"author\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Advanced AcousticWerkes\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Advanced AcousticWerkes\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"76 Playfair Road, #01-03 LHK2 Building\",\n      \"postalCode\": \"367996\",\n      \"addressCountry\": \"SG\"\n    }\n  },\n  \"about\": {\n    \"@type\": \"Thing\",\n    \"name\": \"Custom In-Ear Monitors\"\n  }\n}\n</script>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "ci_hero",
+    "ci_concept",
+    "ci_science",
+    "ci_benefits",
+    "ci_usecases",
+    "ci_why_aaw",
+    "ci_process",
+    "ci_final"
+  ]
+}
