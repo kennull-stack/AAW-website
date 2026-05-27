@@ -102,11 +102,20 @@
                             data-menu-accordian-body
                           {% endif %}
                         >
+                          {%- assign info_has_universal_iem = false -%}
                           {%- for link in block.settings.menu.links -%}
+                            {%- if link.url contains '/pages/what-is-universal-in-ear-monitor' -%}
+                              {%- assign info_has_universal_iem = true -%}
+                            {%- endif -%}
                             <li class="footer-menu-item">
                               <a class="footer-menu-link" href="{{ link.url }}">{{ link.title | escape -}}</a>
                             </li>
                           {%- endfor -%}
+                          {%- if block.settings.menu.handle == 'information' and info_has_universal_iem == false -%}
+                            <li class="footer-menu-item">
+                              <a class="footer-menu-link" href="/pages/what-is-universal-in-ear-monitor">What is Universal In-Ear Monitor</a>
+                            </li>
+                          {%- endif -%}
                         </ul>
                       {% endif %}
                     </div>

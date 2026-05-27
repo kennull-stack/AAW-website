@@ -72,6 +72,21 @@
 .ci-benefit-card h3{margin:0 0 10px;color:inherit;font-size:22px;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;font-weight:900;}
 .ci-benefit-card p{margin:0;color:inherit;font-size:15px;line-height:1.58;}
 
+/* ── Visual Gallery ── */
+.ci-gallery-section{background:#111;color:#f5f2ea;}
+.ci-gallery-section .ci-section-head>p{color:#d8d1c7;}
+.ci-gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(260px,auto);gap:14px;}
+.ci-gallery-card{position:relative;margin:0;min-height:260px;overflow:hidden;background:#050505;border:1px solid rgba(255,255,255,.13);}
+.ci-gallery-card.large{grid-column:span 2;grid-row:span 2;}
+.ci-gallery-card.wide{grid-column:span 2;}
+.ci-gallery-card.tall{grid-row:span 2;}
+.ci-gallery-card img{display:block;width:100%;height:100%;min-height:260px;object-fit:cover;object-position:center;}
+.ci-gallery-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 28%,rgba(0,0,0,.78));pointer-events:none;}
+.ci-gallery-card figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:18px;color:#f6efe4;}
+.ci-gallery-card figcaption span{display:inline-flex;margin-bottom:7px;color:#e2b768;font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:.08em;font-weight:900;}
+.ci-gallery-card figcaption b{display:block;font-size:17px;line-height:1.12;text-transform:uppercase;letter-spacing:.02em;}
+.ci-gallery-card figcaption p{margin:7px 0 0;max-width:390px;color:#ddd3c6;font-size:12px;line-height:1.42;}
+
 /* ── Use Case Cards ── */
 .ci-usecase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);}
 .ci-usecase-card{background:#0f0f0f;padding:26px 28px;min-height:160px;}
@@ -85,11 +100,17 @@
 .ci-approach-card p{margin:0;color:#38322b;font-size:14px;line-height:1.58;}
 
 /* ── Process Steps ── */
-.ci-process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);}
-.ci-process-step{background:rgba(255,255,255,.04);padding:22px 20px;text-align:center;min-height:0;}
+.ci-process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);}
+.ci-process-step{background:#181818;padding:22px 20px;text-align:center;min-height:0;}
 .ci-process-step .ci-step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;margin-bottom:12px;background:#e2b768;color:#090909;font-size:14px;font-weight:900;line-height:1;}
-.ci-process-step h4{margin:0 0 8px;color:#fff;font-size:15px;line-height:1.2;text-transform:uppercase;letter-spacing:.02em;}
-.ci-process-step p{margin:0;color:#c4bbac;font-size:13px;line-height:1.48;}
+.ci-process-step h4{margin:0 0 8px;color:#ffffff;font-size:15px;line-height:1.2;text-transform:uppercase;letter-spacing:.02em;}
+.ci-process-step p{margin:0;color:#e0d8cd;font-size:13px;line-height:1.48;}
+.ci-section.dark .ci-process-step p{color:#e0d8cd;}
+.ci-section.dark .ci-process-step h4{color:#ffffff;}
+.ci-process-media{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 0;}
+.ci-process-media figure{position:relative;margin:0;min-height:220px;overflow:hidden;background:#090909;border:1px solid rgba(255,255,255,.14);}
+.ci-process-media img{display:block;width:100%;height:100%;min-height:220px;object-fit:cover;object-position:center;}
+.ci-process-media figcaption{position:absolute;left:12px;bottom:12px;padding:8px 10px;background:rgba(0,0,0,.68);border:1px solid rgba(226,183,104,.26);color:#f2e5c5;font-size:11px;line-height:1;text-transform:uppercase;letter-spacing:.06em;font-weight:900;}
 
 /* ── Comparison Table ── */
 .ci-compare-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#d8d0c3;border:1px solid #d8d0c3;}
@@ -101,6 +122,14 @@
 .ci-compare-cell p{margin:0;color:#38322b;font-size:14px;line-height:1.5;text-align:center;}
 .ci-compare-cell.highlight p{color:#2d6a1e;font-weight:700;}
 .ci-compare-cell b{color:#111;}
+.ci-section.dark .ci-compare-cell{background:#fff;}
+.ci-section.dark .ci-compare-cell p{color:#38322b;}
+.ci-section.dark .ci-compare-cell.highlight p{color:#2d6a1e;font-weight:700;}
+.ci-section.dark .ci-compare-cell b{color:#111;}
+.ci-section.dark .ci-compare-cell.label{background:#faf8f4;}
+.ci-section.dark .ci-compare-cell.label span{color:#6d4b16;}
+.ci-section.dark .ci-compare-cell.header{background:#111;color:#fff;}
+.ci-section.dark .ci-compare-cell.header h4{color:#e2b768;}
 
 /* ── Highlight Note ── */
 .ci-note{border-left:3px solid #d6a756;padding:20px 24px;margin-top:0;background:rgba(214,167,86,.06);}
@@ -129,9 +158,12 @@
   .ci-stats{grid-template-columns:repeat(2,1fr);}
   .ci-pillar-strip{grid-template-columns:1fr;}
   .ci-benefit-grid{grid-template-columns:1fr;}
+  .ci-gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .ci-gallery-card.large,.ci-gallery-card.wide,.ci-gallery-card.tall{grid-column:span 1;grid-row:span 1;}
   .ci-usecase-grid{grid-template-columns:1fr;}
   .ci-approach-grid{grid-template-columns:1fr;}
   .ci-process-steps{grid-template-columns:1fr;}
+  .ci-process-media{grid-template-columns:1fr;}
   .ci-article-figure{min-height:300px;position:static;}
   .ci-article-figure img{aspect-ratio:16/10;}
   .ci-compare-grid{grid-template-columns:1fr;}
@@ -141,18 +173,25 @@
 @media(max-width:700px){
   .ci-section{padding:52px 0;}
   .ci-hero h1{font-size:40px;}
+  .ci-hero-media{min-height:0;aspect-ratio:4/3;}
   .ci-stats{grid-template-columns:1fr;}
   .ci-process-steps{gap:1px;}
   .ci-process-step{padding:18px 18px;}
   .ci-article-figure,.ci-article-figure img{min-height:260px;}
+  .ci-gallery-grid{grid-template-columns:1fr;}
+  .ci-gallery-card,.ci-gallery-card img{min-height:300px;}
 }
 @media(max-width:560px){
   .ci-wrap{width:min(100% - 24px,1180px);}
   .ci-hero{padding-top:36px;}
-  .ci-hero-media{min-height:280px;}
+  .ci-hero-media{min-height:0;}
   .ci-hero-media:before{top:14px;right:14px;font-size:48px;}
   .ci-article-figure{padding:8px;min-height:240px;}
   .ci-article-figure figcaption{position:static;width:auto;max-width:none;margin:8px 0 0;transform:none;background:#090909;}
+  .ci-gallery-card,.ci-gallery-card img{min-height:270px;}
+  .ci-gallery-card figcaption{padding:14px;}
+  .ci-gallery-card figcaption b{font-size:15px;}
+  .ci-gallery-card figcaption p{font-size:11px;}
   .ci-benefit-card{padding:16px 0 0;}
   .ci-benefit-card h3{font-size:19px;}
   .ci-usecase-card{padding:18px 18px;}
