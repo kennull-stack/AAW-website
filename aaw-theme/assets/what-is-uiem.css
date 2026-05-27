@@ -61,10 +61,12 @@
 /* ── Timeline ── */
 .ui-timeline{display:grid;gap:0;padding:0;margin:0;list-style:none;position:relative;}
 .ui-timeline:before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:1px;background:#e2b768;opacity:.4;}
-.ui-timeline li{position:relative;padding:0 0 28px 36px;color:#d8d1c7;font-size:15px;line-height:1.55;}
+.ui-timeline li{position:relative;padding:0 0 28px 36px;color:#38322b;font-size:15px;line-height:1.55;}
 .ui-timeline li:last-child{padding-bottom:0;}
 .ui-timeline li:before{content:"";position:absolute;left:5px;top:8px;width:11px;height:11px;border-radius:50%;background:#e2b768;}
-.ui-timeline li b{display:block;color:#fff;font-size:14px;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em;}
+.ui-timeline li b{display:block;color:#111;font-size:14px;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em;}
+.ui-section.dark .ui-timeline li{color:#d8d1c7;}
+.ui-section.dark .ui-timeline li b{color:#fff;}
 
 /* ── Benefit Cards ── */
 .ui-benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
@@ -104,9 +106,12 @@
 /* ── Testimonial Cards ── */
 .ui-testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 .ui-testimonial-card{border-top:2px solid #111;padding:20px 0 0;}
+.ui-section.dark .ui-testimonial-card{border-top-color:rgba(226,183,104,.24);}
 .ui-testimonial-card .ui-stars{display:flex;gap:3px;margin-bottom:10px;color:#d6a756;font-size:14px;letter-spacing:0;}
 .ui-testimonial-card blockquote{margin:0 0 12px;color:#38322b;font-size:15px;line-height:1.55;font-style:italic;quotes:none;}
 .ui-testimonial-card .ui-author{display:block;color:#6d4b16;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;}
+.ui-section.dark .ui-testimonial-card blockquote{color:#d8d1c7;}
+.ui-section.dark .ui-testimonial-card .ui-author{color:#e2b768;}
 
 /* ── Note / Highlight ── */
 .ui-note{border-left:3px solid #d6a756;padding:20px 24px;margin-top:0;background:rgba(214,167,86,.06);}
@@ -119,8 +124,11 @@
 /* ── Approach Cards ── */
 .ui-approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 .ui-approach-card{border-top:2px solid #111;padding:20px 0 0;}
+.ui-section.dark .ui-approach-card{border-top-color:rgba(226,183,104,.32);}
 .ui-approach-card h3{margin:0 0 10px;color:#111;font-size:20px;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;font-weight:900;}
 .ui-approach-card p{margin:0;color:#38322b;font-size:14px;line-height:1.58;}
+.ui-section.dark .ui-approach-card h3{color:#fff;}
+.ui-section.dark .ui-approach-card p{color:#d8d1c7;}
 
 /* ── Final CTA ── */
 .ui-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 0;border-top:1px solid rgba(255,255,255,.12);}
@@ -139,7 +147,7 @@
   .ui-approach-grid{grid-template-columns:1fr;}
   .ui-product-grid{grid-template-columns:repeat(2,1fr);}
   .ui-testimonial-grid{grid-template-columns:1fr;}
-  .ui-article-figure{min-height:300px;position:static;}
+  .ui-article-figure{min-height:300px;position:relative;}
   .ui-article-figure img{aspect-ratio:16/10;}
   .ui-compare-grid{grid-template-columns:1fr;}
   .ui-compare-cell.header{text-align:left;}
@@ -158,8 +166,9 @@
   .ui-hero-media:before{top:14px;right:14px;font-size:40px;}
   .ui-benefit-card{padding:16px 0 0;}
   .ui-benefit-card h3{font-size:19px;}
-  .ui-article-figure{padding:8px;min-height:240px;}
-  .ui-article-figure figcaption{position:static;width:auto;max-width:none;margin:8px 0 0;transform:none;background:#090909;}
+  .ui-article-figure{display:block;padding:8px;min-height:0;}
+  .ui-article-figure img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+  .ui-article-figure figcaption{position:static;display:block;width:100%;max-width:none;margin:8px 0 0;transform:none;background:#090909;}
   .ui-product-card .ui-product-body{padding:12px 14px 14px;}
   .ui-product-card h4{font-size:16px;}
   .ui-testimonial-card{padding:16px 0 0;}
