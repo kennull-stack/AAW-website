@@ -119,21 +119,21 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "BassFlow Vent Pressure System",
-            "content": "<p>The front acoustic chamber of the isobaric bass drivers integrates a dedicated BassFlow Vent Pressure System, designed to balance pneumatic pressure in the ear canal and regulate airflow to the dynamic woofers. This innovative system prevents pressure buildup for comfortable extended listening while enabling precise control over bass texture and response. By managing airflow, the system fine-tunes woofer performance, enhancing resonance and damping properties for powerful, detailed bass. Quantitative control ensures balanced bass intensity without overpowering mids and highs, while qualitative adjustments refine warmth, clarity, and punch, delivering a satisfying and cohesive sound signature.</p>"
+            "content": "<p>A small vent sits in front of the isobaric bass drivers. It releases canal pressure on long sessions and shapes how the bass moves — how quickly it settles, how much body it carries, and how cleanly it hands off to the mids. Bass keeps its weight and texture without the trapped pressure that closed designs can build up over an hour of listening.</p>"
           }
         },
         "collapsible_tab_n38dzJ": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Dual Isobaric Dynamic Woofer",
-            "content": "<p>The Z06's 6mm dual isobaric woofer is designed for exceptional bass performance while maintaining overall audio balance. Featuring dual diaphragms and high-strength neodymium magnets, it delivers powerful and precise sound with minimal distortion. The isobaric configuration, where two drivers work in tandem, reduces Total Harmonic Distortion (THD) and enables deeper, cleaner bass. Advanced acoustic filtering ensures the woofer operates within a specific frequency range, minimizing overlap with balanced armature drivers for accurate and detailed sound reproduction. High-strength magnets enhance efficiency and responsiveness, providing fast transient response and detailed bass nuances. Together, these innovations create a rich, immersive listening experience with powerful, well-balanced bass seamlessly integrated into the overall sound signature.</p>"
+            "content": "<p>Two 6mm dynamic drivers sit in an isobaric arrangement — twin diaphragms moving in step, sharing the load. The pair distorts less than a single driver of the same size and reaches lower with cleaner texture. A passive filter limits the woofer to the bottom octaves so the balanced armatures stay clear to handle mids and treble. The intent is bass you feel without bass that smudges the rest of the music.</p>"
           }
         },
         "collapsible_tab_HffCBq": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "3D Printed Enclosure and Precision Engineering",
-            "content": "<p>The Z06 utilizes AAW's third-generation digital enclosure and acoustic chamber design, fully leveraging a digitized design process. Through extensive computer simulations, driver and nozzle placements are iterated hundreds of times to achieve optimal phasing, response, and acoustic performance. Once perfected, the design transitions to precision 3D printing, ensuring tight tolerances and exact replication of the prototype for consistent quality. This advanced manufacturing process enhances structural integrity and guarantees performance uniformity across production. Rigorous quality checks further uphold AAW’s high standards, resulting in a hybrid in-ear monitor that delivers lush, vibrant, and spacious audio performance tailored for audiophiles and professionals alike.</p>"
+            "content": "<p>The Z06 shell is AAW's third digital enclosure platform. Driver positions, chamber volumes, and nozzle geometry are iterated in simulation before any acrylic is printed — the same shell shape, the same internal acoustics, build after build. Every pair is printed, hand-finished, and measured in our Singapore workshop before it ships.</p>"
           }
         },
         "collapsible_tab_XefaKL": {
@@ -231,7 +231,7 @@
           "settings": {
             "image": "shopify://shop_images/Z06_L.Eplode-ShadowS_a2835f02-cd1d-4e4a-8263-0d2b621675f0.png",
             "heading": "Advanced Hybrid Driver Architecture",
-            "description": "The 3D-printed chambers are meticulously engineered to optimize driver placement and acoustic flow, ensuring seamless integration between dynamic and balanced armature drivers. This design minimizes distortion, enhances phase alignment, and delivers a rich, detailed sound signature with balanced lows, mids, and highs, tailored for audiophiles and professionals seeking superior clarity and precision.",
+            "description": "The acoustic chambers are designed around how each driver behaves — dynamic woofers in front, balanced armatures behind, phase-aligned through tubing length and chamber volume. The hybrid pair stays coherent rather than sounding like two separate halves of the frequency range.",
             "link_label": "",
             "link_url": "",
             "column_background": true,
@@ -245,7 +245,7 @@
           "settings": {
             "image": "shopify://shop_images/Z06FR_331c7a35-20a1-4fc6-91eb-88bd731fc135.jpg",
             "heading": "TUNED AND TESTED",
-            "description": "Z06 delivers a lush, vibrant, and spacious sound signature that immerses listeners in rich audio detail. With warm, smooth highs that are both clear and non-fatiguing, the Z06 provides a balanced listening experience where every note feels dynamic and full of life. Perfectly tuned for audiophiles, it combines precision engineering with a musical warmth that enhances every genre.",
+            "description": "Z06 is voiced for long sessions: warm low-end weight, an open midrange, and treble that extends without bite. The signature plays well across genres because it doesn't push any single band forward. Every pair is measured against the AAW reference curve before it leaves the workshop.",
             "link_label": "",
             "link_url": "",
             "column_background": true,
@@ -289,7 +289,7 @@
             "heading": "Epsilon MKII Premium Upgrade Cable",
             "heading_size": "h3",
             "seo_heading": "h3",
-            "description": "<p>The <strong>Epsilon Series MKVII Premium Upgrade Cable</strong> features high-purity <strong>UPOCC copper</strong> conductors for superior signal transmission, enhancing clarity, detail, and dynamics. Its durable connectors, precision insulation, and ergonomic design ensure reduced microphonics, flexibility, and comfort. Perfect for audiophiles, this cable delivers premium performance and craftsmanship.</p>"
+            "description": "<p>The <strong>Epsilon MKVII upgrade cable</strong> uses <strong>UPOCC copper</strong> conductors for cleaner signal transfer. The jacket and connectors are chosen for low microphonics and long-term flex — built to last as long as the monitor it carries.</p>"
           }
         },
         "image_RapkTH": {
@@ -309,7 +309,7 @@
             "heading": "Spinfit Eartips and More",
             "heading_size": "h3",
             "seo_heading": "h3",
-            "description": "<p>The Z06 ships with Spinfit eartips, as well as foam and silicone tips in various sizes and flexibility. This allows you to experiment with different tips to tailor the bass and treble sound signature to your preference, ensuring the perfect fit and personalized audio experience.</p>"
+            "description": "<p>Z06 ships with SpinFit eartips alongside AAW silicone and foam tips in multiple sizes. Tip choice changes insertion depth and seal — silicone keeps treble open, foam adds isolation and bass weight. The right one is the one you stop noticing.</p>"
           }
         }
       },
@@ -370,7 +370,7 @@
             "heading": "CUSTOM FITMENT",
             "heading_size": "h5",
             "seo_heading": "h5",
-            "description": "AAW achieves exceptional comfort in custom in-ear monitors by using advanced 3D scanning and editing technology. Each customer's ear impressions are digitally scanned to create precise 3D models, which are then optimized for a secure, ergonomic fit. This process ensures CIEMs conform seamlessly to the ear’s contours, delivering unmatched comfort and sound isolation for superior acoustic performance.",
+            "description": "AAW custom monitors start from a 3D scan of your physical ear impressions. The shell is modeled around your canal and concha geometry — a fit only you can wear, with a seal that holds through long sessions and isolation that doesn't depend on tip choice.",
             "content_position": "center",
             "content_alignment": "center",
             "content_width": "large",
@@ -401,10 +401,10 @@
             "row": 3,
             "column_mobile": "2",
             "row_mobile": "2",
-            "heading": "IMPECCABLE UNIVERSAL FITMENT",
+            "heading": "UNIVERSAL FITMENT",
             "heading_size": "h5",
             "seo_heading": "h5",
-            "description": "AAW leverages a vast database of thousands of ear impressions collected over the years to design universal-fit in-ear monitors (IEMs) that emulate the comfort and seal of custom-fit models. By analyzing ear anatomy patterns and using advanced 3D modeling and manufacturing techniques, AAW creates ergonomic shells that fit a wide range of ear shapes. Rigorous user testing ensures a secure fit, optimal comfort, and superior acoustic performance, delivering a near-custom experience for audiophiles and professionals alike.",
+            "description": "AAW universal shells are shaped from years of real ear-impression data — anatomy patterns drawn from thousands of custom builds. The result is a universal shell that sits closer to a custom fit than most one-size designs manage, especially over long listening.",
             "content_position": "center-left",
             "content_alignment": "left",
             "content_width": "small",
@@ -438,7 +438,7 @@
             "heading": "SKIN SAFE MATERIAL",
             "heading_size": "h5",
             "seo_heading": "h5",
-            "description": "AAW's UIEMs and CIEMs are meticulously crafted using medical-grade resin or PVD aluminum, offering a dense, impact-resistant housing for exceptional durability. The skin-friendly resin is further enhanced with an anti-bacterial lacquer, ensuring added protection and irritation-free comfort.",
+            "description": "AAW shells are built in medical-grade acrylic resin or PVD-coated aluminum — dense, hard-wearing, and hypoallergenic. The resin shells are sealed with an anti-bacterial top-coat for daily contact with skin.",
             "content_position": "center-left",
             "content_alignment": "left",
             "content_width": "small",
@@ -472,7 +472,7 @@
             "heading": "Precision Audio Design",
             "heading_size": "h5",
             "seo_heading": "h5",
-            "description": "At AAW, our expertise in hybrid driver IEMs is driven by our precise driver tuning, enhanced through advanced computer-aided design (CAD) and simulation tools. We carefully balance dynamic drivers for deep bass and balanced armature drivers for clear mids and highs, ensuring a seamless integration of sound. By fine-tuning each driver through simulations, we optimize frequency response and acoustic performance, delivering a rich, detailed, and balanced listening experience for our users.",
+            "description": "Hybrid driver work is the center of what AAW does. CAD modeling and acoustic simulation handle placement and chambering; the final voicing is done by ear, then validated on the measurement bench. The aim is one coherent sound — not a stack of drivers each fighting for attention.",
             "content_position": "center-left",
             "content_alignment": "left",
             "content_width": "small",
@@ -503,10 +503,10 @@
             "row": 1,
             "column_mobile": "2",
             "row_mobile": "2",
-            "heading": "Unlimited Options",
+            "heading": "Faceplate Options",
             "heading_size": "h5",
             "seo_heading": "h5",
-            "description": "AAW offers unlimited customization for CIEM faceplates, allowing users to choose from a wide range of materials, patterns, finishes, gemstones, and custom artwork. With advanced manufacturing and precision craftsmanship, every CIEM is a unique reflection of the user’s style, giving complete creative freedom to design the perfect faceplate.",
+            "description": "Custom faceplate work is what makes each CIEM look like one person's monitor. Choose resin colors, abalone or carbon inlays, hand-painted artwork, engraving, or stone insets. The shell is built once; the face is yours to design.",
             "content_position": "bottom-left",
             "content_alignment": "left",
             "content_width": "small",

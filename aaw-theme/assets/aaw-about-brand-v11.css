@@ -8,7 +8,7 @@
 .aaw-about-hero:before{content:"AAW";position:absolute;right:-.12em;top:.14em;color:rgba(255,255,255,.045);font-size:clamp(130px,25vw,430px);line-height:.75;font-weight:900;letter-spacing:0;pointer-events:none}
 .aaw-about-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(320px,.9fr) minmax(420px,1.1fr);gap:34px;align-items:center;padding:64px 0 42px}
 .aaw-about-hero-copy{position:relative;z-index:2;min-width:0}
-.aaw-about-hero h1{max-width:720px;margin:0;color:#fff;font-size:clamp(42px,4.2vw,62px);line-height:.92;font-weight:900;text-transform:uppercase;letter-spacing:0;overflow-wrap:normal;word-break:keep-all}
+.aaw-about-hero h1{max-width:720px;margin:0;color:#fff;font-size:clamp(40px,4.2vw,62px);line-height:.94;font-weight:900;text-transform:uppercase;letter-spacing:0;word-break:normal;overflow-wrap:normal;text-wrap:balance;hyphens:manual}
 .aaw-about-hero h1 span{display:block;white-space:nowrap}
 .aaw-about-hero h1 span+span{font-size:.78em}
 .aaw-about-slogan{max-width:650px;margin:22px 0 0;color:#f4e8d0;font-size:clamp(20px,2.2vw,31px);line-height:1.18;font-weight:900;text-transform:uppercase}

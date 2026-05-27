@@ -18,12 +18,18 @@
 .gs-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid #e2b768;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:12px;color:#090909;background:#e2b768;}
 .gs-btn.secondary{background:transparent;color:#f2e5c5;}
 .gs-btn:hover{opacity:.88;}
+.gs-inline-link{color:#8a6423;font-weight:800;text-decoration-thickness:1px;text-underline-offset:3px;}
+.gs-section.dark .gs-inline-link{color:#e2b768;}
+.gs-text-cta{display:inline-flex;margin-top:12px;color:#8a6423;font-size:12px;font-weight:900;line-height:1.2;text-decoration:none;text-transform:uppercase;letter-spacing:.08em;}
+.gs-text-cta:after{content:"";width:18px;height:1px;margin:8px 0 0 8px;background:currentColor;}
+.gs-text-cta:hover,.gs-inline-link:hover{color:#111;}
+.gs-section.dark .gs-text-cta:hover,.gs-section.dark .gs-inline-link:hover{color:#fff;}
 
 /* ── Hero ── */
 .gs-hero{padding:52px 0 0;min-height:60vh;display:grid;grid-template-columns:minmax(320px,.88fr) minmax(420px,1.12fr);gap:42px;align-items:center;}
 .gs-hero-copy{position:relative;z-index:2;}
-.gs-hero h1{max-width:680px;margin:0 0 22px;color:#fff;font-size:clamp(46px,5.6vw,80px);line-height:.92;font-weight:800;text-transform:uppercase;letter-spacing:0;}
-.gs-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.48em;line-height:1.15;margin-top:6px;text-transform:none;font-weight:700;letter-spacing:.02em;}
+.gs-hero h1{max-width:680px;margin:0 0 22px;color:#fff;font-size:clamp(42px,5vw,76px);line-height:.94;font-weight:800;text-transform:uppercase;letter-spacing:0;word-break:normal;overflow-wrap:normal;text-wrap:balance;hyphens:manual;}
+.gs-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.48em;line-height:1.15;margin-top:8px;text-transform:none;font-weight:700;letter-spacing:.02em;}
 .gs-hero .gs-dek{max-width:560px;margin:0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.48;}
 .gs-hero-media{position:relative;aspect-ratio:4/5;min-height:0;align-self:stretch;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12);}
 .gs-hero-media:before{content:"CIEM";position:absolute;top:22px;right:20px;color:rgba(255,255,255,.06);font-size:clamp(60px,10vw,130px);line-height:.8;font-weight:900;letter-spacing:0;}
