@@ -221,6 +221,17 @@
   filter: contrast(1.03) saturate(0.92);
 }
 
+.ciem-care-step:nth-child(6) .ciem-care-step-media {
+  align-self: start;
+  aspect-ratio: 1 / 1;
+}
+
+.ciem-care-step:nth-child(6) .ciem-care-step-media img {
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+}
+
 .ciem-care-step-content {
   display: flex;
   min-width: 0;
