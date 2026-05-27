@@ -1,6 +1,4 @@
 {%- if section.settings.enable_currency_selector or section.settings.enable_language_selector -%}
-  <link rel="preload" as="style" href="{{ 'country-flags.css' | asset_url }}">
-  {{ 'country-flags.css' | asset_url | stylesheet_tag }}
   <div class="localization-form">
     {% if section.settings.enable_currency_selector %}
       {% assign formID = 'localization_form_language_currency-' | append: section.id | append: position %}
@@ -26,7 +24,29 @@
             data-viewinscreen-body
           >
             <ul class="custom-select-list">
+              {% assign announcement_currency_country_codes = 'SG,US,GB,DE,AU,CA,JP,HK' | split: ',' %}
               {% for country in localization.available_countries %}
+                {% if section.id contains 'announcement' %}
+                  {% for allowed_country_code in announcement_currency_country_codes %}
+                    {% if country.iso_code == allowed_country_code %}
+                      <li class="custom-select-item">
+                        <button
+                          type="submit"
+                          name="country_code"
+                          id="country-{{ section.id }}-{{ forloop.index }}"
+                          value="{{ country.iso_code }}"
+                          class="custom-select-item-active"
+                        >
+                          {% comment %} <span class="countryflags countryflag__{{ country.iso_code }}"> </span> {% endcomment %}
+                          <span>
+                            {{- country.name }} ({{ country.currency.iso_code }}
+                            {{ country.currency.symbol }})</span
+                          >
+                        </button>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
                 <li class="custom-select-item">
                   <button
                     type="submit"
@@ -42,6 +62,7 @@
                     >
                   </button>
                 </li>
+                {% endif %}
               {% endfor %}
             </ul>
           </div>
