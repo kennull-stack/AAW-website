@@ -1,0 +1,120 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "wr_hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-hero wr-wrap\">\n    <div class=\"wr-hero-copy\">\n      <p class=\"wr-kicker\">AAW</p>\n      <h1>Warranty<em>&amp; Refit</em></h1>\n      <p class=\"wr-dek\">Every AAW monitor is built and finished by hand in Singapore. We stand behind that work with a 1-year limited warranty, a 30-day refit period, and flat-rate repair options for products out of coverage.</p>\n    </div>\n    <div class=\"wr-hero-media\">\n      <img src=\"{{ 'aaw-ins-hero-ciem-2026.jpg' | asset_url }}\" alt=\"AAW custom in-ear monitors \u2014 hand-built and backed by warranty coverage\" width=\"1024\" height=\"1280\" loading=\"eager\">\n    </div>\n  </section>\n  <div class=\"wr-stat-strip\">\n    <div class=\"wr-wrap wr-stats\">\n      <div class=\"wr-stat\"><b>1-Year Warranty</b><span>Covers defects in materials and workmanship from the date of purchase. Transferable between owners.</span></div>\n      <div class=\"wr-stat\"><b>30-Day Refit</b><span>If your custom monitor does not fit properly, we will adjust or rebuild it within 30 days of delivery.</span></div>\n      <div class=\"wr-stat\"><b>Flat Rate Repair SGD150</b><span>Out-of-warranty repairs at a fixed price for most active and discontinued AAW models.</span></div>\n      <div class=\"wr-stat\"><b>Singapore Workshop</b><span>All repairs, reshells, and warranty work are performed at 76 Playfair Rd by the same team that built your monitors.</span></div>\n    </div>\n  </div>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_warranty": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-section\">\n    <div class=\"wr-wrap\">\n      <div class=\"wr-section-head\">\n        <p class=\"wr-kicker\">Coverage</p>\n        <h2>What We Cover</h2>\n        <p>Our limited warranty protects against defects in materials and workmanship. It is straightforward, transferable, and begins the moment you receive your monitors.</p>\n      </div>\n      <div class=\"wr-coverage-grid\">\n        <div class=\"wr-coverage-card\">\n          <h3>Refit Period</h3>\n          <p>AAW provides a 30-day refit period against poor fit from the delivery date. If your custom in-ear monitor does not seal or sit comfortably, contact us and we will make it right.</p>\n        </div>\n        <div class=\"wr-coverage-card\">\n          <h3>Limited Warranty</h3>\n          <p>This limited warranty covers defects in materials and workmanship in the products. It is valid for 1 year upon purchase by the customer and is fully transferable between owners.</p>\n        </div>\n        <div class=\"wr-coverage-card\">\n          <h3>Extended Warranty</h3>\n          <p>Customers can acquire an extra 3 months of warranty coverage once the product is successfully registered on the AAW website. Register promptly after purchase to extend your protection.</p>\n        </div>\n      </div>\n      <div class=\"wr-exclusions\">\n        <h3>What is not covered by this limited warranty</h3>\n        <div class=\"wr-exclusion-grid\">\n          <div class=\"wr-exclusion-item\">External causes such as accident, abuse, misuse, or problems with electrical power</div>\n          <div class=\"wr-exclusion-item\">Unauthorized servicing or modification by a third party</div>\n          <div class=\"wr-exclusion-item\">Usage that is not in accordance with product specifications</div>\n          <div class=\"wr-exclusion-item\">Failure to follow product instructions or failure to perform preventive maintenance</div>\n          <div class=\"wr-exclusion-item\">Products with missing or altered service tags or serial numbers</div>\n          <div class=\"wr-exclusion-item\">Products for which we have not received payment</div>\n          <div class=\"wr-exclusion-item\">Normal degradation in aesthetics over time</div>\n          <div class=\"wr-exclusion-item\">Demo units purchased from a distributor or dealer</div>\n          <div class=\"wr-exclusion-item\">Return shipping costs to us and back to the customer</div>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_claim": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-section dark\">\n    <div class=\"wr-wrap\">\n      <div class=\"wr-section-head\">\n        <p class=\"wr-kicker\">How to Claim</p>\n        <h2>Warranty Claims</h2>\n        <p>Filing a warranty claim is simple. Email us to request an RMA number, pack your product safely, and ship it to our Singapore workshop. We will inspect and respond promptly.</p>\n      </div>\n      <div class=\"wr-rma-note\">\n        <strong>Request an RMA</strong>\n        <p>Email <a href=\"mailto:support@aaw.me\" style=\"color:#e2b768;\">support@aaw.me</a> to request an RMA number. We will respond with return instructions within one business day. Do not ship your product without an RMA number.</p>\n      </div>\n      <div class=\"wr-claim-body\">\n        <div class=\"wr-claim-steps\">\n          <div class=\"wr-claim-step\">\n            <div class=\"wr-step-num\">1</div>\n            <h4>Pack with care</h4>\n            <p>Return the product to us in safe and well-protected packaging to avoid further damage in transit. Use the original case or equivalent protection.</p>\n          </div>\n          <div class=\"wr-claim-step\">\n            <div class=\"wr-step-num\">2</div>\n            <h4>Include documentation</h4>\n            <p>Include your warranty card, proof of purchase, a note describing the defect, and only the defective item. Exclude non-defective accessories such as cables, ear tips, and the carrying case.</p>\n          </div>\n          <div class=\"wr-claim-step\">\n            <div class=\"wr-step-num\">3</div>\n            <h4>Return both sides</h4>\n            <p>Always return both sides of the IEM, even if only one side appears defective. This allows us to verify channel matching and ensure both monitors perform identically after repair.</p>\n          </div>\n        </div>\n        <div class=\"wr-extended-box\">\n          <h4>Register for +3 Months</h4>\n          <p>Once your product is successfully registered on the AAW website, an additional 3 months of warranty coverage is added automatically. Registration takes less than two minutes and requires your order number and serial number.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_repair": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-section\">\n    <div class=\"wr-wrap\">\n      <div class=\"wr-section-head\">\n        <p class=\"wr-kicker\">Out of Warranty</p>\n        <h2>Flat Rate Repair</h2>\n        <p>If your AAW monitor is out of warranty, our flat-rate repair programme offers a fixed-price path back to working condition. Most active and discontinued models qualify.</p>\n      </div>\n      <div class=\"wr-repair-head\">\n        <div class=\"wr-repair-intro\">\n          <h3>Eligibility</h3>\n          <p>All AAW branded UIEM and CIEM active models or discontinued models are eligible, with the exception of Nebula 1, Nebula 2, Q, and products purchased more than 3 years ago. Products older than 3 years will be evaluated and quoted on a case-by-case basis.</p>\n        </div>\n        <div class=\"wr-price-badge\">\n          <span>Flat Rate</span>\n          <b>SGD150</b>\n        </div>\n      </div>\n      <div class=\"wr-repair-grid\">\n        <div class=\"wr-repair-col can\">\n          <h4>What can be repaired</h4>\n          <ul>\n            <li>Cracked or shattered enclosure</li>\n            <li>Damaged socket</li>\n            <li>Damaged driver</li>\n            <li>Blocked nozzle</li>\n            <li>Cable defects (refer to Null Audio section)</li>\n          </ul>\n        </div>\n        <div class=\"wr-repair-col cannot\">\n          <h4>What cannot be repaired</h4>\n          <ul>\n            <li>Missing one side or both sides of IEM</li>\n            <li>Product severely damaged with missing components such as drivers</li>\n            <li>Product intentionally abused</li>\n            <li>Water-related damage</li>\n            <li>Normal cosmetic degradation</li>\n            <li>Damaged packaging, ear tips, carry case, and other accessories</li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"wr-repair-note\">\n        <strong>Beyond Repair</strong>\n        <p>If AAW determines the IEM is beyond repair \u2014 for reasons including but not limited to unavailable repair parts or products designed with low reparability \u2014 it will be at AAW\u2019s discretion to reject the repair. For products purchased more than 3 years ago, AAW will evaluate and advise repair cost on a case-by-case basis.</p>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_services": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-section dark\">\n    <div class=\"wr-wrap\">\n      <div class=\"wr-section-head\">\n        <p class=\"wr-kicker\">Additional Services</p>\n        <h2>Ownership Transfer &amp; Trade-in</h2>\n        <p>Whether you are passing your monitors to a new owner or upgrading to a newer model, we offer two structured programmes to keep your AAW investment moving forward.</p>\n      </div>\n      <div class=\"wr-service-grid\">\n        <div class=\"wr-service-card\">\n          <div class=\"wr-service-badge\">Flat Rate SGD200</div>\n          <h3>Ownership Transfer</h3>\n          <p>Reshell an existing AAW UIEM or CIEM into a new CIEM with the new owner\u2019s ear impressions. Reshelling with new ear impressions for the existing owner also qualifies under this service.</p>\n          <h4>Eligibility</h4>\n          <p>All AAW branded UIEM and CIEM active or discontinued models, except Nebula 1, Nebula 2, Q, and products purchased more than 3 years ago.</p>\n          <h4>Additional Options</h4>\n          <p>Faceplate inserts, artwork, engravings, and other custom options are charged at the same rate as new CIEM orders.</p>\n          <h4>Defective Units</h4>\n          <p>If the IEM is defective before submission for ownership transfer, an aggregated repair charge of SGD150 will be added.</p>\n          <h4>Warranty</h4>\n          <p>3-month extended warranty on the shell and socket only. Driver issues are not covered under this service warranty.</p>\n        </div>\n        <div class=\"wr-service-card\">\n          <div class=\"wr-service-badge\">Upgrade Programme</div>\n          <h3>Trade-in Service</h3>\n          <p>Trade in your existing AAW UIEM or CIEM toward a new CIEM or UIEM. The trade-in value is calculated against the new model\u2019s retail price.</p>\n          <h4>Eligibility</h4>\n          <p>All AAW branded UIEM and CIEM active or discontinued models are eligible. There are no model exclusions for trade-in.</p>\n          <h4>Cost Formula</h4>\n          <p>Total Amount = New Model MSRP \u2212 (Trade-in Unit MSRP \u00d7 30%). The new model MSRP must be greater than the trade-in unit MSRP. No downgrades are permitted.</p>\n          <h4>Additional Options</h4>\n          <p>Faceplate inserts, artwork, engravings, and other custom options are charged at the same rate as new CIEM orders.</p>\n          <h4>Defective Units &amp; Warranty</h4>\n          <p>Defective products can be submitted for trade-in and will be treated with no difference. The new CIEM or UIEM will enjoy the full standard warranty.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_return": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-section\">\n    <div class=\"wr-wrap\">\n      <div class=\"wr-section-head\">\n        <p class=\"wr-kicker\">Return Process</p>\n        <h2>Shipping &amp; Returns Address</h2>\n        <p>Once your repair or warranty work is complete, we ship the product back to you. Here is what to expect and where to send your product.</p>\n      </div>\n      <div class=\"wr-return-body\">\n        <div class=\"wr-return-info\">\n          <h3>How we return your product</h3>\n          <p>The repaired product will be shipped back via <strong>International Registered Mail</strong> with a declaration of its original price. If you prefer a lower declaration value, please let us know when you submit your RMA.</p>\n          <p>If you wish to use other shipping methods such as FedEx, customers need to top up the shipping difference between the FedEx rate and the International Registered Mail rate. Contact us for a shipping quote before sending your product.</p>\n        </div>\n        <div class=\"wr-address-block\">\n          <span class=\"wr-address-label\">RMA Department</span>\n          <h3>Return Address</h3>\n          <address>\n            <strong>Advanced AcousticWerkes</strong>\n            #01-03, LHK2 Building<br>\n            76 Playfair Road<br>\n            Singapore 367996<br>\n            Attn: RMA Department<br>\n            Tel: +65 8731 5476\n          </address>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "wr_final": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"wr-feature-shell\">\n  <section class=\"wr-final\">\n    <div class=\"wr-wrap wr-final-inner\">\n      <h2>Get in touch today</h2>\n      <p>We typically respond within 48 hours. If you have questions about warranty coverage, repair eligibility, or need help filing a claim, reach out and we will guide you through the process.</p>\n      <div class=\"wr-actions\">\n        <a class=\"wr-btn\" href=\"mailto:support@aaw.me\">Email Support</a>\n        <a class=\"wr-btn secondary\" href=\"/pages/contact\">Contact Us</a>\n      </div>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebPage\",\n  \"name\": \"Warranty & Refit\",\n  \"description\": \"AAW warranty and refit policy. 1-year limited warranty, 30-day refit period, flat-rate repair at SGD150, ownership transfer, and trade-in services for custom and universal in-ear monitors.\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Advanced AcousticWerkes\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"76 Playfair Road, #01-03 LHK2 Building\",\n      \"postalCode\": \"367996\",\n      \"addressCountry\": \"SG\"\n    }\n  }\n}\n</script>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "wr_hero",
+    "wr_warranty",
+    "wr_claim",
+    "wr_repair",
+    "wr_services",
+    "wr_return",
+    "wr_final"
+  ]
+}

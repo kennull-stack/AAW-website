@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warranty & Refit — AAW | Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   Warranty & Refit page editorial styles — full theme preview
+   Matches Z05 product page editorial pattern with wr- prefix.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#080808;color:#f5f2ea;line-height:1.5;overflow-x:hidden}
+
+/* ── Page Chrome ── */
+.wr-nav{position:sticky;top:0;z-index:50;background:rgba(8,8,8,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.wr-nav-inner{width:min(1180px,calc(100vw - 36px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:18px}
+.wr-nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.wr-nav-logo span{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#b8b0a2}
+.wr-nav-links{display:flex;align-items:center;gap:24px}
+.wr-nav-links a{color:#cfc7bb;text-decoration:none;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.wr-nav-links a:hover{color:#e2b768}
+.wr-breadcrumb{display:flex;align-items:center;gap:8px;padding:12px 0;color:#8f887f;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.wr-breadcrumb a{color:#cfc7bb;text-decoration:none}
+.wr-breadcrumb a:hover{color:#e2b768}
+.wr-breadcrumb span{color:#e2b768}
+.wr-footer{background:#060606;border-top:1px solid rgba(255,255,255,.1);padding:36px 0;text-align:center}
+.wr-footer p{color:#6e6962;font-size:12px;line-height:1.6}
+
+/* ── Feature Shell & Layout ── */
+.wr-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0}
+.wr-feature-shell *{box-sizing:border-box}
+.wr-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto}
+.wr-section{padding:76px 0;background:#f4f1ea;color:#111}
+.wr-section.dark{background:#080808;color:#f5f2ea}
+.wr-section h2{margin:0;color:inherit;font-size:clamp(32px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;font-weight:900}
+.wr-section p{font-size:17px;line-height:1.62;color:inherit}
+.wr-section.dark p{color:#d8d1c7}
+.wr-kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#a87725;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+.wr-section.dark .wr-kicker{color:#e2b768}
+.wr-kicker:before{content:"";width:36px;height:1px;background:#d6a756;display:inline-block}
+.wr-section.dark .wr-kicker:before{background:#e2b768}
+.wr-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border:1px solid #e2b768;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:12px;color:#090909;background:#e2b768;letter-spacing:.04em;transition:opacity .2s;cursor:pointer}
+.wr-btn.secondary{background:transparent;color:#f2e5c5}
+.wr-btn:hover{opacity:.88}
+
+/* ── Section Head ── */
+.wr-section-head{max-width:820px;margin-bottom:38px}
+.wr-section-head h2{max-width:820px}
+.wr-section-head>p{margin:16px 0 0;color:#302b25;font-size:18px;line-height:1.58}
+.wr-section.dark .wr-section-head>p{color:#d8d1c7}
+
+/* ── Hero ── */
+.wr-hero{padding:52px 0 0;min-height:55vh;display:grid;grid-template-columns:minmax(320px,.88fr) minmax(420px,1.12fr);gap:42px;align-items:center}
+.wr-hero-copy{position:relative;z-index:2}
+.wr-hero h1{max-width:680px;margin:0 0 22px;color:#fff;font-size:clamp(46px,5.6vw,80px);line-height:.92;font-weight:900;text-transform:uppercase;letter-spacing:0}
+.wr-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.48em;line-height:1.15;margin-top:6px;text-transform:none;font-weight:700;letter-spacing:.02em}
+.wr-hero .wr-dek{max-width:560px;margin:0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.48}
+.wr-hero-media{position:relative;aspect-ratio:4/5;min-height:0;align-self:stretch;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12)}
+.wr-hero-media:before{content:"AAW";position:absolute;top:22px;right:20px;color:rgba(255,255,255,.06);font-size:clamp(60px,10vw,130px);line-height:.8;font-weight:900;letter-spacing:0}
+.wr-hero-media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+
+/* ── Stat Strip ── */
+.wr-stat-strip{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:#0f0f0f}
+.wr-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0}
+.wr-stat{padding:26px 22px;background:#151515;min-height:112px}
+.wr-stat b{display:block;color:#fff;font-size:22px;line-height:1.08}
+.wr-stat span{display:block;margin-top:10px;color:#bdb5aa;font-size:13px;line-height:1.4}
+
+/* ── Warranty Coverage Cards ── */
+.wr-coverage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:0}
+.wr-coverage-card{border-top:2px solid #111;padding:20px 0 0}
+.wr-coverage-card h3{margin:0 0 10px;color:#111;font-size:22px;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;font-weight:900}
+.wr-coverage-card p{margin:0;color:#38322b;font-size:15px;line-height:1.58}
+
+/* ── Exclusions List ── */
+.wr-exclusions{border-top:2px solid #111;padding-top:24px;margin-top:28px}
+.wr-exclusions h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 16px;color:#6d4b16;font-weight:900}
+.wr-exclusion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 18px}
+.wr-exclusion-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.08);font-size:14px;line-height:1.45;color:#4a4035}
+.wr-exclusion-item:before{content:"";flex-shrink:0;width:6px;height:6px;border-radius:50%;background:#d6a756;margin-top:6px}
+
+/* ── Claim Steps ── */
+.wr-claim-body{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.wr-claim-steps{display:grid;gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1)}
+.wr-claim-step{background:rgba(255,255,255,.04);padding:22px 24px;min-height:0}
+.wr-claim-step .wr-step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;margin-bottom:12px;background:#e2b768;color:#090909;font-size:13px;font-weight:900;line-height:1}
+.wr-claim-step h4{margin:0 0 8px;color:#fff;font-size:17px;line-height:1.2;text-transform:uppercase;letter-spacing:.02em}
+.wr-claim-step p{margin:0;color:#c4bbac;font-size:14px;line-height:1.52}
+.wr-extended-box{border:2px solid #e2b768;padding:24px 26px;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.wr-extended-box h4{margin:0 0 10px;color:#e2b768;font-size:16px;line-height:1.2;text-transform:uppercase;letter-spacing:.04em;font-weight:900}
+.wr-extended-box p{margin:0;color:#d8d1c7;font-size:15px;line-height:1.55}
+
+/* ── RMA highlight ── */
+.wr-rma-note{border-left:3px solid #e2b768;padding:18px 22px;margin-bottom:24px;background:linear-gradient(90deg,rgba(226,183,104,.12),rgba(226,183,104,.035))}
+.wr-rma-note strong{display:block;margin-bottom:6px;color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.04em}
+.wr-rma-note p{margin:0;color:#f4e8d0;font-size:15px;line-height:1.5}
+
+/* ── Flat Rate Repair ── */
+.wr-repair-head{display:flex;flex-wrap:wrap;align-items:flex-start;gap:24px;margin-bottom:32px}
+.wr-repair-head .wr-repair-intro{flex:1;min-width:260px}
+.wr-repair-head .wr-repair-intro h3{margin:0 0 10px;color:#111;font-size:24px;line-height:1.15;text-transform:uppercase;font-weight:900}
+.wr-repair-head .wr-repair-intro p{margin:0;color:#38322b;font-size:15px;line-height:1.55}
+.wr-price-badge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:120px;padding:16px 20px;border:2px solid #d6a756;background:#fff;text-align:center}
+.wr-price-badge span{display:block;color:#6d4b16;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
+.wr-price-badge b{display:block;color:#111;font-size:28px;line-height:1;font-weight:900}
+.wr-repair-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.wr-repair-col{border-top:2px solid #111;padding-top:20px}
+.wr-repair-col h4{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:900}
+.wr-repair-col.can h4{color:#2d6a1e}
+.wr-repair-col.cannot h4{color:#8b2618}
+.wr-repair-col ul{list-style:none;margin:0;padding:0}
+.wr-repair-col li{position:relative;padding:7px 0 7px 18px;color:#38322b;font-size:14px;line-height:1.5;border-bottom:1px solid rgba(0,0,0,.06)}
+.wr-repair-col.can li:before{content:"";position:absolute;left:0;top:12px;width:8px;height:8px;border-radius:50%;background:#2d6a1e}
+.wr-repair-col.cannot li:before{content:"";position:absolute;left:0;top:12px;width:8px;height:8px;border-radius:50%;background:#8b2618}
+.wr-repair-note{border-left:3px solid #d6a756;padding:18px 22px;margin-top:24px;background:rgba(214,167,86,.06)}
+.wr-repair-note strong{display:block;margin-bottom:6px;color:#6d4b16;font-size:13px;text-transform:uppercase;letter-spacing:.06em;font-weight:900}
+.wr-repair-note p{margin:0;color:#302b25;font-size:14px;line-height:1.55}
+
+/* ── Services (Transfer + Trade-in) ── */
+.wr-service-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+.wr-service-card{background:#0f0f0f;padding:28px 30px;min-height:240px}
+.wr-service-card h3{margin:0 0 6px;color:#fff;font-size:22px;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;font-weight:900}
+.wr-service-card .wr-service-badge{display:inline-flex;align-items:center;gap:6px;margin-bottom:14px;padding:4px 10px;border:1px solid #e2b768;color:#e2b768;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.wr-service-card .wr-service-badge:before{content:"";width:7px;height:7px;border-radius:50%;background:#e2b768}
+.wr-service-card h4{margin:18px 0 8px;color:#e2b768;font-size:13px;text-transform:uppercase;letter-spacing:.06em;font-weight:900}
+.wr-service-card p{margin:0 0 6px;color:#c4bbac;font-size:14px;line-height:1.52}
+.wr-service-card ul{list-style:none;margin:0;padding:0}
+.wr-service-card li{position:relative;padding:5px 0 5px 16px;color:#c4bbac;font-size:13px;line-height:1.5}
+.wr-service-card li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:#e2b768}
+
+/* ── Return Shipping ── */
+.wr-return-body{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.wr-return-info h3{margin:0 0 12px;color:#111;font-size:20px;line-height:1.15;text-transform:uppercase;font-weight:900}
+.wr-return-info p{margin:0 0 12px;color:#302b25;font-size:15px;line-height:1.6}
+.wr-return-info ul{list-style:none;margin:0;padding:0}
+.wr-return-info li{position:relative;padding:6px 0 6px 18px;color:#38322b;font-size:14px;line-height:1.5}
+.wr-return-info li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:#d6a756}
+
+/* ── Address Block ── */
+.wr-address-block{border:2px solid #d6a756;background:#fff;padding:28px 30px;margin:0}
+.wr-address-block .wr-address-label{display:inline-flex;margin-bottom:14px;padding:5px 10px;border:1px solid #d6a756;color:#6d4b16;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.wr-address-block h3{margin:0 0 18px;color:#6d4b16;font-size:18px;line-height:1.15;text-transform:uppercase;letter-spacing:.04em;font-weight:900}
+.wr-address-block address{font-style:normal;color:#302b25;font-size:16px;line-height:1.68}
+.wr-address-block address strong{display:block;color:#111;margin-bottom:4px}
+
+/* ── Final CTA ── */
+.wr-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 0;border-top:1px solid rgba(255,255,255,.12)}
+.wr-final-inner{display:flex;flex-direction:column;align-items:center}
+.wr-final h2{max-width:780px;margin:0 auto;color:#fff;font-size:clamp(34px,5.2vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;font-weight:900}
+.wr-final p{max-width:680px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55}
+.wr-final .wr-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:24px}
+
+/* ── Responsive ── */
+@media(max-width:980px){
+  .wr-hero{grid-template-columns:1fr;padding-top:40px;min-height:auto;gap:30px}
+  .wr-hero-media{aspect-ratio:16/10;min-height:340px}
+  .wr-stats{grid-template-columns:repeat(2,1fr)}
+  .wr-coverage-grid{grid-template-columns:1fr}
+  .wr-exclusion-grid{grid-template-columns:repeat(2,1fr)}
+  .wr-claim-body{grid-template-columns:1fr}
+  .wr-repair-grid{grid-template-columns:1fr}
+  .wr-service-grid{grid-template-columns:1fr}
+  .wr-return-body{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .wr-section{padding:52px 0}
+  .wr-hero h1{font-size:42px}
+  .wr-stats{grid-template-columns:1fr}
+  .wr-exclusion-grid{grid-template-columns:1fr}
+  .wr-repair-head{flex-direction:column;gap:16px}
+}
+@media(max-width:560px){
+  .wr-wrap{width:min(100% - 24px,1180px)}
+  .wr-hero{padding-top:36px}
+  .wr-hero-media{min-height:280px}
+  .wr-hero-media:before{top:14px;right:14px;font-size:48px}
+  .wr-coverage-card{padding:16px 0 0}
+  .wr-coverage-card h3{font-size:19px}
+  .wr-claim-step{padding:18px 18px}
+  .wr-service-card{padding:20px 20px}
+  .wr-service-card h3{font-size:19px}
+  .wr-address-block{padding:20px}
+  .wr-final{padding:56px 0}
+  .wr-final h2{font-size:38px}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ PAGE CHROME ══════════════ -->
+<nav class="wr-nav">
+  <div class="wr-nav-inner">
+    <a href="/" class="wr-nav-logo">
+      <svg width="36" height="28" viewBox="0 0 36 28" fill="none"><rect width="36" height="28" rx="2" fill="#e2b768"/><text x="18" y="18" text-anchor="middle" font-size="12" font-weight="900" fill="#080808">AAW</text></svg>
+      <span>Advanced AcousticWerkes</span>
+    </a>
+    <div class="wr-nav-links">
+      <a href="#">Home</a>
+      <a href="#">Universal IEM</a>
+      <a href="#">Custom IEM</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="wr-feature-shell">
+  <div class="wr-wrap">
+    <div class="wr-breadcrumb">
+      <a href="/">Home</a> / <span>Warranty &amp; Refit</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION: HERO ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-hero wr-wrap">
+    <div class="wr-hero-copy">
+      <p class="wr-kicker">AAW</p>
+      <h1>Warranty<em>&amp; Refit</em></h1>
+      <p class="wr-dek">Every AAW monitor is built and finished by hand in Singapore. We stand behind that work with a 1-year limited warranty, a 30-day refit period, and flat-rate repair options for products out of coverage.</p>
+    </div>
+    <div class="wr-hero-media">
+      <img src="https://placehold.co/1024x1280/1a1a1a/333?text=CIEM+Warranty" alt="AAW custom in-ear monitors — hand-built and backed by warranty coverage" width="1024" height="1280" loading="eager">
+    </div>
+  </section>
+  <div class="wr-stat-strip">
+    <div class="wr-wrap wr-stats">
+      <div class="wr-stat"><b>1-Year Warranty</b><span>Covers defects in materials and workmanship from the date of purchase. Transferable between owners.</span></div>
+      <div class="wr-stat"><b>30-Day Refit</b><span>If your custom monitor does not fit properly, we will adjust or rebuild it within 30 days of delivery.</span></div>
+      <div class="wr-stat"><b>Flat Rate Repair SGD150</b><span>Out-of-warranty repairs at a fixed price for most active and discontinued AAW models.</span></div>
+      <div class="wr-stat"><b>Singapore Workshop</b><span>All repairs, reshells, and warranty work are performed at 76 Playfair Rd by the same team that built your monitors.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION: WARRANTY COVERAGE ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-section">
+    <div class="wr-wrap">
+      <div class="wr-section-head">
+        <p class="wr-kicker">Coverage</p>
+        <h2>What We Cover</h2>
+        <p>Our limited warranty protects against defects in materials and workmanship. It is straightforward, transferable, and begins the moment you receive your monitors.</p>
+      </div>
+      <div class="wr-coverage-grid">
+        <div class="wr-coverage-card">
+          <h3>Refit Period</h3>
+          <p>AAW provides a 30-day refit period against poor fit from the delivery date. If your custom in-ear monitor does not seal or sit comfortably, contact us and we will make it right.</p>
+        </div>
+        <div class="wr-coverage-card">
+          <h3>Limited Warranty</h3>
+          <p>This limited warranty covers defects in materials and workmanship in the products. It is valid for 1 year upon purchase by the customer and is fully transferable between owners.</p>
+        </div>
+        <div class="wr-coverage-card">
+          <h3>Extended Warranty</h3>
+          <p>Customers can acquire an extra 3 months of warranty coverage once the product is successfully registered on the AAW website. Register promptly after purchase to extend your protection.</p>
+        </div>
+      </div>
+      <div class="wr-exclusions">
+        <h3>What is not covered by this limited warranty</h3>
+        <div class="wr-exclusion-grid">
+          <div class="wr-exclusion-item">External causes such as accident, abuse, misuse, or problems with electrical power</div>
+          <div class="wr-exclusion-item">Unauthorized servicing or modification by a third party</div>
+          <div class="wr-exclusion-item">Usage that is not in accordance with product specifications</div>
+          <div class="wr-exclusion-item">Failure to follow product instructions or failure to perform preventive maintenance</div>
+          <div class="wr-exclusion-item">Products with missing or altered service tags or serial numbers</div>
+          <div class="wr-exclusion-item">Products for which we have not received payment</div>
+          <div class="wr-exclusion-item">Normal degradation in aesthetics over time</div>
+          <div class="wr-exclusion-item">Demo units purchased from a distributor or dealer</div>
+          <div class="wr-exclusion-item">Return shipping costs to us and back to the customer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ SECTION: WARRANTY CLAIMS ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-section dark">
+    <div class="wr-wrap">
+      <div class="wr-section-head">
+        <p class="wr-kicker">How to Claim</p>
+        <h2>Warranty Claims</h2>
+        <p>Filing a warranty claim is simple. Email us to request an RMA number, pack your product safely, and ship it to our Singapore workshop. We will inspect and respond promptly.</p>
+      </div>
+      <div class="wr-rma-note">
+        <strong>Request an RMA</strong>
+        <p>Email <a href="mailto:support@aaw.me" style="color:#e2b768;">support@aaw.me</a> to request an RMA number. We will respond with return instructions within one business day. Do not ship your product without an RMA number.</p>
+      </div>
+      <div class="wr-claim-body">
+        <div class="wr-claim-steps">
+          <div class="wr-claim-step">
+            <div class="wr-step-num">1</div>
+            <h4>Pack with care</h4>
+            <p>Return the product to us in safe and well-protected packaging to avoid further damage in transit. Use the original case or equivalent protection.</p>
+          </div>
+          <div class="wr-claim-step">
+            <div class="wr-step-num">2</div>
+            <h4>Include documentation</h4>
+            <p>Include your warranty card, proof of purchase, a note describing the defect, and only the defective item. Exclude non-defective accessories such as cables, ear tips, and the carrying case.</p>
+          </div>
+          <div class="wr-claim-step">
+            <div class="wr-step-num">3</div>
+            <h4>Return both sides</h4>
+            <p>Always return both sides of the IEM, even if only one side appears defective. This allows us to verify channel matching and ensure both monitors perform identically after repair.</p>
+          </div>
+        </div>
+        <div class="wr-extended-box">
+          <h4>Register for +3 Months</h4>
+          <p>Once your product is successfully registered on the AAW website, an additional 3 months of warranty coverage is added automatically. Registration takes less than two minutes and requires your order number and serial number.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ SECTION: FLAT RATE REPAIR ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-section">
+    <div class="wr-wrap">
+      <div class="wr-section-head">
+        <p class="wr-kicker">Out of Warranty</p>
+        <h2>Flat Rate Repair</h2>
+        <p>If your AAW monitor is out of warranty, our flat-rate repair programme offers a fixed-price path back to working condition. Most active and discontinued models qualify.</p>
+      </div>
+      <div class="wr-repair-head">
+        <div class="wr-repair-intro">
+          <h3>Eligibility</h3>
+          <p>All AAW branded UIEM and CIEM active models or discontinued models are eligible, with the exception of Nebula 1, Nebula 2, Q, and products purchased more than 3 years ago. Products older than 3 years will be evaluated and quoted on a case-by-case basis.</p>
+        </div>
+        <div class="wr-price-badge">
+          <span>Flat Rate</span>
+          <b>SGD150</b>
+        </div>
+      </div>
+      <div class="wr-repair-grid">
+        <div class="wr-repair-col can">
+          <h4>What can be repaired</h4>
+          <ul>
+            <li>Cracked or shattered enclosure</li>
+            <li>Damaged socket</li>
+            <li>Damaged driver</li>
+            <li>Blocked nozzle</li>
+            <li>Cable defects (refer to Null Audio section)</li>
+          </ul>
+        </div>
+        <div class="wr-repair-col cannot">
+          <h4>What cannot be repaired</h4>
+          <ul>
+            <li>Missing one side or both sides of IEM</li>
+            <li>Product severely damaged with missing components such as drivers</li>
+            <li>Product intentionally abused</li>
+            <li>Water-related damage</li>
+            <li>Normal cosmetic degradation</li>
+            <li>Damaged packaging, ear tips, carry case, and other accessories</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wr-repair-note">
+        <strong>Beyond Repair</strong>
+        <p>If AAW determines the IEM is beyond repair — for reasons including but not limited to unavailable repair parts or products designed with low reparability — it will be at AAW's discretion to reject the repair. For products purchased more than 3 years ago, AAW will evaluate and advise repair cost on a case-by-case basis.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ SECTION: SERVICES ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-section dark">
+    <div class="wr-wrap">
+      <div class="wr-section-head">
+        <p class="wr-kicker">Additional Services</p>
+        <h2>Ownership Transfer &amp; Trade-in</h2>
+        <p>Whether you are passing your monitors to a new owner or upgrading to a newer model, we offer two structured programmes to keep your AAW investment moving forward.</p>
+      </div>
+      <div class="wr-service-grid">
+        <div class="wr-service-card">
+          <div class="wr-service-badge">Flat Rate SGD200</div>
+          <h3>Ownership Transfer</h3>
+          <p>Reshell an existing AAW UIEM or CIEM into a new CIEM with the new owner's ear impressions. Reshelling with new ear impressions for the existing owner also qualifies under this service.</p>
+          <h4>Eligibility</h4>
+          <p>All AAW branded UIEM and CIEM active or discontinued models, except Nebula 1, Nebula 2, Q, and products purchased more than 3 years ago.</p>
+          <h4>Additional Options</h4>
+          <p>Faceplate inserts, artwork, engravings, and other custom options are charged at the same rate as new CIEM orders.</p>
+          <h4>Defective Units</h4>
+          <p>If the IEM is defective before submission for ownership transfer, an aggregated repair charge of SGD150 will be added.</p>
+          <h4>Warranty</h4>
+          <p>3-month extended warranty on the shell and socket only. Driver issues are not covered under this service warranty.</p>
+        </div>
+        <div class="wr-service-card">
+          <div class="wr-service-badge">Upgrade Programme</div>
+          <h3>Trade-in Service</h3>
+          <p>Trade in your existing AAW UIEM or CIEM toward a new CIEM or UIEM. The trade-in value is calculated against the new model's retail price.</p>
+          <h4>Eligibility</h4>
+          <p>All AAW branded UIEM and CIEM active or discontinued models are eligible. There are no model exclusions for trade-in.</p>
+          <h4>Cost Formula</h4>
+          <p>Total Amount = New Model MSRP − (Trade-in Unit MSRP × 30%). The new model MSRP must be greater than the trade-in unit MSRP. No downgrades are permitted.</p>
+          <h4>Additional Options</h4>
+          <p>Faceplate inserts, artwork, engravings, and other custom options are charged at the same rate as new CIEM orders.</p>
+          <h4>Defective Units &amp; Warranty</h4>
+          <p>Defective products can be submitted for trade-in and will be treated with no difference. The new CIEM or UIEM will enjoy the full standard warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ SECTION: RETURN & ADDRESS ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-section">
+    <div class="wr-wrap">
+      <div class="wr-section-head">
+        <p class="wr-kicker">Return Process</p>
+        <h2>Shipping &amp; Returns Address</h2>
+        <p>Once your repair or warranty work is complete, we ship the product back to you. Here is what to expect and where to send your product.</p>
+      </div>
+      <div class="wr-return-body">
+        <div class="wr-return-info">
+          <h3>How we return your product</h3>
+          <p>The repaired product will be shipped back via <strong>International Registered Mail</strong> with a declaration of its original price. If you prefer a lower declaration value, please let us know when you submit your RMA.</p>
+          <p>If you wish to use other shipping methods such as FedEx, customers need to top up the shipping difference between the FedEx rate and the International Registered Mail rate. Contact us for a shipping quote before sending your product.</p>
+        </div>
+        <div class="wr-address-block">
+          <span class="wr-address-label">RMA Department</span>
+          <h3>Return Address</h3>
+          <address>
+            <strong>Advanced AcousticWerkes</strong>
+            #01-03, LHK2 Building<br>
+            76 Playfair Road<br>
+            Singapore 367996<br>
+            Attn: RMA Department<br>
+            Tel: +65 8731 5476
+          </address>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ SECTION: CTA ══════════════ -->
+<div class="wr-feature-shell">
+  <section class="wr-final">
+    <div class="wr-wrap wr-final-inner">
+      <h2>Get in touch today</h2>
+      <p>We typically respond within 48 hours. If you have questions about warranty coverage, repair eligibility, or need help filing a claim, reach out and we will guide you through the process.</p>
+      <div class="wr-actions">
+        <a class="wr-btn" href="mailto:support@aaw.me">Email Support</a>
+        <a class="wr-btn secondary" href="/pages/contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="wr-footer">
+  <div class="wr-wrap">
+    <p>Advanced AcousticWerkes — Mechanics of Sound<br>#01-03 LHK2 Building, 76 Playfair Road, Singapore 367996<br>Copyright &copy; 2026 Advanced AcousticWerkes.</p>
+  </div>
+</footer>
+
+</body>
+</html>
