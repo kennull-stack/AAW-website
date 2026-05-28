@@ -10,6 +10,20 @@
     word-wrap: normal !important;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+}
+
+@supports (overflow-x: clip) {
+    html,
+    body {
+        overflow-x: clip;
+    }
+}
+
 .shopify-policy__container {
     padding-top: 40px;
     padding-bottom: 40px;

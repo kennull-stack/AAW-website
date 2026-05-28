@@ -1,7 +1,8 @@
 /* Get Started page editorial styles. Loaded from layout/theme.liquid for page handle get-started. */
 /* Matches Z05 product page editorial pattern with gs- prefix. */
 
-.gs-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+.gs-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:hidden;background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+@supports (overflow-x: clip){.gs-feature-shell{overflow-x:clip;}}
 .gs-feature-shell *{box-sizing:border-box;}
 .gs-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}
 .gs-section{padding:76px 0;background:#f4f1ea;color:#111;}
@@ -121,6 +122,7 @@
   .gs-hero-media{aspect-ratio:16/10;min-height:340px;}
   .gs-steps-image{position:static;min-height:360px;}
   .gs-steps-image img{aspect-ratio:16/10;}
+  .gs-steps-image figcaption,.gs-address-image figcaption,.gs-impressions-image figcaption,.gs-craft-gallery figcaption{position:static;width:auto;max-width:none;margin:10px 0 0;transform:none;background:#090909;}
   .gs-stats{grid-template-columns:1fr 1fr;}
   .gs-craft-strip{grid-template-columns:1fr;}
   .gs-craft-gallery{grid-template-columns:repeat(2,1fr);}

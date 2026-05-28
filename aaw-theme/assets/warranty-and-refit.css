@@ -1,7 +1,8 @@
 /* Warranty & Refit page editorial styles. Loaded from layout/theme.liquid for page handle warranty-and-refit. */
 /* Matches Z05 product page editorial pattern with wr- prefix. */
 
-.wr-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+.wr-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:hidden;background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+@supports (overflow-x: clip){.wr-feature-shell{overflow-x:clip;}}
 .wr-feature-shell *{box-sizing:border-box;}
 .wr-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}
 .wr-section{padding:76px 0;background:#f4f1ea;color:#111;}

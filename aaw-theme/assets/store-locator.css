@@ -10,12 +10,19 @@
 .store-locator .section-container {
     width: 100vw;
     margin-left: calc(50% - 50vw);
+    overflow-x: hidden;
     padding-top: var(--top-spacer);
     padding-bottom: var(--bottom-spacer);
     background: #080808 !important;
     color: #f5f2ea;
     border-top: 1px solid rgba(226, 183, 104, .24);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+@supports (overflow-x: clip) {
+    .store-locator .section-container {
+        overflow-x: clip;
+    }
 }
 
 .store-locator .section-container.section-rounded {

@@ -1,7 +1,8 @@
 /* What are Custom In-Ear Monitors — editorial tech article. Loaded from layout/theme.liquid for page handle what-is-custom-in-ear-monitor. */
 /* Matches Z05 editorial pattern with ci- prefix. */
 
-.ci-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+.ci-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:hidden;background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+@supports (overflow-x: clip){.ci-feature-shell{overflow-x:clip;}}
 .ci-feature-shell *{box-sizing:border-box;}
 .ci-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}
 .ci-section{padding:76px 0;background:#f4f1ea;color:#111;}

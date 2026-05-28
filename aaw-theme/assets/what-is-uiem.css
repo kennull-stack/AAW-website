@@ -1,7 +1,8 @@
 /* What are Universal In-Ear Monitors — editorial article. Loaded from layout/theme.liquid for page handle what-is-universal-in-ear-monitor. */
 /* Matches Z05 editorial pattern with ui- prefix. */
 
-.ui-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+.ui-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:hidden;background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0;}
+@supports (overflow-x: clip){.ui-feature-shell{overflow-x:clip;}}
 .ui-feature-shell *{box-sizing:border-box;}
 .ui-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto;}
 .ui-section{padding:76px 0;background:#f4f1ea;color:#111;}
@@ -149,6 +150,7 @@
   .ui-testimonial-grid{grid-template-columns:1fr;}
   .ui-article-figure{min-height:300px;position:relative;}
   .ui-article-figure img{aspect-ratio:16/10;}
+  .ui-article-figure figcaption{position:static;display:block;width:100%;max-width:none;margin:10px 0 0;transform:none;background:#090909;}
   .ui-compare-grid{grid-template-columns:1fr;}
   .ui-compare-cell.header{text-align:left;}
   .ui-compare-cell p{text-align:left;}
