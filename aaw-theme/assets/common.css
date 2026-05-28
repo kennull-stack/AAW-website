@@ -3532,3 +3532,64 @@ shopify-payment-terms {
         min-height: 36px !important;
     }
 }
+
+@media (max-width:700px) {
+    .jdgm-review-widget .jdgm-rev-widg__reviews,
+    .jdgm-all-reviews-widget .jdgm-rev-widg__reviews {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .jdgm-review-widget .jdgm-rev,
+    .jdgm-all-reviews-widget .jdgm-rev {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        float: none !important;
+        clear: both !important;
+    }
+    .jdgm-review-widget .jdgm-row-rating,
+    .jdgm-review-widget .jdgm-row-profile,
+    .jdgm-review-widget .jdgm-row-extra,
+    .jdgm-review-widget .jdgm-rev__content,
+    .jdgm-all-reviews-widget .jdgm-row-rating,
+    .jdgm-all-reviews-widget .jdgm-row-profile,
+    .jdgm-all-reviews-widget .jdgm-row-extra,
+    .jdgm-all-reviews-widget .jdgm-rev__content {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        float: none !important;
+    }
+    .jdgm-review-widget .jdgm-rev__rating,
+    .jdgm-all-reviews-widget .jdgm-rev__rating {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 3px !important;
+        width: auto !important;
+        max-width: 100% !important;
+        white-space: nowrap !important;
+    }
+    .jdgm-review-widget .jdgm-star,
+    .jdgm-all-reviews-widget .jdgm-star {
+        display: inline-block !important;
+        flex: 0 0 auto !important;
+        padding-right: 2px !important;
+    }
+    .jdgm-review-widget .jdgm-rev__body,
+    .jdgm-review-widget .jdgm-rev__body p,
+    .jdgm-review-widget .jdgm-rev__content,
+    .jdgm-review-widget .jdgm-rev__content p,
+    .jdgm-all-reviews-widget .jdgm-rev__body,
+    .jdgm-all-reviews-widget .jdgm-rev__body p,
+    .jdgm-all-reviews-widget .jdgm-rev__content,
+    .jdgm-all-reviews-widget .jdgm-rev__content p {
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+}
