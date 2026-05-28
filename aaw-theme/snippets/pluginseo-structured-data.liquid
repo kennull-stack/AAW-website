@@ -562,7 +562,8 @@ https://developers.google.com/search/docs/data-types/sitelinks-searchbox
     "url": {{ shop.url | json }},
     "potentialAction": {
       "@type": "SearchAction",
-      "target": {{ shop.url | append: '/search?q={search_term_string}' | json }},
+      {%- capture search_target -%}{{ shop.url }}/search?q={search_term_string}{%- endcapture -%}
+      "target": {{ search_target | json }},
       "query-input": "required name=search_term_string"
     }
   }
