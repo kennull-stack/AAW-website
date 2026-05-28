@@ -120,7 +120,8 @@
   .gs-grid-2,.gs-grid-2.flip,.gs-hero,.gs-steps-body{grid-template-columns:1fr;}
   .gs-hero{padding-top:40px;min-height:auto;gap:30px;}
   .gs-hero-media{aspect-ratio:16/10;min-height:340px;}
-  .gs-steps-image{position:static;min-height:360px;}
+  .gs-steps-image,.gs-address-image{position:static;display:block;min-height:0;}
+  .gs-steps-image{min-height:360px;}
   .gs-steps-image img{aspect-ratio:16/10;}
   .gs-steps-image figcaption,.gs-address-image figcaption,.gs-impressions-image figcaption,.gs-craft-gallery figcaption{position:static;width:auto;max-width:none;margin:10px 0 0;transform:none;background:#090909;}
   .gs-stats{grid-template-columns:1fr 1fr;}
