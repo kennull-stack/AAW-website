@@ -101,7 +101,7 @@
     },
     "loading": "Bezig met laden...",
     "total_reviews": "totaal beoordelingen",
-    "star_reviews_info": "{{ rating_value }} uit {{ rating_max }} sterren",
+    "star_reviews_info": "{{ rating_value }} van de {{ rating_max }} sterren",
     "collapsible_content_title": "Opvouwbare inhoud",
     "collapsible_content_description": "Beschrijving",
     "complementary_products": "Complementaire producten",
@@ -124,7 +124,7 @@
       "post": "Plaats een reactie",
       "back_to_blog": "Terug naar blog",
       "share": "deel dit artikel",
-      "success": "Je reactie is succesvol geplaatst! ",
+      "success": "Je reactie is succesvol geplaatst!",
       "success_moderated": "Uw reactie is succesvol geplaatst. We zullen het over een tijdje publiceren, aangezien onze blog wordt gemodereerd."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Aantal selecteren",
       "add_to_cart": "Voeg toe aan winkelkar",
       "preorder": "Voorafgaande bestelling",
       "choose_options": "Kies opties",
@@ -255,7 +256,7 @@
       "button": "TERUG NAAR HUIS"
     },
     "search": {
-      "serach_heading": "Zoek nu",
+      "search_heading": "Zoek nu",
       "suggestions": "Suggesties",
       "no_results_heading": "Geen resultaten gevonden",
       "no_results_body": "Helaas konden we geen resultaten vinden voor uw zoekopdracht.",
@@ -333,7 +334,7 @@
       "empty": "Uw winkelwagen is leeg.",
       "no_result": "geen resultaat gevonden",
       "empty_description": "Helaas konden we geen producten in uw winkelwagen vinden.",
-      "cart_error": "Er is een fout opgetreden bij het bijwerken van uw winkelwagen. ",
+      "cart_error": "Er is een fout opgetreden bij het bijwerken van uw winkelwagen.",
       "cart_quantity_error_html": "Je kunt alleen maar toevoegen {{ quantity }} van dit artikel in uw winkelwagen.",
       "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"{{ link }}\">Verzenden</a> Berekend bij het afrekenen",
       "taxes_included_but_shipping_at_checkout": "Inclusief belasting en verzendkosten berekend bij het afrekenen",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Bekijk alles",
       "read_more": "Lees verder",
-      "artical_title": "Artische titel",
-      "date_formate": "DD/MM/JJ"
+      "article_title": "Artische titel",
+      "date_format": "DD/MM/JJ"
     },
     "featured_collection": {
       "view_all": "Bekijk alles",
@@ -468,7 +469,7 @@
       "default": "Standaard",
       "address_count": "Adres {{ count }}",
       "add_new": "Nieuw adres toevoegen",
-      "add_new_message": " Vul de onderstaande velden in",
+      "add_new_message": "Vul de onderstaande velden in",
       "return_account_page": "Terug naar accountpagina",
       "edit_address": "Verander adres",
       "first_name": "Voornaam",
@@ -489,7 +490,7 @@
       "delete": "Verwijderen",
       "delete_confirm": "Weet u zeker dat u dit adres wilt verwijderen?"
     },
-    "log_in": "Log in",
+    "log_in": "Inloggen",
     "log_out": "Uitloggen",
     "login_page": {
       "cancel": "Annuleren",
@@ -504,7 +505,8 @@
       "sign_in": "Aanmelden",
       "submit": "Indienen",
       "login_heading": "Een account nodig?",
-      "signup_text": "Aanmelden"
+      "signup_text": "Aanmelden",
+      "alternate_provider_separator": "of"
     },
     "order": {
       "title": "Volgorde {{ name }}",

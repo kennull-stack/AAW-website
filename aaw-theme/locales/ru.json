@@ -101,7 +101,7 @@
     },
     "loading": "Загрузка...",
     "total_reviews": "всего отзывов",
-    "star_reviews_info": "{{ rating_value }} снаружи {{ rating_max }} звезды",
+    "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звёзд",
     "collapsible_content_title": "Складной контент",
     "collapsible_content_description": "Описание",
     "complementary_products": "Дополнительные продукты",
@@ -124,7 +124,7 @@
       "post": "Оставить комментарий",
       "back_to_blog": "Вернуться в блог",
       "share": "Поделиться этой статьей",
-      "success": "Ваш комментарий успешно опубликован! ",
+      "success": "Ваш комментарий успешно опубликован!",
       "success_moderated": "Ваш комментарий был успешно опубликован. Мы опубликуем его через некоторое время, так как наш блог проходит модерацию."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Выберите количество",
       "add_to_cart": "Добавить в корзину",
       "preorder": "Предварительный заказ",
       "choose_options": "Выберите варианты",
@@ -255,7 +256,7 @@
       "button": "ВЕРНУТЬСЯ ДОМОЙ"
     },
     "search": {
-      "serach_heading": "Ищи сейчас",
+      "search_heading": "Ищи сейчас",
       "suggestions": "Предложения",
       "no_results_heading": "Не найти результатов",
       "no_results_body": "К сожалению, мы не смогли найти результатов по вашему запросу.",
@@ -333,7 +334,7 @@
       "empty": "Ваша корзина пуста.",
       "no_result": "Результатов не найдено",
       "empty_description": "К сожалению, мы не смогли найти ни одного товара в вашей корзине.",
-      "cart_error": "При обновлении корзины произошла ошибка. ",
+      "cart_error": "При обновлении корзины произошла ошибка.",
       "cart_quantity_error_html": "Вы можете только добавить {{ quantity }} этого товара в корзину.",
       "taxes_and_shipping_policy_at_checkout_html": "Налоги и <a href=\"{{ link }}\">перевозки</a> рассчитывается при оформлении заказа",
       "taxes_included_but_shipping_at_checkout": "Налог включен, стоимость доставки рассчитывается при оформлении заказа.",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Посмотреть все",
       "read_more": "Читать далее",
-      "artical_title": "Художественное название",
-      "date_formate": "ДД/ММ/ГГ"
+      "article_title": "Художественное название",
+      "date_format": "ДД/ММ/ГГ"
     },
     "featured_collection": {
       "view_all": "Посмотреть все",
@@ -468,7 +469,7 @@
       "default": "По умолчанию",
       "address_count": "Адрес {{ count }}",
       "add_new": "Добавить новый адрес",
-      "add_new_message": " Пожалуйста, заполните поля ниже",
+      "add_new_message": "Пожалуйста, заполните поля ниже",
       "return_account_page": "Вернуться на страницу аккаунта",
       "edit_address": "Изменить адрес",
       "first_name": "Имя",
@@ -504,7 +505,8 @@
       "sign_in": "Войти",
       "submit": "Представлять на рассмотрение",
       "login_heading": "Нужен аккаунт?",
-      "signup_text": "Зарегистрироваться"
+      "signup_text": "Зарегистрироваться",
+      "alternate_provider_separator": "или"
     },
     "order": {
       "title": "Заказ {{ name }}",

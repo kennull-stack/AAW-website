@@ -101,7 +101,7 @@
     },
     "loading": "Načítání...",
     "total_reviews": "celkové recenze",
-    "star_reviews_info": "{{ rating_value }} mimo {{ rating_max }} hvězdy",
+    "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hvězd",
     "collapsible_content_title": "Skládací obsah",
     "collapsible_content_description": "Popis",
     "complementary_products": "Doplňkové produkty",
@@ -124,7 +124,7 @@
       "post": "Přidat komentář",
       "back_to_blog": "Zpět na blog",
       "share": "Sdílejte tento článek",
-      "success": "Váš komentář byl úspěšně odeslán! ",
+      "success": "Váš komentář byl úspěšně odeslán!",
       "success_moderated": "Váš komentář byl úspěšně zveřejněn. Zveřejníme ho za chvíli, protože náš blog je moderovaný.  "
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Vyberte množství",
       "add_to_cart": "Přidat do košíku",
       "preorder": "Předobjednávka",
       "choose_options": "Vyberte možnosti",
@@ -255,7 +256,7 @@
       "button": "ZPÁTKY DOMŮ"
     },
     "search": {
-      "serach_heading": "Hledat hned",
+      "search_heading": "Hledat hned",
       "suggestions": "Návrhy",
       "no_results_heading": "Nebyly nalezeny žádné výsledky",
       "no_results_body": "Bohužel jsme nenašli žádné výsledky pro vaše hledání.",
@@ -333,7 +334,7 @@
       "empty": "Tvůj vozík je prázdný.",
       "no_result": "Nebyl nalezen žádný výsledek",
       "empty_description": "Bohužel jsme nenašli žádné produkty ve vašem košíku.",
-      "cart_error": "Při aktualizaci vašeho košíku došlo k chybě. ",
+      "cart_error": "Při aktualizaci vašeho košíku došlo k chybě.",
       "cart_quantity_error_html": "Můžete pouze přidat {{ quantity }} této položky do košíku.",
       "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\">Lodní doprava</a> vypočítané při pokladně",
       "taxes_included_but_shipping_at_checkout": "Včetně daně a dopravy vypočítané při pokladně",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Zobrazit vše",
       "read_more": "Přečtěte si více",
-      "artical_title": "Umělecký název",
-      "date_formate": "DD/MM/RR"
+      "article_title": "Umělecký název",
+      "date_format": "DD/MM/RR"
     },
     "featured_collection": {
       "view_all": "Zobrazit vše",
@@ -468,7 +469,7 @@
       "default": "Výchozí",
       "address_count": "Adresa {{ count }}",
       "add_new": "přidat novou adresu",
-      "add_new_message": " Vyplňte prosím níže uvedená pole",
+      "add_new_message": "Vyplňte prosím níže uvedená pole",
       "return_account_page": "Návrat na stránku účtu",
       "edit_address": "Upravit adresu",
       "first_name": "Jméno",
@@ -504,7 +505,8 @@
       "sign_in": "Přihlásit se",
       "submit": "Předložit",
       "login_heading": "Potřebovat účet?",
-      "signup_text": "Přihlásit se"
+      "signup_text": "Přihlásit se",
+      "alternate_provider_separator": "nebo"
     },
     "order": {
       "title": "Objednat {{ name }}",

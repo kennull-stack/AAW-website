@@ -101,7 +101,7 @@
     },
     "loading": "Зареждане...",
     "total_reviews": "общо прегледи",
-    "star_reviews_info": "{{ rating_value }} извън {{ rating_max }} звезди",
+    "star_reviews_info": "{{ rating_value }} от {{ rating_max }} звезди",
     "collapsible_content_title": "Сгъваемо съдържание",
     "collapsible_content_description": "Описание",
     "complementary_products": "Допълващи продукти",
@@ -124,7 +124,7 @@
       "post": "Публикувай коментар",
       "back_to_blog": "Назад към блога",
       "share": "Споделете тази статия",
-      "success": "Вашият коментар беше публикуван успешно! ",
+      "success": "Вашият коментар беше публикуван успешно!",
       "success_moderated": "Вашият коментар беше публикуван успешно. Ще го публикуваме след малко, тъй като блогът ни е модериран."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Изберете количество",
       "add_to_cart": "Добави в кошницата",
       "preorder": "Предварителна поръчка",
       "choose_options": "Изберете опции",
@@ -255,7 +256,7 @@
       "button": "ОБРАТНО В КЪЩИ"
     },
     "search": {
-      "serach_heading": "Търсете сега",
+      "search_heading": "Търсете сега",
       "suggestions": "Предложения",
       "no_results_heading": "Не намира никакви резултати",
       "no_results_body": "За съжаление не можахме да намерим резултати за вашето търсене.",
@@ -333,7 +334,7 @@
       "empty": "Вашата количка е празна.",
       "no_result": "Няма намерени резултати",
       "empty_description": "За съжаление не успяхме да намерим продукти във вашата количка.",
-      "cart_error": "Възникна грешка при актуализирането на вашата количка. ",
+      "cart_error": "Възникна грешка при актуализирането на вашата количка.",
       "cart_quantity_error_html": "Можете само да добавите {{ quantity }} от този артикул във вашата количка.",
       "taxes_and_shipping_policy_at_checkout_html": "Данъци и <a href=\"{{ link }}\">доставка</a> изчислено при плащане",
       "taxes_included_but_shipping_at_checkout": "Включен данък и доставката се изчислява при плащане",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Виж всички",
       "read_more": "Прочетете още",
-      "artical_title": "Художествено заглавие",
-      "date_formate": "ДД/ММ/ГГ"
+      "article_title": "Художествено заглавие",
+      "date_format": "ДД/ММ/ГГ"
     },
     "featured_collection": {
       "view_all": "Виж всички",
@@ -468,7 +469,7 @@
       "default": "По подразбиране",
       "address_count": "Адрес {{ count }}",
       "add_new": "Добавете нов адрес",
-      "add_new_message": " Моля, попълнете полетата по-долу",
+      "add_new_message": "Моля, попълнете полетата по-долу",
       "return_account_page": "Върнете се към страницата на акаунта",
       "edit_address": "Редактиране на адреса",
       "first_name": "Първо име",
@@ -504,7 +505,8 @@
       "sign_in": "Впиши се",
       "submit": "Изпращане",
       "login_heading": "Нуждаете се от акаунт?",
-      "signup_text": "Регистрирай се"
+      "signup_text": "Регистрирай се",
+      "alternate_provider_separator": "или"
     },
     "order": {
       "title": "Поръчка {{ name }}",

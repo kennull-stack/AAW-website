@@ -101,7 +101,7 @@
     },
     "loading": "Đang tải...",
     "total_reviews": "tổng số đánh giá",
-    "star_reviews_info": "{{ rating_value }} ra khỏi {{ rating_max }} ngôi sao",
+    "star_reviews_info": "{{ rating_value }} trên {{ rating_max }} sao",
     "collapsible_content_title": "Nội dung có thể thu gọn",
     "collapsible_content_description": "Sự miêu tả",
     "complementary_products": "Sản phẩm bổ sung",
@@ -124,7 +124,7 @@
       "post": "Đăng bình luận",
       "back_to_blog": "Quay lại blog",
       "share": "Chia sẻ bài viết này",
-      "success": "Bình luận của bạn đã được đăng thành công! ",
+      "success": "Bình luận của bạn đã được đăng thành công!",
       "success_moderated": "Bình luận của bạn đã được đăng thành công. Chúng tôi sẽ xuất bản nó trong một thời gian ngắn, vì blog của chúng tôi được kiểm duyệt."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Chọn số lượng",
       "add_to_cart": "Thêm vào giỏ hàng",
       "preorder": "Đặt hàng trước",
       "choose_options": "Chọn tùy chọn",
@@ -255,7 +256,7 @@
       "button": "TRỞ VỀ NHÀ"
     },
     "search": {
-      "serach_heading": "Tìm kiếm ngay bây giờ",
+      "search_heading": "Tìm kiếm ngay bây giờ",
       "suggestions": "Đề xuất",
       "no_results_heading": "Không tìm thấy kết quả nào",
       "no_results_body": "Thật không may, chúng tôi không thể tìm thấy bất kỳ kết quả nào cho tìm kiếm của bạn.",
@@ -299,6 +300,10 @@
     }
   },
   "sections": {
+    "collection_details": {
+      "collection_name": "Tên bộ sưu tập",
+      "collection_description": "Mô tả bộ sưu tập"
+    },
     "header": {
       "announcement": "Thông báo",
       "menu": "Thực đơn",
@@ -329,7 +334,7 @@
       "empty": "Giỏ của bạn trống trơn.",
       "no_result": "Không có kết quả nào",
       "empty_description": "Thật không may, chúng tôi không thể tìm thấy bất kỳ sản phẩm nào trong giỏ hàng của bạn.",
-      "cart_error": "Đã xảy ra lỗi khi cập nhật giỏ hàng của bạn. ",
+      "cart_error": "Đã xảy ra lỗi khi cập nhật giỏ hàng của bạn.",
       "cart_quantity_error_html": "Bạn chỉ có thể thêm {{ quantity }} của mặt hàng này vào giỏ hàng của bạn.",
       "taxes_and_shipping_policy_at_checkout_html": "Thuế và <a href=\"{{ link }}\">Đang chuyển hàng</a> Tính lúc thanh toán",
       "taxes_included_but_shipping_at_checkout": "Đã bao gồm thuế và phí vận chuyển được tính khi thanh toán",
@@ -363,8 +368,8 @@
     "featured_blog": {
       "view_all": "Xem tất cả",
       "read_more": "Đọc thêm",
-      "artical_title": "Tiêu đề nghệ thuật",
-      "date_formate": "ngày/tháng/năm"
+      "article_title": "Tiêu đề nghệ thuật",
+      "date_format": "ngày/tháng/năm"
     },
     "featured_collection": {
       "view_all": "Xem tất cả",
@@ -464,7 +469,7 @@
       "default": "Mặc định",
       "address_count": "Địa chỉ {{ count }}",
       "add_new": "thêm địa chỉ mới",
-      "add_new_message": " Xin vui lòng điền vào phần dưới đây",
+      "add_new_message": "Xin vui lòng điền vào phần dưới đây",
       "return_account_page": "Quay lại trang tài khoản",
       "edit_address": "Sửa địa chỉ",
       "first_name": "Tên đầu tiên",
@@ -500,7 +505,8 @@
       "sign_in": "Đăng nhập",
       "submit": "Nộp",
       "login_heading": "Cần một tài khoản?",
-      "signup_text": "Đăng ký"
+      "signup_text": "Đăng ký",
+      "alternate_provider_separator": "hoặc"
     },
     "order": {
       "title": "Đặt hàng {{ name }}",

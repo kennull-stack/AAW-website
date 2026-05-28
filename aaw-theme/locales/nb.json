@@ -101,7 +101,7 @@
     },
     "loading": "Laster inn...",
     "total_reviews": "totalt antall anmeldelser",
-    "star_reviews_info": "{{ rating_value }} ut av {{ rating_max }} stjerner",
+    "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjerner",
     "collapsible_content_title": "Sammenleggbart innhold",
     "collapsible_content_description": "Beskrivelse",
     "complementary_products": "Komplementære produkter",
@@ -124,7 +124,7 @@
       "post": "Post Kommentar",
       "back_to_blog": "Tilbake til bloggen",
       "share": "Del denne artikkelen",
-      "success": "Kommentaren din ble lagt ut! ",
+      "success": "Kommentaren din ble lagt ut!",
       "success_moderated": "Din kommentar ble postet. Vi vil publisere den om en liten stund, ettersom bloggen vår modereres."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Velg antall",
       "add_to_cart": "Legg i handlekurv",
       "preorder": "Forhåndsbestille",
       "choose_options": "Velg alternativer",
@@ -255,7 +256,7 @@
       "button": "TILBAKE TIL HJEM"
     },
     "search": {
-      "serach_heading": "Søk nå",
+      "search_heading": "Søk nå",
       "suggestions": "Forslag",
       "no_results_heading": "Finner ikke noen resultater",
       "no_results_body": "Vi kunne dessverre ikke finne noen resultater for søket ditt.",
@@ -333,7 +334,7 @@
       "empty": "Vognen din er tom.",
       "no_result": "Ingen resultater funnet",
       "empty_description": "Vi kunne dessverre ikke finne noen produkter i handlekurven din.",
-      "cart_error": "Det oppsto en feil under oppdatering av handlekurven. ",
+      "cart_error": "Det oppsto en feil under oppdatering av handlekurven.",
       "cart_quantity_error_html": "Du kan bare legge til {{ quantity }} av denne varen til handlekurven din.",
       "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">Shipping</a> beregnes i kassen",
       "taxes_included_but_shipping_at_checkout": "Inkludert moms og frakt beregnes i kassen",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Se alt",
       "read_more": "Les mer",
-      "artical_title": "Artisk tittel",
-      "date_formate": "DD/MM/ÅÅ"
+      "article_title": "Artisk tittel",
+      "date_format": "DD/MM/ÅÅ"
     },
     "featured_collection": {
       "view_all": "Se alt",
@@ -468,7 +469,7 @@
       "default": "Misligholde",
       "address_count": "Adresse {{ count }}",
       "add_new": "Legg til ny adresse",
-      "add_new_message": " Vennligst fyll ut feltene nedenfor",
+      "add_new_message": "Vennligst fyll ut feltene nedenfor",
       "return_account_page": "Gå tilbake til kontosiden",
       "edit_address": "Rediger adresse",
       "first_name": "Fornavn",
@@ -504,7 +505,8 @@
       "sign_in": "Logg inn",
       "submit": "Sende inn",
       "login_heading": "Trenger en konto?",
-      "signup_text": "Melde deg på"
+      "signup_text": "Melde deg på",
+      "alternate_provider_separator": "eller"
     },
     "order": {
       "title": "Rekkefølge {{ name }}",

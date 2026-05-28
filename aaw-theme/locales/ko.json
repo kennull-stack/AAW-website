@@ -101,7 +101,7 @@
     },
     "loading": "로드 중...",
     "total_reviews": "총 리뷰",
-    "star_reviews_info": "{{ rating_value }} 밖으로 {{ rating_max }} 별",
+    "star_reviews_info": "{{ rating_max }}점 중 {{ rating_value }}점",
     "collapsible_content_title": "접을 수 있는 콘텐츠",
     "collapsible_content_description": "설명",
     "complementary_products": "보완 제품",
@@ -124,7 +124,7 @@
       "post": "댓글 달기",
       "back_to_blog": "블로그로 돌아가기",
       "share": "이 기사를 공유하세요",
-      "success": "귀하의 댓글이 성공적으로 게시되었습니다! ",
+      "success": "귀하의 댓글이 성공적으로 게시되었습니다!",
       "success_moderated": "귀하의 의견이 성공적으로 게시되었습니다. 블로그가 검토되는 대로 잠시 후에 게시하겠습니다."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "수량 선택",
       "add_to_cart": "장바구니에 추가",
       "preorder": "선주문",
       "choose_options": "옵션을 선택하세요",
@@ -255,7 +256,7 @@
       "button": "홈으로"
     },
     "search": {
-      "serach_heading": "지금 검색",
+      "search_heading": "지금 검색",
       "suggestions": "제안",
       "no_results_heading": "결과를 찾을 수 없음",
       "no_results_body": "안타깝게도 귀하의 검색 결과를 찾을 수 없습니다.",
@@ -333,7 +334,7 @@
       "empty": "장바구니가 비어 있습니다.",
       "no_result": "결과가 없습니다",
       "empty_description": "안타깝게도 장바구니에 담긴 제품을 찾을 수 없습니다.",
-      "cart_error": "장바구니를 업데이트하는 동안 오류가 발생했습니다. ",
+      "cart_error": "장바구니를 업데이트하는 동안 오류가 발생했습니다.",
       "cart_quantity_error_html": "추가만 가능합니다 {{ quantity }} 이 항목을 장바구니에 담으세요.",
       "taxes_and_shipping_policy_at_checkout_html": "세금 및 <a href=\"{{ link }}\">배송</a> 결제 시 계산됨",
       "taxes_included_but_shipping_at_checkout": "세금 포함 및 배송비는 결제 시 계산됩니다.",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "모두보기",
       "read_more": "더 읽어보세요",
-      "artical_title": "논문제목",
-      "date_formate": "DD/MM/YY"
+      "article_title": "논문제목",
+      "date_format": "DD/MM/YY"
     },
     "featured_collection": {
       "view_all": "모두보기",
@@ -468,7 +469,7 @@
       "default": "기본",
       "address_count": "주소 {{ count }}",
       "add_new": "새 주소 추가",
-      "add_new_message": " 아래 필드를 작성해 주세요.",
+      "add_new_message": "아래 필드를 작성해 주세요.",
       "return_account_page": "계정 페이지로 돌아가기",
       "edit_address": "주소 수정",
       "first_name": "이름",
@@ -504,7 +505,8 @@
       "sign_in": "로그인",
       "submit": "제출하다",
       "login_heading": "계정이 필요?",
-      "signup_text": "가입하기"
+      "signup_text": "가입하기",
+      "alternate_provider_separator": "또는"
     },
     "order": {
       "title": "주문하다 {{ name }}",

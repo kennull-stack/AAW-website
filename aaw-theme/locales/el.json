@@ -101,7 +101,7 @@
     },
     "loading": "Φόρτωση...",
     "total_reviews": "συνολικές κριτικές",
-    "star_reviews_info": "{{ rating_value }} εκτός {{ rating_max }} αστέρια",
+    "star_reviews_info": "{{ rating_value }} από {{ rating_max }} αστέρια",
     "collapsible_content_title": "Πτυσσόμενο περιεχόμενο",
     "collapsible_content_description": "Περιγραφή",
     "complementary_products": "Συμπληρωματικά προϊόντα",
@@ -124,7 +124,7 @@
       "post": "Αναρτήστε Σχόλιο",
       "back_to_blog": "Επιστροφή στο blog",
       "share": "Μοιραστείτε αυτό το άρθρο",
-      "success": "Το σχόλιό σας δημοσιεύτηκε με επιτυχία! ",
+      "success": "Το σχόλιό σας δημοσιεύτηκε με επιτυχία!",
       "success_moderated": "Το σχόλιό σας δημοσιεύτηκε με επιτυχία. Θα το δημοσιεύσουμε σε λίγο, καθώς το ιστολόγιό μας μετριάζεται."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Επιλέξτε ποσότητα",
       "add_to_cart": "Προσθήκη στο καλάθι",
       "preorder": "Προπαραγγελία",
       "choose_options": "Επιλέξτε επιλογές",
@@ -255,7 +256,7 @@
       "button": "ΠΙΣΩ ΣΤΟ ΣΠΙΤΙ"
     },
     "search": {
-      "serach_heading": "Ψάξε τώρα",
+      "search_heading": "Ψάξε τώρα",
       "suggestions": "Προτάσεις",
       "no_results_heading": "Δεν βρέθηκε κανένα αποτέλεσμα",
       "no_results_body": "Δυστυχώς δεν μπορέσαμε να βρούμε αποτελέσματα για την αναζήτησή σας.",
@@ -333,7 +334,7 @@
       "empty": "Το καλάθι σας είναι άδειο.",
       "no_result": "Δεν βρέθηκε αποτέλεσμα",
       "empty_description": "Δυστυχώς δεν μπορέσαμε να βρούμε προϊόντα στο καλάθι σας.",
-      "cart_error": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση του καλαθιού σας. ",
+      "cart_error": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση του καλαθιού σας.",
       "cart_quantity_error_html": "Μπορείτε μόνο να προσθέσετε {{ quantity }} αυτού του προϊόντος στο καλάθι σας.",
       "taxes_and_shipping_policy_at_checkout_html": "Φόροι και <a href=\"{{ link }}\">Αποστολή</a> υπολογίζεται στο ταμείο",
       "taxes_included_but_shipping_at_checkout": "Ο φόρος περιλαμβάνεται και η αποστολή υπολογίζεται στο ταμείο",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Προβολή όλων",
       "read_more": "Διαβάστε περισσότερα",
-      "artical_title": "Τίτλος τέχνης",
-      "date_formate": "ΗΗ/ΜΜ/ΕΕ"
+      "article_title": "Τίτλος τέχνης",
+      "date_format": "ΗΗ/ΜΜ/ΕΕ"
     },
     "featured_collection": {
       "view_all": "Προβολή όλων",
@@ -468,7 +469,7 @@
       "default": "Προκαθορισμένο",
       "address_count": "Διεύθυνση {{ count }}",
       "add_new": "Προσθήκη νέας διεύθυνσης",
-      "add_new_message": " Παρακαλούμε συμπληρώστε τα παρακάτω πεδία",
+      "add_new_message": "Παρακαλούμε συμπληρώστε τα παρακάτω πεδία",
       "return_account_page": "Επιστροφή στη σελίδα λογαριασμού",
       "edit_address": "Επεξεργασία διεύθυνσης",
       "first_name": "Ονομα",
@@ -504,7 +505,8 @@
       "sign_in": "Συνδεθείτε",
       "submit": "υποβάλλουν",
       "login_heading": "Χρειάζομαι έναν λογαριασμό?",
-      "signup_text": "Εγγραφείτε"
+      "signup_text": "Εγγραφείτε",
+      "alternate_provider_separator": "ή"
     },
     "order": {
       "title": "Σειρά {{ name }}",

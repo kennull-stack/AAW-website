@@ -49,7 +49,7 @@
           "type": "store",
           "settings": {
             "store_name": "【Hong Kong】DMA",
-            "store_detail": "<p>旺角星際城市2樓 219 - 223號 (Tel: +8523971 0242)</p>",
+            "store_detail": "<p>旺角星際城市2樓 219 - 223號 (Tel: +852 3971 0242)</p>",
             "location": "旺角星際城市2樓 219 - 223號"
           }
         },
@@ -73,7 +73,7 @@
           "type": "store",
           "settings": {
             "store_name": "【Macau】Music Movie Driver",
-            "store_detail": "<p>澳門連勝馬路165號B  (Tel: +853 2821 6282)</p>",
+            "store_detail": "<p>澳門連勝馬路165號B (Tel: +853 2821 6282)</p>",
             "location": "澳門連勝馬路165號B"
           }
         },
@@ -104,9 +104,9 @@
         "store_HT7ibb": {
           "type": "store",
           "settings": {
-            "store_name": "【South Korea】주)소리샵Sorishop ",
-            "store_detail": "<p>1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul  +82 2-3272-8584</p>",
-            "location": "1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul "
+            "store_name": "【South Korea】주)소리샵 Sorishop",
+            "store_detail": "<p>1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul (Tel: +82 2-3272-8584)</p>",
+            "location": "1st floor, Daechang Building, 29 Dosandaero 55-gil, Gangnam-gu, Seoul"
           }
         },
         "store_dyF6Jn": {

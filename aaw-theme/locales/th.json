@@ -101,7 +101,7 @@
     },
     "loading": "กำลังโหลด...",
     "total_reviews": "ความคิดเห็นทั้งหมด",
-    "star_reviews_info": "{{ rating_value }} ออกจาก {{ rating_max }} ดาว",
+    "star_reviews_info": "{{ rating_value }} ดาว จาก {{ rating_max }} ดาว",
     "collapsible_content_title": "เนื้อหาที่ยุบได้",
     "collapsible_content_description": "คำอธิบาย",
     "complementary_products": "ผลิตภัณฑ์เสริม",
@@ -124,7 +124,7 @@
       "post": "เขียนความคิดเห็น",
       "back_to_blog": "กลับไปที่บล็อก",
       "share": "แบ่งปันบทความนี้",
-      "success": "ความคิดเห็นของคุณถูกโพสต์เรียบร้อยแล้ว! ",
+      "success": "ความคิดเห็นของคุณถูกโพสต์เรียบร้อยแล้ว!",
       "success_moderated": "ความคิดเห็นของคุณถูกโพสต์เรียบร้อยแล้ว เราจะเผยแพร่ในอีกสักครู่เนื่องจากบล็อกของเราได้รับการกลั่นกรอง"
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "เลือกจำนวน",
       "add_to_cart": "เพิ่มลงในรถเข็น",
       "preorder": "สั่งของล่วงหน้า",
       "choose_options": "เลือกตัวเลือก",
@@ -255,7 +256,7 @@
       "button": "กลับไปที่บ้าน"
     },
     "search": {
-      "serach_heading": "ค้นหาตอนนี้",
+      "search_heading": "ค้นหาตอนนี้",
       "suggestions": "ข้อเสนอแนะ",
       "no_results_heading": "ไม่พบผลลัพธ์ใดๆ",
       "no_results_body": "ขออภัย เราไม่พบผลลัพธ์ใดๆ สำหรับการค้นหาของคุณ",
@@ -333,7 +334,7 @@
       "empty": "รถเข็นของคุณว่างเปล่า",
       "no_result": "ไม่พบผลลัพธ์",
       "empty_description": "ขออภัย เราไม่พบสินค้าในรถเข็นของคุณ",
-      "cart_error": "เกิดข้อผิดพลาดขณะอัปเดตรถเข็นของคุณ ",
+      "cart_error": "เกิดข้อผิดพลาดขณะอัปเดตรถเข็นของคุณ",
       "cart_quantity_error_html": "คุณสามารถเพิ่มได้เท่านั้น {{ quantity }} ของรายการนี้ไปยังรถเข็นของคุณ",
       "taxes_and_shipping_policy_at_checkout_html": "ภาษีและ <a href=\"{{ link }}\">การส่งสินค้า</a> คำนวณเมื่อชำระเงิน",
       "taxes_included_but_shipping_at_checkout": "รวมภาษีและค่าจัดส่งคำนวณเมื่อชำระเงิน",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "ดูทั้งหมด",
       "read_more": "อ่านเพิ่มเติม",
-      "artical_title": "ชื่อบทความ",
-      "date_formate": "วว/ดด/ปป"
+      "article_title": "ชื่อบทความ",
+      "date_format": "วว/ดด/ปป"
     },
     "featured_collection": {
       "view_all": "ดูทั้งหมด",
@@ -468,7 +469,7 @@
       "default": "ค่าเริ่มต้น",
       "address_count": "ที่อยู่ {{ count }}",
       "add_new": "เพิ่มที่อยู่ใหม่",
-      "add_new_message": " กรุณากรอกข้อมูลในช่องด้านล่าง",
+      "add_new_message": "กรุณากรอกข้อมูลในช่องด้านล่าง",
       "return_account_page": "กลับไปที่หน้าบัญชี",
       "edit_address": "แก้ไขที่อยู่",
       "first_name": "ชื่อจริง",
@@ -504,7 +505,8 @@
       "sign_in": "เข้าสู่ระบบ",
       "submit": "ส่ง",
       "login_heading": "ต้องการบัญชี?",
-      "signup_text": "ลงชื่อ"
+      "signup_text": "ลงชื่อ",
+      "alternate_provider_separator": "หรือ"
     },
     "order": {
       "title": "คำสั่ง {{ name }}",

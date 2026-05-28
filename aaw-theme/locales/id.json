@@ -124,7 +124,7 @@
       "post": "Kirim Komentar",
       "back_to_blog": "Kembali ke blog",
       "share": "Bagikan artikel ini",
-      "success": "Komentar Anda berhasil diposting! ",
+      "success": "Komentar Anda berhasil diposting!",
       "success_moderated": "Komentar Anda berhasil diposting. Kami akan mempublikasikannya sebentar lagi, karena blog kami dimoderasi."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Pilih jumlah",
       "add_to_cart": "Masukkan ke keranjang",
       "preorder": "Pesan terlebih dahulu",
       "choose_options": "Pilih opsi",
@@ -255,7 +256,7 @@
       "button": "KEMBALI KE RUMAH"
     },
     "search": {
-      "serach_heading": "Cari sekarang",
+      "search_heading": "Cari sekarang",
       "suggestions": "Saran",
       "no_results_heading": "Tidak Menemukan Hasil Apa Pun",
       "no_results_body": "Sayangnya kami tidak dapat menemukan hasil apa pun untuk pencarian Anda.",
@@ -333,7 +334,7 @@
       "empty": "Keranjang Anda kosong.",
       "no_result": "Tidak ada hasil yang ditemukan",
       "empty_description": "Sayangnya kami tidak dapat menemukan produk apa pun di keranjang Anda.",
-      "cart_error": "Terjadi kesalahan saat memperbarui keranjang Anda. ",
+      "cart_error": "Terjadi kesalahan saat memperbarui keranjang Anda.",
       "cart_quantity_error_html": "Anda hanya dapat menambahkan {{ quantity }} item ini ke keranjang Anda.",
       "taxes_and_shipping_policy_at_checkout_html": "Pajak dan <a href=\"{{ link }}\">pengiriman</a> dihitung saat checkout",
       "taxes_included_but_shipping_at_checkout": "Termasuk pajak dan ongkos kirim dihitung saat checkout",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Lihat semua",
       "read_more": "Baca selengkapnya",
-      "artical_title": "Judul artikel",
-      "date_formate": "HH/MM/YY"
+      "article_title": "Judul artikel",
+      "date_format": "HH/MM/YY"
     },
     "featured_collection": {
       "view_all": "Lihat semua",
@@ -468,7 +469,7 @@
       "default": "Bawaan",
       "address_count": "Alamat {{ count }}",
       "add_new": "Tambahkan alamat baru",
-      "add_new_message": " Silakan isi kolom di bawah ini",
+      "add_new_message": "Silakan isi kolom di bawah ini",
       "return_account_page": "Kembali ke halaman akun",
       "edit_address": "Sunting alamat",
       "first_name": "Nama depan",
@@ -504,7 +505,8 @@
       "sign_in": "Masuk",
       "submit": "Kirim",
       "login_heading": "Butuh akun?",
-      "signup_text": "Mendaftar"
+      "signup_text": "Mendaftar",
+      "alternate_provider_separator": "atau"
     },
     "order": {
       "title": "Memesan {{ name }}",

@@ -101,7 +101,7 @@
     },
     "loading": "加载中...",
     "total_reviews": "总评论数",
-    "star_reviews_info": "{{ rating_value }} 在......之外 {{ rating_max }} 星星",
+    "star_reviews_info": "{{ rating_max }} 星中的 {{ rating_value }} 星",
     "collapsible_content_title": "可折叠内容",
     "collapsible_content_description": "描述",
     "complementary_products": "配套产品",
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "选择数量",
       "add_to_cart": "添加到购物车",
       "preorder": "预购",
       "choose_options": "选择选项",
@@ -255,7 +256,7 @@
       "button": "回到家"
     },
     "search": {
-      "serach_heading": "现在搜索",
+      "search_heading": "现在搜索",
       "suggestions": "建议",
       "no_results_heading": "未找到任何结果",
       "no_results_body": "不幸的是，我们找不到任何适合您的搜索结果。",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "查看全部",
       "read_more": "阅读更多",
-      "artical_title": "艺术标题",
-      "date_formate": "日/月/年"
+      "article_title": "艺术标题",
+      "date_format": "日/月/年"
     },
     "featured_collection": {
       "view_all": "查看全部",
@@ -468,7 +469,7 @@
       "default": "默认",
       "address_count": "地址 {{ count }}",
       "add_new": "添加新地址",
-      "add_new_message": " 请填写以下字段",
+      "add_new_message": "请填写以下字段",
       "return_account_page": "返回帐户页面",
       "edit_address": "编辑地址",
       "first_name": "名",
@@ -504,7 +505,8 @@
       "sign_in": "登入",
       "submit": "提交",
       "login_heading": "需要一个帐户？",
-      "signup_text": "报名"
+      "signup_text": "报名",
+      "alternate_provider_separator": "或"
     },
     "order": {
       "title": "命令 {{ name }}",

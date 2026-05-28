@@ -42,6 +42,7 @@
     },
     "image_with_text_kLU7ek": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "heading_rTqnxN": {
           "type": "heading",
@@ -99,6 +100,7 @@
     },
     "video_WakBDF": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "section_visibility": "always",
         "video_full_width": true,
@@ -130,6 +132,7 @@
     },
     "event_calender_cEDgDi": {
       "type": "event-calender",
+      "disabled": true,
       "blocks": {
         "event_WWgpUP": {
           "type": "event",

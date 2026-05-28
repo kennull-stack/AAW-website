@@ -109,3 +109,25 @@ or?hr=9292
 • 23:53:14 Request »    GET 200 /?fresh=voices8 
 • 23:53:52 Request »    GET 200 /?fresh=voices8final 
 • 23:55:47 Request »    GET 200 /?fresh=check-user-screenshot 
+• 00:15:44  Synced » update assets/aaw-home-z07.css
+• 00:18:14 Request »    GET 200 /?fresh=seo-check 
+• 00:18:16 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:22:32  Synced » update templates/index.json
+• 00:25:02  Synced » update assets/aaw-home-z07.css
+• 00:25:15 Request »    GET 200 /pages/store-locator 
+• 00:25:29 Request »    GET 200 /pages/store-locator?preview=stepsound 
+• 00:25:43 Request »    GET 200 /pages/store-locator?preview=stepsound 
+• 00:27:35 Request »    GET 200 /pages/store-locator?preview=stepsound&map=embed 
+• 00:27:58 Request »    GET 200 /pages/store-locator?preview=stepsound&map=embed 
+• 00:29:04 Request »    GET 200 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:29:15 Request »    GET 200 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:42:27 Request »    GET 503 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:42:27 Request »    GET 503 / 
+• 00:42:29 Request »    GET 401 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:42:29 Request »    GET 401 /pages/store-locator?preview=stepsound 
+• 00:42:32 Request »    GET 401 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:42:32 Request »    GET 401 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:42:32 Request »    GET 401 /pages/store-locator?preview=stepsound&map=embed2 
+• 00:43:15 Request »    GET 401 /pages/store-locator?preview=stepsound&style=current 
+• 00:43:38 Request »    GET 401 /pages/store-locator?style=current 
+• 00:54:30 Request »    GET 401 / 

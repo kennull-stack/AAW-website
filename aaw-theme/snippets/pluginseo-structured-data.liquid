@@ -6,6 +6,13 @@
 
    This file is subject to the license at https://www.pluginseo.com/eula
   ----------------------------------------------------------------------------------
+
+   LOCAL HARDENING (AAW): User-controllable strings injected into JSON-LD have
+   been wrapped with the `| json` filter to prevent JSON-context XSS via
+   unescaped quotes / backslashes in product, article, author, page, and
+   collection data. Do not revert when the upstream app updates; re-apply this
+   patch on top of the new version, or upstream may re-introduce the issue.
+  ----------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- assign logoUrl = 'pluginseo_structuredDataLogo.png' | asset_img_url  -%}
@@ -36,28 +43,28 @@
       "@type": "NewsArticle",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{- shop.url -}}"
+        "@id": {{ shop.url | json }}
       },
-      "headline": "{{- articleTitle | escape -}}",
+      "headline": {{ articleTitle | json }},
       {%- if article.image -%}
       "image": {
         "@type": "ImageObject",
-        "url": "https:{{- article | img_url: '800x800' -}}",
+        "url": {{ article | img_url: '800x800' | prepend: 'https:' | json }},
         "height": "800px",
         "width": "800px"
       },
       {%- endif -%}
-      "dateModified": "{{- article.published_at -}}",
-      "datePublished": "{{- article.created_at -}}",
+      "dateModified": {{ article.published_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
+      "datePublished": {{ article.created_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
       "author": {
         "@type": "Person",
-        "name": "{{- article.author -}}"
+        "name": {{ article.author | json }}
       },
        "publisher": {
         "@type": "Organization",
-        "@id": "{{ organizationId }}"
+        "@id": {{ organizationId | json }}
       },
-      "description": "{{- articleContent | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | strip | escape | truncate: 163 -}}"
+      "description": {{ articleContent | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | strip | truncate: 163 | json }}
     }
   </script>
 {%- endif -%}
@@ -83,8 +90,8 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "{{- shop.url -}}{{- page.url -}}",
-          "name": "{{- pageTitle -}}"
+          "@id": {{ shop.url | append: page.url | json }},
+          "name": {{ pageTitle | json }}
         }
       }
     {%- elsif rootTemplate == 'product' -%}
@@ -100,15 +107,15 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
             "@type": "ListItem",
             "position": 1,
             "item": {
-              "@id": "{{- shop.url -}}{{- collection.url -}}",
-              "name": "{{- collection.title -}}"
+              "@id": {{ shop.url | append: collection.url | json }},
+              "name": {{ collection.title | json }}
             }
           },{
             "@type": "ListItem",
             "position": 2,
             "item": {
-              "@id": "{{- shop.url -}}{{- product.url -}}",
-              "name": "{{- productTitle | escape -}}"
+              "@id": {{ shop.url | append: product.url | json }},
+              "name": {{ productTitle | json }}
             }
           }
         {%- else -%}
@@ -116,8 +123,8 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
             "@type": "ListItem",
             "position": 1,
             "item": {
-              "@id": "{{- shop.url -}}{{- product.url -}}",
-              "name": "{{- productTitle | escape -}}"
+              "@id": {{ shop.url | append: product.url | json }},
+              "name": {{ productTitle | json }}
             }
           }
         {%- endif -%}
@@ -129,12 +136,13 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
       {%- endif -%}
       {%- if current_tags -%}
         {%- capture url -%}/collections/{{- collection.handle -}}{%- endcapture -%}
+        {%- capture breadcrumbName -%}{{ collectionTitle }} {{ current_tags | join: " + " }}{%- endcapture -%}
         {
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "{{- shop.url -}}{{- url -}}",
-            "name": "{{- collectionTitle -}} {{- current_tags | join: " + " -}}"
+            "@id": {{ shop.url | append: url | json }},
+            "name": {{ breadcrumbName | json }}
           }
         }
       {%- else -%}
@@ -142,8 +150,8 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "{{- shop.url -}}{{- collection.url -}}",
-            "name": "{{- collectionTitle -}}"
+            "@id": {{ shop.url | append: collection.url | json }},
+            "name": {{ collectionTitle | json }}
           }
         }
       {%- endif -%}
@@ -152,8 +160,8 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "{{- shop.url -}}{{- blog.url -}}",
-          "name": "{{- blog.title -}}"
+          "@id": {{ shop.url | append: blog.url | json }},
+          "name": {{ blog.title | json }}
         }
       }
     {%- elsif rootTemplate == 'article' -%}
@@ -165,15 +173,15 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "{{- shop.url -}}{{- blog.url -}}",
-          "name": "{{- blog.title -}}"
+          "@id": {{ shop.url | append: blog.url | json }},
+          "name": {{ blog.title | json }}
         }
       },{
         "@type": "ListItem",
         "position": 2,
         "item": {
-          "@id": "{{- shop.url -}}{{- article.url -}}",
-          "name": "{{- articleTitle | escape -}}"
+          "@id": {{ shop.url | append: article.url | json }},
+          "name": {{ articleTitle | json }}
         }
       }
     {%- else -%}
@@ -197,19 +205,19 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "@id": "{{ organizationId }}",
-    "name": "{{- shopName -}}",
-    "url": "{{- shop.url -}}",
+    "@id": {{ organizationId | json }},
+    "name": {{ shopName | json }},
+    "url": {{ shop.url | json }},
     {%- if settings.pluginseo_structuredDataDisplayLogo == true  -%}
       "logo": {
         "type": "ImageObject",
-        "url": "https:{{- logoUrl -}}"
+        "url": {{ logoUrl | prepend: 'https:' | json }}
       },
-      "image": "https:{{- logoUrl -}}",
+      "image": {{ logoUrl | prepend: 'https:' | json }},
     {%- endif -%}
     "sameAs": [
       {%- for sociallink in links -%}
-        "{{- sociallink | strip -}}"{%- if forloop.last == false -%},{%- endif -%}
+        {{ sociallink | strip | json }}{%- if forloop.last == false -%},{%- endif -%}
       {%- endfor -%}
     ]
   }
@@ -236,15 +244,15 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
       {
         "@context": "http://schema.org/",
         "@type": "Product",
-        "@id": "{{- canonical_url | append: '#product' -}}",
-        "name": "{{- productTitle | escape -}}",
-        "image": "https:{{- product.featured_image | img_url: '450x450' -}}",
-        "description": "{{- productDescription | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | strip | escape -}}",
-        "mpn": "{{- product.id -}}",
+        "@id": {{ canonical_url | append: '#product' | json }},
+        "name": {{ productTitle | json }},
+        "image": {{ product.featured_image | img_url: '450x450' | prepend: 'https:' | json }},
+        "description": {{ productDescription | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | strip | json }},
+        "mpn": {{ product.id | json }},
         {%- comment -%}
         "brand": {
           "@type": "Thing",
-          "name": "{{- product.vendor -}}"
+          "name": {{ product.vendor | json }}
         },
         {%- endcomment -%}
         {%- assign aggregateRatingId = canonical_url | append: '#rating' -%}
@@ -316,9 +324,9 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
                 },
                 "author": {
                   "@type": "Person",
-                  "name": "{{ review_author }}"
+                  "name": {{ review_author | json }}
                 },
-                "reviewBody": "{{ review_content }}"
+                "reviewBody": {{ review_content | json }}
               }{%- unless forloop.last -%},{%- endunless -%}
             {%- endfor -%}
             ],
@@ -394,14 +402,14 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
           {%- assign numAvailableVariants = product.variants | where: "available" | size %}
           "offers": {
             "@type": "AggregateOffer",
-            "priceCurrency": "{{- shop.currency -}}",
-            "lowPrice": {{- variantsByPrice.first.price | divided_by: 100.0 -}},
-            "highPrice": {{- variantsByPrice.last.price | divided_by: 100.0 -}},
-            "availability": "{%- if numAvailableVariants > 0 -%}InStock{%- else -%}OutOfStock{%- endif -%}",
-            "offerCount": {%- if numAvailableVariants > 0 -%}{{- numAvailableVariants -}}{%- else -%}1{%- endif -%},
+            "priceCurrency": {{ shop.currency | json }},
+            "lowPrice": {{ variantsByPrice.first.price | divided_by: 100.0 }},
+            "highPrice": {{ variantsByPrice.last.price | divided_by: 100.0 }},
+            "availability": {%- if numAvailableVariants > 0 -%}"InStock"{%- else -%}"OutOfStock"{%- endif -%},
+            "offerCount": {%- if numAvailableVariants > 0 -%}{{ numAvailableVariants }}{%- else -%}1{%- endif -%},
             "seller": {
               "@type": "Organization",
-              "@id": "{{ organizationId }}"
+              "@id": {{ organizationId | json }}
             }
           },
           "model": [
@@ -413,12 +421,12 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
               {%- endif -%}
               {
                 "@type": "ProductModel",
-                "@id": "{{- canonical_url | append: '#productModel=' | append: variant.id -}}",
-                "url": "{{- shop.url -}}{{- variant.url -}}",
-                "name": "{{- productTitle | append: " " | append: variant.title | replace: "\", "\\\" | replace: '"', '\"' -}}",
-                "mpn": "{{- variant.id -}}",
+                "@id": {{ canonical_url | append: '#productModel=' | append: variant.id | json }},
+                "url": {{ shop.url | append: variant.url | json }},
+                "name": {{ productTitle | append: " " | append: variant.title | json }},
+                "mpn": {{ variant.id | json }},
                 {%- if variant.sku -%}
-                  "sku": "{{- variant.sku -}}",
+                  "sku": {{ variant.sku | json }},
                 {%- endif -%}
                 {%- if variant.barcode -%}
                   {%- assign barcode = variant.barcode -%}
@@ -436,7 +444,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
                   {% endcase %}
 
                   {%- unless barcodeKey == blank -%}
-                    "{{ barcodeKey }}": "{{ barcode }}",
+                    "{{ barcodeKey }}": {{ barcode | json }},
                   {%- endunless -%}
                 {%- endif -%}
                 {%- if variant.requires_shipping and variant.weight > 0 -%}
@@ -460,13 +468,13 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
 
                   {%- if colorFound != true and colorVariations contains optionNameDowncased -%}
                     {%- assign colorFound = true -%}
-                    "color": "{{- value -}}",
+                    "color": {{ value | json }},
                   {%- else -%}
                     {%- capture additional_property -%}
                       {
                         "@type": "PropertyValue",
-                        "name": "{{- optionName -}}",
-                        "value": "{{- value -}}"
+                        "name": {{ optionName | json }},
+                        "value": {{ value | json }}
                       }
                     {%- endcapture -%}
                     {%- unless additionalProperties == blank -%}
@@ -480,15 +488,15 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
                   "additionalProperty": [{{ additionalProperties }}],
                 {%- endunless -%}
 
-                "image": "https:{{- image | img_url: '450x450' -}}",
+                "image": {{ image | img_url: '450x450' | prepend: 'https:' | json }},
                 "offers": {
                   "@type": "Offer",
-                  "priceCurrency": "{{- shop.currency -}}",
-                  "price": {{- variant.price | divided_by: 100.0 -}},
-                  "availability": "{%- if variant.available -%}InStock{%- else -%}OutOfStock{%- endif -%}",
+                  "priceCurrency": {{ shop.currency | json }},
+                  "price": {{ variant.price | divided_by: 100.0 }},
+                  "availability": {%- if variant.available -%}"InStock"{%- else -%}"OutOfStock"{%- endif -%},
                   "seller": {
                     "@type": "Organization",
-                    "@id": "{{ organizationId }}"
+                    "@id": {{ organizationId | json }}
                   }
                 }
               }{%- unless forloop.last -%},{%- endunless -%}
@@ -497,7 +505,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
         {%- else -%}
           {%- assign product_or_variant = product.selected_or_first_available_variant -%}
           {%- if product_or_variant.sku -%}
-            "sku": "{{- product_or_variant.sku -}}",
+            "sku": {{ product_or_variant.sku | json }},
           {%- endif -%}
           {%- if product_or_variant.barcode -%}
             {%- assign barcode = product_or_variant.barcode -%}
@@ -515,7 +523,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
             {% endcase %}
 
             {%- unless barcodeKey == blank -%}
-              "{{ barcodeKey }}": "{{ barcode }}",
+              "{{ barcodeKey }}": {{ barcode | json }},
             {%- endunless -%}
           {%- endif -%}
           {%- if product_or_variant.requires_shipping and product_or_variant.weight > 0 -%}
@@ -527,13 +535,13 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
           {%- endif -%}
           "offers": {
             "@type": "Offer",
-            "url": "{{-canonical_url -}}",
-            "priceCurrency": "{{- shop.currency -}}",
-            "price": "{{- product_or_variant.price | divided_by: 100.00 -}}",
-            "availability": "{%- if product_or_variant.available -%}InStock{%- else -%}OutOfStock{%- endif -%}",
+            "url": {{ canonical_url | json }},
+            "priceCurrency": {{ shop.currency | json }},
+            "price": {{ product_or_variant.price | divided_by: 100.00 }},
+            "availability": {%- if product_or_variant.available -%}"InStock"{%- else -%}"OutOfStock"{%- endif -%},
             "seller": {
               "@type": "Organization",
-              "@id": "{{ organizationId }}"
+              "@id": {{ organizationId | json }}
             }
           }
         {%- endif -%}
@@ -550,11 +558,11 @@ https://developers.google.com/search/docs/data-types/sitelinks-searchbox
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "{{- shopName -}}",
-    "url": "{{- shop.url -}}",
+    "name": {{ shopName | json }},
+    "url": {{ shop.url | json }},
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "{{- shop.url -}}/search?q={search_term_string}",
+      "target": {{ shop.url | append: '/search?q={search_term_string}' | json }},
       "query-input": "required name=search_term_string"
     }
   }
@@ -574,18 +582,18 @@ https://developers.google.com/search/docs/data-types/sitelinks-searchbox
     {
       "@context": "http://schema.org",
       "@type": "LocalBusiness",
-      "image": "{{- logoUrl -}}",
-      {%- if localBusinessName != blank -%}"name": "{{- localBusinessName -}}",{%- endif -%}
-      {%- if localBusinessUrl != blank -%}"url": "{{- localBusinessUrl -}}",{%- endif -%}
-      {%- if localBusinessTelephone != blank -%}"telephone": "{{- localBusinessTelephone -}}",{%- endif -%}
-      {%- if localBusinessEmail != blank -%}"email": "{{- localBusinessEmail -}}",{%- endif -%}
+      "image": {{ logoUrl | json }},
+      {%- if localBusinessName != blank -%}"name": {{ localBusinessName | json }},{%- endif -%}
+      {%- if localBusinessUrl != blank -%}"url": {{ localBusinessUrl | json }},{%- endif -%}
+      {%- if localBusinessTelephone != blank -%}"telephone": {{ localBusinessTelephone | json }},{%- endif -%}
+      {%- if localBusinessEmail != blank -%}"email": {{ localBusinessEmail | json }},{%- endif -%}
       "address": {
         "@type": "PostalAddress"
-        {%- if localBusinessStreetAddress != blank -%},"streetAddress": "{{- localBusinessStreetAddress-}}"{%- endif -%}
-        {%- if localBusinessAddressLocality != blank -%},"addressLocality": "{{- localBusinessAddressLocality -}}"{%- endif -%}
-        {%- if localBusinessAddressRegion != blank -%},"addressRegion": "{{- localBusinessAddressRegion -}}"{%- endif -%}
-        {%- if localBusinessAddressCountry != blank -%},"addressCountry": "{{- localBusinessAddressCountry -}}"{%- endif -%}
-        {%- if localBusinessPostalCode != blank -%},"postalCode": "{{- localBusinessPostalCode -}}"{%- endif -%}
+        {%- if localBusinessStreetAddress != blank -%},"streetAddress": {{ localBusinessStreetAddress | json }}{%- endif -%}
+        {%- if localBusinessAddressLocality != blank -%},"addressLocality": {{ localBusinessAddressLocality | json }}{%- endif -%}
+        {%- if localBusinessAddressRegion != blank -%},"addressRegion": {{ localBusinessAddressRegion | json }}{%- endif -%}
+        {%- if localBusinessAddressCountry != blank -%},"addressCountry": {{ localBusinessAddressCountry | json }}{%- endif -%}
+        {%- if localBusinessPostalCode != blank -%},"postalCode": {{ localBusinessPostalCode | json }}{%- endif -%}
       }
     }
   </script>

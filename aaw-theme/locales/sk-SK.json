@@ -101,7 +101,7 @@
     },
     "loading": "Načítava...",
     "total_reviews": "celkové recenzie",
-    "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hviezdy",
+    "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hviezd",
     "collapsible_content_title": "Skladací obsah",
     "collapsible_content_description": "Popis",
     "complementary_products": "Doplnkové produkty",
@@ -124,7 +124,7 @@
       "post": "Uverejniť komentár",
       "back_to_blog": "Späť na blog",
       "share": "Zdieľajte tento článok",
-      "success": "Váš komentár bol úspešne odoslaný! ",
+      "success": "Váš komentár bol úspešne odoslaný!",
       "success_moderated": "Váš komentár bol úspešne uverejnený. O chvíľu ho zverejníme, keďže náš blog je moderovaný."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Vyberte množstvo",
       "add_to_cart": "Pridať do košíka",
       "preorder": "Predobjednať",
       "choose_options": "Vyberte možnosti",
@@ -255,7 +256,7 @@
       "button": "SPÄŤ DOMOV"
     },
     "search": {
-      "serach_heading": "Hľadať teraz",
+      "search_heading": "Hľadať teraz",
       "suggestions": "Návrhy",
       "no_results_heading": "Nenašli sa žiadne výsledky",
       "no_results_body": "Bohužiaľ sme nenašli žiadne výsledky pre vaše vyhľadávanie.",
@@ -333,7 +334,7 @@
       "empty": "Vaša karta je prázdna.",
       "no_result": "Nenašli sa žiadne výsledky",
       "empty_description": "Bohužiaľ sa nám nepodarilo nájsť žiadne produkty vo vašom košíku.",
-      "cart_error": "Pri aktualizácii košíka sa vyskytla chyba. ",
+      "cart_error": "Pri aktualizácii košíka sa vyskytla chyba.",
       "cart_quantity_error_html": "Môžete len pridať {{ quantity }} tejto položky do košíka.",
       "taxes_and_shipping_policy_at_checkout_html": "Dane a <a href=\"{{ link }}\">Doprava</a> vypočítané pri pokladni",
       "taxes_included_but_shipping_at_checkout": "Vrátane dane a poštovné sa vypočíta pri pokladni",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Zobraziť všetky",
       "read_more": "Čítaj viac",
-      "artical_title": "Umelecký názov",
-      "date_formate": "DD/MM/RR"
+      "article_title": "Umelecký názov",
+      "date_format": "DD/MM/RR"
     },
     "featured_collection": {
       "view_all": "Zobraziť všetky",
@@ -468,7 +469,7 @@
       "default": "Predvolené",
       "address_count": "Adresa {{ count }}",
       "add_new": "Pridať novú adresu",
-      "add_new_message": " Vyplňte polia nižšie",
+      "add_new_message": "Vyplňte polia nižšie",
       "return_account_page": "Návrat na stránku účtu",
       "edit_address": "Upraviť adresu",
       "first_name": "Krstné meno",
@@ -504,7 +505,8 @@
       "sign_in": "Prihlásiť sa",
       "submit": "Predložiť",
       "login_heading": "Potrebujete účet?",
-      "signup_text": "Prihlásiť Se"
+      "signup_text": "Prihlásiť Se",
+      "alternate_provider_separator": "alebo"
     },
     "order": {
       "title": "objednať {{ name }}",

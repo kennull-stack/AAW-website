@@ -101,7 +101,7 @@
     },
     "loading": "Yükleniyor...",
     "total_reviews": "toplam incelemeler",
-    "star_reviews_info": "{{ rating_value }} dışında {{ rating_max }} yıldızlar",
+    "star_reviews_info": "{{ rating_max }} yıldız üzerinden {{ rating_value }}",
     "collapsible_content_title": "Daraltılabilir içerik",
     "collapsible_content_description": "Tanım",
     "complementary_products": "Tamamlayıcı ürünler",
@@ -124,7 +124,7 @@
       "post": "Yorum Gönder",
       "back_to_blog": "Bloga geri dön",
       "share": "Bu makaleyi paylaş",
-      "success": "Yorumunuz başarıyla gönderildi! ",
+      "success": "Yorumunuz başarıyla gönderildi!",
       "success_moderated": "Yorumunuz başarıyla gönderildi. Blogumuz yönetildiği için kısa bir süre sonra yayınlayacağız."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Miktar seçin",
       "add_to_cart": "Sepete ekle",
       "preorder": "Ön sipariş",
       "choose_options": "Seçenekleri seçin",
@@ -255,7 +256,7 @@
       "button": "EVE GERİ DÖN"
     },
     "search": {
-      "serach_heading": "Şimdi araştır",
+      "search_heading": "Şimdi araştır",
       "suggestions": "Öneriler",
       "no_results_heading": "Herhangi Bir Sonuç Bulunamadı",
       "no_results_body": "Maalesef aramanız için herhangi bir sonuç bulamadık.",
@@ -299,6 +300,10 @@
     }
   },
   "sections": {
+    "collection_details": {
+      "collection_name": "Koleksiyon adı",
+      "collection_description": "Koleksiyon açıklaması"
+    },
     "header": {
       "announcement": "Duyuru",
       "menu": "Menü",
@@ -329,7 +334,7 @@
       "empty": "Sepetiniz boş.",
       "no_result": "sonuç bulunamadı",
       "empty_description": "Maalesef sepetinizde herhangi bir ürün bulamadık.",
-      "cart_error": "Sepetiniz güncellenirken bir hata oluştu. ",
+      "cart_error": "Sepetiniz güncellenirken bir hata oluştu.",
       "cart_quantity_error_html": "Yalnızca ekleyebilirsiniz {{ quantity }} Bu ürünün sepetinize.",
       "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">Nakliye</a> ödeme sırasında hesaplanır",
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve gönderim bedeli ödeme sırasında hesaplanır",
@@ -363,8 +368,8 @@
     "featured_blog": {
       "view_all": "Hepsini gör",
       "read_more": "Devamını oku",
-      "artical_title": "Makale başlığı",
-      "date_formate": "GG/AA/YY"
+      "article_title": "Makale başlığı",
+      "date_format": "GG/AA/YY"
     },
     "featured_collection": {
       "view_all": "Hepsini gör",
@@ -464,7 +469,7 @@
       "default": "Varsayılan",
       "address_count": "Adres {{ count }}",
       "add_new": "yeni adres ekleyin",
-      "add_new_message": " Lütfen aşağıdaki alanları doldurun",
+      "add_new_message": "Lütfen aşağıdaki alanları doldurun",
       "return_account_page": "Hesap sayfasına dön",
       "edit_address": "Adresi düzelt",
       "first_name": "İlk adı",
@@ -500,7 +505,8 @@
       "sign_in": "Kayıt olmak",
       "submit": "Göndermek",
       "login_heading": "Bir hesaba mı ihtiyacınız var?",
-      "signup_text": "Üye olmak"
+      "signup_text": "Üye olmak",
+      "alternate_provider_separator": "veya"
     },
     "order": {
       "title": "Emir {{ name }}",

@@ -124,7 +124,7 @@
       "post": "Skriv kommentar",
       "back_to_blog": "Tilbage til bloggen",
       "share": "Del denne artikel",
-      "success": "Din kommentar blev sendt! ",
+      "success": "Din kommentar blev sendt!",
       "success_moderated": "Din kommentar blev slået op. Vi offentliggør det om lidt, da vores blog er modereret."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Vælg antal",
       "add_to_cart": "Tilføj til kurv",
       "preorder": "Forudbestille",
       "choose_options": "Vælg muligheder",
@@ -255,7 +256,7 @@
       "button": "TILBAGE TIL HJEMMET"
     },
     "search": {
-      "serach_heading": "Søg nu",
+      "search_heading": "Søg nu",
       "suggestions": "Forslag",
       "no_results_heading": "Finder ikke nogen resultater",
       "no_results_body": "Vi kunne desværre ikke finde nogen resultater for din søgning.",
@@ -333,7 +334,7 @@
       "empty": "Din vogn er tom.",
       "no_result": "Intet resultat fundet",
       "empty_description": "Vi kunne desværre ikke finde nogen produkter i din indkøbskurv.",
-      "cart_error": "Der opstod en fejl under opdatering af din indkøbskurv. ",
+      "cart_error": "Der opstod en fejl under opdatering af din indkøbskurv.",
       "cart_quantity_error_html": "Du kan kun tilføje {{ quantity }} af denne vare til din indkøbskurv.",
       "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">Forsendelse</a> beregnes ved kassen",
       "taxes_included_but_shipping_at_checkout": "Moms inkluderet og fragt beregnes ved kassen",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Se alt",
       "read_more": "Læs mere",
-      "artical_title": "Artisk titel",
-      "date_formate": "DD/MM/ÅÅ"
+      "article_title": "Artisk titel",
+      "date_format": "DD/MM/ÅÅ"
     },
     "featured_collection": {
       "view_all": "Se alt",
@@ -468,7 +469,7 @@
       "default": "Standard",
       "address_count": "Adresse {{ count }}",
       "add_new": "Tilføj ny adresse",
-      "add_new_message": " Udfyld venligst felterne nedenfor",
+      "add_new_message": "Udfyld venligst felterne nedenfor",
       "return_account_page": "Vend tilbage til kontosiden",
       "edit_address": "Rediger adresse",
       "first_name": "Fornavn",
@@ -504,7 +505,8 @@
       "sign_in": "Log ind",
       "submit": "Indsend",
       "login_heading": "Har du brug for en konto?",
-      "signup_text": "Tilmelde"
+      "signup_text": "Tilmelde",
+      "alternate_provider_separator": "eller"
     },
     "order": {
       "title": "Bestille {{ name }}",

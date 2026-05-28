@@ -101,7 +101,7 @@
     },
     "loading": "Carregando...",
     "total_reviews": "total de avaliações",
-    "star_reviews_info": "{{ rating_value }} fora de {{ rating_max }} estrelas",
+    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas",
     "collapsible_content_title": "Conteúdo recolhível",
     "collapsible_content_description": "Descrição",
     "complementary_products": "Produtos complementares",
@@ -124,7 +124,7 @@
       "post": "Postar comentário",
       "back_to_blog": "Voltar ao blog",
       "share": "Compartilhe este artigo",
-      "success": "Seu comentário foi postado com sucesso! ",
+      "success": "Seu comentário foi postado com sucesso!",
       "success_moderated": "O seu comentário foi publicado com sucesso. Vamos publicá-lo daqui a pouco, pois nosso blog é moderado."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Selecionar quantidade",
       "add_to_cart": "Adicionar ao carrinho",
       "preorder": "Pedido antecipado",
       "choose_options": "Escolha opções",
@@ -255,7 +256,7 @@
       "button": "DE VOLTA PARA CASA"
     },
     "search": {
-      "serach_heading": "Procure agora",
+      "search_heading": "Procure agora",
       "suggestions": "Sugestões",
       "no_results_heading": "Não encontrei nenhum resultado",
       "no_results_body": "Infelizmente não encontramos nenhum resultado para sua pesquisa.",
@@ -333,7 +334,7 @@
       "empty": "Seu carrinho está vazio.",
       "no_result": "nenhum resultado encontrado",
       "empty_description": "Infelizmente não encontramos nenhum produto em seu carrinho.",
-      "cart_error": "Ocorreu um erro ao atualizar seu carrinho. ",
+      "cart_error": "Ocorreu um erro ao atualizar seu carrinho.",
       "cart_quantity_error_html": "Você só pode adicionar {{ quantity }} deste item para o seu carrinho.",
       "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio</a> Calcular ao finalizar",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e frete calculado na finalização da compra",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Ver tudo",
       "read_more": "Consulte Mais informação",
-      "artical_title": "Título artístico",
-      "date_formate": "DD/MM/AA"
+      "article_title": "Título artístico",
+      "date_format": "DD/MM/AA"
     },
     "featured_collection": {
       "view_all": "Ver tudo",
@@ -468,7 +469,7 @@
       "default": "Padrão",
       "address_count": "Endereço {{ count }}",
       "add_new": "adicionar novo endereço",
-      "add_new_message": " Por favor, preencha os campos abaixo",
+      "add_new_message": "Por favor, preencha os campos abaixo",
       "return_account_page": "Voltar para a página da conta",
       "edit_address": "Editar Endereço",
       "first_name": "Primeiro nome",
@@ -504,7 +505,8 @@
       "sign_in": "Entrar",
       "submit": "Enviar",
       "login_heading": "Precisa de uma conta?",
-      "signup_text": "Inscrever-se"
+      "signup_text": "Inscrever-se",
+      "alternate_provider_separator": "ou"
     },
     "order": {
       "title": "Ordem {{ name }}",

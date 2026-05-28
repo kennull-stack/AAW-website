@@ -14,9 +14,9 @@
       "login_password_button": "Enter using password",
       "login_form_password_label": "Password",
       "login_form_password_placeholder": "Your password",
-      "login_form_error": "Wrong password!",
+      "login_form_error": "That password didn't match. Please try again.",
       "login_form_submit": "Submit",
-      "opening_soon": "Opening Soon",
+      "opening_soon": "Opening soon",
       "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link underlined-link\">Log in here</a>",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -27,7 +27,7 @@
       "share": "Share",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Tweet on Twitter",
+        "share_on_twitter": "Share on Twitter",
         "share_on_pinterest": "Pin on Pinterest"
       },
       "links": {
@@ -227,14 +227,14 @@
             "value4": "L",
             "value5": "XL"
           },
-          "option": "TODO"
+          "option": "Option"
         }
       },
       "option": "{{title}}",
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
-      "view_product": "View Product",
+      "view_product": "View product",
       "value_unavailable": "{{ option_value }} - Unavailable",
       "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
@@ -252,17 +252,17 @@
   "templates": {
     "404": {
       "title": "Page not found",
-      "subtext": "The page you were looking for doesnt exist. You may have mistyped the address or the page may have moved.",
-      "button": "BACK TO HOME"
+      "subtext": "The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.",
+      "button": "Back to home"
     },
     "search": {
-      "serach_heading": "Search Now",
+      "search_heading": "Search now",
       "suggestions": "Suggestions",
-      "no_results_heading": "Not Find Any Results",
-      "no_results_body": "Unfortunately we could not find any results for your search.",
+      "no_results_heading": "No results found",
+      "no_results_body": "We couldn't find any results for your search. Try different keywords or check the spelling.",
       "page": "Page",
       "article": "Articles",
-      "read_more": "Read More",
+      "read_more": "Read more",
       "view_all_results": "View all results",
       "products": "Products",
       "collections": "Collections",
@@ -279,7 +279,7 @@
       "clear_all": "Clear all",
       "title": "Search results",
       "search_for": "Search for “{{ terms }}”",
-      "recent_search": "Recent Search",
+      "recent_search": "Recent searches",
       "clear_recent_search": "Clear recent searches"
     },
     "cart": {
@@ -368,8 +368,8 @@
     "featured_blog": {
       "view_all": "View all",
       "read_more": "Read more",
-      "artical_title": "Artical title",
-      "date_formate": "DD/MM/YY"
+      "article_title": "Article title",
+      "date_format": "DD/MM/YY"
     },
     "featured_collection": {
       "view_all": "View all",
@@ -390,15 +390,15 @@
       "filter_and_sort": "Filter and sort",
       "filter_apply_message": "You can select several options at once.",
       "filter_by_label": "Filters",
-      "filter_title": "Show Filter",
+      "filter_title": "Show filters",
       "filter_button": "Apply filter",
       "filter_cancel_button": "Cancel",
       "filters_selected": {
         "one": "{{ count }} selected",
         "other": "{{ count }} selected"
       },
-      "filter_clear": "CLEAR ALL FILTERS",
-      "filter_result": "No Product Found",
+      "filter_clear": "Clear all filters",
+      "filter_result": "No products found",
       "max_price": "The highest price is {{ price }}",
       "product_count": {
         "one": "{{ product_count }} of {{ count }} product",
@@ -437,9 +437,9 @@
       "title": "Page title"
     },
     "password_page": {
-      "login_password_button": "Enter Password",
+      "login_password_button": "Enter password",
       "login_form_submit": "Submit",
-      "password_button": "ENTER PASSWORD"
+      "password_button": "Enter password"
     }
   },
   "localization": {
@@ -453,7 +453,7 @@
       "title": "Account",
       "details": "Account details",
       "view_addresses": "View addresses",
-      "return": "Return to Account details"
+      "return": "Return to account details"
     },
     "account_fallback": "Account",
     "activate_account": {
@@ -469,7 +469,7 @@
       "default": "Default",
       "address_count": "Address {{ count }}",
       "add_new": "Add new address",
-      "add_new_message": " Please fill in the fields below",
+      "add_new_message": "Please fill in the fields below",
       "return_account_page": "Return to account page",
       "edit_address": "Edit address",
       "first_name": "First name",
@@ -501,7 +501,7 @@
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
-      "title": "LOGIN",
+      "title": "Log in",
       "sign_in": "Sign in",
       "submit": "Submit",
       "login_heading": "Need an account?",
@@ -511,12 +511,12 @@
     "order": {
       "title": "Order {{ name }}",
       "date_html": "Placed on {{ date }}",
-      "cancelled_html": "Order Cancelled on {{ date }}",
+      "cancelled_html": "Order cancelled on {{ date }}",
       "cancelled_reason": "Reason: {{ reason }}",
-      "billing_address": "Billing Address",
-      "payment_status": "Payment Status",
-      "shipping_address": "Shipping Address",
-      "fulfillment_status": "Fulfillment Status",
+      "billing_address": "Billing address",
+      "payment_status": "Payment status",
+      "shipping_address": "Shipping address",
+      "fulfillment_status": "Fulfillment status",
       "discount": "Discount",
       "shipping": "Shipping",
       "tax": "Tax",
@@ -532,7 +532,7 @@
       "tracking_number": "Tracking number",
       "subtotal": "Subtotal",
       "total_duties": "Duties",
-      "back": "BacK to orders"
+      "back": "Back to orders"
     },
     "orders": {
       "title": "Order history",
@@ -550,7 +550,7 @@
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "SIGN UP",
+      "title": "Sign up",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email address",

@@ -101,7 +101,7 @@
     },
     "loading": "Läser in...",
     "total_reviews": "totalt recensioner",
-    "star_reviews_info": "{{ rating_value }} ut ur {{ rating_max }} stjärnor",
+    "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjärnor",
     "collapsible_content_title": "Hopfällbart innehåll",
     "collapsible_content_description": "Beskrivning",
     "complementary_products": "Kompletterande produkter",
@@ -124,7 +124,7 @@
       "post": "Publicera kommentar",
       "back_to_blog": "Tillbaka till bloggen",
       "share": "Dela den här artikeln",
-      "success": "Din kommentar postades framgångsrikt! ",
+      "success": "Din kommentar postades framgångsrikt!",
       "success_moderated": "Din kommentar har postats. Vi kommer att publicera den om en liten stund, eftersom vår blogg är modererad."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Välj antal",
       "add_to_cart": "Lägg till i kundvagn",
       "preorder": "Förboka",
       "choose_options": "Välj alternativ",
@@ -255,7 +256,7 @@
       "button": "TILLBAKA TILL HEMMET"
     },
     "search": {
-      "serach_heading": "Sök nu",
+      "search_heading": "Sök nu",
       "suggestions": "Förslag",
       "no_results_heading": "Hittar inga resultat",
       "no_results_body": "Tyvärr kunde vi inte hitta några resultat för din sökning.",
@@ -333,7 +334,7 @@
       "empty": "Din vagn är tom.",
       "no_result": "inga resultat",
       "empty_description": "Tyvärr kunde vi inte hitta några produkter i din varukorg.",
-      "cart_error": "Det uppstod ett fel när din kundvagn skulle uppdateras. ",
+      "cart_error": "Det uppstod ett fel när din kundvagn skulle uppdateras.",
       "cart_quantity_error_html": "Du kan bara lägga till {{ quantity }} av denna vara till din varukorg.",
       "taxes_and_shipping_policy_at_checkout_html": "Skatter och <a href=\"{{ link }}\">frakt</a> beräknas i kassan",
       "taxes_included_but_shipping_at_checkout": "Inklusive moms och frakt beräknas i kassan",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Visa alla",
       "read_more": "Läs mer",
-      "artical_title": "Artisk titel",
-      "date_formate": "DD/MM/ÅÅ"
+      "article_title": "Artisk titel",
+      "date_format": "DD/MM/ÅÅ"
     },
     "featured_collection": {
       "view_all": "Visa alla",
@@ -468,7 +469,7 @@
       "default": "Standard",
       "address_count": "Adress {{ count }}",
       "add_new": "Lägg till ny adress",
-      "add_new_message": " Vänligen fyll i fälten nedan",
+      "add_new_message": "Vänligen fyll i fälten nedan",
       "return_account_page": "Återgå till kontosidan",
       "edit_address": "Redigera adress",
       "first_name": "Förnamn",
@@ -504,7 +505,8 @@
       "sign_in": "Logga in",
       "submit": "Skicka in",
       "login_heading": "Behöver ett konto?",
-      "signup_text": "Bli Medlem"
+      "signup_text": "Bli Medlem",
+      "alternate_provider_separator": "eller"
     },
     "order": {
       "title": "Beställa {{ name }}",

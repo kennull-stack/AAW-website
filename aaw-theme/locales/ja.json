@@ -101,7 +101,7 @@
     },
     "loading": "読み込み中...",
     "total_reviews": "総レビュー数",
-    "star_reviews_info": "{{ rating_value }} のうち {{ rating_max }} 出演者",
+    "star_reviews_info": "{{ rating_max }} 星のうち {{ rating_value }}",
     "collapsible_content_title": "折りたたみ可能なコンテンツ",
     "collapsible_content_description": "説明",
     "complementary_products": "補完的な製品",
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "数量を選択",
       "add_to_cart": "カートに追加",
       "preorder": "予約注文",
       "choose_options": "オプションを選択してください",
@@ -255,7 +256,7 @@
       "button": "家に帰る"
     },
     "search": {
-      "serach_heading": "検索中",
+      "search_heading": "検索中",
       "suggestions": "提案",
       "no_results_heading": "結果が見つかりませんでした",
       "no_results_body": "残念ながら、検索結果が見つかりませんでした。",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "すべて見る",
       "read_more": "続きを読む",
-      "artical_title": "作品タイトル",
-      "date_formate": "DD/MM/YY"
+      "article_title": "作品タイトル",
+      "date_format": "DD/MM/YY"
     },
     "featured_collection": {
       "view_all": "すべて見る",
@@ -468,7 +469,7 @@
       "default": "デフォルト",
       "address_count": "住所 {{ count }}",
       "add_new": "新しいアドレスを追加",
-      "add_new_message": " 以下のフィールドに記入してください",
+      "add_new_message": "以下のフィールドに記入してください",
       "return_account_page": "アカウントページに戻る",
       "edit_address": "住所の編集",
       "first_name": "ファーストネーム",
@@ -504,7 +505,8 @@
       "sign_in": "サインイン",
       "submit": "提出する",
       "login_heading": "アカウントが必要です？",
-      "signup_text": "サインアップ"
+      "signup_text": "サインアップ",
+      "alternate_provider_separator": "または"
     },
     "order": {
       "title": "注文 {{ name }}",

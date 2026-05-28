@@ -101,7 +101,7 @@
     },
     "loading": "Cargando...",
     "total_reviews": "revisiones totales",
-    "star_reviews_info": "{{ rating_value }} fuera de {{ rating_max }} estrellas",
+    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrellas",
     "collapsible_content_title": "Contenido plegable",
     "collapsible_content_description": "Descripción",
     "complementary_products": "Productos complementarios",
@@ -124,7 +124,7 @@
       "post": "Publicar comentario",
       "back_to_blog": "volver al blog",
       "share": "Comparte este artículo",
-      "success": "¡Tu comentario fue publicado exitosamente! ",
+      "success": "¡Tu comentario fue publicado exitosamente!",
       "success_moderated": "Su comentario se ha publicado correctamente. Lo publicaremos en un momento, ya que nuestro blog está moderado."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Seleccionar cantidad",
       "add_to_cart": "Añadir a la cesta",
       "preorder": "Hacer un pedido",
       "choose_options": "Elige opciones",
@@ -255,7 +256,7 @@
       "button": "DE VUELTA A CASA"
     },
     "search": {
-      "serach_heading": "Buscar ahora",
+      "search_heading": "Buscar ahora",
       "suggestions": "Sugerencias",
       "no_results_heading": "No encontrar ningún resultado",
       "no_results_body": "Lamentablemente no pudimos encontrar ningún resultado para su búsqueda.",
@@ -333,7 +334,7 @@
       "empty": "Tu carrito esta vacío.",
       "no_result": "No se han encontrado resultados",
       "empty_description": "Lamentablemente no pudimos encontrar ningún producto en su carrito.",
-      "cart_error": "Se produjo un error al actualizar su carrito. ",
+      "cart_error": "Se produjo un error al actualizar su carrito.",
       "cart_quantity_error_html": "Sólo puedes agregar {{ quantity }} de este artículo a su carrito.",
       "taxes_and_shipping_policy_at_checkout_html": "Impuestos y <a href=\"{{ link }}\">envío</a> calculado a la salida",
       "taxes_included_but_shipping_at_checkout": "Impuestos incluidos y envío calculado al finalizar la compra.",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Ver todo",
       "read_more": "Leer más",
-      "artical_title": "Título artístico",
-      "date_formate": "DD/MM/AA"
+      "article_title": "Título artístico",
+      "date_format": "DD/MM/AA"
     },
     "featured_collection": {
       "view_all": "Ver todo",
@@ -468,7 +469,7 @@
       "default": "Por defecto",
       "address_count": "DIRECCIÓN {{ count }}",
       "add_new": "agregar nueva dirección",
-      "add_new_message": " Por favor complete los campos a continuación",
+      "add_new_message": "Por favor complete los campos a continuación",
       "return_account_page": "Volver a la página de la cuenta",
       "edit_address": "Editar dirección",
       "first_name": "Nombre de pila",
@@ -504,7 +505,8 @@
       "sign_in": "Iniciar sesión",
       "submit": "Entregar",
       "login_heading": "¿Necesito una cuenta?",
-      "signup_text": "Inscribirse"
+      "signup_text": "Inscribirse",
+      "alternate_provider_separator": "o"
     },
     "order": {
       "title": "Orden {{ name }}",

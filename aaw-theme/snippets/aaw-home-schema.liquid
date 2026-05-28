@@ -4,7 +4,7 @@
   assign z05_product = all_products['z05-auag-launch-edition']
   assign custom_builder_product = all_products['aaw-custom-builder']
   assign home_title = 'Advanced AcousticWerkes | Singapore IEM Specialist'
-  assign home_description = 'AAW designs custom and universal in-ear monitors from Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
+  assign home_description = 'AAW designs custom and universal in-ear monitors from Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at the AAW office on Playfair Road or any of three authorized Singapore dealers.'
   assign site_url = 'https://www.aaw.me'
   assign page_id = canonical_url | append: '#webpage'
   assign z_series_id = canonical_url | append: '#z-series'
@@ -373,7 +373,7 @@
       "url": {{ canonical_url | json }},
       "telephone": "+65 8731 5476",
       "email": "support@aaw.me",
-      "priceRange": "$199 - $1200",
+      "priceRange": "SGD 199-1200",
       "hasMap": "https://www.google.com/maps/search/?api=1&query=76%20Playfair%20Rd%20Singapore%20367996",
       "areaServed": {
         "@type": "Country",
@@ -414,7 +414,7 @@
       "@id": {{ site_url | append: '/#dealer-zeppelin' | json }},
       "name": "Zeppelin & Co.",
       "telephone": "+65 9337 9655",
-      "priceRange": "$199 - $1200",
+      "priceRange": "SGD 199-1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Rochor Canal Rd, #02-78 Sim Lim Square",
@@ -446,7 +446,7 @@
       "@id": {{ site_url | append: '/#dealer-jaben' | json }},
       "name": "JABEN",
       "telephone": "+65 6337 0809",
-      "priceRange": "$199 - $1200",
+      "priceRange": "SGD 199-1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Coleman St, #01-25 The Adelphi",
@@ -472,7 +472,7 @@
       "@id": {{ site_url | append: '/#dealer-av-one' | json }},
       "name": "AV One",
       "telephone": "+65 6337 0080",
-      "priceRange": "$199 - $1200",
+      "priceRange": "SGD 199-1200",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Coleman St, The Adelphi",
@@ -490,9 +490,14 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
           "opens": "11:00",
           "closes": "19:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/PublicHolidays",
+          "opens": "13:00",
+          "closes": "18:00"
         }
-      ],
-      "openingHours": "Monday-Saturday 11:00-19:30; public holidays 13:00-18:00"
+      ]
     },
     {
       "@type": "FAQPage",

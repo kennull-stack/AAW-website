@@ -101,7 +101,7 @@
     },
     "loading": "Ladataan...",
     "total_reviews": "arvosteluja yhteensä",
-    "star_reviews_info": "{{ rating_value }} ulos {{ rating_max }} tähdet",
+    "star_reviews_info": "{{ rating_value }} / {{ rating_max }} tähteä",
     "collapsible_content_title": "Kokoontaitettava sisältö",
     "collapsible_content_description": "Kuvaus",
     "complementary_products": "Täydentävät tuotteet",
@@ -124,7 +124,7 @@
       "post": "Lähetä Kommentti",
       "back_to_blog": "Takaisin blogiin",
       "share": "Jaa tämä artikkeli",
-      "success": "Kommenttisi lähetys onnistui! ",
+      "success": "Kommenttisi lähetys onnistui!",
       "success_moderated": "Kommenttisi lähetettiin onnistuneesti. Julkaisemme sen hetken kuluttua, koska blogimme on moderoitu."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Valitse määrä",
       "add_to_cart": "Lisää ostoskoriin",
       "preorder": "Ennakkotilaus",
       "choose_options": "Valitse vaihtoehdot",
@@ -255,7 +256,7 @@
       "button": "TAKAISIN KOTIIN"
     },
     "search": {
-      "serach_heading": "Etsi nyt",
+      "search_heading": "Etsi nyt",
       "suggestions": "Ehdotukset",
       "no_results_heading": "Ei löydä tuloksia",
       "no_results_body": "Valitettavasti emme löytäneet tuloksia haullesi.",
@@ -333,7 +334,7 @@
       "empty": "Ostoskorisi on tyhjä.",
       "no_result": "Tulosta ei löytynyt",
       "empty_description": "Valitettavasti emme löytäneet tuotteita ostoskoristasi.",
-      "cart_error": "Ostoskoriasi päivitettäessä tapahtui virhe. ",
+      "cart_error": "Ostoskoriasi päivitettäessä tapahtui virhe.",
       "cart_quantity_error_html": "Voit vain lisätä {{ quantity }} tästä tuotteesta ostoskoriin.",
       "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">laivaus</a> lasketaan kassalla",
       "taxes_included_but_shipping_at_checkout": "Sisältää verot ja toimituskulut lasketaan kassalla",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Näytä kaikki",
       "read_more": "Lue lisää",
-      "artical_title": "Taiteellinen otsikko",
-      "date_formate": "PP/KK/VV"
+      "article_title": "Taiteellinen otsikko",
+      "date_format": "PP/KK/VV"
     },
     "featured_collection": {
       "view_all": "Näytä kaikki",
@@ -468,7 +469,7 @@
       "default": "Oletus",
       "address_count": "Osoite {{ count }}",
       "add_new": "Lisää uusi osoite",
-      "add_new_message": " Täytä alla olevat kentät",
+      "add_new_message": "Täytä alla olevat kentät",
       "return_account_page": "Palaa tilisivulle",
       "edit_address": "Muokkaa osoitetta",
       "first_name": "Etunimi",
@@ -504,7 +505,8 @@
       "sign_in": "Kirjaudu sisään",
       "submit": "Lähetä",
       "login_heading": "Tarvitsetko tilin?",
-      "signup_text": "Kirjaudu"
+      "signup_text": "Kirjaudu",
+      "alternate_provider_separator": "tai"
     },
     "order": {
       "title": "Tilaus {{ name }}",

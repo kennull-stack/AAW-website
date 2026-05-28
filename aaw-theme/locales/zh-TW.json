@@ -101,7 +101,7 @@
     },
     "loading": "載入中...",
     "total_reviews": "總評論數",
-    "star_reviews_info": "{{ rating_value }} 在......之外 {{ rating_max }} 星星",
+    "star_reviews_info": "{{ rating_max }} 顆星中獲得 {{ rating_value }} 顆星",
     "collapsible_content_title": "可折疊內容",
     "collapsible_content_description": "描述",
     "complementary_products": "配套產品",
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "選擇數量",
       "add_to_cart": "加入購物車",
       "preorder": "預購",
       "choose_options": "選擇選項",
@@ -255,7 +256,7 @@
       "button": "回到家"
     },
     "search": {
-      "serach_heading": "現在搜尋",
+      "search_heading": "現在搜尋",
       "suggestions": "建議",
       "no_results_heading": "未找到任何結果",
       "no_results_body": "不幸的是，我們找不到任何適合您的搜尋結果。",
@@ -299,6 +300,10 @@
     }
   },
   "sections": {
+    "collection_details": {
+      "collection_name": "系列名稱",
+      "collection_description": "系列說明"
+    },
     "header": {
       "announcement": "公告",
       "menu": "選單",
@@ -363,8 +368,8 @@
     "featured_blog": {
       "view_all": "看全部",
       "read_more": "閱讀更多",
-      "artical_title": "藝術標題",
-      "date_formate": "日/月/年"
+      "article_title": "藝術標題",
+      "date_format": "日/月/年"
     },
     "featured_collection": {
       "view_all": "看全部",
@@ -464,7 +469,7 @@
       "default": "預設",
       "address_count": "地址 {{ count }}",
       "add_new": "新增地址",
-      "add_new_message": " 請填寫以下字段",
+      "add_new_message": "請填寫以下字段",
       "return_account_page": "返回帳戶頁面",
       "edit_address": "編輯地址",
       "first_name": "名",
@@ -500,7 +505,8 @@
       "sign_in": "登入",
       "submit": "提交",
       "login_heading": "需要一個帳戶？",
-      "signup_text": "報名"
+      "signup_text": "報名",
+      "alternate_provider_separator": "或"
     },
     "order": {
       "title": "命令 {{ name }}",

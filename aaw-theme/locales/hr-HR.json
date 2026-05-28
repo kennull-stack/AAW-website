@@ -101,7 +101,7 @@
     },
     "loading": "Učitavam...",
     "total_reviews": "ukupne recenzije",
-    "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvijezde",
+    "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvijezda",
     "collapsible_content_title": "Sadržaj koji se može sklopiti",
     "collapsible_content_description": "Opis",
     "complementary_products": "Komplementarni proizvodi",
@@ -124,7 +124,7 @@
       "post": "Objavi komentar",
       "back_to_blog": "Povratak na blog",
       "share": "Podijelite ovaj članak",
-      "success": "Vaš komentar je uspješno objavljen! ",
+      "success": "Vaš komentar je uspješno objavljen!",
       "success_moderated": "Vaš je komentar uspješno objavljen. Uskoro ćemo ga objaviti, jer je naš blog moderiran."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Odaberite količinu",
       "add_to_cart": "Dodaj u košaricu",
       "preorder": "Predbilježba",
       "choose_options": "Odaberite opcije",
@@ -255,7 +256,7 @@
       "button": "POVRATAK KUĆI"
     },
     "search": {
-      "serach_heading": "Traži sada",
+      "search_heading": "Traži sada",
       "suggestions": "Prijedlozi",
       "no_results_heading": "Nema rezultata",
       "no_results_body": "Nažalost, nismo mogli pronaći nikakve rezultate za vašu pretragu.",
@@ -305,7 +306,7 @@
     },
     "header": {
       "announcement": "Obavijest",
-      "menu": "Jelovnik ",
+      "menu": "Izbornik",
       "cart_count": {
         "one": "{{ count }} artikal",
         "other": "{{ count }} stavke"
@@ -333,7 +334,7 @@
       "empty": "Vaša košarica je prazna.",
       "no_result": "Nema rezultata",
       "empty_description": "Nažalost, nismo mogli pronaći nijedan proizvod u vašoj košarici.",
-      "cart_error": "Došlo je do pogreške prilikom ažuriranja vaše košarice. ",
+      "cart_error": "Došlo je do pogreške prilikom ažuriranja vaše košarice.",
       "cart_quantity_error_html": "Možete samo dodati {{ quantity }} ovog artikla u vašu košaricu.",
       "taxes_and_shipping_policy_at_checkout_html": "Porezi i <a href=\"{{ link }}\">dostava</a> obračunava se na blagajni",
       "taxes_included_but_shipping_at_checkout": "Porez je uključen i poštarina se obračunava na blagajni",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Pogledaj sve",
       "read_more": "Čitaj više",
-      "artical_title": "Naslov članka",
-      "date_formate": "DD/MM/GG"
+      "article_title": "Naslov članka",
+      "date_format": "DD/MM/GG"
     },
     "featured_collection": {
       "view_all": "Pogledaj sve",
@@ -468,7 +469,7 @@
       "default": "Zadano",
       "address_count": "Adresa {{ count }}",
       "add_new": "Dodajte novu adresu",
-      "add_new_message": " Molimo ispunite donja polja",
+      "add_new_message": "Molimo ispunite donja polja",
       "return_account_page": "Povratak na stranicu računa",
       "edit_address": "Uredi adresu",
       "first_name": "Ime",
@@ -504,7 +505,8 @@
       "sign_in": "Prijaviti se",
       "submit": "podnijeti",
       "login_heading": "Trebate račun?",
-      "signup_text": "Prijavite se"
+      "signup_text": "Prijavite se",
+      "alternate_provider_separator": "ili"
     },
     "order": {
       "title": "Narudžba {{ name }}",

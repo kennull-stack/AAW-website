@@ -101,7 +101,7 @@
     },
     "loading": "Wird geladen...",
     "total_reviews": "Gesamtbewertungen",
-    "star_reviews_info": "{{ rating_value }} aus {{ rating_max }} Sterne",
+    "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen",
     "collapsible_content_title": "Zusammenklappbarer Inhalt",
     "collapsible_content_description": "Beschreibung",
     "complementary_products": "Ergänzende Produkte",
@@ -124,7 +124,7 @@
       "post": "Kommentar hinzufügen",
       "back_to_blog": "Zurück zum Blog",
       "share": "Teile diesen Artikel",
-      "success": "Ihr Kommentar wurde erfolgreich gepostet! ",
+      "success": "Ihr Kommentar wurde erfolgreich gepostet!",
       "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Wir werden es in Kürze veröffentlichen, da unser Blog moderiert wird."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Menge auswählen",
       "add_to_cart": "In den Warenkorb legen",
       "preorder": "Vorbestellen",
       "choose_options": "Wählen Sie Optionen",
@@ -255,7 +256,7 @@
       "button": "ZURÜCK NACH HAUSE"
     },
     "search": {
-      "serach_heading": "Jetzt suchen",
+      "search_heading": "Jetzt suchen",
       "suggestions": "Vorschläge",
       "no_results_heading": "Keine Ergebnisse gefunden",
       "no_results_body": "Leider konnten wir für Ihre Suche keine Ergebnisse finden.",
@@ -333,7 +334,7 @@
       "empty": "Ihr Warenkorb ist leer.",
       "no_result": "Keine Einträge gefunden",
       "empty_description": "Leider konnten wir keine Produkte in Ihrem Warenkorb finden.",
-      "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. ",
+      "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten.",
       "cart_quantity_error_html": "Sie können nur hinzufügen {{ quantity }} dieses Artikels in Ihren Warenkorb.",
       "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand</a> An der Kasse berechnet",
       "taxes_included_but_shipping_at_checkout": "Die Mehrwertsteuer ist inbegriffen und der Versand wird an der Kasse berechnet",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Alle ansehen",
       "read_more": "Mehr lesen",
-      "artical_title": "Künstlerischer Titel",
-      "date_formate": "TT/MM/JJ"
+      "article_title": "Künstlerischer Titel",
+      "date_format": "TT/MM/JJ"
     },
     "featured_collection": {
       "view_all": "Alle ansehen",
@@ -468,7 +469,7 @@
       "default": "Standard",
       "address_count": "Adresse {{ count }}",
       "add_new": "Neue Adresse hinzufügen",
-      "add_new_message": " Bitte füllen Sie die untenstehenden Felder aus",
+      "add_new_message": "Bitte füllen Sie die untenstehenden Felder aus",
       "return_account_page": "Zurück zur Kontoseite",
       "edit_address": "Adresse bearbeiten",
       "first_name": "Vorname",
@@ -504,7 +505,8 @@
       "sign_in": "anmelden",
       "submit": "Einreichen",
       "login_heading": "Brauche ein Konto?",
-      "signup_text": "Melden Sie sich an"
+      "signup_text": "Melden Sie sich an",
+      "alternate_provider_separator": "oder"
     },
     "order": {
       "title": "Befehl {{ name }}",

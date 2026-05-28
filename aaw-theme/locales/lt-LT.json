@@ -101,7 +101,7 @@
     },
     "loading": "Įkeliama...",
     "total_reviews": "viso atsiliepimų",
-    "star_reviews_info": "{{ rating_value }} iš {{ rating_max }} žvaigždės",
+    "star_reviews_info": "{{ rating_value }} iš {{ rating_max }} žvaigždžių",
     "collapsible_content_title": "Sutraukiamas turinys",
     "collapsible_content_description": "apibūdinimas",
     "complementary_products": "Papildomi produktai",
@@ -124,7 +124,7 @@
       "post": "Paskelbti komentarą",
       "back_to_blog": "Grįžti į tinklaraštį",
       "share": "Pasidalinkite šiuo straipsniu",
-      "success": "Jūsų komentaras sėkmingai paskelbtas! ",
+      "success": "Jūsų komentaras sėkmingai paskelbtas!",
       "success_moderated": "Jūsų komentaras buvo sėkmingai paskelbtas. Mes jį paskelbsime po truputį, nes mūsų tinklaraštis yra moderuojamas."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Pasirinkite kiekį",
       "add_to_cart": "Į krepšelį",
       "preorder": "Išankstinis užsakymas",
       "choose_options": "Pasirinkite parinktis",
@@ -255,7 +256,7 @@
       "button": "GRĮŽTI NAMO"
     },
     "search": {
-      "serach_heading": "Ieškokite dabar",
+      "search_heading": "Ieškokite dabar",
       "suggestions": "Pasiūlymai",
       "no_results_heading": "Nerasti jokių rezultatų",
       "no_results_body": "Deja, nepavyko rasti jokių jūsų paieškos rezultatų.",
@@ -333,7 +334,7 @@
       "empty": "Jūsų krepšelis tuščias.",
       "no_result": "Rezultatas nerastas",
       "empty_description": "Deja, jūsų krepšelyje neradome jokių produktų.",
-      "cart_error": "Atnaujinant krepšelį įvyko klaida. ",
+      "cart_error": "Atnaujinant krepšelį įvyko klaida.",
       "cart_quantity_error_html": "Galite tik pridėti {{ quantity }} šios prekės į krepšelį.",
       "taxes_and_shipping_policy_at_checkout_html": "Mokesčiai ir <a href=\"{{ link }}\">siuntimas</a> paskaičiuota kasoje",
       "taxes_included_but_shipping_at_checkout": "Į kainą įskaičiuoti mokesčiai ir pristatymas apskaičiuojamas atsiskaitant",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Peržiūrėti visus",
       "read_more": "Skaityti daugiau",
-      "artical_title": "Meninis pavadinimas",
-      "date_formate": "DD/MM/MM"
+      "article_title": "Meninis pavadinimas",
+      "date_format": "DD/MM/MM"
     },
     "featured_collection": {
       "view_all": "Peržiūrėti visus",
@@ -468,7 +469,7 @@
       "default": "Numatytas",
       "address_count": "Adresas {{ count }}",
       "add_new": "Pridėti naują adresą",
-      "add_new_message": " Prašome užpildyti žemiau esančius laukus",
+      "add_new_message": "Prašome užpildyti žemiau esančius laukus",
       "return_account_page": "Grįžti į paskyros puslapį",
       "edit_address": "Redaguoti adresą",
       "first_name": "Pirmas vardas",
@@ -504,7 +505,8 @@
       "sign_in": "Prisijungti",
       "submit": "Pateikti",
       "login_heading": "Reikia paskyros?",
-      "signup_text": "Registruotis"
+      "signup_text": "Registruotis",
+      "alternate_provider_separator": "arba"
     },
     "order": {
       "title": "Įsakymas {{ name }}",

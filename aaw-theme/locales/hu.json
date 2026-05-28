@@ -101,7 +101,7 @@
     },
     "loading": "Betöltés...",
     "total_reviews": "összes vélemény",
-    "star_reviews_info": "{{ rating_value }} kívül {{ rating_max }} csillagok",
+    "star_reviews_info": "{{ rating_value }} / {{ rating_max }} csillag",
     "collapsible_content_title": "Összecsukható tartalom",
     "collapsible_content_description": "Leírás",
     "complementary_products": "Kiegészítő termékek",
@@ -124,7 +124,7 @@
       "post": "Üzenet elküldése",
       "back_to_blog": "Vissza a bloghoz",
       "share": "Oszd meg ezt a cikket",
-      "success": "Hozzászólása sikeresen elküldve! ",
+      "success": "Hozzászólása sikeresen elküldve!",
       "success_moderated": "Megjegyzését sikeresen közzétettük. Hamarosan közzétesszük, mivel blogunk moderált."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Mennyiség kiválasztása",
       "add_to_cart": "Kosárba",
       "preorder": "Előrendelés",
       "choose_options": "Válasszon opciókat",
@@ -255,7 +256,7 @@
       "button": "VISSZA A FŐOLDALRA"
     },
     "search": {
-      "serach_heading": "Keress most",
+      "search_heading": "Keress most",
       "suggestions": "Javaslatok",
       "no_results_heading": "Nem talál semmilyen eredményt",
       "no_results_body": "Sajnos nem találtunk találatot a keresésére.",
@@ -333,7 +334,7 @@
       "empty": "Az Ön kosara üres.",
       "no_result": "Nem található eredmény",
       "empty_description": "Sajnos nem találtunk terméket a kosarában.",
-      "cart_error": "Hiba történt a kosár frissítése közben. ",
+      "cart_error": "Hiba történt a kosár frissítése közben.",
       "cart_quantity_error_html": "Csak hozzá lehet adni {{ quantity }} ennek a tételnek a kosarába.",
       "taxes_and_shipping_policy_at_checkout_html": "Adók és <a href=\"{{ link }}\">szállítás</a> pénztárnál számítják ki",
       "taxes_included_but_shipping_at_checkout": "Tartalmazza az áfát és a szállítási költséget a fizetéskor számítjuk ki",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Összes megtekintése",
       "read_more": "Olvass tovább",
-      "artical_title": "Artikus cím",
-      "date_formate": "NN/HH/ÉÉ"
+      "article_title": "Artikus cím",
+      "date_format": "NN/HH/ÉÉ"
     },
     "featured_collection": {
       "view_all": "Összes megtekintése",
@@ -468,7 +469,7 @@
       "default": "Alapértelmezett",
       "address_count": "Cím {{ count }}",
       "add_new": "Új cím hozzáadása",
-      "add_new_message": " Kérjük, töltse ki az alábbi mezőket",
+      "add_new_message": "Kérjük, töltse ki az alábbi mezőket",
       "return_account_page": "Vissza a fiók oldalára",
       "edit_address": "Cím szerkesztése",
       "first_name": "Keresztnév",
@@ -504,7 +505,8 @@
       "sign_in": "Bejelentkezés",
       "submit": "Beküldés",
       "login_heading": "Szüksége van egy fiókra?",
-      "signup_text": "Regisztrálj"
+      "signup_text": "Regisztrálj",
+      "alternate_provider_separator": "vagy"
     },
     "order": {
       "title": "Rendelés {{ name }}",

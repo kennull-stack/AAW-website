@@ -27,7 +27,7 @@
       "share": "Partager",
       "alt_text": {
         "share_on_facebook": "Partager sur Facebook",
-        "share_on_twitter": "Tweeter sur Twitter",
+        "share_on_twitter": "Partager sur Twitter",
         "share_on_pinterest": "Épingler sur Pinterest"
       },
       "links": {
@@ -39,8 +39,8 @@
         "snapchat": "Snapchat",
         "linkedin": "Linkedin",
         "youtube": "Youtube",
-        "vimeo": "Viméo",
-        "tiktok": "TIC Tac"
+        "vimeo": "Vimeo",
+        "tiktok": "TikTok"
       }
     },
     "continue_shopping": "Continuer vos achats",
@@ -101,7 +101,7 @@
     },
     "loading": "Chargement...",
     "total_reviews": "avis totaux",
-    "star_reviews_info": "{{ rating_value }} hors de {{ rating_max }} étoiles",
+    "star_reviews_info": "{{ rating_value }} sur {{ rating_max }} étoiles",
     "collapsible_content_title": "Contenu pliable",
     "collapsible_content_description": "Description",
     "complementary_products": "Produits complémentaires",
@@ -124,7 +124,7 @@
       "post": "Poster un commentaire",
       "back_to_blog": "Retour au blog",
       "share": "Partagez cet article",
-      "success": "Votre commentaire a été posté avec succès ! ",
+      "success": "Votre commentaire a été posté avec succès !",
       "success_moderated": "Votre commentaire a été posté avec succès. Nous le publierons dans quelques temps, car notre blog est modéré."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Sélectionner la quantité",
       "add_to_cart": "Ajouter au panier",
       "preorder": "Pré-commander",
       "choose_options": "Choisissez les options",
@@ -255,7 +256,7 @@
       "button": "DE RETOUR À LA MAISON"
     },
     "search": {
-      "serach_heading": "Rechercher maintenant",
+      "search_heading": "Rechercher maintenant",
       "suggestions": "Suggestions",
       "no_results_heading": "Ne trouver aucun résultat",
       "no_results_body": "Malheureusement, nous n'avons trouvé aucun résultat correspondant à votre recherche.",
@@ -333,7 +334,7 @@
       "empty": "Votre panier est vide.",
       "no_result": "Aucun résultat trouvé",
       "empty_description": "Malheureusement, nous n'avons trouvé aucun produit dans votre panier.",
-      "cart_error": "Une erreur s'est produite lors de la mise à jour de votre panier. ",
+      "cart_error": "Une erreur s'est produite lors de la mise à jour de votre panier.",
       "cart_quantity_error_html": "Vous pouvez seulement ajouter {{ quantity }} de cet article à votre panier.",
       "taxes_and_shipping_policy_at_checkout_html": "Les impôts et <a href=\"{{ link }}\">expédition</a> Calculé à la caisse",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à la caisse",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Voir tout",
       "read_more": "En savoir plus",
-      "artical_title": "Titre artistique",
-      "date_formate": "JJ/MM/AA"
+      "article_title": "Titre artistique",
+      "date_format": "JJ/MM/AA"
     },
     "featured_collection": {
       "view_all": "Voir tout",
@@ -468,7 +469,7 @@
       "default": "Défaut",
       "address_count": "Adresse {{ count }}",
       "add_new": "Ajouter une nouvelle adresse",
-      "add_new_message": " Veuillez remplir les champs ci-dessous",
+      "add_new_message": "Veuillez remplir les champs ci-dessous",
       "return_account_page": "Retour à la page du compte",
       "edit_address": "Modifier l'adresse",
       "first_name": "Prénom",
@@ -504,7 +505,8 @@
       "sign_in": "Se connecter",
       "submit": "Soumettre",
       "login_heading": "Besoin d'un compte?",
-      "signup_text": "S'inscrire"
+      "signup_text": "S'inscrire",
+      "alternate_provider_separator": "ou"
     },
     "order": {
       "title": "Commande {{ name }}",

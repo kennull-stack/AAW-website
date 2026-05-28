@@ -39,12 +39,12 @@
 							  </div>
 							{%- endif -%}
 							  <div class="form-group">
-								  <label class="hidden" for="CustomerName-{{ section.id }}">Email</label>
+								  <label class="hidden" for="CustomerName-{{ section.id }}">{{ 'newsletter.label' | t }}</label>
 								  <input type="email" class="form-control" name="contact[email]" 
 										 id="CustomerName-{{ section.id }}" 
 										 autocomplete="email"  
 										 autocapitalize="off" 
-										 placeholder="Email" 
+										 placeholder="{{ 'newsletter.label' | t }}" 
 										 pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)*[a-zA-Z]{2,}))$" 
 										 required
 								  >

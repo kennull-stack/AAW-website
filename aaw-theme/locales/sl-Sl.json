@@ -101,7 +101,7 @@
     },
     "loading": "Nalaganje...",
     "total_reviews": "skupni pregledi",
-    "star_reviews_info": "{{ rating_value }} izven {{ rating_max }} zvezde",
+    "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvezd",
     "collapsible_content_title": "Zložljiva vsebina",
     "collapsible_content_description": "Opis",
     "complementary_products": "Dopolnilni izdelki",
@@ -124,7 +124,7 @@
       "post": "Objavi komentar",
       "back_to_blog": "Nazaj na blog",
       "share": "Delite ta članek z drugimi",
-      "success": "Vaš komentar je bil uspešno objavljen! ",
+      "success": "Vaš komentar je bil uspešno objavljen!",
       "success_moderated": "Vaš komentar je bil uspešno objavljen. Objavili ga bomo čez nekaj časa, saj je naš blog moderiran."
     },
     "onboarding_article": {
@@ -146,6 +146,7 @@
   },
   "products": {
     "product": {
+      "select_quantity": "Izberite količino",
       "add_to_cart": "Dodaj v voziček",
       "preorder": "Prednaročilo",
       "choose_options": "Izberite možnosti",
@@ -255,7 +256,7 @@
       "button": "NAZAJ DOMOV"
     },
     "search": {
-      "serach_heading": "Išči zdaj",
+      "search_heading": "Išči zdaj",
       "suggestions": "Predlogi",
       "no_results_heading": "Ne najde nobenih rezultatov",
       "no_results_body": "Na žalost nismo mogli najti nobenih rezultatov za vaše iskanje.",
@@ -333,7 +334,7 @@
       "empty": "Vaš nakupovalni voziček je prazen.",
       "no_result": "Ni rezultatov",
       "empty_description": "Na žalost nismo mogli najti nobenega izdelka v vaši košarici.",
-      "cart_error": "Med posodabljanjem vozička je prišlo do napake. ",
+      "cart_error": "Med posodabljanjem vozička je prišlo do napake.",
       "cart_quantity_error_html": "Lahko samo dodate {{ quantity }} tega artikla v vaš voziček.",
       "taxes_and_shipping_policy_at_checkout_html": "Davki in <a href=\"{{ link }}\">Dostava</a> obračunano na blagajni",
       "taxes_included_but_shipping_at_checkout": "Davek je vključen in poštnina izračunana na blagajni",
@@ -367,8 +368,8 @@
     "featured_blog": {
       "view_all": "Poglej vse",
       "read_more": "Preberi več",
-      "artical_title": "Umetniški naslov",
-      "date_formate": "DD/MM/LL"
+      "article_title": "Umetniški naslov",
+      "date_format": "DD/MM/LL"
     },
     "featured_collection": {
       "view_all": "Poglej vse",
@@ -468,7 +469,7 @@
       "default": "Privzeto",
       "address_count": "Naslov {{ count }}",
       "add_new": "Dodajte nov naslov",
-      "add_new_message": " Prosimo izpolnite spodnja polja",
+      "add_new_message": "Prosimo izpolnite spodnja polja",
       "return_account_page": "Nazaj na stran računa",
       "edit_address": "Uredi naslov",
       "first_name": "Ime",
@@ -504,7 +505,8 @@
       "sign_in": "Prijava",
       "submit": "Predloži",
       "login_heading": "Potrebujete račun?",
-      "signup_text": "Prijavite se"
+      "signup_text": "Prijavite se",
+      "alternate_provider_separator": "ali"
     },
     "order": {
       "title": "naročilo {{ name }}",
