@@ -916,7 +916,7 @@ function checkShippingAvailablity() {
             return false;
         }
     } else {
-        return false;
+        return typeof freeShippingBarStatus !== 'undefined' ? freeShippingBarStatus : false;
     }
 }
 function freeShippingBar(totalPrice, itemCount) {
@@ -2815,7 +2815,7 @@ function onLoadEvents(){
         }
       }
 
-    if (document.querySelector('[data-parallax-banner]')) {
+    if (document.querySelector('[data-parallax-banner]') && typeof universalParallax !== 'undefined') {
         new universalParallax().init({
             speed:10
         });
@@ -2884,7 +2884,7 @@ document.addEventListener("shopify:section:load", function(section) {
     if(target.querySelector('announcement-bar')){
         fullHeightCalculate();   
     }
-    if (target.querySelector('[data-parallax-banner]')) {
+    if (target.querySelector('[data-parallax-banner]') && typeof universalParallax !== 'undefined') {
         new universalParallax().init({
             speed:10
         });

@@ -102,6 +102,10 @@
                 <div class="empty-card-content">
                   <h4 class="empty-card-heading">{{ 'sections.cart.empty' | t }}</h4>
                   <p class="empty-card-desc">{{ 'sections.cart.empty_description' | t }}</p>
+                  <div class="empty-card-actions">
+                    {% render 'button', class: 'empty-card-button', button_link: '/collections/z-series', button_style: 'solid', button_size: 'small', button_text: 'Explore Z Series' %}
+                    {% render 'button', class: 'empty-card-button', button_link: '/collections/custom-iem', button_style: 'outline', button_size: 'small', button_text: 'Browse Custom IEMs' %}
+                  </div>
                  
                   {% assign btnText = 'general.continue_shopping' | t %}
   
@@ -580,4 +584,4 @@
         
      {% endif %}
   }
-  </style> 
+  </style>

@@ -16,7 +16,6 @@
       "blocks": {
         "6d70f3eb-3b40-48e6-b256-a3a8fb0d06f1": {
           "type": "announcement",
-          "disabled": false,
           "settings": {
             "announcement_text": "Worldwide shipping &ndash; free local pickup at 76 Playfair Rd",
             "background_color": "#a60c0c",
@@ -58,7 +57,7 @@
         "interval": 3,
         "move_placement": false,
         "enable_social_media": true,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "enable_currency_selector": true,
         "background_color": "#a60c0c",
         "text_color": "#ffffff",
@@ -69,6 +68,7 @@
       "type": "header",
       "settings": {
         "header_style": "header_5",
+        "tabbed_menus_style": "center",
         "enable_sticky_header": true,
         "sticky_header_type": "on_scroll",
         "logo": "shopify://shop_images/aawlogowhiteSHD.png",

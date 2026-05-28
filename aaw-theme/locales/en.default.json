@@ -333,7 +333,7 @@
       "checkout": "Checkout",
       "empty": "Your cart is empty.",
       "no_result": "No result found",
-      "empty_description": "Unfortunately we could not find any products in your cart.",
+      "empty_description": "Your cart is empty. Start with the Z Series or explore custom IEMs.",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
