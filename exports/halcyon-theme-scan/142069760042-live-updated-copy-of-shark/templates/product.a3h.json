@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "a3h_lux_product": {
+      "type": "a3h-lux-product",
+      "settings": {
+        "section_visibility": "always"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3",
+            "seo_heading": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "hide_shipping_content": false
+          }
+        },
+        "variant_a3h_lux": {
+          "type": "variant",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "pickup_a3h_lux": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "dynamic_checkout_btn": true,
+            "show_recipient_form": false
+          }
+        },
+        "complementary_a3h_lux": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "social_a3h_lux": {
+          "type": "social-icons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_a3h_lux",
+        "quantity_selector",
+        "pickup_a3h_lux",
+        "button",
+        "complementary_a3h_lux",
+        "social_a3h_lux"
+      ],
+      "disabled": true,
+      "settings": {
+        "gallery_style": "slider",
+        "thumbnail_position": "left",
+        "overlapped_thumbnails": false,
+        "enable_sticky_content": true,
+        "desktop_media_width": "medium",
+        "desktop_grid_image_size": "auto",
+        "image_zoom": "lightbox",
+        "enable_sticky_cart": false,
+        "thumbnial_on_mobile": false,
+        "mobile_grid_image_size": "auto",
+        "color_scheme": "",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 35,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "a3h_lux_product",
+    "main"
+  ]
+}

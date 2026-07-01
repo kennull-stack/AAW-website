@@ -1,0 +1,87 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9294                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9294
+[3] http://127.0.0.1:9294/gift_cards/[store_id]/preview
+
+• 00:24:24 Request »    GET 200 /?fresh=seo-check 
+• 00:24:26 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:25:02  Synced » update assets/aaw-home-z07.css
+• 00:25:15 Request »    GET 200 /?fresh=seo-check 
+• 00:25:15 Request »    GET 200 /pages/store-locator 
+• 00:25:28 Request »    GET 200 /pages/store-locator?preview=stepsound 
+• 00:26:15 Request »    GET 200 /?fresh=seo-check 
+• 00:27:08 Request »    GET 200 /?fresh=seo-check 
+• 00:27:08  Synced » update sections/store-locator.liquid
+• 00:27:13  Synced » update assets/store-locator.css
+• 00:27:22 Request »    GET 200 /?fresh=seo-check 
+• 00:27:22  Synced » update assets/global.js
+• 00:27:25 Request »    GET 200 /?fresh=final-check 
+• 00:27:28 Request »    GET 200 /?fresh=final-check 
+• 00:28:55  Synced » update sections/store-locator.liquid
+• 00:28:55 Request »    GET 200 /?fresh=final-check 
+• 00:33:58 Request »    GET 200 /?fresh=final-check 
+• 00:33:58  Synced » update assets/z07-language-toggle.js
+• 00:43:41 Request »    GET 401 /pages/store-locator?style=current 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "assets/store-locator.css" from remote theme.         │
+│                                                                              │
+│  Failed to delete file "assets/store-locator.css" from remote theme.         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 00:45:06  Synced » update assets/store-locator.css
+• 00:46:26  Synced » update assets/store-locator.css
+• 00:47:03  Synced » update layout/theme.liquid
+• 00:47:03 Request »    GET 200 /?fresh=final-check 
+• 00:47:06 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:47:28  Synced » update templates/page.locator.json
+• 00:47:29 Request »    GET 200 /?fresh=final-check 
+• 00:48:31 Request »    GET 200 /?fresh=final-check 
+• 00:48:31 Request »    GET 200 /?fresh=final-check 
+• 00:48:31  Synced » update templates/product.z07.json
+• 00:48:31  Synced » update templates/product.z05.json
+• 00:48:31  Synced » update assets/z07-language-toggle.js
+• 00:48:31 Request »    GET 200 /?fresh=final-check 
+• 00:48:56 Request »    GET 200 /?fresh=final-check 
+• 00:48:57  Synced » update assets/z07-language-toggle.js
+• 00:49:49 Request »    GET 200 /?fresh=final-check 
+• 00:49:50  Synced » update assets/z07-language-toggle.js
+• 00:50:45  Synced » update snippets/aaw-home-schema.liquid
+• 00:50:45 Request »    GET 200 /?fresh=final-check 
+• 00:51:02  Synced » update sections/header.liquid
+• 00:51:38 Request »    GET 200 /?fresh=website-schema 
+• 00:52:46  Synced » update templates/page.locator.json
+• 00:52:46 Request »    GET 200 /?fresh=website-schema 
+• 00:52:46  Synced » update templates/product.z05.json
+• 00:52:46  Synced » update templates/product.z07.json
+• 00:52:46 Request »    GET 200 /?fresh=website-schema 
+• 00:52:47  Synced » update assets/z07-language-toggle.js
+• 00:56:26  Synced » update templates/product.z05.json
+• 00:59:11  Synced » update templates/product.z07.json
+• 00:59:12  Synced » update assets/z07-product.css
+• 01:14:35  Synced » update assets/aaw-judgeme-reviews.js
+• 01:19:24  Synced » update templates/product.z05.json
+• 01:23:12  Synced » update assets/aaw-judgeme-reviews.js
+• 01:28:17  Synced » update assets/z07-language-toggle.js
+• 01:29:44  Synced » update assets/aaw-judgeme-reviews.js
+• 01:35:44  Synced » update assets/aaw-judgeme-reviews.js
+• 01:43:43  Synced » update assets/aaw-judgeme-reviews.js
+• 01:54:32  Synced » update assets/aaw-judgeme-reviews.js
+• 01:57:53  Synced » update assets/aaw-judgeme-reviews.js
+• 07:09:18  Synced » update templates/product.z07.json
+• 07:19:09  Synced » update assets/z07-product.css
+• 08:02:45  Synced » update templates/product.z07.json
+• 08:27:45  Synced » update assets/z07-product.css

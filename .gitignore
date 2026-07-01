@@ -1,0 +1,5 @@
+.env.shopify
+.env.shopify.oauth
+exports/chrome-shot-profile/
+exports/chrome-shot-profile-en/
+backups/*.zip

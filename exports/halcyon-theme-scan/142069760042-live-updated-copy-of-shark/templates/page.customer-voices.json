@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "aaw_customer_voices_page": {
+      "type": "aaw-customer-voices",
+      "settings": {
+        "layout_mode": "page",
+        "eyebrow": "Customer voices",
+        "heading": "Customer voices from years of listening.",
+        "intro": "Customer impressions collected through AAW dealers via Judge.me, selected for sound, fit, and long-term listening notes.",
+        "page_link": ""
+      }
+    }
+  },
+  "order": [
+    "aaw_customer_voices_page"
+  ]
+}

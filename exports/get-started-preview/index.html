@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started — AAW Custom In-Ear Monitors | Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   Get Started page editorial styles — full theme preview
+   Matches Z05 product page editorial pattern with gs- prefix.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#080808;color:#f5f2ea;line-height:1.5;overflow-x:hidden}
+
+/* ── Page Chrome ── */
+.gs-nav{position:sticky;top:0;z-index:50;background:rgba(8,8,8,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.gs-nav-inner{width:min(1180px,calc(100vw - 36px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:18px}
+.gs-nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.gs-nav-logo img{height:28px;width:auto}
+.gs-nav-logo span{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#b8b0a2}
+.gs-nav-links{display:flex;align-items:center;gap:24px}
+.gs-nav-links a{color:#cfc7bb;text-decoration:none;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.gs-nav-links a:hover{color:#e2b768}
+.gs-breadcrumb{display:flex;align-items:center;gap:8px;padding:12px 0;color:#8f887f;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.gs-breadcrumb a{color:#cfc7bb;text-decoration:none}
+.gs-breadcrumb a:hover{color:#e2b768}
+.gs-breadcrumb span{color:#e2b768}
+.gs-footer{background:#060606;border-top:1px solid rgba(255,255,255,.1);padding:36px 0;text-align:center}
+.gs-footer p{color:#6e6962;font-size:12px;line-height:1.6}
+
+/* ── Feature Shell & Layout ── */
+.gs-feature-shell{position:relative;width:100vw;margin-left:calc(50% - 50vw);background:#080808;color:#f5f2ea;font-family:inherit;letter-spacing:0}
+.gs-feature-shell *{box-sizing:border-box}
+.gs-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto}
+.gs-section{padding:76px 0;background:#f4f1ea;color:#111}
+.gs-section.dark{background:#080808;color:#f5f2ea}
+.gs-section h2{margin:0;color:inherit;font-size:clamp(32px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;font-weight:900}
+.gs-section p{font-size:17px;line-height:1.62;color:inherit}
+.gs-section.dark p{color:#d8d1c7}
+.gs-grid-2{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:start}
+.gs-grid-2.flip{grid-template-columns:1.18fr .82fr}
+.gs-kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#a87725;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+.gs-section.dark .gs-kicker{color:#e2b768}
+.gs-kicker:before{content:"";width:36px;height:1px;background:#d6a756;display:inline-block}
+.gs-section.dark .gs-kicker:before{background:#e2b768}
+.gs-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border:1px solid #e2b768;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:12px;color:#090909;background:#e2b768;letter-spacing:.04em;transition:opacity .2s,transform .2s;cursor:pointer}
+.gs-btn.secondary{background:transparent;color:#f2e5c5}
+.gs-btn:hover{opacity:.88;transform:translateY(-1px)}
+
+/* ── Hero ── */
+.gs-hero{padding:28px 0 0;min-height:60vh;display:grid;grid-template-columns:minmax(320px,.88fr) minmax(420px,1.12fr);gap:42px;align-items:center}
+.gs-hero-copy{position:relative;z-index:2}
+.gs-hero h1{max-width:680px;margin:0 0 22px;color:#fff;font-size:clamp(46px,5.6vw,80px);line-height:.92;font-weight:900;text-transform:uppercase;letter-spacing:0}
+.gs-hero h1 em{display:block;color:#e2b768;font-style:normal;font-size:.48em;line-height:1.15;margin-top:6px;text-transform:none;font-weight:700;letter-spacing:.02em}
+.gs-hero .gs-dek{max-width:560px;margin:0;color:#d8d1c7;font-size:clamp(17px,1.55vw,21px);line-height:1.48}
+.gs-hero-media{position:relative;aspect-ratio:4/5;min-height:0;align-self:stretch;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#171717,#050505);border:1px solid rgba(255,255,255,.12)}
+.gs-hero-media:before{content:"CIEM";position:absolute;top:22px;right:20px;color:rgba(255,255,255,.06);font-size:clamp(60px,10vw,130px);line-height:.8;font-weight:900;letter-spacing:0}
+.gs-hero-media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:contrast(1.04) saturate(.96)}
+
+/* ── Stat Strip ── */
+.gs-stat-strip{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:#0f0f0f}
+.gs-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0}
+.gs-stat{padding:26px 22px;background:#151515;min-height:112px}
+.gs-stat b{display:block;color:#fff;font-size:22px;line-height:1.08}
+.gs-stat span{display:block;margin-top:10px;color:#bdb5aa;font-size:13px;line-height:1.4}
+
+/* ── Steps ── */
+.gs-steps-section{background:#f4f1ea;color:#111}
+.gs-steps-head{max-width:820px;margin-bottom:42px}
+.gs-steps-head h2{max-width:820px}
+.gs-steps-head>p{margin:16px 0 0;color:#302b25;font-size:18px;line-height:1.58}
+.gs-steps-body{display:grid;grid-template-columns:minmax(320px,.92fr) minmax(420px,1.08fr);gap:36px;align-items:start}
+.gs-steps-list{display:grid;gap:1px;background:#d8d0c3;border:1px solid #d8d0c3}
+.gs-step{border-top:2px solid #111;background:#fff;padding:24px 26px;min-height:0}
+.gs-step:first-child{border-top:0}
+.gs-step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;margin-bottom:14px;background:#111;color:#e2b768;font-size:14px;font-weight:900;line-height:1}
+.gs-step h3{margin:0 0 8px;color:#111;font-size:21px;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;font-weight:900}
+.gs-step p{margin:0;color:#38322b;font-size:14px;line-height:1.55}
+.gs-steps-image{margin:0;position:sticky;top:96px;overflow:hidden;background:#080808;border:1px solid rgba(0,0,0,.16);padding:12px;min-height:420px;display:flex;align-items:center;justify-content:center}
+.gs-steps-image img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;background:#080808}
+.gs-steps-image figcaption{position:absolute;left:50%;right:auto;bottom:24px;width:min(340px,calc(100% - 40px));transform:translateX(-50%);background:rgba(0,0,0,.74);border:1px solid rgba(226,183,104,.28);padding:13px;color:#f2e5c5;text-align:center}
+.gs-steps-image b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.gs-steps-image span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}
+
+/* ── Impressions ── */
+.gs-impressions-section{background:#050505}
+.gs-impressions-section h2{max-width:600px;font-size:clamp(36px,4.8vw,64px)}
+.gs-impressions-image{margin:0;position:relative;overflow:hidden;background:#080808;border:1px solid rgba(255,255,255,.12);min-height:420px}
+.gs-impressions-image img{display:block;width:100%;height:100%;min-height:420px;object-fit:cover}
+.gs-impressions-image figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.14);padding:13px;color:#f2e5c5}
+.gs-impressions-image b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.gs-impressions-image span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}
+.gs-impressions-copy>p{margin:0 0 18px;color:#d8d1c7}
+.gs-impressions-copy>p:last-child{margin-bottom:0}
+.gs-impressions-copy a{color:#e2b768;text-decoration:none}
+.gs-impressions-copy a:hover{text-decoration:underline}
+.gs-note{border-left:3px solid #e2b768;padding:18px 20px;margin:22px 0;background:linear-gradient(90deg,rgba(226,183,104,.12),rgba(226,183,104,.035));color:#f4e8d0}
+.gs-note strong{display:block;margin-bottom:8px;color:#fff;font-size:14px;line-height:1.2}
+.gs-note p{margin:0;color:#f4e8d0;font-size:15px;line-height:1.55}
+
+/* ── Address ── */
+.gs-address-section{background:#f4f1ea;color:#111}
+.gs-address-section h2{max-width:640px}
+.gs-address-image{margin:0;position:sticky;top:96px;overflow:hidden;background:#080808;border:1px solid rgba(0,0,0,.16);padding:12px;min-height:380px;display:flex;align-items:center;justify-content:center}
+.gs-address-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.gs-address-image figcaption{position:absolute;left:50%;right:auto;bottom:24px;width:min(340px,calc(100% - 40px));transform:translateX(-50%);background:rgba(0,0,0,.74);border:1px solid rgba(226,183,104,.28);padding:13px;color:#f2e5c5;text-align:center}
+.gs-address-image b{display:block;font-size:12px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.gs-address-image span{display:block;margin-top:7px;color:#d6cec2;font-size:12px;line-height:1.38}
+.gs-address-block{border:2px solid #d6a756;background:#fff;padding:28px 30px;margin:0 0 24px}
+.gs-address-block h3{margin:0 0 18px;color:#6d4b16;font-size:18px;line-height:1.15;text-transform:uppercase;letter-spacing:.04em;font-weight:900}
+.gs-address-block address{font-style:normal;color:#302b25;font-size:16px;line-height:1.68}
+.gs-address-block address strong{display:block;color:#111;margin-bottom:4px}
+.gs-digital-note{border-left:3px solid #d6a756;padding:16px 20px;background:rgba(214,167,86,.08)}
+.gs-digital-note strong{display:block;margin-bottom:6px;color:#6d4b16;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.gs-digital-note p{margin:0;color:#302b25;font-size:15px;line-height:1.55}
+.gs-digital-note a{color:#6d4b16;text-decoration:none}
+.gs-digital-note a:hover{text-decoration:underline}
+
+/* ── Craft Gallery ── */
+.gs-craft-section{background:#080808}
+.gs-craft-head{max-width:820px;margin-bottom:38px}
+.gs-craft-head h2{max-width:860px}
+.gs-craft-head>p{margin:16px 0 0;color:#d8d1c7;font-size:18px;line-height:1.58}
+.gs-craft-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-bottom:24px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+.gs-craft-strip article{background:#111;padding:24px 28px;min-height:104px}
+.gs-craft-strip span{display:block;margin-bottom:10px;color:#e2b768;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.gs-craft-strip b{display:block;color:#fff;font-size:18px;line-height:1.28;font-weight:700}
+.gs-craft-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gs-craft-gallery figure{margin:0;position:relative;overflow:hidden;background:#111;border:1px solid rgba(255,255,255,.12);aspect-ratio:3/4;min-height:280px;cursor:pointer}
+.gs-craft-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.gs-craft-gallery figure:hover img{transform:scale(1.04)}
+.gs-craft-gallery figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.12);padding:10px 12px;color:#f2e5c5}
+.gs-craft-gallery b{display:block;font-size:11px;line-height:1.15;text-transform:uppercase;letter-spacing:.06em}
+.gs-craft-gallery span{display:block;margin-top:5px;color:#d6cec2;font-size:11px;line-height:1.35}
+
+/* ── Lightbox ── */
+.gs-lightbox{position:fixed;z-index:120;inset:0;display:none;align-items:center;justify-content:center;padding:34px;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);cursor:pointer}
+.gs-lightbox.is-open{display:flex}
+.gs-lightbox figure{position:relative;width:min(960px,calc(100vw - 68px));max-height:calc(100vh - 68px);margin:0;background:#050505;border:1px solid rgba(226,183,104,.36);box-shadow:0 30px 90px rgba(0,0,0,.65);overflow:hidden;cursor:default}
+.gs-lightbox img{display:block;width:100%;height:auto;max-height:calc(100vh - 180px);object-fit:contain;background:#050505}
+.gs-lightbox figcaption{padding:16px 18px;background:#080808;color:#f2e5c5}
+.gs-lightbox figcaption b{display:block;font-size:14px;line-height:1.2;text-transform:uppercase;letter-spacing:.06em}
+.gs-lightbox figcaption span{display:block;margin-top:6px;color:#d6cec2;font-size:14px;line-height:1.45}
+.gs-lightbox-close{position:fixed;top:18px;right:18px;z-index:121;width:44px;height:44px;border:1px solid rgba(226,183,104,.6);background:#090909;color:#f2e5c5;font-size:28px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+
+/* ── Final CTA ── */
+.gs-final{background:#0a0a0a;color:#fff;text-align:center;padding:72px 0;border-top:1px solid rgba(255,255,255,.12)}
+.gs-final-inner{display:flex;flex-direction:column;align-items:center}
+.gs-final h2{max-width:900px;margin:0 auto;color:#fff;font-size:clamp(34px,5.2vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:0;font-weight:900}
+.gs-final p{max-width:680px;margin:18px auto 0;color:#d1c8bd;font-size:18px;line-height:1.55}
+.gs-final .gs-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:24px}
+
+/* ── Responsive ── */
+@media(max-width:980px){
+  .gs-grid-2,.gs-grid-2.flip,.gs-hero,.gs-steps-body{grid-template-columns:1fr}
+  .gs-hero{padding-top:20px;min-height:auto;gap:30px}
+  .gs-hero-media{aspect-ratio:16/10;min-height:340px}
+  .gs-steps-image{position:static;min-height:360px}
+  .gs-steps-image img{aspect-ratio:16/10}
+  .gs-stats{grid-template-columns:1fr 1fr}
+  .gs-craft-strip{grid-template-columns:1fr}
+  .gs-craft-gallery{grid-template-columns:repeat(2,1fr)}
+  .gs-nav-links{display:none}
+}
+@media(max-width:700px){
+  .gs-craft-gallery{grid-template-columns:1fr}
+  .gs-craft-gallery figure{aspect-ratio:16/10;min-height:240px}
+  .gs-stats{grid-template-columns:1fr}
+  .gs-section{padding:52px 0}
+  .gs-hero h1{font-size:42px}
+  .gs-impressions-image,.gs-impressions-image img{min-height:300px}
+}
+@media(max-width:560px){
+  .gs-wrap{width:min(100% - 24px,1180px)}
+  .gs-hero{padding-top:16px}
+  .gs-hero-media{min-height:280px}
+  .gs-hero-media:before{top:14px;right:14px;font-size:48px}
+  .gs-step{padding:20px 18px}
+  .gs-step h3{font-size:18px}
+  .gs-steps-image{padding:8px;min-height:280px}
+  .gs-steps-image figcaption{position:static;width:auto;max-width:none;margin:8px 0 0;transform:none;background:#090909}
+  .gs-address-block{padding:20px}
+  .gs-address-image{padding:8px;min-height:260px}
+  .gs-address-image figcaption{position:static;width:auto;max-width:none;margin:8px 0 0;transform:none;background:#090909}
+  .gs-impressions-image figcaption{position:static;margin:8px;background:#090909}
+  .gs-craft-gallery figure{aspect-ratio:16/10;min-height:220px}
+  .gs-craft-gallery figcaption{position:static;margin:8px;background:#090909}
+  .gs-craft-strip article{padding:18px 20px}
+  .gs-final{padding:56px 0}
+  .gs-final h2{font-size:38px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-nav-logo" href="#">
+      <img src="aaw-logo-white.svg" alt="AAW" width="100" height="28">
+      <span>Advanced AcousticWerkes</span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="#">Universal IEM</a>
+      <a href="#">Custom IEM</a>
+      <a href="#">Custom Builder</a>
+      <a href="#">Get Started</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ SECTION 1: HERO ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <div class="gs-wrap">
+    <div class="gs-breadcrumb">
+      <a href="#">Home</a><span aria-hidden="true">/</span><span>Get Started</span>
+    </div>
+  </div>
+  <section class="gs-hero gs-wrap">
+    <div class="gs-hero-copy">
+      <p class="gs-kicker">Custom In-Ear Monitors</p>
+      <h1>Your Sound,<em>Shaped to You</em></h1>
+      <p class="gs-dek">A custom in-ear monitor is not a louder universal. It is a monitor built around the shape of your ear, tuned to your preference, and finished by hand in our Singapore workshop. The process starts with a pair of ear impressions and ends with a sound that fits no one else.</p>
+    </div>
+    <div class="gs-hero-media">
+      <img src="aaw-ins-hero-ciem-2026.jpg" alt="AAW custom in-ear monitors showcasing hand-finished shells and faceplates" width="1024" height="1280" loading="eager">
+    </div>
+  </section>
+  <div class="gs-stat-strip">
+    <div class="gs-wrap gs-stats">
+      <div class="gs-stat"><b>Singapore Workshop</b><span>Every shell is 3D-printed and hand-finished at 76 Playfair Rd, where we have been building since 2014.</span></div>
+      <div class="gs-stat"><b>Professional Impressions</b><span>We work with audiologists worldwide. A clean, deep impression is the foundation of a monitor that disappears in the ear.</span></div>
+      <div class="gs-stat"><b>2–4 Week Build</b><span>From the day we receive your impressions, most orders ship within two to four weeks, including finishing and QC.</span></div>
+      <div class="gs-stat"><b>Worldwide Shipping</b><span>We ship to over 80 countries. Free local pickup is available at our Singapore showroom.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ SECTION 2: STEPS ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <section class="gs-section gs-steps-section">
+    <div class="gs-wrap">
+      <div class="gs-steps-head">
+        <p class="gs-kicker">How It Works</p>
+        <h2>Five steps from order to first listen</h2>
+        <p>The path to a custom monitor is simpler than it sounds. Most of the work happens in our workshop, and we guide you through the parts that need your attention.</p>
+      </div>
+      <div class="gs-steps-body">
+        <div class="gs-steps-list">
+          <article class="gs-step">
+            <span class="gs-step-num">01</span>
+            <h3>Place Your Order</h3>
+            <p>Choose your model on our website. Every AAW custom IEM starts with one of our acoustic platforms: from the entry-level A3H+ Lux to the flagship Canary Pro. Add your faceplate design, cable choice, and any personal engraving during checkout.</p>
+          </article>
+          <article class="gs-step">
+            <span class="gs-step-num">02</span>
+            <h3>Get Your Ear Impressions Taken</h3>
+            <p>Visit a certified audiologist for silicone ear impressions. The impression needs to capture the full shape of your ear canal and concha, including the second bend. We provide an imprinting guide you can bring to your appointment. At our Singapore showroom, we offer the service at SGD $50.</p>
+          </article>
+          <article class="gs-step">
+            <span class="gs-step-num">03</span>
+            <h3>Send the Impressions to Us</h3>
+            <p>Ship your impressions with your order confirmation and adequate protection to our Singapore workshop. If your audiologist offers 3D scanning, you can also send the digital STL or HPS files to support@aaw.me. Either way, we confirm receipt within one business day.</p>
+          </article>
+          <article class="gs-step">
+            <span class="gs-step-num">04</span>
+            <h3>Manufacturing Begins</h3>
+            <p>Once your impressions arrive, our lab team 3D-scans them, models your shell geometry, and begins the build. Drivers are installed and crossed over by hand. The faceplate is finished to your specification. Each pair is measured and listened to before it leaves the bench.</p>
+          </article>
+          <article class="gs-step">
+            <span class="gs-step-num">05</span>
+            <h3>We Ship Your CIEMs to You</h3>
+            <p>Your completed monitors ship with a carry case, cleaning tool, cable, and documentation. Tracking is provided the moment the package leaves Singapore. Most international deliveries arrive within three to seven business days.</p>
+          </article>
+        </div>
+        <figure class="gs-steps-image">
+          <img src="canary-pro-ciem-pair.jpg" alt="AAW Canary Pro custom in-ear monitor pair with clear shells showing internal drivers" loading="lazy">
+          <figcaption><b>Custom Canary Pro</b><span>A finished pair with transparent shells, showing the driver layout and faceplate detail.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ SECTION 3: IMPRESSIONS ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <section class="gs-section dark gs-impressions-section">
+    <div class="gs-wrap gs-grid-2">
+      <div class="gs-impressions-copy">
+        <p class="gs-kicker">Ear Impressions</p>
+        <h2>The foundation of a perfect fit</h2>
+        <p>An ear impression is a silicone cast of your ear canal and outer ear. It captures the unique shape that no universal tip can fully match. When done well, the resulting monitor sits flush, seals without pressure, and stays put through long sessions.</p>
+        <p>We strongly recommend visiting a professionally certified audiologist for this step. A good impression goes past the second bend of the ear canal and includes the full concha and helix area. An incomplete impression leads to a loose fit, and a remake takes time.</p>
+        <div class="gs-note">
+          <strong>Showroom service available</strong>
+          <p>If you are in Singapore, we offer ear impression taking at our showroom for SGD $50. The process takes about 10–20 minutes. Please have your ears cleared before coming for the best result.</p>
+        </div>
+        <p>If you need help locating an audiologist near you, email us at <a href="mailto:support@aaw.me">support@aaw.me</a> and we will do our best to point you in the right direction.</p>
+      </div>
+      <figure class="gs-impressions-image">
+        <img src="aaw-ins-method-custom-group-2026.jpg" alt="Group of AAW custom in-ear monitors showing variety of shell finishes and faceplate designs" loading="lazy">
+        <figcaption><b>Custom shell variety</b><span>Each pair is built from individual ear impressions, so no two monitors are exactly alike. The shell shape follows your anatomy.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ SECTION 4: ADDRESS ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <section class="gs-section gs-address-section">
+    <div class="gs-wrap gs-grid-2 flip">
+      <figure class="gs-address-image">
+        <img src="aaw-ins-gallery-custom-2025-900.jpg" alt="AAW custom in-ear monitor shell craft and hand finishing detail" loading="lazy">
+        <figcaption><b>Hand-finished in Singapore</b><span>Every shell passes through multiple finishing stages before assembly begins.</span></figcaption>
+      </figure>
+      <div>
+        <p class="gs-kicker">Send Your Impressions</p>
+        <h2>Physical or digital, we receive both</h2>
+        <p style="margin:16px 0 24px;color:#302b25">Once your ear impressions are done, ship them with your order confirmation and adequate protection. We scan them into our digital workflow the day they arrive and confirm receipt by email.</p>
+        <div class="gs-address-block">
+          <h3>Shipping Address</h3>
+          <address>
+            <strong>Advanced AcousticWerkes</strong>
+            #01-03, LHK2 Building<br>
+            76 Playfair Road<br>
+            Singapore 367996<br>
+            Attn: CIEM Department<br>
+            Tel: +65 8731 5476
+          </address>
+        </div>
+        <div class="gs-digital-note">
+          <strong>Digital scan option</strong>
+          <p>If your audiologist can scan your ear impressions, send the STL or HPS files directly to <a href="mailto:support@aaw.me">support@aaw.me</a>. Digital files skip the physical shipping step and can reduce turnaround time by several days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ SECTION 5: CRAFT ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <section class="gs-section dark gs-craft-section">
+    <div class="gs-wrap">
+      <div class="gs-craft-head">
+        <p class="gs-kicker">The Craft</p>
+        <h2>Each shell is finished by hand</h2>
+        <p>After we receive your impressions, the real work begins. 3D scanning, shell modeling, driver installation, crossover tuning, faceplate finishing, and acoustic measurement. Every step happens under one roof in Singapore, and every pair is listened to before it ships.</p>
+      </div>
+      <div class="gs-craft-strip">
+        <article><span>Shell Body</span><b>3D-printed from your ear scan, then hand-finished for a smooth, comfortable fit</b></article>
+        <article><span>Faceplate</span><b>Choose from carbon fibre, abalone, wood, acrylic, or custom artwork — each applied by hand</b></article>
+        <article><span>QC Check</span><b>Every pair is measured on our audio analyzer and listened to for channel matching before packing</b></article>
+      </div>
+      <div class="gs-craft-gallery" id="gsCraftGallery">
+        <figure>
+          <img src="ash-custom-abalone.jpg" alt="AAW custom IEM with abalone shell faceplate" loading="lazy">
+          <figcaption><b>Abalone faceplate</b><span>Natural shell with iridescent depth that shifts under light.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="ash-custom-blue-gold.jpg" alt="AAW custom IEM with blue and gold faceplate design" loading="lazy">
+          <figcaption><b>Blue &amp; gold</b><span>A classic colour pairing, hand-laid into each faceplate.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="ash-custom-white-gold.jpg" alt="AAW custom IEM with white and gold faceplate finish" loading="lazy">
+          <figcaption><b>White &amp; gold</b><span>Clean, bright, and refined. Popular for stage use.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="canary-pro-ciem-front.jpg" alt="AAW Canary Pro custom IEM faceplate pair front view" loading="lazy">
+          <figcaption><b>Canary Pro custom</b><span>A finished flagship pair ready for final inspection.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ SECTION 6: FINAL CTA ═══════════════════════ -->
+<div class="gs-feature-shell">
+  <section class="gs-final">
+    <div class="gs-wrap gs-final-inner">
+      <h2>Ready to start your build?</h2>
+      <p>The first track that fits perfectly is worth the wait. Browse our custom platforms, choose your faceplate, and place your order. We will guide you through the rest.</p>
+      <div class="gs-actions">
+        <a class="gs-btn" href="#">Browse Custom IEMs</a>
+        <a class="gs-btn secondary" href="#">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="gs-footer">
+  <div class="gs-wrap">
+    <p>Advanced AcousticWerkes &mdash; We are the Mechanics of Sound<br>Copyright &copy; 2026 Advanced AcousticWerkes. Powered by Shopify.</p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════ LIGHTBOX ═══════════════════════ -->
+<div class="gs-lightbox" id="gsLightbox" aria-hidden="true">
+  <button class="gs-lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption><b></b><span></span></figcaption>
+  </figure>
+</div>
+
+<!-- ═══════════════════════ LIGHTBOX SCRIPT ═══════════════════════ -->
+<script>
+(function(){
+  var lightbox = document.getElementById('gsLightbox');
+  var lightImg = lightbox.querySelector('img');
+  var lightTitle = lightbox.querySelector('figcaption b');
+  var lightText = lightbox.querySelector('figcaption span');
+  var closeBtn = lightbox.querySelector('.gs-lightbox-close');
+  var lastTrigger = null;
+
+  function openLightbox(figure) {
+    lastTrigger = figure;
+    var img = figure.querySelector('img');
+    var title = figure.querySelector('figcaption b');
+    var text = figure.querySelector('figcaption span');
+    lightImg.src = img.currentSrc || img.src;
+    lightImg.alt = img.alt || '';
+    lightTitle.textContent = title ? title.textContent : '';
+    lightText.textContent = text ? text.textContent : '';
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lightImg.removeAttribute('src');
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  document.querySelectorAll('.gs-craft-gallery figure').forEach(function(figure) {
+    figure.addEventListener('click', function() { openLightbox(figure); });
+    figure.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(figure); }
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+  });
+})();
+</script>
+
+<!-- ═══════════════════════ SCHEMA (hidden) ═══════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Order AAW Custom In-Ear Monitors",
+  "description": "Five-step guide to ordering custom in-ear monitors from Advanced AcousticWerkes.",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Place Your Order", "text": "Choose your model on the AAW website and add faceplate design, cable choice, and personal engraving during checkout."},
+    {"@type": "HowToStep", "position": 2, "name": "Get Ear Impressions Taken", "text": "Visit a certified audiologist for silicone ear impressions that capture the full shape of your ear canal and concha."},
+    {"@type": "HowToStep", "position": 3, "name": "Send Impressions to AAW", "text": "Ship physical impressions to AAW Singapore at 76 Playfair Rd #01-03, Singapore 367996, or send digital STL/HPS files to support@aaw.me."},
+    {"@type": "HowToStep", "position": 4, "name": "Manufacturing", "text": "AAW 3D-scans impressions, models shell geometry, installs drivers, finishes faceplates, and measures each pair."},
+    {"@type": "HowToStep", "position": 5, "name": "Shipping", "text": "Completed monitors ship worldwide with carry case, cable, and documentation. International delivery typically takes 3–7 business days."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How long does it take to get custom IEMs from AAW?", "acceptedAnswer": {"@type": "Answer", "text": "Most orders ship within two to four weeks from the day we receive your ear impressions. Digital scan files can reduce turnaround time by skipping the physical shipping step."}},
+    {"@type": "Question", "name": "Can I get ear impressions done at the AAW showroom?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, ear impression service is available at our Singapore showroom at 76 Playfair Rd for SGD $50. The process takes 10–20 minutes. Please have your ears cleaned beforehand for the best result."}},
+    {"@type": "Question", "name": "What is the difference between universal and custom IEMs?", "acceptedAnswer": {"@type": "Answer", "text": "Universal IEMs use silicone or foam tips to seal in a standard-shaped ear. Custom IEMs are built from a mold of your individual ear shape, offering a personalized fit, better isolation, and consistent seal across sessions."}},
+    {"@type": "Question", "name": "Can I send digital ear scans instead of physical impressions?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If your audiologist offers 3D scanning, you can send STL or HPS files to support@aaw.me. Digital files are faster and avoid the risk of physical damage during shipping."}}
+  ]
+}
+</script>
+
+</body>
+</html>

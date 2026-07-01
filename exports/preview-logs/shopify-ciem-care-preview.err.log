@@ -1,0 +1,54 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9295                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9295
+[3] http://127.0.0.1:9295/gift_cards/[store_id]/preview
+
+• 03:48:37 Request »    GET 200 /pages/how-to-service-your-iem?view=how-to-service-your-iem 
+• 03:48:37 Request »    GET 200 /pages/how-to-service-your-iem 
+• 03:48:37 Request »    GET 200 /pages/how-to-service-your-iem?preview_theme_id=147344719914 
+• 03:49:30 Request »    GET 200 /pages/how-to-service-your-iem?view=how-to-service-your-iem 
+• 03:49:31 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:50:47 Request »    GET 200 /pages/how-to-service-your-iem?view=how-to-service-your-iem 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.halcyon.json" to remote theme.     │
+│                                                                              │
+│  Section type 'halcyon-product' does not refer to an existing section file   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 03:52:31  Synced » update sections/halcyon-product.liquid
+• 03:52:31  Synced » update assets/halcyon-product.css
+• 03:53:47  Synced » update assets/ciem-care-system.css
+• 03:54:19  Synced » update templates/page.shipping-return.json
+• 03:54:23 Request »    GET 404 /favicon.ico 
+• 03:55:05  Synced » update templates/page.shipping-return.json
+• 03:55:43  Synced » delete assets/ciem-care-system.css
+• 03:57:06  Synced » update assets/ciem-care-system.css
+• 03:57:43  Synced » update assets/ciem-care-system.css
+• 03:58:17 Request »    GET 404 /favicon.ico 
+• 03:58:17 Request »    GET 404 /favicon.ico 
+• 04:03:23  Synced » update assets/shipping-return.css
+• 04:04:18  Synced » update assets/ciem-care-system.css
+• 04:04:37  Synced » update templates/page.shipping-return.json
+• 04:05:32  Synced » update assets/fedex-logo.svg
+• 04:06:27  Synced » update assets/ciem-care-system.css
+• 04:07:14  Synced » update assets/ciem-care-system.css
+• 04:09:44  Synced » update assets/ciem-care-system.css
+• 04:09:51  Synced » update assets/halcyon-product.css
+• 04:14:04  Synced » update assets/ciem-care-system.css
+• 04:15:10  Synced » update assets/halcyon-product.css
+• 04:17:06  Synced » update assets/ciem-care-system.css
+• 04:19:04  Synced » update assets/halcyon-product.css

@@ -1,0 +1,319 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9293                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9293
+[3] http://127.0.0.1:9293/gift_cards/[store_id]/preview
+
+• 21:33:14 Request »    GET 200 / 
+• 21:33:54 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?preview=halcyon 
+• 21:33:54 Request »    GET 200 /products/advanced-acousticwerkes-halcyon-electrostatic-hybrid-custom-in-ear-mon... 
+• 21:34:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?preview=halcyon 
+• 21:35:22 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 21:35:22 Request »    GET 200 /products/advanced-acousticwerkes-halcyon-electrostatic-hybrid-custom-in-ear-mon... 
+• 21:36:50  Synced » update sections/ash-product.liquid
+• 21:36:50  Synced » update assets/ash-product.css
+• 21:40:33 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 21:40:33 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 21:40:35 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 21:40:36 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 21:41:36 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 21:43:53  Synced » update assets/halcyon-product.css
+• 21:44:36  Synced » update assets/ash-product.css
+• 21:44:43 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=2 
+• 21:44:43 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=2 
+• 21:46:31  Synced » update assets/halcyon-product.css
+• 21:47:06 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=3 
+• 21:47:53 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=3 
+• 21:49:37  Synced » update assets/halcyon-product.css
+• 21:50:19 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=4 
+• 21:51:51  Synced » update assets/halcyon-product.css
+• 21:52:45  Synced » update assets/aaw-judgeme-reviews.css
+• 21:52:46 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=5 
+• 21:54:54  Synced » update assets/halcyon-product.css
+• 21:56:11 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=6 
+• 21:57:39  Synced » update assets/halcyon-product.css
+• 21:58:22 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=7 
+• 21:59:52  Synced » update assets/halcyon-product.css
+• 22:02:31  Synced » update sections/halcyon-product.liquid
+• 22:03:20  Synced » update assets/halcyon-product.css
+• 22:03:54 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=final 
+• 22:07:57 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:07:59 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 22:08:00 Request »    GET 200 / 
+• 22:31:19  Synced » update sections/halcyon-product.liquid
+• 22:32:49  Synced » update assets/halcyon-product.css
+• 22:34:06 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon&check=spec-re... 
+• 22:38:06 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:38:09 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 22:46:30  Synced » update assets/halcyon-driver-ba.png
+• 22:46:30 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:46:30  Synced » update assets/halcyon-driver-graphene.png
+• 22:46:30  Synced » update assets/halcyon-driver-est.png
+• 22:46:30  Synced » update assets/halcyon-driver-graphene.png
+• 22:51:15  Synced » update sections/halcyon-product.liquid
+• 22:51:57  Synced » update assets/halcyon-product.css
+• 22:53:44 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:55:53 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:55:53 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:55:53  Synced » update assets/halcyon-driver-ba.png
+• 22:55:53 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 22:55:53  Synced » update assets/halcyon-driver-est.png
+• 22:55:53  Synced » update assets/halcyon-driver-graphene.png
+• 23:00:31 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:00:31 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:00:31  Synced » update assets/halcyon-driver-ba.png
+• 23:00:31 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:00:31  Synced » update assets/halcyon-driver-graphene.png
+• 23:00:31  Synced » update assets/halcyon-driver-est.png
+• 23:10:55 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:10:55 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:10:56  Synced » update assets/halcyon-driver-graphene.png
+• 23:10:56  Synced » update assets/halcyon-driver-ba.png
+• 23:10:56 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:10:56  Synced » update assets/halcyon-driver-est.png
+• 23:10:58 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:14:45 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:14:45  Synced » update assets/halcyon-driver-ba.png
+• 23:14:45  Synced » update assets/halcyon-driver-graphene.png
+• 23:14:46 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:14:46  Synced » update assets/halcyon-driver-est.png
+• 23:14:46 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:29:03  Synced » update assets/get-started.css
+• 23:31:06  Synced » update templates/page.get-started.json
+• 23:31:06 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:31:08 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:31:28  Synced » update layout/theme.liquid
+• 23:31:29 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:46:38 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:46:38 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:46:38  Synced » update assets/halcyon-driver-graphene-preview.png
+• 23:46:39  Synced » update assets/halcyon-driver-ba-preview.png
+• 23:46:39  Synced » update assets/halcyon-driver-est-preview.png
+• 23:46:41 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:49:23  Synced » delete assets/halcyon-driver-est-preview.png
+• 23:49:23  Synced » delete assets/halcyon-driver-graphene-preview.png
+• 23:49:23  Synced » delete assets/halcyon-driver-ba-preview.png
+• 23:49:23 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:50:05  Synced » update assets/halcyon-product.css
+• 23:53:14 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:57:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:57:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:57:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:57:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-1.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-7.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-2.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-6.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-8.jpg
+• 23:58:50  Synced » update sections/halcyon-product.liquid
+• 23:59:40  Synced » update assets/halcyon-product.css
+• 00:01:05 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:03:40  Synced » update assets/get-started.css
+• 00:04:15  Synced » update assets/get-started.css
+• 00:04:37 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:04:39 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:04:49  Synced » update assets/get-started.css
+• 00:10:22  Synced » update assets/halcyon-product.css
+• 00:11:49 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:19:30  Synced » update sections/halcyon-product.liquid
+• 00:20:14  Synced » update assets/halcyon-product.css
+• 00:22:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:28:05 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:28:06  Synced » update assets/halcyon-transparent-architecture-crop.jpg
+• 00:30:10  Synced » update sections/halcyon-product.liquid
+• 00:33:43  Synced » update assets/halcyon-product.css
+• 00:37:17 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:37:20 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:45:21  Synced » update sections/halcyon-product.liquid
+• 00:46:09  Synced » update assets/halcyon-product.css
+• 00:47:24  Synced » update assets/halcyon-product.css
+• 00:49:26  Synced » update assets/get-started.css
+• 00:50:10  Synced » update assets/get-started.css
+• 00:51:52  Synced » update templates/page.get-started.json
+• 00:51:53 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:57:01  Synced » update snippets/aaw-hidden-product.liquid
+• 00:57:01 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:57:45  Synced » update snippets/card-product.liquid
+• 00:57:45 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:59:33  Synced » update sections/related-products.liquid
+• 00:59:33  Synced » update snippets/header-search-group.liquid
+• 00:59:33  Synced » update snippets/search-drawer.liquid
+• 00:59:33  Synced » update snippets/complementary-products.liquid
+• 00:59:33  Synced » update sections/main-search.liquid
+• 00:59:33  Synced » update sections/main-collection.liquid
+• 00:59:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:59:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:59:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:59:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 00:59:34  Synced » update sections/predictive-search.liquid
+• 01:00:44  Synced » update sections/featured-collection.liquid
+• 01:00:44  Synced » update sections/collection-tabs.liquid
+• 01:00:45 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:00:45 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:01:35  Synced » update sections/content-tabs.liquid
+• 01:01:35  Synced » update sections/recently-viewed-product.liquid
+• 01:01:35 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:01:35 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:03:08  Synced » update sections/main-cart.liquid
+• 01:03:08 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:03:10 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:04:25  Synced » update assets/get-started.css
+• 01:05:16  Synced » update assets/get-started.css
+• 01:06:12  Synced » update templates/page.get-started.json
+• 01:06:13 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:08:35  Synced » update snippets/complementary-products.liquid
+• 01:12:29  Synced » update assets/get-started.css
+• 01:13:22 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:14:12 Request »    GET 200 /search?q=item%20personalization&type=product 
+• 01:17:24  Synced » update sections/main-search.liquid
+• 01:20:10 Request »    GET 401 /search?q=item%20personalization&type=product 
+• 01:20:13 Request »    GET 401 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:27:17  Synced » update sections/halcyon-product.liquid
+• 01:28:04  Synced » update assets/halcyon-product.css
+• 01:28:57  Synced » update assets/halcyon-product.css
+• 01:31:50 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:31:53 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:40:42 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:40:44 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:40:47  Synced » update assets/halcyon-8.mp4
+• 01:42:28  Synced » update sections/halcyon-product.liquid
+• 01:43:13  Synced » update assets/halcyon-product.css
+• 01:43:57  Synced » update assets/halcyon-product.css
+• 01:49:07 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 01:56:08  Synced » update sections/halcyon-product.liquid
+• 01:56:50  Synced » update assets/halcyon-product.css
+• 02:01:12 Request »    GET 503 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:01:18  Synced » update assets/shipping-return.css
+• 02:04:24 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:04:50  Synced » update templates/page.shipping-return.json
+• 02:04:50 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:04:52 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 02:05:09 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:05:26  Synced » update layout/theme.liquid
+• 02:05:26 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:05:52 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:12:01  Synced » update sections/halcyon-product.liquid
+• 02:12:52  Synced » update assets/halcyon-product.css
+• 02:14:57 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:28:58 Request »    GET 404 /products/a3h-lux?view=a3h 
+• 02:29:08 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h 
+• 02:29:09 Request »    GET 200 /products/advanced-acousticwerkes-a3h-pro-triple-driver-hybrid-custom-in-ear-mon... 
+• 02:29:20 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:31:57 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:31:57 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:31:58  Synced » update assets/a3h-lux-musician-fitment.png
+• 02:32:06  Synced » update sections/a3h-lux-product.liquid
+• 02:32:07 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:32:13  Synced » update assets/a3h-lux-product.css
+• 02:32:20 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:33:47  Synced » update sections/a3h-lux-product.liquid
+• 02:33:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:33:50 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 02:33:56  Synced » update assets/a3h-lux-product.css
+• 02:34:04 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:47:38 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:47:38 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 02:47:39  Synced » update assets/halcyon-studio-bassflow-plate.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-blue-case.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-package.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-single-shell.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-thera-cable.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-shell-pair.jpg
+• 02:48:37  Synced » update sections/halcyon-product.liquid
+• 02:48:37 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 02:49:25  Synced » update assets/halcyon-product.css
+• 02:52:07  Synced » update assets/halcyon-product.css
+• 02:57:41 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:01:41  Synced » update sections/halcyon-product.liquid
+• 03:01:41 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:04:38 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:04:41 Request »   POST 200 /shopify_pay/accelerated_checkout 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "templates/product.halcyon.json" from remote theme.   │
+│                                                                              │
+│  Failed to delete file "templates/product.halcyon.json" from remote theme.   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 03:07:03  Synced » delete sections/halcyon-product.liquid
+• 03:07:03  Synced » delete assets/halcyon-product.css
+• 03:07:03 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:07:04 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:13:30  Synced » update assets/shipping-return.css
+• 03:14:57  Synced » update templates/page.shipping-return.json
+• 03:14:57 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:14:58 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:47  Synced » update assets/ciem-care-02-clean-bores.png
+• 03:38:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:48 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:48  Synced » update assets/ciem-care-04-moisture.png
+• 03:38:48  Synced » update assets/ciem-care-01-store.png
+• 03:38:48  Synced » update assets/ciem-care-04-moisture.png
+• 03:38:48 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:48  Synced » update assets/ciem-care-03-cable.png
+• 03:38:48  Synced » update assets/ciem-care-01-store.png
+• 03:38:48 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:48 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:49  Synced » update assets/ciem-care-02-clean-bores.png
+• 03:38:49 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:38:49 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:38:49  Synced » update assets/ciem-care-03-cable.png
+• 03:38:49  Synced » update assets/ciem-care-03-cable.png
+• 03:38:49  Synced » update assets/ciem-care-05-brush.png
+• 03:38:50  Synced » update assets/ciem-care-05-brush.png
+• 03:38:50 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:38:51 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:41:32  Synced » update assets/ciem-care-system.css
+• 03:42:34  Synced » update sections/ciem-care-system.liquid
+• 03:42:34 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:42:34 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:43:08  Synced » update templates/page.how-to-service-your-iem.json
+• 03:43:08 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:43:08 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.halcyon.json" to remote theme.     │
+│                                                                              │
+│  Section type 'halcyon-product' does not refer to an existing section file   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 03:52:31  Synced » update sections/halcyon-product.liquid
+• 03:52:31 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:52:32 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:52:32 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 03:52:32 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?view=a3h&placemen... 
+• 03:52:33  Synced » update assets/halcyon-product.css
+• 03:53:47  Synced » update assets/ciem-care-system.css
+• 03:54:19  Synced » update templates/page.shipping-return.json
+• 03:55:05  Synced » update templates/page.shipping-return.json
+• 03:55:43  Synced » delete assets/ciem-care-system.css
+• 03:57:06  Synced » update assets/ciem-care-system.css
+• 03:57:43  Synced » update assets/ciem-care-system.css

@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "Footer Group",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "f42ca1b2-a83c-467c-abad-e8a97faea216": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Get in touch today",
+            "description": "We will typical respond with 48hours",
+            "placeholder": "Email address"
+          }
+        },
+        "link_list_FrFrX8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Info links",
+            "menu": "information"
+          }
+        },
+        "ccc8a8f9-5f0b-4733-8d3e-6ab19cf52222": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "text_Yimer6": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/aawlogowhiteHD.png",
+            "image_url": "",
+            "description": "<p>We are the Mechanics of Sound</p>",
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "f42ca1b2-a83c-467c-abad-e8a97faea216",
+        "link_list_FrFrX8",
+        "ccc8a8f9-5f0b-4733-8d3e-6ab19cf52222",
+        "text_Yimer6"
+      ],
+      "settings": {
+        "image_width": 100,
+        "show_social": true,
+        "enable_follow_on_shop": true,
+        "make_section_rounded": true,
+        "menu_style": "accordion",
+        "open_menu_mobile": true,
+        "enable_language_selector": true,
+        "enable_currency_selector": true,
+        "payment_enable": true,
+        "hide_copyright_content": false,
+        "custom_copyright_content": "",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35,
+        "section_background": "",
+        "footer_background_overlay": "#000000",
+        "footer_background_opacity": 50
+      }
+    },
+    "footer-policies": {
+      "type": "footer-policies",
+      "settings": {
+        "show_policies": false,
+        "show_copyright": false,
+        "custom_copyright_content": ""
+      }
+    },
+    "mobile-categories": {
+      "type": "mobile-categories",
+      "blocks": {
+        "4c6aac09-4438-4d00-8560-c90258bdd1f0": {
+          "type": "category",
+          "settings": {
+            "heading": "Category 1",
+            "description": "",
+            "link": "shopify://collections",
+            "background_color": "#000000",
+            "text_color": "#ffffff"
+          }
+        },
+        "841b9c37-f2d2-4dd2-8d56-9f213da539dd": {
+          "type": "category",
+          "settings": {
+            "heading": "Category 2",
+            "description": "",
+            "link": "shopify://collections",
+            "background_color": "#000000",
+            "text_color": "#ffffff"
+          }
+        },
+        "fc926cb9-31dd-48b5-91d5-3508d089b7af": {
+          "type": "category",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "link": "shopify://collections",
+            "background_color": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "4c6aac09-4438-4d00-8560-c90258bdd1f0",
+        "841b9c37-f2d2-4dd2-8d56-9f213da539dd",
+        "fc926cb9-31dd-48b5-91d5-3508d089b7af"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_on_home_page": true,
+        "title": "Explore",
+        "horizontal_position": "left",
+        "vertical_position": 5,
+        "background_color": "#000000",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "footer-policies",
+    "mobile-categories"
+  ]
+}

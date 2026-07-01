@@ -1,0 +1,20 @@
+{% if section.settings.menu != blank %}
+    <div class="menu-list-box">
+        <div class="menu-list-topheader menu-list-level-1">
+            <ul class="list-inline menu-list" data-menu-level="1" data-tabbed-menu>
+            {%- for link in linklists[section.settings.menu].links -%}
+                {% assign activeCls = '' %} 
+                {% if link.current and link.links.size > 0 %}
+                    {% assign activeCls = 'active' %} 
+                {% elsif template == 'index' and link.links.size > 0 and forloop.first and section.settings.second_level_menu == 'default' %} 
+                        {% assign activeCls = 'active' %} 
+                  {% endif %}
+                <li class="menu-item {{activeCls}}" data-navigation-item="" data-id="tabbed-{{forloop.index}}" data-index="{{ forloop.index }}" data-menu-item>
+                    <a href="{{ link.url }}" class="menu-link {{ section.settings.menu_font }}-font"
+                    aria-label="{{ link.title }}">{{- link.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+  {% endif %}

@@ -1,0 +1,1433 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "categories_AwydGQ": {
+      "type": "categories",
+      "blocks": {
+        "collection_3mWwQw": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-musician",
+            "heading": ""
+          }
+        },
+        "collection_BDARn7": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-audiophile",
+            "image": "shopify://shop_images/DSC1842.jpg",
+            "heading": ""
+          }
+        },
+        "collection_HhNzRg": {
+          "type": "collection",
+          "settings": {
+            "collection": "totl",
+            "heading": ""
+          }
+        },
+        "collection_EdP6L3": {
+          "type": "collection",
+          "settings": {
+            "collection": "wireless",
+            "heading": ""
+          }
+        },
+        "collection_FBWtWq": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_3mWwQw",
+        "collection_BDARn7",
+        "collection_HhNzRg",
+        "collection_EdP6L3",
+        "collection_FBWtWq"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "column_style": "rounded",
+        "desktop_column_count": 5,
+        "desktop_column_gap": 20,
+        "desktop_column_width": "90%",
+        "card_hover_style": "inside-shadow",
+        "mobile_column_count": "2",
+        "mobile_column_gap": 15,
+        "mobile_column_width": "85%",
+        "enable_swipe_mobile": true,
+        "color_scheme": "",
+        "highlighted_color": "#eff341",
+        "section_background": "",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "slideshow_JtnecF": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CrtTb7": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z06-5.jpg",
+            "subheading": "Introducing the all new",
+            "heading": "Z06 Universal In-Ear Monitor",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "The Z06 offers a lush, vibrant, and spacious sound signature.",
+            "btn_text_1": "Shop now",
+            "btn_link_1": "shopify://products/z06-universal-in-ear-monitor",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-top-right",
+            "desktop_alignment": "d-text-right",
+            "mobile_content_position": "m-center-right",
+            "mobile_alignment": "m-text-right",
+            "enable_background": false,
+            "color_scheme": "tertiary",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "slide_7MEUm7": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/CanaryProWeb01.jpg",
+            "subheading": "Better than ever",
+            "heading": "Canary Pro Hybrid In-Ear Monitor",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "With its expansive headroom, high fidelity, extreme dynamic range, and fast transient responses, the Canary Pro creates an immersive listening experience that is free of fatigue and harshness",
+            "btn_text_1": "Shop Now",
+            "btn_link_1": "shopify://products/canary-isobaric-electrostatic-universal-in-ear-monitor",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-top-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": true,
+            "color_scheme": "tertiary",
+            "highlighted_color": "#eff341",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 0,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_CrtTb7",
+        "slide_7MEUm7"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "enable_full_width": false,
+        "enable_compact_width": true,
+        "enable_block_color": false,
+        "desktop_height": "750px",
+        "mobile_height": "450px",
+        "auto_rotate": false,
+        "interval": 5,
+        "slider_transition": "fade",
+        "navigation_type": "arrow",
+        "show_arrow_hover": false,
+        "banner_marquee": false,
+        "marquee_text": "",
+        "rotation_style": "always",
+        "direction": "rtl",
+        "banner_marquee_color": "#ffffff",
+        "scrolling_speed": 15,
+        "scrolling_speed_mobile": 15,
+        "outline_thickness": 2,
+        "marquee_text_size": 100,
+        "marquee_text_size_mobile": 80,
+        "item_gap_desktop": 30,
+        "item_gap_mobile": 20,
+        "color_scheme": "",
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "video_GxUGwD": {
+      "type": "video",
+      "settings": {
+        "section_visibility": "always",
+        "video_full_width": false,
+        "make_section_rounded": true,
+        "autoplay": true,
+        "video_height": "adapt_image",
+        "mobile_video_height": "adapt_image",
+        "video_url": "https://www.youtube.com/watch?v=dS-hTZjs_qU",
+        "heading": "AAW Laboratory Tour",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "description": "",
+        "content_width": "medium",
+        "content_position": "flex-start",
+        "content_alignment": "center_center",
+        "color_scheme": "",
+        "section_background": "",
+        "text": "#FFFFFF",
+        "highlighted_color": "#eff341",
+        "button": "#000000",
+        "button_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 20,
+        "bottom_space_mobile": 20
+      }
+    },
+    "collections_banner_list_iGdxbN": {
+      "type": "collections-banner-list",
+      "blocks": {
+        "collection_9ykUMk": {
+          "type": "collection",
+          "settings": {
+            "collection": "universal-in-ear",
+            "heading": "Universal Fit",
+            "description": "Instant gratification on the go",
+            "btn_text": "Find out more"
+          }
+        },
+        "collection_jVjDYi": {
+          "type": "collection",
+          "settings": {
+            "collection": "custom-in-ear",
+            "image": "shopify://shop_images/591A6941.jpg",
+            "heading": "Custom Fit",
+            "description": "Tailor built to you and you only",
+            "btn_text": "Find out more"
+          }
+        },
+        "collection_Aj9tzP": {
+          "type": "collection",
+          "settings": {
+            "collection": "reshell",
+            "image": "shopify://shop_images/591A6928_e51d5402-54cf-4114-9fee-ec8e47b69914.jpg",
+            "heading": "",
+            "description": "Recondition and revive your existing custom and universal monitors!",
+            "btn_text": "Find out more"
+          }
+        },
+        "collection_WHaEjb": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify://shop_images/Z06-Web09.jpg",
+            "heading": "",
+            "description": "Cabling and other wear & tear parts",
+            "btn_text": "Find out more"
+          }
+        }
+      },
+      "block_order": [
+        "collection_9ykUMk",
+        "collection_jVjDYi",
+        "collection_Aj9tzP",
+        "collection_WHaEjb"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "media_height": "750px",
+        "mobile_height": "450px",
+        "content_position": "center",
+        "content_alignment": "flex-start_left",
+        "heading_size": "h4",
+        "seo_heading": "h4",
+        "button_style": "solid",
+        "btn_size": "small",
+        "color_scheme": "tertiary",
+        "section_background": "",
+        "overlay_background": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "media_banner_eJ8pMh": {
+      "type": "media-banner",
+      "settings": {
+        "section_visibility": "always",
+        "enable_full_width": true,
+        "enable_parallax": true,
+        "enable_content_parallax": true,
+        "image": "shopify://shop_images/Z07-10.jpg",
+        "desktop_height": "100vh",
+        "mobile_height": "400px",
+        "banner_title": "Introducing Z07",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "banner_desc": "Modular Fit Hybrid In-Ear Monitor",
+        "button_style": "solid",
+        "button_text": "Find out more",
+        "button_link": "shopify://products/z07-in-ear-monitor",
+        "button_size": "medium",
+        "content_width": "medium",
+        "desktop_position": "middle",
+        "mobile_position": "middle",
+        "desktop_alignment": "d-text-center",
+        "mobile_alignment": "m-text-center",
+        "title_color": "#ffffff",
+        "highlighted_color": "#eff341",
+        "desc_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "btn_bg_color": "#ffffff",
+        "btn_text_color": "#000000",
+        "btn_border_color": "#ffffff",
+        "btn_hover_color": "#000000",
+        "btn_hover_text_color": "#ffffff",
+        "btn_hover_border_color": "#000000"
+      }
+    },
+    "image_with_text_krNKQB": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_XEEVAw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Interactive & Real-time"
+          }
+        },
+        "heading_nLeefG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Monitor Builder",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "highlighted_color": "#eff341"
+          }
+        },
+        "text_4Gdp8k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Design your one of a kind Custom In-Ear Monitor and view it real-time!</p>",
+            "text_size": "medium"
+          }
+        },
+        "button_LYcyVT": {
+          "type": "button",
+          "settings": {
+            "button_style_1": "solid",
+            "btn_text": "Start Building!",
+            "btn_url": "shopify://products/aaw-custom-builder",
+            "btn_size": "regular",
+            "button_style_2": "solid",
+            "btn_text_2": "",
+            "btn_url_2": "",
+            "btn_size_2": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XEEVAw",
+        "heading_nLeefG",
+        "text_4Gdp8k",
+        "button_LYcyVT"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "section_fullwidth": false,
+        "card_background": false,
+        "image": "shopify://shop_images/builder.png",
+        "image_overlay_enable": false,
+        "image_overlay": "shopify://shop_images/builder.png",
+        "image_width": "large",
+        "image_position": "left",
+        "content_position": "center",
+        "content_alignment": "flex-start_left",
+        "hide_row_count": false,
+        "color_scheme": "",
+        "section_background": "",
+        "card_color": "",
+        "top_space_desktop": 70,
+        "bottom_space_desktop": 70,
+        "top_space_mobile": 50,
+        "bottom_space_mobile": 50
+      }
+    },
+    "social_gallery_UL9h4w": {
+      "type": "social-gallery",
+      "blocks": {
+        "media_9QNmNi": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/591A6941.jpg",
+            "heading": "Freedom of combinations",
+            "link": ""
+          }
+        },
+        "media_VFwagd": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/591A6623.jpg",
+            "heading": "Bespoke Designs",
+            "link": ""
+          }
+        },
+        "media_hN4Be8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/shell_CT_CQ.jpg",
+            "heading": "Variety of colors",
+            "link": ""
+          }
+        },
+        "media_6eabY3": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/591A6903.jpg",
+            "heading": "Custom artworks",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_9QNmNi",
+        "media_VFwagd",
+        "media_hN4Be8",
+        "media_6eabY3"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "enable_swipe_mobile": true,
+        "media_image_size": "square",
+        "heading": "Unlimited Design Options",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "description": "Let your creativity fly!",
+        "content_alignment": "text-center",
+        "social_media_icon": "none",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "overlay_background": "#000000",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0.2,
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "media_with_text_list_pD6DN7": {
+      "type": "media-with-text-list",
+      "blocks": {
+        "text_list_xAJaBN": {
+          "type": "text_list",
+          "settings": {
+            "heading": "What are Custom Fit In-Ear Monitors?",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "image": "shopify://shop_images/8ee507e1b2dbe77702603e9a7ec5f2a.jpg",
+            "link_to": "shopify://pages/what-is-custom-in-ear-monitor"
+          }
+        },
+        "text_list_RzAGUx": {
+          "type": "text_list",
+          "settings": {
+            "heading": "Guide to Make Quality Ear Impressions",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "image": "shopify://shop_images/ear_impression.jpg",
+            "link_to": "shopify://pages/ear-impression"
+          }
+        },
+        "text_list_yfTALy": {
+          "type": "text_list",
+          "settings": {
+            "heading": "Steps to Order Your CIEM",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "image": "shopify://shop_images/CanaryProCIEMWeb02.jpg",
+            "link_to": "shopify://pages/get-started"
+          }
+        },
+        "text_list_nTbJ8Y": {
+          "type": "text_list",
+          "settings": {
+            "heading": "How to Service your CIEM",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "image": "shopify://shop_images/AAW_Banner1.jpg",
+            "link_to": "shopify://pages/how-to-service-your-iem"
+          }
+        }
+      },
+      "block_order": [
+        "text_list_xAJaBN",
+        "text_list_RzAGUx",
+        "text_list_yfTALy",
+        "text_list_nTbJ8Y"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "image_size": "landscape",
+        "color_scheme": "tertiary",
+        "section_background": "",
+        "active_color": "#ffffff",
+        "active_background": "#757575",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "marquee_XeEeaz": {
+      "type": "marquee",
+      "blocks": {
+        "text_LDjXFe": {
+          "type": "text",
+          "settings": {
+            "text": "ORDER YOUR AAW CUSTOM IN-EAR MONITOR TODAY!",
+            "text_gap": 50,
+            "text_style": "solid",
+            "font_family": "heading",
+            "desktop_font": 80,
+            "mobile_font": 40,
+            "outline_thickness": 1,
+            "color": "#898989",
+            "outline_color": "rgba(0,0,0,0)",
+            "text_gradient_color": "",
+            "custom_icon": "",
+            "small_icon": false,
+            "text_icon_gap": 15
+          }
+        }
+      },
+      "block_order": [
+        "text_LDjXFe"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "rotation_style": "both",
+        "direction": "rtl",
+        "scrolling_speed": 15,
+        "scrolling_speed_mobile": 15,
+        "text_angle": 0,
+        "bgcolor": "#f2f2f2",
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 10,
+        "bottom_space_mobile": 10
+      }
+    },
+    "countdown_zBL9JU": {
+      "type": "countdown",
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "full_width": true,
+        "layout_style": "stacked-style",
+        "desktop_height": "500px",
+        "mobile_height": "auto",
+        "heading": "Countdown heading",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "date": "",
+        "enable_glass_background": true,
+        "content_position": "center",
+        "button_style": "solid",
+        "btn_text": "Button",
+        "btn_link": "shopify://collections/all",
+        "btn_size": "regular",
+        "color_scheme": "primary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "overlay_background": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 35
+      }
+    },
+    "text_with_icon_fjBXCD": {
+      "type": "text-with-icon",
+      "blocks": {
+        "icon_with_text_QRLpJc": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon_list": "global",
+            "icon": "",
+            "heading": "Global Presence & Service",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "Visit our dealers in over 10 countries to demo, order or service your monitors",
+            "icon_background_color": "#ffffff",
+            "highlight_color": "#23a6ff"
+          }
+        },
+        "icon_with_text_VMPwpf": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon_list": "date",
+            "icon": "",
+            "heading": "Prompt & Fast Turnaround",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "Our streamlined production ensure you receive your monitors within 4 Weeks!",
+            "icon_background_color": "#ffffff",
+            "highlight_color": "#23a6ff"
+          }
+        },
+        "icon_with_text_NRq9yt": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon_list": "shipping",
+            "icon": "",
+            "heading": "Worldwide Fast Shipping",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "We partner with FedEx to provide prompt and affordable shipping of your monitors",
+            "icon_background_color": "#ffffff",
+            "highlight_color": "#eff341"
+          }
+        },
+        "icon_with_text_PtxG9r": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon_list": "user",
+            "icon": "",
+            "heading": "Ownership Transfer Service",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "Afford & efficient to reshell fitment and pass on your monitor to its next owner and maintain their resell value.",
+            "icon_background_color": "#ffffff",
+            "highlight_color": "#23a6ff"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_QRLpJc",
+        "icon_with_text_VMPwpf",
+        "icon_with_text_NRq9yt",
+        "icon_with_text_PtxG9r"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "Why choose AAW?",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "column_count": 4,
+        "cards_background": true,
+        "column_count_mobile": "2",
+        "mobile_swipe": true,
+        "content_alignment": "text-left",
+        "icon_position": "top",
+        "icon_size": "small",
+        "icon_background": false,
+        "color_scheme": "scheme-6cc3d53a-4779-4ae6-9d78-8d12b746e15b",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 50
+      }
+    },
+    "spotlight_YYWJFz": {
+      "type": "spotlight",
+      "blocks": {
+        "image_fiYNJX": {
+          "type": "image",
+          "settings": {
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        },
+        "image_cUbaEQ": {
+          "type": "image",
+          "settings": {
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        },
+        "image_c97rRL": {
+          "type": "image",
+          "settings": {
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_fiYNJX",
+        "image_cUbaEQ",
+        "image_c97rRL"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "section_fullwidth": false,
+        "enable_swipe_mobile": false,
+        "single_product_hover": true,
+        "heading": "Shop the look",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "split_banner_AND4wc": {
+      "type": "split-banner",
+      "blocks": {
+        "split_banner_fiR8A8": {
+          "type": "split_banner",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h4",
+            "seo_heading": "h4",
+            "description": "Add short description for this section",
+            "desktop_content_position": "d-bottom-left",
+            "mobile_content_position": "m-top-left",
+            "btn_text": "Button text",
+            "btn_link": "shopify://collections/all",
+            "button_syle": "solid",
+            "button_size": "regular",
+            "heading_color": "#000000",
+            "highlighted_color": "#eff341",
+            "description_color": "#000000",
+            "overlay_bgcolor": "#000000",
+            "overlay_opacity": 0.1,
+            "btn_bg_color": "#ffffff",
+            "btn_text_color": "#000000",
+            "btn_border_color": "#ffffff",
+            "btn_hover_color": "#000000",
+            "btn_hover_text_color": "#ffffff",
+            "btn_hover_border_color": "#000000"
+          }
+        },
+        "split_banner_mNfFbV": {
+          "type": "split_banner",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h4",
+            "seo_heading": "h4",
+            "description": "Add short description for this section",
+            "desktop_content_position": "d-bottom-left",
+            "mobile_content_position": "m-top-left",
+            "btn_text": "Button text",
+            "btn_link": "shopify://collections/all",
+            "button_syle": "solid",
+            "button_size": "regular",
+            "heading_color": "#000000",
+            "highlighted_color": "#eff341",
+            "description_color": "#000000",
+            "overlay_bgcolor": "#000000",
+            "overlay_opacity": 0.1,
+            "btn_bg_color": "#ffffff",
+            "btn_text_color": "#000000",
+            "btn_border_color": "#ffffff",
+            "btn_hover_color": "#000000",
+            "btn_hover_text_color": "#ffffff",
+            "btn_hover_border_color": "#000000"
+          }
+        },
+        "split_banner_mCBxaK": {
+          "type": "split_banner",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h4",
+            "seo_heading": "h4",
+            "description": "Add short description for this section",
+            "desktop_content_position": "d-bottom-left",
+            "mobile_content_position": "m-top-left",
+            "btn_text": "Button text",
+            "btn_link": "shopify://collections/all",
+            "button_syle": "solid",
+            "button_size": "regular",
+            "heading_color": "#000000",
+            "highlighted_color": "#eff341",
+            "description_color": "#000000",
+            "overlay_bgcolor": "#000000",
+            "overlay_opacity": 0.1,
+            "btn_bg_color": "#ffffff",
+            "btn_text_color": "#000000",
+            "btn_border_color": "#ffffff",
+            "btn_hover_color": "#000000",
+            "btn_hover_text_color": "#ffffff",
+            "btn_hover_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "split_banner_fiR8A8",
+        "split_banner_mNfFbV",
+        "split_banner_mCBxaK"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "desktop_height": "550px",
+        "mobile_height": "450px",
+        "color_scheme": "",
+        "section_background": "",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 100,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 60
+      }
+    },
+    "video_with_text_overlay_VY3M7C": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "text_Tbe6cK": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading here",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "title_text": "Subheading here",
+            "description": "Add short description here"
+          }
+        },
+        "text_AE4Cta": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading here",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "title_text": "Subheading here",
+            "description": "Add short description here"
+          }
+        },
+        "text_LfJr3h": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading here",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "title_text": "Subheading here",
+            "description": "Add short description here"
+          }
+        },
+        "text_ihi9de": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading here",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "title_text": "Subheading here",
+            "description": "Add short description here"
+          }
+        },
+        "text_8mFc9C": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading here",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "title_text": "Subheading here",
+            "description": "Add short description here"
+          }
+        }
+      },
+      "block_order": [
+        "text_Tbe6cK",
+        "text_AE4Cta",
+        "text_LfJr3h",
+        "text_ihi9de",
+        "text_8mFc9C"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "blocks_content_position": "center",
+        "color_scheme": "tertiary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "overlay_background": "#000000",
+        "overlay_opacity": 67
+      }
+    },
+    "video_rKTtkk": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "video_full_width": false,
+        "make_section_rounded": false,
+        "autoplay": false,
+        "video_height": "550px",
+        "mobile_video_height": "450px",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "heading": "",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "description": "",
+        "content_width": "small",
+        "content_position": "center",
+        "content_alignment": "center_center",
+        "color_scheme": "",
+        "section_background": "",
+        "text": "#000000",
+        "highlighted_color": "#eff341",
+        "button": "#000000",
+        "button_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 70,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "featured_blog_d6eGcb": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "layout_style": "carousel",
+        "swipe_mobile": true,
+        "heading": "Blog posts",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "description": "",
+        "content_alignment": "text-left",
+        "btntext": "",
+        "btnlink": "",
+        "blog": "",
+        "post_limit": 3,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": true,
+        "color_scheme": "secondary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    },
+    "newsletter_DcBcMy": {
+      "type": "newsletter",
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "newsletter_background": false,
+        "heading": "Join our newsletter",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "placeholder": "",
+        "content_alignment": "text-center",
+        "content_postion": "center",
+        "color_scheme": "tertiary",
+        "section_background": "#f5f5f5",
+        "highlighted_color": "#eff341",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 0.5,
+        "top_space_desktop": 100,
+        "bottom_space_desktop": 100,
+        "top_space_mobile": 50,
+        "bottom_space_mobile": 50
+      }
+    },
+    "store_locator_ekaTtR": {
+      "type": "store-locator",
+      "blocks": {
+        "store_CU8384": {
+          "type": "store",
+          "settings": {
+            "store_name": "AAW Office",
+            "store_detail": "<p>#01-03, </p><p>76 Playfair Rd, </p><p>Singapore 367996<br/></p>",
+            "location": "01-03, 76 Playfair Rd, Singapore 367996"
+          }
+        },
+        "store_Y6p4dm": {
+          "type": "store",
+          "settings": {
+            "store_name": "Zeppelin & Co.",
+            "store_detail": "<p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504</p><p>PH: 9337 9655</p>",
+            "location": "1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504"
+          }
+        },
+        "store_wgQfrj": {
+          "type": "store",
+          "settings": {
+            "store_name": "JABEN",
+            "store_detail": "<p>1 Coleman St, #01-25 The Adelphi, Singapore 179803</p><p>PH:6337 0809</p>",
+            "location": "1 Coleman St, #01-25 The Adelphi, Singapore 179803"
+          }
+        },
+        "store_GfynLg": {
+          "type": "store",
+          "settings": {
+            "store_name": "AV One",
+            "store_detail": "<p>1 Coleman St, #01-01/10/21/22, #02-29/30/31 The Adelphi, Singapore 179803</p><p>PH:6337 0080</p>",
+            "location": "1 Coleman St, #01-01/10/21/22, #02-29/30/31 The Adelphi, Singapore 179803"
+          }
+        }
+      },
+      "block_order": [
+        "store_CU8384",
+        "store_Y6p4dm",
+        "store_wgQfrj",
+        "store_GfynLg"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "Singapore locations",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "image_height": "400px",
+        "mobile_image_height": "300px",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "testimonials_H8WBFy": {
+      "type": "testimonials",
+      "blocks": {
+        "quote_bN3GgT": {
+          "type": "quote",
+          "settings": {
+            "rating": 5,
+            "heading": "Review heading",
+            "message": "<p>Add client reviews & testimonials to showcase your store’s happy clients.</p>",
+            "author": "Author name"
+          }
+        },
+        "quote_LtXf9Y": {
+          "type": "quote",
+          "settings": {
+            "rating": 5,
+            "heading": "Review heading",
+            "message": "<p>Add client reviews & testimonials to showcase your store’s happy clients.</p>",
+            "author": "Author name"
+          }
+        },
+        "quote_tg86y8": {
+          "type": "quote",
+          "settings": {
+            "rating": 5,
+            "heading": "Review heading",
+            "message": "<p>Add client reviews & testimonials to showcase your store’s happy clients.</p>",
+            "author": "Author name"
+          }
+        },
+        "quote_BhyQxB": {
+          "type": "quote",
+          "settings": {
+            "rating": 5,
+            "heading": "Review heading",
+            "message": "<p>Add client reviews & testimonials to showcase your store’s happy clients.</p>",
+            "author": "Author name"
+          }
+        }
+      },
+      "block_order": [
+        "quote_bN3GgT",
+        "quote_LtXf9Y",
+        "quote_tg86y8",
+        "quote_BhyQxB"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "background_blur": false,
+        "heading": "Testimonials",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "style_type": "grid",
+        "content_alignment": "center",
+        "column_count": 3,
+        "load_more": false,
+        "mobile_layout": "1",
+        "enable_swipe": true,
+        "color_scheme": "secondary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "overlay_background": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "spotlight_pntJnE": {
+      "type": "spotlight",
+      "blocks": {
+        "image_6PtVLx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/591A6941.jpg",
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        },
+        "image_gzpW7G": {
+          "type": "image",
+          "settings": {
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        },
+        "image_PNnfkT": {
+          "type": "image",
+          "settings": {
+            "marquee": false,
+            "marquee_on_hover": false,
+            "marquee_disable_mobile": false,
+            "direction": "rtl",
+            "marquee_text": "",
+            "marquee_text_color": "#ffffff",
+            "marquee_background": "#000000",
+            "marquee_background_opacity": 9,
+            "hotspot_1": true,
+            "product_1": "",
+            "horizontal_1": 26,
+            "vertical_1": 58,
+            "spot_color_1": "#0b764f",
+            "spot_color_background_1": "#ffffff",
+            "hotspot_2": true,
+            "product_2": "",
+            "horizontal_2": 50,
+            "vertical_2": 35,
+            "spot_color_2": "#c6a109",
+            "spot_color_background_2": "#ffffff",
+            "hotspot_3": true,
+            "product_3": "",
+            "horizontal_3": 75,
+            "vertical_3": 55,
+            "spot_color_3": "#d40808",
+            "spot_color_background_3": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_6PtVLx",
+        "image_gzpW7G",
+        "image_PNnfkT"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "section_fullwidth": false,
+        "enable_swipe_mobile": false,
+        "single_product_hover": true,
+        "heading": "Shop the look",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "1776186751de429095": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c3938c3_3NjiM4": {
+          "type": "ai_gen_block_c3938c3",
+          "settings": {
+            "heading": "<p>Find a store near you</p>",
+            "description": "<p>Visit us at one of our locations</p>",
+            "desktop_width_percent": 100,
+            "map_style": "standard",
+            "map_zoom": 12,
+            "map_zoom_selected": 15,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#484848",
+            "card_background": "#ffffff",
+            "card_border_color": "#e9e9e9",
+            "card_active_border": "#000000",
+            "map_background": "#f5f5f5",
+            "scrollbar_track_color": "#f5f5f5",
+            "scrollbar_thumb_color": "#cccccc",
+            "heading_size": 32,
+            "text_size": 16,
+            "card_border_radius": 8,
+            "store_1_name": "",
+            "store_1_address": "",
+            "store_1_phone": "",
+            "store_1_hours": "",
+            "store_1_lat": "",
+            "store_1_lng": "",
+            "store_2_name": "",
+            "store_2_address": "",
+            "store_2_phone": "",
+            "store_2_hours": "",
+            "store_2_lat": "",
+            "store_2_lng": "",
+            "store_3_name": "",
+            "store_3_address": "",
+            "store_3_phone": "",
+            "store_3_hours": "",
+            "store_3_lat": "",
+            "store_3_lng": "",
+            "store_4_name": "",
+            "store_4_address": "",
+            "store_4_phone": "",
+            "store_4_hours": "",
+            "store_4_lat": "",
+            "store_4_lng": "",
+            "store_5_name": "",
+            "store_5_address": "",
+            "store_5_phone": "",
+            "store_5_hours": "",
+            "store_5_lat": "",
+            "store_5_lng": "",
+            "store_6_name": "",
+            "store_6_address": "",
+            "store_6_phone": "",
+            "store_6_hours": "",
+            "store_6_lat": "",
+            "store_6_lng": "",
+            "store_7_name": "",
+            "store_7_address": "",
+            "store_7_phone": "",
+            "store_7_hours": "",
+            "store_7_lat": "",
+            "store_7_lng": "",
+            "store_8_name": "",
+            "store_8_address": "",
+            "store_8_phone": "",
+            "store_8_hours": "",
+            "store_8_lat": "",
+            "store_8_lng": "",
+            "store_9_name": "",
+            "store_9_address": "",
+            "store_9_phone": "",
+            "store_9_hours": "",
+            "store_9_lat": "",
+            "store_9_lng": "",
+            "store_10_name": "",
+            "store_10_address": "",
+            "store_10_phone": "",
+            "store_10_hours": "",
+            "store_10_lat": "",
+            "store_10_lng": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c3938c3_3NjiM4"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "categories_AwydGQ",
+    "slideshow_JtnecF",
+    "video_GxUGwD",
+    "collections_banner_list_iGdxbN",
+    "media_banner_eJ8pMh",
+    "image_with_text_krNKQB",
+    "social_gallery_UL9h4w",
+    "media_with_text_list_pD6DN7",
+    "marquee_XeEeaz",
+    "countdown_zBL9JU",
+    "text_with_icon_fjBXCD",
+    "spotlight_YYWJFz",
+    "split_banner_AND4wc",
+    "video_with_text_overlay_VY3M7C",
+    "video_rKTtkk",
+    "featured_blog_d6eGcb",
+    "newsletter_DcBcMy",
+    "store_locator_ekaTtR",
+    "testimonials_H8WBFy",
+    "spotlight_pntJnE",
+    "1776186751de429095"
+  ]
+}

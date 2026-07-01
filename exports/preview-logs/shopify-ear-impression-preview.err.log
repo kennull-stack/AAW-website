@@ -1,0 +1,76 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9297                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9297
+[3] http://127.0.0.1:9297/gift_cards/[store_id]/preview
+
+• 23:34:43 Request »    GET 404 /pages/how-to-take-ear-impression 
+• 23:35:00 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:35:01 Request »    GET 200 /pages/get-started?view=how-to-take-ear-impression 
+• 23:35:03 Request »    GET 200 /pages/what-is-custom-in-ear-monitor?view=ear-impression 
+• 23:35:34 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:35:36 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:37:25  Synced » update assets/ear-impression-guide.css
+• 23:37:41 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:39:17 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:40:21 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:42:40  Synced » update snippets/aaw-responsive-asset-image.liquid
+• 23:42:40 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:05  Synced » update sections/a3h-lux-product.liquid
+• 23:43:05  Synced » update sections/aaw-about-brand-v13.liquid
+• 23:43:06  Synced » update sections/ciem-care-system.liquid
+• 23:43:06  Synced » update sections/m20-product.liquid
+• 23:43:06  Synced » update sections/black-malus-product.liquid
+• 23:43:06  Synced » update sections/mokara-product.liquid
+• 23:43:06  Synced » update sections/z02-product.liquid
+• 23:43:06  Synced » update sections/mockingbird-product.liquid
+• 23:43:06  Synced » update sections/halcyon-product.liquid
+• 23:43:06  Synced » update sections/aaw-customer-voices.liquid
+• 23:43:06  Synced » update sections/ash-product.liquid
+• 23:43:06  Synced » update sections/canary-pro-product.liquid
+• 23:43:06  Synced » update sections/ear-impression-guide.liquid
+• 23:43:06 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:06 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:06 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:07 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:07 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:07 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:07 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:07 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:52  Synced » update sections/halcyon-product.liquid
+• 23:43:52 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:43:57  Synced » update sections/ash-product.liquid
+• 23:43:57 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:24  Synced » update templates/page.get-started.json
+• 23:44:24  Synced » update templates/index.json
+• 23:44:24  Synced » update templates/page.shipping-return.json
+• 23:44:24  Synced » update templates/page.warranty-and-refit.json
+• 23:44:24  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 23:44:24  Synced » update templates/product.z05.json
+• 23:44:24  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 23:44:24  Synced » update templates/product.standard.json
+• 23:44:24  Synced » update templates/product.z07.json
+• 23:44:24 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:24  Synced » update templates/product.z05-kEVIN-PC.json
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:25 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:26 Request »    GET 200 /pages/get-started?view=ear-impression 
+• 23:44:43  Synced » update snippets/aaw-responsive-asset-image.liquid
+• 23:44:43 Request »    GET 200 /pages/get-started?view=ear-impression 

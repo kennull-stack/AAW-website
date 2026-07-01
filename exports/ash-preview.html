@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAW ASH — Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900;950&display=swap" rel="stylesheet">
+<style>
+.ash-product{background:#050403;color:#f6efe8;font-family:Inter,var(--font-body-family),sans-serif}
+.ash-product *{box-sizing:border-box}
+.ash-product img{max-width:100%;height:auto}
+.ash-wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.ash-kicker{margin:0 0 14px;color:#d3a653;font-size:12px;font-weight:950;letter-spacing:.14em;line-height:1.2;text-transform:uppercase}
+.ash-product h1,.ash-product h2,.ash-product h3{margin:0;color:#fff;font-family:Inter,var(--font-heading-family),sans-serif;font-weight:950;letter-spacing:0;text-transform:uppercase}
+.ash-product p{font-size:16px;line-height:1.64}
+.ash-topbar{display:flex;align-items:center;gap:10px;padding:18px 0;color:#9c9188;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.ash-topbar a{color:#d3a653;text-decoration:none}
+.ash-topbar a:hover{color:#fff}
+.ash-floating-buy{position:fixed;z-index:20;left:18px;bottom:22px;display:grid;grid-template-columns:1fr auto;gap:8px 18px;align-items:center;width:min(315px,calc(100vw - 36px));padding:14px 16px;border:1px solid rgba(211,166,83,.48);background:rgba(5,4,3,.9);backdrop-filter:blur(14px);box-shadow:0 18px 70px rgba(0,0,0,.42)}
+.ash-floating-buy span{grid-column:1/-1;color:#fff;font-size:11px;font-weight:950;text-transform:uppercase}
+.ash-floating-buy strong{color:#f4dfb3;font-size:18px;line-height:1}
+.ash-floating-buy a,.ash-floating-buy em{display:inline-flex;align-items:center;justify-content:center;min-width:58px;min-height:34px;padding:0 12px;background:#e1bd71;color:#090604;font-size:11px;font-style:normal;font-weight:950;text-decoration:none;text-transform:uppercase}
+.ash-hero{display:grid;grid-template-columns:minmax(330px,.82fr) minmax(520px,1.18fr);gap:54px;align-items:center;padding:42px 0 64px}
+.ash-hero h1{font-size:clamp(74px,8.4vw,138px);line-height:.82}
+.ash-hero__lead{max-width:660px;margin:20px 0 0;color:#eaded3;font-size:18px;line-height:1.58}
+.ash-price{display:flex;gap:16px;align-items:baseline;margin:26px 0 0;color:#fff}
+.ash-price span{color:#d3a653;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.1em}
+.ash-price strong{font-size:24px}
+.ash-judge-stars{margin-top:18px;min-height:24px}
+.ash-rating-fallback{display:inline-flex;align-items:center;gap:9px;color:#f4dfb3;font-size:12px;font-weight:900;text-transform:uppercase}
+.ash-pill-list{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
+.ash-pill-list li{border:1px solid rgba(211,166,83,.38);padding:8px 11px;color:#f7efe5;background:rgba(255,255,255,.035);font-size:11px;font-weight:900;text-transform:uppercase}
+.ash-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.ash-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid #e1bd71;background:#e1bd71;color:#090604;font-size:12px;font-weight:950;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
+.ash-btn--ghost{background:transparent;color:#f7efe5}
+.ash-btn[disabled]{opacity:.55;cursor:not-allowed}
+.ash-hero__media{display:grid;gap:14px}
+.ash-hero__primary,.ash-hero__thumbs figure{margin:0;overflow:hidden;background:#080604;border:1px solid rgba(255,255,255,.12)}
+.ash-hero__primary img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center;filter:contrast(1.08) saturate(1.08)}
+.ash-hero__thumbs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ash-hero__thumbs img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#080604}
+.ash-stat-band{border-top:1px solid rgba(211,166,83,.3);border-bottom:1px solid rgba(255,255,255,.1);background:#0a0807}
+.ash-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(211,166,83,.22)}
+.ash-stats article{min-height:136px;padding:24px 20px;background:#0f0c0a}
+.ash-stats b{display:block;color:#fff;font-size:clamp(28px,3vw,42px);line-height:1}
+.ash-stats span{display:block;margin-top:10px;color:#d7c9bc;font-size:13px;line-height:1.45}
+.ash-section{padding:76px 0;background:#f2efea;color:#15100c}
+.ash-section--dark{background:#050403;color:#f6efe8}
+.ash-section h2{font-size:clamp(34px,4.5vw,64px);line-height:.98}
+.ash-section:not(.ash-section--dark) h2{color:#111}
+.ash-section:not(.ash-section--dark) .ash-kicker{color:#8c5c14}
+.ash-section-head{max-width:900px;margin-bottom:34px}
+.ash-section-head p:not(.ash-kicker){max-width:820px;margin:18px 0 0;color:#d9cec2}
+.ash-section:not(.ash-section--dark) .ash-section-head p:not(.ash-kicker){color:#312922}
+.ash-split{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:48px}
+.ash-prose p{margin:0;color:#312922;font-size:17px;line-height:1.72}
+.ash-prose p+p{margin-top:16px}
+.ash-fitment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ash-fitment-card{background:#070504;border:1px solid rgba(211,166,83,.28)}
+.ash-fitment-card.is-active{border-color:#e1bd71;box-shadow:0 0 0 1px rgba(225,189,113,.22) inset}
+.ash-fitment-card a{display:grid;grid-template-rows:minmax(330px,1fr) auto;height:100%;color:inherit;text-decoration:none}
+.ash-fitment-card img{display:block;width:100%;height:100%;min-height:330px;object-fit:cover;background:#050403}
+.ash-fitment-card div{padding:22px;background:#11100e;border-top:1px solid rgba(255,255,255,.12)}
+.ash-fitment-card span,.ash-tuning-grid span,.ash-accessory-grid span,.ash-measurement-grid span{display:block;color:#d3a653;font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.ash-fitment-card h3,.ash-tuning-grid h3,.ash-accessory-grid h3{margin:10px 0 9px;font-size:25px;line-height:1.02}
+.ash-fitment-card p,.ash-tuning-grid p,.ash-accessory-grid p{margin:0;color:#d7c9bc;font-size:14px;line-height:1.55}
+.ash-fitment-card b{display:inline-flex;margin-top:16px;color:#e1bd71;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.ash-spec-card{width:min(940px,calc(100% - 48px));padding:40px 50px 42px;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:#080604;box-shadow:0 28px 90px rgba(0,0,0,.42)}
+.ash-spec-card__head{display:flex;flex-direction:column;align-items:center;gap:18px;margin:0 auto 22px}
+.ash-lockup{display:grid;grid-template-columns:minmax(120px,220px) 1px auto;align-items:center;gap:26px;max-width:760px}
+.ash-lockup img{display:block;width:min(220px,38vw);height:auto}
+.ash-lockup span{display:block;width:1px;height:58px;background:#f4f1ea}
+.ash-lockup strong{display:block;color:#fff;font-size:clamp(46px,5.5vw,76px);line-height:.88}
+.ash-spec-card__edition{position:relative;min-width:min(500px,100%);padding:10px 34px;text-align:center;border:2px solid #d3a653;border-radius:7px}
+.ash-spec-card__edition:before,.ash-spec-card__edition:after{content:"";position:absolute;top:9px;bottom:9px;width:3px;border-radius:2px;background:#f4f1ea}
+.ash-spec-card__edition:before{left:10px}
+.ash-spec-card__edition:after{right:10px}
+.ash-spec-card__edition h3{color:#e1bd71;font-size:21px;line-height:1.05;text-transform:none}
+.ash-spec-card__edition p{margin:4px 0 0;color:#d9d0c7;font-size:12px;line-height:1.35}
+.ash-driver-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px;padding:28px;background:#211815;border-radius:9px}
+.ash-driver-item{display:flex;flex-direction:column;align-items:center;min-width:0;text-align:center}
+.ash-driver-item b{margin-top:14px;color:#fff;font-size:17px;line-height:1.1}
+.ash-driver-item small{margin-top:5px;color:#e5ddd4;font-size:13px;line-height:1.14}
+.ash-icon{position:relative;display:block;width:58px;height:58px;color:#ded7cf}
+.ash-icon--woofer{border:2px solid #ded7cf;border-radius:50%;box-shadow:inset 0 0 0 10px rgba(225,189,113,.1)}
+.ash-icon--woofer:before{content:"";position:absolute;inset:12px;border:2px solid #ded7cf;border-radius:50%}
+.ash-icon--woofer:after{content:"";position:absolute;left:50%;top:50%;width:10px;height:10px;border-radius:50%;background:#e1bd71;transform:translate(-50%,-50%)}
+.ash-icon--ba:before,.ash-icon--ba:after{content:"";position:absolute;top:8px;width:17px;height:42px;border:2px solid #ded7cf;border-radius:4px}
+.ash-icon--ba:before{left:8px}.ash-icon--ba:after{right:8px}
+.ash-icon--xross{width:58px;height:36px;margin-top:12px;border:2px solid #ded7cf;border-radius:6px}
+.ash-icon--xross:before{content:"";position:absolute;left:8px;right:8px;top:50%;height:2px;background:#ded7cf;box-shadow:0 -10px 0 rgba(222,215,207,.52),0 10px 0 rgba(222,215,207,.52)}
+.ash-icon--xross:after{content:"";position:absolute;left:24px;top:6px;width:10px;height:24px;background:#d3a653;border-radius:2px}
+.ash-icon--bore:before,.ash-icon--bore:after{content:"";position:absolute;top:8px;width:18px;height:42px;border:2px solid #ded7cf;border-radius:9px}
+.ash-icon--bore:before{left:9px}.ash-icon--bore:after{right:9px}
+.ash-config-graphic{margin:22px 0 0;padding:22px;background:#070504;border:1px solid rgba(255,255,255,.12)}
+.ash-config-graphic img{display:block;width:100%;height:auto;background:#070504}
+.ash-feature-panel{margin-top:22px;padding:26px 30px 0;background:#211815;border-radius:9px}
+.ash-feature-panel h3{font-size:28px;line-height:1.08;text-transform:none}
+.ash-feature-panel ul{margin:10px 0 16px 18px;padding:0;color:#f1eee8;font-size:16px;line-height:1.58;list-style:disc outside}
+.ash-feature-panel li{display:list-item;padding-left:6px}
+.ash-measurement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0;padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.ash-measurement-grid article{min-height:68px;padding:11px 12px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.14)}
+.ash-measurement-grid strong{display:block;margin-top:7px;color:#f1eee8;font-size:12px;line-height:1.25}
+.ash-tuning-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d8d0c5;border:1px solid #d8d0c5}
+.ash-tuning-grid article{min-height:190px;padding:24px;background:#fff}
+.ash-tuning-grid h3{color:#111}
+.ash-tuning-grid p{color:#312922}
+.ash-gallery-section{background:#f2efea}
+.ash-gallery-head{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr);gap:42px;align-items:end;margin-bottom:32px}
+.ash-gallery-head h2{color:#111}
+.ash-gallery-head>p{margin:0;color:#312922;align-self:end}
+.ash-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;gap:16px}
+.ash-gallery figure{margin:0;overflow:hidden;background:#050403;border:1px solid rgba(0,0,0,.15)}
+.ash-gallery figure.wide{grid-column:span 2;grid-row:span 2}
+.ash-gallery img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+.ash-gallery figure.wide img{aspect-ratio:1/1}
+.ash-accessories{background:#f2efea}
+.ash-accessory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ash-accessory-grid article{display:grid;grid-template-rows:auto 1fr;background:#fff;border:1px solid #d8d0c5}
+.ash-accessory-grid img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#080604}
+.ash-accessory-grid div{padding:20px}
+.ash-accessory-grid h3{color:#111;font-size:22px}
+.ash-accessory-grid p{color:#312922}
+.ash-specs__grid{display:grid;grid-template-columns:minmax(320px,.9fr) minmax(420px,1.1fr);gap:48px;align-items:start}
+.ash-specs__grid>div>p:not(.ash-kicker){color:#d9cec2}
+.ash-spec-table{display:grid;margin:0;border:1px solid rgba(211,166,83,.34);background:#120e0c}
+.ash-spec-table div{display:grid;grid-template-columns:190px 1fr;border-bottom:1px solid rgba(211,166,83,.26)}
+.ash-spec-table div:last-child{border-bottom:0}
+.ash-spec-table dt,.ash-spec-table dd{margin:0;padding:18px 20px}
+.ash-spec-table dt{color:#e1bd71;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.ash-spec-table dd{color:#fff;font-size:15px;font-weight:800}
+.ash-faq__wrap{max-width:860px}
+.ash-faq__list{display:grid;gap:10px}
+.ash-faq details{border:1px solid rgba(211,166,83,.28);background:#100c0a}
+.ash-faq summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 20px;color:#fff;font-weight:950;text-transform:uppercase;cursor:pointer;list-style:none}
+.ash-faq summary::-webkit-details-marker{display:none}
+.ash-faq summary:after{content:"+";color:#e1bd71;font-size:22px;line-height:1}
+.ash-faq details[open] summary:after{content:"-"}
+.ash-faq details p{margin:0;padding:0 20px 20px;color:#d9cec2;font-size:15px;line-height:1.62}
+.ash-reviews{border-top:1px solid rgba(211,166,83,.22)}
+.ash-brand{padding:78px 0}
+.ash-brand__inner{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;align-items:start}
+.ash-brand__lead h2{font-size:clamp(34px,5vw,64px);line-height:.95;text-transform:uppercase}
+.ash-brand__slogan{margin-top:18px;color:#d7d7d2;font-size:16px;font-weight:900;letter-spacing:.02em}
+.ash-brand__copy p{color:#cec7be;font-size:16px;line-height:1.66}
+.ash-brand__copy p+p{margin-top:14px}
+.ash-brand__copy .ash-btn{margin-top:22px}
+.ash-where{background:#f2efea;color:#15100c}
+.ash-where-head{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;margin-bottom:42px}
+.ash-where-head h2{font-size:clamp(34px,5vw,64px);color:#111}
+.ash-where-head p:not(.ash-kicker){color:#312922;font-size:16px;line-height:1.66;align-self:end}
+.ash-where .ash-kicker{color:#8c5c14}
+.ash-dealer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(112,86,43,.24);border:1px solid rgba(112,86,43,.24)}
+.ash-dealer-grid article{padding:24px;background:#fff}
+.ash-dealer-grid .featured{background:#faf7f0}
+.ash-dealer-grid span{display:block;color:#9c681a;font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.ash-dealer-grid h3{margin:8px 0 10px;color:#111;font-size:18px;line-height:1.1;text-transform:uppercase;font-weight:950}
+.ash-dealer-grid p{margin:0;color:#302a24;font-size:13px;line-height:1.55}
+.ash-global-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;margin-top:34px;padding:28px;background:#fff;border:1px solid #d6cbbd}
+.ash-global-box span{display:block;color:#9c681a;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.ash-global-box p{margin:10px 0 0;color:#302a24;font-size:15px;line-height:1.55}
+.ash-final{padding:78px 0;text-align:center;background:#050403;color:#fff;border-top:1px solid rgba(211,166,83,.35)}
+.ash-final h2{max-width:980px;margin:0 auto;font-size:clamp(34px,5vw,72px);line-height:.95;font-weight:950;text-transform:uppercase;letter-spacing:0}
+.ash-actions--center{justify-content:center}
+@media(max-width:980px){
+  .ash-hero,.ash-split,.ash-specs__grid,.ash-gallery-head{grid-template-columns:1fr}
+  .ash-stats,.ash-accessory-grid{grid-template-columns:repeat(2,1fr)}
+  .ash-driver-strip,.ash-tuning-grid{grid-template-columns:repeat(2,1fr)}
+  .ash-fitment-grid{grid-template-columns:1fr}
+  .ash-gallery{grid-template-columns:1fr}
+  .ash-gallery figure.wide{grid-column:auto;grid-row:auto}
+  .ash-brand__inner{grid-template-columns:1fr;gap:34px}
+  .ash-where-head{grid-template-columns:1fr;gap:24px}
+  .ash-dealer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .ash-wrap{width:min(100% - 26px,1180px)}
+  .ash-topbar{font-size:10px;overflow-x:auto}
+  .ash-hero{gap:26px;padding:26px 0 42px}
+  .ash-hero h1{font-size:clamp(58px,20vw,82px)}
+  .ash-hero__lead{font-size:16px;line-height:1.5}
+  .ash-hero__thumbs,.ash-stats,.ash-driver-strip,.ash-tuning-grid,.ash-accessory-grid{grid-template-columns:1fr}
+  .ash-section{padding:54px 0}
+  .ash-section h2{font-size:clamp(32px,10vw,46px)}
+  .ash-fitment-card a{grid-template-rows:auto auto}
+  .ash-fitment-card img{min-height:240px;aspect-ratio:16/10}
+  .ash-spec-card{width:min(100% - 26px,940px);padding:24px 16px 26px;border-radius:18px}
+  .ash-lockup{grid-template-columns:1fr;justify-items:center;gap:10px}
+  .ash-lockup span{width:120px;height:1px}
+  .ash-lockup img{width:min(190px,68vw)}
+  .ash-lockup strong{text-align:center;font-size:clamp(46px,18vw,70px)}
+  .ash-spec-card__edition{min-width:0;width:100%;padding:8px 14px}
+  .ash-feature-panel{padding:20px 18px 0}
+  .ash-feature-panel ul{font-size:14px}
+  .ash-measurement-grid{grid-template-columns:1fr}
+  .ash-spec-table div{grid-template-columns:1fr}
+  .ash-spec-table dt{padding-bottom:2px}
+  .ash-spec-table dd{padding-top:2px}
+  .ash-dealer-grid{grid-template-columns:1fr}
+  .ash-global-box{grid-template-columns:1fr;gap:18px;padding:20px}
+}
+
+</style>
+</head>
+<body style="margin:0;background:#050403;">
+ash-product.css
+
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "@id": "https://www.aaw.me/products/ash-universal-in-ear-monitor#product",
+  "name": "product.title",
+  "image": [
+    "https:ash-universal-1.jpg",
+    "https:ash-fr-graph.png",
+    "https:ash-universal-2.jpg",
+    "https:ash-custom-2.jpg",
+    "https:ash-custom-abalone.jpg",
+    "https:ash-custom-blue-gold.jpg",
+    "https:ash-custom-white-gold.jpg"
+  ],
+  "description": "AAW ASH is a seven-driver hybrid in-ear monitor with a 13mm graphene diaphragm dynamic woofer, six balanced armature drivers, TrueXross phase-aware crossover design, and universal or custom fit options.",
+  "sku": "current_variant.sku",
+  "mpn": "AAW ASH",
+  "brand": {"@id": "https://www.aaw.me/#organization"},
+  "category": "In-Ear Monitor",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.aaw.me/products/ash-universal-in-ear-monitor",
+    "priceCurrency": "cart.currency.iso_code",
+    "price": ".",
+    "availability": "https://schema.org/OutOfStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"}
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "13mm graphene dynamic driver and six balanced armature drivers"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "4-way TrueXross crossover"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "108dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "30 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<=0.5%"},
+    {"@type": "PropertyValue", "name": "Fit Options", "value": "Universal fit and custom fit"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the ASH driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ASH uses a seven-driver hybrid configuration: one 13mm graphene diaphragm dynamic woofer and six balanced armature drivers organized through a 4-way TrueXross crossover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the 13mm graphene driver do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The large graphene diaphragm dynamic driver handles bass and lower midrange, giving ASH powerful natural sub-bass, textured body, and a more speaker-like foundation than a full balanced-armature setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ASH available in universal and custom fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ASH is available as a universal-fit monitor and as a custom-fit monitor built from ear impressions. The custom version prioritizes isolation and a personal shell fit."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="ash-product">
+  <nav class="ash-topbar ash-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">ASH</span>
+  </nav>
+
+  <aside class="ash-floating-buy" aria-label="ASH price and purchase">
+    <span>ASH</span>
+    <strong>current_variant.price | money</strong>
+    
+      <em>Sold out</em>
+    
+  </aside>
+
+  <section class="ash-hero ash-wrap" aria-labelledby="ash-title">
+    <div class="ash-hero__copy">
+      <p class="ash-kicker">Seven-driver hybrid in-ear monitor</p>
+      <h1 id="ash-title">ASH</h1>
+      <p class="ash-hero__lead">A full-bodied hybrid built around a 13mm graphene dynamic woofer and six precision balanced armatures. ASH uses AAW's TrueXross approach to keep the bass driver, midrange, and treble paths coherent while delivering a powerful, stage-ready presentation.</p>
+      <p class="ash-price"><span>Universal fit</span><strong>current_variant.price | money</strong></p>
+      <div class="ash-judge-stars" aria-label="ASH customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="product.id" data-auto-install="false">
+          product.metafields.judgeme.badge | default:
+        </div>
+        Sold Out</button>
+        <a class="ash-btn ash-btn--ghost" href="#ash-architecture">Explore the build</a>
+      </form>
+    </div>
+    <div class="ash-hero__media">
+      <figure class="ash-hero__primary">
+        <img src="ash-universal-1.jpg" alt="AAW ASH universal fit in-ear monitors" width="1600" height="1066" loading="eager">
+      </figure>
+      <div class="ash-hero__thumbs" aria-label="ASH product images">
+        <figure><img src="ash-universal-2.jpg" alt="AAW ASH universal faceplate close-up" width="4732" height="3155" loading="lazy"></figure>
+        <figure><img src="ash-custom-2.jpg" alt="AAW ASH custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-stat-band" aria-label="ASH specification highlights">
+    <div class="ash-wrap ash-stats">
+      <article><b>7</b><span>Hybrid drivers: one dynamic woofer plus six balanced armatures.</span></article>
+      <article><b>13mm</b><span>Graphene diaphragm dynamic driver for bass and lower mids.</span></article>
+      <article><b>4-way</b><span>TrueXross crossover with phase-aware driver handoff.</span></article>
+      <article><b>10Hz-40kHz</b><span>Wide-band extension with controlled, non-fatiguing treble.</span></article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-story">
+    <div class="ash-wrap ash-split">
+      <div>
+        <p class="ash-kicker">Design Story</p>
+        <h2>Hybrid weight without losing coherence.</h2>
+      </div>
+      <div class="ash-prose">
+        <p>ASH is built from AAW's long-running hybrid idea: use a dynamic driver for the physical foundation that balanced armatures rarely reproduce naturally, then let dedicated armatures take over upper midrange, treble, and super-high extension.</p>
+        <p>The 13mm graphene diaphragm is tuned diaphragm-first, then constrained with physical low-pass filtering so it avoids unnecessary overlap with the armatures. Driver position, acoustic bore layout, and TrueXross crossover behavior are treated together so the arrival timing stays organized.</p>
+        <p>The result is a big, textured, bass-capable monitor that still keeps vocal edges, cymbal air, and realistic stage cues intact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-fitment" aria-labelledby="ash-fitment-title">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Fitment Options</p>
+      <h2 id="ash-fitment-title">Choose universal flexibility or custom isolation.</h2>
+      <p>Universal ASH is ready to wear and easy to audition. Custom ASH is built from ear impressions for a personal shell, stronger passive isolation, and a stage-focused long-session fit.</p>
+    </div>
+    <div class="ash-wrap ash-fitment-grid">
+      <article class="ash-fitment-card">
+        <a href="/products/ash-universal-in-ear-monitor">
+          <img src="ash-universal-1.jpg" alt="AAW ASH universal-fit in-ear monitors" width="4500" height="3000" loading="lazy">
+          <div><span>Universal fit</span><h3>Ready to audition</h3><p>Ships as a universal monitor with fit accessories. Best for demos, shared use, and quick deployment across listening setups.</p><b></b></div>
+        </a>
+      </article>
+      <article class="ash-fitment-card is-active{% endif %}">
+        <a href="/products/ash-custom-in-ear-monitor">
+          <img src="ash-custom-1.jpg" alt="AAW ASH custom-fit in-ear monitors" width="1600" height="1066" loading="lazy">
+          <div><span>Custom fit</span><h3>Built from impressions</h3><p>Made from ear impressions for a personal seal, stronger isolation, and more freedom in shell and faceplate execution.</p><b>{% if is_custom %}Current selection</b></div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark" id="ash-architecture">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Acoustic Architecture</p>
+      <h2>Graphene dynamic bass. Six-armature precision. TrueXross control.</h2>
+      <p>ASH lets the 13mm graphene dynamic driver carry bass and lower midrange, then hands upper bands to six balanced armatures. The 4-way TrueXross system avoids the chaotic overlap that can make hybrid monitors sound powerful but poorly timed.</p>
+    </div>
+    <article class="ash-wrap ash-spec-card" aria-labelledby="ash-spec-card-title">
+      <header class="ash-spec-card__head">
+        <div class="ash-lockup" aria-label="AAW ASH">
+          <img src="aawlogowhiteSHD.png" alt="AAW" width="240" height="72" loading="lazy">
+          <span aria-hidden="true"></span>
+          <strong>ASH</strong>
+        </div>
+        <div class="ash-spec-card__edition">
+          <h3 id="ash-spec-card-title">7-driver TrueXross hybrid</h3>
+          <p>13mm graphene dynamic woofer + 6 balanced armatures</p>
+        </div>
+      </header>
+      <div class="ash-driver-strip" aria-label="ASH driver configuration">
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--woofer" aria-hidden="true"></span><b>1 x 13mm</b><small>Graphene Dynamic Woofer</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--ba" aria-hidden="true"></span><b>6 x</b><small>Balanced Armatures</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--xross" aria-hidden="true"></span><b>4-way</b><small>TrueXross Crossover</small></div>
+        <div class="ash-driver-item"><span class="ash-icon ash-icon--bore" aria-hidden="true"></span><b>Stainless</b><small>Acoustic Bore Design</small></div>
+      </div>
+      <figure class="ash-config-graphic">
+        <img src="ash-fr-graph.png" alt="AAW ASH frequency response graph" width="550" height="193" loading="lazy">
+      </figure>
+      <div class="ash-feature-panel">
+        <h3>Key Features</h3>
+        <ul>
+          <li>13mm graphene diaphragm dynamic driver for powerful natural sub-bass</li>
+          <li>Six balanced armatures covering upper midrange, treble, and super-high extension</li>
+          <li>4-way TrueXross architecture for cleaner driver handoff</li>
+          <li>Physical low-pass filtering on the dynamic path</li>
+          <li>Universal and custom-fit configurations</li>
+        </ul>
+        <div class="ash-measurement-grid" aria-label="ASH electrical and acoustic measurements">
+          <article><span>Sensitivity</span><strong>108dB</strong></article>
+          <article><span>Impedance</span><strong>30 Ohm</strong></article>
+          <article><span>Frequency Response</span><strong>10Hz - 40kHz</strong></article>
+          <article><span>Total Harmonic Distortion</span><strong>&le;0.5%</strong></article>
+          <article><span>Driver Count</span><strong>7-driver hybrid</strong></article>
+          <article><span>Fit Options</span><strong>Universal / custom</strong></article>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="ash-section ash-tuning">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Sound Signature</p>
+      <h2>Authoritative bass, rich mids, open upper detail.</h2>
+      <p>ASH is tuned for listeners who want physical low-end force without giving up articulation, vocal clarity, and long-session treble control.</p>
+    </div>
+    <div class="ash-wrap ash-tuning-grid">
+      <article><span>Sub-bass</span><h3>Physical foundation</h3><p>The large graphene driver moves air with natural pressure, giving kick drums and bass lines real size.</p></article>
+      <article><span>Lower mids</span><h3>Textured body</h3><p>The dynamic driver reaches into the lower midrange for weight, warmth, and instrument density.</p></article>
+      <article><span>Upper bands</span><h3>Armature clarity</h3><p>Six armatures bring vocal edge, treble definition, and super-high extension without thinning the monitor.</p></article>
+      <article><span>Stage</span><h3>Coherent timing</h3><p>TrueXross and acoustic bore layout keep hybrid handoff focused instead of smeared.</p></article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-gallery-section">
+    <div class="ash-wrap ash-gallery-head">
+      <div>
+        <p class="ash-kicker">Custom Build Archive</p>
+        <h2>ASH custom shells, finished as individual pieces.</h2>
+      </div>
+      <p>These custom builds show how the same seven-driver platform carries different faceplate languages: abalone, blue metallic depth, white-and-gold motif work, and darker resin shells.</p>
+    </div>
+    <div class="ash-wrap ash-gallery" aria-label="ASH product gallery">
+      <figure class="wide"><img src="ash-custom-abalone.jpg" alt="AAW ASH custom in-ear monitors with abalone faceplates" width="1080" height="1080" loading="lazy"></figure>
+      <figure><img src="ash-custom-blue-gold.jpg" alt="AAW ASH custom in-ear monitors with blue metallic and gold flake faceplate" width="1080" height="1080" loading="lazy"></figure>
+      <figure><img src="ash-custom-white-gold.jpg" alt="AAW ASH custom in-ear monitors with white and gold musical motif faceplates" width="1440" height="1440" loading="lazy"></figure>
+      <figure><img src="ash-custom-2.jpg" alt="AAW ASH red custom shell and faceplate close-up" width="1600" height="1066" loading="lazy"></figure>
+      <figure><img src="ash-instagram-cable.jpg" alt="AAW ASH custom monitor with cable from AAW Instagram archive" width="1080" height="1080" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="ash-section ash-accessories">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">Accessories and Warranty</p>
+      <h2>The ASH kit, kept practical.</h2>
+    </div>
+    <div class="ash-wrap ash-accessory-grid">
+      <article>
+        <img src="mockingbird-tiburon-cable.png" alt="Null Audio Symphonym Tiburon UPOCC copper braided cable" width="1024" height="682" loading="lazy">
+        <div><span>01</span><h3>Symphonym Tiburon cable</h3><p>48 inch Null Audio Symphonym Tiburon cable for a secure detachable 2-pin connection.</p></div>
+      </article>
+      <article>
+        <img src="mockingbird-wooden-carry-case.png" alt="AAW carry case" width="2000" height="1334" loading="lazy">
+        <div><span>02</span><h3>AAW carry case</h3><p>Protects the monitors and cable between home, stage, studio, and travel use.</p></div>
+      </article>
+      <article>
+        <img src="z05-auag-liquidmorph-accessory-tray.jpg" alt="Ear tip size tray with assorted sizes" width="2048" height="2048" loading="lazy">
+        <div><span>03</span><h3>Universal fit kit</h3><p>Universal ASH includes ear tips for seal tuning. Custom ASH is built from impressions and does not require tips.</p></div>
+      </article>
+      <article>
+        <img src="ash-instagram-cable.jpg" alt="AAW ASH monitors connected to braided cable" width="1080" height="1080" loading="lazy">
+        <div><span>04</span><h3>1-year warranty</h3><p>Manufacturing-defect coverage with support through AAW Singapore or authorized dealers.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-specs">
+    <div class="ash-wrap ash-specs__grid">
+      <div>
+        <p class="ash-kicker">Specifications</p>
+        <h2>Seven drivers, one full-range hybrid platform.</h2>
+        <p>ASH combines a large dynamic woofer, six balanced armatures, and a 4-way crossover into a platform made for high-energy listening, performance monitoring, and listeners who want weight without losing detail.</p>
+      </div>
+      <dl class="ash-spec-table">
+        <div><dt>Driver Count</dt><dd>7 drivers</dd></div>
+        <div><dt>Dynamic Driver</dt><dd>13mm graphene diaphragm</dd></div>
+        <div><dt>Balanced Armatures</dt><dd>6 precision BA drivers</dd></div>
+        <div><dt>Crossover</dt><dd>4-way TrueXross</dd></div>
+        <div><dt>Sensitivity</dt><dd>108dB</dd></div>
+        <div><dt>Impedance</dt><dd>30 Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;0.5%</dd></div>
+        <div><dt>Fit Options</dt><dd>Universal / custom</dd></div>
+        <div><dt>Warranty</dt><dd>1-year limited</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-faq">
+    <div class="ash-wrap ash-section-head">
+      <p class="ash-kicker">FAQ</p>
+      <h2>Before you choose ASH</h2>
+    </div>
+    <div class="ash-wrap ash-faq__wrap">
+      <div class="ash-faq__list">
+        <details>
+          <summary><span>What is the ASH driver configuration?</span></summary>
+          <p>ASH uses one 13mm graphene diaphragm dynamic driver and six balanced armature drivers in a 4-way TrueXross hybrid system.</p>
+        </details>
+        <details>
+          <summary><span>Why use a 13mm graphene dynamic driver?</span></summary>
+          <p>The large graphene driver gives ASH its physical bass and lower-mid body. Its size, stiffness, and low mass help produce a powerful yet natural foundation.</p>
+        </details>
+        <details>
+          <summary><span>Is ASH suitable for stage use?</span></summary>
+          <p>Yes. ASH was designed for band performances, artists, worship events, and listeners who want a large, immersive hybrid signature. Final stage suitability depends on fit, isolation needs, and monitoring volume.</p>
+        </details>
+        <details>
+          <summary><span>Should I choose universal or custom fit?</span></summary>
+          <p>Choose universal fit for quicker auditioning and easier sharing. Choose custom fit for ear-impression shells, stronger passive isolation, and a more personal long-session fit.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="ash-reviews" class="ash-section ash-section--dark ash-reviews z05-reviews-section">
+    <div class="ash-wrap">
+      <div class="z05-reviews-head">
+        <p class="ash-kicker">Owner Reviews</p>
+        <h2>ASH listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="product.id" data-auto-install="false">
+          
+            product.metafields.judgeme.widget | default:
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-section ash-section--dark ash-brand">
+    <div class="ash-wrap ash-brand__inner">
+      <div class="ash-brand__lead">
+        <p class="ash-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore hybrid IEM craft, since 2014.</h2>
+        <p class="ash-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="ash-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) designs and builds in-ear monitors in Singapore. Founded by Kevin Wang, AAW works across dynamic, balanced armature, electrostatic, planar magnetic, and hybrid platforms. Every model is shaped by physical prototyping and ear-impression feedback, not preset curves.</p>
+        <p>ASH distills the hybrid approach into a seven-driver platform: a 13mm graphene dynamic woofer for bass weight, six balanced armatures for mid and treble precision, and TrueXross crossover timing that keeps all seven drivers coherent. It is built for listeners who want physical low-end authority without sacrificing vocal clarity or stage depth.</p>
+        <a class="ash-btn ash-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ash-section ash-where">
+    <div class="ash-wrap ash-where-head">
+      <div>
+        <p class="ash-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="ash-wrap ash-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin &amp; Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="ash-wrap ash-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="ash-btn ash-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="ash-final">
+    <div class="ash-wrap">
+      <p class="ash-kicker">ASH</p>
+      <h2>Seven drivers. One full-range hybrid statement.</h2>
+      <form class="ash-actions ash-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="current_variant.id">
+        <input type="hidden" name="quantity" value="1">
+        <button class="ash-btn" type="submit">Sold Out</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+
+
+</body>
+</html>

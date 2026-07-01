@@ -1,0 +1,345 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "aaw_home_z07_hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "{% assign home_z07 = all_products['z07-in-ear-monitor'] %}\n{{ 'aaw-home-z07.css' | asset_url | stylesheet_tag }}\n<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-z07-hero\" aria-labelledby=\"aaw-home-identity-title\">\n    <figure class=\"aaw-home-z07-media\">\n      <picture>\n        <source media=\"(max-width: 767px)\" srcset=\"{{ 'z07-monitors-on-beige-marble.jpg' | asset_url }}\">\n        <img src=\"{{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_url }}\" alt=\"AAW Z07 worn with the FitMorph adaptive fit system\" width=\"2528\" height=\"1696\" loading=\"eager\" fetchpriority=\"high\">\n      </picture>\n    </figure>\n    <div class=\"aaw-home-wrap aaw-home-z07-grid\">\n      <div class=\"aaw-home-z07-copy\">\n        <div class=\"aaw-home-brand-identity\"><h1 id=\"aaw-home-identity-title\" class=\"aaw-home-brand-name\">Advanced AcousticWerkes</h1><p class=\"aaw-home-brand-slogan\">Those who listen will find the way.</p><p class=\"aaw-home-brand-intro\">In-ear monitors built in Singapore since 2014. Over 30,000 monitors shipped to musicians, audio engineers, and audiophiles in 65 countries.</p></div>\n        <p class=\"aaw-home-kicker\">New universal</p>\n        <h2 id=\"aaw-home-z07-title\" class=\"aaw-home-z07-product-title\"><span class=\"aaw-home-z07-logo-title\"><img src=\"{{ 'z07-logo.svg' | asset_url }}\" alt=\"Z07\" width=\"514\" height=\"204\"></span><span class=\"aaw-home-z07-subtitle\">Tubeless hybrid. Adaptive fit.</span></h2>\n        <p class=\"aaw-home-z07-lead\">A hybrid acoustic core with no tubes between driver and ear, wrapped in a shell you can refit without retuning.</p>\n        <div class=\"aaw-home-actions\">\n          <a class=\"aaw-home-btn\" href=\"{% if home_z07 != blank %}{{ home_z07.url }}{% else %}/products/z07-in-ear-monitor{% endif %}\">Explore Z07</a>\n          <a class=\"aaw-home-btn secondary\" href=\"/collections/z-series\">See the Z Series</a>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "categories_AwydGQ": {
+      "type": "categories",
+      "blocks": {
+        "collection_3mWwQw": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-musician",
+            "heading": "For musicians"
+          }
+        },
+        "collection_BDARn7": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-audiophile",
+            "image": "shopify://shop_images/DSC1842.jpg",
+            "heading": "For audiophiles"
+          }
+        },
+        "collection_HhNzRg": {
+          "type": "collection",
+          "settings": {
+            "collection": "totl",
+            "heading": "Flagship IEMs"
+          }
+        },
+        "collection_EdP6L3": {
+          "type": "collection",
+          "settings": {
+            "collection": "wireless",
+            "heading": "Wireless"
+          }
+        },
+        "collection_FBWtWq": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "heading": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3mWwQw",
+        "collection_BDARn7",
+        "collection_HhNzRg",
+        "collection_EdP6L3",
+        "collection_FBWtWq"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "column_style": "rounded",
+        "desktop_column_count": 5,
+        "desktop_column_gap": 20,
+        "desktop_column_width": "90%",
+        "card_hover_style": "inside-shadow",
+        "mobile_column_count": "2",
+        "mobile_column_gap": 15,
+        "mobile_column_width": "85%",
+        "enable_swipe_mobile": true,
+        "color_scheme": "",
+        "highlighted_color": "#eff341",
+        "section_background": "",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 20,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_z07_fit": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-section aaw-home-fit-section\" aria-labelledby=\"aaw-home-fit-title\">\n    <div class=\"aaw-home-wrap\">\n      <div class=\"aaw-home-section-head\">\n        <div>\n          <p class=\"aaw-home-kicker\">FitMorph</p>\n          <h2 id=\"aaw-home-fit-title\">Change the fit. Keep the sound.</h2>\n        </div>\n        <p>The acoustic core stays put. The outer shell comes off. Try a different size, pass them to a bandmate, refit them a year from now - the tuning you bought is the tuning you keep.</p>\n      </div>\n      <div class=\"aaw-home-proof-grid\">\n        <figure class=\"aaw-home-proof-image\">\n          <img src=\"{{ 'z07-fitmorph-interchangeable-fit-options-tool.jpg' | asset_url }}\" alt=\"Z07 FitMorph holders, screws, and acoustic core laid out\" loading=\"lazy\">\n          <figcaption><b>One core. Interchangeable shells.</b><span>The driver assembly is permanent. Everything around it is not.</span></figcaption>\n        </figure>\n        <div class=\"aaw-home-proof-list\">\n          <article><span>01</span><h3>A seal you can rebuild</h3><p>When the fit goes off - new ear tips, a different commute, two years of wear - swap the shell instead of the monitor.</p></article>\n          <article><span>02</span><h3>No tube between driver and ear</h3><p>Z07's hybrid core fires directly into the canal. No sound bores. No dampening filters in the path. Less compression, more of what the driver does.</p></article>\n          <article><span>03</span><h3>The 2-pin socket lives in the shell</h3><p>Replace a damaged socket without sending the monitor in for service. Cable swaps too - same 0.78mm 2-pin standard the industry uses.</p></article>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_product_paths": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-section dark\" aria-labelledby=\"aaw-home-path-title\">\n    <div class=\"aaw-home-wrap\">\n      <div class=\"aaw-home-section-head\">\n        <div>\n          <p class=\"aaw-home-kicker\">The range</p>\n          <h2 id=\"aaw-home-path-title\">Three ways in.</h2>\n        </div>\n        <p>Universal monitor. Daily driver. Or your ears, scanned and built around.</p>\n      </div>\n      <div class=\"aaw-home-product-grid\">\n        <a class=\"aaw-home-product-card feature\" href=\"/products/z07-in-ear-monitor\">\n          <img src=\"{{ 'z07-green-faceplate-closeup-black-tray.jpg' | asset_url }}\" alt=\"Z07 green and black faceplate detail\" loading=\"lazy\">\n          <div><span>New universal</span><h3><img class=\"aaw-home-z07-card-logo\" src=\"{{ 'z07-logo.svg' | asset_url }}\" alt=\"Z07\" width=\"257\" height=\"102\"><span class=\"visually-hidden\">Z07 flagship in-ear monitor</span></h3><p>The flagship. Hybrid tubeless core, FitMorph shell, designed to be the last universal you need.</p></div>\n        </a>\n        <a class=\"aaw-home-product-card\" href=\"/products/z05-auag-launch-edition\">\n          <img src=\"{{ 'z05-auag-luxury-portrait-hero.png' | asset_url }}\" alt=\"Z05 AuAg Launch Edition\" loading=\"lazy\">\n          <div><span>Daily universal</span><h3>Z05 AuAg</h3><p>Dynamic punch and armature detail, with a TwinCore switch to flip between moods. Small enough to live in a pocket.</p></div>\n        </a>\n        <a class=\"aaw-home-product-card\" href=\"/products/aaw-custom-builder\">\n          <img src=\"{{ 'aaw-ins-gallery-custom-2025.webp' | asset_url }}\" alt=\"AAW custom in-ear monitor with hand-finished shell\" loading=\"lazy\">\n          <div><span>Custom build</span><h3>Made to your ears</h3><p>Send impressions. Pick the shell, the faceplate, the wood, the inlay. Receive a monitor that nobody else has and nobody else can wear.</p></div>\n        </a>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_z_series_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "collection": "z-series",
+        "products_style": "stacked",
+        "enable_swipe_mobile": true,
+        "products_to_show": 4,
+        "grid_image_size": "square",
+        "image_fit": "cover",
+        "content_alignment": "text-left",
+        "title": "Shop the Z Series",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "description": "Universal AAW monitors for daily listening, stage work, and focused sessions.",
+        "btntext": "View Z Series",
+        "promotion_card": false,
+        "promotion_border": false,
+        "promotion_in_stacked": 1,
+        "pr_heading": "Z Series",
+        "pr_seo_heading": "h5",
+        "pr_description": "Compact universal monitors tuned by AAW.",
+        "button_style": "solid",
+        "btn_text": "",
+        "btn_link": "",
+        "color_scheme": "primary",
+        "section_background": "#f4f1ea",
+        "highlighted_color": "#e2b768",
+        "heading_color": "#000000",
+        "text_color": "#484848",
+        "btn_bg_color": "#000000",
+        "btn_text_color": "#ffffff",
+        "btn_border_color": "#000000",
+        "btn_hover_color": "#e2b768",
+        "btn_hover_text_color": "#000000",
+        "btn_hover_border_color": "#e2b768",
+        "background_color": "#ffffff",
+        "background_opacity": 30,
+        "top_space_desktop": 70,
+        "bottom_space_desktop": 70,
+        "top_space_mobile": 45,
+        "bottom_space_mobile": 45
+      }
+    },
+    "aaw_home_brand_trust": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-brand-band\">\n    <div class=\"aaw-home-wrap aaw-home-philosophy-wrap\">\n      <p class=\"aaw-home-kicker\">About</p>\n      <blockquote class=\"aaw-home-philosophy\">\n        Listening is where the work starts, and where it returns. It is how a shell becomes comfortable, how a crossover finds its voice, how a stage monitor earns trust, and how a personal IEM becomes the one a listener reaches for without thinking.\n      </blockquote>\n      <blockquote class=\"aaw-home-founder-quote\"><p>A monitor isn't done when it sounds good on a test bench. It's done when someone wears it for four hours on stage and forgets it's there.</p><cite>Kevin Wang, founder</cite></blockquote>\n      <div class=\"aaw-home-founder-bio\" itemscope itemtype=\"https://schema.org/Person\">\n        <p><strong itemprop=\"name\">Kevin Wang</strong> <span itemprop=\"jobTitle\">Founder &amp; Tuning Engineer</span> leads AAW's acoustic design and tuning work in Singapore. Since founding Advanced AcousticWerkes in 2014, his work has focused on custom-fit monitors, universal IEMs, hybrid driver integration, and practical long-term service for musicians, engineers, and audiophiles.</p>\n        <a itemprop=\"sameAs\" href=\"https://sg.linkedin.com/in/kevin-wang-15376265\" rel=\"noopener\" target=\"_blank\">Kevin Wang on LinkedIn</a>\n      </div>\n      <p class=\"aaw-home-brand-meta\">AAW &mdash; Singapore, since 2014. <a href=\"/pages/about-us\">The full story &rarr;</a></p>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_customer_voices": {
+      "type": "aaw-customer-voices",
+      "settings": {
+        "layout_mode": "home",
+        "eyebrow": "Customer voices",
+        "heading": "What listeners remember after the first listen.",
+        "intro": "Collected through AAW dealers. Edited for length only.",
+        "page_link": "shopify://pages/customer-voices"
+      }
+    },
+    "177963651229e51824": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_mihTiR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customer IEM Build Showcase",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_mihTiR"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_visibility": "always",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_reviewed_by": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\"><section class=\"aaw-home-review-strip\" aria-labelledby=\"aaw-home-review-title\"><div class=\"aaw-home-wrap\"><div class=\"aaw-home-review-head\"><p class=\"aaw-home-kicker\">Reviewed by</p><h2 id=\"aaw-home-review-title\">Where AAW monitors are featured.</h2></div><div class=\"aaw-home-review-matrix\"><article class=\"aaw-home-review-card is-nebula-review\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-ins-2015-nebula-one.jpg' | asset_url }}\" alt=\"AAW universal in-ear monitor\" loading=\"lazy\"><span class=\"aaw-home-review-logo is-dark\"><img src=\"{{ 'aaw-review-logo-head-fi.png' | asset_url }}\" alt=\"Head-Fi\" loading=\"lazy\"></span><small>Community coverage</small></article><article class=\"aaw-home-review-card\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-ins-2016-w300ar.jpg' | asset_url }}\" alt=\"AAW early hybrid custom in-ear monitor\" loading=\"lazy\"><span class=\"aaw-home-review-logo\"><img src=\"{{ 'aaw-review-logo-the-headphone-list.png' | asset_url }}\" alt=\"The Headphone List\" loading=\"lazy\"></span><small>Demo impressions</small></article><article class=\"aaw-home-review-card\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-ins-2017-w900.jpg' | asset_url }}\" alt=\"AAW flagship hybrid monitor\" loading=\"lazy\"><span class=\"aaw-home-review-logo\"><img src=\"{{ 'aaw-review-logo-twister6.png' | asset_url }}\" alt=\"Twister6\" loading=\"lazy\"></span><small>Independent review</small></article><article class=\"aaw-home-review-card is-nebula-review\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-ins-2015-nebula-one.jpg' | asset_url }}\" alt=\"AAW universal monitor era\" loading=\"lazy\"><span class=\"aaw-home-review-logo\"><img src=\"{{ 'aaw-review-logo-headfonia.svg' | asset_url }}\" alt=\"Headfonia\" loading=\"lazy\"></span><small>Review roundup</small></article><article class=\"aaw-home-review-card\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-review-product-w900-universal-fit.jpg' | asset_url }}\" alt=\"AAW universal-fit monitor\" loading=\"lazy\"><span class=\"aaw-home-review-logo\"><img src=\"{{ 'aaw-review-logo-headfonics.webp' | asset_url }}\" alt=\"Headfonics\" loading=\"lazy\"></span><small>Long-form review</small></article><article class=\"aaw-home-review-card\"><img class=\"aaw-home-review-photo\" src=\"{{ 'aaw-ins-2019-canary.jpg' | asset_url }}\" alt=\"AAW flagship in-ear monitor\" loading=\"lazy\"><span class=\"aaw-home-review-logo\"><img src=\"{{ 'aaw-review-logo-headphonesty.svg' | asset_url }}\" alt=\"Headphonesty\" loading=\"lazy\"></span><small>Feature review</small></article></div></div></section></div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "video_GxUGwD": {
+      "type": "video",
+      "settings": {
+        "section_visibility": "always",
+        "video_full_width": false,
+        "make_section_rounded": true,
+        "autoplay": true,
+        "video_height": "adapt_image",
+        "mobile_video_height": "adapt_image",
+        "video_url": "https://www.youtube.com/watch?v=dS-hTZjs_qU",
+        "heading": "Inside the shop.",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "description": "Every AAW monitor is assembled and tuned in our Singapore workshop. Each pair is measured against a reference curve before it ships.",
+        "content_width": "medium",
+        "content_position": "flex-start",
+        "content_alignment": "center_center",
+        "color_scheme": "",
+        "section_background": "#080808",
+        "text": "#ffffff",
+        "highlighted_color": "#e2b768",
+        "button": "#000000",
+        "button_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_service_confidence": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-service-section\" aria-labelledby=\"aaw-home-service-title\">\n    <div class=\"aaw-home-wrap\">\n      <div class=\"aaw-home-section-head\">\n        <div>\n          <p class=\"aaw-home-kicker\">Service</p>\n          <h2 id=\"aaw-home-service-title\">The part that happens after you pay.</h2>\n        </div>\n        <p>A monitor is a long relationship. Here's what that looks like with us.</p>\n      </div>\n      <div class=\"aaw-home-service-grid\">\n        <article><span>Before</span><h3>Ear impressions and fit</h3><p>What good impressions look like, where to get them done, and what to expect when a custom shell first goes in your ear.</p></article>\n        <article><span>If something's off</span><h3>Refits and warranty</h3><p>Seal not right. Pressure point in a new spot. Something snapped. Send it back and we'll sort it.</p></article>\n        <article><span>Years later</span><h3>Repair and re-shell</h3><p>Cables, sockets, shells. We still service monitors we built ten years ago. Yours will get the same.</p></article>\n      </div>\n      <div class=\"aaw-home-actions\"><a class=\"aaw-home-btn\" href=\"/pages/how-to-take-ear-impression\">Impression guide</a><a class=\"aaw-home-btn secondary\" href=\"/pages/warranty-refit\">Warranty &amp; refit</a></div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_dealers": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-dealer-section\" aria-labelledby=\"aaw-home-dealer-title\">\n    <div class=\"aaw-home-wrap\">\n      <div class=\"aaw-home-section-head\">\n        <div>\n          <p class=\"aaw-home-kicker\">Listen first</p>\n          <h2 id=\"aaw-home-dealer-title\">Singapore listening rooms.</h2>\n        </div>\n        <p>Specs are a starting point. Your ears are the verdict. Audition Z07 and the rest of the range at any of these four locations.</p>\n      </div>\n      <div class=\"aaw-home-dealer-layout\">\n        <div class=\"aaw-home-map-frame\"><iframe title=\"Map to AAW office, Singapore\" src=\"https://www.google.com/maps?q=76%20Playfair%20Rd%20%2301-03%20Singapore%20367996&output=embed\" width=\"600\" height=\"450\" style=\"border:0;\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>\n        <div class=\"aaw-home-dealer-list\">\n          <article class=\"featured\"><span>AAW office</span><h3>76 Playfair Rd, #01-03</h3><p>Singapore 367996<br>+65 8731 5476 - sales@acousticwerkes.com<br><strong>Hours:</strong> Mon, Wed-Fri 10am-6pm. Tue and Sat by appointment.</p></article>\n          <article><span>Dealer</span><h3>Zeppelin &amp; Co.</h3><p>1 Rochor Canal Rd, #02-78 Sim Lim Square<br>9337 9655<br><strong>Hours:</strong> Tue-Sat 11:30am-8pm. Sun 12pm-7pm.</p></article>\n          <article><span>Dealer</span><h3>JABEN</h3><p>1 Coleman St, #01-25 The Adelphi<br>6337 0809<br><strong>Hours:</strong> Mon-Sat 12pm-8pm.</p></article>\n          <article><span>Dealer</span><h3>AV One</h3><p>1 Coleman St, The Adelphi<br>6337 0080<br><strong>Hours:</strong> Mon-Sat 11am-7:30pm. Public holidays 1pm-6pm.</p></article>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "aaw_home_faq": {
+      "type": "custom-liquid",
+      "settings": {
+        "section_visibility": "always",
+        "custom_liquid": "<div class=\"aaw-home-shell\">\n  <section class=\"aaw-home-faq-section\" aria-labelledby=\"aaw-home-faq-title\">\n    <div class=\"aaw-home-wrap aaw-home-faq-grid\">\n      <div>\n        <p class=\"aaw-home-kicker\">FAQ</p>\n        <h2 id=\"aaw-home-faq-title\">Quick answers about AAW.</h2>\n      </div>\n      <div class=\"aaw-home-faq-list\">\n        <details open><summary>What does AAW specialize in?</summary><p>Advanced AcousticWerkes specializes in in-ear monitors designed and built in Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work.</p></details>\n        <details><summary>What is the difference between universal and custom IEMs?</summary><p>Universal IEMs use ear tips and can fit many listeners, which makes them easier to demo, share, and travel with. Custom IEMs are made from your ear impressions or approved digital scans, so they seal around your ears only and allow more freedom in shell shape, artwork, and fit tuning.</p></details>\n        <details><summary>Do I need ear impressions for a CIEM?</summary><p>Yes. AAW needs physical impressions from an audiologist or an approved digital ear scan before building a custom in-ear monitor. Accurate impressions are critical because the acoustic seal affects bass, isolation, comfort, and whether the finished monitor can be worn for long sessions.</p></details>\n        <details><summary>Can AAW help with refits or repairs?</summary><p>Yes. The Singapore office handles refit, warranty, repair, cable, socket, and shell service for AAW monitors. If you bought through an authorized dealer, that dealer is often the fastest first stop, but the work is still supported through AAW's service process.</p></details>\n        <details><summary>Where can I audition or order AAW?</summary><p>In Singapore, listeners can start at the AAW office at 76 Playfair Rd, #01-03, or audition through Zeppelin &amp; Co., JABEN, and AV One. Outside Singapore, AAW works with authorized specialist audio dealers; use the store locator or contact sales@acousticwerkes.com for the closest listening point.</p></details>\n      </div>\n    </div>\n  </section>\n</div>",
+        "content_width": "large",
+        "text_alignment": "left",
+        "color_scheme": "primary",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "aaw_home_z07_hero",
+    "categories_AwydGQ",
+    "aaw_home_z07_fit",
+    "aaw_home_product_paths",
+    "aaw_home_z_series_collection",
+    "aaw_home_brand_trust",
+    "aaw_home_customer_voices",
+    "177963651229e51824",
+    "aaw_home_reviewed_by",
+    "video_GxUGwD",
+    "aaw_home_service_confidence",
+    "aaw_home_dealers",
+    "aaw_home_faq"
+  ]
+}

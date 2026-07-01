@@ -1,0 +1,139 @@
+{%- liquid
+  assign z_series = collections['z-series']
+  assign home_description = page_description | default: 'Advanced AcousticWerkes designs custom and universal in-ear monitors from Singapore, with listening rooms, fit support, refit, warranty, and repair service.'
+  assign page_id = canonical_url | append: '#webpage'
+  assign z_series_id = canonical_url | append: '#z-series'
+  assign faq_id = canonical_url | append: '#faq'
+  assign store_id = canonical_url | append: '#aaw-singapore-store'
+  assign org_id = shop.url | append: '#organization'
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": {{ page_id | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ page_title | json }},
+      "description": {{ home_description | strip_html | strip_newlines | json }},
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": {{ shop.url | append: '#website' | json }}
+      },
+      "about": {
+        "@type": "Organization",
+        "@id": {{ org_id | json }}
+      },
+      "mainEntity": [
+        { "@id": {{ z_series_id | json }} },
+        { "@id": {{ store_id | json }} },
+        { "@id": {{ faq_id | json }} }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ z_series_id | json }},
+      "name": "AAW Z Series",
+      "url": {{ canonical_url | append: '#shopify-section-template--19986822496298__aaw_home_z_series_collection' | json }},
+      "itemListElement": [
+        {%- if z_series != blank -%}
+          {%- for listed_product in z_series.products limit: 4 -%}
+            {
+              "@type": "ListItem",
+              "position": {{ forloop.index }},
+              "url": {{ shop.url | append: listed_product.url | json }},
+              "item": {
+                "@type": "Product",
+                "name": {{ listed_product.title | strip_html | json }},
+                "url": {{ shop.url | append: listed_product.url | json }}
+                {%- if listed_product.featured_image != blank -%},
+                "image": {{ listed_product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
+                {%- endif -%}
+              }
+            }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      ]
+    },
+    {
+      "@type": ["Store", "LocalBusiness"],
+      "@id": {{ store_id | json }},
+      "name": "AAW Singapore Office",
+      "url": {{ canonical_url | json }},
+      "telephone": "+65 8731 5476",
+      "email": "sales@acousticwerkes.com",
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": {{ org_id | json }}
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#01-03, 76 Playfair Rd",
+        "addressLocality": "Singapore",
+        "postalCode": "367996",
+        "addressCountry": "SG"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Saturday"],
+          "description": "By appointment"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": {{ faq_id | json }},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does AAW specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW designs and builds in-ear monitors in Singapore, including custom IEMs, universal monitors, hybrid driver designs, cables, refit work, and long-term service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between universal and custom IEMs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Universal IEMs are ready to wear with ear tips and can be shared or resold more easily. Custom IEMs are built from ear impressions for a personal shell shape, stronger fit security, and more design freedom."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need ear impressions for a CIEM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A custom in-ear monitor needs accurate ear impressions or approved digital ear scans. Good impressions help the shell seal, reduce pressure points, and lower the chance of refit work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AAW help with refits or repairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AAW supports refit, warranty, repair, cable, and service questions through the Singapore office and authorized dealers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I audition or order AAW?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit the AAW Office at 76 Playfair Road or an authorized listening room such as Zeppelin & Co., JABEN, and AV One. Outside Singapore, use the store locator for authorized dealers."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Service Your IEM – AAW CIEM Care System</title>
+<style>
+/* ==================== CSS (from ciem-care-system.css) ==================== */
+.ciem-care {
+  --care-black: #080808;
+  --care-ink: #111111;
+  --care-paper: #f4f1ea;
+  --care-panel: #ffffff;
+  --care-border: #d8d0c3;
+  --care-gold: #e2b768;
+  --care-brass: #8a6423;
+  --care-muted: #d8d1c7;
+  --care-text: #302b25;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--care-black);
+  color: #f5f2ea;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Language-specific font families (copied from z05-product.css) */
+html:lang(ja) .ciem-care,
+html[data-ciem-lang="ja"] .ciem-care {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", "Source Han Serif JP", "Noto Serif CJK SC", "Source Han Serif CN", serif;
+}
+html:lang(zh-Hant) .ciem-care,
+html:lang(zh-TW) .ciem-care,
+html:lang(zh-HK) .ciem-care,
+html[data-ciem-lang="zhHant"] .ciem-care {
+  font-family: "Hiragino Mincho ProN", "Noto Serif CJK TC", "Source Han Serif TW", "Noto Serif CJK JP", serif;
+}
+html:lang(zh-Hans) .ciem-care,
+html:lang(zh-CN) .ciem-care,
+html[data-ciem-lang="zh"] .ciem-care {
+  font-family: "Noto Serif CJK JP", "Source Han Serif JP", "Noto Serif CJK SC", "Source Han Serif CN", serif;
+}
+html:lang(zh-Hans) .ciem-care p,
+html:lang(zh-CN) .ciem-care p,
+html[data-ciem-lang="zh"] .ciem-care p,
+html[data-ciem-lang="zh"] .ciem-care li {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Source Han Sans CN", "Microsoft YaHei", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+html[data-ciem-lang="ko"] .ciem-care {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Source Han Sans KR", sans-serif;
+}
+
+/* Language switch */
+.ciem-care-lang-switch {
+  position: absolute;
+  z-index: 20;
+  top: 14px;
+  right: max(18px, calc((100vw - 1180px) / 2));
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 8, 8, 0.72);
+  backdrop-filter: blur(10px);
+}
+.ciem-care-lang-switch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #bdb5aa;
+  min-width: 38px;
+  height: 28px;
+  padding: 0 9px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.ciem-care-lang-switch button.is-active {
+  background: #e2b768;
+  color: #080808;
+}
+.ciem-care-lang-switch button:focus-visible {
+  outline: 2px solid #e2b768;
+  outline-offset: 2px;
+}
+
+.ciem-care * {
+  box-sizing: border-box;
+}
+.ciem-care-wrap {
+  width: min(1180px, calc(100vw - 36px));
+  margin: 0 auto;
+}
+.ciem-care h1, .ciem-care h2, .ciem-care h3, .ciem-care p {
+  margin-top: 0;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+.ciem-care-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  color: var(--care-gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.ciem-care-kicker::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+}
+.ciem-care-hero {
+  position: relative;
+  padding: clamp(58px, 8vw, 116px) 0 0;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(226, 183, 104, 0.14), transparent 32%),
+    linear-gradient(145deg, #121212, #050505 68%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.ciem-care-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(340px, 0.74fr);
+  gap: clamp(30px, 6vw, 76px);
+  align-items: end;
+  min-width: 0;
+}
+.ciem-care h1 {
+  max-width: 820px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: clamp(54px, 8vw, 112px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+.ciem-care-dek {
+  max-width: 660px;
+  margin-bottom: clamp(36px, 6vw, 72px);
+  color: var(--care-muted);
+  font-size: clamp(17px, 1.65vw, 21px);
+  line-height: 1.48;
+}
+.ciem-care-quick {
+  margin-bottom: clamp(36px, 6vw, 72px);
+  padding: 24px 24px 26px;
+  border: 1px solid rgba(226, 183, 104, 0.42);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 28px 76px rgba(0, 0, 0, 0.28);
+}
+.ciem-care-quick h2 {
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.ciem-care-quick ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: care-quick;
+  color: var(--care-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.ciem-care-quick li {
+  counter-increment: care-quick;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+.ciem-care-quick li::before {
+  content: counter(care-quick, decimal-leading-zero);
+  color: var(--care-gold);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+.ciem-care-system {
+  padding: clamp(62px, 8vw, 108px) 0;
+  background: var(--care-paper);
+  color: var(--care-ink);
+}
+.ciem-care-system-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.98fr) minmax(360px, 0.72fr);
+  gap: clamp(26px, 5vw, 56px);
+  align-items: end;
+  margin-bottom: clamp(34px, 5vw, 56px);
+}
+.ciem-care-system-head h2 {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--care-ink);
+  font-size: clamp(38px, 5.4vw, 78px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+.ciem-care-system-head p {
+  margin-bottom: 0;
+  color: var(--care-text);
+  font-size: 17px;
+  line-height: 1.62;
+}
+.ciem-care-step-list {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--care-border);
+  background: var(--care-border);
+}
+.ciem-care-step {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.96fr);
+  gap: 0;
+  align-items: stretch;
+  min-width: 0;
+  background: #ffffff;
+}
+.ciem-care-step:nth-child(even) {
+  grid-template-columns: minmax(320px, 0.96fr) minmax(0, 1.04fr);
+}
+.ciem-care-step:nth-child(even) .ciem-care-step-media {
+  order: 2;
+}
+.ciem-care-step-media {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(12px, 1.8vw, 20px);
+  background: #090909;
+  overflow: hidden;
+}
+.ciem-care-step-media::after {
+  content: "";
+  position: absolute;
+  inset: clamp(12px, 1.8vw, 20px);
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.ciem-care-step-media img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 430px;
+  aspect-ratio: 1.04 / 1;
+  object-fit: cover;
+  background: #111111;
+  filter: contrast(1.03) saturate(0.92);
+}
+.ciem-care-step:nth-child(6) .ciem-care-step-media {
+  align-self: start;
+  aspect-ratio: 1 / 1;
+}
+.ciem-care-step:nth-child(6) .ciem-care-step-media img {
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+}
+.ciem-care-step-content {
+  display: flex;
+  min-width: 0;
+  padding: clamp(28px, 5vw, 58px);
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid var(--care-border);
+}
+.ciem-care-step:nth-child(even) .ciem-care-step-content {
+  border-right: 1px solid var(--care-border);
+  border-left: 0;
+}
+.ciem-care-step-number {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--care-brass);
+  font-size: clamp(42px, 6.6vw, 92px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+.ciem-care-step h3 {
+  max-width: 560px;
+  margin-bottom: 18px;
+  color: var(--care-ink);
+  font-size: clamp(30px, 4.2vw, 58px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+.ciem-care-step p {
+  max-width: 660px;
+  margin-bottom: 22px;
+  color: var(--care-text);
+  font-size: 17px;
+  line-height: 1.62;
+}
+.ciem-care-step ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: auto 0 0;
+  padding: 0;
+  background: var(--care-border);
+  border: 1px solid var(--care-border);
+  list-style: none;
+}
+.ciem-care-step li {
+  min-height: 96px;
+  padding: 16px;
+  background: #f9f7f2;
+  color: #41382e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.ciem-care-maintenance {
+  padding: clamp(58px, 8vw, 100px) 0;
+  background: #0b0b0b;
+  color: #f5f2ea;
+  border-top: 1px solid rgba(226, 183, 104, 0.24);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ciem-care-maintenance-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(32px, 6vw, 68px);
+  align-items: start;
+}
+.ciem-care-maintenance h2 {
+  max-width: 520px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+.ciem-care-maintenance p {
+  max-width: 620px;
+  color: var(--care-muted);
+  font-size: 17px;
+  line-height: 1.68;
+}
+.ciem-care-rhythm {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.ciem-care-rhythm article {
+  min-height: 230px;
+  padding: 24px 22px;
+  background: #141414;
+}
+.ciem-care-rhythm h3 {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.ciem-care-rhythm p {
+  margin-bottom: 0;
+  color: #cfc7bb;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.ciem-care-support {
+  padding: clamp(58px, 8vw, 104px) 0;
+  background: #f4f1ea;
+  color: var(--care-ink);
+}
+.ciem-care-support-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 2px solid var(--care-ink);
+}
+.ciem-care-support h2 {
+  max-width: 780px;
+  margin-bottom: 14px;
+  color: var(--care-ink);
+  font-size: clamp(38px, 5vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+.ciem-care-support p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--care-text);
+  font-size: 17px;
+  line-height: 1.62;
+}
+.ciem-care-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.ciem-care-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--care-ink);
+  color: #090909;
+  background: var(--care-gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.ciem-care-btn:focus-visible {
+  outline: 2px solid var(--care-gold);
+  outline-offset: 2px;
+}
+.ciem-care-btn.secondary {
+  color: var(--care-ink);
+  background: transparent;
+  border-color: var(--care-brass);
+}
+.ciem-care-btn.secondary:focus-visible {
+  outline: 2px solid var(--care-brass);
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 980px) {
+  .ciem-care-hero-grid,
+  .ciem-care-system-head,
+  .ciem-care-maintenance-grid,
+  .ciem-care-support-grid {
+    grid-template-columns: 1fr;
+  }
+  .ciem-care-step, .ciem-care-step:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  .ciem-care-step:nth-child(even) .ciem-care-step-media {
+    order: 0;
+  }
+  .ciem-care-step-content, .ciem-care-step:nth-child(even) .ciem-care-step-content {
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid var(--care-border);
+  }
+  .ciem-care-step ul, .ciem-care-rhythm {
+    grid-template-columns: 1fr;
+  }
+  .ciem-care-rhythm article {
+    min-height: 0;
+  }
+  .ciem-care-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ciem-care-wrap {
+    width: calc(100vw - 48px);
+  }
+  .ciem-care-hero {
+    padding-top: 44px;
+  }
+  .ciem-care h1 {
+    max-width: 275px;
+    font-size: clamp(34px, 9.4vw, 37px);
+    line-height: 0.92;
+  }
+  .ciem-care-dek {
+    max-width: 100%;
+    margin-bottom: 26px;
+    font-size: 16px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .ciem-care-quick {
+    margin-bottom: 32px;
+    padding: 18px;
+  }
+  .ciem-care-system, .ciem-care-maintenance, .ciem-care-support {
+    padding: 54px 0;
+  }
+  .ciem-care-system-head {
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+  .ciem-care-system-head h2,
+  .ciem-care-maintenance h2,
+  .ciem-care-support h2 {
+    max-width: 300px;
+    font-size: clamp(30px, 8.1vw, 34px);
+    line-height: 0.98;
+  }
+  .ciem-care-quick h2 {
+    max-width: 280px;
+    font-size: clamp(22px, 7vw, 27px);
+    line-height: 1;
+  }
+  .ciem-care-step-media { padding: 10px; }
+  .ciem-care-step-media::after { inset: 10px; }
+  .ciem-care-step-media img {
+    min-height: 0;
+    aspect-ratio: 1 / 0.96;
+  }
+  .ciem-care-step-content { padding: 24px 18px 20px; }
+  .ciem-care-step-number { margin-bottom: 18px; font-size: 52px; }
+  .ciem-care-step h3 {
+    max-width: 285px;
+    font-size: clamp(27px, 7.4vw, 31px);
+    line-height: 1;
+  }
+  .ciem-care-step p,
+  .ciem-care-system-head p,
+  .ciem-care-maintenance p,
+  .ciem-care-support p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.62;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .ciem-care-lang-switch {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  .ciem-care-hero { padding-top: 64px; }
+  .ciem-care-actions, .ciem-care-btn { width: 100%; }
+}
+</style>
+</head>
+<body style="margin:0">
+
+<div class="ciem-care">
+  <section class="ciem-care-hero" aria-labelledby="ciem-care-title">
+    <div class="ciem-care-lang-switch" role="group" aria-label="Language selector">
+      <button type="button" data-ciem-lang="en" class="is-active" aria-pressed="true">EN</button>
+      <button type="button" data-ciem-lang="zh" aria-pressed="false">简</button>
+      <button type="button" data-ciem-lang="zhHant" aria-pressed="false">繁</button>
+      <button type="button" data-ciem-lang="ja" aria-pressed="false">JP</button>
+      <button type="button" data-ciem-lang="ko" aria-pressed="false">KR</button>
+    </div>
+    <div class="ciem-care-wrap ciem-care-hero-grid">
+      <div>
+        <p class="ciem-care-kicker">AAW CIEM care system</p>
+        <h1 id="ciem-care-title">How to Service Your IEM</h1>
+        <p class="ciem-care-dek">Custom in-ear monitors live close to skin, sweat, dust, and daily handling. A short care routine keeps the shells comfortable, the sound bores open, and the cable connection dependable.</p>
+      </div>
+      <aside class="ciem-care-quick" aria-label="Quick care checklist">
+        <h2>After every session</h2>
+        <ol>
+          <li>Brush or wipe loose debris from the shell.</li>
+          <li>Check the sound bores before wax hardens.</li>
+          <li>Let moisture evaporate before closing the case.</li>
+          <li>Store the monitors and cable without tight bends.</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="ciem-care-system" aria-labelledby="ciem-care-system-title">
+    <div class="ciem-care-wrap">
+      <div class="ciem-care-system-head">
+        <div>
+          <p class="ciem-care-kicker">The routine</p>
+          <h2 id="ciem-care-system-title">Six small habits that protect fit and sound</h2>
+        </div>
+        <p>Work gently, always clean outward, and avoid forcing tools into openings. If debris is packed deep inside a sound bore, stop and contact AAW support rather than pushing further.</p>
+      </div>
+      <div class="ciem-care-step-list">
+        <!-- Step 01 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 01%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3EBrush Illustration%3C/text%3E%3C/svg%3E" alt="Illustration of dust being brushed from a custom in-ear monitor shell" width="1183" height="1137" loading="eager">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 01</span>
+            <h3>Brush loose dust away</h3>
+            <p>Use a soft brush to clear lint, dry skin, and surface dust from the shell, faceplate edge, and nozzle exterior. Keep the motion light so particles lift away instead of being pressed into seams.</p>
+            <ul>
+              <li>Brush outward from openings and edges.</li>
+              <li>Avoid alcohol, solvents, and rough fabric on polished shells.</li>
+              <li>Do this before deeper bore cleaning.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Step 02 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 02%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3ECleaning Tool%3C/text%3E%3C/svg%3E" alt="Illustration of a cleaning tool removing debris from custom in-ear monitor sound bores" width="2098" height="2016" loading="lazy">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 02</span>
+            <h3>Clear the sound bores</h3>
+            <p>Use the included cleaning tool to gently remove earwax or dust from the sound bores. Be careful not to push debris deeper.</p>
+            <ul>
+              <li>Hold the bore downward when possible.</li>
+              <li>Scoop from the opening; do not dig into the tube.</li>
+              <li>Stop if the wax is hardened or lodged deep inside.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Step 03 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 03%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3ECable Contacts%3C/text%3E%3C/svg%3E" alt="Illustration of cable connector pins being cleaned before reconnecting" width="1183" height="1137" loading="lazy">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 03</span>
+            <h3>Care for cable contacts</h3>
+            <p>Disconnect by holding the connector housing, then inspect the pins and socket area for lint or residue. Clean dry debris with a soft brush before reconnecting.</p>
+            <ul>
+              <li>Never pull the cable itself to disconnect.</li>
+              <li>Reconnect straight, without twisting the pins.</li>
+              <li>Do not use liquid cleaner on exposed contacts.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Step 04 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 04%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3EDesiccant + Case%3C/text%3E%3C/svg%3E" alt="Illustration of custom in-ear monitors stored in a protective case with a desiccant pack" width="591" height="568" loading="lazy">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 04</span>
+            <h3>Control moisture</h3>
+            <p>After use, let the monitors air dry on a clean surface before sealing them in the case. Add a desiccant pack to help absorb moisture from sweat, humidity, or stage use.</p>
+            <ul>
+              <li>Replace desiccant packs when saturated or expired.</li>
+              <li>Keep monitors away from heat, dryers, and direct sun.</li>
+              <li>If exposed to water, disconnect the cable and let everything dry fully.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Step 05 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 05%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3EStorage Case%3C/text%3E%3C/svg%3E" alt="Illustration of custom in-ear monitors being placed into a protective storage case" width="591" height="568" loading="lazy">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 05</span>
+            <h3>Store without stress</h3>
+            <p>Return the monitors to their protective case once they are clean and dry. Coil the cable loosely so the connectors and memory wire are not under tension.</p>
+            <ul>
+              <li>Use the case whenever the monitors are not in your ears.</li>
+              <li>Keep loose tools, keys, and metal objects away from the shells.</li>
+              <li>Do not store monitors in pockets or bags without protection.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Step 06 -->
+        <article class="ciem-care-step">
+          <figure class="ciem-care-step-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23111111' width='400' height='400'/%3E%3Ctext fill='%23e2b768' font-family='sans-serif' font-weight='900' font-size='24' text-anchor='middle' x='200' y='190'%3EStep 06%3C/text%3E%3Ctext fill='%23555' font-family='sans-serif' font-size='14' text-anchor='middle' x='200' y='220'%3EMesh + Shell Repair%3C/text%3E%3C/svg%3E" alt="Illustration of mesh replacement and cracked shell repair for in-ear monitors" width="574" height="564" loading="lazy">
+          </figure>
+          <div class="ciem-care-step-content">
+            <span class="ciem-care-step-number">Step 06</span>
+            <h3>Send blocked mesh or cracked shells for service</h3>
+            <p>For universal monitors with mesh-equipped nozzles, bring the monitor to AAW or an authorized dealer if earwax clogs the mesh. If UIEM or CIEM shells are cracked, bring them to AAW for repair or reshell assessment.</p>
+            <ul>
+              <li>Do not pick, pierce, or push through a clogged mesh.</li>
+              <li>Use AAW or an authorized dealer for mesh replacement.</li>
+              <li>Stop using cracked shells until they are assessed for repair or reshell.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ciem-care-maintenance" aria-labelledby="ciem-care-rhythm-title">
+    <div class="ciem-care-wrap ciem-care-maintenance-grid">
+      <div>
+        <p class="ciem-care-kicker">Service rhythm</p>
+        <h2 id="ciem-care-rhythm-title">When to clean, dry, and ask for help</h2>
+        <p>A little care after each session prevents most problems. Professional service is for blocked bores, loose parts, visible cracks, intermittent channels, or anything that feels forced.</p>
+      </div>
+      <div class="ciem-care-rhythm">
+        <article>
+          <h3>Every use</h3>
+          <p>Wipe or brush the shells, check the bore openings, and let moisture dry before storage.</p>
+        </article>
+        <article>
+          <h3>Weekly</h3>
+          <p>Inspect cable contacts, case padding, desiccant condition, and the shell surface under good light.</p>
+        </article>
+        <article>
+          <h3>Send for service</h3>
+          <p>Contact AAW if the bore is blocked deep inside, the fit changes suddenly, the shell is damaged, or one side becomes intermittent.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ciem-care-support" aria-labelledby="ciem-care-support-title">
+    <div class="ciem-care-wrap ciem-care-support-grid">
+      <div>
+        <h2 id="ciem-care-support-title">Need a deeper service?</h2>
+        <p>For blocked sound tubes, damaged shells, cable faults, or refit questions, get in touch with AAW before attempting aggressive cleaning at home.</p>
+      </div>
+      <div class="ciem-care-actions">
+        <a class="ciem-care-btn" href="/pages/contact">Contact AAW</a>
+        <a class="ciem-care-btn secondary" href="/pages/store-locator">Find a dealer</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Language Toggle JS (from ciem-care-language-toggle.js) -->
+<script>
+(function () {
+  var ciemCareCopy = {
+    "AAW CIEM care system":["AAW CIEM 保养系统","AAW CIEM 保養系統","AAW CIEM ケアシステム","AAW CIEM 케어 시스템"],
+    "How to Service Your IEM":["如何保养你的入耳式监听耳机","如何保養你的入耳式監聽耳機","IEM のメンテナンス方法","IEM 관리 방법"],
+    "Custom in-ear monitors live close to skin, sweat, dust, and daily handling. A short care routine keeps the shells comfortable, the sound bores open, and the cable connection dependable.":["定制入耳式监听耳机贴近皮肤，会接触汗水、灰尘和日常磨损。简短的保养流程能让腔体保持舒适、声孔保持畅通、线材连接保持可靠。","客製入耳式監聽耳機貼近皮膚，會接觸汗水、灰塵和日常磨損。簡短的保養流程能讓腔體保持舒適、聲孔保持暢通、線材連接保持可靠。","カスタムインイヤーモニターは肌に密着し、汗や埃、日々の扱いからダメージを受けます。短いケア手順で、シェルの快適さ、サウンドボアの開放、ケーブル接続の信頼性を保ちましょう。","커스텀 인이어 모니터는 피부 가까이에 위치해 땀, 먼지, 일상적인 취급에 노출됩니다. 간단한 관리 루틴으로 셸의 편안함, 사운드 보어의 개방, 케이블 연결의 안정성을 유지하세요."],
+    "After every session":["每次使用后","每次使用後","毎回の使用後","매 사용 후"],
+    "Brush or wipe loose debris from the shell.":["用刷子或布清除腔体上的松散碎屑。","用刷子或布清除腔體上的鬆散碎屑。","ブラシや布でシェルのほこりを取り除く。","브러시나 천으로 셸의 먼지를 제거하세요."],
+    "Check the sound bores before wax hardens.":["在耳垢变硬前检查声孔。","在耳垢變硬前檢查聲孔。","耳垢が固まる前にサウンドボアをチェックする。","귀지가 굳기 전에 사운드 보어를 확인하세요."],
+    "Let moisture evaporate before closing the case.":["合上收纳盒前让水分蒸发。","蓋上收納盒前讓水分蒸發。","ケースを閉じる前に湿気を飛ばす。","케이스를 닫기 전에 습기를 증발시키세요."],
+    "Store the monitors and cable without tight bends.":["存放耳机和线材时避免过度弯折。","存放耳機和線材時避免過度彎折。","イヤホンとケーブルはきつく曲げずに収納する。","모니터와 케이블을 꽉 구부리지 않고 보관하세요."],
+    "The routine":["保养流程","保養流程","ケアルーチン","관리 루틴"],
+    "Six small habits that protect fit and sound":["六个保护佩戴体验与音质的小习惯","六個保護佩戴體驗與音質的小習慣","装着感と音質を守る6つの小さな習慣","착용감과 사운드를 지키는 여섯 가지 작은 습관"],
+    "Work gently, always clean outward, and avoid forcing tools into openings. If debris is packed deep inside a sound bore, stop and contact AAW support rather than pushing further.":["操作要轻柔，始终从内向外清洁，避免将工具强行塞入开口。如果碎屑已深入声孔内部，请停止操作并联系 AAW 客服，不要再继续深入。","操作要輕柔，始終從內向外清潔，避免將工具強行塞入開口。如果碎屑已深入聲孔內部，請停止操作並聯繫 AAW 客服，不要再繼續深入。","優しく外向きに清掃し、開口部にツールを無理に押し込まないでください。破片がサウンドボアの奥深くに入り込んでいる場合は、無理に押し込まずに AAW サポートに連絡してください。","부드럽게 작업하고, 항상 바깥쪽으로 청소하며, 도구를 구멍 안으로 강제로 밀어 넣지 마세요. 이물질이 사운드 보어 깊숙이 박혀 있다면, 더 밀어 넣지 말고 AAW 지원팀에 문의하세요."],
+    "Step 01":["步骤 01","步驟 01","ステップ 01","Step 01"],
+    "Brush loose dust away":["刷除表面灰尘","刷除表面灰塵","表面の埃を払う","표면 먼지 털어내기"],
+    "Use a soft brush to clear lint, dry skin, and surface dust from the shell, faceplate edge, and nozzle exterior. Keep the motion light so particles lift away instead of being pressed into seams.":["使用软刷清除腔体、面板边缘及导管外部的纤维、皮屑与表面灰尘。刷动要轻柔，让颗粒被轻轻扫起而非压入缝隙。","使用軟刷清除腔體、面板邊緣及導管外部的纖維、皮屑與表面灰塵。刷動要輕柔，讓顆粒被輕輕掃起而非壓入縫隙。","柔らかいブラシでシェル、フェイスプレートの縁、ノズル外部のホコリや皮脂、表面の埃を取り除きます。粒子を縫い目に押し込むのではなく、払い上げるように軽く動かしてください。","부드러운 브러시로 셸, 페이스플레이트 가장자리, 노즐 외부의 보풀, 각질, 표면 먼지를 제거하세요. 이물질이 틈새로 밀려 들어가지 않도록 가볍게 털어내듯 움직이세요."],
+    "Brush outward from openings and edges.":["从开孔和边缘处向外刷。","從開孔和邊緣處向外刷。","開口部と端から外側に向けてブラシをかける。","구멍과 가장자리에서 바깥쪽으로 브러싱하세요."],
+    "Avoid alcohol, solvents, and rough fabric on polished shells.":["避免在抛光腔体上使用酒精、溶剂和粗糙布料。","避免在拋光腔體上使用酒精、溶劑和粗糙布料。","研磨仕上げのシェルにアルコール、溶剤、粗い布を使用しない。","폴리싱된 셸에 알코올, 용제, 거친 천을 사용하지 마세요."],
+    "Do this before deeper bore cleaning.":["在进行更深入的声孔清洁之前先完成此步骤。","在進行更深入的聲孔清潔之前先完成此步驟。","ボアの奥の清掃はこの後に行う。","더 깊은 보어 청소를 하기 전에 먼저 이 작업을 하세요."],
+    "Step 02":["步骤 02","步驟 02","ステップ 02","Step 02"],
+    "Clear the sound bores":["清理声孔","清理聲孔","サウンドボアの清掃","사운드 보어 청소하기"],
+    "Use the included cleaning tool to gently remove earwax or dust from the sound bores. Be careful not to push debris deeper.":["使用附带的清洁工具，轻轻清除声孔中的耳垢或灰尘。注意不要将碎屑推得更深。","使用附帶的清潔工具，輕輕清除聲孔中的耳垢或灰塵。注意不要將碎屑推得更深。","付属のクリーニングツールで、サウンドボアの耳垢や埃を優しく取り除きます。破片を奥に押し込まないよう注意してください。","동봉된 클리닝 도구로 사운드 보어의 귀지나 먼지를 부드럽게 제거하세요. 이물질을 더 깊이 밀어 넣지 않도록 주의하세요."],
+    "Hold the bore downward when possible.":["尽可能将声孔朝下持握。","盡可能將聲孔朝下持握。","可能な限りボアを下向きにする。","가능하면 보어를 아래쪽으로 향하게 하세요."],
+    "Scoop from the opening; do not dig into the tube.":["从开口处挖取；不要深入导管内部挖掘。","從開口處挖取；不要深入導管內部挖掘。","開口部からすくい取る。チューブの奥を掘らない。","입구에서 떠내듯 제거하고, 튜브 안쪽을 파내지 마세요."],
+    "Stop if the wax is hardened or lodged deep inside.":["如果耳垢已硬化或卡在深处，请停止操作。","如果耳垢已硬化或卡在深處，請停止操作。","耳垢が固まっていたり奥深くに詰まっている場合は中止する。","귀지가 굳었거나 깊숙이 박혀 있다면 중단하세요."],
+    "Step 03":["步骤 03","步驟 03","ステップ 03","Step 03"],
+    "Care for cable contacts":["保养线材触点","保養線材觸點","ケーブル接点の手入れ","케이블 접점 관리하기"],
+    "Disconnect by holding the connector housing, then inspect the pins and socket area for lint or residue. Clean dry debris with a soft brush before reconnecting.":["握住插头外壳进行断开，然后检查插针和插座区域是否有纤维或残留物。重新连接前用软刷清除干燥的碎屑。","握住插頭外殼進行斷開，然後檢查插針和插座區域是否有纖維或殘留物。重新連接前用軟刷清除乾燥的碎屑。","コネクタハウジングを持って外し、ピンとソケット周辺に糸くずや残留物がないか確認します。再接続前に柔らかいブラシで乾いた汚れを取り除きます。","커넥터 하우징을 잡고 분리한 후, 핀과 소켓 부위에 보풀이나 잔여물이 있는지 확인하세요. 재연결 전 부드러운 브러시로 마른 이물질을 제거하세요."],
+    "Never pull the cable itself to disconnect.":["切勿直接拉扯线材来断开连接。","切勿直接拉扯線材來斷開連接。","ケーブル本体を引っ張って外さない。","케이블 자체를 잡아당겨 분리하지 마세요."],
+    "Reconnect straight, without twisting the pins.":["直线插入重新连接，不要扭转插针。","直線插入重新連接，不要扭轉插針。","ピンをねじらずにまっすぐ差し込む。","핀을 비틀지 말고 똑바로 재연결하세요."],
+    "Do not use liquid cleaner on exposed contacts.":["不要在裸露触点上使用液体清洁剂。","不要在裸露觸點上使用液體清潔劑。","露出した接点に液体クリーナーを使用しない。","노출된 접점에 액체 클리너를 사용하지 마세요."],
+    "Step 04":["步骤 04","步驟 04","ステップ 04","Step 04"],
+    "Control moisture":["控制湿气","控制濕氣","湿気対策","습기 관리하기"],
+    "After use, let the monitors air dry on a clean surface before sealing them in the case. Add a desiccant pack to help absorb moisture from sweat, humidity, or stage use.":["使用后，将耳机放在干净的表面上自然晾干，然后再放入收纳盒。放入干燥剂包，帮助吸收汗水、湿气或舞台使用带来的水分。","使用後，將耳機放在乾淨的表面上自然晾乾，然後再放入收納盒。放入乾燥劑包，幫助吸收汗水、濕氣或舞台使用帶來的水分。","使用後は、ケースにしまう前に清潔な場所で自然乾燥させてください。汗や湿気、ステージ使用による水分を吸収するために乾燥剤を入れましょう。","사용 후에는 깨끗한 표면에서 자연 건조시킨 다음 케이스에 넣으세요. 땀, 습기, 무대 사용으로 인한 수분을 흡수하도록 건조제 팩을 함께 넣어두세요."],
+    "Replace desiccant packs when saturated or expired.":["干燥剂包饱和或过期后请更换。","乾燥劑包飽和或過期後請更換。","乾燥剤は飽和または期限切れになったら交換する。","건조제 팩이 포화되거나 유효기간이 지나면 교체하세요."],
+    "Keep monitors away from heat, dryers, and direct sun.":["让耳机远离热源、烘干机和阳光直射。","讓耳機遠離熱源、烘乾機和陽光直射。","熱源、ドライヤー、直射日光を避ける。","열기, 건조기, 직사광선으로부터 모니터를 멀리하세요."],
+    "If exposed to water, disconnect the cable and let everything dry fully.":["如果接触到水，断开线材并让所有部件彻底晾干。","如果接觸到水，斷開線材並讓所有部件徹底晾乾。","水に濡れた場合はケーブルを外し、完全に乾燥させる。","물에 노출된 경우 케이블을 분리하고 모든 부품을 완전히 건조시키세요."],
+    "Step 05":["步骤 05","步驟 05","ステップ 05","Step 05"],
+    "Store without stress":["无应力存放","無應力存放","ストレスなく収納","무리 없이 보관하기"],
+    "Return the monitors to their protective case once they are clean and dry. Coil the cable loosely so the connectors and memory wire are not under tension.":["耳机清洁干燥后，放回保护收纳盒中。将线材松松地盘绕，确保插头和记忆钢丝不受拉力。","耳機清潔乾燥後，放回保護收納盒中。將線材鬆鬆地盤繞，確保插頭和記憶鋼絲不受拉力。","イヤホンが清潔で乾いたら保護ケースに戻します。コネクタとワイヤーにテンションがかからないよう、ケーブルはゆるく巻いてください。","모니터가 깨끗하고 건조해지면 보호 케이스에 넣으세요. 커넥터와 메모리 와이어에 장력이 가해지지 않도록 케이블을 느슨하게 감아주세요."],
+    "Use the case whenever the monitors are not in your ears.":["只要耳机不在耳朵里，就应放在收纳盒中。","只要耳機不在耳朵裡，就應放在收納盒中。","イヤホンを耳に入れていないときは必ずケースに入れる。","모니터가 귀에 없는 동안에는 항상 케이스를 사용하세요."],
+    "Keep loose tools, keys, and metal objects away from the shells.":["让散落的工具、钥匙和金属物品远离耳机腔体。","讓散落的工具、鑰匙和金屬物品遠離耳機腔體。","工具や鍵、金属類をシェルから離して保管する。","느슨한 도구, 열쇠, 금속 물체를 셸에서 멀리하세요."],
+    "Do not store monitors in pockets or bags without protection.":["不要将耳机直接放入口袋或包中而不加保护。","不要將耳機直接放入口袋或包中而不加保護。","保護なしでポケットやバッグに入れない。","보호 케이스 없이 주머니나 가방에 모니터를 보관하지 마세요."],
+    "Step 06":["步骤 06","步驟 06","ステップ 06","Step 06"],
+    "Send blocked mesh or cracked shells for service":["阻塞的滤网或破裂的腔体请送修","阻塞的濾網或破裂的腔體請送修","詰まったメッシュや割れたシェルは修理へ","막힌 메시나 금이 간 셸은 서비스 의뢰하기"],
+    "For universal monitors with mesh-equipped nozzles, bring the monitor to AAW or an authorized dealer if earwax clogs the mesh. If UIEM or CIEM shells are cracked, bring them to AAW for repair or reshell assessment.":["对于配备滤网的通用型耳机，如果耳垢堵塞了滤网，请将耳机送至 AAW 或授权经销商处理。如果 UIEM 或 CIEM 腔体有裂纹，请送至 AAW 进行维修或换壳评估。","對於配備濾網的通用型耳機，如果耳垢堵塞了濾網，請將耳機送至 AAW 或授權經銷商處理。如果 UIEM 或 CIEM 腔體有裂紋，請送至 AAW 進行維修或換殼評估。","メッシュ付きノズルを備えたユニバーサルモニターの場合、耳垢でメッシュが詰まったら AAW または正規販売店にお持ちください。UIEM や CIEM のシェルにひびが入った場合は、修理またはリシェル評価のため AAW にお持ちください。","메시가 장착된 노즐이 있는 유니버설 모니터의 경우, 귀지로 메시가 막혔다면 AAW 또는 공식 딜러에게 가져가세요. UIEM이나 CIEM 셸에 금이 갔다면 AAW에 가져가 수리 또는 리셸 평가를 받으세요."],
+    "Do not pick, pierce, or push through a clogged mesh.":["不要抠、刺穿或捅破堵塞的滤网。","不要摳、刺穿或捅破堵塞的濾網。","詰まったメッシュをほじったり、突き破ったりしない。","막힌 메시를 찌르거나, 뚫거나, 밀어 넣지 마세요."],
+    "Use AAW or an authorized dealer for mesh replacement.":["滤网更换请通过 AAW 或授权经销商进行。","濾網更換請透過 AAW 或授權經銷商進行。","メッシュ交換は AAW または正規販売店で。","메시 교체는 AAW 또는 공식 딜러를 이용하세요."],
+    "Stop using cracked shells until they are assessed for repair or reshell.":["在裂纹腔体接受维修或换壳评估之前，请停止使用。","在裂紋腔體接受維修或換殼評估之前，請停止使用。","ひびの入ったシェルは修理またはリシェルの評価を受けるまで使用中止。","금이 간 셸은 수리나 리셸 평가를 받을 때까지 사용을 중단하세요."],
+    "Service rhythm":["保养节奏","保養節奏","メンテナンスのリズム","서비스 리듬"],
+    "When to clean, dry, and ask for help":["何时清洁、干燥和寻求帮助","何時清潔、乾燥和尋求幫助","掃除・乾燥・サポート依頼のタイミング","언제 청소하고, 건조하고, 도움을 요청해야 하는가"],
+    "A little care after each session prevents most problems. Professional service is for blocked bores, loose parts, visible cracks, intermittent channels, or anything that feels forced.":["每次使用后稍加保养就能预防大多数问题。专业维修适用于声孔堵塞、部件松动、可见裂纹、声道断续或任何感觉不对劲的情况。","每次使用後稍加保養就能預防大多數問題。專業維修適用於聲孔堵塞、部件鬆動、可見裂紋、聲道斷續或任何感覺不對勁的情況。","毎回の使用後の少しのケアで、ほとんどの問題は防げます。プロのサービスは、ボアの詰まり、パーツの緩み、目に見えるひび割れ、断続的な音、無理に感じる場合に必要です。","매 사용 후 약간의 관리만으로 대부분의 문제를 예방할 수 있습니다. 전문 서비스는 보어 막힘, 부품 헐거움, 눈에 보이는 균열, 간헐적 채널 문제, 또는 뭔가 억지로 느껴질 때 필요합니다."],
+    "Every use":["每次使用","每次使用","毎回の使用","매 사용 시"],
+    "Wipe or brush the shells, check the bore openings, and let moisture dry before storage.":["擦拭或刷理腔体，检查声孔开口，存放前让水分干燥。","擦拭或刷理腔體，檢查聲孔開口，存放前讓水分乾燥。","シェルを拭くかブラシをかけ、ボアの開口部をチェックし、保管前に水分を乾燥させる。","셸을 닦거나 브러싱하고, 보어 입구를 확인하며, 보관 전 습기를 건조시키세요."],
+    "Weekly":["每周","每週","毎週","매주"],
+    "Inspect cable contacts, case padding, desiccant condition, and the shell surface under good light.":["在充足光线下检查线材触点、收纳盒内衬、干燥剂状态以及腔体表面。","在充足光線下檢查線材觸點、收納盒內襯、乾燥劑狀態以及腔體表面。","ケーブル接点、ケース内装、乾燥剤の状態、シェル表面を明るい場所で点検する。","케이블 접점, 케이스 패딩, 건조제 상태, 셸 표면을 좋은 조명 아래에서 점검하세요."],
+    "Send for service":["送修","送修","修理に出す","서비스 의뢰"],
+    "Contact AAW if the bore is blocked deep inside, the fit changes suddenly, the shell is damaged, or one side becomes intermittent.":["如果声孔深处堵塞、佩戴感突然变化、腔体受损或一侧声音断断续续，请联系 AAW。","如果聲孔深處堵塞、佩戴感突然變化、腔體受損或一側聲音斷斷續續，請聯繫 AAW。","ボアの奥が詰まっている、フィット感が急に変わった、シェルが破損している、片側が断続的になったら AAW に連絡。","보어 깊숙이 막혔거나, 착용감이 갑자기 변했거나, 셸이 손상되었거나, 한쪽이 간헐적으로 들릴 때 AAW에 연락하세요."],
+    "Need a deeper service?":["需要更深入的维修？","需要更深入的維修？","より専門的な修理が必要ですか？","더 깊은 서비스가 필요하신가요?"],
+    "For blocked sound tubes, damaged shells, cable faults, or refit questions, get in touch with AAW before attempting aggressive cleaning at home.":["对于声管堵塞、腔体损坏、线材故障或重新适配的问题，在家中进行激进清洁之前，请先联系 AAW。","對於聲管堵塞、腔體損壞、線材故障或重新適配的問題，在家中進行激進清潔之前，請先聯繫 AAW。","サウンドチューブの詰まり、シェルの破損、ケーブルの不具合、再フィッティングのご相談は、自宅で無理な清掃を試みる前に AAW にご連絡ください。","사운드 튜브 막힘, 셸 손상, 케이블 결함, 재장착 문의는 집에서 과도한 청소를 시도하기 전에 AAW에 연락하세요."],
+    "Contact AAW":["联系 AAW","聯繫 AAW","AAW に問い合わせる","AAW에 문의하기"],
+    "Find a dealer":["查找经销商","查找經銷商","販売店を探す","딜러 찾기"],
+    "Illustration of dust being brushed from a custom in-ear monitor shell":["从定制入耳式监听耳机腔体上刷除灰尘的示意图","從客製入耳式監聽耳機腔體上刷除灰塵的示意圖","カスタムインイヤーモニターのシェルから埃を払うイラスト","커스텀 인이어 모니터 셸에서 먼지를 털어내는 그림"],
+    "Illustration of a cleaning tool removing debris from custom in-ear monitor sound bores":["清洁工具清除定制入耳式监听耳机声孔碎屑的示意图","清潔工具清除客製入耳式監聽耳機聲孔碎屑的示意圖","カスタムインイヤーモニターのサウンドボアからクリーニングツールで汚れを取り除くイラスト","커스텀 인이어 모니터 사운드 보어에서 클리닝 도구로 이물질을 제거하는 그림"],
+    "Illustration of cable connector pins being cleaned before reconnecting":["重新连接前清洁线材插头插针的示意图","重新連接前清潔線材插頭插針的示意圖","再接続前にケーブルコネクタピンを清掃するイラスト","재연결 전 케이블 커넥터 핀을 청소하는 그림"],
+    "Illustration of custom in-ear monitors stored in a protective case with a desiccant pack":["定制入耳式监听耳机存放在带有干燥剂包的保护收纳盒中的示意图","客製入耳式監聽耳機存放在帶有乾燥劑包的保護收納盒中的示意圖","乾燥剤入りの保護ケースに収納されたカスタムインイヤーモニターのイラスト","건조제 팩과 함께 보호 케이스에 보관된 커스텀 인이어 모니터 그림"],
+    "Illustration of custom in-ear monitors being placed into a protective storage case":["定制入耳式监听耳机放入保护收纳盒的示意图","客製入耳式監聽耳機放入保護收納盒的示意圖","カスタムインイヤーモニターを保護ケースに入れるイラスト","커스텀 인이어 모니터를 보호 케이스에 넣는 그림"],
+    "Illustration of mesh replacement and cracked shell repair for in-ear monitors":["入耳式监听耳机滤网更换和裂纹腔体维修的示意图","入耳式監聽耳機濾網更換和裂紋腔體維修的示意圖","インイヤーモニターのメッシュ交換とひび割れシェル修理のイラスト","인이어 모니터의 메시 교체 및 금이 간 셸 수리 그림"]
+  };
+  var langs = { en: 0, zh: 1, zhHant: 2, ja: 3, ko: 4 };
+  var storageKey = 'ciemCareLang';
+  var langAttrs = { en: 'en', zh: 'zh-Hans', zhHant: 'zh-Hant', ja: 'ja', ko: 'ko' };
+  var records = [];
+  function collect() {
+    var roots = document.querySelectorAll('.ciem-care');
+    roots.forEach(function (root) {
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (node) {
+          var parent = node.parentElement;
+          if (!parent || parent.closest('style,script,.ciem-care-lang-switch')) return NodeFilter.FILTER_REJECT;
+          var trimmed = node.nodeValue.replace(/\s+/g, ' ').trim();
+          return ciemCareCopy[trimmed] ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+        }
+      });
+      var node;
+      while ((node = walker.nextNode())) {
+        records.push({ type: 'text', node: node, en: node.nodeValue.replace(/\s+/g, ' ').trim() });
+      }
+      root.querySelectorAll('img[alt]').forEach(function (img) {
+        var alt = img.getAttribute('alt').replace(/\s+/g, ' ').trim();
+        if (ciemCareCopy[alt]) records.push({ type: 'attr', node: img, attr: 'alt', en: alt });
+      });
+    });
+  }
+  function applyLang(lang) {
+    var index = langs[lang] || 0;
+    records.forEach(function (record) {
+      var value = index === 0 ? record.en : ciemCareCopy[record.en][index - 1];
+      if (record.type === 'attr') record.node.setAttribute(record.attr, value);
+      else record.node.nodeValue = value;
+    });
+    document.querySelectorAll('[data-ciem-lang]').forEach(function (button) {
+      var active = button.getAttribute('data-ciem-lang') === lang;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    document.documentElement.setAttribute('data-ciem-lang', lang);
+    document.documentElement.setAttribute('lang', langAttrs[lang] || 'en');
+    try { localStorage.setItem(storageKey, lang); } catch (e) {}
+  }
+  collect();
+  document.querySelectorAll('[data-ciem-lang]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyLang(button.getAttribute('data-ciem-lang'));
+    });
+  });
+  var savedLang = localStorage.getItem(storageKey) || 'en';
+  applyLang(savedLang);
+})();
+</script>
+
+</body>
+</html>

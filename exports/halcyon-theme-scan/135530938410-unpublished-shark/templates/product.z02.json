@@ -1,0 +1,831 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_iQKXdR": {
+      "type": "breadcrumb",
+      "settings": {
+        "section_visibility": "always",
+        "color_scheme": "",
+        "top_space_desktop": 15,
+        "bottom_space_desktop": 15,
+        "top_space_mobile": 10,
+        "bottom_space_mobile": 10
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3",
+            "seo_heading": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "hide_shipping_content": false
+          }
+        },
+        "2080a8e4-2299-470d-950f-b8f8bf3f3668": {
+          "type": "variant",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "145209f6-ad8a-4614-93bf-0c9a973f23a3": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "dynamic_checkout_btn": true,
+            "show_recipient_form": false
+          }
+        },
+        "29852893-7b61-4932-b575-91695d8893b1": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "products_count": 8
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "show_description": true,
+            "description_heading": "",
+            "heading_1": "Add heading text here",
+            "content_1": "<p>Add description text here.</p>",
+            "heading_2": "Add heading text here",
+            "content_2": "<p>Add description text here.</p>",
+            "heading_3": "Add heading text here",
+            "content_3": "<p>Add description text here.</p>"
+          }
+        },
+        "a85ee93d-3864-4304-9926-0ed6854aa473": {
+          "type": "social-icons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "2080a8e4-2299-470d-950f-b8f8bf3f3668",
+        "quantity_selector",
+        "145209f6-ad8a-4614-93bf-0c9a973f23a3",
+        "button",
+        "29852893-7b61-4932-b575-91695d8893b1",
+        "collapsible-row-1",
+        "a85ee93d-3864-4304-9926-0ed6854aa473"
+      ],
+      "settings": {
+        "gallery_style": "slider",
+        "thumbnail_position": "left",
+        "overlapped_thumbnails": false,
+        "enable_sticky_content": true,
+        "desktop_media_width": "medium",
+        "desktop_grid_image_size": "auto",
+        "image_zoom": "lightbox",
+        "enable_sticky_cart": false,
+        "thumbnial_on_mobile": false,
+        "mobile_grid_image_size": "auto",
+        "color_scheme": "",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 35,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    },
+    "product_details_gLrgBJ": {
+      "type": "product-details",
+      "blocks": {
+        "description_w7TU9P": {
+          "type": "description",
+          "settings": {
+            "description_heading": "Introduction"
+          }
+        },
+        "collapsible_tab_PAyNwP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Miniature Planar Magnetic Tweeter",
+            "content": "<p>The Z02's hybrid design features a specially designed miniature planar magnetic tweeter embedded in a 3D-printed shell, eliminating sound pressure decay and resonance typical of traditional tubed balanced armature designs. This tweeter enhances high-frequency performance with precision, extended range, and low distortion, while its compact size, fast transient response, and wide dispersion ensure realistic sound reproduction and a consistent soundstage. Its durable, robust design resists environmental changes, and it synergizes effectively with the dynamic armature drivers in multi-driver systems, delivering a well-balanced and high-fidelity audio profile.</p>"
+          }
+        },
+        "collapsible_tab_n38dzJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "10mmGraphene Dynamic Driver",
+            "content": "<p>The newly designed dynamic driver features an ultra-thin,<br/>rigid film diaphragm crafted from graphene material. Paired with a<br/>physical low-pass filter, it operates within a minimal overlapping frequency<br/>range, complementing the planar tweeter. With a meticulously arranged driver<br/>positioning and an advanced 3D-printed acoustic chamber design, AAW achieves<br/>enhanced coherence, reduces phase shift, and optimizes the timing of audio<br/>signal delivery for a more precise and immersive listening experience.</p>"
+          }
+        },
+        "collapsible_tab_HffCBq": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "3D Printed Enclosure and Precision Engineering",
+            "content": "<p>With a wholly digitized design process, Z02 employs AAW 3rd<br/>generation digital enclosure and acoustic chamber design. Driver and nozzle<br/>placements are simulated hundreds of iterations to determine the ideal phasing<br/>and response. It is then 3D printed to precision to maintain consistency in<br/>mass production.</p>"
+          }
+        },
+        "collapsible_tab_XefaKL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Accessories and Warranty",
+            "content": "<p>48\" Null Audio Brevity Pro Plus OCC Detachable Cable<br/>AAW Carrying Case<br/>3 Pairs AAW Short Stem Foam Tips(S/M/L)<br/>6 Pairs AAW Assorted Silicone Tips (S/M/LX2)<br/>1 Year Limited Warranty</p>"
+          }
+        },
+        "specification_gbeGJd": {
+          "type": "specification",
+          "settings": {
+            "text": "Driver Count: 2",
+            "link": ""
+          }
+        },
+        "specification_adVDkL": {
+          "type": "specification",
+          "settings": {
+            "text": "Crossover: 2 Way",
+            "link": ""
+          }
+        },
+        "specification_9YigHY": {
+          "type": "specification",
+          "settings": {
+            "text": "Sensitivity: 105dB",
+            "link": ""
+          }
+        },
+        "specification_baHJFe": {
+          "type": "specification",
+          "settings": {
+            "text": "Impedance: 18Ohm",
+            "link": ""
+          }
+        },
+        "specification_r97KqR": {
+          "type": "specification",
+          "settings": {
+            "text": "Frequency: 10Hz - 40kHz",
+            "link": ""
+          }
+        },
+        "specification_DPW37U": {
+          "type": "specification",
+          "settings": {
+            "text": "Distortion<=1%",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "description_w7TU9P",
+        "collapsible_tab_PAyNwP",
+        "collapsible_tab_n38dzJ",
+        "collapsible_tab_HffCBq",
+        "collapsible_tab_XefaKL",
+        "specification_gbeGJd",
+        "specification_adVDkL",
+        "specification_9YigHY",
+        "specification_baHJFe",
+        "specification_r97KqR",
+        "specification_DPW37U"
+      ],
+      "settings": {
+        "make_section_rounded": true,
+        "heading": "Tech Overview",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "description": "",
+        "content_alignment": "text-center",
+        "open_first": false,
+        "spec_heading": "Specifications",
+        "spec_heading_size": "h3",
+        "spec_seo_heading": "h3",
+        "box-position": "left",
+        "specification_color_scheme": "tertiary",
+        "sp_highlighted_color": "",
+        "sp_gadiant_highlighted_color": "",
+        "color_scheme": "secondary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 45,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 40,
+        "bottom_space_mobile": 40
+      }
+    },
+    "multicolumn_yK8L3k": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YqMwcD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Z02-Driver.jpg",
+            "heading": "Advanced Hybrid Driver Architecture",
+            "description": "The 3D-printed chambers are meticulously engineered to optimize driver placement and acoustic flow, ensuring seamless integration between dynamic and balanced armature drivers. This design minimizes distortion, enhances phase alignment, and delivers a rich, detailed sound signature with balanced lows, mids, and highs, tailored for audiophiles and professionals seeking superior clarity and precision.",
+            "link_label": "",
+            "link_url": "",
+            "column_background": true,
+            "column_background_color": "#f2f2f2",
+            "column_text_color": "#000000",
+            "column_link_color": "#2877ff"
+          }
+        },
+        "column_GTGPDy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Z02-FR_5fb85fc0-6b97-46e2-a9d5-0031f8aa6a25.jpg",
+            "heading": "TUNED AND TESTED",
+            "description": "Suitable for rising artists, band performances, streaming platform, worship events, audio engineering and anybody who appreciates critical listening experience.",
+            "link_label": "",
+            "link_url": "",
+            "column_background": true,
+            "column_background_color": "#f2f2f2",
+            "column_text_color": "#000000",
+            "column_link_color": "#2877ff"
+          }
+        }
+      },
+      "block_order": [
+        "column_YqMwcD",
+        "column_GTGPDy"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "multicolumn_image_size": "auto",
+        "layout_type": "stacked",
+        "columns_desktop": 2,
+        "enable_swipe_mobile": true,
+        "heading": "Experience Z difference",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 20,
+        "bottom_space_desktop": 20,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "slideshow_KXUbq6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_LaW4km": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z02-add-02.jpg",
+            "subheading": "",
+            "heading": "",
+            "enable_highlight_background": true,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "",
+            "btn_text_1": "",
+            "btn_link_1": "shopify://collections/all",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-center-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": false,
+            "color_scheme": "",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "slide_j9jNAV": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z02-add-05.jpg",
+            "subheading": "",
+            "heading": "",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "",
+            "btn_text_1": "",
+            "btn_link_1": "shopify://collections/all",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-center-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": false,
+            "color_scheme": "primary",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "slide_jfkLQY": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z02-add-01.jpg",
+            "subheading": "",
+            "heading": "",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "",
+            "btn_text_1": "",
+            "btn_link_1": "shopify://collections/all",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-center-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": false,
+            "color_scheme": "primary",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "slide_yeeh8L": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z02-add-03.jpg",
+            "subheading": "",
+            "heading": "",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "",
+            "btn_text_1": "",
+            "btn_link_1": "shopify://collections/all",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-center-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": false,
+            "color_scheme": "primary",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "slide_Yfry9e": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Z02-add-04.jpg",
+            "subheading": "",
+            "heading": "",
+            "enable_highlight_background": false,
+            "heading_size": "h1",
+            "seo_heading": "h1",
+            "description": "",
+            "btn_text_1": "",
+            "btn_link_1": "shopify://collections/all",
+            "button_syle_1": "solid",
+            "button_size_1": "regular",
+            "btn_text_2": "",
+            "btn_link_2": "",
+            "button_syle_2": "solid",
+            "button_size_2": "regular",
+            "content_width": "medium",
+            "desktop_content_position": "d-center-left",
+            "desktop_alignment": "d-text-left",
+            "mobile_content_position": "m-center",
+            "mobile_alignment": "m-text-center",
+            "enable_background": false,
+            "color_scheme": "",
+            "highlighted_color": "#ffffff",
+            "highlighted_bg_color": "#000000",
+            "highlighted_bg_opacity": 10,
+            "content_overlay_color": "#000000",
+            "content_overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "slide_LaW4km",
+        "slide_j9jNAV",
+        "slide_jfkLQY",
+        "slide_yeeh8L",
+        "slide_Yfry9e"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "enable_full_width": true,
+        "enable_compact_width": false,
+        "enable_block_color": false,
+        "desktop_height": "adapt_image",
+        "mobile_height": "450px",
+        "auto_rotate": true,
+        "interval": 5,
+        "slider_transition": "fade",
+        "navigation_type": "arrow",
+        "show_arrow_hover": true,
+        "banner_marquee": true,
+        "marquee_text": "Deep Pearl Faceplate Design",
+        "rotation_style": "both",
+        "direction": "rtl",
+        "banner_marquee_color": "#ffffff",
+        "scrolling_speed": 15,
+        "scrolling_speed_mobile": 15,
+        "outline_thickness": 2,
+        "marquee_text_size": 100,
+        "marquee_text_size_mobile": 80,
+        "item_gap_desktop": 30,
+        "item_gap_mobile": 20,
+        "color_scheme": "",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "images_carousel_GJGRBh": {
+      "type": "images-carousel",
+      "blocks": {
+        "image_xYx6tw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Z02-2.jpg",
+            "heading": "Brevity Pro Plus Upgrade Cable",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": "<p>The <strong>Brevity Pro Plus Cable</strong> features 4 twisted 26AWG 5N OCC copper wiring. They are machine twisted for better consistency and flexibility, with little memory effect. It is perfect for use on the go and on stage.</p>"
+          }
+        },
+        "image_RapkTH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Z06-white-04.jpg",
+            "heading": "Protection on the GO",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": "<p>Z02 ships with a semi-rigid zipper cable for maximum protection of your monitors on the go.</p>"
+          }
+        },
+        "image_eV8hiB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Z02_packing.jpg",
+            "heading": "Bass and Treble Eartips and More",
+            "heading_size": "h3",
+            "seo_heading": "h3",
+            "description": "<p>The Z02 ships with an assorted choices of eartips in various sizes and flexibility. This allows you to experiment with different tips to tailor the bass and treble sound signature to your preference, ensuring the perfect fit and personalized audio experience.</p><p><strong>* Custom Fit Monitor does NOT ship with any ear tips nor does it need them.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_xYx6tw",
+        "image_RapkTH",
+        "image_eV8hiB"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "Cabling and Accessories",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "desktop_height": "550px",
+        "mobile_height": "350px",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 70,
+        "top_space_mobile": 20,
+        "bottom_space_mobile": 40
+      }
+    },
+    "marquee_MYAzcg": {
+      "type": "marquee",
+      "blocks": {
+        "text_KKr9iJ": {
+          "type": "text",
+          "settings": {
+            "text": "MARQUEE TEXT HERE",
+            "text_gap": 50,
+            "text_style": "solid",
+            "font_family": "heading",
+            "desktop_font": 60,
+            "mobile_font": 36,
+            "outline_thickness": 1,
+            "color": "",
+            "outline_color": "",
+            "text_gradient_color": "",
+            "custom_icon": "",
+            "small_icon": false,
+            "text_icon_gap": 15
+          }
+        }
+      },
+      "block_order": [
+        "text_KKr9iJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "rotation_style": "onscroll",
+        "direction": "rtl",
+        "scrolling_speed": 15,
+        "scrolling_speed_mobile": 15,
+        "text_angle": 0,
+        "bgcolor": "",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-left",
+        "products_count": 8,
+        "color_scheme": "primary",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 60,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "media_grid_pY8YBi": {
+      "type": "media-grid",
+      "blocks": {
+        "grid_wHdBKU": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/CUSTOM-FITMENT_f1dcb5b7-e588-4d3c-8613-35ad154960c2.jpg",
+            "column": 1,
+            "row": 4,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "CUSTOM FITMENT",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW achieves exceptional comfort in custom in-ear monitors by using advanced 3D scanning and editing technology. Each customer's ear impressions are digitally scanned to create precise 3D models, which are then optimized for a secure, ergonomic fit. This process ensures CIEMs conform seamlessly to the ear’s contours, delivering unmatched comfort and sound isolation for superior acoustic performance.",
+            "content_position": "center",
+            "content_alignment": "center",
+            "content_width": "large",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_WwgDa7": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/UIEM-FITTMENT_5f41ad49-86d2-4e8a-adeb-bc2045e79933.jpg",
+            "column": 3,
+            "row": 3,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "IMPECCABLE UNIVERSAL FITMENT",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW leverages a vast database of thousands of ear impressions collected over the years to design universal-fit in-ear monitors (IEMs) that emulate the comfort and seal of custom-fit models. By analyzing ear anatomy patterns and using advanced 3D modeling and manufacturing techniques, AAW creates ergonomic shells that fit a wide range of ear shapes. Rigorous user testing ensures a secure fit, optimal comfort, and superior acoustic performance, delivering a near-custom experience for audiophiles and professionals alike.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_p3K3qF": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/10.jpg",
+            "column": 3,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "SKIN SAFE MATERIAL",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW's UIEMs and CIEMs are meticulously crafted using medical-grade resin or PVD aluminum, offering a dense, impact-resistant housing for exceptional durability. The skin-friendly resin is further enhanced with an anti-bacterial lacquer, ensuring added protection and irritation-free comfort.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 0
+          }
+        },
+        "grid_Qy3TBb": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/Driver-Tuning.jpg",
+            "column": 2,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "Precision Audio Design",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "At AAW, our expertise in hybrid driver IEMs is driven by our precise driver tuning, enhanced through advanced computer-aided design (CAD) and simulation tools. We carefully balance dynamic drivers for deep bass and balanced armature drivers for clear mids and highs, ensuring a seamless integration of sound. By fine-tuning each driver through simulations, we optimize frequency response and acoustic performance, delivering a rich, detailed, and balanced listening experience for our users.",
+            "content_position": "center-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 40
+          }
+        },
+        "grid_6hEdFm": {
+          "type": "grid",
+          "settings": {
+            "image_on_hover": false,
+            "media_image": "shopify://shop_images/Canary32_713c8860-0a2c-45f3-8276-2185a9eb4eb0.jpg",
+            "column": 2,
+            "row": 1,
+            "column_mobile": "2",
+            "row_mobile": "2",
+            "heading": "Unlimited Options",
+            "heading_size": "h5",
+            "seo_heading": "h5",
+            "description": "AAW offers unlimited customization for CIEM faceplates, allowing users to choose from a wide range of materials, patterns, finishes, gemstones, and custom artwork. With advanced manufacturing and precision craftsmanship, every CIEM is a unique reflection of the user’s style, giving complete creative freedom to design the perfect faceplate.",
+            "content_position": "bottom-left",
+            "content_alignment": "left",
+            "content_width": "small",
+            "button_style": "solid",
+            "btn_text": "",
+            "btn_link": "",
+            "column_background": "#efefef",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "heading_color_hover": "#000000",
+            "text_color_hover": "#484848",
+            "btn_bg_color": "#000000",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_hover_color": "#ffffff",
+            "btn_hover_text_color": "#000000",
+            "btn_hover_border_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "grid_wHdBKU",
+        "grid_WwgDa7",
+        "grid_p3K3qF",
+        "grid_Qy3TBb",
+        "grid_6hEdFm"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "make_content_sticky": false,
+        "section_fullwidth": false,
+        "desktop_row_height": 150,
+        "mobile_row_height": 100,
+        "desktop_grid_gap": 14,
+        "mobile_grid_gap": 6,
+        "heading": "The AAW Vantage",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#eff341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_iQKXdR",
+    "main",
+    "product_details_gLrgBJ",
+    "multicolumn_yK8L3k",
+    "slideshow_KXUbq6",
+    "images_carousel_GJGRBh",
+    "marquee_MYAzcg",
+    "related-products",
+    "media_grid_pY8YBi"
+  ]
+}

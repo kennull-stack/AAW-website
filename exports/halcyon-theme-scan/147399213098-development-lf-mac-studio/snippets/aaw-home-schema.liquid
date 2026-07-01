@@ -1,0 +1,561 @@
+{%- liquid
+  assign z_series = collections['z-series']
+  assign z07_product = all_products['z07-in-ear-monitor']
+  assign z05_product = all_products['z05-auag-launch-edition']
+  assign custom_builder_product = all_products['aaw-custom-builder']
+  assign home_title = 'Advanced AcousticWerkes | Singapore IEM Specialist'
+  assign home_description = 'AAW designs custom and universal in-ear monitors from Singapore since 2014. Audition the Z07, Z06, and Z05 AuAg at 76 Playfair Rd or four authorized dealers islandwide.'
+  assign site_url = 'https://www.aaw.me'
+  assign page_id = canonical_url | append: '#webpage'
+  assign z_series_id = canonical_url | append: '#z-series'
+  assign listening_paths_id = canonical_url | append: '#listening-paths'
+  assign faq_id = canonical_url | append: '#faq'
+  assign store_id = canonical_url | append: '#aaw-singapore-store'
+  assign homepage_reviews_product_id = site_url | append: '/#judgeme-aaw-in-ear-monitors'
+  assign org_id = site_url | append: '/#organization'
+  assign brand_id = site_url | append: '/#brand'
+  assign website_id = site_url | append: '/#website'
+  assign kevin_wang_id = site_url | append: '/#kevin-wang'
+  assign headfonics_nebula_id = site_url | append: '/#press-headfonics-nebula-one'
+  assign headfonics_w900_id = site_url | append: '/#press-headfonics-w900'
+  assign headfonics_canary_id = site_url | append: '/#press-headfonics-canary'
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["WebPage", "HomePage"],
+      "@id": {{ page_id | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ home_title | json }},
+      "description": {{ home_description | strip_html | strip_newlines | json }},
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": {{ website_id | json }}
+      },
+      "about": {
+        "@type": "Organization",
+        "@id": {{ org_id | json }}
+      },
+      "mainEntity": [
+        { "@id": {{ site_url | append: '/products/z07-in-ear-monitor#product' | json }} },
+        { "@id": {{ canonical_url | append: '#fitmorph' | json }} },
+        { "@id": {{ homepage_reviews_product_id | json }} },
+        { "@id": {{ listening_paths_id | json }} },
+        { "@id": {{ z_series_id | json }} },
+        { "@id": {{ store_id | json }} },
+        { "@id": {{ faq_id | json }} },
+        { "@id": {{ kevin_wang_id | json }} },
+        { "@id": {{ brand_id | json }} }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": {{ org_id | json }},
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      "url": {{ site_url | json }},
+      "sameAs": [
+        "https://www.facebook.com/acousticwerkes",
+        "https://www.instagram.com/aaw_sg/"
+      ],
+      "foundingDate": "2014",
+      "founder": {
+        "@id": {{ kevin_wang_id | json }}
+      },
+      "brand": {
+        "@id": {{ brand_id | json }}
+      },
+      "subjectOf": [
+        { "@id": {{ headfonics_nebula_id | json }} },
+        { "@id": {{ headfonics_w900_id | json }} },
+        { "@id": {{ headfonics_canary_id | json }} }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#01-03, 76 Playfair Rd",
+        "addressLocality": "Singapore",
+        "postalCode": "367996",
+        "addressCountry": "SG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+65 8731 5476",
+        "email": "sales@acousticwerkes.com",
+        "contactType": "customer support",
+        "areaServed": "SG"
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": {{ brand_id | json }},
+      "name": "Advanced AcousticWerkes",
+      "alternateName": "AAW",
+      "url": {{ site_url | json }},
+      "slogan": "Those who listen will find the way.",
+      "founder": {
+        "@id": {{ kevin_wang_id | json }}
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": {{ homepage_reviews_product_id | json }},
+      "name": "AAW custom and universal in-ear monitors",
+      "url": {{ site_url | json }},
+      "brand": {
+        "@id": {{ brand_id | json }}
+      },
+      "category": "Custom and universal in-ear monitors",
+      "description": "Advanced AcousticWerkes designs custom and universal in-ear monitors for musicians, audiophiles, and stage users from Singapore.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": {{ site_url | json }},
+        "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+        "lowPrice": "199",
+        "highPrice": "1200",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.82",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "444"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Steve S."
+          },
+          "reviewBody": "I was very pleasantly surprised just how good AAW monitors are. The overall sound is quite balanced, they do have very detailed bass, sub bass and treble, but the mids are not so recessed as would be the case with more typical V shaped sounding IEMs.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "AJ L."
+          },
+          "reviewBody": "Excellent product. This is my first CIEM and I can say I am very much impressed. It fits perfectly snugged in my ears. When I plugged it in the monitors, I can hear clearly the distinct sounds. The vocals and the bass is clear and crisp.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Elias T."
+          },
+          "reviewBody": "Great fit, great isolation, great material and good sound for the price. Sound wise is big and quite wide. Bass is satisfying and mids are ok. Overall an enjoyable IEM.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": {{ kevin_wang_id | json }},
+      "name": "Kevin Wang",
+      "jobTitle": "Founder & Tuning Engineer",
+      "description": "Founder and tuning engineer of Advanced AcousticWerkes, involved in the acoustic design and tuning of AAW custom and universal in-ear monitors since the brand's 2014 launch in Singapore.",
+      "url": {{ site_url | append: '/pages/about-us' | json }},
+      "sameAs": [
+        "https://sg.linkedin.com/in/kevin-wang-15376265"
+      ],
+      "worksFor": {
+        "@id": {{ org_id | json }}
+      },
+      "knowsAbout": [
+        "custom in-ear monitors",
+        "universal in-ear monitors",
+        "hybrid IEM tuning",
+        "balanced armature drivers",
+        "dynamic driver integration",
+        "IEM acoustic design"
+      ]
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_nebula_id | json }},
+      "headline": "AAW Nebula One review",
+      "url": "https://headfonics.com/aaw-nebula-one-review/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_w900_id | json }},
+      "headline": "The W900 by Advanced AcousticWerkes",
+      "url": "https://headfonics.com/the-w900-by-advanced-acousticwerkes/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
+    },
+    {
+      "@type": "ReviewNewsArticle",
+      "@id": {{ headfonics_canary_id | json }},
+      "headline": "AAW Canary review",
+      "url": "https://headfonics.com/aaw-canary-review/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Headfonics"
+      },
+      "about": {
+        "@id": {{ org_id | json }}
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": {{ site_url | append: '/products/z07-in-ear-monitor#product' | json }},
+      "name": "AAW Z07",
+      "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+      "image": {{ 'z07-model-wearing-universal-fit-over-ear-cable.jpg' | asset_url | prepend: 'https:' | json }},
+      "brand": {
+        "@id": {{ org_id | json }}
+      },
+      "description": "AAW Z07 is a universal hybrid in-ear monitor with a tube-free acoustic core and FitMorph adaptive fit system.",
+      "category": "Universal in-ear monitor",
+      "offers": {
+        "@type": "Offer",
+        "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+        "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+        "price": {{ z07_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+        "availability": "https://schema.org/{% if z07_product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@id": {{ org_id | json }}
+        }
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Fit system",
+          "value": "FitMorph adaptive fit"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Acoustic path",
+          "value": "Tube-free hybrid core"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": {{ canonical_url | append: '#fitmorph' | json }},
+      "name": "FitMorph adaptive fit system",
+      "provider": {
+        "@id": {{ org_id | json }}
+      },
+      "serviceType": "In-ear monitor fit system",
+      "description": "FitMorph lets AAW listeners change the outer fit of compatible monitors while keeping the acoustic core and tuning in place."
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ listening_paths_id | json }},
+      "name": "AAW listening paths",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Z07 Hybrid In-Ear Monitor",
+            "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/z07-in-ear-monitor' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ z07_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if z07_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Z05 AuAg Launch Edition",
+            "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/z05-auag-launch-edition' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ z05_product.price_min | default: 19900 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if z05_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "AAW Custom Monitor Builder",
+            "url": {{ site_url | append: '/products/aaw-custom-builder' | json }},
+            "offers": {
+              "@type": "Offer",
+              "url": {{ site_url | append: '/products/aaw-custom-builder' | json }},
+              "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+              "price": {{ custom_builder_product.price_min | default: 120000 | money_without_currency | remove: ',' | json }},
+              "availability": "https://schema.org/{% if custom_builder_product.available %}InStock{% else %}OutOfStock{% endif %}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ z_series_id | json }},
+      "name": "AAW Z Series",
+      "url": {{ canonical_url | append: '#shopify-section-template--19986822496298__aaw_home_z_series_collection' | json }},
+      "itemListElement": [
+        {%- if z_series != blank -%}
+          {%- for listed_product in z_series.products limit: 4 -%}
+            {
+              "@type": "ListItem",
+              "position": {{ forloop.index }},
+              "url": {{ site_url | append: listed_product.url | json }},
+              "item": {
+                "@type": "Product",
+                "name": {{ listed_product.title | strip_html | json }},
+                "url": {{ site_url | append: listed_product.url | json }}
+                {%- if listed_product.featured_image != blank -%},
+                "image": {{ listed_product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
+                {%- endif -%},
+                "offers": {
+                  "@type": "Offer",
+                  "url": {{ site_url | append: listed_product.url | json }},
+                  "priceCurrency": {{ cart.currency.iso_code | default: shop.currency | json }},
+                  "price": {{ listed_product.price_min | money_without_currency | remove: ',' | json }},
+                  "availability": "https://schema.org/{% if listed_product.available %}InStock{% else %}OutOfStock{% endif %}",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@id": {{ org_id | json }}
+                  }
+                }
+              }
+            }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      ]
+    },
+    {
+      "@type": ["Store", "LocalBusiness"],
+      "@id": {{ store_id | json }},
+      "name": "AAW Singapore Office",
+      "url": {{ canonical_url | json }},
+      "telephone": "+65 8731 5476",
+      "email": "sales@acousticwerkes.com",
+      "priceRange": "$199 - $1200",
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=76%20Playfair%20Rd%20Singapore%20367996",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": {{ org_id | json }}
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#01-03, 76 Playfair Rd",
+        "addressLocality": "Singapore",
+        "postalCode": "367996",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.3364791,
+        "longitude": 103.8865741
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Saturday"],
+          "description": "By appointment"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-zeppelin' | json }},
+      "name": "Zeppelin & Co.",
+      "telephone": "+65 9337 9655",
+      "priceRange": "$199 - $1200",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Rochor Canal Rd, #02-78 Sim Lim Square",
+        "addressLocality": "Singapore",
+        "postalCode": "188504",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-jaben' | json }},
+      "name": "JABEN",
+      "telephone": "+65 6337 0809",
+      "priceRange": "$199 - $1200",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Coleman St, #01-25 The Adelphi",
+        "addressLocality": "Singapore",
+        "postalCode": "179803",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "12:00",
+          "closes": "20:00"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ site_url | append: '/#dealer-av-one' | json }},
+      "name": "AV One",
+      "telephone": "+65 6337 0080",
+      "priceRange": "$199 - $1200",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Coleman St, The Adelphi",
+        "addressLocality": "Singapore",
+        "postalCode": "179803",
+        "addressCountry": "SG"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "19:30"
+        }
+      ],
+      "openingHours": "Monday-Saturday 11:00-19:30; public holidays 13:00-18:00"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": {{ faq_id | json }},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does AAW specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Advanced AcousticWerkes specializes in custom and universal in-ear monitors from Singapore. The range covers custom IEMs made from ear impressions, universal-fit monitors such as the Z Series, and long-term support for refits, cables, shells, sockets, and repair work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between universal and custom IEMs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Universal IEMs use ear tips and can fit many listeners, which makes them easier to demo, share, and travel with. Custom IEMs are made from your ear impressions or approved digital scans, so they seal around your ears only and allow more freedom in shell shape, artwork, and fit tuning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need ear impressions for a CIEM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AAW needs physical impressions from an audiologist or an approved digital ear scan before building a custom in-ear monitor. Accurate impressions are critical because the acoustic seal affects bass, isolation, comfort, and whether the finished monitor can be worn for long sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AAW help with refits or repairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Singapore office handles refit, warranty, repair, cable, socket, and shell service for AAW monitors. If you bought through an authorized dealer, that dealer is often the fastest first stop, but the work is still supported through AAW's service process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I audition or order AAW?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Singapore, listeners can start at the AAW office at 76 Playfair Rd, #01-03, or audition through Zeppelin & Co., JABEN, and AV One. Outside Singapore, AAW works with authorized specialist audio dealers; use the store locator or contact sales@acousticwerkes.com for the closest listening point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ship internationally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AAW ships to international customers from Singapore, and available shipping options are shown at checkout based on the customer's country and address. Delivery time depends on whether the monitor is ready-to-ship, made to order, or custom-built from impressions. Import duties, VAT, brokerage fees, and local taxes are set by the destination country and are normally paid by the buyer on arrival. If a country is not available at checkout, contact sales@acousticwerkes.com before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are AAW monitors manufactured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AAW monitors are designed and tuned from Singapore. Production is handled through AAW's wholly owned lab in Shenzhen, with Singapore-led acoustic reference work, measurement, service, and customer support."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

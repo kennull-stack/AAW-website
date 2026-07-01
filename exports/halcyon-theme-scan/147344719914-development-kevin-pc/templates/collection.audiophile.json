@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_DQt76m": {
+      "type": "breadcrumb",
+      "settings": {
+        "section_visibility": "always",
+        "color_scheme": "",
+        "top_space_desktop": 15,
+        "bottom_space_desktop": 15,
+        "top_space_mobile": 10,
+        "bottom_space_mobile": 10
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "collection_title": true,
+        "collection_description": false,
+        "heading_overly": true,
+        "description_overly": false,
+        "collection_image_checker": true,
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "banner_image": "shopify://shop_images/591A6941_3faca3cf-411a-47d0-9d91-56e4239858a3.jpg",
+        "banner_height_desktop": "250px",
+        "banner_height_mobile": "200px",
+        "content_width": "medium",
+        "content_alignment": "text-center",
+        "banner_bg_color": "#f2f2f2",
+        "bg_color_opacity": "#000000",
+        "text_color": "#ffffff",
+        "overlay_opacity": 50,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "infinte_scroll": false,
+        "infinte_scroll_type": "onscroll",
+        "enable_filtering": true,
+        "filter_type": "dropdown",
+        "enable_sorting": true,
+        "color_scheme": "",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_DQt76m",
+    "main-collection-banner",
+    "main-collection"
+  ]
+}

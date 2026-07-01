@@ -1,0 +1,27 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9296                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9296
+[3] http://127.0.0.1:9296/gift_cards/[store_id]/preview
+
+• 23:12:26  Synced » update assets/what-is-uiem.css
+• 23:12:48 Request »    GET 200 /pages/what-is-custom-in-ear-monitor?preview=ci-page-clean 
+• 23:12:51 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:13:45  Synced » update assets/what-is-uiem.css
+• 23:14:38  Synced » update assets/what-is-uiem.css
+• 23:15:02  Synced » update assets/what-is-ciem.css
+• 23:15:16 Request »    GET 200 /pages/what-is-custom-in-ear-monitor?preview=ci-page-clean 
+• 23:15:29  Synced » update assets/what-is-ciem.css
+• 23:15:39 Request »    GET 200 /pages/what-is-custom-in-ear-monitor?preview=ci-page-clean 
+• 23:16:16 Request »    GET 200 /pages/what-is-custom-in-ear-monitor?preview=ci-page-clean 

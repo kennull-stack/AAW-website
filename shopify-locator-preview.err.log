@@ -1,0 +1,82 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9295                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9295
+[3] http://127.0.0.1:9295/gift_cards/[store_id]/preview
+
+• 00:44:30  Synced » delete assets/store-locator.css
+• 00:45:06  Synced » update assets/store-locator.css
+• 00:45:16 Request »    GET 200 /pages/store-locator?preview=style-check 
+• 00:45:30 Request »    GET 200 /pages/store-locator?preview=style-check 
+• 00:45:32 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:46:25  Synced » update assets/store-locator.css
+• 00:46:35 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:46:50 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:47:03 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:47:03  Synced » update layout/theme.liquid
+• 00:47:28  Synced » update templates/page.locator.json
+• 00:47:29 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:48:31  Synced » update templates/product.z05.json
+• 00:48:31  Synced » update templates/product.z07.json
+• 00:48:31 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:48:31 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:48:32  Synced » update assets/z07-language-toggle.js
+• 00:48:56 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:48:57  Synced » update assets/z07-language-toggle.js
+• 00:49:49 Request »    GET 200 /pages/store-locator?preview=style-check-2 
+• 00:49:50  Synced » update assets/z07-language-toggle.js
+• 00:50:04 Request »    GET 200 /pages/store-locator?preview=remove-audio-master 
+• 00:50:19 Request »    GET 200 /pages/store-locator?preview=remove-audio-master 
+• 00:50:45  Synced » update snippets/aaw-home-schema.liquid
+• 00:50:45 Request »    GET 200 /pages/store-locator?preview=remove-audio-master 
+• 00:51:02  Synced » update sections/header.liquid
+• 00:52:46  Synced » update templates/page.locator.json
+• 00:52:46  Synced » update templates/product.z05.json
+• 00:52:46  Synced » update templates/product.z07.json
+• 00:52:47 Request »    GET 200 /pages/store-locator?preview=remove-audio-master 
+• 00:52:47  Synced » update assets/z07-language-toggle.js
+• 00:53:12 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 00:56:26  Synced » update templates/product.z05.json
+• 00:56:26 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 00:59:11  Synced » update templates/product.z07.json
+• 00:59:12 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 00:59:12  Synced » update assets/z07-product.css
+• 01:14:35 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:14:35  Synced » update assets/aaw-judgeme-reviews.js
+• 01:14:37 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:19:24  Synced » update templates/product.z05.json
+• 01:19:25 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:23:12 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:23:12  Synced » update assets/aaw-judgeme-reviews.js
+• 01:28:16 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:28:17  Synced » update assets/z07-language-toggle.js
+• 01:29:44 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:29:45  Synced » update assets/aaw-judgeme-reviews.js
+• 01:35:43 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:35:44  Synced » update assets/aaw-judgeme-reviews.js
+• 01:43:42 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:43:43  Synced » update assets/aaw-judgeme-reviews.js
+• 01:54:32 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:54:32  Synced » update assets/aaw-judgeme-reviews.js
+• 01:54:34 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:57:53 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 01:57:53  Synced » update assets/aaw-judgeme-reviews.js
+• 07:09:18  Synced » update templates/product.z07.json
+• 07:09:20 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 07:09:22 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 07:19:09  Synced » update assets/z07-product.css
+• 08:02:45  Synced » update templates/product.z07.json
+• 08:02:45 Request »    GET 200 /pages/store-locator?preview=remove-jaben-thailand 
+• 08:02:47 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 08:27:45  Synced » update assets/z07-product.css

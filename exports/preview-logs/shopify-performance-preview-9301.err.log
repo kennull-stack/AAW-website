@@ -1,0 +1,29 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9301                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9301
+[3] http://127.0.0.1:9301/gift_cards/[store_id]/preview
+
+• 23:49:50 Request »    GET 200 / 
+• 23:49:52 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 23:49:53 Request »    GET 200 /products/z07-in-ear-monitor 
+• 23:49:57 Request »    GET 404 /products/halcyon 
+• 23:49:59 Request »    GET 200 /pages/how-to-service-your-iem 
+• 23:50:01 Request »    GET 200 /pages/get-started 
+• 23:50:05 Request »    GET 404 /products/a3h-lux 
+• 23:50:31 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:50:45 Request »    GET 200 / 
+• 23:50:48 Request »    GET 200 /products/z07-in-ear-monitor 
+• 23:50:51 Request »    GET 200 /products/halcyon-electrostatic-hybrid-in-ear-monitor?view=halcyon 
+• 23:50:53 Request »    GET 200 /pages/how-to-service-your-iem 

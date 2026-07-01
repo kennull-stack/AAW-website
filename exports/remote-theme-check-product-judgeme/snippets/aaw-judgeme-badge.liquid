@@ -1,0 +1,17 @@
+{%- liquid
+  assign badge_class = class_name | default: 'aaw-product-judge-stars'
+  assign badge_label = label | default: product.title | append: ' customer rating'
+  assign jm_badge = product.metafields.judgeme.badge | default: ''
+-%}
+
+<div class="{{ badge_class }}" aria-label="{{ badge_label | strip_html | escape }}">
+  <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}" data-auto-install="false">
+    {{ jm_badge }}
+  </div>
+  {%- if jm_badge == blank or jm_badge contains 'No reviews' -%}
+    <span class="aaw-rating-fallback" aria-label="No customer reviews yet">
+      <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>No reviews yet</span>
+    </span>
+  {%- endif -%}
+</div>

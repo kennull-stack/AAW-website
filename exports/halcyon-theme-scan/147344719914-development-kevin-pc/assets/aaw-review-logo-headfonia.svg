@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 220" role="img" aria-labelledby="title">
+  <title id="title">Headfonia</title>
+  <rect width="620" height="220" fill="#050505"/>
+  <g fill="#fff">
+    <rect x="76" y="35" width="210" height="18"/>
+    <rect x="76" y="162" width="210" height="18"/>
+    <path d="M82 73h42v33h48V73h42v92h-42v-35h-48v35H82z"/>
+    <path d="M230 73h94v28h-52v14h48v27h-48v23h-42z"/>
+    <path d="M340 73h39l48 50V73h40v92h-35l-52-54v54h-40z"/>
+    <text x="314" y="175" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" letter-spacing="-2">Headfonia.com</text>
+  </g>
+</svg>

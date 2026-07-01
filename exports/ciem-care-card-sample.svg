@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Sample hand-drawn CIEM care instruction card</title>
+  <desc id="desc">A hand-drawn instruction card showing an in-ear monitor held with the sound bore facing downward while a loop tool removes wax.</desc>
+  <defs>
+    <filter id="paper" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <filter id="roughen">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      .card-bg { fill: #fbf8f1; }
+      .ink { fill: none; stroke: #1d252c; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke-width: 4; }
+      .mid { stroke-width: 7; }
+      .bold { stroke-width: 10; }
+      .red { stroke: #c8493d; }
+      .gold { stroke: #b98938; }
+      .blue { stroke: #2f6f8f; }
+      .green { stroke: #667b55; }
+      .fill-ink { fill: #1d252c; }
+      .fill-red { fill: #c8493d; }
+      .fill-gold { fill: #d7aa5c; }
+      .fill-blue { fill: #d9ebef; }
+      .fill-shell { fill: #f2d6bd; }
+      .label { font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif; fill: #1d252c; letter-spacing: 0; }
+      .small { font-size: 26px; }
+      .body { font-size: 34px; font-weight: 700; }
+      .headline { font-size: 56px; font-weight: 800; }
+      .step { font-size: 30px; font-weight: 800; fill: #fbf8f1; }
+      .note { font-size: 25px; font-weight: 700; fill: #667b55; }
+    </style>
+  </defs>
+
+  <rect class="card-bg" width="1200" height="820"/>
+  <g filter="url(#paper)">
+    <path class="ink mid" filter="url(#roughen)" d="M71 64 C193 48 332 59 468 51 C652 41 824 62 988 55 C1081 51 1132 64 1144 102 C1164 168 1144 264 1153 355 C1163 468 1144 571 1151 692 C1154 752 1110 770 1023 769 C849 767 680 780 507 771 C363 764 212 777 87 759 C50 754 44 714 50 641 C59 531 48 430 54 326 C61 210 47 106 71 64 Z"/>
+    <path class="ink thin" filter="url(#roughen)" d="M91 86 C222 75 378 85 512 76 C670 66 825 85 996 77 C1087 72 1124 90 1128 131 C1135 217 1123 309 1129 407 C1136 517 1124 616 1130 699 C1133 733 1090 745 1004 742 C831 736 668 752 501 743 C351 735 218 746 100 730 C73 726 74 694 77 647 C85 535 73 421 79 322 C86 211 70 116 91 86 Z"/>
+
+    <g transform="translate(84 82)">
+      <path class="fill-red" d="M0 12 C20 -3 121 2 142 9 C151 12 151 56 138 62 C111 73 22 68 3 57 C-8 51 -10 21 0 12 Z"/>
+      <text class="label step" x="28" y="45">STEP 01</text>
+    </g>
+
+    <text class="label headline" x="85" y="204">BORE DOWN</text>
+    <text class="label body" x="85" y="258">Loosen wax with the loop tool.</text>
+    <text class="label small" x="85" y="303">Keep sound tubes down; let debris fall out.</text>
+
+    <g transform="translate(674 224) scale(.78)" filter="url(#roughen)">
+      <path class="ink mid blue" d="M56 327 C24 261 28 196 67 136 C98 88 152 53 213 38 C284 20 372 47 417 98 C463 150 463 224 427 287 C385 359 299 407 204 398 C139 392 83 378 56 327 Z"/>
+      <path class="fill-blue" d="M70 319 C41 257 44 202 78 148 C108 101 158 70 214 57 C280 42 354 64 397 110 C436 152 437 219 405 275 C367 341 288 383 207 376 C149 371 94 363 70 319 Z"/>
+      <path class="ink mid" d="M70 319 C41 257 44 202 78 148 C108 101 158 70 214 57 C280 42 354 64 397 110 C436 152 437 219 405 275 C367 341 288 383 207 376 C149 371 94 363 70 319 Z"/>
+      <path class="ink thin" d="M157 144 C208 94 310 95 355 150 C392 195 382 265 333 309 C292 346 223 351 176 322 C128 292 119 181 157 144 Z"/>
+      <path class="ink thin" d="M216 173 C239 151 288 151 312 177 C335 203 332 247 304 273 C277 299 235 296 212 274 C184 248 188 200 216 173 Z"/>
+      <path class="ink mid" d="M185 396 C179 444 188 492 215 526"/>
+      <path class="ink mid" d="M260 395 C257 450 271 492 304 526"/>
+      <path class="fill-ink" d="M203 516 C232 505 277 507 316 519 C313 544 290 558 256 557 C225 556 206 542 203 516 Z"/>
+      <path class="ink thin" d="M205 522 C230 509 278 511 313 523"/>
+      <path class="ink thin" d="M227 557 C224 582 214 606 196 628"/>
+      <path class="ink thin" d="M268 558 C269 584 280 608 300 630"/>
+    </g>
+
+    <g transform="translate(356 350)" filter="url(#roughen)">
+      <path class="ink bold gold" d="M0 159 C118 109 218 72 333 18"/>
+      <path class="ink thin" d="M324 20 C354 8 378 13 390 31 C400 48 393 73 374 84 C351 98 325 92 314 71 C305 55 309 34 324 20 Z"/>
+      <path class="ink thin red" d="M14 146 C45 163 74 180 101 205"/>
+      <path class="ink thin red" d="M84 113 C114 131 142 150 168 173"/>
+      <path class="fill-gold" d="M-6 163 C15 147 42 132 63 117 C80 130 99 153 106 176 C78 196 50 211 24 225 C11 203 1 185 -6 163 Z"/>
+      <path class="ink mid" d="M-6 163 C15 147 42 132 63 117 C80 130 99 153 106 176 C78 196 50 211 24 225 C11 203 1 185 -6 163 Z"/>
+    </g>
+
+    <g transform="translate(770 516)" filter="url(#roughen)">
+      <path class="ink thin green" d="M44 0 C34 36 19 73 0 105"/>
+      <path class="ink thin green" d="M99 8 C85 45 78 83 81 120"/>
+      <path class="ink thin green" d="M162 8 C153 47 156 84 178 120"/>
+      <path class="ink thin green" d="M223 0 C238 38 257 73 282 102"/>
+      <path class="ink thin green" d="M15 128 C86 107 176 109 258 129"/>
+      <text class="label note" x="-13" y="178">gentle pressure only</text>
+    </g>
+
+    <g transform="translate(118 584)" filter="url(#roughen)">
+      <path class="ink thin red" d="M0 0 C39 25 64 54 82 95"/>
+      <path class="ink thin red" d="M78 1 C45 29 21 62 2 97"/>
+      <text class="label small" x="112" y="40">Never push inward</text>
+      <text class="label small" x="112" y="80">or use sharp tools.</text>
+    </g>
+  </g>
+</svg>

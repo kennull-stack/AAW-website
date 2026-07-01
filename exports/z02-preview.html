@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAW Z02 — Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900;950&display=swap" rel="stylesheet">
+<style>
+/* Black Malus product page */
+.bm-product{position:relative;width:100%;background:#070607;color:#f6f0e8;letter-spacing:0;overflow:hidden}
+.bm-product *{box-sizing:border-box}
+.bm-wrap{width:min(1180px,calc(100vw - 36px));margin:0 auto}
+.bm-topbar{display:flex;align-items:center;gap:10px;padding:16px 0;color:#a79f97;font-size:12px;line-height:1.2;text-transform:uppercase;font-weight:800;letter-spacing:.08em}
+.bm-topbar a{color:#d8c1a1;text-decoration:none}
+.bm-topbar a:hover{color:#fff}
+.bm-kicker{margin:0 0 15px;color:#e6b457;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.bm-hero{display:grid;grid-template-columns:minmax(310px,.84fr) minmax(420px,.96fr);gap:46px;align-items:center;padding:12px 0 24px}
+.bm-hero__copy{position:relative;z-index:2}
+.bm-hero h1{margin:0;color:#fff;font-size:clamp(56px,7.2vw,112px);line-height:.86;font-weight:950;text-transform:uppercase;letter-spacing:0;word-break:normal;overflow-wrap:normal;hyphens:none}
+.bm-hero__lead{max-width:620px;margin:24px 0 0;color:#ded4cb;font-size:clamp(17px,1.55vw,22px);line-height:1.48}
+.bm-price{display:flex;align-items:baseline;gap:10px;margin:18px 0 0;color:#fff}
+.bm-price span{color:#e6b457;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.bm-price strong{font-size:24px;line-height:1}
+.bm-judge-stars{min-height:20px;margin:10px 0 0;color:#e6b457;font-size:13px;font-weight:800}
+.bm-judge-stars .jdgm-preview-badge:empty{display:none}
+.bm-judge-stars .jdgm-star{color:#e6b457!important}
+.bm-rating-fallback{display:inline-flex;align-items:center;gap:8px;color:#e6b457;letter-spacing:0}
+.bm-rating-fallback span:last-child{color:#d9d0c8;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.bm-pill-list{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0;padding:0;list-style:none}
+.bm-pill-list li{padding:9px 12px;border:1px solid rgba(230,180,87,.35);background:rgba(255,255,255,.055);color:#f8ead3;font-size:12px;font-weight:900;text-transform:uppercase}
+.bm-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.bm-actions--center{justify-content:center}
+.bm-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 19px;border:1px solid #e6b457;background:#e6b457;color:#090707;text-decoration:none;font:inherit;font-size:12px;font-weight:950;text-transform:uppercase;cursor:pointer}
+.bm-btn--ghost{background:transparent;color:#f6e6c9}
+.bm-btn:hover{filter:brightness(1.07)}
+.bm-hero__media{position:relative;justify-self:end;width:min(610px,100%);margin:0;aspect-ratio:914/1175;background:#050505;border:1px solid rgba(255,255,255,.13);overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.42)}
+.bm-hero__media:before{display:none}
+.bm-hero__media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.04) saturate(1.06)}
+.bm-floating-buy{position:fixed;left:18px;bottom:22px;z-index:60;width:min(316px,calc(100vw - 36px));min-height:0;padding:12px;border:1px solid rgba(230,180,87,.58);background:rgba(7,6,7,.9);backdrop-filter:blur(14px);display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;box-shadow:0 18px 46px rgba(0,0,0,.36)}
+.bm-floating-buy__label{grid-column:1/-1;color:#f8ead3;font-size:11px;line-height:1;font-weight:950;text-transform:uppercase}
+.bm-floating-buy strong{color:#e6b457;font-size:18px;line-height:1;white-space:nowrap}
+.bm-floating-buy a{display:inline-flex;align-items:center;justify-content:center;min-width:58px;height:36px;background:#e6b457;color:#090707;text-decoration:none;font-size:10px;font-weight:950;text-transform:uppercase}
+.bm-stat-band{border-top:1px solid rgba(230,180,87,.32);border-bottom:1px solid rgba(255,255,255,.1);background:#101010}
+.bm-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.bm-stats article{min-height:122px;padding:24px 20px;background:#151313}
+.bm-stats b{display:block;color:#fff;font-size:clamp(25px,3vw,42px);line-height:1;font-weight:950}
+.bm-stats span{display:block;margin-top:10px;color:#cfc4b8;font-size:13px;line-height:1.35}
+.bm-section{padding:78px 0;background:#f2eee7;color:#111}
+.bm-section--dark{background:#070607;color:#f6f0e8}
+.bm-section h2,.bm-final h2{margin:0;color:inherit;font-size:clamp(34px,5vw,72px);line-height:.95;font-weight:950;text-transform:uppercase;letter-spacing:0;word-break:normal;overflow-wrap:normal;hyphens:none;text-wrap:balance}
+.bm-section p{color:inherit;font-size:16px;line-height:1.66}
+.bm-section-head{max-width:930px;margin-bottom:34px}
+.bm-section-head p:not(.bm-kicker){max-width:760px;margin:18px 0 0;color:inherit}
+.bm-story__grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:54px;align-items:start}
+.bm-prose{padding-left:34px;border-left:1px solid rgba(112,86,43,.3)}
+.bm-prose p{margin:0;color:#2b2521;font-size:18px;line-height:1.72}
+.bm-prose p+p{margin-top:18px}
+.bm-explosion{padding:72px 0;background:#050505}
+.bm-explosion__frame{position:relative;min-height:650px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.12)}
+.bm-explosion__media{position:absolute;inset:0;margin:0}
+.bm-explosion__media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.bm-explosion__copy{position:relative;z-index:1;max-width:1020px;padding:0 20px 42px;margin-top:460px}
+.bm-explosion__copy:before{content:"";display:block;width:100%;height:1px;margin-bottom:24px;background:rgba(255,255,255,.72)}
+.bm-explosion__copy h2{max-width:980px;color:#fff}
+.bm-explosion__copy p:not(.bm-kicker){max-width:720px;margin:18px 0 0;color:#d8d0c8}
+.bm-architecture__grid{display:grid;grid-template-columns:minmax(420px,1.04fr) minmax(330px,.96fr);gap:22px;align-items:stretch}
+.bm-render-card{margin:0;padding:14px;background:#101010;border:1px solid rgba(255,255,255,.14)}
+.bm-render-card img{display:block;width:100%;height:100%;min-height:510px;object-fit:contain;background:#020202}
+.bm-render-card figcaption{margin:12px 0 0;color:#cfc4b8;font-size:13px;line-height:1.45}
+.bm-driver-map{display:grid;gap:1px;background:rgba(230,180,87,.24);border:1px solid rgba(230,180,87,.28)}
+.bm-driver-map article{padding:22px;background:#121010}
+.bm-driver-map span{display:block;color:#e6b457;font-size:24px;line-height:1;font-weight:950}
+.bm-driver-map b{display:block;margin:10px 0 8px;color:#fff;font-size:22px;line-height:1.05;text-transform:uppercase}
+.bm-driver-map p{margin:0;color:#cec5bd;font-size:14px;line-height:1.5}
+.bm-build__grid{display:grid;grid-template-columns:minmax(300px,.84fr) minmax(430px,1.16fr);gap:28px 42px;align-items:start}
+.bm-build__copy p{max-width:570px;color:#302a24}
+.bm-note{padding:16px 18px;border-left:3px solid #111;background:#fff;color:#111!important;font-weight:900}
+.bm-build__photo{margin:0;background:#111;overflow:hidden}
+.bm-build__photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.bm-build__renders{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bm-build__renders img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#050505;border:1px solid #d5cabc;padding:12px}
+.bm-faceplate__grid{display:grid;grid-template-columns:minmax(390px,.82fr) minmax(520px,1.18fr);gap:36px;align-items:center}
+.bm-faceplate h2{font-size:clamp(34px,4vw,58px)}
+.bm-faceplate__grid p:not(.bm-kicker){max-width:560px;color:#d8d0c8}
+.bm-faceplate figure{margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#050505}
+.bm-faceplate__grid figure img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center 42%}
+.bm-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.bm-gallery figure{margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#050505}
+.bm-gallery img{display:block;width:100%;aspect-ratio:3/2;object-fit:contain;object-position:center}
+.bm-accessory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px;background:transparent;border:0}
+.bm-accessory-grid article{display:flex;flex-direction:column;background:#fff;border:1px solid #d6cbbd;min-width:0}
+.bm-accessory-grid img{display:block;width:100%;height:260px;object-fit:contain;object-position:center;background:#f7f4ef;padding:12px;border-bottom:1px solid #e0d7cc}
+.bm-accessory-grid div{padding:22px;display:flex;flex:1;flex-direction:column}
+.bm-accessory-grid span{display:block;color:#9c681a;font-size:12px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.bm-accessory-grid h3{margin:10px 0 10px;color:#111;font-size:24px;line-height:1.05;text-transform:uppercase}
+.bm-accessory-grid p{margin:0;color:#302a24;font-size:14px;line-height:1.55}
+.bm-specs__grid{display:grid;grid-template-columns:minmax(300px,.76fr) minmax(430px,1.24fr);gap:48px;align-items:start}
+.bm-specs__grid p{color:#d4cbc2}
+.bm-spec-table{display:grid;gap:1px;margin:0;background:rgba(230,180,87,.25);border:1px solid rgba(230,180,87,.28)}
+.bm-spec-table div{display:grid;grid-template-columns:160px 1fr;gap:18px;background:#121010;padding:17px}
+.bm-spec-table dt{color:#e6b457;font-size:11px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.bm-spec-table dd{margin:0;color:#fff;font-size:14px;line-height:1.45;font-weight:800}
+.bm-faq__grid{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(430px,1.28fr);gap:48px}
+.bm-faq__list{display:grid;gap:12px}
+.bm-faq details{background:#fff;border:1px solid #d6cbbd}
+.bm-faq summary{display:flex;justify-content:space-between;gap:20px;min-height:62px;padding:18px;cursor:pointer;list-style:none;color:#111;font-weight:950;text-transform:uppercase;line-height:1.3}
+.bm-faq summary::-webkit-details-marker{display:none}
+.bm-faq summary:after{content:"+";flex:0 0 auto;color:#9c681a;font-size:22px;line-height:1;font-weight:950}
+.bm-faq details[open] summary{border-bottom:1px solid #d6cbbd}
+.bm-faq details[open] summary:after{content:"-"}
+.bm-faq details p{margin:0;padding:18px;color:#2f2923;font-size:15px;line-height:1.6}
+.bm-reviews{border-top:1px solid rgba(230,180,87,.28)}
+.bm-reviews__head{max-width:940px;margin-bottom:30px}
+.bm-reviews__head h2{max-width:900px}
+.bm-reviews__shell{padding:24px;background:#101010;border:1px solid rgba(230,180,87,.28)}
+.bm-final{padding:78px 0;text-align:center;background:#080707;color:#fff;border-top:1px solid rgba(230,180,87,.35)}
+.bm-final h2{max-width:980px;margin:0 auto}
+@media(max-width:980px){
+  .bm-hero,.bm-story__grid,.bm-architecture__grid,.bm-build__grid,.bm-faceplate__grid,.bm-specs__grid,.bm-faq__grid{grid-template-columns:1fr}
+  .bm-hero{padding-top:6px}
+  .bm-hero__media{order:-1;justify-self:center;width:min(520px,100%)}
+  .bm-prose{padding-left:0;border-left:0;border-top:1px solid rgba(112,86,43,.3);padding-top:24px}
+  .bm-explosion__frame{min-height:600px}
+  .bm-explosion__media img{object-position:center top}
+  .bm-explosion__copy{margin-top:410px}
+  .bm-stats,.bm-accessory-grid{grid-template-columns:repeat(2,1fr)}
+  .bm-render-card img{min-height:360px}
+  .bm-build__renders{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .bm-wrap{width:min(100% - 24px,1180px)}
+  .bm-topbar{font-size:10px;overflow:auto;white-space:nowrap}
+  .bm-hero h1{font-size:clamp(46px,16vw,72px)}
+  .bm-hero__media{width:min(100%,430px);margin:0 auto}
+  .bm-explosion__frame{width:100vw;min-height:540px;margin-left:calc(50% - 50vw);border-left:0;border-right:0}
+  .bm-explosion__media{position:absolute;inset:0;margin:0}
+  .bm-explosion__media img{width:100%;height:100%;object-fit:cover;object-position:center top}
+  .bm-explosion__copy{margin-top:330px;padding:0 18px 30px}
+  .bm-stats,.bm-accessory-grid,.bm-gallery{grid-template-columns:1fr}
+  .bm-section{padding:56px 0}
+  .bm-section h2,.bm-final h2{font-size:clamp(31px,10vw,48px)}
+  .bm-spec-table div{grid-template-columns:1fr;gap:5px}
+  .bm-reviews__shell{padding:14px}
+  .bm-actions .bm-btn{width:100%}
+  .bm-floating-buy{display:none}
+}
+
+/* Z02 product page, built on the Black Malus product system */
+.z02-product{background:#060607;color:#f5f1ec}
+.z02-product .bm-kicker{color:#d8d7cf}
+.z02-product .bm-story .bm-kicker,
+.z02-product .bm-accessories .bm-kicker{color:#6c6046}
+.z02-product .bm-topbar a{color:#ded4c5}
+.z02-product .bm-topbar a:hover{color:#fff}
+.z02-product .bm-hero{grid-template-columns:minmax(340px,.84fr) minmax(500px,1.16fr);gap:54px;padding-bottom:48px}
+.z02-product .bm-hero__copy{min-width:0;max-width:100%}
+.z02-product .bm-hero h1{font-size:clamp(58px,7.6vw,116px);line-height:.86}
+.z02-product .bm-hero h1.z02-hero-title{margin:18px 0 24px;font-size:0;line-height:1}
+.z02-hero-title img{display:block;width:min(250px,68vw);height:auto}
+.z02-product .bm-hero__lead{color:#e4ded6}
+.z02-product .bm-hero__media{width:min(700px,100%);aspect-ratio:3/2;background:#0a0a0a}
+.z02-product .bm-hero__media img{object-position:center}
+.z02-product .bm-section h2,
+.z02-product .bm-final h2{font-size:clamp(32px,4.15vw,62px);line-height:.98}
+.z02-product .bm-section-head{max-width:860px}
+.z02-product .bm-story__grid{grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr);gap:46px}
+.z02-product .bm-story h2,
+.z02-product .bm-specs h2{font-size:clamp(30px,3.35vw,52px)}
+.z02-product .bm-prose p{font-size:17px;line-height:1.68}
+.z02-product .bm-specs__grid{grid-template-columns:minmax(260px,.78fr) minmax(360px,1fr);align-items:center}
+.z02-product .bm-pill-list li,
+.z02-product .bm-floating-buy,
+.z02-product .bm-spec-table{border-color:rgba(216,215,207,.34)}
+.z02-product .bm-floating-buy{left:18px;right:auto;top:auto;bottom:22px}
+.z02-product .bm-btn,
+.z02-product .bm-floating-buy a{border-color:#e6e0d6;background:#e6e0d6;color:#070707}
+.z02-product .bm-btn--ghost{background:transparent;color:#f6f1e8}
+.z02-product .bm-price span,
+.z02-product .bm-floating-buy strong,
+.z02-product .bm-spec-table dt,
+.z02-product .bm-faq summary:after{color:#cfc8bd}
+.z02-product .bm-stat-band{border-top-color:rgba(216,215,207,.3)}
+.z02-product .bm-section{background:#f1eee9}
+.z02-product .bm-section--dark{background:#060607}
+.z02-product .bm-accessory-grid article,
+.z02-product .bm-faq details{border-color:#d7d1c6}
+.z02-product .bm-gallery img{object-fit:cover}
+.z02-product .bm-final{border-top-color:rgba(216,215,207,.32)}
+.z02-product .bm-brand{padding:78px 0}
+.z02-product .bm-brand__inner{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;align-items:start}
+.z02-product .bm-brand__lead h2{font-size:clamp(34px,5vw,64px);line-height:.95;text-transform:uppercase}
+.z02-product .bm-brand__slogan{margin-top:18px;color:#d7d7d2;font-size:16px;font-weight:900;letter-spacing:.02em}
+.z02-product .bm-brand__copy p{color:#cec7be;font-size:16px;line-height:1.66}
+.z02-product .bm-brand__copy p+p{margin-top:14px}
+.z02-product .bm-brand__copy .bm-btn{margin-top:22px}
+.z02-product .bm-where{background:#f1eee9;color:#1a1612}
+.z02-product .bm-where-head{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(430px,1.28fr);gap:48px;margin-bottom:42px}
+.z02-product .bm-where-head h2{font-size:clamp(34px,5vw,64px);color:#111}
+.z02-product .bm-where-head p:not(.bm-kicker){color:#302a24;font-size:16px;line-height:1.66;align-self:end}
+.z02-product .bm-where .bm-kicker{color:#6b5c3a}
+.z02-product .bm-dealer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(112,86,43,.24);border:1px solid rgba(112,86,43,.24)}
+.z02-product .bm-dealer-grid article{padding:24px;background:#fff}
+.z02-product .bm-dealer-grid .featured{background:#faf7f0}
+.z02-product .bm-dealer-grid span{display:block;color:#9c681a;font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.z02-product .bm-dealer-grid h3{margin:8px 0 10px;color:#111;font-size:18px;line-height:1.1;text-transform:uppercase;font-weight:950}
+.z02-product .bm-dealer-grid p{margin:0;color:#302a24;font-size:13px;line-height:1.55}
+.z02-product .bm-global-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;margin-top:34px;padding:28px;background:#fff;border:1px solid #d6cbbd}
+.z02-product .bm-global-box span{display:block;color:#9c681a;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.z02-product .bm-global-box p{margin:10px 0 0;color:#302a24;font-size:15px;line-height:1.55}
+.z02-product .bm-btn[disabled]{opacity:.55;cursor:not-allowed;filter:none}
+.z02-product #z02-architecture .bm-section-head h2{max-width:780px}
+.z02-product #z02-architecture .bm-section-head p:not(.bm-kicker){max-width:820px}
+.z02-original-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.z02-original-grid figure{margin:0;position:relative;min-height:390px;overflow:hidden;background:#070707;border:1px solid rgba(255,255,255,.14)}
+.z02-original-grid img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover;filter:grayscale(.08) contrast(1.04)}
+.z02-original-grid figcaption{position:absolute;left:14px;right:14px;bottom:14px;padding:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.14)}
+.z02-original-grid b{display:block;color:#fff;font-size:13px;line-height:1.2;text-transform:uppercase;letter-spacing:.06em}
+.z02-original-grid span{display:block;margin-top:7px;color:#d8d0c8;font-size:12px;line-height:1.42}
+.z02-explosion-panel{display:grid;grid-template-columns:1fr;margin-top:34px;margin-bottom:34px}
+.z02-explosion-panel figure{margin:0;overflow:hidden;background:#f2f2f0;border:1px solid rgba(255,255,255,.14)}
+.z02-explosion-panel img{display:block;width:100%;height:auto;object-fit:contain}
+.z02-explosion-panel figcaption{display:grid;gap:7px;padding:16px 18px;background:#101010;border-top:1px solid rgba(255,255,255,.12)}
+.z02-explosion-panel b{color:#fff;font-size:13px;line-height:1.2;text-transform:uppercase;letter-spacing:.06em}
+.z02-explosion-panel span{color:#d8d0c8;font-size:12px;line-height:1.42}
+.z02-spec-card{width:min(840px,100%);margin:32px auto 0;padding:40px 50px 42px;background:#020202;color:#f5f2ea;border:1px solid rgba(255,255,255,.14);border-radius:34px;box-shadow:0 28px 90px rgba(0,0,0,.42)}
+.z02-spec-card__head{display:flex;flex-direction:column;align-items:center;gap:18px;margin:0 auto 22px}
+.z02-card-logo{display:block;width:min(330px,72%);height:auto}
+.z02-spec-card__edition{position:relative;min-width:min(420px,100%);padding:9px 34px;text-align:center;border:2px solid #d8aa54;border-radius:7px;box-shadow:0 0 0 1px rgba(216,170,84,.18) inset}
+.z02-spec-card__edition:before,.z02-spec-card__edition:after{content:"";position:absolute;top:9px;bottom:9px;width:3px;border-radius:2px;background:#f4f1ea}
+.z02-spec-card__edition:before{left:10px}
+.z02-spec-card__edition:after{right:10px}
+.z02-spec-card__edition h3{margin:0;color:#e8c273;font-size:21px;line-height:1.05;text-transform:none}
+.z02-spec-card__edition p{margin:3px 0 0;color:#d9d3cb;font-size:12px;line-height:1.3}
+.z02-driver-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:18px;padding:30px;background:#211f20;border-radius:9px}
+.z02-driver-item{display:flex;flex-direction:column;align-items:center;min-width:0;text-align:center}
+.z02-driver-item b{margin-top:14px;color:#fff;font-size:17px;line-height:1.1}
+.z02-driver-item small{margin-top:5px;color:#e5dfd7;font-size:13px;line-height:1.12}
+.z02-spec-icon{position:relative;display:block;width:54px;height:54px;color:#dedbd6}
+.z02-spec-icon--woofer{border:2px solid #dedbd6;border-radius:50%}
+.z02-spec-icon--woofer:before{content:"";position:absolute;inset:9px;border:2px solid #9e9a94;border-radius:50%;box-shadow:0 0 0 7px rgba(255,255,255,.08) inset}
+.z02-spec-icon--woofer:after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:#dedbd6;transform:translate(-50%,-50%);box-shadow:14px 0 0 rgba(222,219,214,.75),-14px 0 0 rgba(222,219,214,.75),0 14px 0 rgba(222,219,214,.75),0 -14px 0 rgba(222,219,214,.75),10px 10px 0 rgba(222,219,214,.55),-10px 10px 0 rgba(222,219,214,.55),10px -10px 0 rgba(222,219,214,.55),-10px -10px 0 rgba(222,219,214,.55)}
+.z02-spec-icon--planar{border:2px solid #dedbd6;border-radius:6px}
+.z02-spec-icon--planar:before,.z02-spec-icon--planar:after,.z02-spec-icon--planar i:before,.z02-spec-icon--planar i:after{content:"";position:absolute;left:10px;right:10px;height:2px;background:#dedbd6;border-radius:2px}
+.z02-spec-icon--planar:before{top:14px}.z02-spec-icon--planar:after{top:24px}.z02-spec-icon--planar i:before{top:34px}.z02-spec-icon--planar i:after{top:42px}
+.z02-spec-icon--crossover:before{content:"";position:absolute;left:7px;right:7px;top:25px;height:2px;background:#dedbd6}
+.z02-spec-icon--crossover:after{content:"";position:absolute;left:23px;top:8px;width:2px;height:38px;background:#dedbd6;transform:rotate(28deg);transform-origin:center}
+.z02-spec-icon--crossover i:before,.z02-spec-icon--crossover i:after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#d8aa54;box-shadow:37px 0 0 #dedbd6}
+.z02-spec-icon--crossover i:before{left:4px;top:20px}.z02-spec-icon--crossover i:after{left:4px;top:38px}
+.z02-spec-icon--chamber{border:2px solid #dedbd6;border-radius:18px 18px 24px 24px;transform:rotate(-10deg)}
+.z02-spec-icon--chamber:before{content:"";position:absolute;left:10px;right:10px;top:10px;bottom:10px;border:2px solid #9e9a94;border-radius:14px 14px 20px 20px}
+.z02-spec-icon--chamber:after{content:"";position:absolute;right:-5px;top:18px;width:13px;height:18px;border:2px solid #dedbd6;border-left:0;border-radius:0 12px 12px 0}
+.z02-feature-panel{margin-top:24px;padding:26px 30px 0;background:#211f20;border-radius:9px}
+.z02-feature-panel h3{margin:0 0 8px;color:#fff;font-size:27px;line-height:1.1;text-transform:none}
+.z02-feature-panel ul{margin:0 0 16px 18px;padding:0;color:#f1eee8;font-size:16px;line-height:1.58;list-style:disc outside}
+.z02-feature-panel li{display:list-item;padding-left:6px}
+.z02-feature-panel li::marker{color:#fff;font-size:1.05em}
+.z02-measurement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0;padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.z02-measurement-grid article{min-height:68px;padding:11px 12px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.14)}
+.z02-measurement-grid span{display:block;color:#b8b0a2;font-size:10px;font-weight:900;line-height:1.2;text-transform:uppercase;letter-spacing:.06em}
+.z02-measurement-grid strong{display:block;margin-top:7px;color:#f1eee8;font-size:12px;line-height:1.25}
+.z02-switch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(216,215,207,.28);border:1px solid rgba(216,215,207,.32)}
+.z02-switch-grid article{min-height:178px;padding:24px;background:#121212}
+.z02-switch-grid span{display:block;color:#cfc8bd;font-size:12px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.z02-switch-grid h3{margin:13px 0 8px;color:#fff;font-size:24px;line-height:1.04;text-transform:uppercase}
+.z02-switch-grid p{margin:0;color:#d4cec7;font-size:14px;line-height:1.55}
+.z02-benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:20px;background:rgba(148,187,181,.24);border:1px solid rgba(148,187,181,.28)}
+.z02-benefit-grid article{min-height:156px;padding:22px;background:#0f1212}
+.z02-benefit-grid span{display:block;color:#94bbb5;font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+.z02-benefit-grid h3{margin:12px 0 8px;color:#fff;font-size:20px;line-height:1.05;text-transform:uppercase}
+.z02-benefit-grid p{margin:0;color:#d4cec7;font-size:13px;line-height:1.5}
+.z02-fr-figure{max-width:620px;margin-top:34px;margin-left:auto;margin-right:auto}
+.z02-fr-figure figure{margin:0;background:#0a0a0a;border:1px solid rgba(255,255,255,.14);overflow:hidden}
+.z02-fr-figure img{display:block;width:100%;height:auto}
+.z02-fr-figure figcaption{padding:18px 24px;color:#d4cec7;font-size:14px;line-height:1.5}
+.z02-faq-wrap{max-width:820px;margin:0 auto}
+@media(max-width:980px){
+  .z02-product .bm-hero{grid-template-columns:1fr}
+  .z02-product .bm-section h2,
+  .z02-product .bm-final h2{font-size:clamp(32px,7vw,54px)}
+  .z02-fr-figure{max-width:none}
+  .z02-product .bm-story__grid,.z02-product .bm-specs__grid{grid-template-columns:1fr}
+  .z02-switch-grid,.z02-benefit-grid{grid-template-columns:repeat(2,1fr)}
+  .z02-original-grid{grid-template-columns:1fr}
+  .z02-product .bm-brand__inner{grid-template-columns:1fr;gap:34px}
+  .z02-product .bm-where-head{grid-template-columns:1fr;gap:24px}
+  .z02-product .bm-dealer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .z02-product .bm-hero h1{font-size:clamp(54px,18vw,82px)}
+  .z02-product .bm-hero h1.z02-hero-title{margin:14px 0 20px;font-size:0}
+  .z02-hero-title img{width:min(220px,76vw)}
+  .z02-product .bm-hero{gap:28px;padding-bottom:28px}
+  .z02-product .bm-hero__copy,
+  .z02-product .bm-hero__lead,
+  .z02-product .bm-price,
+  .z02-product .bm-judge-stars{width:100%;max-width:100%}
+  .z02-product .bm-hero__lead{font-size:16px;line-height:1.48}
+  .z02-product .bm-section h2,
+  .z02-product .bm-final h2{font-size:clamp(30px,10vw,44px);line-height:1}
+  .z02-product .bm-section-head{margin-bottom:26px}
+  .z02-original-grid figure,.z02-original-grid img{min-height:300px}
+  .z02-original-grid figcaption{position:static;margin:10px;background:#090909}
+  .z02-spec-card{padding:24px 16px 26px;border-radius:20px}
+  .z02-card-logo{width:min(250px,78%)}
+  .z02-spec-card__edition{min-width:0;width:100%;padding:8px 14px}
+  .z02-driver-strip{grid-template-columns:repeat(2,1fr);gap:18px 10px;padding:20px 12px}
+  .z02-feature-panel{padding:20px 18px 0}
+  .z02-feature-panel h3{font-size:22px}
+  .z02-feature-panel ul{font-size:14px}
+  .z02-measurement-grid{grid-template-columns:1fr}
+  .z02-measurement-grid article{min-height:0}
+  .z02-switch-grid,.z02-benefit-grid{grid-template-columns:1fr}
+  .z02-explosion-panel img{min-height:0}
+  .z02-product .bm-stats{grid-template-columns:repeat(2,1fr)}
+  .z02-product .bm-stats article{min-height:106px;padding:18px 16px}
+  .z02-product .bm-stats b{font-size:clamp(24px,7vw,36px)}
+  .z02-product .bm-stats span{font-size:12px;line-height:1.3}
+  .z02-product .bm-dealer-grid{grid-template-columns:1fr}
+  .z02-product .bm-global-box{grid-template-columns:1fr;gap:18px;padding:20px}
+}
+
+</style>
+</head>
+<body style="margin:0;background:#060607;">
+black-malus-product.css
+z02-product.css
+
+OutOfStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {"@id": "https://www.aaw.me/#organization"},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "url": "https://www.aaw.me/pages/shipping-return",
+      "applicableCountry": "SG",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
+    }
+  },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Driver Configuration", "value": "2-driver dynamic-planar hybrid"},
+    {"@type": "PropertyValue", "name": "Planar Tweeter", "value": "Miniature planar magnetic tweeter embedded in a 3D-printed shell"},
+    {"@type": "PropertyValue", "name": "Dynamic Driver", "value": "10mm graphene dynamic driver with physical low-pass filtering"},
+    {"@type": "PropertyValue", "name": "Crossover", "value": "Physical 2-way crossover"},
+    {"@type": "PropertyValue", "name": "Internal Wire", "value": "OCC copper internal wire"},
+    {"@type": "PropertyValue", "name": "Sensitivity", "value": "105dB"},
+    {"@type": "PropertyValue", "name": "Impedance", "value": "18 Ohm"},
+    {"@type": "PropertyValue", "name": "Frequency Response", "value": "10Hz to 40kHz"},
+    {"@type": "PropertyValue", "name": "Total Harmonic Distortion", "value": "<=1%"},
+    {"@type": "PropertyValue", "name": "Enclosure", "value": "AAW third-generation 3D-printed digital enclosure and acoustic chamber"},
+    {"@type": "PropertyValue", "name": "Warranty", "value": "1-year limited warranty"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Z02 driver configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Z02 uses a 2-driver dynamic-planar hybrid configuration: a 10mm graphene dynamic driver for low frequencies and a miniature planar magnetic tweeter for vocal, treble, and upper-frequency detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the miniature planar magnetic tweeter do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The planar magnetic tweeter is embedded in the 3D-printed shell to reduce sound pressure decay and unwanted resonance typical of tubed balanced armature layouts. It is designed for extended high-frequency response, low distortion, fast transient response, and consistent soundstage reproduction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the graphene dynamic driver add?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 10mm graphene dynamic driver uses an ultra-thin rigid diaphragm and physical low-pass filtering so it can handle bass and lower-frequency energy with minimal overlap against the planar tweeter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the Z02 enclosure made?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Z02 uses AAW's third-generation digital enclosure and acoustic chamber process. Driver and nozzle placements are simulated through many iterations, then 3D printed for precision and production consistency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What comes in the box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "48 inch Brevity OCC copper detachable cable, AAW carrying case, assorted ear tips, and a 1-year limited warranty."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aaw.me/"},
+    {"@type": "ListItem", "position": 2, "name": "Universal IEM", "item": "https://www.aaw.me/collections/universal-in-ear"},
+    {"@type": "ListItem", "position": 3, "name": "Z02"}
+  ]
+}
+</script>
+
+<div class="bm-product z02-product">
+  <nav class="bm-topbar bm-wrap" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/collections/universal-in-ear">Universal In-Ear</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Z02</span>
+  </nav>
+
+  <aside class="bm-floating-buy" aria-label="Z02 price and purchase">
+    <span class="bm-floating-buy__label">Z02</span>
+    <strong>current_variant.price | money</strong>
+    
+      <span>Sold out</span>
+    
+  </aside>
+
+  <section class="bm-hero bm-wrap" aria-labelledby="z02-title">
+    <div class="bm-hero__copy">
+      <p class="bm-kicker">Planar magnetic hybrid in-ear monitor</p>
+      <h1 id="z02-title" class="z02-hero-title">
+        <span class="visually-hidden">Z02</span>
+        <img src="z02-wordmark.png" alt="" width="290" height="158" loading="eager">
+      </h1>
+      <p class="bm-hero__lead">A compact dynamic-planar hybrid tuned for a modern and lively sound signature. The miniature planar magnetic tweeter delivers crystal-clear vocal and treble detail, while the 10mm graphene dynamic driver supplies natural, robust sub-bass. Physical crossover, 3D-printed acoustic chamber, and daily-ready universal fit.</p>
+      <p class="bm-price"><span>Price</span><strong>current_variant.price | money</strong></p>
+      <div class="bm-judge-stars" aria-label="Z02 customer rating">
+        <div class="jdgm-widget jdgm-preview-badge" data-id="product.id" data-auto-install="false">
+          product.metafields.judgeme.badge | default:
+        </div>
+        Sold Out</button>
+        <a class="bm-btn bm-btn--ghost" href="#z02-architecture">Explore the build</a>
+      </form>
+    </div>
+    <figure class="bm-hero__media">
+      <img src="z02-hero-wide.jpg" alt="AAW Z02 planar magnetic universal in-ear monitors with detachable copper cable" width="2200" height="1238" loading="eager">
+    </figure>
+  </section>
+
+  <section class="bm-stat-band" aria-label="Z02 specification highlights">
+    <div class="bm-wrap bm-stats">
+      <article><b>2</b><span>Dynamic-planar hybrid drivers.</span></article>
+      <article><b>Physical</b><span>Crossover for driver integration.</span></article>
+      <article><b>10Hz-40kHz</b><span>Extended frequency response.</span></article>
+      <article><b>18 Ohm</b><span>Easy to drive from portable sources.</span></article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-story">
+    <div class="bm-wrap bm-story__grid">
+      <div>
+        <p class="bm-kicker">Design Story</p>
+        <h2>A dynamic-planar hybrid with AAW digital acoustic design.</h2>
+      </div>
+      <div class="bm-prose">
+        <p>The Z02 showcases an innovative dynamic-planar hybrid multi-driver system, meticulously tuned for a modern and lively sound signature. It delivers a natural and robust sub-bass response, unmatched by traditional all-balanced armature setups, while its miniature planar magnetic tweeter keeps vocal and treble detail clean, extended, and smooth.</p>
+        <p>The planar magnetic tweeter is embedded deep into the Z02's 3D-printed shell. Its dedicated cavity design eliminates sound pressure decay and unwanted resonance common to traditional tubed balanced armature designs. The thin diaphragm responds quickly to signal changes, giving Z02 accurate dynamics, low distortion, and a consistent soundstage.</p>
+        <p>With a wholly digitized design process, Z02 employs AAW third-generation digital enclosure and acoustic chamber design. Driver and nozzle placements are simulated through hundreds of iterations to determine ideal phasing and response, then 3D printed to precision for production consistency.</p>
+        <p>Suitable for rising artists, band performances, streaming platforms, worship events, audio engineering, and anybody who appreciates a critical listening experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Fitment Options</p>
+      <h2>Designed for a stable universal seal.</h2>
+      <p>Z02 ships with assorted ear tips so listeners can tune seal, comfort, bass weight, and treble energy by fit. The compact shell is shaped through AAW's digital enclosure process for ergonomic daily use.</p>
+    </div>
+    <div class="bm-wrap z02-original-grid">
+      <figure>
+        <img src="z02-lifestyle-wide.jpg" alt="AAW Z02 universal in-ear monitors with detachable copper cable" width="2200" height="1467" loading="lazy">
+        <figcaption><b>Universal fit</b><span>Compact shell, detachable cable, and tip rolling flexibility for daily listening.</span></figcaption>
+      </figure>
+      <figure>
+        <img src="z02-detail-square.jpg" alt="AAW Z02 faceplates and detachable cable close up" width="1600" height="1600" loading="lazy">
+        <figcaption><b>Fit tuning</b><span>Assorted tips let the user tune seal pressure, isolation, and tonal balance.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark" id="z02-architecture">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Acoustic Architecture</p>
+      <h2>Planar speed. Graphene low end. One coherent physical crossover.</h2>
+      <p>The miniature planar magnetic tweeter handles upper detail with low distortion, wide dispersion, and fast transient response. The 10mm graphene dynamic driver uses a rigid ultra-thin diaphragm and physical low-pass filtering to keep bass focused with minimal overlap. Driver placement and acoustic chambers are digitally simulated, then 3D printed for consistency.</p>
+    </div>
+    <div class="bm-wrap z02-explosion-panel">
+      <figure>
+        <img src="z02-driver-diagram.jpg" alt="AAW Z02 driver diagram with miniature planar tweeter assembly and shell components" width="1800" height="1064" loading="lazy">
+        <figcaption><b>Miniature planar magnetic tweeter assembly</b><span>Lower valve cover, magnet arrays, thin film circuit pattern, top valve cover, 2-pin socket, faceplate, and finished shell geometry.</span></figcaption>
+      </figure>
+    </div>
+    <article class="bm-wrap z02-spec-card" aria-labelledby="z02-spec-card-title">
+      <header class="z02-spec-card__head">
+        <img class="z02-card-logo" src="z02-logo-lockup.png" alt="AAW Z02" width="900" height="193" loading="lazy">
+        <div class="z02-spec-card__edition">
+          <h3 id="z02-spec-card-title">Planar Magnetic Hybrid</h3>
+          <p>Miniature planar tweeter with 10mm graphene dynamic low end</p>
+        </div>
+      </header>
+      <div class="z02-driver-strip" aria-label="Z02 driver and acoustic architecture">
+        <div class="z02-driver-item">
+          <span class="z02-spec-icon z02-spec-icon--woofer" aria-hidden="true"></span>
+          <b>1 x 10mm</b>
+          <small>Graphene Dynamic</small>
+        </div>
+        <div class="z02-driver-item">
+          <span class="z02-spec-icon z02-spec-icon--planar" aria-hidden="true"><i></i></span>
+          <b>1 x</b>
+          <small>Planar Tweeter</small>
+        </div>
+        <div class="z02-driver-item">
+          <span class="z02-spec-icon z02-spec-icon--crossover" aria-hidden="true"><i></i></span>
+          <b>2-Way</b>
+          <small>Physical Crossover</small>
+        </div>
+        <div class="z02-driver-item">
+          <span class="z02-spec-icon z02-spec-icon--chamber" aria-hidden="true"></span>
+          <b>3D Printed</b>
+          <small>Acoustic Chamber</small>
+        </div>
+      </div>
+      <div class="z02-feature-panel">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Miniature planar magnetic tweeter</li>
+          <li>10mm graphene dynamic driver</li>
+          <li>Physical 2-way hybrid crossover</li>
+          <li>AAW third-generation 3D-printed acoustic chamber</li>
+          <li>OCC copper internal wire</li>
+        </ul>
+        <div class="z02-measurement-grid" aria-label="Z02 electrical and acoustic measurements">
+          <article><span>Sensitivity</span><strong>105dB</strong></article>
+          <article><span>Impedance</span><strong>18 Ohm</strong></article>
+          <article><span>Frequency Response</span><strong>10Hz - 40kHz</strong></article>
+          <article><span>Total Harmonic Distortion</span><strong>&le;1%</strong></article>
+          <article><span>Driver Count</span><strong>2-driver hybrid</strong></article>
+          <article><span>Warranty</span><strong>1-year limited warranty</strong></article>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="bm-section bm-section--dark">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Sound Signature &amp; Frequency Response</p>
+      <h2>Modern, lively, and measured.</h2>
+      <p>Z02 is tuned with a natural and robust sub-bass foundation, clear vocal presence, carefully managed treble extension, and a smooth fatigue-free presentation. The frequency response reflects the dynamic-planar crossover balance and AAW's 3D-printed chamber tuning.</p>
+    </div>
+    <div class="bm-wrap z02-switch-grid" aria-label="Z02 sound characteristics">
+      <article><span>Low</span><h3>Robust sub-bass</h3><p>The graphene dynamic driver gives Z02 a physical bass foundation that all-BA designs cannot reproduce in the same way.</p></article>
+      <article><span>Mid</span><h3>Clean vocal focus</h3><p>The planar tweeter keeps vocals articulate and immediate without pushing the presentation into harshness.</p></article>
+      <article><span>High</span><h3>Extended detail</h3><p>Fast planar transient response preserves treble texture, cymbal air, and micro-detail.</p></article>
+      <article><span>Stage</span><h3>Stable imaging</h3><p>Digitized driver placement and chamber design help maintain coherent timing and a consistent soundstage.</p></article>
+    </div>
+    <div class="bm-wrap z02-benefit-grid" aria-label="Miniature planar magnetic tweeter benefits">
+      <article><span>01</span><h3>Low distortion</h3><p>The evenly driven diaphragm reduces non-linear behavior and harshness in the upper range.</p></article>
+      <article><span>02</span><h3>Compact size</h3><p>Miniaturized planar technology fits inside an IEM shell without giving up treble performance.</p></article>
+      <article><span>03</span><h3>Fast dynamics</h3><p>The thin diaphragm responds quickly to transient sounds and dynamic changes.</p></article>
+      <article><span>04</span><h3>Wide dispersion</h3><p>Uniform sound dispersion supports a more consistent soundstage across listening angles.</p></article>
+    </div>
+    <div class="bm-wrap z02-fr-figure">
+      <figure>
+        <img src="Z02-FR_5fb85fc0-6b97-46e2-a9d5-0031f8aa6a25.jpg" alt="AAW Z02 frequency response measurement graph" width="2000" height="1200" loading="lazy">
+        <figcaption>Z02 frequency response measurement. Dynamic-planar hybrid tuning balances natural low-end weight with smooth vocal and treble extension.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bm-section bm-accessories">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">Cabling and Accessories</p>
+      <h2>The everyday kit.</h2>
+    </div>
+    <div class="bm-wrap bm-accessory-grid">
+      <article>
+        <img src="z02-accessory-kit.jpg" alt="AAW Z02 package with detachable cable, ear tips, and carrying case" width="1800" height="1200" loading="lazy">
+        <div><span>01</span><h3>Brevity Pro Plus cable</h3><p>48 inch Null Audio Brevity Pro Plus OCC detachable cable for daily portable use.</p></div>
+      </article>
+      <article>
+        <img src="z02-carry-cases.jpg" alt="AAW Z02 carrying case beside premium AAW case" width="2000" height="1333" loading="lazy">
+        <div><span>02</span><h3>AAW carrying case</h3><p>Semi-rigid zipper case protects your monitors, cable, and tips on the go.</p></div>
+      </article>
+      <article>
+        <img src="z02-carry-open.jpg" alt="AAW carrying case open with in-ear monitors and cable inside" width="1800" height="1200" loading="lazy">
+        <div><span>03</span><h3>Portable protection</h3><p>The zip case keeps Z02, cable, and tip kit organized in a compact travel footprint.</p></div>
+      </article>
+      <article>
+        <img src="z05-liquidmorph-clear-eartips-closeup.jpg" alt="LiquidMorph clear ear tips with teal inner bore" width="2048" height="2048" loading="lazy">
+        <div><span>04</span><h3>Assorted ear tips</h3><p>Multiple tip options for fit checks, bass control, treble balance, and long-session comfort.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-specs">
+    <div class="bm-wrap bm-specs__grid">
+      <div>
+        <p class="bm-kicker">Specifications</p>
+        <h2>Two-driver dynamic-planar numbers.</h2>
+        <p>Miniature planar magnetic tweeter. 10mm graphene dynamic driver. Physical crossover. OCC copper internal wire. 10Hz to 40kHz. 18 Ohm.</p>
+      </div>
+      <dl class="bm-spec-table">
+        <div><dt>Driver Count</dt><dd>2</dd></div>
+        <div><dt>Crossover</dt><dd>Physical</dd></div>
+        <div><dt>Sensitivity</dt><dd>105dB</dd></div>
+        <div><dt>Impedance</dt><dd>18Ohm</dd></div>
+        <div><dt>Frequency</dt><dd>10Hz - 40kHz</dd></div>
+        <div><dt>Distortion</dt><dd>&le;1%</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-faq">
+    <div class="bm-wrap bm-section-head">
+      <p class="bm-kicker">FAQ</p>
+      <h2>Before you choose Z02</h2>
+    </div>
+    <div class="bm-wrap z02-faq-wrap">
+      <div class="bm-faq__list">
+        <details>
+          <summary><span>What is the Z02 driver configuration?</span></summary>
+          <p>Z02 uses a 2-driver dynamic-planar hybrid configuration: a 10mm graphene dynamic driver for low frequencies and a miniature planar magnetic tweeter for vocal, treble, and upper-frequency detail.</p>
+        </details>
+        <details>
+          <summary><span>What does the miniature planar magnetic tweeter do?</span></summary>
+          <p>The planar magnetic tweeter is embedded in the 3D-printed shell to reduce sound pressure decay and unwanted resonance typical of tubed balanced armature layouts. It is designed for extended high-frequency response, low distortion, fast transient response, and consistent soundstage reproduction.</p>
+        </details>
+        <details>
+          <summary><span>What does the graphene dynamic driver add?</span></summary>
+          <p>The 10mm graphene dynamic driver uses an ultra-thin rigid diaphragm and physical low-pass filtering so it can handle bass and lower-frequency energy with minimal overlap against the planar tweeter.</p>
+        </details>
+        <details>
+          <summary><span>How is the Z02 enclosure made?</span></summary>
+          <p>Z02 uses AAW's third-generation digital enclosure and acoustic chamber process. Driver and nozzle placements are simulated through many iterations, then 3D printed for precision and production consistency.</p>
+        </details>
+        <details>
+          <summary><span>What comes in the box?</span></summary>
+          <p>48 inch Brevity OCC copper detachable cable, AAW carrying case, assorted ear tips, and a 1-year limited warranty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="z02-reviews" class="bm-section bm-section--dark z05-reviews-section">
+    <div class="bm-wrap">
+      <div class="z05-reviews-head">
+        <p class="bm-kicker">Owner Reviews</p>
+        <h2>Z02 listening impressions</h2>
+        <p class="z05-reviews-note"><strong>Customer review archive</strong>Read owner impressions from the Judge.me review archive.</p>
+      </div>
+      <div class="z05-reviews-widget-shell">
+        <div style="clear:both"></div>
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="product.id" data-auto-install="false">
+          
+            product.metafields.judgeme.widget | default:
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-section--dark bm-brand">
+    <div class="bm-wrap bm-brand__inner">
+      <div class="bm-brand__lead">
+        <p class="bm-kicker">Built by Advanced AcousticWerkes</p>
+        <h2>Singapore IEM craft, shaped by listening.</h2>
+        <p class="bm-brand__slogan">Those who listen will find the way.</p>
+      </div>
+      <div class="bm-brand__copy">
+        <p>Advanced AcousticWerkes (AAW) is a Singapore-based IEM manufacturer founded in 2014 by Kevin Wang. AAW designs and builds custom and universal in-ear monitors across dynamic, balanced armature, electrostatic, planar, and hybrid platforms.</p>
+        <p>Z02 brings that approach into a compact dynamic-planar hybrid platform: miniature planar tweeter, 10mm graphene dynamic driver, physical crossover, OCC copper internal wire, and AAW's third-generation 3D-printed acoustic chamber design.</p>
+        <a class="bm-btn bm-btn--ghost" href="/pages/about-us">About AAW</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-section bm-where">
+    <div class="bm-wrap bm-where-head">
+      <div>
+        <p class="bm-kicker">Where to buy</p>
+        <h2>Hear AAW in Singapore and beyond</h2>
+      </div>
+      <p>AAW is based in Singapore. To audition, buy, or get support, start with the AAW office or a dealer below.</p>
+    </div>
+    <div class="bm-wrap bm-dealer-grid">
+      <article class="featured">
+        <span>Singapore locations</span>
+        <h3>AAW Office</h3>
+        <p>#01-03, 76 Playfair Rd, Singapore 367996<br>PH: +65 8731 5476<br>Email: sales@acousticwerkes.com<br>Hours: Monday, Wednesday, Thursday, Friday 10:00 AM-6:00 PM. Tuesday and Saturday by appointment. Sunday closed.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>Zeppelin &amp; Co.</h3>
+        <p>1 Rochor Canal Rd, #02-78 Sim Lim Square, Singapore 188504<br>PH: 9337 9655<br>Hours: Daily 11:30 AM-8:00 PM; Sunday 12:00 PM-7:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>JABEN</h3>
+        <p>1 Coleman St, #01-25 The Adelphi, Singapore 179803<br>PH: 6337 0809<br>Hours: Daily 12:00 PM-8:00 PM.</p>
+      </article>
+      <article>
+        <span>Singapore dealer</span>
+        <h3>AV One</h3>
+        <p>1 Coleman St, The Adelphi, Singapore 179803<br>PH: 6337 0080<br>Hours: Monday-Saturday 11:00 AM-7:30 PM; Sunday 1:00 PM-6:00 PM.</p>
+      </article>
+    </div>
+    <div class="bm-wrap bm-global-box">
+      <div>
+        <span>Global listening rooms</span>
+        <p>Outside Singapore: Hong Kong, Macau, Japan, China, South Korea, Thailand. Dealers include DMA, Fine Up Computer, Let's Go Audio, Music Movie Driver, e-earphone, Step Sound, Sorishop, and SoundProofBros.</p>
+      </div>
+      <a class="bm-btn bm-btn--ghost" href="/pages/store-locator">Find a listening room</a>
+    </div>
+  </section>
+
+  <section class="bm-final">
+    <div class="bm-wrap">
+      <p class="bm-kicker">Z02</p>
+      <h2>Planar speed. Graphene low end. Hybrid clarity.</h2>
+      <form class="bm-actions bm-actions--center" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="current_variant.id">
+        <input type="hidden" name="quantity" value="1">
+        <button class="bm-btn" type="submit">Sold Out</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+
+
+</body>
+</html>

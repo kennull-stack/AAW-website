@@ -1,0 +1,204 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_banner_Y9NTAt": {
+      "type": "page-banner",
+      "settings": {
+        "enable_fullwidth": true,
+        "banner_height_desktop": "250px",
+        "banner_height_mobile": "200px",
+        "heading": "",
+        "heading_overly": true,
+        "heading_size": "h2",
+        "content_width": "medium",
+        "heading_alignment": "text-center",
+        "banner_bg_color": "#f2f2f2",
+        "bg_color_opacity": "#eeeeee",
+        "text_color": "#181818",
+        "overlay_opacity": 50,
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 0,
+        "bottom_space_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "image_with_text_kLU7ek": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rTqnxN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2",
+            "seo_heading": "h2",
+            "highlighted_color": "#EFF341"
+          }
+        },
+        "text_6VgFFP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product,</p><p>collection,or blog post.</p>",
+            "text_size": "medium"
+          }
+        },
+        "button_tXar7h": {
+          "type": "button",
+          "settings": {
+            "button_style_1": "solid",
+            "btn_text": "Button",
+            "btn_url": "shopify://collections/all",
+            "btn_size": "regular",
+            "button_style_2": "solid",
+            "btn_text_2": "",
+            "btn_url_2": "",
+            "btn_size_2": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rTqnxN",
+        "text_6VgFFP",
+        "button_tXar7h"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "section_fullwidth": false,
+        "card_background": false,
+        "image_overlay_enable": false,
+        "image_width": "medium",
+        "image_position": "left",
+        "content_position": "center",
+        "content_alignment": "flex-start_left",
+        "color_scheme": "",
+        "section_background": "",
+        "card_color": "",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "video_WakBDF": {
+      "type": "video",
+      "settings": {
+        "section_visibility": "always",
+        "video_full_width": true,
+        "make_section_rounded": false,
+        "autoplay": false,
+        "video_height": "665px",
+        "mobile_video_height": "550px",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "heading": "Video heading",
+        "heading_size": "h2",
+        "seo_heading": "h2",
+        "description": "Add short description for this section",
+        "content_width": "small",
+        "content_position": "center",
+        "content_alignment": "center_center",
+        "color_scheme": "",
+        "section_background": "",
+        "text": "#000000",
+        "highlighted_color": "#EFF341",
+        "button": "#000000",
+        "button_text": "#FFFFFF",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    },
+    "event_calender_cEDgDi": {
+      "type": "event-calender",
+      "blocks": {
+        "event_WWgpUP": {
+          "type": "event",
+          "settings": {
+            "title": "Event heading",
+            "description": "<p>Share information and details about this event.</p>",
+            "date": "10th December",
+            "time": "7PM - 11PM",
+            "location": "Event location",
+            "location_url": "",
+            "link_text": "More info",
+            "link_url": ""
+          }
+        },
+        "event_6WMDbz": {
+          "type": "event",
+          "settings": {
+            "title": "Event heading",
+            "description": "<p>Share information and details about this event.</p>",
+            "date": "20th November",
+            "time": "10.00pm - 12.00pm",
+            "location": "Event location",
+            "location_url": "",
+            "link_text": "More info",
+            "link_url": ""
+          }
+        },
+        "event_D3VTec": {
+          "type": "event",
+          "settings": {
+            "title": "Event heading",
+            "description": "<p>Share information and details about this event.</p>",
+            "date": "Oct 29",
+            "time": "8PM",
+            "location": "Event location",
+            "location_url": "",
+            "link_text": "More info",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "event_WWgpUP",
+        "event_6WMDbz",
+        "event_D3VTec"
+      ],
+      "settings": {
+        "section_visibility": "always",
+        "make_section_rounded": false,
+        "event_image_size": "square",
+        "heading": "Event calender",
+        "heading_size": "h3",
+        "seo_heading": "h3",
+        "heading_alignment": "text-center",
+        "color_scheme": "",
+        "section_background": "",
+        "highlighted_color": "#EFF341",
+        "top_space_desktop": 40,
+        "bottom_space_desktop": 40,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 35
+      }
+    }
+  },
+  "order": [
+    "page_banner_Y9NTAt",
+    "main",
+    "image_with_text_kLU7ek",
+    "video_WakBDF",
+    "event_calender_cEDgDi"
+  ]
+}

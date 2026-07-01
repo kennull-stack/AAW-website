@@ -1,0 +1,2492 @@
+╭─ success ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Preview your theme (t)                                                      │
+│    • http://127.0.0.1:9292                                                   │
+│                                                                              │
+│  Next steps                                                                  │
+│    • Share your theme preview (p) [1] https://advanced-acousticwerkes.mysho  │
+│      pify.com/?preview_theme_id=147344719914                                 │
+│    • Customize your theme at the theme editor (e) [2]                        │
+│    • Preview your gift cards (g) [3]                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[1] https://advanced-acousticwerkes.myshopify.com/?preview_theme_id=147344719914
+[2] https://advanced-acousticwerkes.myshopify.com/admin/themes/147344719914/edit
+or?hr=9292
+[3] http://127.0.0.1:9292/gift_cards/[store_id]/preview
+
+• 00:22:58  Synced » update templates/product.z07.json
+• 00:23:00 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:23:01 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:23:33 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:24:15  Synced » update assets/black-malus-product.css
+• 00:25:27 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:25:59 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:26:27  Synced » update assets/black-malus-product.css
+• 00:26:44 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:27:19 Request »    GET 200 /products/black-malus-16-driver-universal-in-ear-monitor?preview=bm-rebuild 
+• 00:27:28 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:34:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:34:17  Synced » update assets/black-malus-exploded-driver-layout.png
+• 00:34:36  Synced » update sections/black-malus-product.liquid
+• 00:35:03  Synced » update assets/black-malus-product.css
+• 00:35:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:36:03 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:39:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:39:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:39:34  Synced » delete assets/black-malus-exploded-driver-layout.png
+• 00:39:34  Synced » update assets/black-malus-explosion.jpg
+• 00:39:34  Synced » update assets/black-malus-explosion.jpg
+• 00:39:51  Synced » update sections/black-malus-product.liquid
+• 00:40:16  Synced » update assets/black-malus-product.css
+• 00:40:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:43:02 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:43:47  Synced » update assets/black-malus-product.css
+• 00:44:05 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:45:27  Synced » update sections/black-malus-product.liquid
+• 00:45:46 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:47:55  Synced » update sections/black-malus-product.liquid
+• 00:48:23  Synced » update assets/black-malus-product.css
+• 00:48:47 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:50:06  Synced » update assets/black-malus-product.css
+• 00:50:27 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:51:06 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:51:08 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 00:52:32  Synced » update assets/black-malus-product.css
+• 00:52:55 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:53:48  Synced » update assets/black-malus-product.css
+• 00:54:13 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:54:18 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:55:55  Synced » update assets/black-malus-product.css
+• 00:56:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:57:36  Synced » update assets/black-malus-product.css
+• 00:58:05 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:58:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 00:59:17  Synced » update sections/black-malus-product.liquid
+• 00:59:36  Synced » update assets/black-malus-product.css
+• 00:59:59 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:30:53  Synced » update assets/black-malus-product.css
+• 01:31:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:31:34 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:31:38 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:32:42 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:47:33 Request »    GET 200 / 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30  Synced » update assets/mokara-epsilon-plus.jpg
+• 01:54:30  Synced » update assets/mokara-render-exploded.png
+• 01:54:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:30  Synced » update assets/mokara-poster.jpg
+• 01:54:30  Synced » update assets/mokara-render-architecture.png
+• 01:54:31  Synced » update assets/mokara-package.jpg
+• 01:54:31  Synced » update assets/mokara-render-sandwich.png
+• 01:54:31 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 01:54:31  Synced » update assets/mokara-render-est.png
+• 01:54:31  Synced » update assets/mokara-construction-hero.jpg
+• 01:54:31  Synced » update assets/mokara-cover.jpg
+• 01:54:31  Synced » update assets/mokara-exploded-hero.jpg
+• 01:54:31  Synced » update assets/mokara-eartips.jpg
+• 01:54:32  Synced » update assets/mokara-gallery-pair-black.jpg
+• 01:54:32  Synced » update assets/mokara-gallery-closeup.jpg
+• 01:54:32 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:54:32  Synced » update assets/mokara-gallery-kit.jpg
+• 01:54:32  Synced » update assets/mokara-gallery-cable-flatlay.jpg
+• 01:54:32  Synced » update assets/mokara-gallery-packaging.jpg
+• 01:54:33  Synced » update assets/mokara-render-back.png
+• 01:54:34  Synced » update assets/mokara-render-front.png
+• 02:00:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:16  Synced » update assets/mokara-hero-studio.jpg
+• 02:00:17  Synced » update assets/mokara-hero-studio.jpg
+• 02:00:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:19  Synced » update assets/mokara-faceplate-symmetric.jpg
+• 02:00:19  Synced » update assets/mokara-faceplate-symmetric.jpg
+• 02:00:22 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:22 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:22  Synced » update assets/mokara-faceplate-angle.jpg
+• 02:00:22  Synced » update assets/mokara-faceplate-angle.jpg
+• 02:00:25 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:25 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:26  Synced » update assets/mokara-packaging-beauty.jpg
+• 02:00:26  Synced » update assets/mokara-packaging-beauty.jpg
+• 02:00:27 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:28  Synced » update assets/mokara-cable-flatlay.jpg
+• 02:00:28  Synced » update assets/mokara-cable-flatlay.jpg
+• 02:00:29 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:30  Synced » update assets/mokara-closeup-beauty.jpg
+• 02:00:30  Synced » update assets/mokara-closeup-beauty.jpg
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32  Synced » update assets/mokara-kit-flatlay.jpg
+• 02:00:32  Synced » update assets/mokara-kit-flatlay.jpg
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:32  Synced » update assets/mokara-exploded-hero-web.jpg
+• 02:00:32  Synced » update assets/mokara-exploded-hero-web.jpg
+• 02:00:33  Synced » update assets/mokara-poster-web.jpg
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33  Synced » update assets/mokara-cover-web.jpg
+• 02:00:33  Synced » update assets/mokara-cover-web.jpg
+• 02:00:33  Synced » update assets/mokara-poster-web.jpg
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33  Synced » update assets/mokara-construction-hero-web.jpg
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33  Synced » update assets/mokara-construction-hero-web.jpg
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33  Synced » update assets/mokara-render-architecture-web.png
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:34  Synced » update assets/mokara-render-exploded-web.png
+• 02:00:34  Synced » update assets/mokara-render-architecture-web.png
+• 02:00:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:34  Synced » update assets/mokara-render-exploded-web.png
+• 02:00:34  Synced » update assets/mokara-render-est-web.png
+• 02:00:34  Synced » update assets/mokara-render-sandwich-web.png
+• 02:00:34  Synced » update assets/mokara-render-back-web.png
+• 02:00:34  Synced » update assets/mokara-render-sandwich-web.png
+• 02:00:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:35  Synced » update assets/mokara-render-est-web.png
+• 02:00:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:35  Synced » update assets/mokara-render-front-web.png
+• 02:00:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:00:36  Synced » update assets/mokara-render-back-web.png
+• 02:00:36  Synced » update assets/mokara-render-front-web.png
+• 02:00:36  Synced » update assets/mokara-render-front-web.png
+• 02:00:37  Synced » update assets/mokara-render-front-web.png
+• 02:03:10  Synced » update sections/mokara-product.liquid
+• 02:03:10 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:04:33  Synced » update assets/mokara-product.css
+• 02:04:42  Synced » update assets/black-malus-product.css
+• 02:04:57  Synced » update templates/product.mokara.json
+• 02:04:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:05:09 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:05:36  Synced » delete assets/mokara-render-architecture.png
+• 02:05:36  Synced » delete assets/mokara-render-back.png
+• 02:05:36  Synced » delete assets/mokara-construction-hero.jpg
+• 02:05:36  Synced » delete assets/mokara-gallery-packaging.jpg
+• 02:05:36  Synced » delete assets/mokara-exploded-hero.jpg
+• 02:05:36  Synced » delete assets/mokara-render-est.png
+• 02:05:36  Synced » delete assets/mokara-cover.jpg
+• 02:05:36  Synced » delete assets/mokara-render-sandwich.png
+• 02:05:36  Synced » delete assets/mokara-gallery-cable-flatlay.jpg
+• 02:05:36  Synced » delete assets/mokara-gallery-pair-black.jpg
+• 02:05:36  Synced » delete assets/mokara-gallery-kit.jpg
+• 02:05:36  Synced » delete assets/mokara-render-exploded.png
+• 02:05:36  Synced » delete assets/mokara-render-front.png
+• 02:05:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:05:36  Synced » delete assets/mokara-gallery-closeup.jpg
+• 02:05:37 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:06:13  Synced » delete assets/mokara-render-est-web.png
+• 02:06:13  Synced » delete assets/mokara-poster.jpg
+• 02:06:13  Synced » delete assets/mokara-construction-hero-web.jpg
+• 02:06:13  Synced » delete assets/mokara-kit-flatlay.jpg
+• 02:06:13  Synced » delete assets/mokara-exploded-hero-web.jpg
+• 02:06:13 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:06:13  Synced » delete assets/mokara-poster-web.jpg
+• 02:06:32  Synced » update sections/black-malus-product.liquid
+• 02:06:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:06:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:06:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:06:36  Synced » update assets/mokara-eartips.jpg
+• 02:06:36  Synced » update assets/mokara-package.jpg
+• 02:06:37  Synced » update assets/mokara-epsilon-plus.jpg
+• 02:06:55  Synced » update assets/mokara-render-architecture-web.webp
+• 02:06:56 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:00  Synced » update assets/mokara-render-back-web.webp
+• 02:07:00 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:00 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:01  Synced » update assets/mokara-render-architecture-web.webp
+• 02:07:05  Synced » update assets/mokara-render-exploded-web.webp
+• 02:07:05 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:05 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:06  Synced » update assets/mokara-render-back-web.webp
+• 02:07:12  Synced » update assets/mokara-render-front-web.webp
+• 02:07:12 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:13 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:13  Synced » update assets/mokara-render-exploded-web.webp
+• 02:07:22  Synced » update assets/mokara-render-sandwich-web.webp
+• 02:07:23 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:24  Synced » update assets/mokara-render-front-web.webp
+• 02:07:25 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:07:25  Synced » update assets/mokara-render-sandwich-web.webp
+• 02:07:51  Synced » update sections/mokara-product.liquid
+• 02:07:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:08:30  Synced » update assets/black-malus-product.css
+• 02:09:36 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:19:58  Synced » update assets/mokara-faceplate-symmetric.jpg
+• 02:19:58  Synced » update assets/mokara-faceplate-angle.jpg
+• 02:19:58  Synced » update assets/mokara-packaging-beauty.jpg
+• 02:19:59  Synced » update assets/mokara-cable-flatlay.jpg
+• 02:19:59  Synced » update assets/mokara-closeup-beauty.jpg
+• 02:22:20  Synced » delete assets/mokara-render-sandwich-web.png
+• 02:22:20  Synced » delete assets/mokara-render-back-web.png
+• 02:22:20  Synced » delete assets/mokara-render-exploded-web.png
+• 02:22:20  Synced » delete assets/mokara-render-front-web.png
+• 02:22:20  Synced » delete assets/mokara-render-architecture-web.png
+• 02:22:20 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:22:20 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:22:22 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 02:22:38  Synced » update sections/black-malus-product.liquid
+• 02:23:03  Synced » update assets/black-malus-product.css
+• 02:23:29 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:23:44 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:23:45  Synced » update assets/mokara-cable-flatlay.jpg
+• 02:26:27  Synced » update assets/black-malus-product.css
+• 02:26:53 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:29:06 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:30:46  Synced » update sections/black-malus-product.liquid
+• 02:30:47 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:34:08  Synced » update sections/mokara-product.liquid
+• 02:34:08 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:34:09  Synced » update assets/mokara-product.css
+• 02:35:22  Synced » update sections/black-malus-product.liquid
+• 02:35:22 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:36:32 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:38:47 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:39:25  Synced » update sections/black-malus-product.liquid
+• 02:39:25 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:39:56  Synced » update assets/black-malus-product.css
+• 02:40:24 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:46:00  Synced » update sections/mokara-product.liquid
+• 02:46:01 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:46:28  Synced » update sections/mokara-product.liquid
+• 02:46:29 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:46:50  Synced » update assets/mokara-product.css
+• 02:47:07  Synced » update sections/black-malus-product.liquid
+• 02:47:07 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:47:09  Synced » update assets/mokara-product.css
+• 02:47:30  Synced » update assets/mokara-product.css
+• 02:47:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:48:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+╭─ warning ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render section on Hot Reload with status 503 (Service             │
+│  Unavailable).                                                               │
+│  Request ID: 0d0cb1eb-a200-49dd-95cf-4daf0abff434-1779648525                 │
+│                                                                              │
+│  Error                                                                       │
+│      at Rg (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2625:12292)                                             │
+│      at eA (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2633:234)                                               │
+│      at file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopify/cl  │
+│  i/dist/index.js:2756:5055                                                   │
+│      at process.processTicksAndRejections                                    │
+│  (node:internal/process/task_queues:104:5)                                   │
+│      at async Object.handler (file:///C:/Users/wkwlb/AppData/Roaming/npm/no  │
+│  de_modules/@shopify/cli/dist/index.js:2631:6407)                            │
+│      at async Server.<anonymous> (file:///C:/Users/wkwlb/AppData/Roaming/np  │
+│  m/node_modules/@shopify/cli/dist/index.js:2631:10005)                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 02:48:46 Request »    GET 503 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "sections/mokara-product.liquid" to remote theme.     │
+│                                                                              │
+│  Liquid syntax error (line 119): Expected end_of_string but found            │
+│  comparison in "jm_badge != blank and jm_badge contains 'No reviews' ==      │
+│  false"                                                                      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 02:48:47 Request »    GET 503 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:49:10  Synced » update sections/mokara-product.liquid
+• 02:49:11 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:49:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:49:32 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:50:59 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:51:01 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 02:51:54 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:51:54 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:51:54 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:51:55  Synced » update assets/mokara-botanical-artwork.jpg
+• 02:51:55  Synced » update assets/mokara-botanical-artwork.jpg
+• 02:52:06 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:52:14  Synced » update sections/mokara-product.liquid
+• 02:52:14 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:52:14  Synced » update assets/mokara-product.css
+• 02:52:38 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:52:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:01 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:53:02  Synced » update assets/black-malus-faceplate-hero-enhanced.jpg
+• 02:53:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:02  Synced » update assets/black-malus-faceplate-hero-enhanced.jpg
+• 02:53:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:03 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:53:03  Synced » update assets/black-malus-faceplate-gallery-01.jpg
+• 02:53:04  Synced » update assets/black-malus-faceplate-gallery-01.jpg
+• 02:53:09 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:09 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:09 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:53:09 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:10  Synced » update assets/black-malus-faceplate-gallery-02.jpg
+• 02:53:10  Synced » update assets/black-malus-faceplate-gallery-02.jpg
+• 02:53:10 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:15 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:15 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:15 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:53:15 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:16  Synced » update assets/black-malus-faceplate-gallery-03.jpg
+• 02:53:16  Synced » update assets/black-malus-faceplate-gallery-03.jpg
+• 02:53:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:53:18  Synced » update assets/black-malus-faceplate-gallery-04.jpg
+• 02:53:18  Synced » update assets/black-malus-faceplate-gallery-04.jpg
+• 02:53:29  Synced » update assets/mokara-product.css
+• 02:53:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:12 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:12 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:54:12 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:13  Synced » update assets/black-malus-faceplate-gallery-03-alt.jpg
+• 02:54:13  Synced » update assets/black-malus-faceplate-gallery-03-alt.jpg
+• 02:54:56  Synced » update assets/mokara-product.css
+• 02:54:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:57  Synced » delete assets/black-malus-faceplate-gallery-03-alt.jpg
+• 02:54:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:54:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:54:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:54:58  Synced » update assets/black-malus-faceplate-gallery-03.jpg
+• 02:55:25 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:56:09  Synced » update sections/black-malus-product.liquid
+• 02:56:09  Synced » update assets/black-malus-product.css
+• 02:56:09 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:56:15 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:56:30  Synced » update assets/mokara-product.css
+• 02:56:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:57:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:48 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:49 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:49 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:49 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:49  Synced » update assets/black-malus-faceplate-hero-enhanced.jpg
+• 02:58:50 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:50 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:50 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:50  Synced » update assets/black-malus-faceplate-gallery-01.jpg
+• 02:58:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 02:58:51  Synced » update assets/black-malus-faceplate-gallery-02.jpg
+• 02:58:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 02:58:52  Synced » update assets/black-malus-faceplate-gallery-03.jpg
+• 02:58:52  Synced » update assets/black-malus-faceplate-gallery-04.jpg
+• 02:59:43  Synced » update assets/black-malus-product.css
+• 03:00:06 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:02:06 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:17:32  Synced » update sections/mokara-product.liquid
+• 03:17:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:17:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:18:09  Synced » update sections/mokara-product.liquid
+• 03:18:09 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:18:09 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:18:42  Synced » update sections/mokara-product.liquid
+╭─ warning ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render section on Hot Reload with status 401 (Unauthorized).      │
+│  Request ID: 7d8e8cf5-e3ef-46b3-b579-f97055efabf3-1779650322                 │
+│                                                                              │
+│  Error                                                                       │
+│      at Rg (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2625:12292)                                             │
+│      at eA (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2633:234)                                               │
+│      at file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopify/cl  │
+│  i/dist/index.js:2756:5055                                                   │
+│      at process.processTicksAndRejections                                    │
+│  (node:internal/process/task_queues:104:5)                                   │
+│      at async Object.handler (file:///C:/Users/wkwlb/AppData/Roaming/npm/no  │
+│  de_modules/@shopify/cli/dist/index.js:2631:6407)                            │
+│      at async Server.<anonymous> (file:///C:/Users/wkwlb/AppData/Roaming/np  │
+│  m/node_modules/@shopify/cli/dist/index.js:2631:10005)                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ warning ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render section on Hot Reload with status 401 (Unauthorized).      │
+│  Request ID: 08d660c1-fdf2-4876-a4c7-459c80eecdb9-1779650322                 │
+│                                                                              │
+│  Error                                                                       │
+│      at Rg (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2625:12292)                                             │
+│      at eA (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2633:234)                                               │
+│      at file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopify/cl  │
+│  i/dist/index.js:2756:5055                                                   │
+│      at process.processTicksAndRejections                                    │
+│  (node:internal/process/task_queues:104:5)                                   │
+│      at async Object.handler (file:///C:/Users/wkwlb/AppData/Roaming/npm/no  │
+│  de_modules/@shopify/cli/dist/index.js:2631:6407)                            │
+│      at async Server.<anonymous> (file:///C:/Users/wkwlb/AppData/Roaming/np  │
+│  m/node_modules/@shopify/cli/dist/index.js:2631:10005)                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 03:18:43 Request »    GET 401 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:18:43 Request »    GET 401 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:18:44 Request »    GET 404 /favicon.ico 
+• 03:18:44 Request »    GET 401 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 03:18:45 Request »    GET 401 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 03:19:13  Synced » update sections/mokara-product.liquid
+• 03:19:35  Synced » update sections/mokara-product.liquid
+• 03:20:24 Request »    GET 401 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 03:20:51  Synced » update sections/black-malus-product.liquid
+• 03:21:16  Synced » update sections/black-malus-product.liquid
+• 03:22:05  Synced » update sections/black-malus-product.liquid
+• 03:22:40  Synced » update sections/black-malus-product.liquid
+• 03:23:11  Synced » update sections/black-malus-product.liquid
+• 03:25:11  Synced » update sections/black-malus-product.liquid
+• 03:26:29  Synced » update sections/black-malus-product.liquid
+• 03:27:12  Synced » update sections/black-malus-product.liquid
+• 03:27:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:27:58 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:30:24  Synced » update sections/mokara-product.liquid
+• 03:30:27 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:37:30 Request »    GET 200 / 
+• 03:38:32  Synced » update templates/index.json
+• 03:38:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:39:45  Synced » update layout/theme.liquid
+• 03:39:45 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:40:34  Synced » update snippets/aaw-home-schema.liquid
+• 03:40:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:42:25  Synced » update snippets/aaw-home-schema.liquid
+• 03:42:25 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:42:39 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:42:39  Synced » update assets/aaw-judgeme-reviews.js
+• 03:42:53  Synced » update snippets/aaw-home-schema.liquid
+• 03:42:53 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:43:14  Synced » update templates/index.json
+• 03:43:14 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:43:27  Synced » update snippets/aaw-home-schema.liquid
+• 03:43:27 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:43:36  Synced » update assets/aaw-home-z07.css
+• 03:44:22  Synced » update snippets/sticky-atc.liquid
+• 03:44:22 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:45:10  Synced » update assets/aaw-judgeme-reviews.js
+• 03:45:10 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:53:23  Synced » update snippets/aaw-home-schema.liquid
+• 03:53:23 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:53:25 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:53:34  Synced » update assets/aaw-judgeme-reviews.js
+• 03:53:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:56:17  Synced » update layout/theme.liquid
+• 03:56:18 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 03:58:33  Synced » update assets/aaw-judgeme-reviews.js
+• 03:58:33 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 04:00:37  Synced » update assets/aaw-judgeme-reviews.js
+• 04:00:38 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 04:00:54  Synced » update templates/index.json
+• 04:00:54 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 04:02:29  Synced » update layout/theme.liquid
+• 04:02:30 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 04:04:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 04:04:07  Synced » update assets/aaw-judgeme-reviews.js
+• 12:35:39  Synced » update snippets/aaw-judgeme-badge.liquid
+• 12:35:39  Synced » update snippets/aaw-judgeme-review-widget.liquid
+• 12:35:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:35:43 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 12:35:48  Synced » update assets/aaw-judgeme-reviews.css
+• 12:36:17  Synced » update templates/product.builder.json
+• 12:36:17  Synced » update templates/product.json
+• 12:36:17  Synced » update templates/product.a3h.json
+• 12:36:17  Synced » update templates/product.ash.json
+• 12:36:18  Synced » update templates/product.z06.json
+• 12:36:18  Synced » update templates/product.mockingbird.json
+• 12:36:18  Synced » update templates/product.m20.json
+• 12:36:18  Synced » update templates/product.pola.json
+• 12:36:18  Synced » update templates/product.canary.json
+• 12:36:18  Synced » update templates/product.standard.json
+• 12:36:18  Synced » update templates/product.z05-kEVIN-PC.json
+• 12:36:18  Synced » update templates/product.z02.json
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:36:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render storefront with status 502 (Bad Gateway).                  │
+│  URL: https://advanced-acousticwerkes.myshopify.com/products/black-malus-16  │
+│  -driver-custom-in-ear-monitor?_fd=0&pb=0&preview=bm-rebuild                 │
+│                                                                              │
+│  TypeError: fetch failed                                                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render storefront with status 502 (Bad Gateway).                  │
+│  URL: https://advanced-acousticwerkes.myshopify.com/products/black-malus-16  │
+│  -driver-custom-in-ear-monitor?_fd=0&pb=0&preview=bm-rebuild                 │
+│                                                                              │
+│  TypeError: fetch failed                                                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 12:41:06  Synced » update templates/product.m20.json
+• 12:41:06  Synced » update templates/product.ash.json
+• 12:41:06  Synced » update templates/product.mockingbird.json
+• 12:41:06  Synced » update templates/product.json
+• 12:41:06  Synced » update templates/product.a3h.json
+• 12:41:06  Synced » update templates/product.pola.json
+• 12:41:06  Synced » update templates/product.z06.json
+• 12:41:06  Synced » update templates/product.builder.json
+• 12:41:06  Synced » update templates/product.canary.json
+• 12:41:06  Synced » update templates/product.standard.json
+• 12:41:06  Synced » update templates/product.z02.json
+• 12:41:06  Synced » update templates/product.z05-kEVIN-PC.json
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:08 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:41:08 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:44:10  Synced » update assets/aaw-judgeme-reviews.css
+• 12:47:39  Synced » update snippets/aaw-judgeme-badge.liquid
+• 12:47:39  Synced » update sections/main-collection.liquid
+• 12:47:39  Synced » update snippets/card-product.liquid
+• 12:47:39  Synced » update assets/aaw-judgeme-reviews.css
+• 12:47:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:47:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:47:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:57:15  Synced » update assets/mokara-spec-mokara-logo.png
+• 12:57:15  Synced » update assets/mokara-spec-aaw-logo.png
+• 12:57:15 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:57:15  Synced » update assets/mokara-spec-aaw-logo.png
+• 12:57:15  Synced » update assets/mokara-spec-mokara-logo.png
+• 12:57:15 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:57:17 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 12:59:51  Synced » update assets/mokara-spec-mokara-logo.png
+• 12:59:51  Synced » update assets/mokara-spec-aaw-logo.png
+• 12:59:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 12:59:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:00:41  Synced » update sections/mokara-product.liquid
+• 13:00:42 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:13:31  Synced » update layout/theme.liquid
+• 13:13:31  Synced » update snippets/aaw-home-schema.liquid
+• 13:13:31  Synced » update templates/index.json
+• 13:13:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:13:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:13:32 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:13:57  Synced » update snippets/aaw-home-schema.liquid
+• 13:13:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:14:15  Synced » update snippets/meta-tags.liquid
+• 13:14:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 13:31:19  Synced » update assets/mokara-product.css
+• 13:36:44 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 13:36:47 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:12:30 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 14:12:32 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:38:47 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 14:38:47 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 14:38:47 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 14:38:47  Synced » update assets/mokara-spec-driver-graphics.png
+• 14:38:47  Synced » update assets/mokara-spec-driver-graphics.png
+• 14:38:47 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 14:38:49 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:38:50 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:40:44  Synced » update assets/mokara-product.css
+• 14:41:19  Synced » update sections/mokara-product.liquid
+• 14:41:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 14:41:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 14:52:58  Synced » update sections/mokara-product.liquid
+• 14:52:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 14:53:00 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:53:31  Synced » update assets/mokara-product.css
+• 14:54:58  Synced » update assets/mokara-product.css
+• 14:55:46 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:28:01  Synced » update assets/mokara-render-architecture-tight.webp
+• 15:28:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:28:01 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:28:01 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:28:01  Synced » update assets/mokara-render-architecture-tight.webp
+• 15:28:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:28:03 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 15:28:03 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 15:28:54  Synced » update sections/mokara-product.liquid
+• 15:28:54 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:29:17  Synced » update assets/mokara-product.css
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:33:40  Synced » update assets/canary-pro-slfi.png
+• 15:33:40 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:33:40  Synced » update assets/canary-pro-spec-card.jpg
+• 15:33:41  Synced » update assets/canary-pro-exploded-serial.png
+• 15:33:41  Synced » update assets/canary-pro-ciem-angle.jpg
+• 15:33:41  Synced » update assets/canary-pro-side-detail.jpg
+• 15:33:41  Synced » update assets/canary-pro-ciem-front.jpg
+• 15:33:41  Synced » update assets/canary-pro-faceplate-front.jpg
+• 15:33:41  Synced » update assets/canary-pro-faceplate-angle.jpg
+• 15:33:41  Synced » update assets/canary-pro-driver-map.jpg
+• 15:33:41  Synced » update assets/canary-pro-ciem-pair.jpg
+• 15:33:41  Synced » update assets/canary-pro-cover-banner.jpg
+• 15:33:41  Synced » update assets/canary-pro-hero.png
+• 15:33:41  Synced » update assets/canary-pro-faceplate-symmetric.jpg
+• 15:33:42  Synced » update assets/canary-pro-artwork.jpg
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.canary.json" to remote theme.      │
+│                                                                              │
+│  Section type 'canary-pro-product' does not refer to an existing section     │
+│  file                                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 15:36:11  Synced » update sections/canary-pro-product.liquid
+• 15:36:11  Synced » update assets/canary-pro-product.css
+• 15:36:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:36:11 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:36:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:36:12 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:38:50  Synced » update templates/product.canary.json
+• 15:38:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:38:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:39:15 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:39:15 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:39:36 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:39:50  Synced » update assets/canary-pro-product.css
+• 15:40:04 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:40:47 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:41:12 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:41:28  Synced » update assets/canary-pro-product.css
+• 15:41:48 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:41:51 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:42:08 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:42:10 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:50:52 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:50:54 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 15:54:56  Synced » update sections/video.liquid
+• 15:54:56 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:54:56 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:54:56 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:55:05  Synced » update sections/video-with-text-overlay.liquid
+• 15:55:05 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:55:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:55:06 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:55:49  Synced » update assets/aaw-home-z07.css
+• 15:55:59  Synced » update snippets/aaw-home-schema.liquid
+• 15:55:59 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:55:59 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:55:59 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:56:07  Synced » update snippets/aaw-home-schema.liquid
+• 15:56:07 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:56:07 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:56:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:56:16  Synced » update snippets/aaw-home-schema.liquid
+• 15:56:16 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:56:16 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:56:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:56:22  Synced » update snippets/aaw-home-schema.liquid
+• 15:56:22 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:56:22 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:56:22 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:56:29  Synced » update snippets/aaw-home-schema.liquid
+• 15:56:29 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:56:29 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:56:29 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:56:35  Synced » update snippets/aaw-home-schema.liquid
+• 15:56:35 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:56:35 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:56:36 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:57:57 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:57:57 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:57:57  Synced » update templates/index.json
+• 15:57:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:58:07  Synced » update snippets/aaw-home-schema.liquid
+• 15:58:07 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:58:07 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:58:07 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:58:18  Synced » update snippets/aaw-home-schema.liquid
+• 15:58:18 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 15:58:18 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 15:58:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 15:59:45  Synced » update assets/mokara-product.css
+• 16:00:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:00:48  Synced » update snippets/preloader.liquid
+• 16:00:49 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:00:49 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:14:02  Synced » update layout/theme.liquid
+• 16:14:02 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:14:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:14:02 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:14:17  Synced » update config/settings_data.json
+• 16:14:17 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:14:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:14:17 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:15:42  Synced » update templates/index.json
+• 16:15:42 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:15:42 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:15:43 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:15:51  Synced » update snippets/aaw-home-schema.liquid
+• 16:15:51 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:15:51 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:15:51 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:21:09  Synced » update sections/canary-pro-product.liquid
+• 16:21:09 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:21:09 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:21:11 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 16:21:11 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 16:21:30 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:21:51  Synced » update sections/canary-pro-product.liquid
+• 16:21:52 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:21:52 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:22:22 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:23:16 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:23:16 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:23:17 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:23:17  Synced » update assets/canary-pro-driver-render-clean.jpg
+• 16:23:17  Synced » update assets/canary-pro-driver-render-clean.jpg
+• 16:23:34 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:23:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:23:34 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:23:35  Synced » update assets/canary-pro-driver-render-clean.jpg
+• 16:23:52 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:23:52 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:23:52 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:23:53  Synced » update assets/canary-pro-driver-render-clean.jpg
+• 16:24:24 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:24:24 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:24:24 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:24:25  Synced » update assets/canary-pro-driver-render-clean.jpg
+• 16:24:48  Synced » update sections/canary-pro-product.liquid
+• 16:24:49 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:24:49 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:25:20  Synced » update assets/canary-pro-product.css
+• 16:25:31  Synced » update assets/canary-pro-product.css
+• 16:25:59 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:26:29  Synced » update assets/canary-pro-product.css
+• 16:26:56 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:27:10 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:27:23  Synced » update sections/canary-pro-product.liquid
+• 16:27:23 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:27:23 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:27:58  Synced » update sections/canary-pro-product.liquid
+• 16:27:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:27:58 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:28:32 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:30:02  Synced » update sections/announcement-bar.liquid
+• 16:30:11  Synced » update assets/announcement-height.js
+• 16:30:11 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:30:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:30:11 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:30:19  Synced » update sections/canary-pro-product.liquid
+• 16:30:19 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:30:19 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:30:22  Synced » update sections/header-group.json
+• 16:30:23  Synced » update templates/index.json
+• 16:30:23 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:30:24 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:30:24 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:30:34  Synced » update sections/header-group.json
+• 16:30:40  Synced » update assets/canary-pro-product.css
+• 16:30:47 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:30:47 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:30:47 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:30:47  Synced » update assets/announcement-height.js
+• 16:31:19 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:31:33  Synced » update sections/header-group.json
+• 16:31:38 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:33:02  Synced » update assets/canary-pro-product.css
+• 16:33:23 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:33:42 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:38:20  Synced » update assets/canary-pro-product.css
+• 16:38:52 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:39:19  Synced » update assets/canary-pro-product.css
+• 16:39:41 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:40:07 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:40:57  Synced » update assets/canary-pro-product.css
+• 16:41:25 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:41:58  Synced » update sections/canary-pro-product.liquid
+• 16:41:58 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:41:58 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:42:16  Synced » update assets/canary-pro-product.css
+• 16:42:51 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:43:25  Synced » update assets/canary-pro-product.css
+• 16:44:25 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:44:46 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:45:58  Synced » update assets/canary-pro-product.css
+• 16:46:03  Synced » update assets/canary-pro-product.css
+• 16:46:22 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:46:49  Synced » update assets/canary-pro-product.css
+• 16:47:07 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:49:38 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:49:38  Synced » update sections/canary-pro-product.liquid
+• 16:49:38 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:50:04  Synced » update assets/canary-pro-product.css
+• 16:50:25 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:52:10 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:52:11 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:52:11 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:52:11  Synced » update assets/canary-pro-carry-case-instagram.jpg
+• 16:52:12 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 16:52:13 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 16:52:13 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 16:52:22  Synced » update sections/canary-pro-product.liquid
+• 16:52:22 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:52:22 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:52:50 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:53:29 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:53:30 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:53:30 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:53:31  Synced » update assets/canary-pro-singapore-packaging.jpg
+• 16:53:42  Synced » update sections/canary-pro-product.liquid
+• 16:53:43 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:53:43 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:54:09 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:58:27 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:58:27 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 16:58:27 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:58:28  Synced » update assets/canary-pro-cable-player-instagram.jpg
+• 16:58:42  Synced » update sections/canary-pro-product.liquid
+• 16:58:42 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 16:58:42 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 16:59:11 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:00:05  Synced » update sections/canary-pro-product.liquid
+• 17:00:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:00:05 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 17:00:32 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:03:41  Synced » update sections/canary-pro-product.liquid
+• 17:03:41 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:03:41 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 17:03:59  Synced » update assets/canary-pro-product.css
+• 17:04:30  Synced » update assets/canary-pro-product.css
+• 17:05:26 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:05:48  Synced » update sections/canary-pro-product.liquid
+• 17:05:48 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 17:05:48 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:06:06 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:08:00  Synced » update assets/canary-pro-product.css
+• 17:08:24 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:11:33  Synced » update templates/index.json
+• 17:11:34 Request »    GET 200 /products/black-malus-16-driver-custom-in-ear-monitor?preview=bm-rebuild 
+• 17:11:34 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:11:34 Request »    GET 200 /products/canary-isobaric-electrostatic-universal-in-ear-monitor?preview=canary-... 
+• 17:11:50  Synced » update assets/aaw-home-z07.css
+• 17:12:36 Request »    GET 200 / 
+• 17:15:00  Synced » update assets/aaw-home-z07.css
+• 17:19:25  Synced » update assets/aaw-home-z07.css
+• 17:25:54  Synced » update assets/aaw-home-z07.css
+• 17:30:16  Synced » update sections/canary-pro-product.liquid
+• 17:30:16 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:30:19 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 17:30:28  Synced » update sections/canary-pro-product.liquid
+• 17:30:29 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:30:43  Synced » update assets/aaw-home-z07.css
+• 17:30:49  Synced » update sections/canary-pro-product.liquid
+• 17:30:49 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:31:01  Synced » update sections/canary-pro-product.liquid
+• 17:31:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:31:13  Synced » update sections/canary-pro-product.liquid
+• 17:31:13 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:31:24  Synced » update sections/canary-pro-product.liquid
+• 17:31:25 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:31:35  Synced » update sections/canary-pro-product.liquid
+• 17:31:35 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:31:49  Synced » update sections/canary-pro-product.liquid
+• 17:31:49 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:32:00  Synced » update sections/canary-pro-product.liquid
+• 17:32:00 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:32:10  Synced » update sections/canary-pro-product.liquid
+• 17:32:11 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:32:21  Synced » update sections/canary-pro-product.liquid
+• 17:32:21 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:32:31  Synced » update sections/canary-pro-product.liquid
+• 17:32:31 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:32:40  Synced » update sections/canary-pro-product.liquid
+• 17:32:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:33:29  Synced » update sections/canary-pro-product.liquid
+• 17:33:30 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:34:17  Synced » update sections/canary-pro-product.liquid
+• 17:34:17 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:34:53  Synced » update sections/canary-pro-product.liquid
+• 17:34:53 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:34:56 Request »    GET 200 / 
+• 17:35:23  Synced » update templates/product.canary.json
+• 17:35:23 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:36:06  Synced » update assets/canary-pro-product.css
+• 17:37:43  Synced » update assets/canary-pro-product.css
+• 17:37:51  Synced » update assets/mokara-product.css
+• 17:38:17  Synced » update assets/mokara-product.css
+• 17:44:27  Synced » update sections/canary-pro-product.liquid
+• 17:44:27 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:44:43  Synced » update assets/canary-pro-product.css
+• 17:44:57  Synced » update assets/canary-pro-product.css
+• 17:46:51  Synced » update assets/canary-pro-product.css
+• 17:49:01  Synced » update assets/canary-pro-product.css
+• 17:49:16  Synced » update assets/canary-pro-product.css
+• 17:50:50  Synced » update assets/canary-pro-product.css
+• 17:51:06  Synced » update assets/canary-pro-product.css
+• 17:51:20  Synced » update assets/canary-pro-product.css
+• 17:51:53  Synced » update assets/canary-pro-product.css
+• 17:52:35  Synced » update assets/canary-pro-product.css
+• 17:53:10  Synced » update assets/canary-pro-product.css
+• 17:54:03  Synced » update sections/canary-pro-product.liquid
+• 17:54:03 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:54:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:54:05 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 17:54:06 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 17:54:24  Synced » update assets/canary-pro-product.css
+• 17:54:39  Synced » update assets/canary-pro-product.css
+• 17:54:40  Synced » update assets/mokara-product.css
+• 17:55:10  Synced » update assets/mokara-product.css
+• 17:55:16  Synced » update sections/canary-pro-product.liquid
+• 17:55:16 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:55:36  Synced » update assets/canary-pro-product.css
+• 17:55:51  Synced » update assets/canary-pro-product.css
+• 17:56:27 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 17:56:44  Synced » update assets/canary-pro-product.css
+• 17:59:14  Synced » update assets/canary-pro-product.css
+• 18:23:25  Synced » update assets/canary-pro-product.css
+• 18:25:30  Synced » update assets/canary-pro-product.css
+• 18:25:47  Synced » update assets/canary-pro-product.css
+• 18:26:05  Synced » update assets/canary-pro-product.css
+• 18:26:25  Synced » update assets/canary-pro-product.css
+• 18:26:42  Synced » update assets/canary-pro-product.css
+• 18:27:01  Synced » update assets/canary-pro-product.css
+• 18:27:19  Synced » update assets/canary-pro-product.css
+• 18:27:37  Synced » update assets/canary-pro-product.css
+• 18:27:55  Synced » update assets/canary-pro-product.css
+• 18:28:12  Synced » update assets/canary-pro-product.css
+• 18:34:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:01  Synced » update assets/a3h-lux-hero.jpg
+• 18:34:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:01  Synced » update assets/a3h-lux-hero.jpg
+• 18:34:01 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:01  Synced » update assets/a3h-lux-cable-wide.jpg
+• 18:34:01  Synced » update assets/a3h-lux-cable-wide.jpg
+• 18:34:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:02  Synced » update assets/a3h-lux-portrait.jpg
+• 18:34:03 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:03  Synced » update assets/a3h-lux-portrait.jpg
+• 18:34:03  Synced » update assets/a3h-lux-pair-wide.jpg
+• 18:34:03  Synced » update assets/a3h-lux-pair-wide.jpg
+• 18:34:03 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:04 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:04  Synced » update assets/a3h-lux-closeup.jpg
+• 18:34:04 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:04  Synced » update assets/a3h-lux-closeup.jpg
+• 18:34:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:05  Synced » update assets/a3h-lux-paper-wide.jpg
+• 18:34:05  Synced » update assets/a3h-lux-paper-wide.jpg
+• 18:34:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:05 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:06  Synced » update assets/a3h-lux-switch-back.jpg
+• 18:34:06 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:06  Synced » update assets/a3h-lux-switch-back.jpg
+• 18:34:06 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:06 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:34:07  Synced » update assets/a3h-lux-spec-card.jpg
+• 18:34:07  Synced » update assets/a3h-lux-gallery-pair.jpg
+• 18:34:07  Synced » update assets/a3h-lux-gallery-pair.jpg
+• 18:34:08 Request »   POST 200 /shopify_pay/accelerated_checkout 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.a3h.json" to remote theme.         │
+│                                                                              │
+│  Section type 'a3h-lux-product' does not refer to an existing section file   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 18:37:27  Synced » update assets/a3h-lux-product.css
+• 18:37:27 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:37:27 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:37:27  Synced » update sections/a3h-lux-product.liquid
+• 18:39:39  Synced » update templates/product.a3h.json
+• 18:39:40 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:40:33 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:41:08  Synced » update assets/a3h-lux-product.css
+• 18:41:18 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:41:43 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:42:16 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:43:05 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:43:20 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:45:18 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 18:45:19  Synced » update sections/a3h-lux-product.liquid
+• 18:45:29  Synced » update assets/a3h-lux-product.css
+• 18:45:59 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:47:01 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:47:04 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:47:29 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 18:48:07 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:07:30  Synced » update sections/a3h-lux-product.liquid
+• 19:07:31 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:07:32 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:07:44  Synced » update sections/a3h-lux-product.liquid
+• 19:07:45 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:07:52  Synced » update sections/a3h-lux-product.liquid
+• 19:07:52 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:08:10 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:09:26  Synced » update assets/a3h-lux-product.css
+• 19:09:43 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:12:02 Request »    GET 401 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:12:11 Request »    GET 401 / 
+• 19:15:09  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:15:09  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:15:16  Synced » update sections/a3h-lux-product.liquid
+• 19:15:18 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:15:19 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:15:58 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:23:34 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:23:34 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:23:35  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:23:36 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:23:37 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:29:02 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:29:02 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:29:03  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:34:32 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:47:31 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:47:31 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:47:31  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:58:08 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 19:58:08 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 19:58:08  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 19:58:39 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 19:58:40 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 20:06:57 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 20:06:57 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 20:06:58  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 20:09:27 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 20:17:38 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 20:17:38 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 20:17:38  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 20:34:39 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 20:34:39 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 20:34:40  Synced » update assets/a3h-lux-universal-fitment.jpg
+• 20:34:40 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 20:34:41 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 20:37:49 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 20:51:07  Synced » update sections/a3h-lux-product.liquid
+• 20:51:08 Request »    GET 200 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 20:51:10 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 20:53:45  Synced » update assets/a3h-lux-product.css
+• 20:58:24 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 21:02:29  Synced » update assets/a3h-lux-product.css
+• 21:06:39 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 21:14:49  Synced » update sections/a3h-lux-product.liquid
+╭─ warning ────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to render section on Hot Reload with status 401 (Unauthorized).      │
+│  Request ID: 57176b77-0a45-485e-94f6-c05db0beb16d-1779714888                 │
+│                                                                              │
+│  Error                                                                       │
+│      at Rg (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2625:12292)                                             │
+│      at eA (file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopif  │
+│  y/cli/dist/index.js:2633:234)                                               │
+│      at file:///C:/Users/wkwlb/AppData/Roaming/npm/node_modules/@shopify/cl  │
+│  i/dist/index.js:2756:5055                                                   │
+│      at process.processTicksAndRejections                                    │
+│  (node:internal/process/task_queues:104:5)                                   │
+│      at async Object.handler (file:///C:/Users/wkwlb/AppData/Roaming/npm/no  │
+│  de_modules/@shopify/cli/dist/index.js:2631:6407)                            │
+│      at async Server.<anonymous> (file:///C:/Users/wkwlb/AppData/Roaming/np  │
+│  m/node_modules/@shopify/cli/dist/index.js:2631:10005)                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 21:14:49 Request »    GET 401 /products/mokara-18-driver-electrostatic-custom-in-ear-monitor 
+• 21:14:50 Request »    GET 401 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 21:17:25  Synced » update assets/a3h-lux-product.css
+• 21:20:30 Request »    GET 200 / 
+• 21:26:00 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 21:26:02 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 21:36:27  Synced » update sections/a3h-lux-product.liquid
+• 21:41:41 Request »    GET 200 /collections/universal-in-ear/products/advanced-acousticwerkes-a3h-universal-in-... 
+• 22:29:17 Request »    GET 200 / 
+• 22:39:41  Synced » update sections/a3h-lux-product.liquid
+• 22:41:40  Synced » update sections/a3h-lux-product.liquid
+• 22:51:46  Synced » update templates/product.a3h.json
+• 22:52:07  Synced » update sections/a3h-lux-product.liquid
+• 22:52:24  Synced » update sections/a3h-lux-product.liquid
+• 22:52:46  Synced » update sections/a3h-lux-product.liquid
+• 22:53:08  Synced » update sections/a3h-lux-product.liquid
+• 22:54:01  Synced » update assets/a3h-lux-product.css
+• 22:54:21  Synced » update assets/a3h-lux-product.css
+• 22:54:32  Synced » update assets/a3h-lux-product.css
+• 22:55:46  Synced » update assets/a3h-lux-product.css
+• 22:56:42  Synced » update assets/a3h-lux-product.css
+• 22:56:54  Synced » update assets/a3h-lux-product.css
+• 22:57:05  Synced » update assets/a3h-lux-product.css
+• 22:58:25  Synced » update sections/a3h-lux-product.liquid
+• 22:58:41  Synced » update sections/a3h-lux-product.liquid
+• 22:58:54  Synced » update sections/a3h-lux-product.liquid
+• 22:59:09  Synced » update sections/a3h-lux-product.liquid
+• 22:59:24  Synced » update sections/a3h-lux-product.liquid
+• 22:59:38  Synced » update sections/a3h-lux-product.liquid
+• 22:59:52  Synced » update sections/a3h-lux-product.liquid
+• 23:00:06  Synced » update sections/a3h-lux-product.liquid
+• 23:00:20  Synced » update sections/a3h-lux-product.liquid
+• 23:00:34  Synced » update sections/a3h-lux-product.liquid
+• 23:00:58  Synced » update sections/a3h-lux-product.liquid
+• 23:01:24  Synced » update sections/a3h-lux-product.liquid
+• 23:01:43  Synced » update sections/a3h-lux-product.liquid
+• 23:01:59  Synced » update sections/a3h-lux-product.liquid
+• 23:02:16  Synced » update sections/a3h-lux-product.liquid
+• 23:02:32  Synced » update sections/a3h-lux-product.liquid
+• 23:02:48  Synced » update sections/a3h-lux-product.liquid
+• 23:03:05  Synced » update sections/a3h-lux-product.liquid
+• 23:03:21  Synced » update sections/a3h-lux-product.liquid
+• 23:03:38  Synced » update sections/a3h-lux-product.liquid
+• 23:04:52  Synced » update sections/a3h-lux-product.liquid
+• 23:05:12  Synced » update sections/a3h-lux-product.liquid
+• 23:05:32  Synced » update sections/a3h-lux-product.liquid
+• 23:05:51  Synced » update sections/a3h-lux-product.liquid
+• 23:06:09  Synced » update sections/a3h-lux-product.liquid
+• 23:06:27  Synced » update sections/a3h-lux-product.liquid
+• 23:08:48  Synced » update sections/a3h-lux-product.liquid
+• 23:09:07  Synced » update sections/a3h-lux-product.liquid
+• 23:43:13  Synced » update templates/product.pola.json
+• 23:43:21  Synced » update templates/product.pola.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.pola.json" to remote theme.        │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.pola.json" to remote theme.        │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.pola.json" to remote theme.        │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 23:44:09  Synced » update templates/product.pola.json
+• 23:44:33  Synced » update templates/product.mockingbird.json
+• 23:44:34  Synced » update templates/product.mockingbird.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.mockingbird.json" to remote        │
+│  theme.                                                                      │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.mockingbird.json" to remote        │
+│  theme.                                                                      │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.mockingbird.json" to remote        │
+│  theme.                                                                      │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 23:45:03  Synced » update templates/product.mockingbird.json
+• 23:45:37  Synced » update templates/product.m20.json
+• 23:45:40  Synced » update templates/product.ash.json
+• 23:45:43  Synced » update templates/product.z02.json
+• 23:45:47  Synced » update templates/product.z06.json
+• 23:45:58  Synced » update templates/product.m20.json
+• 23:45:59  Synced » update templates/product.ash.json
+• 23:46:01  Synced » update templates/product.z02.json
+• 23:46:04  Synced » update templates/product.z06.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.m20.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.ash.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z02.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z06.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.m20.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.ash.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z02.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z06.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.m20.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.ash.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z02.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z06.json" to remote theme.         │
+│                                                                              │
+│  Section id 'product_schema' must exist in order                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 23:48:00  Synced » update templates/product.m20.json
+• 23:48:03  Synced » update templates/product.ash.json
+• 23:48:06  Synced » update templates/product.z02.json
+• 23:48:11  Synced » update templates/product.z06.json
+• 00:21:12  Synced » update sections/mockingbird-product.liquid
+• 00:27:06  Synced » update assets/mockingbird-product.css
+• 00:27:27  Synced » update sections/mockingbird-product.liquid
+• 00:27:36  Synced » update sections/mockingbird-product.liquid
+• 00:27:46  Synced » update sections/mockingbird-product.liquid
+• 00:27:56  Synced » update sections/mockingbird-product.liquid
+• 00:28:07  Synced » update sections/mockingbird-product.liquid
+• 00:28:57  Synced » update templates/product.mockingbird.json
+• 00:43:48  Synced » update sections/mockingbird-product.liquid
+• 00:44:08  Synced » update sections/mockingbird-product.liquid
+• 00:44:28  Synced » update sections/mockingbird-product.liquid
+• 00:46:11  Synced » update assets/mockingbird-tiburon-cable.png
+• 00:46:14  Synced » update assets/mockingbird-wooden-carry-case.png
+• 00:47:35  Synced » update sections/mockingbird-product.liquid
+• 00:49:43  Synced » update sections/mockingbird-product.liquid
+• 00:50:45  Synced » update sections/mockingbird-product.liquid
+• 00:51:11  Synced » update sections/mockingbird-product.liquid
+• 00:54:30  Synced » update assets/mockingbird-hero.png
+• 00:54:33  Synced » update assets/mockingbird-universal.png
+• 00:55:56  Synced » update sections/mockingbird-product.liquid
+• 00:56:00  Synced » update sections/mockingbird-product.liquid
+• 01:01:10  Synced » update sections/mockingbird-product.liquid
+• 01:04:54  Synced » update sections/mockingbird-product.liquid
+• 01:07:28  Synced » update assets/mockingbird-frequency-response-graph.png
+• 01:08:59  Synced » update sections/mockingbird-product.liquid
+• 01:12:25  Synced » update sections/mockingbird-product.liquid
+• 01:16:07  Synced » update sections/mockingbird-product.liquid
+• 01:20:13  Synced » update sections/mockingbird-product.liquid
+• 01:23:07  Synced » update sections/mockingbird-product.liquid
+• 01:25:44  Synced » update sections/mockingbird-product.liquid
+• 01:27:31  Synced » update sections/mockingbird-product.liquid
+• 01:30:01  Synced » update sections/mockingbird-product.liquid
+• 01:32:28  Synced » update sections/mockingbird-product.liquid
+• 01:36:51  Synced » update sections/mockingbird-product.liquid
+• 01:40:30  Synced » update sections/mockingbird-product.liquid
+• 01:44:26  Synced » update sections/mockingbird-product.liquid
+• 01:48:15  Synced » update assets/mockingbird-product.css
+• 01:51:07  Synced » update assets/mockingbird-product.css
+• 01:53:06  Synced » update sections/mockingbird-product.liquid
+• 01:54:14  Synced » update sections/a3h-lux-product.liquid
+• 01:54:30  Synced » update assets/a3h-lux-product.css
+• 01:56:24  Synced » update assets/mockingbird-product.css
+• 01:56:46 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?preview=a3h-vanta... 
+• 01:56:48 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 01:57:11  Synced » update assets/a3h-lux-product.css
+• 01:57:18 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?preview=a3h-vanta... 
+• 01:57:34  Synced » update assets/a3h-lux-product.css
+• 01:57:40 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?preview=a3h-vanta... 
+• 01:58:15 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?preview=a3h-vanta... 
+• 02:05:59 Request »    GET 200 /products/advanced-acousticwerkes-a3h-universal-in-ear-monitor?preview=a3h-vanta... 
+• 02:19:51 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:22:35  Synced » update sections/mockingbird-product.liquid
+• 02:22:56  Synced » update assets/mockingbird-product.css
+• 02:23:07  Synced » update templates/product.mockingbird.json
+• 02:23:07 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:23:09 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 02:23:34 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:24:01 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:25:00  Synced » update templates/product.mockingbird.json
+• 02:25:01  Synced » update sections/mockingbird-product.liquid
+• 02:25:01  Synced » update assets/mockingbird-product.css
+• 02:25:01 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:25:31 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:26:59 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:27:43  Synced » update assets/mockingbird-product.css
+• 02:28:13 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:28:30 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:28:51  Synced » update assets/mockingbird-product.css
+• 02:29:04 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+• 02:29:24 Request »    GET 200 /products/advanced-acousticwerkes-w900-reference-universal-in-ear-monitor?previe... 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z02.json" to remote theme.         │
+│                                                                              │
+│  Section type 'z02-product' does not refer to an existing section file       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 02:39:31  Synced » update assets/z02-product.css
+• 02:39:31  Synced » update sections/z02-product.liquid
+• 02:42:55  Synced » update assets/z02-hero-wide.jpg
+• 02:42:55  Synced » update assets/z02-accessory-kit.jpg
+• 02:42:55  Synced » update assets/z02-detail-square.jpg
+• 02:42:55  Synced » update assets/z02-lifestyle-wide.jpg
+• 02:42:55  Synced » update assets/z02-carry-cases.jpg
+• 02:42:56  Synced » update assets/z02-driver-diagram.jpg
+• 02:42:56  Synced » update assets/z02-carry-open.jpg
+• 02:42:56  Synced » update assets/z02-explosion-view.jpg
+• 02:45:06  Synced » update sections/z02-product.liquid
+• 02:45:41  Synced » update sections/z02-product.liquid
+• 02:47:06  Synced » update assets/z02-spec-card.tmp.png
+• 02:47:06  Synced » delete assets/z02-spec-card.tmp.png
+• 02:47:06  Synced » update assets/z02-spec-card.png
+• 02:47:06  Synced » update assets/z02-spec-card.png
+• 02:47:56  Synced » update sections/z02-product.liquid
+• 02:48:28  Synced » update assets/z02-product.css
+• 02:52:45  Synced » update templates/product.z02.json
+• 02:55:40 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 02:55:42 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:03:00  Synced » update sections/z02-product.liquid
+• 03:04:32  Synced » update assets/z02-product.css
+• 03:04:57  Synced » delete assets/z02-explosion-view.jpg
+• 03:04:57 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:05:39 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:08:17  Synced » update sections/z02-product.liquid
+• 03:08:46  Synced » update assets/z02-product.css
+• 03:09:32 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:09:32  Synced » delete assets/z02-spec-card.png
+• 03:10:08 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:17:09 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:17:10  Synced » update assets/z02-driver-diagram.jpg
+• 03:18:06  Synced » update assets/z02-product.css
+• 03:18:06  Synced » update sections/z02-product.liquid
+• 03:19:09 Request »    GET 401 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:20:13 Request »    GET 401 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:22:02 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:22:04 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:22:35 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:22:37 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 03:25:01  Synced » update sections/z02-product.liquid
+• 03:26:04 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:28:47  Synced » update assets/z02-product.css
+• 03:29:16  Synced » update assets/z02-product.css
+• 03:31:00 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:35:04  Synced » update assets/z02-product.css
+• 03:36:08 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:45:58  Synced » update assets/z02-wordmark.png
+• 03:45:58  Synced » update assets/z02-aaw-logo.png
+• 03:45:59  Synced » update assets/z02-logo-lockup.png
+• 03:51:19  Synced » update sections/z02-product.liquid
+• 03:51:58  Synced » update assets/z02-product.css
+• 03:55:38 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 03:55:39 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 04:00:14  Synced » update sections/z02-product.liquid
+• 04:00:48  Synced » update assets/z02-product.css
+• 04:01:25 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:09:32  Synced » update sections/z02-product.liquid
+• 14:09:33  Synced » update assets/z02-product.css
+• 14:16:11  Synced » update sections/mockingbird-product.liquid
+• 14:16:11  Synced » update assets/mockingbird-product.css
+• 14:16:12 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:16:14 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:20:26  Synced » update sections/mockingbird-product.liquid
+• 14:20:27 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:21:50  Synced » update sections/mockingbird-product.liquid
+• 14:21:51 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:21:52 Request »   POST 200 /shopify_pay/accelerated_checkout 
+• 14:25:07  Synced » update sections/mockingbird-product.liquid
+• 14:25:07  Synced » delete assets/mockingbird-product.css
+• 14:25:07  Synced » update assets/mockingbird-product.css
+• 14:25:07 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "assets/m20-exploded-view.png" from remote theme.     │
+│                                                                              │
+│  Failed to delete file "assets/m20-exploded-view.png" from remote theme.     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:42 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:29:43  Synced » update assets/m20-gallery-4.jpg
+• 14:29:43  Synced » update assets/m20-gallery-2.jpg
+• 14:29:43  Synced » update assets/m20-gallery-1.jpg
+• 14:29:43  Synced » update assets/m20-gallery-4.jpg
+• 14:29:43  Synced » update assets/m20-gallery-3.jpg
+• 14:29:43  Synced » update assets/m20-gallery-1.jpg
+• 14:29:43  Synced » update assets/m20-exploded-view.png
+• 14:29:44  Synced » update assets/m20-hero-render.png
+• 14:29:44  Synced » update assets/m20-hero-render.png
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.m20.json" to remote theme.         │
+│                                                                              │
+│  Section type 'm20-product' does not refer to an existing section file       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 14:33:00  Synced » update sections/m20-product.liquid
+• 14:33:00  Synced » update assets/m20-product.css
+• 14:33:01 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:33:01 Request »    GET 200 /products/z02-planar-magnetic-universal-in-ear-monitor?preview=z02 
+• 14:45:48  Synced » update sections/m20-product.liquid
+• 14:45:53  Synced » update assets/m20-product.css
+• 14:51:51  Synced » update assets/m20-product.css
+• 14:53:51  Synced » update assets/m20-product.css
+• 14:55:42  Synced » update sections/m20-product.liquid
+• 14:57:42  Synced » update sections/m20-product.liquid
+• 15:10:43  Synced » update assets/aaw-home-z07.css
+• 15:15:04  Synced » delete assets/m20-product.css
+• 15:15:04  Synced » update sections/m20-product.liquid
+• 15:15:04  Synced » update assets/m20-product.css
+• 15:16:22  Synced » update sections/m20-product.liquid
+• 15:25:38  Synced » update assets/ash-custom-2.jpg
+• 15:25:38  Synced » update assets/ash-custom-1.jpg
+• 15:25:38  Synced » update assets/ash-universal-1.jpg
+• 15:25:38  Synced » update assets/ash-universal-2.jpg
+• 15:28:22  Synced » update assets/ash-instagram-custom-blue.jpg
+• 15:28:22  Synced » update assets/ash-instagram-custom-blue.jpg
+• 15:28:22  Synced » update assets/ash-driver-config.png
+• 15:28:23  Synced » update assets/ash-instagram-cable.jpg
+• 15:28:23  Synced » update assets/ash-instagram-cable.jpg
+• 15:31:42  Synced » update sections/ash-product.liquid
+• 15:31:42  Synced » update assets/ash-product.css
+• 15:33:02  Synced » update templates/product.ash.json
+• 15:37:55  Synced » update sections/ash-product.liquid
+• 15:38:00  Synced » delete assets/ash-instagram-custom-blue.jpg
+• 15:41:56  Synced » update assets/ash-product.css
+• 16:30:32  Synced » update sections/ash-product.liquid
+• 16:30:32  Synced » update assets/ash-custom-abalone.jpg
+• 16:30:32  Synced » update assets/ash-product.css
+• 16:30:32  Synced » update assets/ash-custom-white-gold.jpg
+• 16:30:33  Synced » update assets/ash-custom-blue-gold.jpg
+• 16:30:33  Synced » update assets/ash-custom-blue-gold.jpg
+• 16:34:10  Synced » update assets/ash-fr-graph.png
+• 16:34:10  Synced » delete assets/ash-product.css
+• 16:34:10  Synced » update assets/ash-product.css
+• 16:34:10  Synced » update sections/ash-product.liquid
+• 16:38:05  Synced » update sections/ash-product.liquid
+• 16:38:05  Synced » update assets/ash-product.css
+• 16:43:24  Synced » update sections/ash-product.liquid
+• 21:13:41  Synced » update assets/halcyon-front-render.jpg
+• 21:13:41  Synced » update assets/halcyon-frequency-response.jpg
+• 21:13:41  Synced » update assets/halcyon-hero-render.jpg
+• 21:13:41  Synced » update assets/halcyon-transparent-architecture.jpg
+• 21:13:41  Synced » update assets/halcyon-bassflow-render.jpg
+• 21:13:41  Synced » update assets/halcyon-electrostatic-driver.jpg
+• 21:13:41  Synced » update assets/halcyon-thera-cable.jpg
+• 21:13:42  Synced » update assets/halcyon-spec-card.jpg
+• 21:13:42  Synced » update assets/halcyon-exploded-layout.jpg
+• 21:13:43  Synced » update assets/halcyon-precision-render.jpg
+• 21:19:53  Synced » update assets/halcyon-product.css
+• 21:21:31  Synced » update sections/halcyon-product.liquid
+• 21:22:25  Synced » update templates/product.halcyon.json
+• 21:36:50  Synced » update sections/ash-product.liquid
+• 21:36:51  Synced » update assets/ash-product.css
+• 21:43:53  Synced » update assets/halcyon-product.css
+• 21:44:36  Synced » update assets/ash-product.css
+• 21:46:31  Synced » update assets/halcyon-product.css
+• 21:49:36  Synced » update assets/halcyon-product.css
+• 21:51:51  Synced » update assets/halcyon-product.css
+• 21:52:44  Synced » update assets/aaw-judgeme-reviews.css
+• 21:54:54  Synced » update assets/halcyon-product.css
+• 21:57:40  Synced » update assets/halcyon-product.css
+• 21:59:52  Synced » update assets/halcyon-product.css
+• 22:02:31  Synced » update sections/halcyon-product.liquid
+• 22:03:20  Synced » update assets/halcyon-product.css
+• 22:31:19  Synced » update sections/halcyon-product.liquid
+• 22:32:50  Synced » update assets/halcyon-product.css
+• 22:46:30  Synced » update assets/halcyon-driver-ba.png
+• 22:46:30  Synced » update assets/halcyon-driver-est.png
+• 22:46:31  Synced » update assets/halcyon-driver-graphene.png
+• 22:46:31  Synced » update assets/halcyon-driver-graphene.png
+• 22:51:15  Synced » update sections/halcyon-product.liquid
+• 22:51:57  Synced » update assets/halcyon-product.css
+• 22:55:53  Synced » update assets/halcyon-driver-ba.png
+• 22:55:53  Synced » update assets/halcyon-driver-est.png
+• 22:55:53  Synced » update assets/halcyon-driver-graphene.png
+• 23:00:31  Synced » update assets/halcyon-driver-graphene.png
+• 23:00:32  Synced » update assets/halcyon-driver-est.png
+• 23:00:32  Synced » update assets/halcyon-driver-ba.png
+• 23:10:56  Synced » update assets/halcyon-driver-ba.png
+• 23:10:56  Synced » update assets/halcyon-driver-est.png
+• 23:10:56  Synced » update assets/halcyon-driver-graphene.png
+• 23:14:46  Synced » update assets/halcyon-driver-ba.png
+• 23:14:46  Synced » update assets/halcyon-driver-graphene.png
+• 23:14:46  Synced » update assets/halcyon-driver-est.png
+• 23:29:02  Synced » update assets/get-started.css
+• 23:31:06  Synced » update templates/page.get-started.json
+• 23:31:28  Synced » update layout/theme.liquid
+• 23:46:38  Synced » update assets/halcyon-driver-est-preview.png
+• 23:46:38  Synced » update assets/halcyon-driver-ba-preview.png
+• 23:46:39  Synced » update assets/halcyon-driver-graphene-preview.png
+• 23:49:23  Synced » delete assets/halcyon-driver-graphene-preview.png
+• 23:49:23  Synced » delete assets/halcyon-driver-ba-preview.png
+• 23:49:23  Synced » delete assets/halcyon-driver-est-preview.png
+• 23:50:05  Synced » update assets/halcyon-product.css
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-7.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-1.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-6.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-8.jpg
+• 23:57:49  Synced » update assets/halcyon-ciem-fit-2.jpg
+• 23:58:50  Synced » update sections/halcyon-product.liquid
+• 23:59:40  Synced » update assets/halcyon-product.css
+• 00:03:40  Synced » update assets/get-started.css
+• 00:04:15  Synced » update assets/get-started.css
+• 00:04:49  Synced » update assets/get-started.css
+• 00:10:22  Synced » update assets/halcyon-product.css
+• 00:19:30  Synced » update sections/halcyon-product.liquid
+• 00:20:14  Synced » update assets/halcyon-product.css
+• 00:28:06  Synced » update assets/halcyon-transparent-architecture-crop.jpg
+• 00:30:10  Synced » update sections/halcyon-product.liquid
+• 00:33:44  Synced » update assets/halcyon-product.css
+• 00:45:21  Synced » update sections/halcyon-product.liquid
+• 00:46:10  Synced » update assets/halcyon-product.css
+• 00:47:24  Synced » update assets/halcyon-product.css
+• 00:49:26  Synced » update assets/get-started.css
+• 00:50:10  Synced » update assets/get-started.css
+• 00:51:52  Synced » update templates/page.get-started.json
+• 00:57:01  Synced » update snippets/aaw-hidden-product.liquid
+• 00:57:45  Synced » update snippets/card-product.liquid
+• 00:59:33  Synced » update snippets/search-drawer.liquid
+• 00:59:33  Synced » update snippets/header-search-group.liquid
+• 00:59:33  Synced » update sections/predictive-search.liquid
+• 00:59:33  Synced » update snippets/complementary-products.liquid
+• 00:59:33  Synced » update sections/related-products.liquid
+• 00:59:33  Synced » update sections/main-search.liquid
+• 00:59:33  Synced » update sections/main-collection.liquid
+• 01:00:44  Synced » update sections/featured-collection.liquid
+• 01:00:44  Synced » update sections/collection-tabs.liquid
+• 01:01:35  Synced » update sections/recently-viewed-product.liquid
+• 01:01:35  Synced » update sections/content-tabs.liquid
+• 01:03:08  Synced » update sections/main-cart.liquid
+• 01:04:25  Synced » update assets/get-started.css
+• 01:05:16  Synced » update assets/get-started.css
+• 01:06:12  Synced » update templates/page.get-started.json
+• 01:08:35  Synced » update snippets/complementary-products.liquid
+• 01:12:29  Synced » update assets/get-started.css
+• 01:17:24  Synced » update sections/main-search.liquid
+• 01:27:16  Synced » update sections/halcyon-product.liquid
+• 01:28:04  Synced » update assets/halcyon-product.css
+• 01:28:57  Synced » update assets/halcyon-product.css
+• 01:40:47  Synced » update assets/halcyon-8.mp4
+• 01:42:28  Synced » update sections/halcyon-product.liquid
+• 01:43:13  Synced » update assets/halcyon-product.css
+• 01:43:57  Synced » update assets/halcyon-product.css
+• 01:56:08  Synced » update sections/halcyon-product.liquid
+• 01:56:50  Synced » update assets/halcyon-product.css
+• 02:01:18  Synced » update assets/shipping-return.css
+• 02:04:50  Synced » update templates/page.shipping-return.json
+• 02:05:26  Synced » update layout/theme.liquid
+• 02:12:00  Synced » update sections/halcyon-product.liquid
+• 02:12:52  Synced » update assets/halcyon-product.css
+• 02:31:59  Synced » update assets/a3h-lux-musician-fitment.png
+• 02:32:06  Synced » update sections/a3h-lux-product.liquid
+• 02:32:13  Synced » update assets/a3h-lux-product.css
+• 02:33:47  Synced » update sections/a3h-lux-product.liquid
+• 02:33:56  Synced » update assets/a3h-lux-product.css
+• 02:47:39  Synced » update assets/halcyon-studio-shell-pair.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-package.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-single-shell.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-thera-cable.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-bassflow-plate.jpg
+• 02:47:39  Synced » update assets/halcyon-studio-blue-case.jpg
+• 02:48:37  Synced » update sections/halcyon-product.liquid
+• 02:49:25  Synced » update assets/halcyon-product.css
+• 02:52:06  Synced » update assets/halcyon-product.css
+• 03:01:41  Synced » update sections/halcyon-product.liquid
+• 03:07:03  Synced » delete templates/product.halcyon.json
+• 03:07:03  Synced » delete assets/halcyon-product.css
+• 03:07:03  Synced » delete sections/halcyon-product.liquid
+• 03:13:30  Synced » update assets/shipping-return.css
+• 03:14:57  Synced » update templates/page.shipping-return.json
+• 03:38:48  Synced » update assets/ciem-care-01-store.png
+• 03:38:48  Synced » update assets/ciem-care-02-clean-bores.png
+• 03:38:48  Synced » update assets/ciem-care-04-moisture.png
+• 03:38:48  Synced » update assets/ciem-care-01-store.png
+• 03:38:48  Synced » update assets/ciem-care-04-moisture.png
+• 03:38:48  Synced » update assets/ciem-care-02-clean-bores.png
+• 03:38:48  Synced » update assets/ciem-care-03-cable.png
+• 03:38:49  Synced » update assets/ciem-care-03-cable.png
+• 03:38:49  Synced » update assets/ciem-care-03-cable.png
+• 03:38:49  Synced » update assets/ciem-care-05-brush.png
+• 03:38:50  Synced » update assets/ciem-care-05-brush.png
+• 03:41:32  Synced » update assets/ciem-care-system.css
+• 03:42:34  Synced » update sections/ciem-care-system.liquid
+• 03:43:08  Synced » update templates/page.how-to-service-your-iem.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.halcyon.json" to remote theme.     │
+│                                                                              │
+│  Section type 'halcyon-product' does not refer to an existing section file   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 03:52:31  Synced » update sections/halcyon-product.liquid
+• 03:52:33  Synced » update assets/halcyon-product.css
+• 03:53:47  Synced » update assets/ciem-care-system.css
+• 03:54:19  Synced » update templates/page.shipping-return.json
+• 03:55:05  Synced » update templates/page.shipping-return.json
+• 03:55:43  Synced » delete assets/ciem-care-system.css
+• 03:57:06  Synced » update assets/ciem-care-system.css
+• 03:57:43  Synced » update assets/ciem-care-system.css
+• 04:03:23  Synced » update assets/shipping-return.css
+• 04:04:18  Synced » update assets/ciem-care-system.css
+• 04:04:37  Synced » update templates/page.shipping-return.json
+• 04:05:31  Synced » update assets/fedex-logo.svg
+• 04:06:27  Synced » update assets/ciem-care-system.css
+• 04:07:15  Synced » update assets/ciem-care-system.css
+• 04:09:44  Synced » update assets/ciem-care-system.css
+• 04:09:51  Synced » update assets/halcyon-product.css
+• 04:14:04  Synced » update assets/ciem-care-system.css
+• 04:15:10  Synced » update assets/halcyon-product.css
+• 04:17:07  Synced » update assets/ciem-care-system.css
+• 04:19:04  Synced » update assets/halcyon-product.css
+• 04:31:11  Synced » update assets/halcyon-product.css
+• 04:32:27  Synced » update assets/halcyon-product.css
+• 11:49:54  Synced » update assets/halcyon-product.css
+• 11:56:34  Synced » update sections/halcyon-product.liquid
+• 12:00:55  Synced » update assets/halcyon-product.css
+• 12:03:41  Synced » update assets/halcyon-product.css
+• 12:10:56  Synced » update assets/halcyon-product.css
+• 12:23:05  Synced » update assets/ciem-care-04-moisture.png
+• 12:23:06  Synced » update assets/ciem-care-01-store.png
+• 12:25:37  Synced » update sections/halcyon-product.liquid
+• 12:26:42  Synced » update assets/halcyon-product.css
+• 12:34:25  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:25  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:26  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:26  Synced » update assets/ciem-care-01-store.png
+• 12:34:26  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:27  Synced » update assets/ciem-care-01-store.png
+• 12:34:27  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:27  Synced » update assets/ciem-care-01-store.png
+• 12:34:27  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:28  Synced » update assets/ciem-care-01-store.png
+• 12:34:28  Synced » update assets/ciem-care-04-moisture.png
+• 12:34:28  Synced » update assets/ciem-care-01-store.png
+• 12:34:29  Synced » update assets/ciem-care-01-store.png
+• 12:34:29  Synced » update assets/ciem-care-01-store.png
+• 12:34:30  Synced » update assets/ciem-care-01-store.png
+• 12:34:30  Synced » update assets/ciem-care-01-store.png
+• 12:34:32  Synced » update assets/ciem-care-01-store.png
+• 12:40:46  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:47  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:47  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:47  Synced » update assets/ciem-care-01-store.png
+• 12:40:47  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:48  Synced » update assets/ciem-care-01-store.png
+• 12:40:48  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:48  Synced » update assets/ciem-care-01-store.png
+• 12:40:49  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:49  Synced » update assets/ciem-care-01-store.png
+• 12:40:49  Synced » update assets/ciem-care-01-store.png
+• 12:40:50  Synced » update assets/ciem-care-01-store.png
+• 12:40:50  Synced » update assets/ciem-care-01-store.png
+• 12:40:51  Synced » update assets/ciem-care-01-store.png
+• 12:40:51  Synced » update assets/ciem-care-01-store.png
+• 12:40:51  Synced » update assets/ciem-care-01-store.png
+• 12:40:51  Synced » update assets/ciem-care-04-moisture.png
+• 12:40:51  Synced » update assets/ciem-care-01-store.png
+• 12:44:36  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:37  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:37  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:38  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:38  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:39  Synced » update assets/ciem-care-04-moisture.png
+• 12:44:39  Synced » update assets/ciem-care-04-moisture.png
+• 12:46:24  Synced » update sections/halcyon-product.liquid
+• 12:47:38  Synced » update sections/halcyon-product.liquid
+• 12:48:51  Synced » update sections/halcyon-product.liquid
+• 12:51:21  Synced » update sections/halcyon-product.liquid
+• 12:52:39  Synced » update sections/halcyon-product.liquid
+• 12:53:56  Synced » update sections/halcyon-product.liquid
+• 12:55:15  Synced » update sections/halcyon-product.liquid
+• 12:56:36  Synced » update sections/halcyon-product.liquid
+• 12:57:57  Synced » update sections/halcyon-product.liquid
+• 12:59:18  Synced » update sections/halcyon-product.liquid
+• 13:00:43  Synced » update sections/halcyon-product.liquid
+• 13:02:06  Synced » update sections/halcyon-product.liquid
+• 13:03:32  Synced » update sections/halcyon-product.liquid
+• 13:05:00  Synced » update sections/halcyon-product.liquid
+• 13:07:48  Synced » update sections/halcyon-product.liquid
+• 13:09:15  Synced » update sections/halcyon-product.liquid
+• 13:09:46  Synced » update assets/ciem-care-01-store.png
+• 13:09:46  Synced » update assets/ciem-care-04-moisture.png
+• 13:09:47  Synced » update assets/ciem-care-01-store.png
+• 13:09:48  Synced » update assets/ciem-care-04-moisture.png
+• 13:10:40  Synced » update sections/halcyon-product.liquid
+• 13:12:03  Synced » update sections/halcyon-product.liquid
+• 13:14:59  Synced » update sections/halcyon-product.liquid
+• 13:16:29  Synced » update sections/halcyon-product.liquid
+• 13:17:56  Synced » update sections/halcyon-product.liquid
+• 13:22:02  Synced » update sections/halcyon-product.liquid
+• 13:23:38  Synced » update sections/halcyon-product.liquid
+• 13:25:10  Synced » update sections/halcyon-product.liquid
+• 13:26:48  Synced » update sections/halcyon-product.liquid
+• 13:28:28  Synced » update sections/halcyon-product.liquid
+• 13:33:44  Synced » update assets/ciem-care-06-service.png
+• 13:33:44  Synced » update assets/ciem-care-06-service.png
+• 13:42:12  Synced » update sections/ciem-care-system.liquid
+• 14:13:15  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:16  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:16  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:17  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:17  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:18  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:18  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:13:18  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:35  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:36  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:36  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:37  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:37  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:38  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:38  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:20:41  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:48  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:49  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:49  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:50  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:50  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:51  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:51  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:26:51  Synced » update assets/ciem-care-02-clean-bores.png
+• 14:33:41  Synced » update sections/ciem-care-system.liquid
+• 14:53:13  Synced » update templates/page.shipping-return.json
+• 14:53:13  Synced » update assets/shipping-return.css
+• 16:56:24  Synced » update assets/ciem-care-system.css
+• 17:44:00  Synced » update assets/ciem-care-system.css
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "assets/ciem-care-language-toggle.js~RF10ad5084.TMP"  │
+│   to remote theme.                                                           │
+│                                                                              │
+│  "assets/ciem-care-language-toggle.js~RF10ad5084.TMP" contains illegal       │
+│  characters                                                                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "assets/ciem-care-language-toggle.js~RF10ad5084.TMP"  │
+│   from remote theme.                                                         │
+│                                                                              │
+│  Failed to delete file "assets/ciem-care-language-toggle.js~RF10ad5084.TMP"  │
+│   from remote theme.                                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 17:47:07  Synced » update assets/ciem-care-language-toggle.js
+• 17:47:08  Synced » update sections/ciem-care-system.liquid
+• 17:57:59  Synced » update assets/ciem-care-system.css
+• 20:06:58  Synced » update assets/warranty-and-refit.css
+• 20:10:42  Synced » update templates/page.warranty-and-refit.json
+• 20:10:59  Synced » update layout/theme.liquid
+• 21:26:21  Synced » update assets/what-is-ciem.css
+• 21:28:56  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 21:29:24  Synced » update layout/theme.liquid
+• 21:37:30  Synced » update assets/what-is-uiem.css
+• 21:40:09  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:40:32  Synced » update layout/theme.liquid
+• 21:49:56  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 21:50:31  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:50:44  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:50:59  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:51:14  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:51:28  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:51:41  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:51:55  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:52:09  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:52:22  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:52:36  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:52:51  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 21:57:05  Synced » update assets/what-is-ciem.css
+• 22:00:40  Synced » update assets/what-is-ciem.css
+• 22:01:28  Synced » update assets/what-is-uiem.css
+• 22:02:33  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:04:08  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:05:47  Synced » update sections/footer.liquid
+• 22:07:51  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:18:30  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:18:37  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:18:41  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:18:46  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:18:51  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:03  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:17  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:22  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:28  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:35  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:46  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:19:51  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:01  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:08  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:14  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:24  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:31  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:37  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:43  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:49  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:20:54  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:00  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:15  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:22  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:28  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:35  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:41  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:21:52  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:00  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:07  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:14  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:21  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:31  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:35  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:46  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:46  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:51  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:22:56  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:02  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:07  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:13  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:19  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:25  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:30  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:23:41  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:24:08  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:13  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:18  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:23  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:27  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:39  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:52  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:24:58  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:03  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:09  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:15  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:20  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:26  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:36  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:41  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:47  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:53  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:25:59  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:05  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:11  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:22  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:27  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:33  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:38  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:45  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:50  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:54  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:26:59  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:06  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:15  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:22  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:29  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:36  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:43  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:49  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:27:55  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:02  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:12  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:17  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:22  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:27  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:33  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:38  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:43  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:49  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:28:55  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:29:06  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:29:12  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 22:36:09  Synced » update sections/ciem-care-system.liquid
+• 22:36:14  Synced » update assets/ciem-care-language-toggle.js
+• 22:36:22  Synced » update sections/ciem-care-system.liquid
+• 22:36:28  Synced » update assets/ciem-care-language-toggle.js
+• 22:36:36  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:36:40  Synced » update sections/ciem-care-system.liquid
+• 22:36:48  Synced » update assets/ciem-care-language-toggle.js
+• 22:36:54  Synced » update assets/what-is-ciem.css
+• 22:36:58  Synced » update sections/ciem-care-system.liquid
+• 22:37:03  Synced » update assets/ciem-care-language-toggle.js
+• 22:37:04  Synced » update assets/what-is-ciem.css
+• 22:37:12  Synced » update sections/ciem-care-system.liquid
+• 22:37:16  Synced » update assets/ciem-care-language-toggle.js
+• 22:37:26  Synced » update sections/ciem-care-system.liquid
+• 22:37:31  Synced » update assets/ciem-care-language-toggle.js
+• 22:37:40  Synced » update sections/ciem-care-system.liquid
+• 22:37:45  Synced » update assets/ciem-care-language-toggle.js
+• 22:37:53  Synced » update sections/ciem-care-system.liquid
+• 22:37:59  Synced » update assets/ciem-care-language-toggle.js
+• 22:38:10  Synced » update sections/ciem-care-system.liquid
+• 22:38:19  Synced » update assets/ciem-care-language-toggle.js
+• 22:38:29  Synced » update sections/ciem-care-system.liquid
+• 22:38:34  Synced » update assets/ciem-care-language-toggle.js
+• 22:38:38  Synced » update assets/ciem-care-language-toggle.js
+• 22:38:42  Synced » update sections/ciem-care-system.liquid
+• 22:38:46  Synced » update assets/ciem-care-language-toggle.js
+• 22:38:50  Synced » update sections/ciem-care-system.liquid
+• 22:38:56  Synced » update assets/ciem-care-language-toggle.js
+• 22:39:00  Synced » update sections/ciem-care-system.liquid
+• 22:39:05  Synced » update assets/ciem-care-language-toggle.js
+• 22:39:17  Synced » update sections/ciem-care-system.liquid
+• 22:39:27  Synced » update sections/ciem-care-system.liquid
+• 22:39:35  Synced » update assets/ciem-care-language-toggle.js
+• 22:39:40  Synced » update assets/ciem-care-language-toggle.js
+• 22:40:02  Synced » update sections/ciem-care-system.liquid
+• 22:43:23  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 22:45:37  Synced » update assets/what-is-ciem.css
+• 22:48:41  Synced » update assets/ciem-care-language-toggle.js
+• 23:11:19  Synced » update assets/what-is-uiem.css
+• 23:12:25  Synced » update assets/what-is-uiem.css
+• 23:13:45  Synced » update assets/what-is-uiem.css
+• 23:14:38  Synced » update assets/what-is-uiem.css
+• 23:15:02  Synced » update assets/what-is-ciem.css
+• 23:15:29  Synced » update assets/what-is-ciem.css
+• 23:25:15  Synced » update assets/ear-impression-insufficient-thin.jpg
+• 23:25:15  Synced » update assets/ear-impression-insufficient-short.jpg
+• 23:25:15  Synced » update assets/ear-impression-good-back.jpg
+• 23:25:15  Synced » update assets/ear-impression-good-front.jpg
+• 23:25:15  Synced » update assets/ear-impression-insufficient-flat.jpg
+• 23:25:15  Synced » update assets/ear-impression-insufficient-reference.jpg
+• 23:25:15  Synced » update assets/ear-impression-good-top.jpg
+• 23:25:15  Synced » update assets/ear-impression-good-bottom.jpg
+• 23:25:15  Synced » update assets/ear-impression-anatomy-guide.jpg
+• 23:25:15  Synced » update assets/ear-impression-good-reference.jpg
+• 23:25:15  Synced » update assets/ear-impression-insufficient-missing-landmarks.jpg
+• 23:26:48  Synced » update sections/ear-impression-guide.liquid
+• 23:28:00  Synced » update assets/ear-impression-guide.css
+• 23:28:09  Synced » update templates/page.how-to-take-ear-impression.json
+• 23:28:18  Synced » update templates/page.ear-impression.json
+• 23:28:59  Synced » delete assets/ear-impression-insufficient-reference.jpg
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "assets/ear-impression-good-reference.jpg" from       │
+│  remote theme.                                                               │
+│                                                                              │
+│  Failed to delete file "assets/ear-impression-good-reference.jpg" from       │
+│  remote theme.                                                               │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 23:32:15  Synced » update sections/ear-impression-guide.liquid
+• 23:37:25  Synced » update assets/ear-impression-guide.css
+• 23:42:40  Synced » update snippets/aaw-responsive-asset-image.liquid
+• 23:43:09  Synced » update sections/ciem-care-system.liquid
+• 23:43:10  Synced » update sections/mokara-product.liquid
+• 23:43:10  Synced » update sections/z02-product.liquid
+• 23:43:11  Synced » update sections/halcyon-product.liquid
+• 23:43:11  Synced » update sections/black-malus-product.liquid
+• 23:43:11  Synced » update sections/ear-impression-guide.liquid
+• 23:43:12  Synced » update sections/ash-product.liquid
+• 23:43:12  Synced » update sections/aaw-about-brand-v13.liquid
+• 23:43:12  Synced » update sections/m20-product.liquid
+• 23:43:12  Synced » update sections/mockingbird-product.liquid
+• 23:43:13  Synced » update sections/canary-pro-product.liquid
+• 23:43:13  Synced » update sections/a3h-lux-product.liquid
+• 23:43:13  Synced » update sections/aaw-customer-voices.liquid
+• 23:43:52  Synced » update sections/halcyon-product.liquid
+• 23:43:57  Synced » update sections/ash-product.liquid
+• 23:44:26  Synced » update templates/page.shipping-return.json
+• 23:44:26  Synced » update templates/page.warranty-and-refit.json
+• 23:44:26  Synced » update templates/page.get-started.json
+• 23:44:26  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 23:44:27  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 23:44:27  Synced » update templates/product.standard.json
+• 23:44:27  Synced » update templates/product.z05-kEVIN-PC.json
+• 23:44:28  Synced » update templates/product.z05.json
+• 23:44:28  Synced » update templates/index.json
+• 23:44:28  Synced » update templates/product.z07.json
+• 23:44:43  Synced » update snippets/aaw-responsive-asset-image.liquid
+• 00:20:31  Synced » update layout/theme.liquid
+• 00:20:45  Synced » update snippets/aaw-home-schema.liquid
+• 00:20:45  Synced » update snippets/localization-form.liquid
+• 00:20:45  Synced » update locales/en.default.json
+• 00:20:45  Synced » update sections/aaw-about-brand-v13.liquid
+• 00:20:46  Synced » update assets/global.js
+• 00:21:01  Synced » update snippets/ajax-cart-drawer.liquid
+• 00:21:02  Synced » update sections/main-cart.liquid
+• 00:23:00  Synced » update templates/page.get-started.json
+• 00:23:00  Synced » update templates/index.json
+• 00:25:17  Synced » update assets/z05-language-toggle.js
+• 00:25:17  Synced » update assets/z05-language-toggle-20260523.js
+• 00:25:17  Synced » update assets/z07-language-toggle.js
+• 00:25:17  Synced » update sections/z02-product.liquid
+• 00:25:18  Synced » update sections/mockingbird-product.liquid
+• 00:25:18  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 00:25:18  Synced » update templates/product.z07.json
+• 00:25:19  Synced » update templates/product.z05.json
+• 00:25:19  Synced » update templates/product.standard.json
+• 00:25:20  Synced » update templates/product.z05-kEVIN-PC.json
+• 00:25:20  Synced » update sections/m20-product.liquid
+• 00:25:21  Synced » update sections/ash-product.liquid
+• 00:25:21  Synced » update templates/index.json
+• 00:25:21  Synced » update sections/canary-pro-product.liquid
+• 00:25:21  Synced » update sections/header.liquid
+• 00:25:21  Synced » update sections/a3h-lux-product.liquid
+• 00:25:22  Synced » update assets/get-started.css
+• 00:25:37  Synced » update assets/aaw-home-z07.css
+• 00:25:41  Synced » update assets/common.css
+• 00:26:02  Synced » update assets/global.js
+• 00:26:07  Synced » update snippets/global-variables.liquid
+• 00:28:34  Synced » update layout/theme.liquid
+• 01:26:16  Synced » update templates/product.builder.json
+• 01:38:55  Synced » update assets/ciem-care-01-store.webp
+• 01:38:55  Synced » update assets/ciem-care-02-clean-bores.webp
+• 01:38:56  Synced » update assets/ciem-care-01-store.webp
+• 01:38:56  Synced » update assets/ciem-care-04-moisture.webp
+• 01:38:57  Synced » update assets/ciem-care-03-cable.webp
+• 01:38:57  Synced » update assets/ciem-care-03-cable.webp
+• 01:38:57  Synced » update assets/ciem-care-02-clean-bores.webp
+• 01:38:58  Synced » update assets/ciem-care-05-brush.webp
+• 01:38:58  Synced » update assets/ciem-care-04-moisture.webp
+• 01:38:58  Synced » update assets/ciem-care-05-brush.webp
+• 01:38:59  Synced » update assets/ciem-care-06-service.webp
+• 01:38:59  Synced » update assets/ciem-care-06-service.webp
+• 01:39:22  Synced » update sections/ciem-care-system.liquid
+• 01:40:12  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 01:43:04  Synced » update assets/ciem-care-03-cable.jpg
+• 01:43:04  Synced » update assets/ciem-care-03-cable.jpg
+• 01:43:04  Synced » update assets/ciem-care-06-service.jpg
+• 01:43:04  Synced » update assets/ciem-care-01-store.jpg
+• 01:43:04  Synced » update assets/ciem-care-02-clean-bores.jpg
+• 01:43:04  Synced » update assets/ciem-care-04-moisture.jpg
+• 01:43:04  Synced » update assets/ciem-care-05-brush.jpg
+• 01:43:04  Synced » update assets/ciem-care-02-clean-bores.jpg
+• 01:43:04  Synced » update assets/ciem-care-01-store.jpg
+• 01:43:05  Synced » update assets/ciem-care-04-moisture.jpg
+• 01:43:05  Synced » update assets/ciem-care-05-brush.jpg
+• 01:43:16  Synced » update sections/ciem-care-system.liquid
+• 01:43:22  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 01:45:29  Synced » update sections/ciem-care-system.liquid
+• 01:46:46  Synced » delete assets/ciem-care-03-cable.webp
+• 01:46:46  Synced » delete assets/ciem-care-02-clean-bores.webp
+• 01:46:46  Synced » delete assets/ciem-care-01-store.webp
+• 01:46:46  Synced » delete assets/ciem-care-06-service.webp
+• 01:46:46  Synced » delete assets/ciem-care-04-moisture.webp
+• 01:46:46  Synced » delete assets/ciem-care-05-brush.webp
+• 01:47:28  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 01:53:02  Synced » update templates/index.json
+• 01:56:22  Synced » update templates/index.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/product.z07.json" to remote theme.         │
+│                                                                              │
+│  Section id 'z07_reviews' must exist in order                                │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 01:56:45  Synced » update templates/product.z07.json
+• 02:08:21  Synced » update templates/index.json
+• 02:08:37  Synced » update assets/aaw-home-z07.css
+• 02:10:03  Synced » update templates/index.json
+• 02:18:12  Synced » update templates/product.z06.json
+• 02:18:21  Synced » update templates/product.z06.json
+• 02:18:30  Synced » update templates/product.z06.json
+• 02:18:37  Synced » update templates/product.z06.json
+• 02:18:43  Synced » update templates/product.z06.json
+• 02:18:49  Synced » update templates/product.z06.json
+• 02:18:58  Synced » update templates/product.z06.json
+• 02:19:05  Synced » update templates/product.z06.json
+• 02:19:13  Synced » update templates/product.z06.json
+• 02:19:19  Synced » update templates/product.z06.json
+• 02:19:27  Synced » update templates/product.z06.json
+• 02:19:34  Synced » update templates/product.z06.json
+• 02:19:41  Synced » update templates/product.pola.json
+• 02:19:50  Synced » update templates/product.pola.json
+• 02:19:55  Synced » update templates/product.pola.json
+• 02:20:02  Synced » update templates/product.pola.json
+• 02:20:09  Synced » update templates/product.pola.json
+• 02:20:17  Synced » update sections/z02-product.liquid
+• 02:20:24  Synced » update sections/z02-product.liquid
+• 02:20:29  Synced » update templates/page.warranty-and-refit.json
+• 02:20:34  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:20:39  Synced » update sections/mockingbird-product.liquid
+• 02:20:59  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:21:04  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:23:52  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:23:55  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:24:00  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:24:04  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:24:08  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:26:44  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:35:14  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:39:32  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:44:55  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:47:22  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 02:49:31  Synced » update assets/what-is-uiem.css
+• 03:02:21  Synced » update assets/z05-auag-luxury-portrait-hero-optimized.jpg
+• 03:02:59  Synced » update assets/z07-fitmorph-tubeless-sound-path-split-view-render-optimized.jpg
+• 03:03:24  Synced » update assets/m20-hero-render-optimized.jpg
+• 03:03:38  Synced » update assets/a3h-lux-musician-fitment-optimized.jpg
+• 03:04:53  Synced » update layout/theme.liquid
+• 03:05:03  Synced » update sections/a3h-lux-product.liquid
+• 03:05:19  Synced » update sections/m20-product.liquid
+• 03:05:33  Synced » update snippets/global-variables.liquid
+• 03:05:33  Synced » update templates/product.z05-kEVIN-PC.json
+• 03:05:33  Synced » update templates/product.z05.json
+• 03:05:33  Synced » update templates/product.z07.json
+• 03:05:33  Synced » update templates/product.standard.json
+• 03:05:34  Synced » update templates/index.json
+• 03:05:40  Synced » delete assets/aaw-about-brand-v9.js
+• 03:05:40  Synced » delete assets/aaw-about-brand-v8.css
+• 03:05:40  Synced » delete assets/aaw-about-brand-v7.css
+• 03:05:40  Synced » delete assets/aaw-about-brand-v10.js
+• 03:05:40  Synced » delete assets/aaw-about-brand-v7.js
+• 03:05:40  Synced » delete assets/aaw-about-brand-v10.css
+• 03:05:40  Synced » delete assets/z05-language-toggle.js
+• 03:05:40  Synced » delete assets/aaw-about-brand-v8.js
+• 03:05:40  Synced » delete assets/aaw-about-brand-v6.css
+• 03:05:40  Synced » delete assets/aaw-about-brand-v9.css
+• 03:26:04  Synced » update templates/index.json
+• 03:27:37  Synced » delete assets/m20-hero-render.png
+• 03:27:38  Synced » delete assets/a3h-lux-musician-fitment.png
+• 03:27:39  Synced » delete assets/canary-pro-artwork.jpg
+• 03:27:39  Synced » delete assets/canary-pro-hero.png
+• 03:27:40  Synced » delete assets/halcyon-spec-card.jpg
+• 03:27:41  Synced » delete assets/z05-auag-luxury-portrait-hero.png
+• 03:27:42  Synced » delete assets/z07-fitmorph-tubeless-sound-path-split-view-render.png
+• 03:27:50  Synced » update templates/index.json
+• 03:30:50  Synced » update assets/z07-fitmorph-tubeless-sound-path-split-view-render.png
+• 03:30:50  Synced » update assets/z05-auag-luxury-portrait-hero.png
+• 03:30:50  Synced » update assets/canary-pro-hero.png
+• 03:30:50  Synced » update assets/a3h-lux-musician-fitment.png
+• 03:30:50  Synced » update assets/canary-pro-artwork.jpg
+• 03:30:51  Synced » update assets/m20-hero-render.png
+• 03:32:22  Synced » update templates/index.json
+• 03:33:54  Synced » update assets/halcyon-spec-card.jpg
+• 03:33:54  Synced » update assets/halcyon-spec-card.jpg
+• 03:34:17  Synced » update assets/halcyon-spec-card.jpg
+• 03:38:49  Synced » update snippets/localization-form.liquid
+• 03:40:21  Synced » update snippets/localization-form.liquid
+• 03:41:30  Synced » update snippets/localization-form.liquid
+• 03:42:01  Synced » update snippets/localization-form.liquid
+• 03:43:59  Synced » update layout/theme.liquid
+• 03:57:00  Synced » update templates/index.json
+• 04:01:39  Synced » update assets/aaw-home-z07.css
+• 04:01:46  Synced » update assets/aaw-home-z07.css
+• 04:01:52  Synced » update assets/aaw-home-z07.css
+• 04:02:32  Synced » update templates/index.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/index.json.bak" to remote theme.           │
+│                                                                              │
+│  Must have a .liquid file extension                                          │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 04:06:26  Synced » update templates/index.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "templates/index.json.bak" from remote theme.         │
+│                                                                              │
+│  Failed to delete file "templates/index.json.bak" from remote theme.         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 04:07:00  Synced » update templates/index.json
+• 04:13:15  Synced » update templates/index.json
+• 04:13:23  Synced » update templates/index.json
+• 04:13:30  Synced » update templates/index.json
+• 04:13:40  Synced » update templates/index.json
+• 04:13:51  Synced » update templates/index.json
+• 04:13:56  Synced » update templates/index.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/index.json.localbak" to remote theme.      │
+│                                                                              │
+│  Must have a .liquid file extension                                          │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "templates/index.json.localbak" from remote theme.    │
+│                                                                              │
+│  Failed to delete file "templates/index.json.localbak" from remote theme.    │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 04:19:28  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 04:20:13  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 04:23:41  Synced » update templates/index.json
+• 04:23:51  Synced » update assets/aaw-home-z07.css
+• 04:24:01  Synced » update assets/what-is-ciem.css
+• 04:24:08  Synced » update assets/get-started.css
+• 04:24:16  Synced » update assets/warranty-and-refit.css
+• 04:24:22  Synced » update assets/aaw-about-brand-v11.css
+• 04:24:39  Synced » update sections/footer-group.json
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "sections/footer-group.json.bak2" to remote theme.    │
+│                                                                              │
+│  "sections/footer-group.json.bak2" contains illegal characters               │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "templates/index.json.bak2" to remote theme.          │
+│                                                                              │
+│  Must have a .liquid file extension                                          │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "templates/index.json.bak2" from remote theme.        │
+│                                                                              │
+│  Failed to delete file "templates/index.json.bak2" from remote theme.        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to delete file "sections/footer-group.json.bak2" from remote theme.  │
+│                                                                              │
+│  Failed to delete file "sections/footer-group.json.bak2" from remote theme.  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 14:00:52  Synced » delete assets/get-started.css
+• 14:00:52  Synced » delete assets/what-is-ciem.css
+• 14:00:52  Synced » update assets/shipping-return.css
+• 14:00:52  Synced » update assets/store-locator.css
+• 14:00:52  Synced » update assets/warranty-and-refit.css
+• 14:00:52  Synced » update assets/what-is-ciem.css
+• 14:00:53  Synced » update assets/what-is-uiem.css
+• 14:00:53  Synced » update assets/get-started.css
+• 14:00:53  Synced » update assets/get-started.css
+• 14:00:53  Synced » update assets/common.css
+• 14:36:57  Synced » delete assets/z07-product.css
+• 14:36:57  Synced » update assets/what-is-uiem.css
+• 14:36:57  Synced » update assets/z07-product.css
+• 14:36:57  Synced » update assets/z05-product.css
+• 14:36:58  Synced » update assets/get-started.css
+• 14:44:33  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 14:44:33  Synced » update assets/aaw-judgeme-reviews.css
+• 14:47:58  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 14:47:59  Synced » update assets/common.css
+• 14:50:08  Synced » update assets/what-is-uiem.css
+• 14:52:02  Synced » update assets/what-is-uiem.css
+• 14:54:27  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 15:02:43  Synced » update snippets/ajax-cart-drawer.liquid
+• 15:02:43  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 15:59:13  Synced » update sections/header-group.json
+• 15:59:13  Synced » update templates/product.z02.json
+• 15:59:13  Synced » update assets/z05-language-toggle.js
+• 15:59:14  Synced » update assets/common.css
+• 16:04:03  Synced » update locales/en.default.json
+• 16:05:23  Synced » update locales/en.default.json
+• 16:06:52  Synced » update locales/vi.json
+• 16:06:52  Synced » update locales/zh-TW.json
+• 16:06:52  Synced » delete locales/ro-RO.json
+• 16:06:52  Synced » update locales/th.json
+• 16:06:52  Synced » update locales/tr.json
+• 16:06:52  Synced » update locales/zh-CN.json
+• 16:06:52  Synced » update locales/sv.json
+• 16:06:52  Synced » update locales/sl-Sl.json
+• 16:06:52  Synced » update locales/sk-SK.json
+• 16:06:53  Synced » update locales/ru.json
+• 16:06:53  Synced » update locales/pt-BR.json
+• 16:06:53  Synced » update locales/pl.json
+• 16:06:53  Synced » update locales/nl.json
+• 16:06:53  Synced » update locales/lt-LT.json
+• 16:06:53  Synced » update locales/ro-RO.json
+• 16:06:53  Synced » update locales/fr.json
+• 16:06:53  Synced » update locales/ko.json
+• 16:06:53  Synced » update locales/nb.json
+• 16:06:53  Synced » update locales/hu.json
+• 16:06:53  Synced » update locales/it.json
+• 16:06:53  Synced » update locales/el.json
+• 16:06:53  Synced » update locales/ja.json
+• 16:06:53  Synced » update locales/da.json
+• 16:06:53  Synced » update locales/hr-HR.json
+• 16:06:53  Synced » update locales/en.default.json
+• 16:06:53  Synced » update locales/cs.json
+• 16:06:53  Synced » update locales/es.json
+• 16:06:53  Synced » update locales/fi.json
+• 16:06:53  Synced » update locales/de.json
+• 16:06:53  Synced » update locales/bg-BG.json
+• 16:06:53  Synced » update locales/id.json
+• 16:06:53  Synced » update sections/main-search.liquid
+• 16:09:24  Synced » delete sections/canary-pro-product.liquid
+• 16:09:24  Synced » update templates/product.z07.json
+• 16:09:25  Synced » update sections/a3h-lux-product.liquid
+• 16:09:25  Synced » update sections/m20-product.liquid
+• 16:09:26  Synced » update sections/ash-product.liquid
+• 16:09:26  Synced » update sections/canary-pro-product.liquid
+• 16:09:26  Synced » delete sections/m20-product.liquid
+• 16:09:26  Synced » update sections/mockingbird-product.liquid
+• 16:09:26  Synced » update snippets/aaw-home-schema.liquid
+• 16:09:27  Synced » update sections/z02-product.liquid
+• 16:09:27  Synced » update sections/aaw-about-brand-v13.liquid
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "snippets/pluginseo-structured-data.liquid" to        │
+│  remote theme.                                                               │
+│                                                                              │
+│  Liquid syntax error (line 564): Variable '{{ shop.url | append:             │
+│  '/search?q={search_term_string}' was not properly terminated with regexp:   │
+│  /\}\}/                                                                      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 16:14:06  Synced » update snippets/newsletter-popup.liquid
+╭─ error ──────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Failed to upload file "snippets/pluginseo-structured-data.liquid" to        │
+│  remote theme.                                                               │
+│                                                                              │
+│  Liquid syntax error (line 565): Variable '{{ shop.url | append:             │
+│  '/search?q={search_term_string}' was not properly terminated with regexp:   │
+│  /\}\}/                                                                      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+• 16:14:06  Synced » update templates/page.locator.json
+• 16:14:06  Synced » update sections/main-cart.liquid
+• 16:16:07  Synced » update templates/page.about.json
+• 16:16:07  Synced » delete templates/page.what-is-universal-in-ear-monitor.json
+• 16:16:07  Synced » update templates/page.locator.json
+• 16:16:07  Synced » update templates/page.get-started.json
+• 16:16:08  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 16:16:08  Synced » update templates/page.what-is-universal-in-ear-monitor.json
+• 16:18:52  Synced » update sections/header.liquid
+• 16:18:52  Synced » update sections/aaw-about-brand-v13.liquid
+• 16:18:53  Synced » update templates/product.z07.json
+• 16:18:53  Synced » update templates/product.z05.json
+• 16:18:53  Synced » update templates/product.z05-kEVIN-PC.json
+• 16:18:54  Synced » delete assets/z05-language-toggle.js
+• 16:18:54  Synced » update templates/page.what-is-custom-in-ear-monitor.json
+• 16:18:54  Synced » update assets/z05-language-toggle.js
+• 16:18:54  Synced » update assets/z07-language-toggle.js
+• 16:18:54  Synced » update templates/product.standard.json
+• 16:18:55  Synced » update assets/z05-language-toggle-20260523.js
+• 16:26:36  Synced » update snippets/pluginseo-structured-data.liquid
+• 16:32:51  Synced » update assets/get-started.css
+• 16:38:55  Synced » update sections/footer.liquid
+• 16:38:55  Synced » update sections/footer-policies.liquid

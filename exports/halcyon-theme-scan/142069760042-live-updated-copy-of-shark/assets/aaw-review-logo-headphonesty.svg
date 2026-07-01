@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 160" role="img" aria-labelledby="title">
+  <title id="title">Headphonesty</title>
+  <rect width="760" height="160" fill="#322b29"/>
+  <g transform="translate(24 24)">
+    <circle cx="56" cy="56" r="53" fill="#fff"/>
+    <path d="M56 2a54 54 0 0 1 54 54c0 21-12 39-29 48 5 5 9 12 11 22-18-9-36-12-50-9-9-7-18-13-26-20A54 54 0 0 1 56 2zm-11 24v28h22V26h16v60H67V66H45v20H29V26h16z" fill="#322b29"/>
+  </g>
+  <text x="154" y="96" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="-2">HEADPHONESTY</text>
+</svg>
