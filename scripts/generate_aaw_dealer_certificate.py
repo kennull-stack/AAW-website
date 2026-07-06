@@ -21,7 +21,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "pdf" / "AAW_Authorized_Distributor_Certificate_SPB_NASTECH_2026-2028.pdf"
 TMP = ROOT / "tmp" / "pdfs" / "aaw_certificate_nastech"
-LOGO = ROOT / "tmp" / "pdfs" / "original_certificate" / "aaw_logo_crop.png"
+LOGO = ROOT / "tmp" / "pdfs" / "original_certificate" / "aaw_logo_clean.png"
 LOGO_TRANSPARENT = TMP / "aaw-logo-transparent.png"
 SIGNATURE_SRC = ROOT / "kevin-wang-signature-gold-preview.png"
 SIGNATURE_TRANSPARENT = TMP / "kevin-wang-signature-transparent.png"
@@ -95,11 +95,11 @@ def draw_frame(canvas, doc):
     width, height = A4
     canvas.saveState()
 
-    gold = colors.HexColor("#B8893D")
-    dark = colors.HexColor("#1E1E1E")
+    gold = colors.HexColor("#B8860B")
+    dark = colors.HexColor("#111827")
     paper = colors.HexColor("#FFFDF8")
-    rule = colors.HexColor("#D7C196")
-    subtle_bg = colors.HexColor("#FAF7F0")
+    rule = colors.HexColor("#C5963E")
+    subtle_bg = colors.HexColor("#F5F1E8")
 
     margin = 16 * mm
 
@@ -111,19 +111,19 @@ def draw_frame(canvas, doc):
     canvas.setFillColor(subtle_bg)
     canvas.rect(margin, height - 38 * mm, width - 2 * margin, 22 * mm, stroke=0, fill=1)
 
-    # Outer border – dark, business-like
+    # Outer border – deep authoritative border
     canvas.setStrokeColor(dark)
-    canvas.setLineWidth(1.5)
+    canvas.setLineWidth(2.2)
     canvas.rect(margin, margin, width - 2 * margin, height - 2 * margin, stroke=1, fill=0)
 
-    # Inner accent line – subtle gold
+    # Inner accent line – richer gold
     canvas.setStrokeColor(gold)
-    canvas.setLineWidth(0.5)
+    canvas.setLineWidth(0.8)
     canvas.rect(margin + 5 * mm, margin + 5 * mm, width - 2 * margin - 10 * mm, height - 2 * margin - 10 * mm, stroke=1, fill=0)
 
     # Header rule
     canvas.setStrokeColor(rule)
-    canvas.setLineWidth(0.5)
+    canvas.setLineWidth(0.6)
     canvas.line(margin + 8 * mm, height - 38 * mm, width - margin - 8 * mm, height - 38 * mm)
 
     # Footer rule
@@ -131,9 +131,9 @@ def draw_frame(canvas, doc):
 
     # Watermark logo – very faint, centered
     if hasattr(canvas, "setFillAlpha"):
-        canvas.setFillAlpha(0.035)
-        logo_w = 120 * mm
-        logo_h = 32 * mm
+        canvas.setFillAlpha(0.05)
+        logo_w = 130 * mm
+        logo_h = 35 * mm
         canvas.drawImage(
             str(LOGO_TRANSPARENT),
             (width - logo_w) / 2,
@@ -145,7 +145,7 @@ def draw_frame(canvas, doc):
         canvas.setFillAlpha(1)
 
     # Header line: issuer left, brand right
-    canvas.setFillColor(colors.HexColor("#444444"))
+    canvas.setFillColor(colors.HexColor("#333333"))
     canvas.setFont(SANS, 7.5)
     canvas.drawString(margin + 10 * mm, height - 28.5 * mm, "NASTECH (UEN: 53208987A)")
     canvas.setFont(SANS_BOLD, 7.5)
@@ -153,7 +153,7 @@ def draw_frame(canvas, doc):
 
     # Footer line
     canvas.setFont(SANS, 6.5)
-    canvas.setFillColor(colors.HexColor("#999999"))
+    canvas.setFillColor(colors.HexColor("#888888"))
     canvas.drawCentredString(width / 2, margin + 9 * mm, "This certificate is issued for verification of authorized distributor status only.")
 
     canvas.restoreState()
@@ -174,11 +174,11 @@ def build_pdf() -> None:
     styles = getSampleStyleSheet()
 
     # Colour tokens
-    ink = colors.HexColor("#1A1A1A")          # near-black body
-    gold = colors.HexColor("#B8893D")          # brand gold accent
-    dark_gold = colors.HexColor("#8F6426")     # deeper gold for headings
-    table_bg = colors.HexColor("#F9F6EF")      # warm off-white for tables
-    label_bg = colors.HexColor("#F0EBE0")      # label column tint
+    ink = colors.HexColor("#111111")              # deep near-black body
+    gold = colors.HexColor("#B8860B")             # rich brand gold accent
+    dark_gold = colors.HexColor("#7A5218")        # deeper gold for headings
+    table_bg = colors.HexColor("#F7F3EA")         # warm off-white for tables
+    label_bg = colors.HexColor("#EDE6D6")         # label column – more contrast
 
     body = ParagraphStyle(
         "Body",
@@ -240,7 +240,7 @@ def build_pdf() -> None:
         fontName=SANS_BOLD,
         fontSize=9,
         leading=12,
-        textColor=colors.HexColor("#5A5A5A"),
+        textColor=colors.HexColor("#2B2B2B"),
         spaceBefore=2,
         spaceAfter=4,
         textTransform="uppercase",
@@ -259,7 +259,7 @@ def build_pdf() -> None:
         fontName=SANS_BOLD,
         fontSize=7.5,
         leading=10,
-        textColor=colors.HexColor("#666666"),
+        textColor=colors.HexColor("#444444"),
     )
     value_style = ParagraphStyle(
         "ValueStyle",
@@ -318,7 +318,7 @@ def build_pdf() -> None:
         fact_row("PRODUCT SCOPE", "AAW CIEM and UIEM products"),
         fact_row("TERRITORY", "Thailand"),
         fact_row("AUTHORIZATION", "Authorized distributor"),
-        fact_row("VALIDITY PERIOD", "1 June 2026 to 31 May 2028 (inclusive)"),
+        fact_row("VALIDITY PERIOD", "1 May 2026 to 31 May 2028 (inclusive)"),
         fact_row("CERTIFICATE ID", "AAW-SPB-TH-2026"),
     ]
     fact_table = Table(
@@ -330,8 +330,8 @@ def build_pdf() -> None:
             [
                 ("BACKGROUND", (0, 0), (-1, -1), table_bg),
                 ("BACKGROUND", (0, 0), (0, -1), label_bg),
-                ("BOX", (0, 0), (-1, -1), 0.6, colors.HexColor("#C7A56D")),
-                ("LINEBELOW", (0, 0), (-1, -2), 0.3, colors.HexColor("#E5DAC8")),
+                ("BOX", (0, 0), (-1, -1), 0.8, colors.HexColor("#B8860B")),
+                ("LINEBELOW", (0, 0), (-1, -2), 0.4, colors.HexColor("#D4C5A8")),
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 10),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 10),
@@ -367,7 +367,7 @@ def build_pdf() -> None:
         [Paragraph("For and on behalf of <b>NASTECH</b>", small)],
         [Paragraph("<b>Kevin Wang</b>", small)],
         [Paragraph("Authorized Signatory", small)],
-        [Paragraph("Date: 1 June 2026", small)],
+        [Paragraph("Date: 1 May 2026", small)],
     ]
     left_block = Table(left_block_data, colWidths=[76 * mm])
     left_block.setStyle(
@@ -407,8 +407,8 @@ def build_pdf() -> None:
         TableStyle(
             [
                 ("BACKGROUND", (0, 0), (-1, -1), table_bg),
-                ("BOX", (0, 0), (-1, -1), 0.6, colors.HexColor("#C7A56D")),
-                ("LINEBETWEENCOLUMNS", (0, 0), (-1, -1), 0.3, colors.HexColor("#E5DAC8")),
+                ("BOX", (0, 0), (-1, -1), 0.8, colors.HexColor("#B8860B")),
+                ("LINEBETWEENCOLUMNS", (0, 0), (-1, -1), 0.4, colors.HexColor("#D4C5A8")),
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 12),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 12),
